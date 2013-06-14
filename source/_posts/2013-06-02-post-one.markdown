@@ -14,12 +14,12 @@ categories:
 
 It was not until I did my first weekend manual testing procedure till I came to realize how much time consuming
 testing can become. All critical paths starting from registration and login to buying a product using the
-available payment methods should be accounted for. Along with that, any irregularities on different pages
+available payment methods should be accounted for. Along with that, any irregularities on different pages on the website
 must be reported.
 <!-- more -->
 As Namshi grows larger and gets more and more complicated, an *Automatic Web Testing Tool* had to be put in place as soon 
-as possible. **Hosam** is the name of tool. It was named after one of our MDs who specialized in reporting site related issues to our team.
-In recognition to his efforts, it was decided to name this tool after him!
+as possible. **Hosam** is the name of our tool named after one of the MDs who specialized in reporting site related
+issues to our team. In recognition to his efforts, it was decided to name this tool after him!
 
 **Hosam** consists of five main components, [Symfony2 Framework](http://symfony.com/), [Behat](http://behat.org/) and its [Mink](http://mink.behat.org/) and [Gearman](http://extensions.behat.org/gearman/) extensions
 and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/projects/orm.html).
@@ -31,10 +31,8 @@ and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/pr
 
 >Behat is a PHP Based Behavior Driven Development (BDD) platform that allows the contribution of stake holders and customers
 >in the development of their products. In Behat, tests are written before the actual development starts.
->To be honest, I had my doubts about this approach until I tried it myself. In my opinion, it is a very powerful approach
->to overcome common misunderstandings that may arise during projects planning.
-
->![Programming](/images/prog.jpg)
+>To be honest, I had my doubts about this methodology until I tried it myself. In my opinion, it is a very powerful approach 
+>to overcome common misunderstandings that may arise during project planning.
 
 >The actual tests are written in the Feature files of Behat using the Gherkin language. The following is an example
 >of a scenario in the integrity feature:-
@@ -48,18 +46,18 @@ and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/pr
 >programmer to write the definitions of the written statements in a special file named FeatureContext.php right when
 >you try to run the tests!
 
->![FeatureContext.php](/images/featureC.jpg)
+>![FeatureContext File](/images/featureC.jpg)
 
 
 ##Mink
->Behat can be used to write tests for any application development environment. In order to test web based
->applications, Behat has to be extended with the Mink extension. Mink provides an interface between the web
->browser and Behat in order to test and run the scenarios. When extended in the FeatureContext.php, Mink
->extension provides a rich library to simulate the interaction between a user using a web browser and the web application.
->It supports a number of browser emulators: Goutte, Sahi, Zombie, Selenium and Selenium2. In Hosam, we are mainly
+>Behat can be used to write tests for any application. In order to test web based applications, Behat has to be extended
+>with the Mink extension. Mink provides an interface between the web browser and Behat in order to test and run different scenarios.
+>When extended in the FeatureContext.php, Mink extension provides a rich library to simulate the interaction between a user using
+>a web browser and the web application.
+>Mink supports a number of browser emulators: Goutte, Sahi, Zombie, Selenium and Selenium2. In Hosam, we are mainly
 >using Selenium2 driver except for some scenarios where Goutte is used.
 
-To cover Namshi's sets of predefined manual tests, six feature files were created:-
+>To cover Namshi's sets of predefined manual tests, six feature files were created:-
 >1.   Integrity.feature: Tests some simple yet critical components of Namshi.
 >2.   News.feature: Covers Scenarios for user subscription to the newsletter.
 >3.   Registration.feature: Covers different user registration scenarios at which a field might be left blank and the response is observed.
@@ -67,19 +65,36 @@ To cover Namshi's sets of predefined manual tests, six feature files were create
 >5.   cc.feature (credit card): Scenarios when a user buys a product using credit card payment method.
 >6.   pp.feature (paypal): Scenarios when a user buys a product using paypal payment method.
 
-Gearman was integrated with Hosam at a later stage when it was noted that the time to run the tests is a bit high
-(~25 minutes). What Gearman does is simply distribute the BDD Test Suite defined in Behat to a number of workers
-such that each worker runs one feature file in Mink.
+##Gearman
+>Gearman was integrated with Hosam at a later stage when it was noted that it takes lots of time to run the tests
+>(~25 minutes). What Gearman does is simply distribute the BDD Test Suite defined in Behat to a number of workers
+>such that each worker runs one feature file in Mink.
+>
+>Gearman Extension for Behat was downloaded and enabled after installing Gearman Job Server and Gearman
+>PHP Extension. Some modifications had to be done on Hosam to make it compatible with Gearman.
+>
+>Six worker configuration files had to be created. In each file, a custom task name was defined, which is the tag
+>specified in a feature, that the worker will run. In the original behat.yml configuration file, all the custom
+>tag names are specified. The Gearman extension was also enabled inside all the configuration files.
+>Also, all feature files had to be tagged right before the Feature declaration such that the extension can identify
+>which scenarios belong which worker.
 
-Gearman Extension for Behat was downloaded and enabled after installing Gearman Job Server and Gearman
-PHP Extension. Some modifications had to be done on Hosam to make it compatible with Gearman. First of all, Gearman
-Job Server was downloaded and installed as well as the PHP Extension. Secondly, six worker configuration files
-had to be created. In each file we specified as a custom task name, the tag name that the worker will run and enabled
-the Gearman extension. The original behat.yml configuration file is considered as the Gearman Client.
-The extension was also enabled inside it and all the feature tags were also specified as custom tag names.
-Lastly, different feature files had to be tagged right before the Feature declaration such that the Gearman
-extension can identify which scenarios belong which worker.
-
-Two objects are persisted to tables in the DB, Tests and Website. The website contains all the name of the web servers
-in use. In this case, they are: ae, sa and intl. The tests table has columns holding the Test object's fields
-(Test name, description, and an indicator if the test passed or failed).
+##Hosam in Action!
+>Once all settings are set, we can start Hosam by running the Gearman Job Server on the system. This is followed
+>by starting Behat with the *config* parameter set to the configuration file of a worker.
+>Once all the workers are runninng, we can start the Behat client process by also setting the *--config*
+>parameter to the client's configuration file.
+>
+>![Running a worker](/images/worker.jpg)
+>
+>![Running the client](/images/client.jpg)
+>
+>Now, six browser windows will pop up and the test suits get executed in parallel!
+>
+>![Hosam in execution](/images/execution.jpg)
+>
+>When the execution completes, we can open Hosam's webpage and review the results!
+>
+>![Results on the webpage](/images/results.jpg)
+>
+>Hosam is not happy with the outcomes. Better start fixing Namshi!
