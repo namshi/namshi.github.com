@@ -1,6 +1,7 @@
 ---
+author: Mohamad Hallal
 layout: post
-title: "Behat, Mink and Gearman. A recipe for automatic web testing!"
+title: "Behat, Mink and Gearman, A recipe for automated web testing!"
 date: 2013-06-02 17:13
 comments: true
 published: false
@@ -25,7 +26,7 @@ issues to our team. In recognition to his efforts, it was decided to name this t
 and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/projects/orm.html).
 
 
-![Hosam's Architecture](/images/arch.jpg)
+{% img center /images/arch.jpg Hosam's Architecture %}
 
 ##Behat and Gherkin
 
@@ -98,3 +99,5 @@ and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/pr
 >![Results on the webpage](/images/results.jpg)
 >
 >Hosam is not happy with the outcomes. Better start fixing Namshi!
+
+Written By: [Mohamad Hallal](/portfolio#Mohamad Hallal)

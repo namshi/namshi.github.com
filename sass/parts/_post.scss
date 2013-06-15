@@ -37,7 +37,7 @@
 		a:hover {
 			border-bottom:1px solid #bf0222;
 		}
-		.date, .tags, .comments{
+		.date, .tags, .comments, .author{
 			padding-left: 30px;
 			position: relative;
 			&:before{
@@ -55,6 +55,7 @@
 		}
 		.date:before{content: "\f073";}
 		.tags:before{content: "\f02c";}
+                .author:before{content: "\f044";}
 		.comments:before{content: "\f075";}
 	}
 }
