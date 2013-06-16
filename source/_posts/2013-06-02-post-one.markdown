@@ -99,5 +99,3 @@ and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/pr
 >![Results on the webpage](/images/results.jpg)
 >
 >Hosam is not happy with the outcomes. Better start fixing Namshi!
-
-Written By: [Mohamad Hallal](/portfolio#Mohamad Hallal)
