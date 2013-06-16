@@ -10,7 +10,7 @@ categories:
 - Behat
 - Mink
 - Gearman
-- Automatic Testing
+- Automated Testing
 ---
 
 It was not until I did my first weekend manual testing procedure till I came to realize how much time consuming
@@ -18,7 +18,7 @@ testing can become. All critical paths starting from registration and login to b
 available payment methods should be accounted for. Along with that, any irregularities on different pages on the website
 must be reported.
 <!-- more -->
-As Namshi grows larger and gets more and more complicated, an *Automatic Web Testing Tool* had to be put in place as soon 
+As Namshi grows larger and gets more and more complicated, an *Automated Web Testing Tool* had to be put in place as soon 
 as possible. **Hosam** is the name of our tool named after one of the MDs who specialized in reporting site related
 issues to our team. In recognition to his efforts, it was decided to name this tool after him!
 
@@ -26,7 +26,7 @@ issues to our team. In recognition to his efforts, it was decided to name this t
 and [Doctrine Object Relational Mapper (ORM)](http://www.doctrine-project.org/projects/orm.html).
 
 
-{% img center /images/arch.jpg Hosam's Architecture %}
+{% img center /images/arch.jpg 'App Architecture' 'App Architecture' %}
 
 ##Behat and Gherkin
 

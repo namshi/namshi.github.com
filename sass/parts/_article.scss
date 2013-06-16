@@ -197,6 +197,22 @@ article{
 				left: 0;
 			}
 		}
+		.caption-center{
+			display: block;
+			font-size: 0.9em;
+			color: $color-gray02;
+			padding-left: 170px;
+			position: relative;
+                        margin: 0 auto 1.5em;
+			&:before{
+				content: "\f040";
+				color: $color-gray03;
+				font: 1.3em $font-icon;
+				line-height: 1.6em;
+				position: absolute;
+				left: 150px;
+			}
+		}
 		.video-container{
 			position: relative;
 			padding-bottom: 56.25%;
