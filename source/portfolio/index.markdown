@@ -1,21 +1,19 @@
 ---
 layout: page
-title: "portfolio"
+title: "Tech Team"
 date: 2013-06-15 21:51
-comments: true
-sharing: true
+comments: false
+sharing: false
 footer: true
 ---
 >##<div id="Mohamad Hallal">Mohamad Hallal</div>
 >
->{% img left /images/hallal.jpg 200 200 Mohamad Hallal %}
+{% img left /images/hallal.jpg 200 200 Mohamad Hallal %}
 >
->djfkslfjdsklfsklflsdfjlsdflk
->
->fsldflsdkflksdlfkslkdf
->
->dklfskflks;lkf;lak;lsdkal;d
->ksjdlkgjdfklgjdklgjlksgjslkg
->
->
->dofgjdkjgldkfjgk
+>**Mohamad Hallal** is a Junior Software Engineer at Namshi. He joined the Tech Team in May 2013.<br />
+>Hallal holds a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering
+>from the American University of Sharjah.<br />
+>His passion for programming and technology led him to start his career in Web Development.</br>
+>He is the designer and creator of Namshi's Tech Blog and he is currently involved in creating automated
+>testing procedures for Namshi.</br>
+>With a pre-intermediate knowledge about web development, he is looking to rectify his expertise on the industry's technologies and best practices.
