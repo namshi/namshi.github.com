@@ -20,11 +20,9 @@
 			var _i = i;
 			$(this).find('img').each(function(){
 				var alt = this.alt;
+
 				if (alt != ''){
-                                    if($(this).attr("class")!=null)
-					$(this).after('<span class="caption-'+ $(this).attr("class")+'">'+alt+'</span>');
-                                    else
-                                        $(this).after('<span class="caption">'+alt+'</span>');
+					$(this).after('<span class="caption-'+$(this).attr('class')+'">'+alt+'</span>');
 				}
 
 				$(this).wrap('<a href="'+this.src+'" title="'+alt+'" class="fancybox" rel="gallery'+_i+'" />');

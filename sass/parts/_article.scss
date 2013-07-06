@@ -119,6 +119,7 @@ article{
                        float: left;
                        margin-right: 1.5em;
                        margin-bottom: .8em;
+                       margin-top: .8em;
                 }
 		img.right{
                 	max-width: 100%;
@@ -136,6 +137,7 @@ article{
                        float: right;
                        margin-left: 1.5em;
                        margin-bottom: .8em;
+                       margin-top: .8em;
                 }		
 		img, video{
 			max-width: 100%;
@@ -211,6 +213,22 @@ article{
 				line-height: 1.6em;
 				position: absolute;
 				left: 150px;
+			}
+		}
+		.caption-left{
+			display: block;
+			font-size: 0.9em;
+			color: $color-gray02;
+			padding-left: 25px;
+			position: relative;
+                        margin: 0 auto 1.5em;
+			&:before{
+				content: "\f040";
+				color: $color-gray03;
+				font: 1.3em $font-icon;
+				line-height: 1.6em;
+				position: absolute;
+				left: 5px;
 			}
 		}
 		.video-container{
