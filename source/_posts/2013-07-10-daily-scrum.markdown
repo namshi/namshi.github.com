@@ -1,10 +1,12 @@
 ---
-layout: Haneen Musleh
+author: Haneen Musleh
+layout: post
 title: "Daily Scrum, Effective or a waste of time?"
 date: 2013-07-10 14:30
 comments: true
-categories: Project Management
-Team performance
+categories: 
+- Project Management
+- Team performance
 ---
 
 We have been doing Daily Scrums for the past 15 months, but have you really thought of the real impact this activity has on us as an entire team? Or on the leads? Or the business? I don’t think so. I’m noticing lately that this practice is not being appreciated; therefore I’ll give you an insight into the importance of this practice we struggle to do every day.
@@ -23,13 +25,13 @@ We have been doing DS at namshi mainly to enhance our communication and report e
 
 Now, how can we make sure that what we are doing is an effective DS and not a waste of time. First of all, what you need to do as a team member is a really simple pattern:
 
-1.       Say what you are going to do.
+	1. Say what you are going to do.
 
-2.       Do what you said you are going to do {obviously).
+	2. Do what you said you are going to do {obviously).
 
-3.       Report that you did it/doing it/having problems while doing it and need help.
+	3. Report that you did it/doing it/having problems while doing it and 		need help.
 
-4.       Repeat 1-3
+	4. Repeat 1-3
 
 If you do this then you are AWESOME, we are done with your responsibility now the team. DS is a stand up meeting => we are burning calories when we are standing => standing requires an effort ======> MAKE IT SHORT. We really don’t want to listen to the story of your life, as tempting as it may seem (ok we do care about you) but now we are standing to do this quick meeting and discuss things quickly, we have 8 working hours to discuss things in details, in fact we can do detailed DS while we are sitting if you would want to discuss things in depth with the rest of the team, so KEEP IT SHORT (not too short plz though).  The main reason why it’s better to plan what you are going to say and make sure it’s not super detailed is because we don’t want it to be a boring meeting and the most important part we want the information to be conceived properly, sometimes the things you are saying could be really important and things could go wrong but if your too detailed we will be less likely to notice every single detail you mention. Finally, timings, Daily scrums should be done at the beginning of the day, not one hour before lunch break, WHAT’s THE POINT??? It’s to start your day with not to enhance your appetite.
 
@@ -37,15 +39,15 @@ If we can do this properly we will be able to improve ourselves and our relation
 
 Some of the important goals of doing this activity are:
 
-1.       To give you a motivation to start your day well (and organized ofc).
+	1. To give you a motivation to start your day well (and organized ofc).
 
-2.       To support your improvement and help you get through your issues.
+	2. To support your improvement and help you get through your issues.
 
-3.       To reinforce our focus on the right things and right aspects of the business and the development cycle.
+	3. To reinforce our focus on the right things and right aspects of the 		business and the development cycle.
 
-4.       To reinforce the sense of the team and the team spirit.
+	4. To reinforce the sense of the team and the team spirit.
 
-5.       To communicate what’s going on.
+	5. To communicate what’s going on.
 
 So mainly we are starting our day properly, we are improving, focusing, building our relationship as team members and finally we are conveying the status of our tasks.
 
