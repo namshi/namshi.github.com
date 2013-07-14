@@ -2,7 +2,7 @@
 author: Mohamad Hallal
 layout: post
 title: "Behat, Mink and Parallel Runner, A recipe for automated web testing!"
-date: 2013-06-02 17:13
+date: 2013-07-14 17:13
 comments: true
 published: false
 categories:
