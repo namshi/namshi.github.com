@@ -51,10 +51,8 @@ Some of the important goals of doing this activity are:
 
 So mainly we are starting our day properly, we are improving, focusing, building our relationship as team members and finally we are conveying the status of our tasks.
 
-[1] James, M. 2010. Scrum Reference Card. [e-book] p. 1. Available through: scrumreferencecard http://scrumreferencecard.com/ScrumReferenceCard.pdf [Accessed: 7th July 2013].
-
- 
-
 So let’s please try to treat this activity as a positive addition to our team values and give it some extra attention (at least half of the attention you give to your hungry tummy). And as Joe Ely said on Daily start-up meetings  *“the purpose is not to meet… it is to improve”*.
+
+[1] James, M. 2010. Scrum Reference Card. [e-book] p. 1. Available through: scrumreferencecard http://scrumreferencecard.com/ScrumReferenceCard.pdf [Accessed: 7th July 2013].
 
  
