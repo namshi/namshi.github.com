@@ -97,9 +97,32 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 >**Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012.<br />
 >She holds a bachelor's degree in Computer Engineering, she is the only girl in tech team,
 >She hopes one day she will be able to change the wolrd and she is a shopaholic who needs counseling <br />
->In her free time she's either whatsapping or at the gym.
+>In her free time she's either whatsapping or at the gym.<br />
+><br />
+><br />
 
+>##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
+>
+{% img left /images/oba.jpeg 200 200 Oluwaseun Obajobi %}
+>
+>**Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture), <br />
+>He is responsible for leading the system administration team. <br />
+>Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and UAE for the past 5 years.<br />
+>Oba drives the team approach from traditional system administration to devops with implementation of different practices and tools.<br />
+>Oba holds a bachelor degree (Computer Engineering), and  masters degree (IT management) from Obafemi Awolowo University and University of Wollongong respectively.<br />
+><br />
 
+>##<div id="Vishnu Nair">Vishnu Nair</div>
+>
+{% img left /images/vishnu.jpg 150 150 Vishnu Nair %}
+>
+>**Vishnu Nair** is someone<br />
+><br />
+><br />
+><br />
+><br />
 
+><br />
+><br />
 
 
