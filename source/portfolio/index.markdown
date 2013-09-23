@@ -116,7 +116,10 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 >
 {% img left /images/vishnu.jpg 150 150 Vishnu Nair %}
 >
->**Vishnu Nair** is someone<br />
+>**Vishnu Nair** is a Linux System Administrator in Namshi (a Rocket Internet Venture). <br />
+>His Job responsibilities include assisting development team in infrastructure questions, problems and deployments. <br />
+>Maintain and improve existing server infrastructure as well as new installations and backups. Monitor uptime, failover and performance of infrastructure proactively and many more.<br />
+>He have around 3.7 years of experience in Linux and Cloud Computing Technologies. He had done his Bachelor Degree (B.TECH) in Pondicherry University from India.<br />
 ><br />
 ><br />
 ><br />
