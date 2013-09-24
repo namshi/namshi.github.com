@@ -2,7 +2,7 @@
 author: Haneen Musleh
 layout: post
 title: "Daily Scrum, Effective or a waste of time?"
-date: 2013-07-10 14:30
+date: 2013-09-22 14:30
 comments: true
 categories: 
 - Project Management
