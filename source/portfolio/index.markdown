@@ -94,9 +94,9 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 >
 {% img left /images/haneen.jpg 150 150 Haneen Musleh %}
 >
->**Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012.<br />
->She holds a bachelor's degree in Computer Engineering, she is the only girl in tech team,
->She hopes one day she will be able to change the wolrd and she is a shopaholic who needs counseling <br />
+>**Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012 and the only girl in tech team.<br />
+>Haneen holds a bachelor's degree in Computer Engineering, She basically channels the traffic between IT and other departments. <br />
+>She hopes one day she will be able to change the wolrd and she is a shopaholic who needs counseling. <br />
 >In her free time she's either whatsapping or at the gym.<br />
 ><br />
 ><br />
