@@ -15,6 +15,7 @@ He heavily focused his attention to agile practices, patterns of enterprise appl
 Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.<br />
 Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.<br />
 <br />
+<br />
 ##<div id="Geshan Manandhar">Geshan Manandhar</div>
 
 {% img left /images/geshan.jpg 150 150 Geshan Manandhar %}
@@ -83,6 +84,8 @@ Other Interests:</br>
 - Interaction Design (hardware: arduino. software: processing, MAX/MSP)
 - philosophy, esoterism, playing piano, photography, research.
 <br />
+<br />
+<br />
 ##<div id="Haneen Musleh">Haneen Musleh</div>
 
 {% img left /images/haneen.jpg 150 150 Haneen Musleh %}
@@ -91,6 +94,7 @@ Other Interests:</br>
 Haneen holds a bachelor's degree in Computer Engineering, She basically channels the traffic between IT and other departments. <br />
 She hopes one day she will be able to change the world and she is a shopaholic who needs counseling. <br />
 In her free time she's either whatsapping or at the gym.<br />
+<br />
 <br />
 ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
 
