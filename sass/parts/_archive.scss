@@ -29,7 +29,8 @@
 		}
 	}
 	article{
-		margin-left: 200px;
+		margin-left: 110px;
+        //margin-top: -77px;
 		padding: 15px 0;
 		@media screen and (max-width: 600px){
 			margin-left: 0;
@@ -67,7 +68,8 @@
 			}
 			.date:before{content: "\f073";}
 			.tags:before{content: "\f02c";}
-			.comments:before{content: "\f075";}
+			.comments:before{content: "\f075"; padding-right: 10px; }
+            .author:before{content: "\f044"}
 		}
 	}
 }

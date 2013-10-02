@@ -40,7 +40,7 @@ holders during project planning.
 The actual tests are written in the Feature files of Behat using the Gherkin language. The following
 is an example of a scenario in the integrity feature of Namshi:-
 
-{% img left /images/gherkin.jpg 'Gherkin' 'Gherkin' %}
+{% img center /images/gherkin.jpg 'Gherkin' 'Gherkin' %}
 
 As can be noticed, Gherkin is non-technical descriptive language for non-programmers to declare the desired
 functionality of the software.
@@ -167,10 +167,10 @@ bin/behat --config = behat-ae.yml
 {% endcodeblock %}
 Now, six browser windows will pop up and the test suits get executed in parallel!
 
-{% img left /images/execution.jpg 'Running Test Suite' 'Running Test Suite' %}
+{% img center /images/execution.jpg 'Running Test Suite' 'Running Test Suite' %}
 
 When the execution completes, we can open the tool's webpage and review the results!
 
-{% img left /images/results.jpg 'Results on the webpage' 'Results on the webpage' %}
+{% img center /images/results.jpg 'Results on the webpage' 'Results on the webpage' %}
 
 Looks like everything is running smoothly!

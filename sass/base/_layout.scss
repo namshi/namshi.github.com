@@ -4,66 +4,39 @@ $max-width: 1000px;
 	margin: 0;
 	padding: 0;
 }
-html{
-  background: url(/images/cover.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 body{
-	font-family: "proxima-nova-1", "proxima-nova-2", "Helvetica Neue", Arial, sans-serif;
-	font-size: 16px;
+	font-family: $font-default;
 	font-weight: 300;
-	line-height: 1.5;
-        background: rgba(255,255,255,0.98);
-        width:1050px;
-        margin:auto;
-    color: $color-gray01;
+	font-size: 14px;
+	background: $color-background;
+	color: $color-gray01;
 	@media screen and (max-width: 1040px){
 		margin: 0 20px;
 	}
 	@media screen and (max-width: 600px){
 		font-size: 13px;
-		margin: 0 20px;
 	}
 }
-
 h1{
-	font-size: 36px;
+	font-size: 1.8em;
 }
 h2{
-	font-size: 36px;
-	line-height:1;
-	font-weight:300;
+	font-size: 1.5em;
 }
 h3{
-	
-	font-size: 20px;
-	line-height: 1.2;
-	margin: 1.2em 0 0 0;
-	font-weight: normal;
-	display: block;
-	@media screen and (max-width: 620px) {
-	font-size: 15px;
-		}
-	}
-a {
- 	text-decoration:none;
-	color:#bf0222;
-	-webkit-transition:border .25s linear;
-	-moz-transition:border .25s linear;
-	-ms-transition:border .25s linear;
-	transition:border .25s linear;
-	outline:none;
+	font-size: 1.3em;
+}
+a{
+	text-decoration: none;
+	outline-width: 0;
+	color: $color-main;
 }
 
-a:link,a:visited {
-	border-bottom:1px solid rgba(191,2,34,0);
-}
-
-a:hover {
-	border-bottom:1px solid #bf0222;
+.basic-alignment {
+  &.left { float: left; margin-right: 1.5em; }
+  &.right { float: right; margin-left: 1.5em; }
+  &.center { display:block; margin: 0 auto 1.5em; }
+  &.left, &.right { margin-bottom: .8em; }
 }
 
 .alignleft{
@@ -81,13 +54,4 @@ a:hover {
 	@media screen and (max-width: 1040px){
 		width: 100%;
 	}
-}
-article .entry-content blockquote {
-    background: none repeat scroll 0 0 #F3F3F3 !important;
-}
-
-
-#main-nav {
-    background: none repeat scroll 0 0 #FFFFFF !important;
-    border-bottom: 1px solid #ccc;
 }

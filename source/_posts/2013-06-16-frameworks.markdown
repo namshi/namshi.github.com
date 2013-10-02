@@ -77,11 +77,11 @@ We are implementing our tests for our application and all the services that inte
 
 
 for now we implemented around 200 test cases
-{% img left /images/posts/test-result-success.png test result %}
+{% img center /images/posts/test-result-success.png test result %}
 
 
 These tests won't pass if we have any bugs of the application
-{% img left /images/posts/test-result-failure.png test result %}
+{% img center /images/posts/test-result-failure.png test result %}
 
 ####How we assert test results?
 we can assert test results in different ways depending on the response that we are expecting:

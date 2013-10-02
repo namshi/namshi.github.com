@@ -1,44 +1,28 @@
 article{
-	
-	
+	border-bottom: 1px solid $color-gray04;
+	border-top: 1px solid $color-gray05;
 	padding: 30px 0;
 	position: relative;
-	@media screen and (max-width: 620px){
+	@media screen and (max-width: 800px){
 		padding-bottom: 15px;
 	}
-	@media screen and (max-width: 620px){
+	@media screen and (max-width: 600px){
 		padding: 15px 0;
 	}
-	h2.title{
-		font-size: 36px;
+	h1.title{
 		font-weight: 300;
-		line-height: 1;
+		line-height: 35px;
 		margin-bottom: 20px;
-		margin-left:0px;
-		text-align:left;
-		border-bottom: 0px;
 		a{
-			color: #333;
+			color: $color-gray01;
 		}
-		a:hover{
-		color: $color-main;
-		border-bottom: 0px;
-		}
-		border-bottom: 1px solid $color-gray04;
-		padding-bottom: .2em;
-		@media screen and (max-width: 620px) {
-		font-size: 18px;
-		}
-
 	}
-	
 	.entry-content{
-		line-height: 1.5;
-		text-align: left;
+		line-height: 2;
+		text-align: justify;
 		a{
 			&:hover{
-				text-decoration:none;
-
+				text-decoration: underline;
 			}
 		}
 		.more-link{
@@ -46,7 +30,6 @@ article{
 			margin-top: 16px;
 			padding-left: 30px;
 			position: relative;
-			border-bottom: 0px;
 			&:before{
 				content: "\f061";
 				font: 1.3em $font-icon;
@@ -54,11 +37,9 @@ article{
 				position: absolute;
 				left: 0;
 			}
-			
 		}
 		p, blockquote, ul, ol, dl, table, iframe, h1, h2, h3, h4, h5, h6, .video-container{
-			margin-top: 1.5em;
-			margin-bottom: 1.5em;
+			margin-top: 10px;
 		}
 		ul, ol, dl{
 			margin-left: 20px;
@@ -87,73 +68,11 @@ article{
 				width: 100%;
 			}
 		}
-		img.center{
-                	max-width: 100%;
-			height: auto;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			-moz-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			box-shadow:0 0 15px rgba(0,0,0,0.35);
-			border-bottom: 0px;
-                        display:block;
-                        margin: 0 auto 1.5em;
-                }
-		img.left{
-                	max-width: 100%;
-			height: auto;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			-moz-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			box-shadow:0 0 15px rgba(0,0,0,0.35);
-			border-bottom: 0px;
-                       float: left;
-                       margin-right: 1.5em;
-                       margin-bottom: .8em;
-                       margin-top: .8em;
-                }
-		img.right{
-                	max-width: 100%;
-			height: auto;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			-moz-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			box-shadow:0 0 15px rgba(0,0,0,0.35);
-			border-bottom: 0px;
-                       float: right;
-                       margin-left: 1.5em;
-                       margin-bottom: .8em;
-                       margin-top: .8em;
-                }		
 		img, video{
 			max-width: 100%;
 			height: auto;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-border-radius:5px;
-			-moz-border-radius:5px;
-			border-radius:5px;
-			-webkit-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			-moz-box-shadow:0 0 15px rgba(0,0,0,0.35);
-			box-shadow:0 0 15px rgba(0,0,0,0.35);
-			border-bottom: 0px;
+			@extend .basic-alignment;
 		}
-		
 		blockquote{
 			background: $color-gray04;
 			border-left: 5px solid $color-gray03;
@@ -199,38 +118,6 @@ article{
 				left: 0;
 			}
 		}
-		.caption-center{
-			display: block;
-			font-size: 0.9em;
-			color: $color-gray02;
-			padding-left: 170px;
-			position: relative;
-                        margin: 0 auto 1.5em;
-			&:before{
-				content: "\f040";
-				color: $color-gray03;
-				font: 1.3em $font-icon;
-				line-height: 1.6em;
-				position: absolute;
-				left: 150px;
-			}
-		}
-		.caption-left{
-			display: block;
-			font-size: 0.9em;
-			color: $color-gray02;
-			padding-left: 25px;
-			position: relative;
-                        margin: 0 auto 1.5em;
-			&:before{
-				content: "\f040";
-				color: $color-gray03;
-				font: 1.3em $font-icon;
-				line-height: 1.6em;
-				position: absolute;
-				left: 5px;
-			}
-		}
 		.video-container{
 			position: relative;
 			padding-bottom: 56.25%;
@@ -250,9 +137,5 @@ article{
 }
 .share{
 	padding: 15px 0;
-	padding-left:260px;
-	@media screen and (max-width: 620px) {
-	padding-left: 0px;
-	}
 	@include border-shadow();
 }
