@@ -107,6 +107,11 @@ body {
 								line-height: inherit;
 							}
 						}
+                        img {
+                          border-radius: 40%;
+                          max-height: 17%;
+                          max-width: 17%;
+                        }
 						h2 {
 							font-size: 1.3em;
 							color: #574C4C;
