@@ -239,7 +239,47 @@ body {
 		}
 	}
 }
+@media screen and (max-width: 800px) {
+  .left-col {
+    opacity: 1;
+    position: relative;
+    width: 100%;
 
+    .intrude-less {
+      #header {
+        padding: 40px;
+        text-align: center;
+
+        #main-nav {
+          margin-left: -30px;
+          ul {
+            display: inline-flex;
+          }
+        }
+        #sub-nav {
+          margin-top: 10px;
+          display: block;
+        }
+      }
+    }
+  }
+  .mid-col {
+    float: none;
+    width: 100%;
+
+    .mid-col-container {
+      #content {
+        article {
+          .meta {
+            float: none;
+            max-width: 100%;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
 a {
 	color: #B99B00;
 }
