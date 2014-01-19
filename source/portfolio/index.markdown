@@ -120,7 +120,8 @@ His Job responsibilities include assisting development team in infrastructure qu
 Maintain and improve existing server infrastructure as well as new installations and backups. Monitor uptime, failover and performance of infrastructure proactively and many more.<br />
 He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He had done his Bachelor Degree (B.TECH) in Pondicherry University from India.<br />
 <br />
-##<div id="Vishnu Nair">Vishnu Nair</div>
+
+##<div id="Gurjeet Singh">Gurjeet Singh</div>
 
 {% img left team /images/gurjeet.jpg Gurjeet Singh %}
 
