@@ -15,6 +15,17 @@ He heavily focused his attention to agile practices, patterns of enterprise appl
 Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.<br />
 Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.<br />
 <br />
+
+##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli</div>
+
+{% img left team /images/cirpo.jpg Alessandro Cinelli %}
+
+**Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
+and methodologies. His focus is on web businesses where agile and XP methods could yield the most efficient results in terms of productivity and group interactions.
+
+Besides his commitment to his job, he has a track record of setting up and running developers groups to discuss and share the latest advancements in web technologies.
+He was also an active board member of the Italian PHP, Javascript User Group, WEBdeBS and have co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
+<br />
 ##<div id="Geshan Manandhar">Geshan Manandhar</div>
 
 {% img left team /images/geshan.jpg Geshan Manandhar %}
@@ -108,3 +119,15 @@ Oba holds a bachelor degree (Computer Engineering), and  masters degree (IT mana
 His Job responsibilities include assisting development team in infrastructure questions, problems and deployments. <br />
 Maintain and improve existing server infrastructure as well as new installations and backups. Monitor uptime, failover and performance of infrastructure proactively and many more.<br />
 He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He had done his Bachelor Degree (B.TECH) in Pondicherry University from India.<br />
+<br />
+##<div id="Vishnu Nair">Vishnu Nair</div>
+
+{% img left team /images/gurjeet.jpg Gurjeet Singh %}
+
+**Gurjeet Singh** is a Network Administrator in Namshi. His Job responsibilities are networks, firwalls, switches and servers management
+in order to improve the existing server infrastructure as well as new installations and backups.
+He also monitors proactively uptimes, failovers and performances of infrastructure and much more.
+He has around 8 years of experience in Telecom , Network and Linux Technologies.
+<br />
+<br />
+<br />
