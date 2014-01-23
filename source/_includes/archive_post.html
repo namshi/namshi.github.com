@@ -15,7 +15,7 @@
 	    {% if site.disqus_short_name and post.comments == true and site.disqus_show_comment_count == true %}
 	    <span class="comments"><a href="{{ root_url }}{{ post.url }}#disqus_thread">Comments</a></span>
 	    {% endif %}
-        <span class="author"><a href="/portfolio/#{{ post.author }}">{{ post.author }}</a></span>
+        <span class="author"><a href="/team/#{{ post.author }}">{{ post.author }}</a></span>
 	</div>
 	<h1 class="title" itemprop="name"><a href="{{ root_url }}{{ post.url }}">{{post.title}}</a></h1>
 </article>

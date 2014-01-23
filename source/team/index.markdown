@@ -16,7 +16,7 @@ Due to the companies he worked for he has been involved in projects for governme
 Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.<br />
 <br />
 
-##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli</div>
+##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
 
 {% img left team /images/cirpo.jpg Alessandro Cinelli %}
 
