@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: symfony, | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/symfony/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-01-30T16:19:49+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #23]]></title>
+    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
+    <updated>2014-01-23T17:31:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
+    <content type="html"><![CDATA[<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
+
+<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
+
+<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
+
+<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
+
+<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
+
+<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
+
+<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
+
+<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
+
+<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
+
+<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
+]]></content>
+  </entry>
+  
+</feed>

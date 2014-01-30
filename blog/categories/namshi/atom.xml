@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Namshi | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/namshi/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-01-30T16:19:49+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #24]]></title>
+    <link href="http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/"/>
+    <updated>2014-01-30T16:06:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+
+<p>Here at <a href="https://www.namshi.com">namshi</a> we are very keen on
+sharing what we find around the &lsquo;net, so we thought of making
+our internal newsletter public.</p>
+
+<!-- more -->
+
+
+<p>Here you go:</p>
+
+<ul>
+<li><p><a href="http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/">One week to make Trello extremely fast</a></p></li>
+<li><p><a href="http://jwage.com/post/73741567918/doctrine-is-not-just-an-orm-for-relational-databases">Doctrine is not just an ORM for RDBMS</a></p></li>
+<li><p><a href="http://www.designyourway.net/blog/inspiration/a-collection-of-amazing-html5-demos-and-experiments/">Collection of HTML5 demos and experiments</a></p></li>
+<li><p><a href="https://github.com/paularmstrong/swig/">swig: twig in javascript</a></p></li>
+<li><p><a href="http://www.githubarchive.org/">The github archive</a></p></li>
+<li><p><a href="http://ionicframework.com/">AngularJS for the mobile: the ionic framework</a></p></li>
+<li><p><a href="http://www.mediacurrent.com/blog/getting-git">Getting Git</a></p></li>
+<li><p><a href="http://pivotal.github.io/jasmine/">The Jasmine testing framework</a></p></li>
+<li><p><a href="http://tech.zalando.com/platform/">How is the Zalando platform structured?</a></p></li>
+<li><p><a href="https://medium.com/on-product-management/c664ba7e5138">On product management</a></p></li>
+<li><p><a href="http://dotfiles.github.io/">dotfiles</a></p></li>
+<li><p><a href="https://medium.com/p/24eb09e026dd">How I lost my $50k twitter username</a></p></li>
+<li><p><a href="http://www.ebaytechblog.com/2014/01/13/my-first-year-as-a-presentation-engineer-at-ebay/">NodeJS at eBay</a></p></li>
+<li><p><a href="http://blog.8thlight.com/uncle-bob/2014/01/27/TheChickenOrTheRoad.html">The domain discontinuity</a></p></li>
+<li><p><a href="http://www.workingsoftware.com.au/page/Kill_your_index.php">Kill your index.php</a></p></li>
+<li><p><a href="https://github.com/sitespeedio/sitespeed.io/blob/master/README.md">sitespeed.io</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

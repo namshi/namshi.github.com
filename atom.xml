@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Namshi]]></title>
+  <link href="http://tech.namshi.com/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-01-30T16:19:49+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #24]]></title>
+    <link href="http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/"/>
+    <updated>2014-01-30T16:06:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a> again!</p>
+
+<p>Here at <a href="https://www.namshi.com">namshi</a> we are very keen on
+sharing what we find around the &lsquo;net, so we thought of making
+our internal newsletter public.</p>
+
+<!-- more -->
+
+
+<p>Here you go:</p>
+
+<ul>
+<li><p><a href="http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/">One week to make Trello extremely fast</a></p></li>
+<li><p><a href="http://jwage.com/post/73741567918/doctrine-is-not-just-an-orm-for-relational-databases">Doctrine is not just an ORM for RDBMS</a></p></li>
+<li><p><a href="http://www.designyourway.net/blog/inspiration/a-collection-of-amazing-html5-demos-and-experiments/">Collection of HTML5 demos and experiments</a></p></li>
+<li><p><a href="https://github.com/paularmstrong/swig/">swig: twig in javascript</a></p></li>
+<li><p><a href="http://www.githubarchive.org/">The github archive</a></p></li>
+<li><p><a href="http://ionicframework.com/">AngularJS for the mobile: the ionic framework</a></p></li>
+<li><p><a href="http://www.mediacurrent.com/blog/getting-git">Getting Git</a></p></li>
+<li><p><a href="http://pivotal.github.io/jasmine/">The Jasmine testing framework</a></p></li>
+<li><p><a href="http://tech.zalando.com/platform/">How is the Zalando platform structured?</a></p></li>
+<li><p><a href="https://medium.com/on-product-management/c664ba7e5138">On product management</a></p></li>
+<li><p><a href="http://dotfiles.github.io/">dotfiles</a></p></li>
+<li><p><a href="https://medium.com/p/24eb09e026dd">How I lost my $50k twitter username</a></p></li>
+<li><p><a href="http://www.ebaytechblog.com/2014/01/13/my-first-year-as-a-presentation-engineer-at-ebay/">NodeJS at eBay</a></p></li>
+<li><p><a href="http://blog.8thlight.com/uncle-bob/2014/01/27/TheChickenOrTheRoad.html">The domain discontinuity</a></p></li>
+<li><p><a href="http://www.workingsoftware.com.au/page/Kill_your_index.php">Kill your index.php</a></p></li>
+<li><p><a href="https://github.com/sitespeedio/sitespeed.io/blob/master/README.md">sitespeed.io</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #23]]></title>
+    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
+    <updated>2014-01-23T17:31:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
+    <content type="html"><![CDATA[<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
+
+<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
+
+<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
+
+<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
+
+<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
+
+<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
+
+<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
+
+<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
+
+<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
+
+<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Virus Detection and Prevention Tips]]></title>
+    <link href="http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips/"/>
+    <updated>2013-12-10T13:32:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips</id>
+    <content type="html"><![CDATA[<ul>
+<li>Make sure you have an anti-virus program installed on your computer. If an anti-virus is installed, also sure its updated regularly as well.</li>
+<li>Don&rsquo;t open email attachments from an unknown, suspicious or untrustworthy source. Also, be careful of email attachments you are not expecting, it might be that the sender&rsquo;s email has been compromised.</li>
+<li>Delete junk emails except you are sure they not junks. Don&rsquo;t forward or reply to any to them. These types of email are
+considered Spam because the authenticity of the email is not guaranteed.</li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li>Be careful when downloading files from the Internet. Be sure that the source is a legitimate and a reputable one.</li>
+<li>Please stay away from torrent sites. Some of the popular ones include Limewire, BitTorrent, Frostwire and Pirate Bay are heavily laden with viruses, malware and spyware. Downloading from these websites is one of the easiest ways to become infected. It’s in your best interest to avoid these websites completely.</li>
+<li>Be careful when searching on the Internet, the links that come up from your search engine may contain a virus. Never go to sites that seem suspicious.</li>
+<li>Due to the popularity of the social networking websites such as MySpace, Facebook, and Twitter, virus makers target them more than any other website. Unknown Ads especially the ones that advertise free stuffs are considered high risk. Avoid clicking these links.</li>
+<li>If you happen to see a pop-up message that you have been infected and to buy their software to protect yourself, do not fall for it! If you click on any part of those messages, a program will be installed which could be a virus. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
+<li>If you happen see any suspicious pop-ups appear on your screen, don&rsquo;t click them. If you do, it is very likely you will infect your computer. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
+<li>If you are in doubt about any potential virus related situation you find yourself in, please do not hesitate to the <a href="mailto:it@namshi.com">IT team</a> and we will answer any question you may have.</li>
+</ul>
+
+
+<h2>References:</h2>
+
+<ul>
+<li><a href="http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses">http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses</a></li>
+<li><a href="http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf">http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Frameworks And Tests in Namshi]]></title>
+    <link href="http://tech.namshi.com/blog/2013/09/23/frameworks/"/>
+    <updated>2013-09-23T15:44:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2013/09/23/frameworks</id>
+    <content type="html"><![CDATA[<p>As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
+website. However these changes are not stable all the time, sometimes some of these new changes
+end up breaking other working parts of our applications without a prior alert until after we deploy it on
+our website. As a result we end up having some bugs and hot fixes either immediately after testing the
+new deployment or later on when people spot the bugs. Therefore Intensive QA is important because the
+manual test only is not enough, even though if we were careful sometimes we’ll probably forget to test
+all the affected parts by our changes. And after any deployment we need to test everything and if something
+was broken we would need to fix is ASAP.</p>
+
+<!-- more -->
+
+
+<p>We were working with <a href="http://framework.zend.com/">Zend Framework</a> which is considered as a good
+framework for MVC projects, but we decided to move to <a href="http://symfony.com/">Symfony2</a> as it is more
+user-friendly to enhance the structure of our projects and make it more organized, service based applications
+and most importantly to build automated unit tests. Automated tests are mainly important for testing our tickets
+and changes before/after they are deployed for quality assurance purposes. Moreover, such tests need to be
+integrated at early stages because it’s very hard to add them after the development of your application.
+Therefore, such tests need to be implemented in parallel with your application to make sure you cover
+all units and aspects of your application.</p>
+
+<h4>Testing our project using phpunit</h4>
+
+<p>Quality assurance is one of the most important aspects in application development, there are several tests
+that can be used for web applications like:</p>
+
+<ul>
+<li><h5>Unit Test</h5></li>
+</ul>
+
+
+<p>Unit Tests are usually conducted to test classes and functions within the application itself. It tests how
+some functions interact with others and if the desired output and behavior are obtained.</p>
+
+<ul>
+<li><h5>Functional Test</h5></li>
+</ul>
+
+
+<p>Functional test is mainly used test the integration between our application [Namshi] and other services
+and layers.</p>
+
+<p>This test is useful for checking how our application functions and interacts with internal and external services.</p>
+
+<h4>Why do we waste time on implementing automated tests</h4>
+
+<p>If we develop our applications without writing automated tests to save time, we will end up spending more
+time in fixing issues after each deployment. therefore adding automated tests will save our time,
+ensure the quality of our application and help us gaining the trust of our customers.</p>
+
+<h4>How to implement automated test</h4>
+
+<p>With the help of symfony2 implementing automated tests is much easier and feasible. First of all you will
+need to install <a href="http://phpunit.de/manual/current/en/index.html">phpunit</a> and then develop the test and
+ implement it in your application.</p>
+
+<h4>Would automated test modify the application&rsquo;s data</h4>
+
+<p>Automated tests should not affect/modify any data in our application. Therefore we create new databases
+for the testing environment, then we use data fixtures
+<a href="http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html">DoctrineFixturesBundle</a>
+to insert dummy data into the testing databases, and finally we add/delete required data before/after each test.</p>
+
+<h4>Testing <a href="http://namshi.com/">Namshi</a></h4>
+
+<p>We are implementing our tests for our application and all the services that interact with it.
+ Our purpose is to cover all aspects of <a href="http://namshi.com/">Namshi</a> with automated test (functional test or unit test)
+ to ensure the quality of our application and optimize it.</p>
+
+<p>for now we implemented around 200 test cases
+<img class="center" src="http://tech.namshi.com/images/posts/test-result-success.png" title="test result" ></p>
+
+<p>These tests won&rsquo;t pass if we have any bugs of the application
+<img class="center" src="http://tech.namshi.com/images/posts/test-result-failure.png" title="test result" ></p>
+
+<h4>How we assert test results?</h4>
+
+<p>we can assert test results in different ways depending on the response that we are expecting:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this-&gt;assertEquals(400, $response-&gt;getStatusCode());
+</span><span class='line'>$this-&gt;assertContains("Expected text", $crawler-&gt;filter('*')-&gt;text());</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we can also use <a href="http://php.net/manual/en/class.domxpath.php">DOMXPath</a> to filter html result</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$xpath  = new DOMXPath($doc);
+</span><span class='line'>$this-&gt;assertContains('expected value', $xpath-&gt;query("//td[@class='html tag class']")-&gt;item(0)-&gt;nodeValue);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or we can expect exceptions</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/**
+</span><span class='line'> * @expectedException \Namshi\EntityBundle\Exception\InvalidPaymentMethod
+</span><span class='line'> */
+</span><span class='line'> public function testServiceWithInvalidPaymentMethod()
+</span><span class='line'> {
+</span><span class='line'>    $data   = initial data
+</span><span class='line'>    $result = $service-&gt;execute($data);
+</span><span class='line'> }</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Daily Scrum, Effective or a waste of time?]]></title>
+    <link href="http://tech.namshi.com/blog/2013/09/22/daily-scrum/"/>
+    <updated>2013-09-22T14:30:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2013/09/22/daily-scrum</id>
+    <content type="html"><![CDATA[<p>We have been doing Daily Scrums for the past 15 months, but have you really thought of the real impact this activity has on us as an entire team? Or on the leads? Or the business? I don’t think so. I’m noticing lately that this practice is not being appreciated; therefore I’ll give you an insight into the importance of this practice we struggle to do every day.</p>
+
+<!-- more -->
+
+
+<h4>First of all for those of you who don’t know what scrum is:</h4>
+
+<p>Scrum is a management framework for incremental product development using one or more cross functional, self-organizing teams of about seven people each. Scrum provides a structure of roles, meetings, rules, and artifacts. Teams are responsible for creating and adapting their processes within this framework. The greatest potential benefit of Scrum is for complex work involving knowledge creation and collaboration, such as new product development. Scrum is usually associated with object-oriented software development. Its use has also spread to the development of products such as semiconductors, mortgages, and wheelchairs. [1]</p>
+
+<p>We have been doing DS at namshi mainly to enhance our communication and report everything we do transparently. However, this is not the only reason why we do daily scrums, probably the obvious ones are to keep the entire team up to date on how things are going, to keep a room for corrections/considerations/questions and finally to be able to plan ahead what you’re going to do and make sure you already accomplished your TO-DO list for the previous day.  On the other hand, some of the benefits are less obvious to us and we never consider them, daily scrums are actually very effective when it comes to building trust within team members, mainly because you are being honest to your colleagues about who can expect what and when, you’re transparent about the potential risks that are probably caused by something you are working on and finally the fact that your sharing/taking such information with/from them enhance the relationship and trust between you all. You trust them, you listen to their opinions and sometimes you would ask for it because you trust their experience, it’s just a matter of trust. Another benefit is to encourage personal planning. Whether you do it intentionally or not, you always end up planning or at least thinking about what you are going to say during daily scrum. Even if you end up improvising, the fact you have everything organized in your head means that you are planning things properly which is TADAAA a really great thing for a developer. Planning your tasks and tickets and organizing them has a great impact on how you are managing your time. Daily scrum are not to make you feel important about yourself if you are responsible for various things, and not to give the rest of the team this impression. It’s not to judge you or to make you feel that other people are doing more tasks or more things than you (we already have MONTHLY reviews for this don’t worry). In simple words it helps us all to be up to date with our project vision and build a one-unit team.</p>
+
+<p>Now, how can we make sure that what we are doing is an effective DS and not a waste of time. First of all, what you need to do as a team member is a really simple pattern:</p>
+
+<pre><code>1. Say what you are going to do.
+
+2. Do what you said you are going to do {obviously).
+
+3. Report that you did it/doing it/having problems while doing it and       need help.
+
+4. Repeat 1-3
+</code></pre>
+
+<p>If you do this then you are AWESOME, we are done with your responsibility now the team. DS is a stand up meeting => we are burning calories when we are standing => standing requires an effort ======> MAKE IT SHORT. We really don’t want to listen to the story of your life, as tempting as it may seem (ok we do care about you) but now we are standing to do this quick meeting and discuss things quickly, we have 8 working hours to discuss things in details, in fact we can do detailed DS while we are sitting if you would want to discuss things in depth with the rest of the team, so KEEP IT SHORT (not too short plz though).  The main reason why it’s better to plan what you are going to say and make sure it’s not super detailed is because we don’t want it to be a boring meeting and the most important part we want the information to be conceived properly, sometimes the things you are saying could be really important and things could go wrong but if your too detailed we will be less likely to notice every single detail you mention. Finally, timings, Daily scrums should be done at the beginning of the day, not one hour before lunch break, WHAT’s THE POINT??? It’s to start your day with not to enhance your appetite.</p>
+
+<p>If we can do this properly we will be able to improve ourselves and our relationship as a team.</p>
+
+<p>Some of the important goals of doing this activity are:</p>
+
+<pre><code>1. To give you a motivation to start your day well (and organized ofc).
+
+2. To support your improvement and help you get through your issues.
+
+3. To reinforce our focus on the right things and right aspects of the      business and the development cycle.
+
+4. To reinforce the sense of the team and the team spirit.
+
+5. To communicate what’s going on.
+</code></pre>
+
+<p>So mainly we are starting our day properly, we are improving, focusing, building our relationship as team members and finally we are conveying the status of our tasks.</p>
+
+<p>So let’s please try to treat this activity as a positive addition to our team values and give it some extra attention (at least half of the attention you give to your hungry tummy). And as Joe Ely said on Daily start-up meetings  <em>“the purpose is not to meet… it is to improve”</em>.</p>
+
+<p>[1] James, M. 2010. Scrum Reference Card. [e-book] p. 1. Available through: scrumreferencecard <a href="http://scrumreferencecard.com/ScrumReferenceCard.pdf">http://scrumreferencecard.com/ScrumReferenceCard.pdf</a> [Accessed: 7th July 2013].</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Behat, Mink and Parallel Runner, A recipe for automated web testing!]]></title>
+    <link href="http://tech.namshi.com/blog/2013/09/20/behat/"/>
+    <updated>2013-09-20T17:13:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2013/09/20/behat</id>
+    <content type="html"><![CDATA[<p>It was not until I did my first weekend manual testing procedure on Namshi till I came to realize how much time consuming
+testing can become. All critical paths starting from registration and login to buying a product using the
+available payment methods should be accounted for. Along with that, any irregularities on different pages on the website
+must be reported.</p>
+
+<!-- more -->
+
+
+<p>As Namshi grows and gets more and more complicated, an <em>Automated Web Testing Tool</em> had to be put in place as soon
+as possible. An <em>Automated Web Testing Tool</em> is aimed to test that different user interactions with the webpage and web application are going
+smoothly without errors or unexpected results.</p>
+
+<p>Keeping those requirements in mind, five main components were considered to build the application:
+<a href="http://symfony.com/">Symfony2 Framework</a>, <a href="http://behat.org/">Behat</a> and its
+<a href="http://mink.behat.org/">Mink</a> and <a href="https://github.com/shvetsgroup/ParallelRunner">Parallel Runner</a>
+extensions and <a href="http://www.doctrine-project.org/projects/orm.html">Doctrine Object Relational Mapper (ORM)</a>.</p>
+
+<p><img class="center" src="http://tech.namshi.com/images/arch.jpg" title="App Architecture" alt="App Architecture"></p>
+
+<h2>Behat and Gherkin</h2>
+
+<p>Behat is a PHP Based Behavior Driven Development (BDD) platform that allows the contribution
+of stake holders and customers in the development of software products. In BDD, tests are usually
+written before the actual development of a feature actually starts. In my opinion,it is a very powerful
+approach to overcome any misunderstandings that may arise between developers and other stake
+holders during project planning.</p>
+
+<p>The actual tests are written in the Feature files of Behat using the Gherkin language. The following
+is an example of a scenario in the integrity feature of Namshi:&ndash;</p>
+
+<p><img class="center" src="http://tech.namshi.com/images/gherkin.jpg" title="Gherkin" alt="Gherkin"></p>
+
+<p>As can be noticed, Gherkin is non-technical descriptive language for non-programmers to declare the desired
+functionality of the software.</p>
+
+<p>Of course, it is not the case that Behat will automatically understand and run the Feature Files on its own! Behat asks the
+programmer to write the definitions of the written statements in a special file named FeatureContext.php right when
+you try to run the tests!</p>
+
+<figure class='code'><figcaption><span>FeatureContext.php </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="sd">/**</span>
+</span><span class='line'><span class="sd">* @Then /^I retrieve a couple product links$/</span>
+</span><span class='line'><span class="sd">*/</span>
+</span><span class='line'><span class="k">public</span> <span class="k">function</span> <span class="nf">iRetrieveACoupleProductLinks</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$links</span> <span class="o">=</span> <span class="nb">array_slice</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getPage</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">findAll</span><span class="p">(</span><span class="s1">&#39;css&#39;</span><span class="p">,</span><span class="s1">&#39;.productsCatalog .itm-link&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</span><span class='line'>    <span class="nv">$productsToVisit</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$links</span> <span class="k">as</span> <span class="nv">$link</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$productsToVisit</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$link</span><span class="o">-&gt;</span><span class="na">getAttribute</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linksToVisit</span> <span class="o">=</span> <span class="nv">$productsToVisit</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Mink</h2>
+
+<p>Behat can be used to write tests for any application. In order to test web based applications, Behat has to be extended
+with the Mink extension. Mink provides an interface between the web browser and Behat in order to test and run different scenarios.
+When extended in the FeatureContext.php, Mink provides a rich library to simulate the interactions that
+usually take place between a user on a web browser and the web application.
+Mink supports a number of browser emulators: Goutte, Sahi, Zombie, Selenium and Selenium2. In our tool, we are mainly
+using Selenium2 driver except for some scenarios where Goutte is used.</p>
+
+<p>To cover Namshi&rsquo;s sets of predefined manual tests, six feature files were created:&ndash;</p>
+
+<ol>
+<li>integrity.feature: Tests some simple yet critical components of Namshi.</li>
+<li>news.feature: Covers Scenarios for user subscription to the newsletter.</li>
+<li>registration.feature: Covers different user registration scenarios.</li>
+<li>cod.feature (cash on delivery): Scenarios where a user buys a product using cash on delivery.</li>
+<li>cc.feature (credit card): Scenarios when a user buys a product using credit card payment method.</li>
+<li>pp.feature (paypal): Scenarios when a user buys a product using paypal payment method.</li>
+</ol>
+
+
+<h2>Behat Parallel Runner</h2>
+
+<p>After some trials with the testing tool, we noticed that execution takes some time to complete (~25 minutes). In order to speed up the
+execution, a parallelization tool had to be put in place. <strong>Gearman</strong> is a reputable <em>Job Server</em> mostly used to do work in parallel and
+in load balancing across processors. It has an extension in Behat that fetches the appropriate Feature Tags to
+their corresponding worker processes. The issue with Gearman is that it is very complicated for a simple tool
+like the one we are building. Gearman requires a Job Server, OS libraries, PHP extension and Behat extension to operate.
+After some research, another tool was found that can deliver the required performance with much less complexity.
+<strong>Behat Parallel Runner</strong> also distributes the BDD Test Suite defined in Behat to a number of Behat Instances
+without the need for Gearman&rsquo;s client/worker architecture. This distribution is done by defining different <em>profiles</em>
+in <em>behat.yml</em> configuration file and specify the number of parallel processes to run. Parallel Runner
+Extension for Behat was downloaded and enabled through composer and in the behat configuration file.</p>
+
+<figure class='code'><figcaption><span>composer.json </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="s2">&quot;require&quot;</span><span class="err">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nt">&quot;shvetsgroup/parallelrunner&quot;</span><span class="p">:</span> <span class="s2">&quot;dev-master&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In order to integrate Parallel Worker, a configuration file for each website was created. In each configuration
+file, the same set of profiles was defined. We took advantage of Behat&rsquo;s filtering option to enable each profile
+to run a certain <em>tag</em> that is already set in the <em>feature files</em>.
+In each configuration file, six profiles were added such that each one runs one <em>feature tag</em>.</p>
+
+<figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">F1</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@int&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F2</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@news&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F3</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@reg&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F4</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cod&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F5</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cc&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F6</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@pp&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, all feature files had to be tagged right before the Feature declaration such that
+the extension can identify the scenarios and their corresponding instances.</p>
+
+<figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">default</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">shvetsgroup\ParallelRunner\Extension</span><span class="p-Indicator">:</span>
+</span><span class='line'>            <span class="l-Scalar-Plain">process_count</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">6</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>registration.feature </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='gherkin'><span class='line'><span class="nt">@reg</span><span class="nf"></span>
+</span><span class='line'><span class="k">Feature:</span><span class="nf"> Check Namshi registration Scenarios</span>
+</span><span class='line'>
+</span><span class='line'><span class="nf">    @javascript</span>
+</span><span class='line'><span class="nf">    </span><span class="k">Scenario:</span><span class="nf"> As a user I register a new account, filling the registration form with proper data</span>
+</span><span class='line'><span class="k">        Given </span><span class="nf">I visit the &quot;</span><span class="s">register</span><span class="nf">&quot; page</span>
+</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I type in the following:</span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_email</span><span class="k">           |</span><span class="s">registration.new+test-(timeStamp)@namshi.com</span><span class="k"> |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_first_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_last_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_day</span><span class="k">                            |</span><span class="s">12</span><span class="k">                                                                          |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_month</span><span class="k">                        |</span><span class="s">05</span><span class="k">                                                                          |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_year</span><span class="k">                           |</span><span class="s">1987</span><span class="k">                                                                      |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password</span><span class="k">    |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password2</span><span class="k">  |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_gender</span><span class="k">        |</span><span class="s">male</span><span class="k">                                                                      |</span><span class="nf"></span>
+</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I press &quot;</span><span class="s">send</span><span class="nf">&quot;</span>
+</span><span class='line'><span class="nf">        </span><span class="k">Then </span><span class="nf">I am registered as &quot;</span><span class="s">test</span><span class="nf">&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Namshi Automated Testing in Action!</h2>
+
+<p>Once all settings are completed, we can start the Automated Testing procedure by running Behat
+with the <em>config</em> parameter set to the target configuration file, which is the site to be tested.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bin/behat --config <span class="o">=</span> behat-ae.yml
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, six browser windows will pop up and the test suits get executed in parallel!</p>
+
+<p><img class="center" src="http://tech.namshi.com/images/execution.jpg" title="Running Test Suite" alt="Running Test Suite"></p>
+
+<p>When the execution completes, we can open the tool&rsquo;s webpage and review the results!</p>
+
+<p><img class="center" src="http://tech.namshi.com/images/results.jpg" title="Results on the webpage" alt="Results on the webpage"></p>
+
+<p>Looks like everything is running smoothly!</p>
+]]></content>
+  </entry>
+  
+</feed>
