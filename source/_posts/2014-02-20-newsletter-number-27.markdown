@@ -31,11 +31,11 @@ Here are some of the Tech highlights of the week, and some interesting articles 
 
 * [HHVM and Hack – Can We Expect Them to Replace PHP?](http://www.sitepoint.com/hhvm-hack-part-1/)
 
-* [USER TESTING // A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.](https://medium.com/user-experience-researche/e6a1e37028b4)
+* [A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.](https://medium.com/user-experience-researche/e6a1e37028b4)
 
-* [MARKETING // How Evernote Onboards New Users A new case-history on the User Onboarding website.](http://www.useronboard.com/how-evernote-onboards-new-users/)
+* [How Evernote Onboards New Users A new case-history on the User Onboarding website.](http://www.useronboard.com/how-evernote-onboards-new-users/)
 
-* [PRODUCT DESIGN // From inception to Apple store in just one year An amazing story of a successful product.](https://medium.com/art-of-product-design/5f8cd0d4560e)
+* [From inception to Apple store in just one year An amazing story of a successful product.](https://medium.com/art-of-product-design/5f8cd0d4560e)
 
 * [localForage: Offline Storage, Improved](https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved)
 
