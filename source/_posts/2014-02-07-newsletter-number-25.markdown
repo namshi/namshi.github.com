@@ -8,7 +8,8 @@ author: Alessandro Nadalin
 ---
 
 It's [#TechThursday](/blog/categories/techthursday/) again! Oh, actually it's friday but...whatever! :)
-
+<br/>
+<br/>
 <!-- more -->
 
 * [Strace](http://chadfowler.com/blog/2014/01/26/the-magic-of-strace/)

@@ -3,11 +3,12 @@ layout: post
 title: "Newsletter #26"
 date: 2014-02-13 18:14
 comments: true
-categories: 
+categories: [Namshi, newsletter, TechThursday]
+author: Alessandro Cinelli (cirpo)
 ---
 
 It's [#TechThursday](/blog/categories/techthursday/) again!
-
+<br/>
 <!-- more -->
 
 * [Fixpack: A package.json file scrubber for the truly insane.](https://github.com/HenrikJoreteg/fixpack)

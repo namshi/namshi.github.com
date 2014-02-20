@@ -13,6 +13,10 @@ categories:
     - nodejs
     - javascript
 ---
+Hello, this is [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://namshi.com)!
+<br/>
+<br/>
+<!-- more -->
 
 [Converting and Preserving Michael Abrash's Graphics Programming Black Book](http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/)
 
