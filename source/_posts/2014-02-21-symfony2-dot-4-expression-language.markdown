@@ -19,9 +19,9 @@ As simple as:-
 ```
 $expLang = new ExpressionLanguage();
 $x       = "1+1";
-echo($expressionLang->evaluate($x);
+echo $expressionLang->evaluate($x);
 ```
-The previous code will generate 2!
+The previous code will output "2"!
 
 It seems simple enough, but the benefits that it introduces are great! Especially when we talk about a company like Namshi, where there are dedicated and specialized content and marketing teams with
 hundreds of templates and segments of information that must be delivered and shown on the website. The goal is to provide the most flexibility to other departments in creating their information
