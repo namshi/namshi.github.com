@@ -4,7 +4,6 @@ layout: post
 title: "Symfony 2.4 Expression Language"
 date: 2014-02-21 12:57
 comments: true
-published: false
 categories:
 - Symfony2
 - Expression Language
