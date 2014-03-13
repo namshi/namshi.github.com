@@ -4,7 +4,7 @@
   <title><![CDATA[Category: newsletter | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/newsletter/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-02-13T19:24:23+04:00</updated>
+  <updated>2014-03-13T16:52:02+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,11 +14,128 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Newsletter #28]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/06/newsletter-number-28/"/>
+    <updated>2014-03-06T14:05:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/06/newsletter-number-28</id>
+    <content type="html"><![CDATA[<p>Welcome back to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+
+<p>Today we present you some interesting news and articles from the world of web technology!</p>
+
+<!-- more -->
+
+
+<p>*<a href="http://antirez.com/news/71">A simple distributed algorithm for small idempotent information</a></p>
+
+<p>*<a href="https://github.com/toddmotto/stratos">Stratos.js &ndash; Object manipulation module</a></p>
+
+<p>*<a href="http://usablica.github.io/progress.js/">progress.js &ndash; A themeable progress bar library for everything</a></p>
+
+<p>*<a href="http://zachholman.com/posts/only-90s-developers/">Only 90s Web Developers Remember This</a></p>
+
+<p>*<a href="http://hipsterdevstack.tumblr.com/">Hipster Dev Stack</a></p>
+
+<p>*<a href="http://www.theguardian.com/info/developer-blog/2014/feb/18/how-the-guardian-successfully-moved-domain">How the Guardian successfully moved domain to www.theguardian.com</a></p>
+
+<p>*<a href="http://www.newfangled.com/the_way_you_design_web_content_is_about_to_change">The way you design web content is about to change</a></p>
+
+<p>*<a href="http://www.slideshare.net/sharkag/index-management-in-shallow-depth">Index management in shallow depth</a></p>
+
+<p>*<a href="http://www.sitepoint.com/data-fixtures-symfony2/">Data Fixtures in Symfony2</a></p>
+
+<p>*<a href="http://smartbear.com/products/software-development/what-is-code-review/">What IS Code Review?</a></p>
+
+<p>*<a href="http://www.couchbase.com/presentations/couchbase-tlv-2014-couchbase-at-viber">Viber Replaces MongoDB with Couchbase</a></p>
+
+<p>*<a href="https://github.com/orocrm/crm-application">OroCRM Application</a></p>
+
+<p>*<a href="http://www.symfony2cheatsheet.com/">Symfony2cheatsheet</a></p>
+
+<p>*<a href="http://www.codingthearchitecture.com/2014/03/05/five_things_every_developer_should_know_about_software_architecture.html">Five things every developer should know about software architecture</a></p>
+
+<p>*<a href="https://github.com/maxogden/rainbowify">rainbowify</a></p>
+
+<p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
+
+<p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #27]]></title>
+    <link href="http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/"/>
+    <updated>2014-02-20T15:41:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27</id>
+    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+
+<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/VerbalExpressions/PHPVerbalExpressions">VerbalExpressions is a PHP library that helps to construct hard regular expressions.</a></p></li>
+<li><p><a href="http://jsonstub.com/">Fake the backend while you develop the frontend</a></p></li>
+<li><p><a href="http://www.xdata.me/?p=301">Largest Redis Clusters Ever</a></p></li>
+<li><p><a href="https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html">5 surprisingly painful things about client-side JS</a></p></li>
+<li><p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html">The Next Phase of Node.js</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=aQipuiTcn3U">Protractor talks at ngConf</a></p></li>
+<li><p><a href="http://www.sitepoint.com/keeping-php-code-well-documented/">Keeping Your PHP Code Well Documented</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=3IqtmUscE_U">Zones.js talk at ngConf</a></p></li>
+<li><p><a href="http://www.sitepoint.com/hhvm-hack-part-1/">HHVM and Hack – Can We Expect Them to Replace PHP?</a></p></li>
+<li><p><a href="https://medium.com/user-experience-researche/e6a1e37028b4">A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.</a></p></li>
+<li><p><a href="http://www.useronboard.com/how-evernote-onboards-new-users/">How Evernote Onboards New Users A new case-history on the User Onboarding website.</a></p></li>
+<li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
+<li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
+<li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #26]]></title>
+    <link href="http://tech.namshi.com/blog/2014/02/13/newsletter-number-26/"/>
+    <updated>2014-02-13T18:14:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/02/13/newsletter-number-26</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+
+<br/>
+
+
+<!-- more -->
+
+
+<ul>
+<li><a href="https://github.com/HenrikJoreteg/fixpack">Fixpack: A package.json file scrubber for the truly insane.</a></li>
+<li><a href="http://ionicframework.com/blog/angularjs-will-be-huge/">Angularjs will be huge!</a></li>
+<li><a href="http://octoverse.github.com/">Github Octoverse: 2013 highlights</a></li>
+<li><a href="https://github.com/jimhigson/oboe.js">A fresh approach to JSON loading that speeds up web applications by providing the parsed objects before the response completes</a></li>
+<li><a href="https://github.com/zeke/ghwd">Open the github URL that matches your shell&rsquo;s current branch and working directory</a></li>
+<li><a href="http://editorconfig.org/">Coding standard: editorconfig.org</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to Javascript</a></li>
+<li><a href="http://koajs.com/">Next generation web framework for node.js</a></li>
+<li><a href="http://www.sitepoint.com/phpstorm-top-productivity-hacks-shortcuts/">PhpStorm: top productivity hacks and shortcuts</a></li>
+<li><a href="http://blog.malcovery.com/blog/10-cybersecurity-predictions-for-2014">10 cybersecurity predictions for 2014</a></li>
+<li><a href="http://gigaom.com/2014/02/11/record-breaking-ddos-attack-struck-on-monday-according-to-reports/">Record-breaking DDoS attack struck on Monday, according to reports</a></li>
+<li><a href="http://vuejs.org/">Vuejs: MVVM Made Simple</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Newsletter #25]]></title>
     <link href="http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/"/>
     <updated>2014-02-07T22:30:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25</id>
     <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again! Oh, actually it&rsquo;s friday but&hellip;whatever! :)</p>
+
+<br/>
+
+
+<br/>
+
 
 <!-- more -->
 
@@ -71,33 +188,6 @@ our internal newsletter public.</p>
 <li><p><a href="https://github.com/sitespeedio/sitespeed.io/blob/master/README.md">sitespeed.io</a></p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #23]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
-    <updated>2014-01-23T17:31:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
-    <content type="html"><![CDATA[<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
-
-<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
-
-<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
-
-<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
-
-<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
-
-<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
-
-<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
-
-<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
-
-<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
-
-<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
 ]]></content>
   </entry>
   

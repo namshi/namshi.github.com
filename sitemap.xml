@@ -18,7 +18,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/</loc>
-        <lastmod>2014-01-30T16:06:24+04:00</lastmod>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/</loc>
@@ -26,11 +26,27 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/</loc>
-        <lastmod>2014-02-07T22:35:22+04:00</lastmod>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/02/13/newsletter-number-26/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/</loc>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/02/21/symfony2-dot-4-expression-language/</loc>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/03/06/newsletter-number-28/</loc>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/03/13/newsletter-at-29/</loc>
+        <lastmod>2014-03-13T16:50:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/team/</loc>
@@ -38,11 +54,11 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/newsletter/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:41:19+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/archives/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:50:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/robots.txt</loc>
@@ -50,7 +66,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:50:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/about/</loc>
@@ -58,11 +74,11 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/archives/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:50:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/</loc>
-        <lastmod>2014-02-13T19:23:56+04:00</lastmod>
+        <lastmod>2014-03-13T16:50:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/categories/</loc>

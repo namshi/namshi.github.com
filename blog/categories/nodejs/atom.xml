@@ -4,7 +4,7 @@
   <title><![CDATA[Category: nodejs | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-02-13T19:24:23+04:00</updated>
+  <updated>2014-03-13T16:52:02+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,18 @@
     <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
     <updated>2014-01-23T17:31:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
-    <content type="html"><![CDATA[<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
+    <content type="html"><![CDATA[<p>Hello, this is <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a>!</p>
+
+<br/>
+
+
+<br/>
+
+
+<!-- more -->
+
+
+<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
 
 <p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
 
