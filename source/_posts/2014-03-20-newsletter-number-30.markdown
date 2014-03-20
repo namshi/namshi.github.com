@@ -10,13 +10,13 @@ categories:
 
 <!-- more -->
 
-* [git-sweep](http://lab.arc90.com/2012/04/03/git-sweep/): A command-line tool that helps you clean up Git branches that have been merged into master
+* [Git-sweep](http://lab.arc90.com/2012/04/03/git-sweep/): A command-line tool that helps you clean up Git branches that have been merged into master
 
 * [GIT 2.0 released!](https://git.kernel.org/cgit/git/git.git/tree/Documentation/RelNotes/2.0.0.txt)
 
 * [wysiwyg for markdown](http://dillinger.io/)
 
-* [JavaScript Introduction to the MEAN Stack](http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918)
+* [JavaScript: Introduction to the MEAN Stack](http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918)
 
 * [Unit Testing Best Practices in AngularJS](http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html)
 
@@ -34,4 +34,4 @@ categories:
 
 * [Redefining a function as you debug it in Chrome DevTools](http://www.youtube.com/watch?v=WQZio5DlSXM)
 
-* [BIG DATA: The Parable of Google Flu: Tra](http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf)
+* [BIG DATA: The Parable of Google Flu](http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf)
