@@ -5,7 +5,6 @@ date: 2014-03-24 14:37
 comments: true
 categories: [job, php, symfony2, javascript, api, namshi]
 author: Alessandro Nadalin
-published: false
 ---
 
 To the army of developers out there: if you are looking to
