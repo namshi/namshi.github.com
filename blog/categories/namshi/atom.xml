@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Namshi | Namshi]]></title>
+  <title><![CDATA[Category: namshi | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/namshi/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-03-24T15:19:01+04:00</updated>
+  <updated>2014-03-24T15:54:20+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,180 +14,99 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #28]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/06/newsletter-number-28/"/>
-    <updated>2014-03-06T14:05:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/06/newsletter-number-28</id>
-    <content type="html"><![CDATA[<p>Welcome back to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+    <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
+    <updated>2014-03-24T14:37:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
+    <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
+boost your nerditude and have some fun, we might have what
+you are looking for.</p>
 
-<p>Today we present you some interesting news and articles from the world of web technology!</p>
-
-<!-- more -->
-
-
-<p>*<a href="http://antirez.com/news/71">A simple distributed algorithm for small idempotent information</a></p>
-
-<p>*<a href="https://github.com/toddmotto/stratos">Stratos.js &ndash; Object manipulation module</a></p>
-
-<p>*<a href="http://usablica.github.io/progress.js/">progress.js &ndash; A themeable progress bar library for everything</a></p>
-
-<p>*<a href="http://zachholman.com/posts/only-90s-developers/">Only 90s Web Developers Remember This</a></p>
-
-<p>*<a href="http://hipsterdevstack.tumblr.com/">Hipster Dev Stack</a></p>
-
-<p>*<a href="http://www.theguardian.com/info/developer-blog/2014/feb/18/how-the-guardian-successfully-moved-domain">How the Guardian successfully moved domain to www.theguardian.com</a></p>
-
-<p>*<a href="http://www.newfangled.com/the_way_you_design_web_content_is_about_to_change">The way you design web content is about to change</a></p>
-
-<p>*<a href="http://www.slideshare.net/sharkag/index-management-in-shallow-depth">Index management in shallow depth</a></p>
-
-<p>*<a href="http://www.sitepoint.com/data-fixtures-symfony2/">Data Fixtures in Symfony2</a></p>
-
-<p>*<a href="http://smartbear.com/products/software-development/what-is-code-review/">What IS Code Review?</a></p>
-
-<p>*<a href="http://www.couchbase.com/presentations/couchbase-tlv-2014-couchbase-at-viber">Viber Replaces MongoDB with Couchbase</a></p>
-
-<p>*<a href="https://github.com/orocrm/crm-application">OroCRM Application</a></p>
-
-<p>*<a href="http://www.symfony2cheatsheet.com/">Symfony2cheatsheet</a></p>
-
-<p>*<a href="http://www.codingthearchitecture.com/2014/03/05/five_things_every_developer_should_know_about_software_architecture.html">Five things every developer should know about software architecture</a></p>
-
-<p>*<a href="https://github.com/maxogden/rainbowify">rainbowify</a></p>
-
-<p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
-
-<p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #27]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/"/>
-    <updated>2014-02-20T15:41:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27</id>
-    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
-
-<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
+<p><em>(no, it&rsquo;s not a cookie)</em></p>
 
 <!-- more -->
 
 
-<ul>
-<li><p><a href="https://github.com/VerbalExpressions/PHPVerbalExpressions">VerbalExpressions is a PHP library that helps to construct hard regular expressions.</a></p></li>
-<li><p><a href="http://jsonstub.com/">Fake the backend while you develop the frontend</a></p></li>
-<li><p><a href="http://www.xdata.me/?p=301">Largest Redis Clusters Ever</a></p></li>
-<li><p><a href="https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html">5 surprisingly painful things about client-side JS</a></p></li>
-<li><p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html">The Next Phase of Node.js</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=aQipuiTcn3U">Protractor talks at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/keeping-php-code-well-documented/">Keeping Your PHP Code Well Documented</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=3IqtmUscE_U">Zones.js talk at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/hhvm-hack-part-1/">HHVM and Hack – Can We Expect Them to Replace PHP?</a></p></li>
-<li><p><a href="https://medium.com/user-experience-researche/e6a1e37028b4">A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.</a></p></li>
-<li><p><a href="http://www.useronboard.com/how-evernote-onboards-new-users/">How Evernote Onboards New Users A new case-history on the User Onboarding website.</a></p></li>
-<li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
-<li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
-<li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
-</ul>
+<p>Here at <a href="https://en-ae.namshi.com">Namshi</a> things have gone quite well
+so far, and we&rsquo;re extremely excited everytime there&rsquo;s room for
+someone else in our little room (actually, our office it&rsquo;s kind of an open-space).</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #26]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/13/newsletter-number-26/"/>
-    <updated>2014-02-13T18:14:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/13/newsletter-number-26</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+<p>I am very happy to announce that we are now actively looking for 2
+new members of our <a href="/team">team</a> in order to expand our team, vision,
+objectives and count of the <a href="https://www.google.com/search?q=shisha&amp;espv=2&amp;es_sm=125&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=zA8wU46_CoezhAePwgE&amp;ved=0CAkQ_AUoAQ&amp;biw=1687&amp;bih=871">shishas</a> we order when we&rsquo;re out together.</p>
 
-<br/>
+<h2>API monkey</h2>
 
+<p>If you know what the <code>PSR-4</code> is&hellip;</p>
 
-<!-- more -->
+<p>If you are willing to switch to HHVM, in production, in the next six months&hellip;</p>
 
+<p>If you have ever heard of Event Sourcing&hellip;</p>
 
-<ul>
-<li><a href="https://github.com/HenrikJoreteg/fixpack">Fixpack: A package.json file scrubber for the truly insane.</a></li>
-<li><a href="http://ionicframework.com/blog/angularjs-will-be-huge/">Angularjs will be huge!</a></li>
-<li><a href="http://octoverse.github.com/">Github Octoverse: 2013 highlights</a></li>
-<li><a href="https://github.com/jimhigson/oboe.js">A fresh approach to JSON loading that speeds up web applications by providing the parsed objects before the response completes</a></li>
-<li><a href="https://github.com/zeke/ghwd">Open the github URL that matches your shell&rsquo;s current branch and working directory</a></li>
-<li><a href="http://editorconfig.org/">Coding standard: editorconfig.org</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to Javascript</a></li>
-<li><a href="http://koajs.com/">Next generation web framework for node.js</a></li>
-<li><a href="http://www.sitepoint.com/phpstorm-top-productivity-hacks-shortcuts/">PhpStorm: top productivity hacks and shortcuts</a></li>
-<li><a href="http://blog.malcovery.com/blog/10-cybersecurity-predictions-for-2014">10 cybersecurity predictions for 2014</a></li>
-<li><a href="http://gigaom.com/2014/02/11/record-breaking-ddos-attack-struck-on-monday-according-to-reports/">Record-breaking DDoS attack struck on Monday, according to reports</a></li>
-<li><a href="http://vuejs.org/">Vuejs: MVVM Made Simple</a></li>
-</ul>
+<p>If you get excited everytime someone names Redis (even if it&rsquo;s for no apparent reason at all, the important is to get excited regardless)&hellip;</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #25]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/"/>
-    <updated>2014-02-07T22:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again! Oh, actually it&rsquo;s friday but&hellip;whatever! :)</p>
+<p>If you know the 5 tenets of the REST architectural style&hellip;</p>
 
-<br/>
+<p>if you want to give back to the (opensource community)[<a href="https://github.com/soa">https://github.com/soa</a>]</p>
 
+<p>If you like <a href="http://en.wikipedia.org/wiki/Shawarma">shawarma</a>&hellip;</p>
 
-<br/>
+<p>&hellip;if all of this and that, then think of coming over to Dubai to join
+a startup that has been disruptive in his market and has been writing
+a Service-Oriented Architecture (with <a href="http://www.styleisnecessity.com/2012/12/15/namshi-2/">style</a>! :&ndash;))
+based on Symfony2, HTTP APIs and Redis.</p>
 
+<p>We are looking for a <em>Senior API engineer</em>, and will offer a competitive
+retribution plus some other benefits (<a href="/images/cirpo.png">working with cirpo</a>, among others).</p>
 
-<!-- more -->
+<h2>Frontend ducktyper</h2>
 
+<p>As a <em>Senior Frontend Engineer</em>, you will need to get bored with old school
+technologies like <strong>NodeJS, AngularJS, Gulp</strong>, on which our frontends are
+currently running (to be honest, if we had to rewrite today, we would go
+for PERL, #FORSURE).</p>
 
-<ul>
-<li><a href="http://chadfowler.com/blog/2014/01/26/the-magic-of-strace/">Strace</a></li>
-<li><a href="https://github.com/HenrikJoreteg/fixpack">Fix your package.json!</a></li>
-<li><a href="http://www.sitepoint.com/guzzle-php-http-client/">Guzzle, an HTTP client for PHP</a></li>
-<li><a href="https://dutchweballiance.nl/techblog/the-definitive-remote-debug-and-unittest-with-phpstorm-guide-part-6/">Remote debugging and testing with PHPStorm</a></li>
-<li><a href="http://blog.gopivotal.com/case-studies-2/continuous-integration-scaling-to-74000-builds-per-day-with-travis-ci-rabbitmq">Scaling 74k builds a day</a></li>
-<li><a href="https://37signals.com/">Goodbye 37signals, welcome Basecamp!</a></li>
-<li><a href="http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/">REST APIs with Symfony2</a></li>
-</ul>
+<p>Unfortunately, your duties will also include having to deal with the DevTools
+in order to speed up performances and eliminate any waste and overengineering
+we might have on our frontends.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #24]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/"/>
-    <updated>2014-01-30T16:06:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+<p>Last but not least &ndash; I know, I&rsquo;m sorry :( &ndash; you will be disgusted to be consuming our backend APIs,
+trying to get your head around HTTP headers, caching and everything bad about webservices.</p>
 
-<p>Here at <a href="https://www.namshi.com">namshi</a> we are very keen on
-sharing what we find around the &lsquo;net, so we thought of making
-our internal newsletter public.</p>
+<p>Ah, I almost forgot to mention that we might have to add SPDY and WebP. Yesterday.</p>
 
-<!-- more -->
+<h2>About Namshi</h2>
 
+<p>We honestly want to keep it cool and fun, that&rsquo;s why I wante to give this
+post this kind of tone.</p>
 
-<p>Here you go:</p>
+<p>One thing I am really proud of, at Namshi, is that <a href="http://www.slideshare.net/odino/soa-with-symfony2-confoo-2014-in-montreal-ca/159">we don&rsquo;t stick to one
+technology</a> just because we think that we can do everything with it, we use the
+correct technology for each and every context. <strong>We use what makes sense</strong>, which
+means that even PERL could do something, one day, in our architecture.</p>
 
-<ul>
-<li><p><a href="http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/">One week to make Trello extremely fast</a></p></li>
-<li><p><a href="http://jwage.com/post/73741567918/doctrine-is-not-just-an-orm-for-relational-databases">Doctrine is not just an ORM for RDBMS</a></p></li>
-<li><p><a href="http://www.designyourway.net/blog/inspiration/a-collection-of-amazing-html5-demos-and-experiments/">Collection of HTML5 demos and experiments</a></p></li>
-<li><p><a href="https://github.com/paularmstrong/swig/">swig: twig in javascript</a></p></li>
-<li><p><a href="http://www.githubarchive.org/">The github archive</a></p></li>
-<li><p><a href="http://ionicframework.com/">AngularJS for the mobile: the ionic framework</a></p></li>
-<li><p><a href="http://www.mediacurrent.com/blog/getting-git">Getting Git</a></p></li>
-<li><p><a href="http://pivotal.github.io/jasmine/">The Jasmine testing framework</a></p></li>
-<li><p><a href="http://tech.zalando.com/platform/">How is the Zalando platform structured?</a></p></li>
-<li><p><a href="https://medium.com/on-product-management/c664ba7e5138">On product management</a></p></li>
-<li><p><a href="http://dotfiles.github.io/">dotfiles</a></p></li>
-<li><p><a href="https://medium.com/p/24eb09e026dd">How I lost my $50k twitter username</a></p></li>
-<li><p><a href="http://www.ebaytechblog.com/2014/01/13/my-first-year-as-a-presentation-engineer-at-ebay/">NodeJS at eBay</a></p></li>
-<li><p><a href="http://blog.8thlight.com/uncle-bob/2014/01/27/TheChickenOrTheRoad.html">The domain discontinuity</a></p></li>
-<li><p><a href="http://www.workingsoftware.com.au/page/Kill_your_index.php">Kill your index.php</a></p></li>
-<li><p><a href="https://github.com/sitespeedio/sitespeed.io/blob/master/README.md">sitespeed.io</a></p></li>
-</ul>
+<p>We&rsquo;d like to hire someone who relies on the community around him, who likes
+to write open source code (and use it as well!), someone who likes enterprise
+design patterns and is afraid every time a feature not covered by a test goes to production.</p>
 
+<p>The team has been steadily growing since I joined the company in 2012,
+both from an headcount perspective and the level of skills.</p>
+
+<p>Our guys and girls tend to have fun on a daily basis, commit to the company
+values (and to github as well!) and (I hope :-P) are having a great run
+with technologies that is not always possible to use in other scenarios.</p>
+
+<p>But we are also aware that without other points of view, without growth,
+without some fresh energy, our journey to perfection would be even harder
+(and I personally make it even harder, I know!).</p>
+
+<p>Even though we are happy with our stack and what we achieved so far, we&rsquo;re aware that
+we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)</p>
+
+<p>Drop us an email (<code>alessandro.nadalin@namshi.com</code>) and let&rsquo;s have fun together!</p>
+
+<p><a href="https://github.com/namshi">github</a>
+<a href="https://twitter.com/technamshi">twitter</a></p>
 ]]></content>
   </entry>
   

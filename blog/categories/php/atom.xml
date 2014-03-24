@@ -4,7 +4,7 @@
   <title><![CDATA[Category: php | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-03-24T15:19:01+04:00</updated>
+  <updated>2014-03-24T15:54:20+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,103 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
+    <updated>2014-03-24T14:37:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
+    <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
+boost your nerditude and have some fun, we might have what
+you are looking for.</p>
+
+<p><em>(no, it&rsquo;s not a cookie)</em></p>
+
+<!-- more -->
+
+
+<p>Here at <a href="https://en-ae.namshi.com">Namshi</a> things have gone quite well
+so far, and we&rsquo;re extremely excited everytime there&rsquo;s room for
+someone else in our little room (actually, our office it&rsquo;s kind of an open-space).</p>
+
+<p>I am very happy to announce that we are now actively looking for 2
+new members of our <a href="/team">team</a> in order to expand our team, vision,
+objectives and count of the <a href="https://www.google.com/search?q=shisha&amp;espv=2&amp;es_sm=125&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=zA8wU46_CoezhAePwgE&amp;ved=0CAkQ_AUoAQ&amp;biw=1687&amp;bih=871">shishas</a> we order when we&rsquo;re out together.</p>
+
+<h2>API monkey</h2>
+
+<p>If you know what the <code>PSR-4</code> is&hellip;</p>
+
+<p>If you are willing to switch to HHVM, in production, in the next six months&hellip;</p>
+
+<p>If you have ever heard of Event Sourcing&hellip;</p>
+
+<p>If you get excited everytime someone names Redis (even if it&rsquo;s for no apparent reason at all, the important is to get excited regardless)&hellip;</p>
+
+<p>If you know the 5 tenets of the REST architectural style&hellip;</p>
+
+<p>if you want to give back to the (opensource community)[<a href="https://github.com/soa">https://github.com/soa</a>]</p>
+
+<p>If you like <a href="http://en.wikipedia.org/wiki/Shawarma">shawarma</a>&hellip;</p>
+
+<p>&hellip;if all of this and that, then think of coming over to Dubai to join
+a startup that has been disruptive in his market and has been writing
+a Service-Oriented Architecture (with <a href="http://www.styleisnecessity.com/2012/12/15/namshi-2/">style</a>! :&ndash;))
+based on Symfony2, HTTP APIs and Redis.</p>
+
+<p>We are looking for a <em>Senior API engineer</em>, and will offer a competitive
+retribution plus some other benefits (<a href="/images/cirpo.png">working with cirpo</a>, among others).</p>
+
+<h2>Frontend ducktyper</h2>
+
+<p>As a <em>Senior Frontend Engineer</em>, you will need to get bored with old school
+technologies like <strong>NodeJS, AngularJS, Gulp</strong>, on which our frontends are
+currently running (to be honest, if we had to rewrite today, we would go
+for PERL, #FORSURE).</p>
+
+<p>Unfortunately, your duties will also include having to deal with the DevTools
+in order to speed up performances and eliminate any waste and overengineering
+we might have on our frontends.</p>
+
+<p>Last but not least &ndash; I know, I&rsquo;m sorry :( &ndash; you will be disgusted to be consuming our backend APIs,
+trying to get your head around HTTP headers, caching and everything bad about webservices.</p>
+
+<p>Ah, I almost forgot to mention that we might have to add SPDY and WebP. Yesterday.</p>
+
+<h2>About Namshi</h2>
+
+<p>We honestly want to keep it cool and fun, that&rsquo;s why I wante to give this
+post this kind of tone.</p>
+
+<p>One thing I am really proud of, at Namshi, is that <a href="http://www.slideshare.net/odino/soa-with-symfony2-confoo-2014-in-montreal-ca/159">we don&rsquo;t stick to one
+technology</a> just because we think that we can do everything with it, we use the
+correct technology for each and every context. <strong>We use what makes sense</strong>, which
+means that even PERL could do something, one day, in our architecture.</p>
+
+<p>We&rsquo;d like to hire someone who relies on the community around him, who likes
+to write open source code (and use it as well!), someone who likes enterprise
+design patterns and is afraid every time a feature not covered by a test goes to production.</p>
+
+<p>The team has been steadily growing since I joined the company in 2012,
+both from an headcount perspective and the level of skills.</p>
+
+<p>Our guys and girls tend to have fun on a daily basis, commit to the company
+values (and to github as well!) and (I hope :-P) are having a great run
+with technologies that is not always possible to use in other scenarios.</p>
+
+<p>But we are also aware that without other points of view, without growth,
+without some fresh energy, our journey to perfection would be even harder
+(and I personally make it even harder, I know!).</p>
+
+<p>Even though we are happy with our stack and what we achieved so far, we&rsquo;re aware that
+we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)</p>
+
+<p>Drop us an email (<code>alessandro.nadalin@namshi.com</code>) and let&rsquo;s have fun together!</p>
+
+<p><a href="https://github.com/namshi">github</a>
+<a href="https://twitter.com/technamshi">twitter</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #29]]></title>
