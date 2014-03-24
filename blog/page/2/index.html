@@ -9,7 +9,8 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Sep 22nd, 2013 Project Management, Team performance We have been doing Daily Scrums for the past 15 months, but have you really thought of the real &hellip;">
+	<meta name="description" content="Sep 23rd, 2013 Automated Testing, Phpunit As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
+website. &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -88,6 +89,146 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-23T15:44:00+04:00" data-updated="true" itemprop="datePublished">Sep 23<span>rd</span>, 2013</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/automated-testing/'>Automated Testing</a>, <a class='category' href='/blog/categories/phpunit/'>Phpunit</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
+website. However these changes are not stable all the time, sometimes some of these new changes
+end up breaking other working parts of our applications without a prior alert until after we deploy it on
+our website. As a result we end up having some bugs and hot fixes either immediately after testing the
+new deployment or later on when people spot the bugs. Therefore Intensive QA is important because the
+manual test only is not enough, even though if we were careful sometimes we’ll probably forget to test
+all the affected parts by our changes. And after any deployment we need to test everything and if something
+was broken we would need to fix is ASAP.</p>
+
+<!-- more -->
+
+
+<p>We were working with <a href="http://framework.zend.com/">Zend Framework</a> which is considered as a good
+framework for MVC projects, but we decided to move to <a href="http://symfony.com/">Symfony2</a> as it is more
+user-friendly to enhance the structure of our projects and make it more organized, service based applications
+and most importantly to build automated unit tests. Automated tests are mainly important for testing our tickets
+and changes before/after they are deployed for quality assurance purposes. Moreover, such tests need to be
+integrated at early stages because it’s very hard to add them after the development of your application.
+Therefore, such tests need to be implemented in parallel with your application to make sure you cover
+all units and aspects of your application.</p>
+
+<h4>Testing our project using phpunit</h4>
+
+<p>Quality assurance is one of the most important aspects in application development, there are several tests
+that can be used for web applications like:</p>
+
+<ul>
+<li><h5>Unit Test</h5></li>
+</ul>
+
+
+<p>Unit Tests are usually conducted to test classes and functions within the application itself. It tests how
+some functions interact with others and if the desired output and behavior are obtained.</p>
+
+<ul>
+<li><h5>Functional Test</h5></li>
+</ul>
+
+
+<p>Functional test is mainly used test the integration between our application [Namshi] and other services
+and layers.</p>
+
+<p>This test is useful for checking how our application functions and interacts with internal and external services.</p>
+
+<h4>Why do we waste time on implementing automated tests</h4>
+
+<p>If we develop our applications without writing automated tests to save time, we will end up spending more
+time in fixing issues after each deployment. therefore adding automated tests will save our time,
+ensure the quality of our application and help us gaining the trust of our customers.</p>
+
+<h4>How to implement automated test</h4>
+
+<p>With the help of symfony2 implementing automated tests is much easier and feasible. First of all you will
+need to install <a href="http://phpunit.de/manual/current/en/index.html">phpunit</a> and then develop the test and
+ implement it in your application.</p>
+
+<h4>Would automated test modify the application&rsquo;s data</h4>
+
+<p>Automated tests should not affect/modify any data in our application. Therefore we create new databases
+for the testing environment, then we use data fixtures
+<a href="http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html">DoctrineFixturesBundle</a>
+to insert dummy data into the testing databases, and finally we add/delete required data before/after each test.</p>
+
+<h4>Testing <a href="http://namshi.com/">Namshi</a></h4>
+
+<p>We are implementing our tests for our application and all the services that interact with it.
+ Our purpose is to cover all aspects of <a href="http://namshi.com/">Namshi</a> with automated test (functional test or unit test)
+ to ensure the quality of our application and optimize it.</p>
+
+<p>for now we implemented around 200 test cases
+<img class="center" src="/images/posts/test-result-success.png" title="test result" ></p>
+
+<p>These tests won&rsquo;t pass if we have any bugs of the application
+<img class="center" src="/images/posts/test-result-failure.png" title="test result" ></p>
+
+<h4>How we assert test results?</h4>
+
+<p>we can assert test results in different ways depending on the response that we are expecting:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$this-&gt;assertEquals(400, $response-&gt;getStatusCode());
+</span><span class='line'>$this-&gt;assertContains("Expected text", $crawler-&gt;filter('*')-&gt;text());</span></code></pre></td></tr></table></div></figure>
+
+
+<p>we can also use <a href="http://php.net/manual/en/class.domxpath.php">DOMXPath</a> to filter html result</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$xpath  = new DOMXPath($doc);
+</span><span class='line'>$this-&gt;assertContains('expected value', $xpath-&gt;query("//td[@class='html tag class']")-&gt;item(0)-&gt;nodeValue);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or we can expect exceptions</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>/**
+</span><span class='line'> * @expectedException \Namshi\EntityBundle\Exception\InvalidPaymentMethod
+</span><span class='line'> */
+</span><span class='line'> public function testServiceWithInvalidPaymentMethod()
+</span><span class='line'> {
+</span><span class='line'>    $data   = initial data
+</span><span class='line'>    $result = $service-&gt;execute($data);
+</span><span class='line'> }</span></code></pre></td></tr></table></div></figure>
+
+</div></article>
 
 
     <article class="post">    <div class="meta">
