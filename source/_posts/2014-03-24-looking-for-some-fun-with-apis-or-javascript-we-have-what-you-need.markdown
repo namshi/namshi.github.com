@@ -35,7 +35,7 @@ If you get excited everytime someone names Redis (even if it's for no apparent r
 
 If you know the 5 tenets of the REST architectural style...
 
-if you want to give back to the (opensource community)[https://github.com/soa]
+if you want to give back to the [opensource community](https://github.com/soa)
 
 If you like [shawarma](http://en.wikipedia.org/wiki/Shawarma)...
 
