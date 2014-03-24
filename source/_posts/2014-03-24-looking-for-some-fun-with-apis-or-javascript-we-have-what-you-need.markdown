@@ -15,7 +15,7 @@ you are looking for.
 
 <!-- more -->
 
-Here at [Namshi](https://en-ae.namshi.com) things have gone quite well
+Here at [Namshi](https://en-ae.namshi.com), in the cold (yes, it's an euphemism) lands of Dubai, things have gone quite well
 so far, and we're extremely excited everytime there's room for
 someone else in our little room (actually, our office it's kind of an open-space).
 
@@ -35,7 +35,7 @@ If you get excited everytime someone names Redis (even if it's for no apparent r
 
 If you know the 5 tenets of the REST architectural style...
 
-if you want to give back to the [opensource community](https://github.com/soa)
+if you want to give back to the [opensource community](https://github.com/namshi)
 
 If you like [shawarma](http://en.wikipedia.org/wiki/Shawarma)...
 
