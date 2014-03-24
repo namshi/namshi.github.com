@@ -12,7 +12,7 @@ To the army of developers out there: if you are looking to
 boost your nerditude and have some fun, we might have what
 you are looking for.
 
-*(no, it's not a cake)*
+*(no, it's not a cookie)*
 
 <!-- more -->
 
@@ -36,6 +36,8 @@ If you get excited everytime someone names Redis (even if it's for no apparent r
 
 If you know the 5 tenets of the REST architectural style...
 
+if you want to give back to the (opensource community)[https://github.com/soa]
+
 If you like [shawarma](http://en.wikipedia.org/wiki/Shawarma)...
 
 ...if all of this and that, then think of coming over to Dubai to join
@@ -49,7 +51,7 @@ retribution plus some other benefits ([working with cirpo](/images/cirpo.png), a
 ## Frontend ducktyper
 
 As a *Senior Frontend Engineer*, you will need to get bored with old school
-technologies like **NodeJS and AngularJS**, on which our frontends are
+technologies like **NodeJS, AngularJS, Gulp**, on which our frontends are
 currently running (to be honest, if we had to rewrite today, we would go
 for PERL, #FORSURE).
 
@@ -91,3 +93,6 @@ Even though we are happy with our stack and what we achieved so far, we're aware
 we are far from being perfect: that's why we need **you** :)
 
 Drop us an email (`alessandro.nadalin@namshi.com`) and let's have fun together!
+
+[github](https://github.com/namshi)
+[twitter](https://twitter.com/technamshi)
