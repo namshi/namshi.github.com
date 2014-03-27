@@ -4,7 +4,7 @@
   <title><![CDATA[Category: TechThursday | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/techthursday/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-03-24T16:29:37+04:00</updated>
+  <updated>2014-03-27T16:33:10+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #31]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/27/newsletter-number-31/"/>
+    <updated>2014-03-27T16:17:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/27/newsletter-number-31</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<!-- more -->
+
+
+<p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
+
+<ul>
+<li>our <a href="https://itunes.apple.com/app/id840127349?mt=8&amp;ls=1">IOS app is available in the AppStore</a>!</li>
+<li>we released a <a href="http://www.youtube.com/watch?v=HN15lWEyRJY">new TV commercial</a>!</li>
+<li>we are looking for a <a href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/">frontend and backend code monkeys</a>!</li>
+</ul>
+
+
+<p>And now&hellip;this week in Tech:</p>
+
+<ul>
+<li><a href="http://www.hippyvm.com">A PHP VM running over PyPy</a></li>
+<li><a href="http://docs.hhvm.com/manual/en/install.hack.conversion.php">What the heck is Hack?</a></li>
+<li><a href="https://github.com/showcases">Showcases of software built through GitHub</a></li>
+<li><a href="http://blog.meldium.com/home/2013/9/13/benchmarking-redis-on-aws-elasticache">Benchmarking Redis on Elasticache</a></li>
+<li><a href="http://robert.ocallahan.org/2014/03/introducing-rr.html">Debug anything with RR</a></li>
+<li><a href="http://stackoverflow.com/questions/18850860/how-do-i-clone-a-git-repo-that-has-become-too-large">How to clone a 10GB repo?</a></li>
+<li><a href="http://stevelorek.com/how-to-shrink-a-git-repository.html">How to Shrink a Git Repository</a></li>
+<li><a href="http://amasad.me/2014/03/16/why-im-excited-about-objectobserve/">Why I&rsquo;m Excited About Object.observe</a></li>
+<li><a href="http://buff.ly/1oBtm3d">Lesser-Known JavaScript Debugging Techniques</a></li>
+<li><a href="http://www.git-tower.com/blog/git-hosting-services-compared/">12 Git Hosting Services Compared</a></li>
+<li><a href="http://codegeekz.com/best-mobile-app-development-frameworks-for-developers/">Mobile app development frameworks</a></li>
+<li><a href="http://blog.elendev.com/development/php/symfony/use-a-database-as-translation-provider-in-symfony-2/">Loading translations from a db in Symfony 2</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #29]]></title>
@@ -140,35 +179,6 @@ is still here!</p>
 <li><a href="http://blog.malcovery.com/blog/10-cybersecurity-predictions-for-2014">10 cybersecurity predictions for 2014</a></li>
 <li><a href="http://gigaom.com/2014/02/11/record-breaking-ddos-attack-struck-on-monday-according-to-reports/">Record-breaking DDoS attack struck on Monday, according to reports</a></li>
 <li><a href="http://vuejs.org/">Vuejs: MVVM Made Simple</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #25]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/"/>
-    <updated>2014-02-07T22:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again! Oh, actually it&rsquo;s friday but&hellip;whatever! :)</p>
-
-<br/>
-
-
-<br/>
-
-
-<!-- more -->
-
-
-<ul>
-<li><a href="http://chadfowler.com/blog/2014/01/26/the-magic-of-strace/">Strace</a></li>
-<li><a href="https://github.com/HenrikJoreteg/fixpack">Fix your package.json!</a></li>
-<li><a href="http://www.sitepoint.com/guzzle-php-http-client/">Guzzle, an HTTP client for PHP</a></li>
-<li><a href="https://dutchweballiance.nl/techblog/the-definitive-remote-debug-and-unittest-with-phpstorm-guide-part-6/">Remote debugging and testing with PHPStorm</a></li>
-<li><a href="http://blog.gopivotal.com/case-studies-2/continuous-integration-scaling-to-74000-builds-per-day-with-travis-ci-rabbitmq">Scaling 74k builds a day</a></li>
-<li><a href="https://37signals.com/">Goodbye 37signals, welcome Basecamp!</a></li>
-<li><a href="http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/">REST APIs with Symfony2</a></li>
 </ul>
 
 ]]></content>
