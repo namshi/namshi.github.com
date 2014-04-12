@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-03-27T16:33:10+04:00</updated>
+  <updated>2014-04-12T22:24:13+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,67 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #33]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/12/newsletter-number-33/"/>
+    <updated>2014-04-12T22:20:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/12/newsletter-number-33</id>
+    <content type="html"><![CDATA[<p>Heya! even though it&rsquo;s late, there always time for the
+Namshi newsletter!</p>
+
+<p>Here you go with the interesting resources we&rsquo;ve spotted
+over the last week.</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://thescoop.co">Hacker News, Designer News and Product Hunt all together!</a></li>
+<li><a href="http://superherojs.com">Awesome, really AWESOME javascript resource</a></li>
+<li><a href="http://www.ng-newsletter.com/posts/building-2048-in-angularjs.html%20-">Building 2048 game in Angular JS</a></li>
+<li><a href="http://foreach.org/post/82077677794/premature-optimization">Now is the right time to optimize software</a></li>
+<li><a href="http://readwrite.com/2014/04/07/open-source-software-cost-recruiting-participation%20-">The Reasons Businesses Use Open Source Are Changing Faster Than You Realize</a></li>
+<li><a href="https://github.com/hypertexthero/fn">Food News is Hacker News for food, built using Drum &amp; Mezzanine.</a></li>
+<li><a href="http://www.starklin.es">All the traffic from all your sites, in real time</a></li>
+<li><a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a></li>
+<li><a href="http://www.toptal.com/android/developing-mobile-web-apps-when-why-and-how">Developing Mobile Web Apps: When, Why, and How</a></li>
+<li><a href="http://2014.jsday.it/talk/angularjs-for-mobile/">jsDay</a> and <a href="http://2014.phpday.it/talk/dont-screw-it-up-how-to-build-durable-web-apis/">phpDay</a> in Italy</li>
+<li><a href="http://buff.ly/1n6m4TZ">Famo.us is now open source</a></li>
+<li><a href="https://github.com/PenturaLabs/Linux_Exploit_Suggester">Linux Exploit Suggester (based on operating system release number)</a></li>
+<li><a href="https://github.com/draios/sysdig">A system exploration and troubleshooting tool</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #32]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/03/newsletter-number-32/"/>
+    <updated>2014-04-03T18:21:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/03/newsletter-number-32</id>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/"><strong>TechThursday</strong>!</a></p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="https://github.com/mechio/takana">A Sass/CSS live-editor</a></li>
+<li><a href="https://github.com/Jahaja/psdash">A system information web dashboard for linux</a></li>
+<li><a href="http://highscalability.com/blog/2014/3/17/intuitively-showing-how-to-scale-a-web-application-using-a-c.html">Showing How To Scale A Web Application Using A Coffee Shop As An Example</a></li>
+<li><a href="https://blog.logentries.com/2014/03/5-great-blogs-for-devops/">5 great blogs for Dev ops</a></li>
+<li><a href="http://code.tutsplus.com/articles/test-code-coverage-from-myth-to-reality--cms-20442">Test Code Coverage: From Myth to Reality</a></li>
+<li><a href="http://linoxide.com/guide/linux-command-shelf.html">Linux Commands In Structured Order with Detailed Reference</a></li>
+<li><a href="http://www.anton-pirker.at/delete-your-code/">Delete unused code as soon as possible. It will improve your code quality</a></li>
+<li><a href="http://blog.servergrove.com/2014/04/01/deployment-symfony2-applications-ansible/">Deploying symfony 2 apps with Ansible</a></li>
+<li><a href="http://ipython.org/ipython-doc/dev/whatsnew/version2.0.html">IPython 2.0</a></li>
+<li><a href="http://jasonbos.co/two-timestamp-columns-in-mysql/">Two Timestamp Columns in MySQL</a></li>
+<li><a href="http://www.patatap.com/">An interesting example of what you can in modern browsers these days</a></li>
+<li><a href="http://helloanselm.com/2014/web-performance-one-or-thousand-media-queries/">Finally we have an answer to this question, that every front-end developer raised at least once in his life</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #31]]></title>
