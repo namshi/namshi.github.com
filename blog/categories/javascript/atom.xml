@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: javascript | Namshi]]></title>
+  <title><![CDATA[Category: JavaScript | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-04-12T22:24:13+04:00</updated>
+  <updated>2014-04-18T18:33:06+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,170 +14,38 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #33]]></title>
-    <link href="http://tech.namshi.com/blog/2014/04/12/newsletter-number-33/"/>
-    <updated>2014-04-12T22:20:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/04/12/newsletter-number-33</id>
-    <content type="html"><![CDATA[<p>Heya! even though it&rsquo;s late, there always time for the
-Namshi newsletter!</p>
+    <title type="html"><![CDATA[Newsletter #34]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/18/newsletter-number-34/"/>
+    <updated>2014-04-18T18:27:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/18/newsletter-number-34</id>
+    <content type="html"><![CDATA[<p>First of all, some self-promotion: a few weeks ago we had an internal presentation
+about <a href="http://www.slideshare.net/odino/lets-rock">the future of tech at Namshi</a>, have a look! ;&ndash;)</p>
 
-<p>Here you go with the interesting resources we&rsquo;ve spotted
-over the last week.</p>
+<p>And now&hellip;</p>
 
 <!-- more -->
 
+
+<p>&hellip;another <strong>TechThursday</strong> here! Even though we might be a little
+late, here are the links that the share among the team.</p>
 
 <ul>
-<li><a href="http://thescoop.co">Hacker News, Designer News and Product Hunt all together!</a></li>
-<li><a href="http://superherojs.com">Awesome, really AWESOME javascript resource</a></li>
-<li><a href="http://www.ng-newsletter.com/posts/building-2048-in-angularjs.html%20-">Building 2048 game in Angular JS</a></li>
-<li><a href="http://foreach.org/post/82077677794/premature-optimization">Now is the right time to optimize software</a></li>
-<li><a href="http://readwrite.com/2014/04/07/open-source-software-cost-recruiting-participation%20-">The Reasons Businesses Use Open Source Are Changing Faster Than You Realize</a></li>
-<li><a href="https://github.com/hypertexthero/fn">Food News is Hacker News for food, built using Drum &amp; Mezzanine.</a></li>
-<li><a href="http://www.starklin.es">All the traffic from all your sites, in real time</a></li>
-<li><a href="http://www.ng-newsletter.com/posts/angular-on-mobile.html">The Definitive Guide to Angular on Mobile</a></li>
-<li><a href="http://www.toptal.com/android/developing-mobile-web-apps-when-why-and-how">Developing Mobile Web Apps: When, Why, and How</a></li>
-<li><a href="http://2014.jsday.it/talk/angularjs-for-mobile/">jsDay</a> and <a href="http://2014.phpday.it/talk/dont-screw-it-up-how-to-build-durable-web-apis/">phpDay</a> in Italy</li>
-<li><a href="http://buff.ly/1n6m4TZ">Famo.us is now open source</a></li>
-<li><a href="https://github.com/PenturaLabs/Linux_Exploit_Suggester">Linux Exploit Suggester (based on operating system release number)</a></li>
-<li><a href="https://github.com/draios/sysdig">A system exploration and troubleshooting tool</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331">Refactoring Legacy code</a></li>
+<li><a href="http://data.heapanalytics.com/how-to-lie-with-data-visualization">How to Lie with Data Visualization</a></li>
+<li><a href="http://buff.ly/1m0tTNt">7 backbone.js mistakes you must fix today &mdash; a list not only restricted to backbone!</a></li>
+<li><a href="http://blog.someguy123.com/dispelling-the-hate-against-php/">Dispelling the hate against PHP</a></li>
+<li><a href="http://www.sitepoint.com/getting-started-php-underscore/">Underscore in PHP</a></li>
+<li><a href="https://github.com/DaftMonk/generator-angular-fullstack">Yeoman Angular full stack generator</a></li>
+<li><a href="https://github.com/diegonetto/generator-ionic">Yeoman Ionic Angular generator</a></li>
+<li><a href="http://dcurt.is/facebooks-predicament">Whatever goes up, that&rsquo;s what we do (facebook approach to feature release)</a></li>
+<li><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular">Comparing Node.js Promises, Try/Catch, Angular Zone.js and yes, Zone</a></li>
+<li><a href="http://niravigad.com/responsive_man/">The responsive man&hellip;</a></li>
+<li><a href="http://www.slideshare.net/ziobrando/rethinking-enterprise-software-codemotion-2014">Rethinking enterprise software</a></li>
+<li><a href="http://www.slideshare.net/fabio.fabbrucci/codemotion-33414097">Lean UX Development</a></li>
+<li><a href="http://buff.ly/1iKaJ9c">Webservers shouldn&rsquo;t have direct access to keys</a></li>
+<li><a href="http://buff.ly/1jEbXF1">Ractive.js -The diamond age of web development</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
-    <updated>2014-03-24T14:37:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
-    <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
-boost your nerditude and have some fun, we might have what
-you are looking for.</p>
-
-<p><em>(no, it&rsquo;s not a cookie)</em></p>
-
-<!-- more -->
-
-
-<p>Here at <a href="https://en-ae.namshi.com">Namshi</a>, in the cold (yes, it&rsquo;s an euphemism) lands of Dubai, things have gone quite well
-so far, and we&rsquo;re extremely excited everytime there&rsquo;s room for
-someone else in our little room (actually, our office it&rsquo;s kind of an open-space).</p>
-
-<p>I am very happy to announce that we are now actively looking for 2
-new members of our <a href="/team">team</a> in order to expand our team, vision,
-objectives and count of the <a href="https://www.google.com/search?q=shisha&amp;espv=2&amp;es_sm=125&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=zA8wU46_CoezhAePwgE&amp;ved=0CAkQ_AUoAQ&amp;biw=1687&amp;bih=871">shishas</a> we order when we&rsquo;re out together.</p>
-
-<h2>API monkey</h2>
-
-<p>If you know what the <code>PSR-4</code> is&hellip;</p>
-
-<p>If you are willing to switch to HHVM, in production, in the next six months&hellip;</p>
-
-<p>If you have ever heard of Event Sourcing&hellip;</p>
-
-<p>If you get excited everytime someone names Redis (even if it&rsquo;s for no apparent reason at all, the important is to get excited regardless)&hellip;</p>
-
-<p>If you know the 5 tenets of the REST architectural style&hellip;</p>
-
-<p>if you want to give back to the <a href="https://github.com/namshi">opensource community</a></p>
-
-<p>If you like <a href="http://en.wikipedia.org/wiki/Shawarma">shawarma</a>&hellip;</p>
-
-<p>&hellip;if all of this and that, then think of coming over to Dubai to join
-a startup that has been disruptive in his market and has been writing
-a Service-Oriented Architecture (with <a href="http://www.styleisnecessity.com/2012/12/15/namshi-2/">style</a>! :&ndash;))
-based on Symfony2, HTTP APIs and Redis.</p>
-
-<p>We are looking for a <em>Senior API engineer</em>, and will offer a competitive
-retribution plus some other benefits (<a href="/images/cirpo.png">working with cirpo</a>, among others).</p>
-
-<h2>Frontend ducktyper</h2>
-
-<p>As a <em>Senior Frontend Engineer</em>, you will need to get bored with old school
-technologies like <strong>NodeJS, AngularJS, Gulp</strong>, on which our frontends are
-currently running (to be honest, if we had to rewrite today, we would go
-for PERL, #FORSURE).</p>
-
-<p>Unfortunately, your duties will also include having to deal with the DevTools
-in order to speed up performances and eliminate any waste and overengineering
-we might have on our frontends.</p>
-
-<p>Last but not least &ndash; I know, I&rsquo;m sorry :( &ndash; you will be disgusted to be consuming our backend APIs,
-trying to get your head around HTTP headers, caching and everything bad about webservices.</p>
-
-<p>Ah, I almost forgot to mention that we might have to add SPDY and WebP. Yesterday.</p>
-
-<h2>About Namshi</h2>
-
-<p>We honestly want to keep it cool and fun, that&rsquo;s why I wante to give this
-post this kind of tone.</p>
-
-<p>One thing I am really proud of, at Namshi, is that <a href="http://www.slideshare.net/odino/soa-with-symfony2-confoo-2014-in-montreal-ca/159">we don&rsquo;t stick to one
-technology</a> just because we think that we can do everything with it, we use the
-correct technology for each and every context. <strong>We use what makes sense</strong>, which
-means that even PERL could do something, one day, in our architecture.</p>
-
-<p>We&rsquo;d like to hire someone who relies on the community around him, who likes
-to write open source code (and use it as well!), someone who likes enterprise
-design patterns and is afraid every time a feature not covered by a test goes to production.</p>
-
-<p>The team has been steadily growing since I joined the company in 2012,
-both from an headcount perspective and the level of skills.</p>
-
-<p>Our guys and girls tend to have fun on a daily basis, commit to the company
-values (and to github as well!) and (I hope :-P) are having a great run
-with technologies that is not always possible to use in other scenarios.</p>
-
-<p>But we are also aware that without other points of view, without growth,
-without some fresh energy, our journey to perfection would be even harder
-(and I personally make it even harder, I know!).</p>
-
-<p>Even though we are happy with our stack and what we achieved so far, we&rsquo;re aware that
-we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)</p>
-
-<p>Drop us an email (<code>alessandro.nadalin@namshi.com</code>) and let&rsquo;s have fun together!</p>
-
-<p><a href="https://github.com/namshi">github</a>
-<a href="https://twitter.com/technamshi">twitter</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #23]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
-    <updated>2014-01-23T17:31:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
-    <content type="html"><![CDATA[<p>Hello, this is <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a>!</p>
-
-<br/>
-
-
-<br/>
-
-
-<!-- more -->
-
-
-<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
-
-<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
-
-<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
-
-<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
-
-<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
-
-<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
-
-<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
-
-<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
-
-<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
-
-<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
 ]]></content>
   </entry>
   

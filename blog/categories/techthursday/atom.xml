@@ -4,7 +4,7 @@
   <title><![CDATA[Category: TechThursday | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/techthursday/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-04-12T22:24:13+04:00</updated>
+  <updated>2014-04-18T18:33:06+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #34]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/18/newsletter-number-34/"/>
+    <updated>2014-04-18T18:27:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/18/newsletter-number-34</id>
+    <content type="html"><![CDATA[<p>First of all, some self-promotion: a few weeks ago we had an internal presentation
+about <a href="http://www.slideshare.net/odino/lets-rock">the future of tech at Namshi</a>, have a look! ;&ndash;)</p>
+
+<p>And now&hellip;</p>
+
+<!-- more -->
+
+
+<p>&hellip;another <strong>TechThursday</strong> here! Even though we might be a little
+late, here are the links that the share among the team.</p>
+
+<ul>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331">Refactoring Legacy code</a></li>
+<li><a href="http://data.heapanalytics.com/how-to-lie-with-data-visualization">How to Lie with Data Visualization</a></li>
+<li><a href="http://buff.ly/1m0tTNt">7 backbone.js mistakes you must fix today &mdash; a list not only restricted to backbone!</a></li>
+<li><a href="http://blog.someguy123.com/dispelling-the-hate-against-php/">Dispelling the hate against PHP</a></li>
+<li><a href="http://www.sitepoint.com/getting-started-php-underscore/">Underscore in PHP</a></li>
+<li><a href="https://github.com/DaftMonk/generator-angular-fullstack">Yeoman Angular full stack generator</a></li>
+<li><a href="https://github.com/diegonetto/generator-ionic">Yeoman Ionic Angular generator</a></li>
+<li><a href="http://dcurt.is/facebooks-predicament">Whatever goes up, that&rsquo;s what we do (facebook approach to feature release)</a></li>
+<li><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular">Comparing Node.js Promises, Try/Catch, Angular Zone.js and yes, Zone</a></li>
+<li><a href="http://niravigad.com/responsive_man/">The responsive man&hellip;</a></li>
+<li><a href="http://www.slideshare.net/ziobrando/rethinking-enterprise-software-codemotion-2014">Rethinking enterprise software</a></li>
+<li><a href="http://www.slideshare.net/fabio.fabbrucci/codemotion-33414097">Lean UX Development</a></li>
+<li><a href="http://buff.ly/1iKaJ9c">Webservers shouldn&rsquo;t have direct access to keys</a></li>
+<li><a href="http://buff.ly/1jEbXF1">Ractive.js -The diamond age of web development</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #33]]></title>
@@ -151,38 +187,6 @@ is still here!</p>
 <p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
 
 <p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #27]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/"/>
-    <updated>2014-02-20T15:41:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27</id>
-    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
-
-<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://github.com/VerbalExpressions/PHPVerbalExpressions">VerbalExpressions is a PHP library that helps to construct hard regular expressions.</a></p></li>
-<li><p><a href="http://jsonstub.com/">Fake the backend while you develop the frontend</a></p></li>
-<li><p><a href="http://www.xdata.me/?p=301">Largest Redis Clusters Ever</a></p></li>
-<li><p><a href="https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html">5 surprisingly painful things about client-side JS</a></p></li>
-<li><p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html">The Next Phase of Node.js</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=aQipuiTcn3U">Protractor talks at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/keeping-php-code-well-documented/">Keeping Your PHP Code Well Documented</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=3IqtmUscE_U">Zones.js talk at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/hhvm-hack-part-1/">HHVM and Hack – Can We Expect Them to Replace PHP?</a></p></li>
-<li><p><a href="https://medium.com/user-experience-researche/e6a1e37028b4">A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.</a></p></li>
-<li><p><a href="http://www.useronboard.com/how-evernote-onboards-new-users/">How Evernote Onboards New Users A new case-history on the User Onboarding website.</a></p></li>
-<li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
-<li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
-<li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
-</ul>
-
 ]]></content>
   </entry>
   
