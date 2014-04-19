@@ -39,7 +39,7 @@ When not programming, he can be found blogging about technology related topics.
 ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
 
 {% img left team /images/ayham.jpg Ayham Alzoubi %}
-
+<br />
 **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
 Ayham holds a Bachelor's Degree in Information technology Engineering from Damascus University in Syria.
 He is working in Web Development and he was involved in different projects at Namshi.
@@ -54,17 +54,17 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 he hopes to be empowered and empowering others in this field.
 <br />
 <br />
+<br />
+<br />
 ##<div id="Mohamad Hallal">Mohamad Hallal</div>
 
 {% img left team /images/hallal.jpg Mohamad Hallal %}
-
 **Mohamad Hallal** is a Junior Software Engineer at Namshi. He joined the Tech Team in May 2013.<br />
-Hallal holds a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering
-from the American University of Sharjah.<br />
-His passion for programming and technology led him to start his career in Web Development.
-He is the designer and creator of Namshi's Tech Blog and is currently involved in creating automated
-testing procedures for Namshi.<br />
-With a pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's technologies and best practices.
+Hallal is an American University of Sharjah Alumni holding a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering - Magna Cum Laude.<br />
+His passion for programming and technology led him to start his career in Software Engineering/Web Development at Namshi.
+Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.
+His interests are sliding towards the Backend and API solutions implementation and maintenance.
+With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
 <br />
 <br />
 ##<div id="Luciano Amodio">Luciano Amodio</div>
