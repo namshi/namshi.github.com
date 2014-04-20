@@ -15,7 +15,6 @@ He heavily focused his attention to agile practices, patterns of enterprise appl
 Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.<br />
 Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
 <br />
-<br />
 ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
 
 {% img left team /images/cirpo.jpg Alessandro Cinelli %}
@@ -26,7 +25,6 @@ and methodologies. His focus is on web businesses where agile and XP methods cou
 Besides his commitment to his job, he has a track record of setting up and running developer groups to discuss and share the latest advancements in web technologies.
 He was also an active board member of Italian PHP, Javascript User Group, WEBdeBS and has co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
 <br />
-<br />
 ##<div id="Geshan Manandhar">Geshan Manandhar</div>
 
 {% img left team /images/geshan.jpg Geshan Manandhar %}
@@ -36,15 +34,23 @@ Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is
 When not programming, he can be found blogging about technology related topics.
 <br />
 <br />
+##<div id="Muhammad Riaz">Muhammad Riaz</div>
+
+{% img left team /images/riaz.jpeg Muhammad Riaz %}
+
+**Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.<br />
+He has over five years of PHP development experience.He is interested in Enterprise applications,<br />
+scalable web architecture and software development methodologies.<br />
+<br />
+<br />
 ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
 
 {% img left team /images/ayham.jpg Ayham Alzoubi %}
-<br />
+
 **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
 Ayham holds a Bachelor's Degree in Information technology Engineering from Damascus University in Syria.
 He is working in Web Development and he was involved in different projects at Namshi.
 Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
-<br />
 <br />
 ##<div id="Hossam Faris">Hossam Faris</div>
 
@@ -52,8 +58,6 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 
 **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun, <br />
 he hopes to be empowered and empowering others in this field.
-<br />
-<br />
 <br />
 <br />
 ##<div id="Mohamad Hallal">Mohamad Hallal</div>
@@ -65,7 +69,6 @@ His passion for programming and technology led him to start his career in Softwa
 Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.
 His interests are sliding towards the Backend and API solutions implementation and maintenance.
 With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
-<br />
 <br />
 ##<div id="Luciano Amodio">Luciano Amodio</div>
 
