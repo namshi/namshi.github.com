@@ -11,6 +11,14 @@ Each Thursday, here you can find the content of our internal tech newsletter. [#
 
 (we are going to publish the past newsletters soon...)
 
+[#34 [18-04-2014]](/blog/2014/04/18/newsletter-number-34/)
+
+[#33 [12-04-2014]](/blog/2014/04/12/newsletter-number-33/)
+
+[#32 [03-04-2014]](/blog/2014/04/03/newsletter-number-32/)
+
+[#31 [27-03-2014]](/blog/2014/03/27/newsletter-number-31/)
+
 [#30 [20-03-2014]](/blog/2014/03/20/newsletter-number-30/)
 
 [#29 [13-03-2014]](/blog/2014/03/13/newsletter-at-29/)
