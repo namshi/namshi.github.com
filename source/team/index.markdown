@@ -33,15 +33,13 @@ He was also an active board member of Italian PHP, Javascript User Group, WEBdeB
 Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is an open source preacher. <br />
 When not programming, he can be found blogging about technology related topics.
 <br />
-<br />
 ##<div id="Muhammad Riaz">Muhammad Riaz</div>
 
 {% img left team /images/riaz.jpeg Muhammad Riaz %}
 
 **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.<br />
 He has over five years of PHP development experience.He is interested in Enterprise applications,<br />
-scalable web architecture and software development methodologies.<br />
-<br />
+scalable web architecture and software development methodologies.
 <br />
 ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
 
@@ -58,7 +56,6 @@ Ayham is working in implementing automated testing procedures for Namshi, and wr
 
 **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun, <br />
 he hopes to be empowered and empowering others in this field.
-<br />
 <br />
 ##<div id="Mohamad Hallal">Mohamad Hallal</div>
 
@@ -82,7 +79,6 @@ Other Interests:<br />
 - Interaction Design (hardware: arduino. software: processing, MAX/MSP)
 - Philosophy, esoterism, playing piano, photography and research.
 <br />
-<br />
 ##<div id="Haneen Musleh">Haneen Musleh</div>
 
 {% img left team /images/haneen.jpg Haneen Musleh %}
@@ -92,7 +88,6 @@ Haneen holds a Bachelor's Degree in Computer Engineering, She basically channels
 <br />
 She hopes one day she will be able to change the world and she is a shopaholic who needs counseling. <br />
 In her free time she's either WhatsApping or at the gym.
-<br />
 <br />
 ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
 
@@ -104,7 +99,6 @@ Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria
 Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.<br />
 Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
 <br />
-<br />
 ##<div id="Vishnu Nair">Vishnu Nair</div>
 
 {% img left team /images/vishnu.jpg Vishnu Nair %}
@@ -114,7 +108,6 @@ His Job responsibilities include assisting the development team in infrastructur
 He maintains and improves the existing server infrastructure as well as new installations and backups. He monitors uptime, failover, infrastructure performance proactively and many more.<br />
 He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He holds a Bachelor's Degree in B.TECH from the Pondicherry University in India.
 <br />
-<br />
 ##<div id="Gurjeet Singh">Gurjeet Singh</div>
 
 {% img left team /images/gurjeet.jpg Gurjeet Singh %}
@@ -122,5 +115,4 @@ He has around 3.7 years of experience in Linux and Cloud Computing Technologies.
 **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
 He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
 He has around 8 years of experience in Telecom , Network and Linux Technologies.
-<br />
 <br />
