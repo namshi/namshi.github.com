@@ -46,6 +46,9 @@ article{
 			ul, ol, dl{
 				margin-top: 0;
 			}
+            li {
+              overflow: hidden;
+            }
 		}
 		strong{
 			font-weight: bold;
