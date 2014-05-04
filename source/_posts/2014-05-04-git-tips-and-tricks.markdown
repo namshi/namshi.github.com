@@ -3,6 +3,7 @@ layout: post
 title: "Git and Github at Namshi: our flow and tips&tricks"
 date: 2014-05-04 20:38
 comments: true
+author: Alessandro Cinelli (cirpo)
 categories: [git, github, tips, tricks, namshi]
 ---
 
@@ -13,20 +14,20 @@ In the true spirits of "giving back to the community" we also sometimes release 
 ### Our GIT flow
 
 Git is so powerful and flexible that at the beginning you feel kinda lost: *"How should I use it?"*  *"Should I use merge or rebase?"*  *"master, develop, release branches?"*
-And the you try to find the answer via google and you find the solution: ["GIT FLOW!"](http://nvie.com/posts/a-successful-git-branching-model/).
+And then you try to find the answer via google and you find the solution: ["GIT FLOW!"](http://nvie.com/posts/a-successful-git-branching-model/).
 
 > No, no, and again **NO!** (please say it loud).
 
-"Git flow" is one of the several way to use Git, but it's not a standard and it could not fit well in your current organisation/codebase/team flow.
+"Git flow" is one of the several ways to use git, but it's not a standard and it could not fit well in your current organisation/codebase/team flow.
 
-You should embrace the power of Git, and find your tailor-made solution.
+You should embrace the power of git, and find your tailor-made solution.
 
 At Namshi we basically have two main branches: master and develop.
 
 On master you exactly have what's running on production, while develop is our development branch (surprisingly)
 
 When we pick a task we usually create a branch from develop. Once we are done with a task we rebase our feature branch from develop, in order to be sure that the new
-code works and doesn't break anything before being merged on develop. Then we open a pull request(PR) on Github. Once the PR is reviewed and approved
+code works and doesn't break anything before being merged on develop. Then we open a pull request (PR) on Github. Once the PR is reviewed and approved
 it gets merged in the develop branch.
 There is (still) a lot of discussion (and flames) about using the rebase command, because basically it rewrites the current commits history.
 It's true that potentially you can screw your codebase, but we are still safe because you can still rely on your teammates local repositories and
@@ -55,7 +56,7 @@ git config --global core.filemode false
 ```
 
 #### rerere
-The git rerere functionality stands for *"reuse recorded resolution"* and as the name implies, it allows you to ask git to remember how you've resolved a hunk conflict so that the next time it sees the same conflict, git can automatically resolve it for you.
+The git rerere functionality stands for *"reuse recorded resolution"* and as the name implies, it allows you to ask git to remember how you've resolved a knotty conflict so that the next time you have the same conflict, git can automatically resolve it for you.
 ```
 git config --global rerere.enabled true
 ```
@@ -64,15 +65,15 @@ git config --global rerere.enabled true
 Instead of set everytime common files to ignore in your local .gitignore file (i.e. your IDE config file, .DS_Store etc) you can use a global ignore files
 that will automatically apply to all your repos.
 ```
-git config --global core.excludesfile ~/.gitignore_global
+git config --global core.excludesfile ~/.gitignore
 ```
-**tip:** I have a `my_temp` entry in my .gitignore_global file, so that I can create a cirpo_temp dir in my working copies and be free to put any experimental and temporary code/quick testing code
+**tip:** I have a `my_temp` entry in my .gitignore global file, so that I can create a `my_temp` dir in my working copies and be free to put any experimental and temporary code/quick testing code
 in it without changing project on my IDE and using the actual codebase.
 
 
 #### pull with rebase, not merge
 Everytime we pull from a remote repository, we do a `git pull --rebase` because we don't want to mess up with our local commits.
-Instead of specify it everytime, you can make the default beaviour when you pull:
+Instead of specify it everytime, you can make it the default beaviour when you pull:
 ```
 git config --global branch.auto-setuprebase always
 ```
@@ -84,12 +85,6 @@ Git can autocorrect you:
 git config --global help.autocorrect true
 ```
 
-#### default tracking
-Bored of setting up tracking branches by hand?
-```
-git config --global push.default upstream
-```
-
 ```
 ➜  namshi.github.com git:(source) ✗ git cmmit
 git: 'cmmit' is not a git command. See 'git --help'.
@@ -97,14 +92,29 @@ git: 'cmmit' is not a git command. See 'git --help'.
 Did you mean this?
 	commit
 ```
+#### default tracking
+Bored of setting up tracking branches by hand?
+```
+git config --global push.default upstream
+```
 
 ### Git aliases
 Git supports aliases via the `git config --global alias.<alias_name> "<git command>"`, but here in Namshi we tend to use the shell aliases
-because git is the only revision control system and source code management we use.
+because you can save even more chars and git is the only revision control system and source code management we use.
 
 #### checkout
 ```
 alias ck='git checkout'
+```
+
+#### checkout branch develop
+```
+alias dev='git checkout develop'
+```
+
+#### checkout branch master
+```
+alias master='git checkout master'
 ```
 
 #### create a new branch
@@ -141,6 +151,11 @@ alias fetch='git fetch'
 alias ci='git commit'
 ```
 
+#### tag
+```
+alias tag='git tag'
+```
+
 #### revert all changes
 ```
 alias undo='git reset --hard HEAD'
@@ -172,9 +187,9 @@ alias gdiff='git diff --word-diff'
 ### Tips
 
 * You messed up with a merge/rebase? Don't freak out, just use `git reflog` to check the local history command and sha1, and then `git reset --hard <sha1>`
-* After rebasing develop in your feature branch you end up with too many conflicts and messed commits history? Don't panic, create a new branch from develop and
-`git cherry-pick` all the commits you need.
-* Are my commits already on branch X? `git branch --contains <sha1>` is there to rescue you.
+* After rebasing develop in your feature branch you end up with too many conflicts and messed commits history? Don't panic, create a new feature branch from develop and
+`git cherry-pick` all the commits you need from your previous feature branch.
+* Is my commit already on branch X? `git branch --contains <sha1>` is there to rescue you.
 * You want to fetch a file from another branch without changing your current branch? `git checkout <other_branch_name> -- path/to/file`
 
  Here you can find the complete list of [aliases](https://gist.github.com/cirpo/86d43ef8ef87b4cfd031), and [here](https://gist.github.com/cirpo/343376f1ac7fb00204a0) the global .gitconfig we are using
