@@ -13,7 +13,7 @@ In the true spirit of "giving back to the community" we also publicly release so
 
 ### Our GIT flow
 
-Git is so powerful and flexible that at the beginning you feel kind of lost: *"How should I use it?"*  *"Should I use merge or rebase?"*  *"master, develop, release branches?"*
+Git is so powerful and flexible that at the beginning you feel kinda lost: *"How should I use it?"*  *"Should I use merge or rebase?"*  *"master, develop, release branches?"*
 And then you try to find the answer via google and you find the solution: ["GIT FLOW!"](http://nvie.com/posts/a-successful-git-branching-model/).
 
 > No, no, and again **NO!** (please say it out loud).
