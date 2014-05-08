@@ -9,7 +9,7 @@ categories:
 
 ---
 
-Here at  [Namehi](http://www.namshi.com) we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up tp date with the latest stable version of PHP, we are using [PHP 5.5](http://php.net/releases/5_5_0.php) for some time now. We also leverage the new features added in PHP 5.5, this post will shed light on some of the features that have come handy in our development process.
+Here at  [Namshi](http://www.namshi.com) we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up tp date with the latest stable version of PHP, we are using [PHP 5.5](http://php.net/releases/5_5_0.php) for some time now. We also leverage the new features added in PHP 5.5, this post will shed light on some of the features that have come handy in our development process.
 
 PHP [5.4](https://php.net/manual/en/migration54.new-features.php) and PHP [5.5](https://php.net/manual/en/migration55.new-features.php) both were featured packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:
 
