@@ -11,6 +11,8 @@ At [Namshi](https://www.namshi.com) for versioning and managing our large and as
 
 In the true spirit of "giving back to the community" we also publicly release some libraries that we use internally, [feel](https://github.com/namshi/NamshiUtilityBundle) [free](https://github.com/namshi/utils) [to](https://github.com/namshi/notificator) [use](https://github.com/namshi/jose) [them](https://github.com/namshi/ng-watchers) [and](https://github.com/namshi/emailvision) [contribute!](https://github.com/namshi)
 
+<!-- more -->
+
 ### Our GIT flow
 
 Git is so powerful and flexible that at the beginning you feel kinda lost: *"How should I use it?"*  *"Should I use merge or rebase?"*  *"master, develop, release branches?"*
