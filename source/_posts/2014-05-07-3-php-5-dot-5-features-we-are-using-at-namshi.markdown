@@ -9,9 +9,9 @@ categories:
 
 ---
 
-Here at  [Namshi](http://www.namshi.com) we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up tp date with the latest stable version of PHP, we are using [PHP 5.5](http://php.net/releases/5_5_0.php) for some time now. We also leverage the new features added in PHP 5.5, this post will shed light on some of the features that have come handy in our development process.
+Here at  [Namshi](http://www.namshi.com) we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using [PHP 5.5](http://php.net/releases/5_5_0.php) for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.
 
-PHP [5.4](https://php.net/manual/en/migration54.new-features.php) and PHP [5.5](https://php.net/manual/en/migration55.new-features.php) both were featured packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:
+PHP [5.4](https://php.net/manual/en/migration54.new-features.php) and PHP [5.5](https://php.net/manual/en/migration55.new-features.php) both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ $products = [
 ];
 
 ```
-For arrays like in above example or if you have result set from a database query [array_column](http://www.php.net/manual/en/function.array-column.php) PHP function comes in very handy to extrct out the needed data as shown below:
+For arrays like in the above example or for result sets from a database query, the [array_column](http://www.php.net/manual/en/function.array-column.php) PHP function comes in very handy to extract out the needed data as shown below:
 
 ```php
 $productTitles = array_column($products, "title");
@@ -43,7 +43,7 @@ Array
     [2] => Swoosh T-shirt
 )
 
-//if you want to create a key value array where key is the sku and value is the price, it can be done by following call
+//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call
 
 $productPrices = array_column($products, "price", "sku");
 
@@ -55,14 +55,14 @@ Array
 )
 
 ```
-The PHP `array_colum` function is an easy yet effective way to extact out needed informaton from an array which will make working with PHP arrays pleasant than usual. 
+The PHP `array_colum` function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual. 
 
 ### finally
 
-Finally the `finally` keyword has been added to PHP, as mentioned in the [exceptions](http://www.php.net/manual/en/language.exceptions.php) documentation in the PHP website: 
+Finally, the `finally` keyword has been added to PHP, as mentioned in the [exceptions](http://www.php.net/manual/en/language.exceptions.php) documentation on the PHP website: 
 >Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.
 
-This makes a very good usecase when some code needs to be executed if the exception occurred and `return` has to be called. A typical example is closing the database connection:
+This makes a very good use case when some code needs to be executed if an exception occurs and `return` has to be called. A typical example is closing the database connection:
 
 ```php
 try {
@@ -76,7 +76,7 @@ try {
   }
 ```
 
-There are other use cases of finally still beware of using it as you might find our your exception has been [silenced](http://www.php.net/manual/en/language.exceptions.php#114207). Use finallay with care and utilize it where needed.
+There are other use cases of finally, still beware of using it as you might find out your exception has been [silenced](http://www.php.net/manual/en/language.exceptions.php#114207). Use finally with care and utilize it where needed.
 
 ### DateTimeImmutable
 
@@ -106,4 +106,4 @@ $this->createdAt = new DateTimeImmutable();
 $this->updatedAt = new DateTimeImmutable();
 ```
 
-There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope this mention of this useful subset helps you utilize them to solve issues.
+There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.
