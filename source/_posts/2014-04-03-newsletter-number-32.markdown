@@ -8,7 +8,6 @@ categories:
 
 Welcome to [**TechThursday**!](/blog/categories/techthursday/)
 
-<!-- more -->
 
 * [A Sass/CSS live-editor](https://github.com/mechio/takana)
 * [A system information web dashboard for linux](https://github.com/Jahaja/psdash)

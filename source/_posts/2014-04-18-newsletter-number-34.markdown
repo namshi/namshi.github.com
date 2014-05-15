@@ -11,8 +11,6 @@ about [the future of tech at Namshi](http://www.slideshare.net/odino/lets-rock),
 
 And now...
 
-<!-- more -->
-
 ...another **TechThursday** here! Even though we might be a little
 late, here are the links that the share among the team.
 

@@ -8,8 +8,6 @@ categories: [newsletter, TechThursday, PHP, redis, hhvm, Namshi, git, ]
 
 It's **TechThursday** again: here's what we've been excited about over the past week!
 
-<!-- more -->
-
 Oh, before the news, give us **3 seconds** to announce that:
 
 * our [IOS app is available in the AppStore](https://itunes.apple.com/app/id840127349?mt=8&ls=1)!

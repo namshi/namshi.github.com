@@ -12,8 +12,6 @@ Namshi newsletter!
 Here you go with the interesting resources we've spotted
 over the last week.
 
-<!-- more -->
-
 * [Hacker News, Designer News and Product Hunt all together!](http://thescoop.co)
 * [Awesome, really AWESOME javascript resource](http://superherojs.com)
 * [Building 2048 game in Angular JS](http://www.ng-newsletter.com/posts/building-2048-in-angularjs.html -)
