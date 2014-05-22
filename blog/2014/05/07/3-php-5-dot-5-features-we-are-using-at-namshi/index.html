@@ -1,0 +1,357 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>3 PHP 5.5 features we are using at Namshi - Namshi</title>
+	<meta name="author" content="Namshi">
+
+	
+	<meta name="description" content="May 7th, 2014 php Geshan Manandhar 3 PHP 5.5 features we are using at Namshi Here at Namshi we are constanty updating our software stack to exploit &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Namshi" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://namshi.github.io/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='/images/namshi.png' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
+
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/team">Team</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/join-us">Join Us</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		<a class="facebook" href="http://www.facebook.com/NamshiFans" title="Facebook">Facebook</a>
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/NamshiDotCom" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/namshi" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-07T09:03:00+04:00" data-updated="true" itemprop="datePublished">May 7<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/php/'>php</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#Geshan Manandhar">Geshan Manandhar</a></div>
+    </div>
+	<h1 class="title" itemprop="name">3 PHP 5.5 features we are using at Namshi</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
+
+<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
+
+<!-- more -->
+
+
+<h3>array_column function</h3>
+
+<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productIds = [1001, 1005, 1007];</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//array with keys and values</span>
+</span><span class='line'><span class="x">$products = [</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Vito Solo Shirt&quot;, &quot;sku&quot; =&gt; &quot;VI714AT94SIB&quot;, &quot;price&quot; =&gt; 180.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Core Ultra Shirt&quot;, &quot;sku&quot; =&gt; &quot;JA872AT40VYL&quot; , &quot;price&quot; =&gt; 195.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Swoosh T-shirt&quot;, &quot;sku&quot; =&gt; &quot;NI727AT17RGG&quot; , &quot;price&quot; =&gt; 130.00]</span>
+</span><span class='line'><span class="x">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productTitles = array_column($products, &quot;title&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//product titles will be a new array of titles extacted from products array in above example code</span>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [0] =&gt; Vito Solo Shirt</span>
+</span><span class='line'><span class="x">    [1] =&gt; Core Ultra Shirt</span>
+</span><span class='line'><span class="x">    [2] =&gt; Swoosh T-shirt</span>
+</span><span class='line'><span class="x">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">$productPrices = array_column($products, &quot;price&quot;, &quot;sku&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [VI714AT94SIB] =&gt; 180</span>
+</span><span class='line'><span class="x">    [JA872AT40VYL] =&gt; 195</span>
+</span><span class='line'><span class="x">    [NI727AT17RGG] =&gt; 130</span>
+</span><span class='line'><span class="x">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The PHP <code>array_colum</code> function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
+
+<h3>finally</h3>
+
+<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
+
+<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
+
+<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">try {</span>
+</span><span class='line'><span class="x">     //open sql connection </span>
+</span><span class='line'><span class="x">     if ($condition) { </span>
+</span><span class='line'><span class="x">        return false;</span>
+</span><span class='line'><span class="x">     }</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  finally {</span>
+</span><span class='line'><span class="x">    //close the sql connection, this will be executed even if the return is called.</span>
+</span><span class='line'><span class="x">  }</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
+
+<h3>DateTimeImmutable</h3>
+
+<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
+
+<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$date           = new DateTimeImmutable();</span>
+</span><span class='line'><span class="x">$datePlusOneDay = $date-&gt;add(new DateInterval(&#39;P1D&#39;));</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">print $date-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'><span class="x">print &quot;---&quot;;</span>
+</span><span class='line'><span class="x">print $datePlusOneDay-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//output</span>
+</span><span class='line'><span class="x">//2014-May-07 22:37:04---2014-May-08 22:37:04</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//in some entity class in the setCreatedAt method</span>
+</span><span class='line'><span class="x">$this-&gt;createdAt = new DateTimeImmutable();</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//in some entity class in some prePresist method</span>
+</span><span class='line'><span class="x">$this-&gt;updatedAt = new DateTimeImmutable();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
+</div></article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Namshi
+
+<br>
+Powered by Octopress.
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'namshitechblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://namshi.github.io/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/';
+        var disqus_url = 'http://namshi.github.io/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>

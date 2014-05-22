@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: newsletter, | Namshi]]></title>
+  <link href="http://namshi.github.io/blog/categories/newsletter/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-05-22T12:00:06+04:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #39]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/22/newsletter-number-39/"/>
+    <updated>2014-05-22T11:34:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/22/newsletter-number-39</id>
+    <content type="html"><![CDATA[<p>&hellip;another <strong>TechThursday</strong> here!</p>
+
+<p><a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">Presentation we gave at the PHPDay</a></p>
+
+<p><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">AngularJS: the Good, the Bad and the Ugly. Slides from jsDay</a></p>
+
+<p><a href="http://verraes.net/2014/03/practical-event-sourcing/">Practical Event Sourcing</a></p>
+
+<p><a href="http://diginomica.com/2014/05/07/asos-cio-talks-nightmare-aligning-technology-business">Asos: aligning technology with business</a></p>
+
+<p><a href="https://github.com/substack/browserify-handbook">Building modular applications with browserify</a></p>
+
+<p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p>
+
+<p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p>
+
+<p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p>
+
+<p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p>
+
+<p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p>
+
+<p><a href="http://hub.github.com/">Github access from command line</a></p>
+
+<p><a href="http://www.jamesshore.com/Blog/How-Does-TDD-Affect-Design.html">How does TDD affect design</a></p>
+
+<p><a href="http://erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr">Setting up a development machine with Ubuntu 14.04 (Trusty Tahr)</a></p>
+
+<p><a href="https://forge.laravel.com/">Instant PHP Platforms on Linode, DigitalOcean, AWS, &amp; Rackspace</a></p>
+
+<p><a href="http://gethoneybadger.com/">A presonal look at websites</a></p>
+
+<p><a href="http://blog.makandra.com/2010/04/the-greatest-bug-i-never-fixed/">The greatest bug I never fixed</a></p>
+
+<p><a href="https://github.com/micahflee/onionshare">Share large files based on Tor</a></p>
+
+<p><a href="http://jacquesmattheij.com/choosing-web-framework-language-combo">Choosing a Web Frameword/Language Combo for the Next Decade</a></p>
+
+<p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p>
+
+<p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p>
+
+<p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p>
+]]></content>
+  </entry>
+  
+</feed>

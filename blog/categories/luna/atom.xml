@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: luna | Namshi]]></title>
+  <link href="http://namshi.github.io/blog/categories/luna/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-05-22T12:00:06+04:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #29]]></title>
+    <link href="http://namshi.github.io/blog/2014/03/13/newsletter-at-29/"/>
+    <updated>2014-03-13T16:43:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/03/13/newsletter-at-29</id>
+    <content type="html"><![CDATA[<p>TechThursday again: it&rsquo;s a bit short, but the list of useful links of the week
+is still here!</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="https://github.com/marcj/php-pm">PHP process manager</a></li>
+<li><a href="http://scoutapp.github.io/scout_realtime/"><code>top</code> is 30 years old, use <code>scout</code></a></li>
+<li><a href="https://github.com/luna/luna">the Luna programming language</a></li>
+<li><a href="https://github.com/sebastianbergmann/money">Money value objects in PHP</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

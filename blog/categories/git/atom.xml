@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Namshi]]></title>
+  <link href="http://namshi.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-05-22T12:00:06+04:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Git and Github at Namshi: our flow and tips&tricks]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/"/>
+    <updated>2014-05-04T20:38:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
+
+<p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>
+
+<!-- more -->
+
+
+<h3>Our GIT flow</h3>
+
+<p>Git is so powerful and flexible that at the beginning you feel kinda lost: <em>&ldquo;How should I use it?&rdquo;</em>  <em>&ldquo;Should I use merge or rebase?&rdquo;</em>  <em>&ldquo;master, develop, release branches?&rdquo;</em>
+And then you try to find the answer via google and you find the solution: <a href="http://nvie.com/posts/a-successful-git-branching-model/">&ldquo;GIT FLOW!&rdquo;</a>.</p>
+
+<blockquote><p>No, no, and again <strong>NO!</strong> (please say it out loud).</p></blockquote>
+
+<p>&ldquo;Git flow&rdquo; is one of several ways to use git, but it&rsquo;s not a standard and it could not fit well in your current organisation/codebase/team flow.</p>
+
+<p>You should embrace the power of git, and find a tailor-made solution.</p>
+
+<p>At Namshi we basically have two main branches: master and develop.</p>
+
+<p>On master you have, exactly, what&rsquo;s running on production, while develop is our development branch (surprisingly).</p>
+
+<p>When we pick a task we usually create a branch from develop. Once we are done with a task we rebase our feature branch from develop, in order to be sure that the new
+code works and doesn&rsquo;t break anything before being merged in develop. Then we open a pull request (PR) on Github. Once the PR is reviewed and approved
+it gets merged in the develop branch.
+There is (still) a lot of discussion (and flames) about using the rebase command, because basically it rewrites the current commits history.
+It&rsquo;s true that potentially you can screw your codebase, but we are still safe because you can still rely on your teammates local repositories and
+gain from the integrity, stability (before merging on the develop branch you can be sure that you didn&rsquo;t break anything) and clean commits history point of view.</p>
+
+<p>Once we decide that we can ship new stuff, we create a new branch (usually a release branch), tag it, deploy on staging and then deploy on live.
+Then we merge the tag on master (with the <a href="https://www.kernel.org/pub/software/scm/git/docs/git-merge.html">&mdash;no-ff option</a> and rebase develop with master.
+Even here we use the rebase command because we end up with develop that has the same commits sequence as master plus new commits: it&rsquo;s so easy to spot the differences between the two branches.</p>
+
+<h3>Git Config</h3>
+
+<p>There are several configuration settings that you can put in your <code>~/.gitconfig</code> file and get a lot of benefits on your daily git usage.</p>
+
+<h4>colors</h4>
+
+<p>Give some love to git outputs:</p>
+
+<p><code>
+git config --global color.ui true
+</code></p>
+
+<h4>filemode</h4>
+
+<p>Tired of having weird a <code>git status</code> output because some files has just changed file permissions?
+<code>
+git config --global core.filemode false
+</code></p>
+
+<h4>rerere</h4>
+
+<p>The git rerere functionality stands for <em>&ldquo;reuse recorded resolution&rdquo;</em> and as the name implies, it allows you to ask git to remember how you&rsquo;ve resolved a knotty conflict so that the next time you have the same conflict, git can automatically resolve it for you.
+<code>
+git config --global rerere.enabled true
+</code></p>
+
+<h4>global exclude</h4>
+
+<p>Instead of setting common files to be ignored in your local .gitignore file (i.e. your IDE config file, .DS_Store etc) everytime, you can use a global ignore file
+that will automatically apply to all your repos.
+<code>
+git config --global core.excludesfile ~/.gitignore
+</code>
+<strong>tip:</strong> I have a <code>my_temp</code> entry in my .gitignore global file, so that I can create a <code>my_temp</code> dir in my working copies and be free to put any experimental and temporary code/quick testing code
+in it without changing the project on my IDE and using the actual codebase.</p>
+
+<h4>pull with rebase, not merge</h4>
+
+<p>Everytime we pull from a remote repository, we do a <code>git pull --rebase</code> because we don&rsquo;t want to mess up with our local commits.
+Instead of specifying it everytime, you can make it the default beaviour when you pull:
+<code>
+git config --global branch.auto-setuprebase always
+</code></p>
+
+<h4>autocorrect</h4>
+
+<p>Git can autocorrect you:</p>
+
+<p><code>
+git config --global help.autocorrect true
+</code></p>
+
+<p>```
+➜  namshi.github.com git:(source) ✗ git cmmit
+git: &lsquo;cmmit&rsquo; is not a git command. See &lsquo;git &mdash;help&rsquo;.</p>
+
+<p>Did you mean this?</p>
+
+<pre><code>commit
+</code></pre>
+
+<p>```</p>
+
+<h4>default tracking</h4>
+
+<p>Bored of setting up branch tracking by hand?
+<code>
+git config --global push.default upstream
+</code></p>
+
+<h3>Git aliases</h3>
+
+<p>Git supports aliases via the <code>git config --global alias.&lt;alias_name&gt; "&lt;git command&gt;"</code>, but here in Namshi we tend to use the shell aliases
+because you can save even more chars and git is the only revision control and source code management system we use.</p>
+
+<h4>checkout</h4>
+
+<p><code>
+alias ck='git checkout'
+</code></p>
+
+<h4>checkout branch develop</h4>
+
+<p><code>
+alias dev='git checkout develop'
+</code></p>
+
+<h4>checkout branch master</h4>
+
+<p><code>
+alias master='git checkout master'
+</code></p>
+
+<h4>create a new branch</h4>
+
+<p><code>
+alias ckb='git checkout -b'
+</code></p>
+
+<h4>push</h4>
+
+<p><code>
+alias push='git push'
+</code></p>
+
+<h4>force push after a rebase</h4>
+
+<p><code>
+alias pushf='git push -f'
+</code></p>
+
+<h4>pull</h4>
+
+<p><code>
+alias pull='git pull'
+</code></p>
+
+<h4>sync main branches</h4>
+
+<p><code>
+alias align='git pull --rebase origin master &amp;&amp; git pull --rebase origin develop'
+</code></p>
+
+<h4>fetch</h4>
+
+<p><code>
+alias fetch='git fetch'
+</code></p>
+
+<h4>commit</h4>
+
+<p><code>
+alias ci='git commit'
+</code></p>
+
+<h4>tag</h4>
+
+<p><code>
+alias tag='git tag'
+</code></p>
+
+<h4>revert all changes</h4>
+
+<p><code>
+alias undo='git reset --hard HEAD'
+</code></p>
+
+<h4>delete merged branch</h4>
+
+<p>How many times do you have so many branches in your local repo that are already merged?
+Let&rsquo;s get rid of them!
+<code>
+alias dmb='git branch --merged | xargs git branch -d'
+</code></p>
+
+<h4>log</h4>
+
+<p><code>
+alias glog='git log --oneline --decorate'
+</code></p>
+
+<h4>status</h4>
+
+<p>A shorter version:
+<code>
+alias st='git status -sb'
+</code></p>
+
+<h4>diff</h4>
+
+<p>This only highlights the changed words, nicely inline.
+<code>
+alias gdiff='git diff --word-diff'
+</code></p>
+
+<h3>Tips</h3>
+
+<ul>
+<li>You messed up with a merge/rebase? Don&rsquo;t freak out, just use <code>git reflog</code> to check the local history command and sha1, and then <code>git reset --hard &lt;sha1&gt;</code></li>
+<li>After rebasing develop in your feature branch you end up with too many conflicts and messed up commits history? Don&rsquo;t panic, create a new feature branch from develop and
+<code>git cherry-pick</code> all the commits you need from your previous feature branch.</li>
+<li>Is my commit already on branch X? <code>git branch --contains &lt;sha1&gt;</code> is there to rescue you!</li>
+<li>You want to fetch a file from another branch without changing your current branch? <code>git checkout &lt;other_branch_name&gt; -- path/to/file</code></li>
+</ul>
+
+
+<p> Here you can find a complete list of <a href="https://gist.github.com/cirpo/86d43ef8ef87b4cfd031">aliases</a>, and <a href="https://gist.github.com/cirpo/343376f1ac7fb00204a0">here</a> the global .gitconfig we are using</p>
+
+<p> Do you have any other tips or tricks to share? Write them down in the comments :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #31]]></title>
+    <link href="http://namshi.github.io/blog/2014/03/27/newsletter-number-31/"/>
+    <updated>2014-03-27T16:17:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/03/27/newsletter-number-31</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
+
+<ul>
+<li>our <a href="https://itunes.apple.com/app/id840127349?mt=8&amp;ls=1">IOS app is available in the AppStore</a>!</li>
+<li>we released a <a href="http://www.youtube.com/watch?v=HN15lWEyRJY">new TV commercial</a>!</li>
+<li>we are looking for a <a href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/">frontend and backend code monkeys</a>!</li>
+</ul>
+
+
+<p>And now&hellip;this week in Tech:</p>
+
+<ul>
+<li><a href="http://www.hippyvm.com">A PHP VM running over PyPy</a></li>
+<li><a href="http://docs.hhvm.com/manual/en/install.hack.conversion.php">What the heck is Hack?</a></li>
+<li><a href="https://github.com/showcases">Showcases of software built through GitHub</a></li>
+<li><a href="http://blog.meldium.com/home/2013/9/13/benchmarking-redis-on-aws-elasticache">Benchmarking Redis on Elasticache</a></li>
+<li><a href="http://robert.ocallahan.org/2014/03/introducing-rr.html">Debug anything with RR</a></li>
+<li><a href="http://stackoverflow.com/questions/18850860/how-do-i-clone-a-git-repo-that-has-become-too-large">How to clone a 10GB repo?</a></li>
+<li><a href="http://stevelorek.com/how-to-shrink-a-git-repository.html">How to Shrink a Git Repository</a></li>
+<li><a href="http://amasad.me/2014/03/16/why-im-excited-about-objectobserve/">Why I&rsquo;m Excited About Object.observe</a></li>
+<li><a href="http://buff.ly/1oBtm3d">Lesser-Known JavaScript Debugging Techniques</a></li>
+<li><a href="http://www.git-tower.com/blog/git-hosting-services-compared/">12 Git Hosting Services Compared</a></li>
+<li><a href="http://codegeekz.com/best-mobile-app-development-frameworks-for-developers/">Mobile app development frameworks</a></li>
+<li><a href="http://blog.elendev.com/development/php/symfony/use-a-database-as-translation-provider-in-symfony-2/">Loading translations from a db in Symfony 2</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

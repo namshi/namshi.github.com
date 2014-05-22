@@ -1,0 +1,566 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Namshi</title>
+	<meta name="author" content="Namshi">
+
+	
+	<meta name="description" content="Mar 27th, 2014 Namshi, PHP, TechThursday, git, hhvm, newsletter, redis Newsletter #31 It&rsquo;s TechThursday again: here&rsquo;s what we&rsquo;ve &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Namshi" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://namshi.github.io/blog/page/2/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='/images/namshi.png' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
+
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/team">Team</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/join-us">Join Us</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		<a class="facebook" href="http://www.facebook.com/NamshiFans" title="Facebook">Facebook</a>
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/NamshiDotCom" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/namshi" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-27T16:17:00+04:00" data-updated="true" itemprop="datePublished">Mar 27<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/php/'>PHP</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/hhvm/'>hhvm</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/redis/'>redis</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#"></a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/03/27/newsletter-number-31/" itemprop="url">Newsletter #31</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
+
+<ul>
+<li>our <a href="https://itunes.apple.com/app/id840127349?mt=8&amp;ls=1">IOS app is available in the AppStore</a>!</li>
+<li>we released a <a href="http://www.youtube.com/watch?v=HN15lWEyRJY">new TV commercial</a>!</li>
+<li>we are looking for a <a href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/">frontend and backend code monkeys</a>!</li>
+</ul>
+
+
+<p>And now&hellip;this week in Tech:</p>
+
+<ul>
+<li><a href="http://www.hippyvm.com">A PHP VM running over PyPy</a></li>
+<li><a href="http://docs.hhvm.com/manual/en/install.hack.conversion.php">What the heck is Hack?</a></li>
+<li><a href="https://github.com/showcases">Showcases of software built through GitHub</a></li>
+<li><a href="http://blog.meldium.com/home/2013/9/13/benchmarking-redis-on-aws-elasticache">Benchmarking Redis on Elasticache</a></li>
+<li><a href="http://robert.ocallahan.org/2014/03/introducing-rr.html">Debug anything with RR</a></li>
+<li><a href="http://stackoverflow.com/questions/18850860/how-do-i-clone-a-git-repo-that-has-become-too-large">How to clone a 10GB repo?</a></li>
+<li><a href="http://stevelorek.com/how-to-shrink-a-git-repository.html">How to Shrink a Git Repository</a></li>
+<li><a href="http://amasad.me/2014/03/16/why-im-excited-about-objectobserve/">Why I&rsquo;m Excited About Object.observe</a></li>
+<li><a href="http://buff.ly/1oBtm3d">Lesser-Known JavaScript Debugging Techniques</a></li>
+<li><a href="http://www.git-tower.com/blog/git-hosting-services-compared/">12 Git Hosting Services Compared</a></li>
+<li><a href="http://codegeekz.com/best-mobile-app-development-frameworks-for-developers/">Mobile app development frameworks</a></li>
+<li><a href="http://blog.elendev.com/development/php/symfony/use-a-database-as-translation-provider-in-symfony-2/">Loading translations from a db in Symfony 2</a></li>
+</ul>
+
+
+    
+    
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-24T14:37:00+04:00" data-updated="true" itemprop="datePublished">Mar 24<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/api/'>api</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/job/'>job</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/symfony2/'>symfony2</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/" itemprop="url">Looking for Some Fun With APIs or JavaScript? We Have What You Need!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>To the army of developers out there: if you are looking to
+boost your nerditude and have some fun, we might have what
+you are looking for.</p>
+
+<p><em>(no, it&rsquo;s not a cookie)</em></p>
+
+
+    
+    <a href="/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-20T17:59:00+04:00" data-updated="true" itemprop="datePublished">Mar 20<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+</div>
+    
+    <div class="author"><a href="/team/#"></a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/03/20/newsletter-number-30/" itemprop="url">Newsletter #30</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><a href="/blog/categories/techthursday/">#TechThursday</a>! Here are some interesting news!</p>
+
+
+    
+    <a href="/blog/2014/03/20/newsletter-number-30/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-13T16:43:00+04:00" data-updated="true" itemprop="datePublished">Mar 13<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/luna/'>luna</a>, <a class='category' href='/blog/categories/php/'>php</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#"></a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/03/13/newsletter-at-29/" itemprop="url">Newsletter #29</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>TechThursday again: it&rsquo;s a bit short, but the list of useful links of the week
+is still here!</p>
+
+
+    
+    <a href="/blog/2014/03/13/newsletter-at-29/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-06T14:05:00+04:00" data-updated="true" itemprop="datePublished">Mar 6<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Mohamad Hallal">Mohamad Hallal</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/03/06/newsletter-number-28/" itemprop="url">Newsletter #28</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>Welcome back to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+
+<p>Today we present you some interesting news and articles from the world of web technology!</p>
+
+
+    
+    <a href="/blog/2014/03/06/newsletter-number-28/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-21T12:57:00+04:00" data-updated="true" itemprop="datePublished">Feb 21<span>st</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/content/'>Content</a>, <a class='category' href='/blog/categories/expression-language/'>Expression Language</a>, <a class='category' href='/blog/categories/seo/'>SEO</a>, <a class='category' href='/blog/categories/symfony2/'>Symfony2</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Mohamad Hallal">Mohamad Hallal</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/02/21/symfony2-dot-4-expression-language/" itemprop="url">Symfony 2.4 Expression Language</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>Expression Language is a new awesome component that got released in the latest <a href="http://symfony.com/blog/symfony-2-4-0-released">Symfony2.4</a>. This component allows string expressions
+to be parsed, compiled and evaluated in PHP. It was basically extracted from the Twig library that supports writing expression logic in templates.</p>
+
+<p>As simple as:&ndash;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$expLang = new ExpressionLanguage();
+</span><span class='line'>$x       = "1+1";
+</span><span class='line'>echo $expressionLang-&gt;evaluate($x);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The previous code will output &ldquo;2&rdquo;!</p>
+
+<p>It seems simple enough, but the benefits that it introduces are great! Especially when we talk about a company like Namshi, where there are dedicated and specialized content and marketing teams with
+hundreds of templates and segments of information that must be delivered and shown on the website. The goal is to provide the most flexibility to other departments in creating their information
+with the least overhead in terms of code maintenance to the development team.</p>
+
+
+    
+    <a href="/blog/2014/02/21/symfony2-dot-4-expression-language/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-20T15:41:00+04:00" data-updated="true" itemprop="datePublished">Feb 20<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Mohamad Hallal">Mohamad Hallal</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/02/20/newsletter-number-27/" itemprop="url">Newsletter #27</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>Welcome to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+
+<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
+
+
+    
+    <a href="/blog/2014/02/20/newsletter-number-27/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-13T18:14:00+04:00" data-updated="true" itemprop="datePublished">Feb 13<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/02/13/newsletter-number-26/" itemprop="url">Newsletter #26</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+
+<br/>
+
+
+
+    
+    <a href="/blog/2014/02/13/newsletter-number-26/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-07T22:30:00+04:00" data-updated="true" itemprop="datePublished">Feb 7<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/symfony2/'>symfony2</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/02/07/newsletter-number-25/" itemprop="url">Newsletter #25</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again! Oh, actually it&rsquo;s friday but&hellip;whatever! :)</p>
+
+<br/>
+
+
+<br/>
+
+
+
+    
+    <a href="/blog/2014/02/07/newsletter-number-25/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting"><div class="meta">
+    <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-01-30T16:06:00+04:00" data-updated="true" itemprop="datePublished">Jan 30<span>th</span>, 2014</time></div>
+    <div class="tags">
+
+
+	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>
+
+
+</div>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/01/30/newsletter-number-24/" itemprop="url">Newsletter #24</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> again!</p>
+
+<p>Here at <a href="https://www.namshi.com">namshi</a> we are very keen on
+sharing what we find around the &lsquo;net, so we thought of making
+our internal newsletter public.</p>
+
+
+    
+    <a href="/blog/2014/01/30/newsletter-number-24/" class="more-link">Read on &rarr;</a>
+</div></article>
+
+</div>
+<nav id="pagenavi">
+    
+        <a href="/" class="prev">Prev</a>
+    
+    
+        <a href="/blog/page/3/" class="next">Next</a>
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Namshi
+
+<br>
+Powered by Octopress.
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'namshitechblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>

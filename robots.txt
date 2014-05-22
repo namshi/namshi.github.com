@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://namshi.github.io/sitemap.xml 
