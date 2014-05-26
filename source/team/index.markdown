@@ -41,6 +41,18 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
+
+*   ##<div id="Luciano Colosio">Luciano Colosio</div>
+    {% img left team /images/lucio.jpg Luciano Colosio %}
+    **Luciano Colosio**  is a Senior IT professional with a long experience in the field on different topics and a keen attention for software development,
+    web-technologies and ditributed architectures.
+    Starting as system administrator in his career he has been building his expertise in both the development and operational aspects
+    while working for big italian new-media companies as well as
+    new startups where he was able to focus also on Agile and XP methodologies.
+    For what it concerns software development he deeply values best practices, clean code and architectures and new cutting edge technologies.
+    Quite of an *aficionado* in the italian development community he's one of the founding members of the web-centric communtiy "WEBdeBS".
+    He joined Namshi as frontend engneer bringing his deep love for both javascript and node.js
+
 *   ##<div id="Hossam Faris">Hossam Faris</div>
     {% img left team /images/hossam.jpg Hossam Faris %}
     **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
