@@ -41,6 +41,12 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
+*   ##<div id="Shidhin CR">Shidhin CR</div>
+    {% img left team /images/shidhin.jpg Luciano Colosio %}
+    Shidhin is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
+    best practices and front end technologies.
+    He comes with over 6 years of experience in front end development, and core JavaScript expertise.
+    In free time, he can be found updating his blog or checking out some open source stuff.
 
 *   ##<div id="Luciano Colosio">Luciano Colosio</div>
     {% img left team /images/lucio.jpg Luciano Colosio %}
