@@ -6,7 +6,7 @@ comments: true
 categories: community phpday jsday conference presentation slide
 ---
 
-{% img center /images/posts/rasmus-namshi-scaled.png 800 'Rasmus Lerdorf - Namshi team' 'Rasmus Lerdorf whi the Namshi team' %}
+{% img center /images/posts/rasmus-namshi-scaled.png 800 'Rasmus Lerdorf - Namshi team' 'Rasmus Lerdorf with the Namshi team' %}
 
 One week ago, Luciano, Lucio, Alex and I attended the annual [jsDay](http://jsday.it) and [phpDay](http://phpday.it) in Verona organized by the [GrUSP](http://grusp.it), the Italian PHP user Group.
 It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
