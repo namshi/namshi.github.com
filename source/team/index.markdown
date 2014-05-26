@@ -80,6 +80,11 @@ footer: true
     He's also interested in Zend Framework, Symfony2, Symfony CMF and Agile.
     Other Interests: Multimedia (Photo/Video/3D Rendering, Post Production, Editing), Interaction Design (hardware: arduino. software: processing, MAX/MSP) and Philosophy, esoterism, playing piano, photography and research.
 
+*   ##<div id="Nikita Nefedov">Nikita Nefedov</div>
+    {% img left team /images/nikita.png Nikita Nefedov %}
+    Nikita, a PHP engineer, has experience with PHP since around 5 years, has worked with different frameworks (from CI to Symfony2)  and with Doctrine2 as well.
+    Takes part in discussions on the php-internals mailing list, and is able able to write patches / extensions for PHP to C, fix bugs on bugs.php.net and tries to participate in the development of the language.
+
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
     **Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012 and is the only girl in tech team.
