@@ -4,7 +4,7 @@
   <title><![CDATA[Category: welcome | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/welcome/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-05-26T15:47:22+04:00</updated>
+  <updated>2014-05-26T23:47:21+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Nikita!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/26/welcome-nikita/"/>
+    <updated>2014-05-26T23:40:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/26/welcome-nikita</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/nikita.png"></p>
+
+<p>Yesterday we got some cold breeze from Russia, which
+is never bad considered that Dubai is getting ready
+for the summer!</p>
+
+<p>Nikita, one of our new API engineers, has joined the
+team to feed our architecture with energy, good software engineering
+and a ton of rock-solid PHP development!</p>
+
+<p>You can get to know Nikita by checking out his <a href="https://github.com/nikita2206">github profile</a>,
+a place where he likes to fork the official PHP repository
+to fix bugs on the language itself (kudos!) or&hellip;by starting
+to check our <a href="https://github.com/namshi">github page</a> out more often,
+as we&rsquo;re gonna see some more open-source PHP libraries over there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Welcome Shidhin!]]></title>

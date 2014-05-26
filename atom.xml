@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-05-26T15:47:22+04:00</updated>
+  <updated>2014-05-26T23:47:21+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Nikita!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/26/welcome-nikita/"/>
+    <updated>2014-05-26T23:40:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/26/welcome-nikita</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="http://tech.namshi.com/images/nikita.png"></p>
+
+<p>Yesterday we got some cold breeze from Russia, which
+is never bad considered that Dubai is getting ready
+for the summer!</p>
+
+<p>Nikita, one of our new API engineers, has joined the
+team to feed our architecture with energy, good software engineering
+and a ton of rock-solid PHP development!</p>
+
+<p>You can get to know Nikita by checking out his <a href="https://github.com/nikita2206">github profile</a>,
+a place where he likes to fork the official PHP repository
+to fix bugs on the language itself (kudos!) or&hellip;by starting
+to check our <a href="https://github.com/namshi">github page</a> out more often,
+as we&rsquo;re gonna see some more open-source PHP libraries over there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Welcome Shidhin!]]></title>
@@ -1389,38 +1412,6 @@ client information, render the twig template with the appropriate device value a
 <li>Can be based on numerous variables (path information, headers, domain, device type, etc..)</li>
 <li>Content specialization and less dependency on the tech team.</li>
 <li>Less code maintenance overhead since the expected future requirements can only be limited to registering Expression Language functions.</li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #27]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/"/>
-    <updated>2014-02-20T15:41:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27</id>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a>!</p>
-
-<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://github.com/VerbalExpressions/PHPVerbalExpressions">VerbalExpressions is a PHP library that helps to construct hard regular expressions.</a></p></li>
-<li><p><a href="http://jsonstub.com/">Fake the backend while you develop the frontend</a></p></li>
-<li><p><a href="http://www.xdata.me/?p=301">Largest Redis Clusters Ever</a></p></li>
-<li><p><a href="https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html">5 surprisingly painful things about client-side JS</a></p></li>
-<li><p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html">The Next Phase of Node.js</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=aQipuiTcn3U">Protractor talks at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/keeping-php-code-well-documented/">Keeping Your PHP Code Well Documented</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=3IqtmUscE_U">Zones.js talk at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/hhvm-hack-part-1/">HHVM and Hack – Can We Expect Them to Replace PHP?</a></p></li>
-<li><p><a href="https://medium.com/user-experience-researche/e6a1e37028b4">A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.</a></p></li>
-<li><p><a href="http://www.useronboard.com/how-evernote-onboards-new-users/">How Evernote Onboards New Users A new case-history on the User Onboarding website.</a></p></li>
-<li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
-<li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
-<li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
 </ul>
 
 ]]></content>
