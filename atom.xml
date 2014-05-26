@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-05-26T11:30:27+04:00</updated>
+  <updated>2014-05-26T15:47:22+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Shidhin!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/26/welcome-shidhin/"/>
+    <updated>2014-05-26T15:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/26/welcome-shidhin</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="http://tech.namshi.com/images/shidhin.jpg"></p>
+
+<p>Second announcement of the day (and we ain&rsquo;t done yet!):
+I am super-duper-excited to welcome <a href="https://twitter.com/shidhincr">Shidhin CR</a>
+in the family!</p>
+
+<p>Shidhin has been working at FlipKart for a while and,
+as soon as we got to know each other, found an immediate
+connection: cutting edge technologies meet a cutting-edge, motivated
+brain. He will be part of our <em>Frontend Engineering</em> team,
+helping on AngularJS, some of the frontend design and
+JavaScript in general (Did I mention <a href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/">we love JavaScript?</a>).</p>
+
+<p>As he describes himself:</p>
+
+<p><em>I am is a senior Front end developer, passionate about latest UI best practices and front end technologies. I have over 6 years of experience in front end development, and core JavaScript expertise. In the free time, I can be found updating my blog or checking out some open source stuff.</em></p>
+
+<p>You can read more about Shidhin in his <a href="http://www.undefinednull.com/">personal blog</a>
+or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
+as we&rsquo;re gonna see some more AngularJS-ish stuff over there!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Welcome Lucio!]]></title>
@@ -1393,37 +1421,6 @@ client information, render the twig template with the appropriate device value a
 <li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
 <li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
 <li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #26]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/13/newsletter-number-26/"/>
-    <updated>2014-02-13T18:14:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/13/newsletter-number-26</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a> again!</p>
-
-<br/>
-
-
-<!-- more -->
-
-
-<ul>
-<li><a href="https://github.com/HenrikJoreteg/fixpack">Fixpack: A package.json file scrubber for the truly insane.</a></li>
-<li><a href="http://ionicframework.com/blog/angularjs-will-be-huge/">Angularjs will be huge!</a></li>
-<li><a href="http://octoverse.github.com/">Github Octoverse: 2013 highlights</a></li>
-<li><a href="https://github.com/jimhigson/oboe.js">A fresh approach to JSON loading that speeds up web applications by providing the parsed objects before the response completes</a></li>
-<li><a href="https://github.com/zeke/ghwd">Open the github URL that matches your shell&rsquo;s current branch and working directory</a></li>
-<li><a href="http://editorconfig.org/">Coding standard: editorconfig.org</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">A re-introduction to Javascript</a></li>
-<li><a href="http://koajs.com/">Next generation web framework for node.js</a></li>
-<li><a href="http://www.sitepoint.com/phpstorm-top-productivity-hacks-shortcuts/">PhpStorm: top productivity hacks and shortcuts</a></li>
-<li><a href="http://blog.malcovery.com/blog/10-cybersecurity-predictions-for-2014">10 cybersecurity predictions for 2014</a></li>
-<li><a href="http://gigaom.com/2014/02/11/record-breaking-ddos-attack-struck-on-monday-according-to-reports/">Record-breaking DDoS attack struck on Monday, according to reports</a></li>
-<li><a href="http://vuejs.org/">Vuejs: MVVM Made Simple</a></li>
 </ul>
 
 ]]></content>
