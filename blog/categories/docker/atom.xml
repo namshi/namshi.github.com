@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: docker | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/docker/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-05-26T11:30:27+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #36]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/"/>
+    <updated>2014-05-01T12:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></li>
+<li><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></li>
+<li><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></li>
+<li><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></li>
+<li><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></li>
+<li><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></li>
+<li><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></li>
+<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></li>
+<li><a href="http://www.therestartpage.com/">(old) The restart page</a></li>
+<li><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></li>
+<li><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></li>
+<li><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></li>
+<li><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></li>
+<li><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></li>
+<li><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></li>
+<li><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></li>
+<li><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

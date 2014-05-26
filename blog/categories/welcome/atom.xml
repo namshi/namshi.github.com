@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: welcome | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/welcome/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-05-26T11:30:27+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Lucio!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/26/welcome-lucio/"/>
+    <updated>2014-05-26T11:20:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/26/welcome-lucio</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/lucio.jpg"></p>
+
+<p>I am very happy to announce &ndash; even though I&rsquo;m a bit late &ndash; that
+<a href="https://twitter.com/unlucio">Luciano &ldquo;unlucio&rdquo; Colosio</a>
+is part of our crazy team!</p>
+
+<p>He&rsquo;s been quite proficient in spreading JavaScript
+all around his software architectures, thus we felt he
+was a perfect match for Namshi: among his past creations
+there&rsquo;s even a <a href="https://github.com/unlucio/MarcoPolo">REST driver for OrientDB</a> in NodeJS.</p>
+
+<p>Lucio will boost our frontend productivity bringing in
+the software design skills we always like to welcome:
+simplicity, clean code and good engineering.</p>
+
+<p>(<em>&hellip;and they say he&rsquo;s a great chef!</em>)</p>
+
+<p>You can read more about Lucio in his <a href="http://blog.unlucio.com/">personal blog</a>
+or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
+as I sense we&rsquo;re gonna see some more NodeJS there!</p>
+]]></content>
+  </entry>
+  
+</feed>

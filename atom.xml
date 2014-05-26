@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-04-18T18:33:06+04:00</updated>
+  <updated>2014-05-26T11:30:27+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,680 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Lucio!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/26/welcome-lucio/"/>
+    <updated>2014-05-26T11:20:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/26/welcome-lucio</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="http://tech.namshi.com/images/lucio.jpg"></p>
+
+<p>I am very happy to announce &ndash; even though I&rsquo;m a bit late &ndash; that
+<a href="https://twitter.com/unlucio">Luciano &ldquo;unlucio&rdquo; Colosio</a>
+is part of our crazy team!</p>
+
+<p>He&rsquo;s been quite proficient in spreading JavaScript
+all around his software architectures, thus we felt he
+was a perfect match for Namshi: among his past creations
+there&rsquo;s even a <a href="https://github.com/unlucio/MarcoPolo">REST driver for OrientDB</a> in NodeJS.</p>
+
+<p>Lucio will boost our frontend productivity bringing in
+the software design skills we always like to welcome:
+simplicity, clean code and good engineering.</p>
+
+<p>(<em>&hellip;and they say he&rsquo;s a great chef!</em>)</p>
+
+<p>You can read more about Lucio in his <a href="http://blog.unlucio.com/">personal blog</a>
+or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
+as I sense we&rsquo;re gonna see some more NodeJS there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[jsDay and phpDay recap]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/25/jsday-phpday-recap/"/>
+    <updated>2014-05-25T19:33:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/25/jsday-phpday-recap</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://tech.namshi.com/images/posts/rasmus-namshi-scaled.png" width="800" title="Rasmus Lerdorf - Namshi team" alt="Rasmus Lerdorf with the Namshi team"></p>
+
+<p>One week ago, Luciano, Lucio, Alex and I attended the annual <a href="http://jsday.it">jsDay</a> and <a href="http://phpday.it">phpDay</a> in Verona organized by the <a href="http://grusp.it">GrUSP</a>, the Italian PHP user Group.
+It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
+The conferences were sold out, with more than 300 attendees and two tracks per day. Kudos and props to the organizers!</p>
+
+<br />
+
+
+<p><img class="left" src="http://tech.namshi.com/images/posts/phpday-namshi-sponsor.jpg" width="200" title="Namshi phpDay sponsor" alt="Namshi phpDay sponsor"> Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.com/join-us">join-us</a> page?)</p>
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<h2>jsDay</h2>
+
+<p>During the jsDay, Luciano spoke about “AngularJS and mobile applications”, giving good insight into our experience using AngularJS while developing a mobile website.</p>
+
+<p>There were other presentations worth mentioning:</p>
+
+<ul>
+<li><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">“AngularJS: The Good, The Bad and The Ugly “</a> by Gilles Rupert.</li>
+</ul>
+
+
+<div style="width:600px">
+<script async class="speakerdeck-embed" data-id="5f461ec0bd80013111d576b6210235ec" data-ratio="1.33333333333333" src="http://tech.namshi.com//speakerdeck.com/assets/embed.js"></script>
+</div>
+
+
+<ul>
+<li><p><a href="http://www.slideshare.net/DanniFriedland/nsajs">“NSA.JS”</a> by Danni Friedland who presented this cool library to track the user browse experience</p></li>
+<li><p><a href="http://www.slideshare.net/fgalassi/the-strange-world-of-javascript-and-all-its-little-asynchronous-beasts">“The strange world of Javascript and all its little asynchronous beasts”</a> by Federico Galassi</p></li>
+<li><p><a href="http://massimiliano-mantione.github.io/talks/JsDay2014/ReactiveMetaprogramming/GHP/">“Monads, Promises, and Reactive Metaprogramming”</a> by Massimiliano Mantione</p></li>
+</ul>
+
+
+<p>The complete talks list with slides are on <a href="http://joind.in/event/view/1638">joind.in</a>.</p>
+
+<br />
+
+
+<h2>phpDay</h2>
+
+<p><a href="http://talks.php.net/phpday14#/">The opening keynote</a> was addressed by Rasmus Lerdord (the PHP creator), showing us an interesting, and sometimes passionate, overview of what’s new in PHP 5.6 and the technical/design choices behind it.</p>
+
+<p>Alex and I gave a talk about “How to build <strong>durable</strong> web apis” based on our experience at Namshi while
+building our Service Oriented Architechture.</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34815904" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/cirpo/dont-screw-it-up-how-to-build-durable-web-apis" title="Don&#x27;t screw it up: how to build durable web apis" target="_blank">Don&#x27;t screw it up: how to build durable web apis</a> </strong> from <strong><a href="http://www.slideshare.net/cirpo" target="_blank">alessandro cinelli</a></strong> </div></p>
+
+<p>Other very interesting presentations:</p>
+
+<ul>
+<li><p>I really enjoyed the talk <a href="http://verraes.net/2014/03/practical-event-sourcing/">“Practical Event Sourcing”</a> by Mathias Verraes.
+I also suggest <a href="https://speakerdeck.com/mathiasverraes">checking other presentations</a> from this great speaker.</p></li>
+<li><p>Another great presentation was given by Marcello Duarte, the master of <a href="http://www.phpspec.net/">PHPspec</a>, <a href="http://www.slideshare.net/marcello.duarte/emergent-design-with-phpspec">&ldquo;Emergent design with phpspec&rdquo;</a></p></li>
+<li><p>Konstantin Kudryashov, the guy behind <a href="http://behat.org/">Behat</a> with <a href="http://www.slideshare.net/everzet/moving-away-from-legacy-code-with-bdd">&ldquo;Moving Away from Legacy code with BDD&rdquo;</a></p></li>
+</ul>
+
+
+<p>The complete phpDay talk list and slides can be found on <a href="http://joind.in/event/view/1637">joind.in</a> as well.</p>
+
+<h2>Join communities!</h2>
+
+<p>Attending conferences that are community driven like jsDay and phpDay
+are always a great moment to improve yourself as a developer and they give you the possibility to be part of the community.
+You have the chance to understand what’s going on in our field, talk in person with other devs that maybe you just know because you sent a PR to their awesome opensource project on Github, getting tons of advices and inspiration and so on.
+Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitter, a <strong>new community</strong> is coming in Dubai&hellip; <strong>stay tuned!</strong></p>
+
+<p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated of when they are going to release the talks videos.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #39]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/22/newsletter-number-39/"/>
+    <updated>2014-05-22T11:34:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/22/newsletter-number-39</id>
+    <content type="html"><![CDATA[<p>&hellip;another <strong>TechThursday</strong> here!</p>
+
+<ul>
+<li><p><a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">Presentation we gave at the PHPDay</a></p></li>
+<li><p><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">AngularJS: the Good, the Bad and the Ugly. Slides from jsDay</a></p></li>
+<li><p><a href="http://verraes.net/2014/03/practical-event-sourcing/">Practical Event Sourcing</a></p></li>
+<li><p><a href="http://diginomica.com/2014/05/07/asos-cio-talks-nightmare-aligning-technology-business">Asos: aligning technology with business</a></p></li>
+<li><p><a href="https://github.com/substack/browserify-handbook">Building modular applications with browserify</a></p></li>
+<li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
+<li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
+<li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
+<li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
+<li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
+<li><p><a href="http://www.jamesshore.com/Blog/How-Does-TDD-Affect-Design.html">How does TDD affect design</a></p></li>
+<li><p><a href="http://erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr">Setting up a development machine with Ubuntu 14.04 (Trusty Tahr)</a></p></li>
+<li><p><a href="https://forge.laravel.com/">Instant PHP Platforms on Linode, DigitalOcean, AWS, &amp; Rackspace</a></p></li>
+<li><p><a href="http://gethoneybadger.com/">A presonal look at websites</a></p></li>
+<li><p><a href="http://blog.makandra.com/2010/04/the-greatest-bug-i-never-fixed/">The greatest bug I never fixed</a></p></li>
+<li><p><a href="https://github.com/micahflee/onionshare">Share large files based on Tor</a></p></li>
+<li><p><a href="http://jacquesmattheij.com/choosing-web-framework-language-combo">Choosing a Web Frameword/Language Combo for the Next Decade</a></p></li>
+<li><p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p></li>
+<li><p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p></li>
+<li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #38]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/15/newsletter-number-38/"/>
+    <updated>2014-05-15T11:38:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/15/newsletter-number-38</id>
+    <content type="html"><![CDATA[<p>Hello everyone and welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/"><strong>TechThursday</strong>!</a>!</p>
+
+<p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>
+
+<ul>
+<li><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></li>
+<li><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></li>
+<li><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></li>
+<li><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></li>
+<li><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></li>
+<li><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></li>
+<li><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></li>
+<li><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></li>
+<li><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></li>
+<li><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></li>
+<li><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></li>
+<li><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></li>
+<li><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></li>
+<li><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></li>
+<li><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></li>
+<li><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></li>
+<li><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #37]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/08/newsletter-number-37/"/>
+    <updated>2014-05-08T16:47:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/08/newsletter-number-37</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<ul>
+<li><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></li>
+<li><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></li>
+<li><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></li>
+<li><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></li>
+<li><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></li>
+<li><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></li>
+<li><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></li>
+<li><a href="http://designprinciplesftw.com/">Design principles</a></li>
+<li><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></li>
+<li><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3 PHP 5.5 features we are using at Namshi]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/"/>
+    <updated>2014-05-07T09:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi</id>
+    <content type="html"><![CDATA[<p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
+
+<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
+
+<!-- more -->
+
+
+<h3>array_column function</h3>
+
+<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productIds = [1001, 1005, 1007];</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//array with keys and values</span>
+</span><span class='line'><span class="x">$products = [</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Vito Solo Shirt&quot;, &quot;sku&quot; =&gt; &quot;VI714AT94SIB&quot;, &quot;price&quot; =&gt; 180.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Core Ultra Shirt&quot;, &quot;sku&quot; =&gt; &quot;JA872AT40VYL&quot; , &quot;price&quot; =&gt; 195.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Swoosh T-shirt&quot;, &quot;sku&quot; =&gt; &quot;NI727AT17RGG&quot; , &quot;price&quot; =&gt; 130.00]</span>
+</span><span class='line'><span class="x">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productTitles = array_column($products, &quot;title&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//product titles will be a new array of titles extacted from products array in above example code</span>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [0] =&gt; Vito Solo Shirt</span>
+</span><span class='line'><span class="x">    [1] =&gt; Core Ultra Shirt</span>
+</span><span class='line'><span class="x">    [2] =&gt; Swoosh T-shirt</span>
+</span><span class='line'><span class="x">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">$productPrices = array_column($products, &quot;price&quot;, &quot;sku&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [VI714AT94SIB] =&gt; 180</span>
+</span><span class='line'><span class="x">    [JA872AT40VYL] =&gt; 195</span>
+</span><span class='line'><span class="x">    [NI727AT17RGG] =&gt; 130</span>
+</span><span class='line'><span class="x">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The PHP <code>array_colum</code> function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
+
+<h3>finally</h3>
+
+<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
+
+<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
+
+<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">try {</span>
+</span><span class='line'><span class="x">     //open sql connection </span>
+</span><span class='line'><span class="x">     if ($condition) { </span>
+</span><span class='line'><span class="x">        return false;</span>
+</span><span class='line'><span class="x">     }</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  finally {</span>
+</span><span class='line'><span class="x">    //close the sql connection, this will be executed even if the return is called.</span>
+</span><span class='line'><span class="x">  }</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
+
+<h3>DateTimeImmutable</h3>
+
+<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
+
+<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$date           = new DateTimeImmutable();</span>
+</span><span class='line'><span class="x">$datePlusOneDay = $date-&gt;add(new DateInterval(&#39;P1D&#39;));</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">print $date-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'><span class="x">print &quot;---&quot;;</span>
+</span><span class='line'><span class="x">print $datePlusOneDay-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//output</span>
+</span><span class='line'><span class="x">//2014-May-07 22:37:04---2014-May-08 22:37:04</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//in some entity class in the setCreatedAt method</span>
+</span><span class='line'><span class="x">$this-&gt;createdAt = new DateTimeImmutable();</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//in some entity class in some prePresist method</span>
+</span><span class='line'><span class="x">$this-&gt;updatedAt = new DateTimeImmutable();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Git and Github at Namshi: our flow and tips&tricks]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/"/>
+    <updated>2014-05-04T20:38:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks</id>
+    <content type="html"><![CDATA[<p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
+
+<p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>
+
+<!-- more -->
+
+
+<h3>Our GIT flow</h3>
+
+<p>Git is so powerful and flexible that at the beginning you feel kinda lost: <em>&ldquo;How should I use it?&rdquo;</em>  <em>&ldquo;Should I use merge or rebase?&rdquo;</em>  <em>&ldquo;master, develop, release branches?&rdquo;</em>
+And then you try to find the answer via google and you find the solution: <a href="http://nvie.com/posts/a-successful-git-branching-model/">&ldquo;GIT FLOW!&rdquo;</a>.</p>
+
+<blockquote><p>No, no, and again <strong>NO!</strong> (please say it out loud).</p></blockquote>
+
+<p>&ldquo;Git flow&rdquo; is one of several ways to use git, but it&rsquo;s not a standard and it could not fit well in your current organisation/codebase/team flow.</p>
+
+<p>You should embrace the power of git, and find a tailor-made solution.</p>
+
+<p>At Namshi we basically have two main branches: master and develop.</p>
+
+<p>On master you have, exactly, what&rsquo;s running on production, while develop is our development branch (surprisingly).</p>
+
+<p>When we pick a task we usually create a branch from develop. Once we are done with a task we rebase our feature branch from develop, in order to be sure that the new
+code works and doesn&rsquo;t break anything before being merged in develop. Then we open a pull request (PR) on Github. Once the PR is reviewed and approved
+it gets merged in the develop branch.
+There is (still) a lot of discussion (and flames) about using the rebase command, because basically it rewrites the current commits history.
+It&rsquo;s true that potentially you can screw your codebase, but we are still safe because you can still rely on your teammates local repositories and
+gain from the integrity, stability (before merging on the develop branch you can be sure that you didn&rsquo;t break anything) and clean commits history point of view.</p>
+
+<p>Once we decide that we can ship new stuff, we create a new branch (usually a release branch), tag it, deploy on staging and then deploy on live.
+Then we merge the tag on master (with the <a href="https://www.kernel.org/pub/software/scm/git/docs/git-merge.html">&mdash;no-ff option</a> and rebase develop with master.
+Even here we use the rebase command because we end up with develop that has the same commits sequence as master plus new commits: it&rsquo;s so easy to spot the differences between the two branches.</p>
+
+<h3>Git Config</h3>
+
+<p>There are several configuration settings that you can put in your <code>~/.gitconfig</code> file and get a lot of benefits on your daily git usage.</p>
+
+<h4>colors</h4>
+
+<p>Give some love to git outputs:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global color.ui true</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>filemode</h4>
+
+<p>Tired of having weird a <code>git status</code> output because some files has just changed file permissions?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global core.filemode false</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>rerere</h4>
+
+<p>The git rerere functionality stands for <em>&ldquo;reuse recorded resolution&rdquo;</em> and as the name implies, it allows you to ask git to remember how you&rsquo;ve resolved a knotty conflict so that the next time you have the same conflict, git can automatically resolve it for you.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global rerere.enabled true</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>global exclude</h4>
+
+<p>Instead of setting common files to be ignored in your local .gitignore file (i.e. your IDE config file, .DS_Store etc) everytime, you can use a global ignore file
+that will automatically apply to all your repos.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global core.excludesfile ~/.gitignore</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>tip:</strong> I have a <code>my_temp</code> entry in my .gitignore global file, so that I can create a <code>my_temp</code> dir in my working copies and be free to put any experimental and temporary code/quick testing code
+in it without changing the project on my IDE and using the actual codebase.</p>
+
+<h4>pull with rebase, not merge</h4>
+
+<p>Everytime we pull from a remote repository, we do a <code>git pull --rebase</code> because we don&rsquo;t want to mess up with our local commits.
+Instead of specifying it everytime, you can make it the default beaviour when you pull:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global branch.auto-setuprebase always</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>autocorrect</h4>
+
+<p>Git can autocorrect you:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global help.autocorrect true</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>➜  namshi.github.com git:(source) ✗ git cmmit
+</span><span class='line'>git: 'cmmit' is not a git command. See 'git --help'.
+</span><span class='line'>
+</span><span class='line'>Did you mean this?
+</span><span class='line'>  commit</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>default tracking</h4>
+
+<p>Bored of setting up branch tracking by hand?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global push.default upstream</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Git aliases</h3>
+
+<p>Git supports aliases via the <code>git config --global alias.&lt;alias_name&gt; "&lt;git command&gt;"</code>, but here in Namshi we tend to use the shell aliases
+because you can save even more chars and git is the only revision control and source code management system we use.</p>
+
+<h4>checkout</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ck='git checkout'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>checkout branch develop</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias dev='git checkout develop'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>checkout branch master</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias master='git checkout master'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>create a new branch</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ckb='git checkout -b'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>push</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias push='git push'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>force push after a rebase</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias pushf='git push -f'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>pull</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias pull='git pull'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>sync main branches</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias align='git pull --rebase origin master && git pull --rebase origin develop'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>fetch</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias fetch='git fetch'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>commit</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ci='git commit'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>tag</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias tag='git tag'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>revert all changes</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias undo='git reset --hard HEAD'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>delete merged branch</h4>
+
+<p>How many times do you have so many branches in your local repo that are already merged?
+Let&rsquo;s get rid of them!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias dmb='git branch --merged | xargs git branch -d'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>log</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias glog='git log --oneline --decorate'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>status</h4>
+
+<p>A shorter version:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias st='git status -sb'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>diff</h4>
+
+<p>This only highlights the changed words, nicely inline.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias gdiff='git diff --word-diff'</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Tips</h3>
+
+<ul>
+<li>You messed up with a merge/rebase? Don&rsquo;t freak out, just use <code>git reflog</code> to check the local history command and sha1, and then <code>git reset --hard &lt;sha1&gt;</code></li>
+<li>After rebasing develop in your feature branch you end up with too many conflicts and messed up commits history? Don&rsquo;t panic, create a new feature branch from develop and
+<code>git cherry-pick</code> all the commits you need from your previous feature branch.</li>
+<li>Is my commit already on branch X? <code>git branch --contains &lt;sha1&gt;</code> is there to rescue you!</li>
+<li>You want to fetch a file from another branch without changing your current branch? <code>git checkout &lt;other_branch_name&gt; -- path/to/file</code></li>
+</ul>
+
+
+<p> Here you can find a complete list of <a href="https://gist.github.com/cirpo/86d43ef8ef87b4cfd031">aliases</a>, and <a href="https://gist.github.com/cirpo/343376f1ac7fb00204a0">here</a> the global .gitconfig we are using</p>
+
+<p> Do you have any other tips or tricks to share? Write them down in the comments :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #36]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/"/>
+    <updated>2014-05-01T12:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<ul>
+<li><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></li>
+<li><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></li>
+<li><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></li>
+<li><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></li>
+<li><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></li>
+<li><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></li>
+<li><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></li>
+<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></li>
+<li><a href="http://www.therestartpage.com/">(old) The restart page</a></li>
+<li><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></li>
+<li><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></li>
+<li><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></li>
+<li><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></li>
+<li><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></li>
+<li><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></li>
+<li><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></li>
+<li><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #35]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/24/newsletter-number-35/"/>
+    <updated>2014-04-24T14:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/24/newsletter-number-35</id>
+    <content type="html"><![CDATA[<p>Here we are again! #TechThursday</p>
+
+<ul>
+<li><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></li>
+<li><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></li>
+<li><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></li>
+<li><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></li>
+<li><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></li>
+<li><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></li>
+<li><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></li>
+<li><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></li>
+<li><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></li>
+<li><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></li>
+<li><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></li>
+<li><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></li>
+<li><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></li>
+<li><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></li>
+<li><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></li>
+<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></li>
+<li><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></li>
+<li><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></li>
+<li><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></li>
+<li><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #34]]></title>
@@ -22,9 +696,6 @@
 about <a href="http://www.slideshare.net/odino/lets-rock">the future of tech at Namshi</a>, have a look! ;&ndash;)</p>
 
 <p>And now&hellip;</p>
-
-<!-- more -->
-
 
 <p>&hellip;another <strong>TechThursday</strong> here! Even though we might be a little
 late, here are the links that the share among the team.</p>
@@ -60,9 +731,6 @@ Namshi newsletter!</p>
 <p>Here you go with the interesting resources we&rsquo;ve spotted
 over the last week.</p>
 
-<!-- more -->
-
-
 <ul>
 <li><a href="http://thescoop.co">Hacker News, Designer News and Product Hunt all together!</a></li>
 <li><a href="http://superherojs.com">Awesome, really AWESOME javascript resource</a></li>
@@ -89,9 +757,6 @@ over the last week.</p>
     <id>http://tech.namshi.com/blog/2014/04/03/newsletter-number-32</id>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/"><strong>TechThursday</strong>!</a></p>
 
-<!-- more -->
-
-
 <ul>
 <li><a href="https://github.com/mechio/takana">A Sass/CSS live-editor</a></li>
 <li><a href="https://github.com/Jahaja/psdash">A system information web dashboard for linux</a></li>
@@ -116,9 +781,6 @@ over the last week.</p>
     <updated>2014-03-27T16:17:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/03/27/newsletter-number-31</id>
     <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
-
-<!-- more -->
-
 
 <p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
 
@@ -764,566 +1426,6 @@ client information, render the twig template with the appropriate device value a
 <li><a href="http://vuejs.org/">Vuejs: MVVM Made Simple</a></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #25]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/"/>
-    <updated>2014-02-07T22:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a> again! Oh, actually it&rsquo;s friday but&hellip;whatever! :)</p>
-
-<br/>
-
-
-<br/>
-
-
-<!-- more -->
-
-
-<ul>
-<li><a href="http://chadfowler.com/blog/2014/01/26/the-magic-of-strace/">Strace</a></li>
-<li><a href="https://github.com/HenrikJoreteg/fixpack">Fix your package.json!</a></li>
-<li><a href="http://www.sitepoint.com/guzzle-php-http-client/">Guzzle, an HTTP client for PHP</a></li>
-<li><a href="https://dutchweballiance.nl/techblog/the-definitive-remote-debug-and-unittest-with-phpstorm-guide-part-6/">Remote debugging and testing with PHPStorm</a></li>
-<li><a href="http://blog.gopivotal.com/case-studies-2/continuous-integration-scaling-to-74000-builds-per-day-with-travis-ci-rabbitmq">Scaling 74k builds a day</a></li>
-<li><a href="https://37signals.com/">Goodbye 37signals, welcome Basecamp!</a></li>
-<li><a href="http://welcometothebundle.com/symfony2-rest-api-the-best-2013-way/">REST APIs with Symfony2</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #24]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/"/>
-    <updated>2014-01-30T16:06:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a> again!</p>
-
-<p>Here at <a href="https://www.namshi.com">namshi</a> we are very keen on
-sharing what we find around the &lsquo;net, so we thought of making
-our internal newsletter public.</p>
-
-<!-- more -->
-
-
-<p>Here you go:</p>
-
-<ul>
-<li><p><a href="http://blog.fogcreek.com/we-spent-a-week-making-trello-boards-load-extremely-fast-heres-how-we-did-it/">One week to make Trello extremely fast</a></p></li>
-<li><p><a href="http://jwage.com/post/73741567918/doctrine-is-not-just-an-orm-for-relational-databases">Doctrine is not just an ORM for RDBMS</a></p></li>
-<li><p><a href="http://www.designyourway.net/blog/inspiration/a-collection-of-amazing-html5-demos-and-experiments/">Collection of HTML5 demos and experiments</a></p></li>
-<li><p><a href="https://github.com/paularmstrong/swig/">swig: twig in javascript</a></p></li>
-<li><p><a href="http://www.githubarchive.org/">The github archive</a></p></li>
-<li><p><a href="http://ionicframework.com/">AngularJS for the mobile: the ionic framework</a></p></li>
-<li><p><a href="http://www.mediacurrent.com/blog/getting-git">Getting Git</a></p></li>
-<li><p><a href="http://pivotal.github.io/jasmine/">The Jasmine testing framework</a></p></li>
-<li><p><a href="http://tech.zalando.com/platform/">How is the Zalando platform structured?</a></p></li>
-<li><p><a href="https://medium.com/on-product-management/c664ba7e5138">On product management</a></p></li>
-<li><p><a href="http://dotfiles.github.io/">dotfiles</a></p></li>
-<li><p><a href="https://medium.com/p/24eb09e026dd">How I lost my $50k twitter username</a></p></li>
-<li><p><a href="http://www.ebaytechblog.com/2014/01/13/my-first-year-as-a-presentation-engineer-at-ebay/">NodeJS at eBay</a></p></li>
-<li><p><a href="http://blog.8thlight.com/uncle-bob/2014/01/27/TheChickenOrTheRoad.html">The domain discontinuity</a></p></li>
-<li><p><a href="http://www.workingsoftware.com.au/page/Kill_your_index.php">Kill your index.php</a></p></li>
-<li><p><a href="https://github.com/sitespeedio/sitespeed.io/blob/master/README.md">sitespeed.io</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #23]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
-    <updated>2014-01-23T17:31:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
-    <content type="html"><![CDATA[<p>Hello, this is <a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a>!</p>
-
-<br/>
-
-
-<br/>
-
-
-<!-- more -->
-
-
-<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
-
-<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
-
-<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
-
-<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
-
-<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
-
-<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
-
-<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
-
-<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
-
-<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
-
-<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Virus Detection and Prevention Tips]]></title>
-    <link href="http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips/"/>
-    <updated>2013-12-10T13:32:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips</id>
-    <content type="html"><![CDATA[<ul>
-<li>Make sure you have an anti-virus program installed on your computer. If an anti-virus is installed, also sure its updated regularly as well.</li>
-<li>Don&rsquo;t open email attachments from an unknown, suspicious or untrustworthy source. Also, be careful of email attachments you are not expecting, it might be that the sender&rsquo;s email has been compromised.</li>
-<li>Delete junk emails except you are sure they not junks. Don&rsquo;t forward or reply to any to them. These types of email are
-considered Spam because the authenticity of the email is not guaranteed.</li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li>Be careful when downloading files from the Internet. Be sure that the source is a legitimate and a reputable one.</li>
-<li>Please stay away from torrent sites. Some of the popular ones include Limewire, BitTorrent, Frostwire and Pirate Bay are heavily laden with viruses, malware and spyware. Downloading from these websites is one of the easiest ways to become infected. It’s in your best interest to avoid these websites completely.</li>
-<li>Be careful when searching on the Internet, the links that come up from your search engine may contain a virus. Never go to sites that seem suspicious.</li>
-<li>Due to the popularity of the social networking websites such as MySpace, Facebook, and Twitter, virus makers target them more than any other website. Unknown Ads especially the ones that advertise free stuffs are considered high risk. Avoid clicking these links.</li>
-<li>If you happen to see a pop-up message that you have been infected and to buy their software to protect yourself, do not fall for it! If you click on any part of those messages, a program will be installed which could be a virus. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
-<li>If you happen see any suspicious pop-ups appear on your screen, don&rsquo;t click them. If you do, it is very likely you will infect your computer. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
-<li>If you are in doubt about any potential virus related situation you find yourself in, please do not hesitate to the <a href="mailto:it@namshi.com">IT team</a> and we will answer any question you may have.</li>
-</ul>
-
-
-<h2>References:</h2>
-
-<ul>
-<li><a href="http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses">http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses</a></li>
-<li><a href="http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf">http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Frameworks And Tests in Namshi]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/23/frameworks/"/>
-    <updated>2013-09-23T15:44:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/23/frameworks</id>
-    <content type="html"><![CDATA[<p>As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
-website. However these changes are not stable all the time, sometimes some of these new changes
-end up breaking other working parts of our applications without a prior alert until after we deploy it on
-our website. As a result we end up having some bugs and hot fixes either immediately after testing the
-new deployment or later on when people spot the bugs. Therefore Intensive QA is important because the
-manual test only is not enough, even though if we were careful sometimes we’ll probably forget to test
-all the affected parts by our changes. And after any deployment we need to test everything and if something
-was broken we would need to fix is ASAP.</p>
-
-<!-- more -->
-
-
-<p>We were working with <a href="http://framework.zend.com/">Zend Framework</a> which is considered as a good
-framework for MVC projects, but we decided to move to <a href="http://symfony.com/">Symfony2</a> as it is more
-user-friendly to enhance the structure of our projects and make it more organized, service based applications
-and most importantly to build automated unit tests. Automated tests are mainly important for testing our tickets
-and changes before/after they are deployed for quality assurance purposes. Moreover, such tests need to be
-integrated at early stages because it’s very hard to add them after the development of your application.
-Therefore, such tests need to be implemented in parallel with your application to make sure you cover
-all units and aspects of your application.</p>
-
-<h4>Testing our project using phpunit</h4>
-
-<p>Quality assurance is one of the most important aspects in application development, there are several tests
-that can be used for web applications like:</p>
-
-<ul>
-<li><h5>Unit Test</h5></li>
-</ul>
-
-
-<p>Unit Tests are usually conducted to test classes and functions within the application itself. It tests how
-some functions interact with others and if the desired output and behavior are obtained.</p>
-
-<ul>
-<li><h5>Functional Test</h5></li>
-</ul>
-
-
-<p>Functional test is mainly used test the integration between our application [Namshi] and other services
-and layers.</p>
-
-<p>This test is useful for checking how our application functions and interacts with internal and external services.</p>
-
-<h4>Why do we waste time on implementing automated tests</h4>
-
-<p>If we develop our applications without writing automated tests to save time, we will end up spending more
-time in fixing issues after each deployment. therefore adding automated tests will save our time,
-ensure the quality of our application and help us gaining the trust of our customers.</p>
-
-<h4>How to implement automated test</h4>
-
-<p>With the help of symfony2 implementing automated tests is much easier and feasible. First of all you will
-need to install <a href="http://phpunit.de/manual/current/en/index.html">phpunit</a> and then develop the test and
- implement it in your application.</p>
-
-<h4>Would automated test modify the application&rsquo;s data</h4>
-
-<p>Automated tests should not affect/modify any data in our application. Therefore we create new databases
-for the testing environment, then we use data fixtures
-<a href="http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html">DoctrineFixturesBundle</a>
-to insert dummy data into the testing databases, and finally we add/delete required data before/after each test.</p>
-
-<h4>Testing <a href="http://namshi.com/">Namshi</a></h4>
-
-<p>We are implementing our tests for our application and all the services that interact with it.
- Our purpose is to cover all aspects of <a href="http://namshi.com/">Namshi</a> with automated test (functional test or unit test)
- to ensure the quality of our application and optimize it.</p>
-
-<p>for now we implemented around 200 test cases
-<img class="center" src="http://tech.namshi.com/images/posts/test-result-success.png" title="test result" ></p>
-
-<p>These tests won&rsquo;t pass if we have any bugs of the application
-<img class="center" src="http://tech.namshi.com/images/posts/test-result-failure.png" title="test result" ></p>
-
-<h4>How we assert test results?</h4>
-
-<p>we can assert test results in different ways depending on the response that we are expecting:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$this-&gt;assertEquals(400, $response-&gt;getStatusCode());
-</span><span class='line'>$this-&gt;assertContains("Expected text", $crawler-&gt;filter('*')-&gt;text());</span></code></pre></td></tr></table></div></figure>
-
-
-<p>we can also use <a href="http://php.net/manual/en/class.domxpath.php">DOMXPath</a> to filter html result</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>$xpath  = new DOMXPath($doc);
-</span><span class='line'>$this-&gt;assertContains('expected value', $xpath-&gt;query("//td[@class='html tag class']")-&gt;item(0)-&gt;nodeValue);</span></code></pre></td></tr></table></div></figure>
-
-
-<p>or we can expect exceptions</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>/**
-</span><span class='line'> * @expectedException \Namshi\EntityBundle\Exception\InvalidPaymentMethod
-</span><span class='line'> */
-</span><span class='line'> public function testServiceWithInvalidPaymentMethod()
-</span><span class='line'> {
-</span><span class='line'>    $data   = initial data
-</span><span class='line'>    $result = $service-&gt;execute($data);
-</span><span class='line'> }</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Daily Scrum, Effective or a waste of time?]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/22/daily-scrum/"/>
-    <updated>2013-09-22T14:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/22/daily-scrum</id>
-    <content type="html"><![CDATA[<p>We have been doing Daily Scrums for the past 15 months, but have you really thought of the real impact this activity has on us as an entire team? Or on the leads? Or the business? I don’t think so. I’m noticing lately that this practice is not being appreciated; therefore I’ll give you an insight into the importance of this practice we struggle to do every day.</p>
-
-<!-- more -->
-
-
-<h4>First of all for those of you who don’t know what scrum is:</h4>
-
-<p>Scrum is a management framework for incremental product development using one or more cross functional, self-organizing teams of about seven people each. Scrum provides a structure of roles, meetings, rules, and artifacts. Teams are responsible for creating and adapting their processes within this framework. The greatest potential benefit of Scrum is for complex work involving knowledge creation and collaboration, such as new product development. Scrum is usually associated with object-oriented software development. Its use has also spread to the development of products such as semiconductors, mortgages, and wheelchairs. [1]</p>
-
-<p>We have been doing DS at namshi mainly to enhance our communication and report everything we do transparently. However, this is not the only reason why we do daily scrums, probably the obvious ones are to keep the entire team up to date on how things are going, to keep a room for corrections/considerations/questions and finally to be able to plan ahead what you’re going to do and make sure you already accomplished your TO-DO list for the previous day.  On the other hand, some of the benefits are less obvious to us and we never consider them, daily scrums are actually very effective when it comes to building trust within team members, mainly because you are being honest to your colleagues about who can expect what and when, you’re transparent about the potential risks that are probably caused by something you are working on and finally the fact that your sharing/taking such information with/from them enhance the relationship and trust between you all. You trust them, you listen to their opinions and sometimes you would ask for it because you trust their experience, it’s just a matter of trust. Another benefit is to encourage personal planning. Whether you do it intentionally or not, you always end up planning or at least thinking about what you are going to say during daily scrum. Even if you end up improvising, the fact you have everything organized in your head means that you are planning things properly which is TADAAA a really great thing for a developer. Planning your tasks and tickets and organizing them has a great impact on how you are managing your time. Daily scrum are not to make you feel important about yourself if you are responsible for various things, and not to give the rest of the team this impression. It’s not to judge you or to make you feel that other people are doing more tasks or more things than you (we already have MONTHLY reviews for this don’t worry). In simple words it helps us all to be up to date with our project vision and build a one-unit team.</p>
-
-<p>Now, how can we make sure that what we are doing is an effective DS and not a waste of time. First of all, what you need to do as a team member is a really simple pattern:</p>
-
-<pre><code>1. Say what you are going to do.
-
-2. Do what you said you are going to do {obviously).
-
-3. Report that you did it/doing it/having problems while doing it and       need help.
-
-4. Repeat 1-3
-</code></pre>
-
-<p>If you do this then you are AWESOME, we are done with your responsibility now the team. DS is a stand up meeting => we are burning calories when we are standing => standing requires an effort ======> MAKE IT SHORT. We really don’t want to listen to the story of your life, as tempting as it may seem (ok we do care about you) but now we are standing to do this quick meeting and discuss things quickly, we have 8 working hours to discuss things in details, in fact we can do detailed DS while we are sitting if you would want to discuss things in depth with the rest of the team, so KEEP IT SHORT (not too short plz though).  The main reason why it’s better to plan what you are going to say and make sure it’s not super detailed is because we don’t want it to be a boring meeting and the most important part we want the information to be conceived properly, sometimes the things you are saying could be really important and things could go wrong but if your too detailed we will be less likely to notice every single detail you mention. Finally, timings, Daily scrums should be done at the beginning of the day, not one hour before lunch break, WHAT’s THE POINT??? It’s to start your day with not to enhance your appetite.</p>
-
-<p>If we can do this properly we will be able to improve ourselves and our relationship as a team.</p>
-
-<p>Some of the important goals of doing this activity are:</p>
-
-<pre><code>1. To give you a motivation to start your day well (and organized ofc).
-
-2. To support your improvement and help you get through your issues.
-
-3. To reinforce our focus on the right things and right aspects of the      business and the development cycle.
-
-4. To reinforce the sense of the team and the team spirit.
-
-5. To communicate what’s going on.
-</code></pre>
-
-<p>So mainly we are starting our day properly, we are improving, focusing, building our relationship as team members and finally we are conveying the status of our tasks.</p>
-
-<p>So let’s please try to treat this activity as a positive addition to our team values and give it some extra attention (at least half of the attention you give to your hungry tummy). And as Joe Ely said on Daily start-up meetings  <em>“the purpose is not to meet… it is to improve”</em>.</p>
-
-<p>[1] James, M. 2010. Scrum Reference Card. [e-book] p. 1. Available through: scrumreferencecard <a href="http://scrumreferencecard.com/ScrumReferenceCard.pdf">http://scrumreferencecard.com/ScrumReferenceCard.pdf</a> [Accessed: 7th July 2013].</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Behat, Mink and Parallel Runner, A recipe for automated web testing!]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/20/behat/"/>
-    <updated>2013-09-20T17:13:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/20/behat</id>
-    <content type="html"><![CDATA[<p>It was not until I did my first weekend manual testing procedure on Namshi till I came to realize how much time consuming
-testing can become. All critical paths starting from registration and login to buying a product using the
-available payment methods should be accounted for. Along with that, any irregularities on different pages on the website
-must be reported.</p>
-
-<!-- more -->
-
-
-<p>As Namshi grows and gets more and more complicated, an <em>Automated Web Testing Tool</em> had to be put in place as soon
-as possible. An <em>Automated Web Testing Tool</em> is aimed to test that different user interactions with the webpage and web application are going
-smoothly without errors or unexpected results.</p>
-
-<p>Keeping those requirements in mind, five main components were considered to build the application:
-<a href="http://symfony.com/">Symfony2 Framework</a>, <a href="http://behat.org/">Behat</a> and its
-<a href="http://mink.behat.org/">Mink</a> and <a href="https://github.com/shvetsgroup/ParallelRunner">Parallel Runner</a>
-extensions and <a href="http://www.doctrine-project.org/projects/orm.html">Doctrine Object Relational Mapper (ORM)</a>.</p>
-
-<p><img class="center" src="http://tech.namshi.com/images/arch.jpg" title="App Architecture" alt="App Architecture"></p>
-
-<h2>Behat and Gherkin</h2>
-
-<p>Behat is a PHP Based Behavior Driven Development (BDD) platform that allows the contribution
-of stake holders and customers in the development of software products. In BDD, tests are usually
-written before the actual development of a feature actually starts. In my opinion,it is a very powerful
-approach to overcome any misunderstandings that may arise between developers and other stake
-holders during project planning.</p>
-
-<p>The actual tests are written in the Feature files of Behat using the Gherkin language. The following
-is an example of a scenario in the integrity feature of Namshi:&ndash;</p>
-
-<p><img class="center" src="http://tech.namshi.com/images/gherkin.jpg" title="Gherkin" alt="Gherkin"></p>
-
-<p>As can be noticed, Gherkin is non-technical descriptive language for non-programmers to declare the desired
-functionality of the software.</p>
-
-<p>Of course, it is not the case that Behat will automatically understand and run the Feature Files on its own! Behat asks the
-programmer to write the definitions of the written statements in a special file named FeatureContext.php right when
-you try to run the tests!</p>
-
-<figure class='code'><figcaption><span>FeatureContext.php </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
-</span><span class='line'><span class="sd">/**</span>
-</span><span class='line'><span class="sd">* @Then /^I retrieve a couple product links$/</span>
-</span><span class='line'><span class="sd">*/</span>
-</span><span class='line'><span class="k">public</span> <span class="k">function</span> <span class="nf">iRetrieveACoupleProductLinks</span><span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="nv">$links</span> <span class="o">=</span> <span class="nb">array_slice</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getPage</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">findAll</span><span class="p">(</span><span class="s1">&#39;css&#39;</span><span class="p">,</span><span class="s1">&#39;.productsCatalog .itm-link&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
-</span><span class='line'>    <span class="nv">$productsToVisit</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$links</span> <span class="k">as</span> <span class="nv">$link</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nv">$productsToVisit</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$link</span><span class="o">-&gt;</span><span class="na">getAttribute</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">);</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linksToVisit</span> <span class="o">=</span> <span class="nv">$productsToVisit</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Mink</h2>
-
-<p>Behat can be used to write tests for any application. In order to test web based applications, Behat has to be extended
-with the Mink extension. Mink provides an interface between the web browser and Behat in order to test and run different scenarios.
-When extended in the FeatureContext.php, Mink provides a rich library to simulate the interactions that
-usually take place between a user on a web browser and the web application.
-Mink supports a number of browser emulators: Goutte, Sahi, Zombie, Selenium and Selenium2. In our tool, we are mainly
-using Selenium2 driver except for some scenarios where Goutte is used.</p>
-
-<p>To cover Namshi&rsquo;s sets of predefined manual tests, six feature files were created:&ndash;</p>
-
-<ol>
-<li>integrity.feature: Tests some simple yet critical components of Namshi.</li>
-<li>news.feature: Covers Scenarios for user subscription to the newsletter.</li>
-<li>registration.feature: Covers different user registration scenarios.</li>
-<li>cod.feature (cash on delivery): Scenarios where a user buys a product using cash on delivery.</li>
-<li>cc.feature (credit card): Scenarios when a user buys a product using credit card payment method.</li>
-<li>pp.feature (paypal): Scenarios when a user buys a product using paypal payment method.</li>
-</ol>
-
-
-<h2>Behat Parallel Runner</h2>
-
-<p>After some trials with the testing tool, we noticed that execution takes some time to complete (~25 minutes). In order to speed up the
-execution, a parallelization tool had to be put in place. <strong>Gearman</strong> is a reputable <em>Job Server</em> mostly used to do work in parallel and
-in load balancing across processors. It has an extension in Behat that fetches the appropriate Feature Tags to
-their corresponding worker processes. The issue with Gearman is that it is very complicated for a simple tool
-like the one we are building. Gearman requires a Job Server, OS libraries, PHP extension and Behat extension to operate.
-After some research, another tool was found that can deliver the required performance with much less complexity.
-<strong>Behat Parallel Runner</strong> also distributes the BDD Test Suite defined in Behat to a number of Behat Instances
-without the need for Gearman&rsquo;s client/worker architecture. This distribution is done by defining different <em>profiles</em>
-in <em>behat.yml</em> configuration file and specify the number of parallel processes to run. Parallel Runner
-Extension for Behat was downloaded and enabled through composer and in the behat configuration file.</p>
-
-<figure class='code'><figcaption><span>composer.json </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="s2">&quot;require&quot;</span><span class="err">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nt">&quot;shvetsgroup/parallelrunner&quot;</span><span class="p">:</span> <span class="s2">&quot;dev-master&quot;</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>In order to integrate Parallel Worker, a configuration file for each website was created. In each configuration
-file, the same set of profiles was defined. We took advantage of Behat&rsquo;s filtering option to enable each profile
-to run a certain <em>tag</em> that is already set in the <em>feature files</em>.
-In each configuration file, six profiles were added such that each one runs one <em>feature tag</em>.</p>
-
-<figure class='code'><figcaption><span>behat.yml </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">F1</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@int&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">F2</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@news&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">F3</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@reg&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">F4</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cod&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">F5</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cc&quot;</span>
-</span><span class='line'><span class="l-Scalar-Plain">F6</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@pp&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Finally, all feature files had to be tagged right before the Feature declaration such that
-the extension can identify the scenarios and their corresponding instances.</p>
-
-<figure class='code'><figcaption><span>behat.yml </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">default</span><span class="p-Indicator">:</span>
-</span><span class='line'>    <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span>
-</span><span class='line'>        <span class="l-Scalar-Plain">shvetsgroup\ParallelRunner\Extension</span><span class="p-Indicator">:</span>
-</span><span class='line'>            <span class="l-Scalar-Plain">process_count</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">6</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-
-<figure class='code'><figcaption><span>registration.feature </span></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-</pre></td><td class='code'><pre><code class='gherkin'><span class='line'><span class="nt">@reg</span><span class="nf"></span>
-</span><span class='line'><span class="k">Feature:</span><span class="nf"> Check Namshi registration Scenarios</span>
-</span><span class='line'>
-</span><span class='line'><span class="nf">    @javascript</span>
-</span><span class='line'><span class="nf">    </span><span class="k">Scenario:</span><span class="nf"> As a user I register a new account, filling the registration form with proper data</span>
-</span><span class='line'><span class="k">        Given </span><span class="nf">I visit the &quot;</span><span class="s">register</span><span class="nf">&quot; page</span>
-</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I type in the following:</span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_email</span><span class="k">           |</span><span class="s">registration.new+test-(timeStamp)@namshi.com</span><span class="k"> |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_first_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_last_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">birthday_day</span><span class="k">                            |</span><span class="s">12</span><span class="k">                                                                          |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">birthday_month</span><span class="k">                        |</span><span class="s">05</span><span class="k">                                                                          |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">birthday_year</span><span class="k">                           |</span><span class="s">1987</span><span class="k">                                                                      |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password</span><span class="k">    |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password2</span><span class="k">  |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
-</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_gender</span><span class="k">        |</span><span class="s">male</span><span class="k">                                                                      |</span><span class="nf"></span>
-</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I press &quot;</span><span class="s">send</span><span class="nf">&quot;</span>
-</span><span class='line'><span class="nf">        </span><span class="k">Then </span><span class="nf">I am registered as &quot;</span><span class="s">test</span><span class="nf">&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<h2>Namshi Automated Testing in Action!</h2>
-
-<p>Once all settings are completed, we can start the Automated Testing procedure by running Behat
-with the <em>config</em> parameter set to the target configuration file, which is the site to be tested.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>bin/behat --config <span class="o">=</span> behat-ae.yml
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, six browser windows will pop up and the test suits get executed in parallel!</p>
-
-<p><img class="center" src="http://tech.namshi.com/images/execution.jpg" title="Running Test Suite" alt="Running Test Suite"></p>
-
-<p>When the execution completes, we can open the tool&rsquo;s webpage and review the results!</p>
-
-<p><img class="center" src="http://tech.namshi.com/images/results.jpg" title="Results on the webpage" alt="Results on the webpage"></p>
-
-<p>Looks like everything is running smoothly!</p>
 ]]></content>
   </entry>
   
