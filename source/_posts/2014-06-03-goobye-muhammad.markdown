@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Goodbye Muhammad!"
-date: 2014-06-03 22:47
+date: 2014-06-03 22:46
 comments: true
-categories: [team, goobye]
+categories: [team, goodbye]
 Author: Alessandro Nadalin
 ---
 
