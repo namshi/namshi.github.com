@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Goobye Muhammad!"
+title: "Goodbye Muhammad!"
 date: 2014-06-03 22:47
 comments: true
 categories: [team, goobye]
