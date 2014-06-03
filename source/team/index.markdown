@@ -28,12 +28,6 @@ footer: true
     Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is an open source preacher.
     When not programming, he can be found blogging about technology related topics.
 
-*   ##<div id="Muhammad Riaz">Muhammad Riaz</div>
-    {% img left team /images/riaz.jpeg Muhammad Riaz %}
-    **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.  
-    He has over five years of PHP development experience.He is interested in Enterprise applications,
-    scalable web architecture and software development methodologies.
-
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
     **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
@@ -112,3 +106,15 @@ footer: true
     **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
     He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
     He has around 8 years of experience in Telecom , Network and Linux Technologies.
+
+## Alumni: rockers who have been with us!
+
+We'd also like to list here the rockstart who have been with us
+over the past months or years, and have given a core contribution
+to our technical stack.
+
+*   ##<div id="Muhammad Riaz">Muhammad Riaz</div>
+    {% img left team /images/riaz.jpeg Muhammad Riaz %}
+    **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.  
+    He has over five years of PHP development experience.He is interested in Enterprise applications,
+    scalable web architecture and software development methodologies.
