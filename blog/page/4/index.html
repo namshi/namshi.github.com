@@ -1,0 +1,427 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Namshi</title>
+	<meta name="author" content="Namshi">
+
+	
+	<meta name="description" content="Sep 20th, 2013 Automated Testing, Behat, Behavior Driven Development, Mink, Parallel Runner It was not until I did my first weekend manual testing &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Namshi" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://tech.namshi.com/blog/page/4/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<script src="/javascripts/md5.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.profilepic').append("<img src='/images/namshi.png' alt='Profile Picture' style='width: 160px;' />");
+		});
+	</script>
+	
+</div>
+
+<nav id="main-nav"><ul>
+	<li><a href="/">Blog</a></li>
+	<li><a href="/about">About</a></li>
+	<li><a href="/team">Team</a></li>
+	<li><a href="/archives">Archive</a></li>
+	<li><a href="/join-us">Join Us</a></li>
+</ul>
+
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+		
+		<a class="facebook" href="http://www.facebook.com/NamshiFans" title="Facebook">Facebook</a>
+		
+		
+		
+		<a class="twitter" href="http://twitter.com/NamshiDotCom" title="Twitter">Twitter</a>
+		
+		
+		<a class="github" href="https://github.com/namshi" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-20T17:13:00+04:00" data-updated="true" itemprop="datePublished">Sep 20<span>th</span>, 2013</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/automated-testing/'>Automated Testing</a>, <a class='category' href='/blog/categories/behat/'>Behat</a>, <a class='category' href='/blog/categories/behavior-driven-development/'>Behavior Driven Development</a>, <a class='category' href='/blog/categories/mink/'>Mink</a>, <a class='category' href='/blog/categories/parallel-runner/'>Parallel Runner</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>It was not until I did my first weekend manual testing procedure on Namshi till I came to realize how much time consuming
+testing can become. All critical paths starting from registration and login to buying a product using the
+available payment methods should be accounted for. Along with that, any irregularities on different pages on the website
+must be reported.</p>
+
+<!-- more -->
+
+
+<p>As Namshi grows and gets more and more complicated, an <em>Automated Web Testing Tool</em> had to be put in place as soon
+as possible. An <em>Automated Web Testing Tool</em> is aimed to test that different user interactions with the webpage and web application are going
+smoothly without errors or unexpected results.</p>
+
+<p>Keeping those requirements in mind, five main components were considered to build the application:
+<a href="http://symfony.com/">Symfony2 Framework</a>, <a href="http://behat.org/">Behat</a> and its
+<a href="http://mink.behat.org/">Mink</a> and <a href="https://github.com/shvetsgroup/ParallelRunner">Parallel Runner</a>
+extensions and <a href="http://www.doctrine-project.org/projects/orm.html">Doctrine Object Relational Mapper (ORM)</a>.</p>
+
+<p><img class="center" src="/images/arch.jpg" title="App Architecture" alt="App Architecture"></p>
+
+<h2>Behat and Gherkin</h2>
+
+<p>Behat is a PHP Based Behavior Driven Development (BDD) platform that allows the contribution
+of stake holders and customers in the development of software products. In BDD, tests are usually
+written before the actual development of a feature actually starts. In my opinion,it is a very powerful
+approach to overcome any misunderstandings that may arise between developers and other stake
+holders during project planning.</p>
+
+<p>The actual tests are written in the Feature files of Behat using the Gherkin language. The following
+is an example of a scenario in the integrity feature of Namshi:&ndash;</p>
+
+<p><img class="center" src="/images/gherkin.jpg" title="Gherkin" alt="Gherkin"></p>
+
+<p>As can be noticed, Gherkin is non-technical descriptive language for non-programmers to declare the desired
+functionality of the software.</p>
+
+<p>Of course, it is not the case that Behat will automatically understand and run the Feature Files on its own! Behat asks the
+programmer to write the definitions of the written statements in a special file named FeatureContext.php right when
+you try to run the tests!</p>
+
+<figure class='code'><figcaption><span>FeatureContext.php </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'><span class="sd">/**</span>
+</span><span class='line'><span class="sd">* @Then /^I retrieve a couple product links$/</span>
+</span><span class='line'><span class="sd">*/</span>
+</span><span class='line'><span class="k">public</span> <span class="k">function</span> <span class="nf">iRetrieveACoupleProductLinks</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$links</span> <span class="o">=</span> <span class="nb">array_slice</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">getPage</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">findAll</span><span class="p">(</span><span class="s1">&#39;css&#39;</span><span class="p">,</span><span class="s1">&#39;.productsCatalog .itm-link&#39;</span><span class="p">),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+</span><span class='line'>    <span class="nv">$productsToVisit</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">foreach</span> <span class="p">(</span><span class="nv">$links</span> <span class="k">as</span> <span class="nv">$link</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$productsToVisit</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$link</span><span class="o">-&gt;</span><span class="na">getAttribute</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">linksToVisit</span> <span class="o">=</span> <span class="nv">$productsToVisit</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Mink</h2>
+
+<p>Behat can be used to write tests for any application. In order to test web based applications, Behat has to be extended
+with the Mink extension. Mink provides an interface between the web browser and Behat in order to test and run different scenarios.
+When extended in the FeatureContext.php, Mink provides a rich library to simulate the interactions that
+usually take place between a user on a web browser and the web application.
+Mink supports a number of browser emulators: Goutte, Sahi, Zombie, Selenium and Selenium2. In our tool, we are mainly
+using Selenium2 driver except for some scenarios where Goutte is used.</p>
+
+<p>To cover Namshi&rsquo;s sets of predefined manual tests, six feature files were created:&ndash;</p>
+
+<ol>
+<li>integrity.feature: Tests some simple yet critical components of Namshi.</li>
+<li>news.feature: Covers Scenarios for user subscription to the newsletter.</li>
+<li>registration.feature: Covers different user registration scenarios.</li>
+<li>cod.feature (cash on delivery): Scenarios where a user buys a product using cash on delivery.</li>
+<li>cc.feature (credit card): Scenarios when a user buys a product using credit card payment method.</li>
+<li>pp.feature (paypal): Scenarios when a user buys a product using paypal payment method.</li>
+</ol>
+
+
+<h2>Behat Parallel Runner</h2>
+
+<p>After some trials with the testing tool, we noticed that execution takes some time to complete (~25 minutes). In order to speed up the
+execution, a parallelization tool had to be put in place. <strong>Gearman</strong> is a reputable <em>Job Server</em> mostly used to do work in parallel and
+in load balancing across processors. It has an extension in Behat that fetches the appropriate Feature Tags to
+their corresponding worker processes. The issue with Gearman is that it is very complicated for a simple tool
+like the one we are building. Gearman requires a Job Server, OS libraries, PHP extension and Behat extension to operate.
+After some research, another tool was found that can deliver the required performance with much less complexity.
+<strong>Behat Parallel Runner</strong> also distributes the BDD Test Suite defined in Behat to a number of Behat Instances
+without the need for Gearman&rsquo;s client/worker architecture. This distribution is done by defining different <em>profiles</em>
+in <em>behat.yml</em> configuration file and specify the number of parallel processes to run. Parallel Runner
+Extension for Behat was downloaded and enabled through composer and in the behat configuration file.</p>
+
+<figure class='code'><figcaption><span>composer.json </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="s2">&quot;require&quot;</span><span class="err">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nt">&quot;shvetsgroup/parallelrunner&quot;</span><span class="p">:</span> <span class="s2">&quot;dev-master&quot;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In order to integrate Parallel Worker, a configuration file for each website was created. In each configuration
+file, the same set of profiles was defined. We took advantage of Behat&rsquo;s filtering option to enable each profile
+to run a certain <em>tag</em> that is already set in the <em>feature files</em>.
+In each configuration file, six profiles were added such that each one runs one <em>feature tag</em>.</p>
+
+<figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">F1</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@int&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F2</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@news&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F3</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@reg&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F4</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cod&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F5</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@cc&quot;</span>
+</span><span class='line'><span class="l-Scalar-Plain">F6</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">filters</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">tags</span><span class="p-Indicator">:</span> <span class="s">&quot;@pp&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally, all feature files had to be tagged right before the Feature declaration such that
+the extension can identify the scenarios and their corresponding instances.</p>
+
+<figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">default</span><span class="p-Indicator">:</span>
+</span><span class='line'>    <span class="l-Scalar-Plain">extensions</span><span class="p-Indicator">:</span>
+</span><span class='line'>        <span class="l-Scalar-Plain">shvetsgroup\ParallelRunner\Extension</span><span class="p-Indicator">:</span>
+</span><span class='line'>            <span class="l-Scalar-Plain">process_count</span><span class="p-Indicator">:</span>  <span class="l-Scalar-Plain">6</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span>registration.feature </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='gherkin'><span class='line'><span class="nt">@reg</span><span class="nf"></span>
+</span><span class='line'><span class="k">Feature:</span><span class="nf"> Check Namshi registration Scenarios</span>
+</span><span class='line'>
+</span><span class='line'><span class="nf">    @javascript</span>
+</span><span class='line'><span class="nf">    </span><span class="k">Scenario:</span><span class="nf"> As a user I register a new account, filling the registration form with proper data</span>
+</span><span class='line'><span class="k">        Given </span><span class="nf">I visit the &quot;</span><span class="s">register</span><span class="nf">&quot; page</span>
+</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I type in the following:</span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_email</span><span class="k">           |</span><span class="s">registration.new+test-(timeStamp)@namshi.com</span><span class="k"> |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_first_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_last_name</span><span class="k">   |</span><span class="s">test</span><span class="k">                                                                        |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_day</span><span class="k">                            |</span><span class="s">12</span><span class="k">                                                                          |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_month</span><span class="k">                        |</span><span class="s">05</span><span class="k">                                                                          |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">birthday_year</span><span class="k">                           |</span><span class="s">1987</span><span class="k">                                                                      |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password</span><span class="k">    |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_password2</span><span class="k">  |</span><span class="s">121212</span><span class="k">                                                                  |</span><span class="nf"></span>
+</span><span class='line'><span class="k">        |</span><span class="s">RegistrationForm_gender</span><span class="k">        |</span><span class="s">male</span><span class="k">                                                                      |</span><span class="nf"></span>
+</span><span class='line'><span class="nf">        </span><span class="k">When </span><span class="nf">I press &quot;</span><span class="s">send</span><span class="nf">&quot;</span>
+</span><span class='line'><span class="nf">        </span><span class="k">Then </span><span class="nf">I am registered as &quot;</span><span class="s">test</span><span class="nf">&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Namshi Automated Testing in Action!</h2>
+
+<p>Once all settings are completed, we can start the Automated Testing procedure by running Behat
+with the <em>config</em> parameter set to the target configuration file, which is the site to be tested.</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bin/behat --config <span class="o">=</span> behat-ae.yml
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now, six browser windows will pop up and the test suits get executed in parallel!</p>
+
+<p><img class="center" src="/images/execution.jpg" title="Running Test Suite" alt="Running Test Suite"></p>
+
+<p>When the execution completes, we can open the tool&rsquo;s webpage and review the results!</p>
+
+<p><img class="center" src="/images/results.jpg" title="Results on the webpage" alt="Results on the webpage"></p>
+
+<p>Looks like everything is running smoothly!</p>
+</div></article>
+
+<nav id="pagenavi">
+    
+        <a href="/blog/page/3/" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Namshi
+
+<br>
+Powered by Octopress.
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+			<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+	$('.fancybox').fancybox();
+})(jQuery);
+</script> <!-- Delete or comment this line to disable Fancybox -->
+
+
+<script type="text/javascript">
+      var disqus_shortname = 'namshitechblog';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-44619227-2']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+
+		</div>
+	</div>
+</body>
+</html>

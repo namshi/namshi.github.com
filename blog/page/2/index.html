@@ -9,7 +9,7 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="May 1st, 2014 JavaScript, PHP, TechThursday, docker, grunt, newsletter, nodejs It&rsquo;s TechThursday again: here&rsquo;s what we&rsquo;ve been &hellip;">
+	<meta name="description" content="May 4th, 2014 git, github, namshi, tips, tricks At Namshi for versioning and managing our large and assorted codebase we use GIT and of course &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,6 +100,268 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-04T20:38:00+04:00" data-updated="true" itemprop="datePublished">May 4<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/tips/'>tips</a>, <a class='category' href='/blog/categories/tricks/'>tricks</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
+
+<p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>
+
+<!-- more -->
+
+
+<h3>Our GIT flow</h3>
+
+<p>Git is so powerful and flexible that at the beginning you feel kinda lost: <em>&ldquo;How should I use it?&rdquo;</em>  <em>&ldquo;Should I use merge or rebase?&rdquo;</em>  <em>&ldquo;master, develop, release branches?&rdquo;</em>
+And then you try to find the answer via google and you find the solution: <a href="http://nvie.com/posts/a-successful-git-branching-model/">&ldquo;GIT FLOW!&rdquo;</a>.</p>
+
+<blockquote><p>No, no, and again <strong>NO!</strong> (please say it out loud).</p></blockquote>
+
+<p>&ldquo;Git flow&rdquo; is one of several ways to use git, but it&rsquo;s not a standard and it could not fit well in your current organisation/codebase/team flow.</p>
+
+<p>You should embrace the power of git, and find a tailor-made solution.</p>
+
+<p>At Namshi we basically have two main branches: master and develop.</p>
+
+<p>On master you have, exactly, what&rsquo;s running on production, while develop is our development branch (surprisingly).</p>
+
+<p>When we pick a task we usually create a branch from develop. Once we are done with a task we rebase our feature branch from develop, in order to be sure that the new
+code works and doesn&rsquo;t break anything before being merged in develop. Then we open a pull request (PR) on Github. Once the PR is reviewed and approved
+it gets merged in the develop branch.
+There is (still) a lot of discussion (and flames) about using the rebase command, because basically it rewrites the current commits history.
+It&rsquo;s true that potentially you can screw your codebase, but we are still safe because you can still rely on your teammates local repositories and
+gain from the integrity, stability (before merging on the develop branch you can be sure that you didn&rsquo;t break anything) and clean commits history point of view.</p>
+
+<p>Once we decide that we can ship new stuff, we create a new branch (usually a release branch), tag it, deploy on staging and then deploy on live.
+Then we merge the tag on master (with the <a href="https://www.kernel.org/pub/software/scm/git/docs/git-merge.html">&mdash;no-ff option</a> and rebase develop with master.
+Even here we use the rebase command because we end up with develop that has the same commits sequence as master plus new commits: it&rsquo;s so easy to spot the differences between the two branches.</p>
+
+<h3>Git Config</h3>
+
+<p>There are several configuration settings that you can put in your <code>~/.gitconfig</code> file and get a lot of benefits on your daily git usage.</p>
+
+<h4>colors</h4>
+
+<p>Give some love to git outputs:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global color.ui true</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>filemode</h4>
+
+<p>Tired of having weird a <code>git status</code> output because some files has just changed file permissions?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global core.filemode false</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>rerere</h4>
+
+<p>The git rerere functionality stands for <em>&ldquo;reuse recorded resolution&rdquo;</em> and as the name implies, it allows you to ask git to remember how you&rsquo;ve resolved a knotty conflict so that the next time you have the same conflict, git can automatically resolve it for you.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global rerere.enabled true</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>global exclude</h4>
+
+<p>Instead of setting common files to be ignored in your local .gitignore file (i.e. your IDE config file, .DS_Store etc) everytime, you can use a global ignore file
+that will automatically apply to all your repos.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global core.excludesfile ~/.gitignore</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>tip:</strong> I have a <code>my_temp</code> entry in my .gitignore global file, so that I can create a <code>my_temp</code> dir in my working copies and be free to put any experimental and temporary code/quick testing code
+in it without changing the project on my IDE and using the actual codebase.</p>
+
+<h4>pull with rebase, not merge</h4>
+
+<p>Everytime we pull from a remote repository, we do a <code>git pull --rebase</code> because we don&rsquo;t want to mess up with our local commits.
+Instead of specifying it everytime, you can make it the default beaviour when you pull:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global branch.auto-setuprebase always</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>autocorrect</h4>
+
+<p>Git can autocorrect you:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global help.autocorrect true</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>➜  namshi.github.com git:(source) ✗ git cmmit
+</span><span class='line'>git: 'cmmit' is not a git command. See 'git --help'.
+</span><span class='line'>
+</span><span class='line'>Did you mean this?
+</span><span class='line'>  commit</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>default tracking</h4>
+
+<p>Bored of setting up branch tracking by hand?</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git config --global push.default upstream</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Git aliases</h3>
+
+<p>Git supports aliases via the <code>git config --global alias.&lt;alias_name&gt; "&lt;git command&gt;"</code>, but here in Namshi we tend to use the shell aliases
+because you can save even more chars and git is the only revision control and source code management system we use.</p>
+
+<h4>checkout</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ck='git checkout'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>checkout branch develop</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias dev='git checkout develop'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>checkout branch master</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias master='git checkout master'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>create a new branch</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ckb='git checkout -b'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>push</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias push='git push'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>force push after a rebase</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias pushf='git push -f'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>pull</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias pull='git pull'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>sync main branches</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias align='git pull --rebase origin master && git pull --rebase origin develop'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>fetch</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias fetch='git fetch'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>commit</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias ci='git commit'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>tag</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias tag='git tag'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>revert all changes</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias undo='git reset --hard HEAD'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>delete merged branch</h4>
+
+<p>How many times do you have so many branches in your local repo that are already merged?
+Let&rsquo;s get rid of them!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias dmb='git branch --merged | xargs git branch -d'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>log</h4>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias glog='git log --oneline --decorate'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>status</h4>
+
+<p>A shorter version:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias st='git status -sb'</span></code></pre></td></tr></table></div></figure>
+
+
+<h4>diff</h4>
+
+<p>This only highlights the changed words, nicely inline.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias gdiff='git diff --word-diff'</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Tips</h3>
+
+<ul>
+<li>You messed up with a merge/rebase? Don&rsquo;t freak out, just use <code>git reflog</code> to check the local history command and sha1, and then <code>git reset --hard &lt;sha1&gt;</code></li>
+<li>After rebasing develop in your feature branch you end up with too many conflicts and messed up commits history? Don&rsquo;t panic, create a new feature branch from develop and
+<code>git cherry-pick</code> all the commits you need from your previous feature branch.</li>
+<li>Is my commit already on branch X? <code>git branch --contains &lt;sha1&gt;</code> is there to rescue you!</li>
+<li>You want to fetch a file from another branch without changing your current branch? <code>git checkout &lt;other_branch_name&gt; -- path/to/file</code></li>
+</ul>
+
+
+<p> Here you can find a complete list of <a href="https://gist.github.com/cirpo/86d43ef8ef87b4cfd031">aliases</a>, and <a href="https://gist.github.com/cirpo/343376f1ac7fb00204a0">here</a> the global .gitconfig we are using</p>
+
+<p> Do you have any other tips or tricks to share? Write them down in the comments :)</p>
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -606,74 +868,6 @@ is still here!</p>
 <li><a href="https://github.com/sebastianbergmann/money">Money value objects in PHP</a></li>
 </ul>
 
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-06T14:05:00+04:00" data-updated="true" itemprop="datePublished">Mar 6<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>Welcome back to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
-
-<p>Today we present you some interesting news and articles from the world of web technology!</p>
-
-<!-- more -->
-
-
-<p>*<a href="http://antirez.com/news/71">A simple distributed algorithm for small idempotent information</a></p>
-
-<p>*<a href="https://github.com/toddmotto/stratos">Stratos.js &ndash; Object manipulation module</a></p>
-
-<p>*<a href="http://usablica.github.io/progress.js/">progress.js &ndash; A themeable progress bar library for everything</a></p>
-
-<p>*<a href="http://zachholman.com/posts/only-90s-developers/">Only 90s Web Developers Remember This</a></p>
-
-<p>*<a href="http://hipsterdevstack.tumblr.com/">Hipster Dev Stack</a></p>
-
-<p>*<a href="http://www.theguardian.com/info/developer-blog/2014/feb/18/how-the-guardian-successfully-moved-domain">How the Guardian successfully moved domain to www.theguardian.com</a></p>
-
-<p>*<a href="http://www.newfangled.com/the_way_you_design_web_content_is_about_to_change">The way you design web content is about to change</a></p>
-
-<p>*<a href="http://www.slideshare.net/sharkag/index-management-in-shallow-depth">Index management in shallow depth</a></p>
-
-<p>*<a href="http://www.sitepoint.com/data-fixtures-symfony2/">Data Fixtures in Symfony2</a></p>
-
-<p>*<a href="http://smartbear.com/products/software-development/what-is-code-review/">What IS Code Review?</a></p>
-
-<p>*<a href="http://www.couchbase.com/presentations/couchbase-tlv-2014-couchbase-at-viber">Viber Replaces MongoDB with Couchbase</a></p>
-
-<p>*<a href="https://github.com/orocrm/crm-application">OroCRM Application</a></p>
-
-<p>*<a href="http://www.symfony2cheatsheet.com/">Symfony2cheatsheet</a></p>
-
-<p>*<a href="http://www.codingthearchitecture.com/2014/03/05/five_things_every_developer_should_know_about_software_architecture.html">Five things every developer should know about software architecture</a></p>
-
-<p>*<a href="https://github.com/maxogden/rainbowify">rainbowify</a></p>
-
-<p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
-
-<p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
 </div></article>
 
 <nav id="pagenavi">
