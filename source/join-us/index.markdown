@@ -20,6 +20,10 @@ Service Oriented Architecture on "RESTish" APIs, while, at the front,
 we've decided to fight the battle with AngularJS and Javascript in general
 (gulp, browserify and all the *new kids on the block*).
 
+Currently, we are looking for a [Mobile Lead Developer](/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/), a [Sr Frontend Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/) and a [Sr API Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/): if you have the passion, but lack of the experience, don't worry but submit
+your application as we are very happy to hire youngsters who can grow
+during their time at Namshi!
+
 For this year, we've planned great things:
 
 <iframe src="http://www.slideshare.net/slideshow/embed_code/33642971" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
@@ -31,4 +35,5 @@ Here's a taste of Namshi, as a company:
 
 <iframe src="//player.vimeo.com/video/71411406" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-What are you waiting for? Drop a line at *alex.nadalin@namshi.com* and let's have a chat!
+What are you waiting for? Drop a line at `alessandro.nadalin@namshi.com`
+and let's have a chat!
