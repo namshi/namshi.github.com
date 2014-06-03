@@ -4,7 +4,7 @@
   <title><![CDATA[Category: welcome | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/welcome/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-03T23:05:17+04:00</updated>
+  <updated>2014-06-03T23:10:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://tech.namshi.com/blog/2014/05/26/welcome-nikita/"/>
     <updated>2014-05-26T23:40:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/05/26/welcome-nikita</id>
-    <content type="html"><![CDATA[<p>{% img team left /images/nikita.png %}</p>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/nikita.png"></p>
 
 <p>Yesterday we got some cold breeze from Russia, which
 is never bad considered that Dubai is getting ready
@@ -41,7 +41,7 @@ as we&rsquo;re gonna see some more open-source PHP libraries over there!</p>
     <link href="http://tech.namshi.com/blog/2014/05/26/welcome-shidhin/"/>
     <updated>2014-05-26T15:36:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/05/26/welcome-shidhin</id>
-    <content type="html"><![CDATA[<p>{% img team left /images/shidhin.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/shidhin.jpg"></p>
 
 <p>Second announcement of the day (and we ain&rsquo;t done yet!):
 I am super-duper-excited to welcome <a href="https://twitter.com/shidhincr">Shidhin CR</a>
@@ -69,7 +69,7 @@ as we&rsquo;re gonna see some more AngularJS-ish stuff over there!</p>
     <link href="http://tech.namshi.com/blog/2014/05/26/welcome-lucio/"/>
     <updated>2014-05-26T11:20:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/05/26/welcome-lucio</id>
-    <content type="html"><![CDATA[<p>{% img team left /images/lucio.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/lucio.jpg"></p>
 
 <p>I am very happy to announce &ndash; even though I&rsquo;m a bit late &ndash; that
 <a href="https://twitter.com/unlucio">Luciano &ldquo;unlucio&rdquo; Colosio</a>

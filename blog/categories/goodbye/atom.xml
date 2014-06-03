@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: goobye | Namshi]]></title>
-  <link href="http://tech.namshi.com/blog/categories/goobye/atom.xml" rel="self"/>
+  <title><![CDATA[Category: goodbye | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/goodbye/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-03T23:05:17+04:00</updated>
+  <updated>2014-06-03T23:10:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -16,9 +16,9 @@
   <entry>
     <title type="html"><![CDATA[Goodbye Muhammad!]]></title>
     <link href="http://tech.namshi.com/blog/2014/06/03/goobye-muhammad/"/>
-    <updated>2014-06-03T22:47:00+04:00</updated>
+    <updated>2014-06-03T22:46:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/06/03/goobye-muhammad</id>
-    <content type="html"><![CDATA[<p>{% img left team /images/riaz.jpeg Muhammad Riaz %}</p>
+    <content type="html"><![CDATA[<p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
 
 <p>As much as we hate to see people leaving, I think
 it&rsquo;s a good thing to waive the nostalgic feelings
@@ -49,6 +49,8 @@ in order to join an exciting startup.</p>
 
 <p>Bring your <a href="http://www.stylehoster.com/lpc/uploads/2014/01/Latest-Salwar-Kameez-Designs-2014-For-Pakistani-Men.gif">Kameez</a> with you man,
 and remember you still have some brothers in Dubai!</p>
+
+<p>Aye!</p>
 ]]></content>
   </entry>
   
