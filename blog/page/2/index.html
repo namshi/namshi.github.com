@@ -9,7 +9,7 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="May 4th, 2014 git, github, namshi, tips, tricks At Namshi for versioning and managing our large and assorted codebase we use GIT and of course &hellip;">
+	<meta name="description" content="May 7th, 2014 php Here at Namshi we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,6 +100,185 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-07T09:03:00+04:00" data-updated="true" itemprop="datePublished">May 7<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/php/'>php</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
+
+<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
+
+<!-- more -->
+
+
+<h3>array_column function</h3>
+
+<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productIds = [1001, 1005, 1007];</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//array with keys and values</span>
+</span><span class='line'><span class="x">$products = [</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Vito Solo Shirt&quot;, &quot;sku&quot; =&gt; &quot;VI714AT94SIB&quot;, &quot;price&quot; =&gt; 180.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Core Ultra Shirt&quot;, &quot;sku&quot; =&gt; &quot;JA872AT40VYL&quot; , &quot;price&quot; =&gt; 195.00],</span>
+</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Swoosh T-shirt&quot;, &quot;sku&quot; =&gt; &quot;NI727AT17RGG&quot; , &quot;price&quot; =&gt; 130.00]</span>
+</span><span class='line'><span class="x">];</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productTitles = array_column($products, &quot;title&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//product titles will be a new array of titles extacted from products array in above example code</span>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [0] =&gt; Vito Solo Shirt</span>
+</span><span class='line'><span class="x">    [1] =&gt; Core Ultra Shirt</span>
+</span><span class='line'><span class="x">    [2] =&gt; Swoosh T-shirt</span>
+</span><span class='line'><span class="x">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">$productPrices = array_column($products, &quot;price&quot;, &quot;sku&quot;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">Array</span>
+</span><span class='line'><span class="x">(</span>
+</span><span class='line'><span class="x">    [VI714AT94SIB] =&gt; 180</span>
+</span><span class='line'><span class="x">    [JA872AT40VYL] =&gt; 195</span>
+</span><span class='line'><span class="x">    [NI727AT17RGG] =&gt; 130</span>
+</span><span class='line'><span class="x">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The PHP <code>array_colum</code> function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
+
+<h3>finally</h3>
+
+<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
+
+<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
+
+<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">try {</span>
+</span><span class='line'><span class="x">     //open sql connection </span>
+</span><span class='line'><span class="x">     if ($condition) { </span>
+</span><span class='line'><span class="x">        return false;</span>
+</span><span class='line'><span class="x">     }</span>
+</span><span class='line'><span class="x">  }</span>
+</span><span class='line'><span class="x">  finally {</span>
+</span><span class='line'><span class="x">    //close the sql connection, this will be executed even if the return is called.</span>
+</span><span class='line'><span class="x">  }</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
+
+<h3>DateTimeImmutable</h3>
+
+<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
+
+<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$date           = new DateTimeImmutable();</span>
+</span><span class='line'><span class="x">$datePlusOneDay = $date-&gt;add(new DateInterval(&#39;P1D&#39;));</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">print $date-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'><span class="x">print &quot;---&quot;;</span>
+</span><span class='line'><span class="x">print $datePlusOneDay-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//output</span>
+</span><span class='line'><span class="x">//2014-May-07 22:37:04---2014-May-08 22:37:04</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//in some entity class in the setCreatedAt method</span>
+</span><span class='line'><span class="x">$this-&gt;createdAt = new DateTimeImmutable();</span>
+</span><span class='line'>
+</span><span class='line'><span class="x">//in some entity class in some prePresist method</span>
+</span><span class='line'><span class="x">$this-&gt;updatedAt = new DateTimeImmutable();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -825,47 +1004,6 @@ we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)<
 <li><p><a href="http://www.youtube.com/watch?v=aZqhRICne_M">Fluent 2014 Brendan Eich, &ldquo;JavaScript Taking Both the High and Low Roads&rdquo;</a></p></li>
 <li><p><a href="http://www.youtube.com/watch?v=WQZio5DlSXM">Redefining a function as you debug it in Chrome DevTools</a></p></li>
 <li><p><a href="http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf">BIG DATA: The Parable of Google Flu</a></p></li>
-</ul>
-
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-03-13T16:43:00+04:00" data-updated="true" itemprop="datePublished">Mar 13<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/luna/'>luna</a>, <a class='category' href='/blog/categories/php/'>php</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>TechThursday again: it&rsquo;s a bit short, but the list of useful links of the week
-is still here!</p>
-
-<!-- more -->
-
-
-<ul>
-<li><a href="https://github.com/marcj/php-pm">PHP process manager</a></li>
-<li><a href="http://scoutapp.github.io/scout_realtime/"><code>top</code> is 30 years old, use <code>scout</code></a></li>
-<li><a href="https://github.com/luna/luna">the Luna programming language</a></li>
-<li><a href="https://github.com/sebastianbergmann/money">Money value objects in PHP</a></li>
 </ul>
 
 </div></article>
