@@ -63,4 +63,4 @@ are always a great moment to improve yourself as a developer and they give you t
 You have the chance to understand what’s going on in our field, talk in person with other devs that maybe you just know because you sent a PR to their awesome opensource project on Github, getting tons of advices and inspiration and so on.
 Keep following [@TechNamshi](http://twitter.com/technamshi) on twitter, a **new community** is coming in Dubai... **stay tuned!**
 
-Follow [@jsday](http://twitter.com/jsconfit) and [@phpday](http://twitter.com/phpday) to stay updated of when they are going to release the talks videos.
+Follow [@jsday](http://twitter.com/jsconfit) and [@phpday](http://twitter.com/phpday) to stay updated on when they are going to release the talks videos.
