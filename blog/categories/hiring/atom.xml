@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hiring | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/hiring/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-04T21:46:23+04:00</updated>
+  <updated>2014-06-05T12:45:07+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #41]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/"/>
+    <updated>2014-06-05T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41</id>
+    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
+
+<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
+
+<p><strong>And you what? We are hiring!</strong> : ##<strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong>##</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer #namshi</a></p></li>
+<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
+<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
+<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
+<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
+<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
+<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
+<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
+<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
+<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
+<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
+<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
+<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
+<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
+<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Like Android and iOS? Let's change shopping in the Middle East together!]]></title>

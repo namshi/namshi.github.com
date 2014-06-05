@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-04T21:46:23+04:00</updated>
+  <updated>2014-06-05T12:45:07+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #41]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/"/>
+    <updated>2014-06-05T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41</id>
+    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
+
+<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
+
+<p><strong>And you what? We are hiring!</strong> : ##<strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong>##</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer #namshi</a></p></li>
+<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
+<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
+<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
+<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
+<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
+<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
+<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
+<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
+<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
+<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
+<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
+<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
+<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
+<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Developers don't write code, they write essays]]></title>
@@ -116,7 +149,7 @@ all need to nail the problem without the need to dig too deep into
 the explanation, they all need to get straight to the point, making
 things explicit rather than implicit.</p>
 
-<p>Keep writing essays, no matter if in C, JavaScript or English.</p>
+<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
 ]]></content>
   </entry>
   
@@ -224,6 +257,45 @@ development team to be growing as months will go by</li>
 <h2>So what?</h2>
 
 <p>Simply drop an email at <code>alessandro.nadalin@namshi.com</code> and let&rsquo;s make it real! Need more infos? Check <a href="http://tech.namshi.com/join-us">this</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #40]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
+    <updated>2014-05-29T12:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
+    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+
+<ul>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
+<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
+<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
+  Five principles that should guide you every time you write code.
+  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
+<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
+<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
+<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
+<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
+<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
+<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
+<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
+<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
+<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
+<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
+<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
+<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
+<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
+<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
+</ul>
+
 ]]></content>
   </entry>
   
@@ -393,7 +465,7 @@ are always a great moment to improve yourself as a developer and they give you t
 You have the chance to understand what’s going on in our field, talk in person with other devs that maybe you just know because you sent a PR to their awesome opensource project on Github, getting tons of advices and inspiration and so on.
 Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitter, a <strong>new community</strong> is coming in Dubai&hellip; <strong>stay tuned!</strong></p>
 
-<p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated of when they are going to release the talks videos.</p>
+<p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated on when they are going to release the talks videos.</p>
 ]]></content>
   </entry>
   
@@ -1071,132 +1143,6 @@ over the last week.</p>
 <li><a href="http://www.git-tower.com/blog/git-hosting-services-compared/">12 Git Hosting Services Compared</a></li>
 <li><a href="http://codegeekz.com/best-mobile-app-development-frameworks-for-developers/">Mobile app development frameworks</a></li>
 <li><a href="http://blog.elendev.com/development/php/symfony/use-a-database-as-translation-provider-in-symfony-2/">Loading translations from a db in Symfony 2</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
-    <updated>2014-03-24T14:37:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
-    <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
-boost your nerditude and have some fun, we might have what
-you are looking for.</p>
-
-<p><em>(no, it&rsquo;s not a cookie)</em></p>
-
-<!-- more -->
-
-
-<p>Here at <a href="https://en-ae.namshi.com">Namshi</a>, in the cold (yes, it&rsquo;s an euphemism) lands of Dubai, things have gone quite well
-so far, and we&rsquo;re extremely excited everytime there&rsquo;s room for
-someone else in our little room (actually, our office it&rsquo;s kind of an open-space).</p>
-
-<p>I am very happy to announce that we are now actively looking for 2
-new members of our <a href="http://tech.namshi.com/team">team</a> in order to expand our team, vision,
-objectives and count of the <a href="https://www.google.com/search?q=shisha&amp;espv=2&amp;es_sm=125&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=zA8wU46_CoezhAePwgE&amp;ved=0CAkQ_AUoAQ&amp;biw=1687&amp;bih=871">shishas</a> we order when we&rsquo;re out together.</p>
-
-<h2>API monkey</h2>
-
-<p>If you know what the <code>PSR-4</code> is&hellip;</p>
-
-<p>If you are willing to switch to HHVM, in production, in the next six months&hellip;</p>
-
-<p>If you have ever heard of Event Sourcing&hellip;</p>
-
-<p>If you get excited everytime someone names Redis (even if it&rsquo;s for no apparent reason at all, the important is to get excited regardless)&hellip;</p>
-
-<p>If you know the 5 tenets of the REST architectural style&hellip;</p>
-
-<p>if you want to give back to the <a href="https://github.com/namshi">opensource community</a></p>
-
-<p>If you like <a href="http://en.wikipedia.org/wiki/Shawarma">shawarma</a>&hellip;</p>
-
-<p>&hellip;if all of this and that, then think of coming over to Dubai to join
-a startup that has been disruptive in his market and has been writing
-a Service-Oriented Architecture (with <a href="http://www.styleisnecessity.com/2012/12/15/namshi-2/">style</a>! :&ndash;))
-based on Symfony2, HTTP APIs and Redis.</p>
-
-<p>We are looking for a <em>Senior API engineer</em>, and will offer a competitive
-retribution plus some other benefits (<a href="http://tech.namshi.com/images/cirpo.png">working with cirpo</a>, among others).</p>
-
-<h2>Frontend ducktyper</h2>
-
-<p>As a <em>Senior Frontend Engineer</em>, you will need to get bored with old school
-technologies like <strong>NodeJS, AngularJS, Gulp</strong>, on which our frontends are
-currently running (to be honest, if we had to rewrite today, we would go
-for PERL, #FORSURE).</p>
-
-<p>Unfortunately, your duties will also include having to deal with the DevTools
-in order to speed up performances and eliminate any waste and overengineering
-we might have on our frontends.</p>
-
-<p>Last but not least &ndash; I know, I&rsquo;m sorry :( &ndash; you will be disgusted to be consuming our backend APIs,
-trying to get your head around HTTP headers, caching and everything bad about webservices.</p>
-
-<p>Ah, I almost forgot to mention that we might have to add SPDY and WebP. Yesterday.</p>
-
-<h2>About Namshi</h2>
-
-<p>We honestly want to keep it cool and fun, that&rsquo;s why I wante to give this
-post this kind of tone.</p>
-
-<p>One thing I am really proud of, at Namshi, is that <a href="http://www.slideshare.net/odino/soa-with-symfony2-confoo-2014-in-montreal-ca/159">we don&rsquo;t stick to one
-technology</a> just because we think that we can do everything with it, we use the
-correct technology for each and every context. <strong>We use what makes sense</strong>, which
-means that even PERL could do something, one day, in our architecture.</p>
-
-<p>We&rsquo;d like to hire someone who relies on the community around him, who likes
-to write open source code (and use it as well!), someone who likes enterprise
-design patterns and is afraid every time a feature not covered by a test goes to production.</p>
-
-<p>The team has been steadily growing since I joined the company in 2012,
-both from an headcount perspective and the level of skills.</p>
-
-<p>Our guys and girls tend to have fun on a daily basis, commit to the company
-values (and to github as well!) and (I hope :-P) are having a great run
-with technologies that is not always possible to use in other scenarios.</p>
-
-<p>But we are also aware that without other points of view, without growth,
-without some fresh energy, our journey to perfection would be even harder
-(and I personally make it even harder, I know!).</p>
-
-<p>Even though we are happy with our stack and what we achieved so far, we&rsquo;re aware that
-we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)</p>
-
-<p>Drop us an email (<code>alessandro.nadalin@namshi.com</code>) and let&rsquo;s have fun together!</p>
-
-<p><a href="https://github.com/namshi">github</a>
-<a href="https://twitter.com/technamshi">twitter</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #30]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/20/newsletter-number-30/"/>
-    <updated>2014-03-20T17:59:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/20/newsletter-number-30</id>
-    <content type="html"><![CDATA[<p><a href="http://tech.namshi.com/blog/categories/techthursday/">#TechThursday</a>! Here are some interesting news!</p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://lab.arc90.com/2012/04/03/git-sweep/">Git-sweep</a>: A command-line tool that helps you clean up Git branches that have been merged into master</p></li>
-<li><p><a href="https://git.kernel.org/cgit/git/git.git/tree/Documentation/RelNotes/2.0.0.txt">GIT 2.0 released!</a></p></li>
-<li><p><a href="http://dillinger.io/">wysiwyg for markdown</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918">JavaScript: Introduction to the MEAN Stack</a></p></li>
-<li><p><a href="http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html">Unit Testing Best Practices in AngularJS</a></p></li>
-<li><p><a href="https://github.com/rupa/z">Z, tracks your most used directories in your shell, based on &lsquo;frecency&rsquo;</a></p></li>
-<li><p><a href="http://hczhcz.github.io/Flappy-2048/">Flappy 2048</a></p></li>
-<li><p><a href="https://github.com/showcases">Github showcases</a></p></li>
-<li><p><a href="http://www.slideshare.net/emadb/wroclove-rb">From ActiveRecord to Events</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=R8W_6xWphtw">Fluent 2014 Paul Irish, about what&rsquo;s behind a simple HTTP request for a page</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=aZqhRICne_M">Fluent 2014 Brendan Eich, &ldquo;JavaScript Taking Both the High and Low Roads&rdquo;</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=WQZio5DlSXM">Redefining a function as you debug it in Chrome DevTools</a></p></li>
-<li><p><a href="http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf">BIG DATA: The Parable of Google Flu</a></p></li>
 </ul>
 
 ]]></content>
