@@ -84,4 +84,4 @@ all need to nail the problem without the need to dig too deep into
 the explanation, they all need to get straight to the point, making
 things explicit rather than implicit.
 
-Keep writing essays, no matter if in C, JavaScript or English.
+Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.
