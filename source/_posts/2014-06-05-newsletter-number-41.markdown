@@ -10,11 +10,11 @@ Hi fellas, it's #techThursday an here we are with the usual list of interesting 
 
 We publish several blog posts in the latest weeks, to be up-to-date just follow us on [twitter](http://twitter.com/TechNamshi).
 
-**And you what? We are hiring!** : ##**[we are looking for a Lead Mobile Developer!](http://buff.ly/1pP7x0n)**##
+**And you know what? We are hiring!** : ##**[we are looking for a Lead Mobile Developer!](http://buff.ly/1pP7x0n)**##
 
 
 
-* [Like Android & iOS? Let's revolutionize shopping in the Middle East! We are hiring a mobile lead developer #namshi](http://buff.ly/1pP7x0n)
+* [Like Android & iOS? Let's revolutionize shopping in the Middle East! We are hiring a mobile lead developer](http://buff.ly/1pP7x0n)
 
 * [Developers don't write code, they write essays](http://buff.ly/1nfhXWK)
 
