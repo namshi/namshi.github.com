@@ -52,5 +52,5 @@ config.get('something', {}, 'invalid'); // invalid
 {% endraw %}
 {% endcodeblock %}
 
-I think we're also gonna look into porting the same to
+We're probably gonna look into porting the same to
 PHP (another big player in our stack) so...stay tuned!
