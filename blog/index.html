@@ -9,7 +9,8 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Jun 5th, 2014 android, docker, hiring, ios, jobs, js, newsletter, os, php, swift Hi fellas, it&rsquo;s #techThursday an here we are with the usual &hellip;">
+	<meta name="description" content="Jun 7th, 2014 JaaScript, Namshi, open source We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,6 +101,106 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-07T00:50:00+04:00" data-updated="true" itemprop="datePublished">Jun 7<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/jaascript/'>JaaScript</a>, <a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a very
+elegant way.</p>
+
+<!-- more -->
+
+
+<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
+through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
+recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
+small and simple, and thought to keep your
+configuration as elegant, simple and declarative as possible.</p>
+
+<p>With reconfig you can do stuff like:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;reconfig&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
+</span><span class='line'>    <span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
+</span><span class='line'>          <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="c1">// ...</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Retrieve a deep config value</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;countries.uae.nationalDay&#39;</span><span class="p">);</span> <span class="c1">// December, 2nd</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Pass parameters to the configuration</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;greet&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Reference other configuration parameters</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;sayhi&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Fallback values</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;something&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;invalid&#39;</span><span class="p">);</span> <span class="c1">// invalid</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I think we&rsquo;re also gonna look into porting the same to
+PHP (another big player in our stack) so&hellip;stay tuned!</p>
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -735,60 +836,6 @@ You have the chance to understand what’s going on in our field, talk in person
 Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitter, a <strong>new community</strong> is coming in Dubai&hellip; <strong>stay tuned!</strong></p>
 
 <p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated on when they are going to release the talks videos.</p>
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-22T11:34:00+04:00" data-updated="true" itemprop="datePublished">May 22<span>nd</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/angularjs/'>angularjs,</a>, <a class='category' href='/blog/categories/es6/'>es6</a>, <a class='category' href='/blog/categories/github/'>github,</a>, <a class='category' href='/blog/categories/javascript/'>javascript,</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter,</a>, <a class='category' href='/blog/categories/phalcon/'>phalcon,</a>, <a class='category' href='/blog/categories/php/'>php,</a>, <a class='category' href='/blog/categories/tdd/'>tdd,</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>&hellip;another <strong>TechThursday</strong> here!</p>
-
-<ul>
-<li><p><a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">Presentation we gave at the PHPDay</a></p></li>
-<li><p><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">AngularJS: the Good, the Bad and the Ugly. Slides from jsDay</a></p></li>
-<li><p><a href="http://verraes.net/2014/03/practical-event-sourcing/">Practical Event Sourcing</a></p></li>
-<li><p><a href="http://diginomica.com/2014/05/07/asos-cio-talks-nightmare-aligning-technology-business">Asos: aligning technology with business</a></p></li>
-<li><p><a href="https://github.com/substack/browserify-handbook">Building modular applications with browserify</a></p></li>
-<li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
-<li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
-<li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
-<li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
-<li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
-<li><p><a href="http://www.jamesshore.com/Blog/How-Does-TDD-Affect-Design.html">How does TDD affect design</a></p></li>
-<li><p><a href="http://erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr">Setting up a development machine with Ubuntu 14.04 (Trusty Tahr)</a></p></li>
-<li><p><a href="https://forge.laravel.com/">Instant PHP Platforms on Linode, DigitalOcean, AWS, &amp; Rackspace</a></p></li>
-<li><p><a href="http://gethoneybadger.com/">A presonal look at websites</a></p></li>
-<li><p><a href="http://blog.makandra.com/2010/04/the-greatest-bug-i-never-fixed/">The greatest bug I never fixed</a></p></li>
-<li><p><a href="https://github.com/micahflee/onionshare">Share large files based on Tor</a></p></li>
-<li><p><a href="http://jacquesmattheij.com/choosing-web-framework-language-combo">Choosing a Web Frameword/Language Combo for the Next Decade</a></p></li>
-<li><p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p></li>
-<li><p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p></li>
-<li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
-</ul>
-
 </div></article>
 
 <nav id="pagenavi">
