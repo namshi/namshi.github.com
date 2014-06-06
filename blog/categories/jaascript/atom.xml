@@ -4,7 +4,7 @@
   <title><![CDATA[Category: JaaScript | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/jaascript/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:13:00+04:00</updated>
+  <updated>2014-06-07T01:19:32+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -91,7 +91,7 @@ configuration as elegant, simple and declarative as possible.</p>
 </span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">something</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{},</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">invalid</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span> <span class="c1">// invalid</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>I think we&rsquo;re also gonna look into porting the same to
+<p>We&rsquo;re probably gonna look into porting the same to
 PHP (another big player in our stack) so&hellip;stay tuned!</p>
 ]]></content>
   </entry>
