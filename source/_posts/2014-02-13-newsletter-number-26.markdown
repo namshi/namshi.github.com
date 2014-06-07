@@ -9,12 +9,13 @@ author: Alessandro Cinelli (cirpo)
 
 It's [#TechThursday](/blog/categories/techthursday/) again!
 <br/>
-<!-- more -->
+
 
 * [Fixpack: A package.json file scrubber for the truly insane.](https://github.com/HenrikJoreteg/fixpack)
 * [Angularjs will be huge!](http://ionicframework.com/blog/angularjs-will-be-huge/)
 * [Github Octoverse: 2013 highlights](http://octoverse.github.com/)
 * [A fresh approach to JSON loading that speeds up web applications by providing the parsed objects before the response completes](https://github.com/jimhigson/oboe.js)
+<!-- more -->
 * [Open the github URL that matches your shell's current branch and working directory](https://github.com/zeke/ghwd)
 * [Coding standard: editorconfig.org](http://editorconfig.org/)
 * [A re-introduction to Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript)

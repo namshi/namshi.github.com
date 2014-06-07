@@ -4,6 +4,7 @@ title: "jsDay and phpDay recap"
 date: 2014-05-25 19:33
 comments: true
 categories: community phpday jsday conference presentation slide
+author: Alessandro Cinelli (cirpo)
 ---
 
 {% img center /images/posts/rasmus-namshi-scaled.png 800 'Rasmus Lerdorf - Namshi team' 'Rasmus Lerdorf with the Namshi team' %}
@@ -12,6 +13,7 @@ One week ago, Luciano, Lucio, Alex and I attended the annual [jsDay](http://jsda
 It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
 The conferences were sold out, with more than 300 attendees and two tracks per day. Kudos and props to the organizers!
 <br />
+<!-- more -->
 
 {% img left /images/posts/phpday-namshi-sponsor.jpg 200 'Namshi phpDay sponsor' 'Namshi phpDay sponsor' %} Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the [join-us](http://tech.namshi.com/join-us) page?)
 

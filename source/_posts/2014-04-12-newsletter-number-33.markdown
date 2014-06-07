@@ -4,6 +4,7 @@ title: "Newsletter #33"
 date: 2014-04-12 22:20
 comments: true
 categories: [TechThursday, newsletter, javascript]
+author: Alessandro Nadalin
 ---
 
 Heya! even though it's late, there always time for the

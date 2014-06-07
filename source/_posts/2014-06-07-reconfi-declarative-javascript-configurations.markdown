@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Reconfig, declarative JavaScript configurations"
+title: "Reconfig: declarative JavaScript configurations"
 date: 2014-06-07 00:50
 comments: true
-categories: [JaaScript, open source, Namshi]
+categories: [JavaScript, nodejs, browserify, open source, Namshi]
 author: Alessandro Nadalin
 ---
 
@@ -11,14 +11,13 @@ We recently published a new library that let's you
 deal with configurations, in JavaScript, in a very
 elegant way.
 
-<!-- more -->
 
 The library is called [Reconfig](https://github.com/namshi/reconfig) and it's available
 through [NPM](https://www.npmjs.org/package/reconfig) (if you need on the browser we highly
 recommend [browserify](http://browserify.org/)): it's really
 small and simple, and thought to keep your
 configuration as elegant, simple and declarative as possible.
-
+<!-- more -->
 With reconfig you can do stuff like:
 
 {% codeblock lang:javascript %}

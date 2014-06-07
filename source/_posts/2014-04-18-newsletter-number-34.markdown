@@ -4,6 +4,7 @@ title: "Newsletter #34"
 date: 2014-04-18 18:27
 comments: true
 categories: [TechThursday, newsletter, PHP, JavaScript]
+author: Alessandro Cinelli (cirpo)
 ---
 
 First of all, some self-promotion: a few weeks ago we had an internal presentation
@@ -13,6 +14,7 @@ And now...
 
 ...another **TechThursday** here! Even though we might be a little
 late, here are the links that the share among the team.
+<!-- more -->
 
 * [Refactoring Legacy code](http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331)
 * [How to Lie with Data Visualization]( http://data.heapanalytics.com/how-to-lie-with-data-visualization)

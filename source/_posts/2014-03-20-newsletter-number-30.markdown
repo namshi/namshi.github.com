@@ -3,12 +3,13 @@ layout: post
 title: "Newsletter #30"
 date: 2014-03-20 17:59
 comments: true
-categories: 
+categories: [TechThursday, newsletter, git, javascript, github, big data, http]
+author: Alessandro Cinelli (cirpo)
 ---
 
 [#TechThursday](/blog/categories/techthursday/)! Here are some interesting news!
 
-<!-- more -->
+
 
 * [Git-sweep](http://lab.arc90.com/2012/04/03/git-sweep/): A command-line tool that helps you clean up Git branches that have been merged into master
 
@@ -19,7 +20,7 @@ categories:
 * [JavaScript: Introduction to the MEAN Stack](http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918)
 
 * [Unit Testing Best Practices in AngularJS](http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html)
-
+<!-- more -->
 * [Z, tracks your most used directories in your shell, based on 'frecency'](https://github.com/rupa/z)
 
 * [Flappy 2048](http://hczhcz.github.io/Flappy-2048/)

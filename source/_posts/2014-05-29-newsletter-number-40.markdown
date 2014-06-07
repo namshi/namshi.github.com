@@ -3,7 +3,8 @@ layout: post
 title: "Newsletter #40"
 date: 2014-05-29 12:45
 comments: true
-categories: newsletter php git angularjs html nodejs qatar games raspberry-pi phpstorm vagrant aws
+categories: [TechThursday, newsletter, php, git, angularjs, html, nodejs, qatar, games, raspberry-pi, phpstorm, vagrant, aws]
+author: Alessandro Cinelli (cirpo)
 ---
 
 **TA-DA! TechThursday** newsletter is here!
@@ -19,6 +20,8 @@ categories: newsletter php git angularjs html nodejs qatar games raspberry-pi ph
     [Part#2](http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600),
     [Part#3](http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710),
     [Part#4](http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872)
+
+<!-- more -->
 
 * [20 cool things you can do with a Raspberry Pi](http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042)
 

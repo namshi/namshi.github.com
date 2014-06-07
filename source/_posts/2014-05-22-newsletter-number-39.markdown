@@ -3,10 +3,12 @@ layout: post
 title: "Newsletter #39"
 date: 2014-05-22 11:34
 comments: true
-categories: newsletter, php, angularjs, github, tdd, phalcon, javascript, es6
+categories: [TechThursday, newsletter, php, angularjs, github, tdd, phalcon, javascript, es6]
+author: Alessandro Cinelli (cirpo)
 ---
 
 ...another **TechThursday** here!
+
 
 * [Presentation we gave at the PHPDay](http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita)
 
@@ -23,6 +25,8 @@ categories: newsletter, php, angularjs, github, tdd, phalcon, javascript, es6
 * [An Introduction to the Device Orientation API](http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067)
 
 * [Gulp this - a quick video to get started with Gulp](https://laracasts.com/lessons/gulp-this)
+
+<!-- more -->
 
 * [Start learning Ionic for mobile app development](http://learn.ionicframework.com/)
 

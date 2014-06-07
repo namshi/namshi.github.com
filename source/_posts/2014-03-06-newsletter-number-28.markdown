@@ -3,14 +3,14 @@ layout: post
 title: "Newsletter #28"
 date: 2014-03-06 14:05
 comments: true
-categories: [Namshi, newsletter, TechThursday]
+categories: [Namshi, newsletter, TechThursday, javascript, symfony2, ddd]
 author: Mohamad Hallal
 ---
 Welcome back to [#TechThursday](/blog/categories/techthursday/)!
 
 Today we present you some interesting news and articles from the world of web technology!
 
-<!-- more -->
+
 
 *[A simple distributed algorithm for small idempotent information](http://antirez.com/news/71)
 
@@ -23,7 +23,7 @@ Today we present you some interesting news and articles from the world of web te
 *[Hipster Dev Stack](http://hipsterdevstack.tumblr.com/)
 
 *[How the Guardian successfully moved domain to www.theguardian.com](http://www.theguardian.com/info/developer-blog/2014/feb/18/how-the-guardian-successfully-moved-domain)
-
+<!-- more -->
 *[The way you design web content is about to change](http://www.newfangled.com/the_way_you_design_web_content_is_about_to_change)
 
 *[Index management in shallow depth](http://www.slideshare.net/sharkag/index-management-in-shallow-depth)

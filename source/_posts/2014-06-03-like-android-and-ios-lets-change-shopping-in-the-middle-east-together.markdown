@@ -15,13 +15,13 @@ Do you like Android? (sounds much better!) And what about iOS? Tablets?
 Mobile devices in general? If so, come over and let's change the way
 people shop in the Middle East.
 
-<!-- more -->
+
 
 We are looking for a **Lead Mobile Developer**, someone who can get his hands
 dirty with both of the main platforms, and teach others how to do it: we'd
 like you to bring in your expertise and help kicking off our mobile
 development team.
-
+<!-- more -->
 ## What do we need?
 
 Our need is to kickoff an internal development team, which could even be split by

@@ -3,7 +3,8 @@ layout: post
 title: "Newsletter #31"
 date: 2014-03-27 16:17
 comments: true
-categories: [newsletter, TechThursday, PHP, redis, hhvm, Namshi, git, ]
+categories: [newsletter, TechThursday, PHP, redis, hhvm, Namshi, git ]
+author: Alessandro Cinelli (cirpo)
 ---
 
 It's **TechThursday** again: here's what we've been excited about over the past week!
@@ -15,6 +16,8 @@ Oh, before the news, give us **3 seconds** to announce that:
 * we are looking for a [frontend and backend code monkeys](http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/)!
 
 And now...this week in Tech:
+
+<!-- more -->
 
 * [A PHP VM running over PyPy](http://www.hippyvm.com)
 * [What the heck is Hack?](http://docs.hhvm.com/manual/en/install.hack.conversion.php)

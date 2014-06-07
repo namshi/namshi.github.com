@@ -3,16 +3,18 @@ layout: post
 title: "Newsletter #41"
 date: 2014-06-05 12:03
 comments: true
-categories: newsletter os swift docker ios android hiring php js jobs
+categories: [TechThursday, newsletter, os, swift, docker, ios, android, hiring, php, js, jobs]
+author: Alessandro Cinelli (cirpo)
 ---
 
 Hi fellas, it's #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!
 
 We publish several blog posts in the latest weeks, to be up-to-date just follow us on [twitter](http://twitter.com/TechNamshi).
 
-**And you know what? We are hiring!** : ##**[we are looking for a Lead Mobile Developer!](http://buff.ly/1pP7x0n)**##
+**And you know what? We are hiring** : **[we are looking for a Lead Mobile Developer!](http://buff.ly/1pP7x0n)**
 
 
+<!-- more -->
 
 * [Like Android & iOS? Let's revolutionize shopping in the Middle East! We are hiring a mobile lead developer](http://buff.ly/1pP7x0n)
 

@@ -11,7 +11,7 @@ Welcome to [#TechThursday](/blog/categories/techthursday/)!
 
 Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!
 
-<!-- more -->
+
 
 * [VerbalExpressions is a PHP library that helps to construct hard regular expressions.](https://github.com/VerbalExpressions/PHPVerbalExpressions)
 
@@ -20,7 +20,7 @@ Here are some of the Tech highlights of the week, and some interesting articles 
 * [Largest Redis Clusters Ever](http://www.xdata.me/?p=301)
 
 * [5 surprisingly painful things about client-side JS](https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html)
-
+<!-- more -->
 * [The Next Phase of Node.js](http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html)
 
 * [Protractor talks at ngConf](http://www.youtube.com/watch?v=aQipuiTcn3U)
