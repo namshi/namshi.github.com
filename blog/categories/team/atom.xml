@@ -4,7 +4,7 @@
   <title><![CDATA[Category: team | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/team/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wanna join us? We have cookies, Symfony2, Node, AngularJS and coding challenges for you!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/"/>
+    <updated>2014-06-08T11:44:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you</id>
+    <content type="html"><![CDATA[<p>A quick update from the trenches: for the past months
+we&rsquo;ve been beefing our team up and by doing so we
+realized that some good coding challenges are
+almost a must.</p>
+
+<p>We just put all the challenges we&rsquo;ve used and are gonna
+be using on a <a href="https://github.com/namshi/coding-challenges">github repo for you to check them out</a>:
+feel free to solve them, fork them, improve them, do anything
+with them! :)</p>
+
+<p>We are currently hiring <a href="https://github.com/namshi/coding-challenges/blob/master/senior-api-engineer.md">senior API engineers</a>, <a href="https://github.com/namshi/coding-challenges/blob/master/senior-frontend-engineer.md">senior frontend
+engineers</a> and are looking to bootstrap our mobile team
+with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
+got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Goodbye Muhammad!]]></title>

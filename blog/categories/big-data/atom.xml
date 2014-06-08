@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: big data | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/big-data/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-08T14:22:14+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #30]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/20/newsletter-number-30/"/>
+    <updated>2014-03-20T17:59:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/20/newsletter-number-30</id>
+    <content type="html"><![CDATA[<p><a href="/blog/categories/techthursday/">#TechThursday</a>! Here are some interesting news!</p>
+
+<ul>
+<li><p><a href="http://lab.arc90.com/2012/04/03/git-sweep/">Git-sweep</a>: A command-line tool that helps you clean up Git branches that have been merged into master</p></li>
+<li><p><a href="https://git.kernel.org/cgit/git/git.git/tree/Documentation/RelNotes/2.0.0.txt">GIT 2.0 released!</a></p></li>
+<li><p><a href="http://dillinger.io/">wysiwyg for markdown</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918">JavaScript: Introduction to the MEAN Stack</a></p></li>
+<li><p><a href="http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html">Unit Testing Best Practices in AngularJS</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/rupa/z">Z, tracks your most used directories in your shell, based on &lsquo;frecency&rsquo;</a></p></li>
+<li><p><a href="http://hczhcz.github.io/Flappy-2048/">Flappy 2048</a></p></li>
+<li><p><a href="https://github.com/showcases">Github showcases</a></p></li>
+<li><p><a href="http://www.slideshare.net/emadb/wroclove-rb">From ActiveRecord to Events</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=R8W_6xWphtw">Fluent 2014 Paul Irish, about what&rsquo;s behind a simple HTTP request for a page</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=aZqhRICne_M">Fluent 2014 Brendan Eich, &ldquo;JavaScript Taking Both the High and Low Roads&rdquo;</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=WQZio5DlSXM">Redefining a function as you debug it in Chrome DevTools</a></p></li>
+<li><p><a href="http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf">BIG DATA: The Parable of Google Flu</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

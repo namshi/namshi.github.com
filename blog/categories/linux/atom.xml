@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-08T14:22:14+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #32]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/03/newsletter-number-32/"/>
+    <updated>2014-04-03T18:21:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/03/newsletter-number-32</id>
+    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/"><strong>TechThursday</strong>!</a></p>
+
+<ul>
+<li><p><a href="https://github.com/mechio/takana">A Sass/CSS live-editor</a></p></li>
+<li><p><a href="https://github.com/Jahaja/psdash">A system information web dashboard for linux</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/3/17/intuitively-showing-how-to-scale-a-web-application-using-a-c.html">Showing How To Scale A Web Application Using A Coffee Shop As An Example</a></p></li>
+<li><p><a href="https://blog.logentries.com/2014/03/5-great-blogs-for-devops/">5 great blogs for Dev ops</a></p></li>
+<li><p><a href="http://code.tutsplus.com/articles/test-code-coverage-from-myth-to-reality--cms-20442">Test Code Coverage: From Myth to Reality</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://linoxide.com/guide/linux-command-shelf.html">Linux Commands In Structured Order with Detailed Reference</a></p></li>
+<li><p><a href="http://www.anton-pirker.at/delete-your-code/">Delete unused code as soon as possible. It will improve your code quality</a></p></li>
+<li><p><a href="http://blog.servergrove.com/2014/04/01/deployment-symfony2-applications-ansible/">Deploying symfony 2 apps with Ansible</a></p></li>
+<li><p><a href="http://ipython.org/ipython-doc/dev/whatsnew/version2.0.html">IPython 2.0</a></p></li>
+<li><p><a href="http://jasonbos.co/two-timestamp-columns-in-mysql/">Two Timestamp Columns in MySQL</a></p></li>
+<li><p><a href="http://www.patatap.com/">An interesting example of what you can in modern browsers these days</a></p></li>
+<li><p><a href="http://helloanselm.com/2014/web-performance-one-or-thousand-media-queries/">Finally we have an answer to this question, that every front-end developer raised at least once in his life</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: luna | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/luna/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -20,9 +20,6 @@
     <id>http://tech.namshi.com/blog/2014/03/13/newsletter-at-29</id>
     <content type="html"><![CDATA[<p>TechThursday again: it&rsquo;s a bit short, but the list of useful links of the week
 is still here!</p>
-
-<!-- more -->
-
 
 <ul>
 <li><a href="https://github.com/marcj/php-pm">PHP process manager</a></li>

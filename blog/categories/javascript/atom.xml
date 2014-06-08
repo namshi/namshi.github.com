@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: javascript, | Namshi]]></title>
+  <title><![CDATA[Category: JavaScript | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/javascript/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,34 +14,228 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #39]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/22/newsletter-number-39/"/>
-    <updated>2014-05-22T11:34:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/22/newsletter-number-39</id>
-    <content type="html"><![CDATA[<p>&hellip;another <strong>TechThursday</strong> here!</p>
+    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
+    <updated>2014-06-07T00:50:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
+    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a very
+elegant way.</p>
+
+<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
+through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
+recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
+small and simple, and thought to keep your
+configuration as elegant, simple and declarative as possible.</p>
+
+<!-- more -->
+
+
+<p>With reconfig you can do stuff like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">reconfig</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
+</span><span class='line'><span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
+</span><span class='line'><span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
+</span><span class='line'>        <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'>    <span class="c1">// ...</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">});</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Retrieve a deep config value</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">countries</span><span class="p">.</span><span class="nx">uae</span><span class="p">.</span><span class="nx">nationalDay</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span> <span class="c1">// December, 2nd&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Pass parameters to the configuration</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">greet</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">John</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;});</span> <span class="c1">// Hello, John!&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Reference other configuration parameters</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">sayhi</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">John</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;});</span> <span class="c1">// Hello, John!&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Fallback values</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">something</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{},</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">invalid</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span> <span class="c1">// invalid</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>We&rsquo;re probably gonna look into porting the same to
+PHP (another big player in our stack) so&hellip;stay tuned!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #37]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/08/newsletter-number-37/"/>
+    <updated>2014-05-08T16:47:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/08/newsletter-number-37</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
 
 <ul>
-<li><p><a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">Presentation we gave at the PHPDay</a></p></li>
-<li><p><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">AngularJS: the Good, the Bad and the Ugly. Slides from jsDay</a></p></li>
-<li><p><a href="http://verraes.net/2014/03/practical-event-sourcing/">Practical Event Sourcing</a></p></li>
-<li><p><a href="http://diginomica.com/2014/05/07/asos-cio-talks-nightmare-aligning-technology-business">Asos: aligning technology with business</a></p></li>
-<li><p><a href="https://github.com/substack/browserify-handbook">Building modular applications with browserify</a></p></li>
-<li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
-<li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
-<li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
-<li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
-<li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
-<li><p><a href="http://www.jamesshore.com/Blog/How-Does-TDD-Affect-Design.html">How does TDD affect design</a></p></li>
-<li><p><a href="http://erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr">Setting up a development machine with Ubuntu 14.04 (Trusty Tahr)</a></p></li>
-<li><p><a href="https://forge.laravel.com/">Instant PHP Platforms on Linode, DigitalOcean, AWS, &amp; Rackspace</a></p></li>
-<li><p><a href="http://gethoneybadger.com/">A presonal look at websites</a></p></li>
-<li><p><a href="http://blog.makandra.com/2010/04/the-greatest-bug-i-never-fixed/">The greatest bug I never fixed</a></p></li>
-<li><p><a href="https://github.com/micahflee/onionshare">Share large files based on Tor</a></p></li>
-<li><p><a href="http://jacquesmattheij.com/choosing-web-framework-language-combo">Choosing a Web Frameword/Language Combo for the Next Decade</a></p></li>
-<li><p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p></li>
-<li><p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p></li>
-<li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
+<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
+<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
+<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
+<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
+<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
+<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
+<li><p><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #36]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/"/>
+    <updated>2014-05-01T12:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+
+<ul>
+<li><p><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></p></li>
+<li><p><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></p></li>
+<li><p><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></p></li>
+<li><p><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></p></li>
+<li><p><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></p></li>
+<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></p></li>
+<li><p><a href="http://www.therestartpage.com/">(old) The restart page</a></p></li>
+<li><p><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></p></li>
+<li><p><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></p></li>
+<li><p><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></p></li>
+<li><p><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
+<li><p><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></p></li>
+<li><p><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></p></li>
+<li><p><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></p></li>
+<li><p><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #35]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/24/newsletter-number-35/"/>
+    <updated>2014-04-24T14:36:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/24/newsletter-number-35</id>
+    <content type="html"><![CDATA[<p>Here we are again! #TechThursday</p>
+
+<ul>
+<li><p><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></p></li>
+<li><p><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></p></li>
+<li><p><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></p></li>
+<li><p><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></p></li>
+<li><p><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></p></li>
+<li><p><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></p></li>
+<li><p><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></p></li>
+<li><p><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></p></li>
+<li><p><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></p></li>
+<li><p><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></p></li>
+<li><p><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></p></li>
+<li><p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></p></li>
+<li><p><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></p></li>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></p></li>
+<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></p></li>
+<li><p><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></p></li>
+<li><p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></p></li>
+<li><p><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #34]]></title>
+    <link href="http://tech.namshi.com/blog/2014/04/18/newsletter-number-34/"/>
+    <updated>2014-04-18T18:27:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/04/18/newsletter-number-34</id>
+    <content type="html"><![CDATA[<p>First of all, some self-promotion: a few weeks ago we had an internal presentation
+about <a href="http://www.slideshare.net/odino/lets-rock">the future of tech at Namshi</a>, have a look! ;&ndash;)</p>
+
+<p>And now&hellip;</p>
+
+<p>&hellip;another <strong>TechThursday</strong> here! Even though we might be a little
+late, here are the links that the share among the team.</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331">Refactoring Legacy code</a></li>
+<li><a href="http://data.heapanalytics.com/how-to-lie-with-data-visualization">How to Lie with Data Visualization</a></li>
+<li><a href="http://buff.ly/1m0tTNt">7 backbone.js mistakes you must fix today &mdash; a list not only restricted to backbone!</a></li>
+<li><a href="http://blog.someguy123.com/dispelling-the-hate-against-php/">Dispelling the hate against PHP</a></li>
+<li><a href="http://www.sitepoint.com/getting-started-php-underscore/">Underscore in PHP</a></li>
+<li><a href="https://github.com/DaftMonk/generator-angular-fullstack">Yeoman Angular full stack generator</a></li>
+<li><a href="https://github.com/diegonetto/generator-ionic">Yeoman Ionic Angular generator</a></li>
+<li><a href="http://dcurt.is/facebooks-predicament">Whatever goes up, that&rsquo;s what we do (facebook approach to feature release)</a></li>
+<li><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular">Comparing Node.js Promises, Try/Catch, Angular Zone.js and yes, Zone</a></li>
+<li><a href="http://niravigad.com/responsive_man/">The responsive man&hellip;</a></li>
+<li><a href="http://www.slideshare.net/ziobrando/rethinking-enterprise-software-codemotion-2014">Rethinking enterprise software</a></li>
+<li><a href="http://www.slideshare.net/fabio.fabbrucci/codemotion-33414097">Lean UX Development</a></li>
+<li><a href="http://buff.ly/1iKaJ9c">Webservers shouldn&rsquo;t have direct access to keys</a></li>
+<li><a href="http://buff.ly/1jEbXF1">Ractive.js -The diamond age of web development</a></li>
 </ul>
 
 ]]></content>

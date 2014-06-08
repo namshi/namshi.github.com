@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: php, | Namshi]]></title>
+  <title><![CDATA[Category: php | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/php/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,88 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #41]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/"/>
+    <updated>2014-06-05T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41</id>
+    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
+
+<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
+
+<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
+<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
+<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
+<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
+<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
+<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
+<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
+<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
+<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
+<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
+<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
+<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
+<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
+<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
+<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #40]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
+    <updated>2014-05-29T12:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
+    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+
+<ul>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
+<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
+<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
+  Five principles that should guide you every time you write code.
+  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
+<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
+<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
+<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
+<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
+<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
+<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
+<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
+<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
+<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
+<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
+<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
+<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
+<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
+<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #39]]></title>
@@ -29,6 +111,13 @@
 <li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
 <li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
 <li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
 <li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
 <li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
 <li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
@@ -44,6 +133,168 @@
 <li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
 </ul>
 
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #38]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/15/newsletter-number-38/"/>
+    <updated>2014-05-15T11:38:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/15/newsletter-number-38</id>
+    <content type="html"><![CDATA[<p>Hello everyone and welcome to <a href="/blog/categories/techthursday/"><strong>TechThursday</strong>!</a>!</p>
+
+<p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>
+
+<ul>
+<li><p><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></p></li>
+<li><p><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></p></li>
+<li><p><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></p></li>
+<li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></p></li>
+<li><p><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></p></li>
+<li><p><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></p></li>
+<li><p><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></p></li>
+<li><p><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></p></li>
+<li><p><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></p></li>
+<li><p><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></p></li>
+<li><p><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></p></li>
+<li><p><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></p></li>
+<li><p><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></p></li>
+<li><p><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></p></li>
+<li><p><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></p></li>
+<li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[3 PHP 5.5 features we are using at Namshi]]></title>
+    <link href="http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/"/>
+    <updated>2014-05-07T09:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi</id>
+    <content type="html"><![CDATA[<p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
+
+<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
+
+<!-- more -->
+
+
+<h3>array_column function</h3>
+
+<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
+
+<p>```php
+$productIds = [1001, 1005, 1007];</p>
+
+<p>//array with keys and values
+$products = [</p>
+
+<pre><code>["title" =&gt; "Vito Solo Shirt", "sku" =&gt; "VI714AT94SIB", "price" =&gt; 180.00],
+["title" =&gt; "Core Ultra Shirt", "sku" =&gt; "JA872AT40VYL" , "price" =&gt; 195.00],
+["title" =&gt; "Swoosh T-shirt", "sku" =&gt; "NI727AT17RGG" , "price" =&gt; 130.00]
+</code></pre>
+
+<p>];</p>
+
+<p>```
+For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
+
+<p>```php
+$productTitles = array_column($products, &ldquo;title&rdquo;);</p>
+
+<p>//product titles will be a new array of titles extacted from products array in above example code
+Array
+(</p>
+
+<pre><code>[0] =&gt; Vito Solo Shirt
+[1] =&gt; Core Ultra Shirt
+[2] =&gt; Swoosh T-shirt
+</code></pre>
+
+<p>)</p>
+
+<p>//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</p>
+
+<p>$productPrices = array_column($products, &ldquo;price&rdquo;, &ldquo;sku&rdquo;);</p>
+
+<p>Array
+(</p>
+
+<pre><code>[VI714AT94SIB] =&gt; 180
+[JA872AT40VYL] =&gt; 195
+[NI727AT17RGG] =&gt; 130
+</code></pre>
+
+<p>)</p>
+
+<p><code>``
+The PHP</code>array_colum` function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
+
+<h3>finally</h3>
+
+<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
+
+<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
+
+<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
+
+<p>```php
+try {</p>
+
+<pre><code> //open sql connection 
+ if ($condition) { 
+    return false;
+ }
+</code></pre>
+
+<p>  }
+  finally {</p>
+
+<pre><code>//close the sql connection, this will be executed even if the return is called.
+</code></pre>
+
+<p>  }
+```</p>
+
+<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
+
+<h3>DateTimeImmutable</h3>
+
+<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
+
+<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
+
+<p>```php
+$date           = new DateTimeImmutable();
+$datePlusOneDay = $date->add(new DateInterval(&lsquo;P1D&rsquo;));</p>
+
+<p>print $date->format(&lsquo;Y-M-d H:i:s&rsquo;);
+print &ldquo;&mdash;&ndash;&rdquo;;
+print $datePlusOneDay->format(&lsquo;Y-M-d H:i:s&rsquo;);</p>
+
+<p>//output
+//2014-May-07 22:37:04&mdash;-2014-May-08 22:37:04
+```</p>
+
+<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
+
+<p>```php
+//in some entity class in the setCreatedAt method
+$this->createdAt = new DateTimeImmutable();</p>
+
+<p>//in some entity class in some prePresist method
+$this->updatedAt = new DateTimeImmutable();
+```</p>
+
+<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
 ]]></content>
   </entry>
   

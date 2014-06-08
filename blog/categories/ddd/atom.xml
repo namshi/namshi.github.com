@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ddd | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/ddd/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-08T14:22:14+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #28]]></title>
+    <link href="http://tech.namshi.com/blog/2014/03/06/newsletter-number-28/"/>
+    <updated>2014-03-06T14:05:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/03/06/newsletter-number-28</id>
+    <content type="html"><![CDATA[<p>Welcome back to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
+
+<p>Today we present you some interesting news and articles from the world of web technology!</p>
+
+<p>*<a href="http://antirez.com/news/71">A simple distributed algorithm for small idempotent information</a></p>
+
+<p>*<a href="https://github.com/toddmotto/stratos">Stratos.js &ndash; Object manipulation module</a></p>
+
+<p>*<a href="http://usablica.github.io/progress.js/">progress.js &ndash; A themeable progress bar library for everything</a></p>
+
+<p>*<a href="http://zachholman.com/posts/only-90s-developers/">Only 90s Web Developers Remember This</a></p>
+
+<p>*<a href="http://hipsterdevstack.tumblr.com/">Hipster Dev Stack</a></p>
+
+<p>*<a href="http://www.theguardian.com/info/developer-blog/2014/feb/18/how-the-guardian-successfully-moved-domain">How the Guardian successfully moved domain to www.theguardian.com</a></p>
+
+<!-- more -->
+
+
+<p>*<a href="http://www.newfangled.com/the_way_you_design_web_content_is_about_to_change">The way you design web content is about to change</a></p>
+
+<p>*<a href="http://www.slideshare.net/sharkag/index-management-in-shallow-depth">Index management in shallow depth</a></p>
+
+<p>*<a href="http://www.sitepoint.com/data-fixtures-symfony2/">Data Fixtures in Symfony2</a></p>
+
+<p>*<a href="http://smartbear.com/products/software-development/what-is-code-review/">What IS Code Review?</a></p>
+
+<p>*<a href="http://www.couchbase.com/presentations/couchbase-tlv-2014-couchbase-at-viber">Viber Replaces MongoDB with Couchbase</a></p>
+
+<p>*<a href="https://github.com/orocrm/crm-application">OroCRM Application</a></p>
+
+<p>*<a href="http://www.symfony2cheatsheet.com/">Symfony2cheatsheet</a></p>
+
+<p>*<a href="http://www.codingthearchitecture.com/2014/03/05/five_things_every_developer_should_know_about_software_architecture.html">Five things every developer should know about software architecture</a></p>
+
+<p>*<a href="https://github.com/maxogden/rainbowify">rainbowify</a></p>
+
+<p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
+
+<p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
+]]></content>
+  </entry>
+  
+</feed>

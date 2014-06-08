@@ -4,7 +4,7 @@
   <title><![CDATA[Namshi]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,7 +14,29 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Reconfig, declarative JavaScript configurations]]></title>
+    <title type="html"><![CDATA[Wanna join us? We have cookies, Symfony2, Node, AngularJS and coding challenges for you!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/"/>
+    <updated>2014-06-08T11:44:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you</id>
+    <content type="html"><![CDATA[<p>A quick update from the trenches: for the past months
+we&rsquo;ve been beefing our team up and by doing so we
+realized that some good coding challenges are
+almost a must.</p>
+
+<p>We just put all the challenges we&rsquo;ve used and are gonna
+be using on a <a href="https://github.com/namshi/coding-challenges">github repo for you to check them out</a>:
+feel free to solve them, fork them, improve them, do anything
+with them! :)</p>
+
+<p>We are currently hiring <a href="https://github.com/namshi/coding-challenges/blob/master/senior-api-engineer.md">senior API engineers</a>, <a href="https://github.com/namshi/coding-challenges/blob/master/senior-frontend-engineer.md">senior frontend
+engineers</a> and are looking to bootstrap our mobile team
+with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
+got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
     <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
     <updated>2014-06-07T00:50:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
@@ -22,14 +44,14 @@
 deal with configurations, in JavaScript, in a very
 elegant way.</p>
 
-<!-- more -->
-
-
 <p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
 through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
 recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
 small and simple, and thought to keep your
 configuration as elegant, simple and declarative as possible.</p>
+
+<!-- more -->
+
 
 <p>With reconfig you can do stuff like:</p>
 
@@ -102,7 +124,10 @@ PHP (another big player in our stack) so&hellip;stay tuned!</p>
 
 <p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
 
-<p><strong>And you know what? We are hiring!</strong> : ##<strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong>##</p>
+<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
+
+<!-- more -->
+
 
 <ul>
 <li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
@@ -287,13 +312,13 @@ and remember you still have some brothers in Dubai!</p>
 Mobile devices in general? If so, come over and let&rsquo;s change the way
 people shop in the Middle East.</p>
 
-<!-- more -->
-
-
 <p>We are looking for a <strong>Lead Mobile Developer</strong>, someone who can get his hands
 dirty with both of the main platforms, and teach others how to do it: we&rsquo;d
 like you to bring in your expertise and help kicking off our mobile
 development team.</p>
+
+<!-- more -->
+
 
 <h2>What do we need?</h2>
 
@@ -356,6 +381,13 @@ development team to be growing as months will go by</li>
   <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
   <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
   <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
 <li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
 <li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
 <li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
@@ -472,6 +504,9 @@ The conferences were sold out, with more than 300 attendees and two tracks per d
 <br />
 
 
+<!-- more -->
+
+
 <p><img class="left" src="http://tech.namshi.com/images/posts/phpday-namshi-sponsor.jpg" width="200" title="Namshi phpDay sponsor" alt="Namshi phpDay sponsor"> Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.com/join-us">join-us</a> page?)</p>
 
 <br />
@@ -565,6 +600,13 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
 <li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
 <li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
 <li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
 <li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
 <li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
 <li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
@@ -593,23 +635,30 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
 <p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>
 
 <ul>
-<li><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></li>
-<li><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></li>
-<li><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></li>
-<li><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></li>
-<li><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></li>
-<li><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></li>
-<li><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></li>
-<li><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></li>
-<li><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></li>
-<li><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></li>
-<li><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></li>
-<li><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></li>
-<li><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></li>
-<li><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></li>
-<li><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></li>
-<li><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></li>
-<li><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></li>
+<li><p><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></p></li>
+<li><p><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></p></li>
+<li><p><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></p></li>
+<li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></p></li>
+<li><p><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></p></li>
+<li><p><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></p></li>
+<li><p><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></p></li>
+<li><p><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></p></li>
+<li><p><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></p></li>
+<li><p><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></p></li>
+<li><p><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></p></li>
+<li><p><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></p></li>
+<li><p><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></p></li>
+<li><p><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></p></li>
+<li><p><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></p></li>
+<li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
 </ul>
 
 ]]></content>
@@ -623,17 +672,24 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
     <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
 
 <ul>
-<li><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></li>
-<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></li>
-<li><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></li>
-<li><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></li>
-<li><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></li>
-<li><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></li>
-<li><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></li>
-<li><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></li>
-<li><a href="http://designprinciplesftw.com/">Design principles</a></li>
-<li><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></li>
-<li><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
+<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
+<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
+<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
+<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
+<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
+<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
+<li><p><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
 </ul>
 
 ]]></content>
@@ -1048,24 +1104,31 @@ Let&rsquo;s get rid of them!</p>
     <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
 
 <ul>
-<li><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></li>
-<li><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></li>
-<li><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></li>
-<li><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></li>
-<li><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></li>
-<li><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></li>
-<li><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></li>
-<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></li>
-<li><a href="http://www.therestartpage.com/">(old) The restart page</a></li>
-<li><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></li>
-<li><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></li>
-<li><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></li>
-<li><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></li>
-<li><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></li>
-<li><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></li>
-<li><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></li>
-<li><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></li>
-<li><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></li>
+<li><p><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></p></li>
+<li><p><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></p></li>
+<li><p><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></p></li>
+<li><p><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></p></li>
+<li><p><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></p></li>
+<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></p></li>
+<li><p><a href="http://www.therestartpage.com/">(old) The restart page</a></p></li>
+<li><p><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></p></li>
+<li><p><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></p></li>
+<li><p><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></p></li>
+<li><p><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
+<li><p><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></p></li>
+<li><p><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></p></li>
+<li><p><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></p></li>
+<li><p><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></p></li>
 </ul>
 
 ]]></content>
@@ -1079,26 +1142,33 @@ Let&rsquo;s get rid of them!</p>
     <content type="html"><![CDATA[<p>Here we are again! #TechThursday</p>
 
 <ul>
-<li><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></li>
-<li><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></li>
-<li><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></li>
-<li><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></li>
-<li><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></li>
-<li><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></li>
-<li><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></li>
-<li><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></li>
-<li><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></li>
-<li><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></li>
-<li><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></li>
-<li><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></li>
-<li><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></li>
-<li><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></li>
-<li><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></li>
-<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></li>
-<li><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></li>
-<li><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></li>
-<li><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></li>
-<li><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></li>
+<li><p><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></p></li>
+<li><p><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></p></li>
+<li><p><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></p></li>
+<li><p><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></p></li>
+<li><p><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></p></li>
+<li><p><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></p></li>
+<li><p><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></p></li>
+<li><p><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></p></li>
+<li><p><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></p></li>
+<li><p><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></p></li>
+<li><p><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></p></li>
+<li><p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></p></li>
+<li><p><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></p></li>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></p></li>
+<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></p></li>
+<li><p><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></p></li>
+<li><p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></p></li>
+<li><p><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></p></li>
 </ul>
 
 ]]></content>
@@ -1116,6 +1186,9 @@ about <a href="http://www.slideshare.net/odino/lets-rock">the future of tech at 
 
 <p>&hellip;another <strong>TechThursday</strong> here! Even though we might be a little
 late, here are the links that the share among the team.</p>
+
+<!-- more -->
+
 
 <ul>
 <li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-1-the-golden-master--cms-20331">Refactoring Legacy code</a></li>
@@ -1162,31 +1235,6 @@ over the last week.</p>
 <li><a href="http://buff.ly/1n6m4TZ">Famo.us is now open source</a></li>
 <li><a href="https://github.com/PenturaLabs/Linux_Exploit_Suggester">Linux Exploit Suggester (based on operating system release number)</a></li>
 <li><a href="https://github.com/draios/sysdig">A system exploration and troubleshooting tool</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #32]]></title>
-    <link href="http://tech.namshi.com/blog/2014/04/03/newsletter-number-32/"/>
-    <updated>2014-04-03T18:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/04/03/newsletter-number-32</id>
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/"><strong>TechThursday</strong>!</a></p>
-
-<ul>
-<li><a href="https://github.com/mechio/takana">A Sass/CSS live-editor</a></li>
-<li><a href="https://github.com/Jahaja/psdash">A system information web dashboard for linux</a></li>
-<li><a href="http://highscalability.com/blog/2014/3/17/intuitively-showing-how-to-scale-a-web-application-using-a-c.html">Showing How To Scale A Web Application Using A Coffee Shop As An Example</a></li>
-<li><a href="https://blog.logentries.com/2014/03/5-great-blogs-for-devops/">5 great blogs for Dev ops</a></li>
-<li><a href="http://code.tutsplus.com/articles/test-code-coverage-from-myth-to-reality--cms-20442">Test Code Coverage: From Myth to Reality</a></li>
-<li><a href="http://linoxide.com/guide/linux-command-shelf.html">Linux Commands In Structured Order with Detailed Reference</a></li>
-<li><a href="http://www.anton-pirker.at/delete-your-code/">Delete unused code as soon as possible. It will improve your code quality</a></li>
-<li><a href="http://blog.servergrove.com/2014/04/01/deployment-symfony2-applications-ansible/">Deploying symfony 2 apps with Ansible</a></li>
-<li><a href="http://ipython.org/ipython-doc/dev/whatsnew/version2.0.html">IPython 2.0</a></li>
-<li><a href="http://jasonbos.co/two-timestamp-columns-in-mysql/">Two Timestamp Columns in MySQL</a></li>
-<li><a href="http://www.patatap.com/">An interesting example of what you can in modern browsers these days</a></li>
-<li><a href="http://helloanselm.com/2014/web-performance-one-or-thousand-media-queries/">Finally we have an answer to this question, that every front-end developer raised at least once in his life</a></li>
 </ul>
 
 ]]></content>

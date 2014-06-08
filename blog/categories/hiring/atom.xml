@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hiring | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/hiring/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Wanna join us? We have cookies, Symfony2, Node, AngularJS and coding challenges for you!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/"/>
+    <updated>2014-06-08T11:44:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you</id>
+    <content type="html"><![CDATA[<p>A quick update from the trenches: for the past months
+we&rsquo;ve been beefing our team up and by doing so we
+realized that some good coding challenges are
+almost a must.</p>
+
+<p>We just put all the challenges we&rsquo;ve used and are gonna
+be using on a <a href="https://github.com/namshi/coding-challenges">github repo for you to check them out</a>:
+feel free to solve them, fork them, improve them, do anything
+with them! :)</p>
+
+<p>We are currently hiring <a href="https://github.com/namshi/coding-challenges/blob/master/senior-api-engineer.md">senior API engineers</a>, <a href="https://github.com/namshi/coding-challenges/blob/master/senior-frontend-engineer.md">senior frontend
+engineers</a> and are looking to bootstrap our mobile team
+with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
+got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #41]]></title>
@@ -22,7 +44,10 @@
 
 <p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
 
-<p><strong>And you know what? We are hiring!</strong> : ##<strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong>##</p>
+<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
+
+<!-- more -->
+
 
 <ul>
 <li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
@@ -59,13 +84,13 @@
 Mobile devices in general? If so, come over and let&rsquo;s change the way
 people shop in the Middle East.</p>
 
-<!-- more -->
-
-
 <p>We are looking for a <strong>Lead Mobile Developer</strong>, someone who can get his hands
 dirty with both of the main platforms, and teach others how to do it: we&rsquo;d
 like you to bring in your expertise and help kicking off our mobile
 development team.</p>
+
+<!-- more -->
+
 
 <h2>What do we need?</h2>
 

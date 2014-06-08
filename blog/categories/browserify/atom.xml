@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: JaaScript | Namshi]]></title>
-  <link href="http://tech.namshi.com/blog/categories/jaascript/atom.xml" rel="self"/>
+  <title><![CDATA[Category: browserify | Namshi]]></title>
+  <link href="http://tech.namshi.com/blog/categories/browserify/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Reconfig, declarative JavaScript configurations]]></title>
+    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
     <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
     <updated>2014-06-07T00:50:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
@@ -22,14 +22,14 @@
 deal with configurations, in JavaScript, in a very
 elegant way.</p>
 
-<!-- more -->
-
-
 <p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
 through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
 recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
 small and simple, and thought to keep your
 configuration as elegant, simple and declarative as possible.</p>
+
+<!-- more -->
+
 
 <p>With reconfig you can do stuff like:</p>
 

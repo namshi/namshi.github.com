@@ -4,7 +4,7 @@
   <title><![CDATA[Category: varnish | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/varnish/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -21,26 +21,33 @@
     <content type="html"><![CDATA[<p>Here we are again! #TechThursday</p>
 
 <ul>
-<li><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></li>
-<li><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></li>
-<li><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></li>
-<li><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></li>
-<li><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></li>
-<li><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></li>
-<li><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></li>
-<li><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></li>
-<li><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></li>
-<li><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></li>
-<li><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></li>
-<li><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></li>
-<li><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></li>
-<li><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></li>
-<li><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></li>
-<li><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></li>
-<li><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></li>
-<li><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></li>
-<li><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></li>
-<li><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></li>
+<li><p><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></p></li>
+<li><p><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></p></li>
+<li><p><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></p></li>
+<li><p><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></p></li>
+<li><p><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></p></li>
+<li><p><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></p></li>
+<li><p><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></p></li>
+<li><p><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></p></li>
+<li><p><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></p></li>
+<li><p><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></p></li>
+<li><p><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></p></li>
+<li><p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></p></li>
+<li><p><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></p></li>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></p></li>
+<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></p></li>
+<li><p><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></p></li>
+<li><p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></p></li>
+<li><p><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></p></li>
 </ul>
 
 ]]></content>

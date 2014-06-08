@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: phalcon, | Namshi]]></title>
+  <title><![CDATA[Category: phalcon | Namshi]]></title>
   <link href="http://tech.namshi.com/blog/categories/phalcon/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-07T01:19:32+04:00</updated>
+  <updated>2014-06-08T14:22:14+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,6 +29,13 @@
 <li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
 <li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
 <li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
 <li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
 <li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
 <li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
