@@ -58,7 +58,8 @@ How do you create the mocks?
 
 Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
 The naming of those files goes as follows: `path_METHOD`, `path` is the relative url path without any slashes, i.e, `/test`
-should be `test`. `METHOD` is the upper-cased HTTP method (`GET`), so, the file name is `test_GET`.
+should be `test` and `METHOD` is the upper-cased HTTP method (`GET`). The extension for the files should be `.mock`.
+The complete file name is: `test_GET.mock`.
 
 The contents of the mocked file should be a valid HTTP response text, as follows:
 
@@ -70,15 +71,21 @@ Content-Type: text/html; charset=utf-8
 ```
 
 Now, whenever your client requests `http://localhost:9001/test`, `mockserver` will return that plain HTTP response you defined
-in `test_GET`.
+in `test_GET.mock`.
 
 ##Header Variation
 Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
 `mockserver-variation` header in your requests. The value of this header shall be appended to the mocked file name as follows: `path_METHOD_variation`.
 
 Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
-Simply set `mockserver-variation` to `500` and the file from our previous example should be named `test_GET_500`.
+Simply set `mockserver-variation` to `500` and the file from our previous example should be named `test_GET_500.mock`.
 
+##Multi-level URLs
+If you are wondering how to mock HTTP responses for a multi-level URL like `http://localhost:9001/test1/test2` here is how to do it:
+
+*Inside your `mocks` directory, run `mkdir test1`
+*`cd test1` and `touch test2.mock`
+*Insert your raw HTTP response text in `test2.mock`
 
 ##Conclusion
 
