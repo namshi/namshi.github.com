@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: es6 | Namshi]]></title>
+  <title><![CDATA[Category: es6 | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/es6/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-08T14:32:05+04:00</updated>
+  <updated>2014-06-16T14:32:20+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>

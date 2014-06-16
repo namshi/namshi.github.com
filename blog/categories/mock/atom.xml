@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mock | Tech @ Namshi.com]]></title>
+  <link href="http://tech.namshi.com/blog/categories/mock/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-16T14:32:20+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[MockServer, Effortless API Mocking Library in Node Js]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/"/>
+    <updated>2014-06-13T04:22:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js</id>
+    <content type="html"><![CDATA[<p>Namshi Tech Team is happy to roll-out a new node-based library!</p>
+
+<p>We present you <a href="https://github.com/namshi/mockserver">MockServer</a>, a library that allows you to easily mock your APIs' plain HTTP responses.</p>
+
+<!-- more -->
+
+
+<p>The main benefit of this library is to allow developers to focus on what is important to them, and in this case,
+<code>mockserver</code> allows front-end developers to focus their efforts on creating awesome front-end clients without having to worry about the
+availability of a complete and running API.</p>
+
+<p>The use of this library can be appreciated by developers following a <a href="http://www.frontendfirst.com/">Front-End First</a>
+methodology where development efforts initially focus on front-end clients rather than the back-end structure and tools.
+Front-end first suggests that front-end developers have their mocked servers return expected or anticipated HTTP responses
+based on the available specification instead of making an actual call to the API.
+Another benefit is to allow development for both front-end and back-end in parallel.</p>
+
+<p>In short, this library basically removes the dependency that the front-end development requires from the backend.</p>
+
+<h2>Usage</h2>
+
+<p>Create an empty directory inside your project, <code>mkdir api</code></p>
+
+<p>To start mocking your HTTP responses, you will need to have a sub-directory were all your mocks shall reside. In order to do so,
+in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s where all plain text HTTP responses will reside.</p>
+
+<p>Inside your <code>api</code> directory, run</p>
+
+<p><code>
+npm install mockserver
+</code></p>
+
+<p>Create a new js file, say, <code>api.js</code> that has the following:</p>
+
+<p>```javascript
+var http       = require(&lsquo;http&rsquo;),</p>
+
+<pre><code>mockserver = require('mockserver');
+</code></pre>
+
+<p>http.createServer(mockserver(&lsquo;./mocks&rsquo;).listen(&lsquo;9001&rsquo;);
+```</p>
+
+<p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
+listens to port <code>9001</code>.</p>
+
+<p>Now, you should point your front-end client to <code>http://localhost:9001</code> instead of the actual api url.</p>
+
+<h2>Mocks</h2>
+
+<p>Now, your node server is running and your client can start making requests and getting back mocked HTTP responses.</p>
+
+<p>How do you create the mocks?</p>
+
+<p>Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
+The naming of those files goes as follows: <code>path_METHOD</code>, <code>path</code> is the relative url path without any slashes, i.e, <code>/test</code>
+should be <code>test</code> and <code>METHOD</code> is the upper-cased HTTP method (<code>GET</code>). The extension for the files should be <code>.mock</code>.
+The complete file name is: <code>test_GET.mock</code>.</p>
+
+<p>The contents of the mocked file should be a valid HTTP response text, as follows:</p>
+
+<p>```
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8</p>
+
+<p><html><body>Hello World</body></html>
+```</p>
+
+<p>Now, whenever your client requests <code>http://localhost:9001/test</code>, <code>mockserver</code> will return that plain HTTP response you defined
+in <code>test_GET.mock</code>.</p>
+
+<h2>Header Variation</h2>
+
+<p>Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
+<code>mockserver-variation</code> header in your requests. The value of this header shall be appended to the mocked file name as follows: <code>path_METHOD_variation</code>.</p>
+
+<p>Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
+Simply set <code>mockserver-variation</code> to <code>500</code> and the file from our previous example should be named <code>test_GET_500.mock</code>.</p>
+
+<h2>Multi-level URLs</h2>
+
+<p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
+
+<p><em>Inside your <code>mocks</code> directory, run <code>mkdir test1</code>
+</em><code>cd test1</code> and <code>touch test2.mock</code>
+*Insert your raw HTTP response text in <code>test2.mock</code></p>
+
+<h2>Conclusion</h2>
+
+<p>Although simple and straight forward, the idea behind <code>mockserver</code> is quite powerful. It is mostly suited for a Front-end First methodology, some of the
+benefits include parallel front-end and back-end development and the decoupling of the Front-end and back-end during the development phase.</p>
+
+<p>It would be great if you can take the time to try it out and let us know what you think!</p>
+]]></content>
+  </entry>
+  
+</feed>
