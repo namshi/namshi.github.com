@@ -83,9 +83,9 @@ Simply set `mockserver-variation` to `500` and the file from our previous exampl
 ##Multi-level URLs
 If you are wondering how to mock HTTP responses for a multi-level URL like `http://localhost:9001/test1/test2` here is how to do it:
 
-*Inside your `mocks` directory, run `mkdir test1`
-*`cd test1` and `touch test2.mock`
-*Insert your raw HTTP response text in `test2.mock`
+* Inside your `mocks` directory, run `mkdir test1`
+* `cd test1` and `touch test2.mock`
+* Insert your raw HTTP response text in `test2.mock`
 
 ##Conclusion
 
