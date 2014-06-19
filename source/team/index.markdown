@@ -60,7 +60,7 @@ footer: true
 
 *   ##<div id="Mohamad Hallal">Mohamad Hallal</div>
     {% img left team /images/hallal.jpg Mohamad Hallal %}
-    **Mohamad Hallal** is a Junior Software Engineer at Namshi. He joined the Tech Team in May 2013.
+    **Mohamad Hallal** is a Software Engineer at Namshi. He joined the Tech Team in May 2013.
     Hallal is an American University of Sharjah Alumni holding a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering - Magna Cum Laude.
     His passion for programming and technology led him to start his career in Software Engineering/Web Development at Namshi.
     Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.

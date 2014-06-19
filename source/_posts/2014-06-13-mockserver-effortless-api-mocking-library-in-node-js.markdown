@@ -43,7 +43,7 @@ Create a new js file, say, `api.js` that has the following:
 var http       = require('http'),
     mockserver = require('mockserver');
 
-http.createServer(mockserver('./mocks').listen('9001');
+http.createServer(mockserver('./mocks')).listen('9001');
 ```
 
 That's it! Now navigate from your terminal to the `api` directory and run `node api.js`. This will create a node server that
