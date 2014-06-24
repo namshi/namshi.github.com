@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mock | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/mock/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-16T14:32:20+04:00</updated>
+  <updated>2014-06-24T23:28:37+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -58,7 +58,7 @@ var http       = require(&lsquo;http&rsquo;),</p>
 <pre><code>mockserver = require('mockserver');
 </code></pre>
 
-<p>http.createServer(mockserver(&lsquo;./mocks&rsquo;).listen(&lsquo;9001&rsquo;);
+<p>http.createServer(mockserver(&lsquo;./mocks&rsquo;)).listen(&lsquo;9001&rsquo;);
 ```</p>
 
 <p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
@@ -101,9 +101,12 @@ Simply set <code>mockserver-variation</code> to <code>500</code> and the file fr
 
 <p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
 
-<p><em>Inside your <code>mocks</code> directory, run <code>mkdir test1</code>
-</em><code>cd test1</code> and <code>touch test2.mock</code>
-*Insert your raw HTTP response text in <code>test2.mock</code></p>
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
 
 <h2>Conclusion</h2>
 

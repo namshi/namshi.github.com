@@ -4,7 +4,7 @@
   <title><![CDATA[Category: open source | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/open-source/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-16T14:32:20+04:00</updated>
+  <updated>2014-06-24T23:28:37+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
+    <updated>2014-06-24T23:20:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
+    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
+that lights up our weekends or solves some of the small dilemmas we daily
+face at work.</p>
+
+<!-- more -->
+
+
+<p>In the past days <a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>
+has been working on one of his side projects and released
+<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
+it lets you visualize your 4Square checkins on a map
+<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
+and it has been written in his beloved NodeJS.</p>
+
+<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>

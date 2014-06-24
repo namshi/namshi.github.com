@@ -165,7 +165,7 @@ in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s wh
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">http</span>       <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">),</span>
 </span><span class='line'>    <span class="nx">mockserver</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mockserver&#39;</span><span class="p">);</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">mockserver</span><span class="p">(</span><span class="s1">&#39;./mocks&#39;</span><span class="p">).</span><span class="nx">listen</span><span class="p">(</span><span class="s1">&#39;9001&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">mockserver</span><span class="p">(</span><span class="s1">&#39;./mocks&#39;</span><span class="p">)).</span><span class="nx">listen</span><span class="p">(</span><span class="s1">&#39;9001&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -213,9 +213,12 @@ Simply set <code>mockserver-variation</code> to <code>500</code> and the file fr
 
 <p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
 
-<p><em>Inside your <code>mocks</code> directory, run <code>mkdir test1</code>
-</em><code>cd test1</code> and <code>touch test2.mock</code>
-*Insert your raw HTTP response text in <code>test2.mock</code></p>
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
 
 <h2>Conclusion</h2>
 

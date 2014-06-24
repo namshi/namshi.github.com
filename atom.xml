@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-16T14:32:20+04:00</updated>
+  <updated>2014-06-24T23:28:37+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,74 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
+    <updated>2014-06-24T23:20:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
+    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
+that lights up our weekends or solves some of the small dilemmas we daily
+face at work.</p>
+
+<!-- more -->
+
+
+<p>In the past days <a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>
+has been working on one of his side projects and released
+<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
+it lets you visualize your 4Square checkins on a map
+<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
+and it has been written in his beloved NodeJS.</p>
+
+<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #43]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/19/newsletter-number-43/"/>
+    <updated>2014-06-19T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/19/newsletter-number-43</id>
+    <content type="html"><![CDATA[<p><strong>TechThursday is here again!</strong></p>
+
+<p>This week we released a new and opensource library on github: <a href="https://github.com/namshi/mockserver">Mockserver</a> for mocking apis, our fellow
+<a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad</a> <a href="http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/">wrote a post about it</a>, check it!</p>
+
+<ul>
+<li><p><a href="http://wavepot.com/">Wavepot&hellip; just check and have fun with it!</a></p></li>
+<li><p><a href="https://github.com/prezi/changelog">Changelog, a tool designed to answer the question “What changed in the last twenty minutes?” trough a simple HTTP api and a web interface</a></p></li>
+<li><p><a href="http://blog.kicksend.com/how-we-decreased-sign-up-confirmation-email-bounces-by-50">How we decreased sign up confirmation email bounces by 50%</a></p></li>
+<li><p><a href="http://welcometothebundle.com/domain-driven-design-and-symfony-for-simple-app">Domain Driven Design principles with Symfony2</a></p></li>
+<li><p><a href="http://php-and-symfony.matthiasnoback.nl/2014/06/how-to-create-framework-independent-controllers/">Symfony2: How to create framework independent controllers?</a></p></li>
+<li><p><a href="https://igor.io/2013/02/03/http-foundation-value.html">Symfony2: value of HttpFoundation</a></p></li>
+<li><p><a href="https://igor.io/2013/03/31/stateless-services.html">Stateless services</a></p></li>
+<li><p><a href="http://www.andresosinski.com/you-job-is-not-to-code.html">Your Job is not to code</a> &ndash; different perspective &ndash; <a href="http://joshsymonds.com/blog/2014/06/15/your-job-is-to-code/">Your job is to code</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://julo.ch/blog/docker-dev-environment/">Docker for your dev environment</a></p></li>
+<li><p><a href="http://thenextweb.com/dd/2014/06/17/7-web-design-disasters-drive-people-crazy/">7 Web design disasters that drive people crazy</a></p></li>
+<li><p><a href="http://stedolan.github.io/jq/">Lightweight and flexible command-line JSON Processor</a></p></li>
+<li><p><a href="http://ember.vicramon.com/">Ember Tutorial</a></p></li>
+<li><p><a href="http://www.daemonology.net/papers/crypto1hr.pdf">Everything you need to know about cryptography in one hour</a></p></li>
+<li><p><a href="http://t.co/GreAnQwaI7">MockServer, effortless API mocking library in Nodejs</a></p></li>
+<li><p><a href="http://buff.ly/1hUhRo6">Tesla drops all their patents</a></p></li>
+<li><p><a href="http://docs.deis.io/en/latest/understanding_deis/architecture/">Deis: Your PaaS, your rules.</a></p></li>
+<li><p><a href="http://www.centurylinklabs.com/flynn-vs-deis-the-tale-of-two-docker-micro-paas-technologies/">Flynn Vs Deis, two Docker-related open source projects compared</a></p></li>
+<li><p><a href="http://www.centurylinklabs.com/top-10-open-source-docker-developer-tools/">Top 10 Docker Tools</a></p></li>
+<li><p><a href="https://coreos.com/">CoreOs: Linux for Massive Server Deployments</a></p></li>
+<li><p><a href="http://www.clearlytech.com/2014/01/04/12-factor-apps-plain-english/">12 factors apps in plain english</a></p></li>
+<li><p><a href="https://cipherli.st/">A nice set of strong cipher settings for Apache, Nginx and Lighttpd. A good case study.</a></p></li>
+<li><p><a href="https://github.com/mickey/checkzilla">Checkzilla, a simple tool for letting you know about out-of-date software versions</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[MockServer, Effortless API Mocking Library in Node Js]]></title>
@@ -59,7 +127,7 @@ in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s wh
 </pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">http</span>       <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">),</span>
 </span><span class='line'>    <span class="nx">mockserver</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mockserver&#39;</span><span class="p">);</span>
 </span><span class='line'>
-</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">mockserver</span><span class="p">(</span><span class="s1">&#39;./mocks&#39;</span><span class="p">).</span><span class="nx">listen</span><span class="p">(</span><span class="s1">&#39;9001&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">mockserver</span><span class="p">(</span><span class="s1">&#39;./mocks&#39;</span><span class="p">)).</span><span class="nx">listen</span><span class="p">(</span><span class="s1">&#39;9001&#39;</span><span class="p">);</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
@@ -107,9 +175,12 @@ Simply set <code>mockserver-variation</code> to <code>500</code> and the file fr
 
 <p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
 
-<p><em>Inside your <code>mocks</code> directory, run <code>mkdir test1</code>
-</em><code>cd test1</code> and <code>touch test2.mock</code>
-*Insert your raw HTTP response text in <code>test2.mock</code></p>
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
 
 <h2>Conclusion</h2>
 
@@ -1244,84 +1315,6 @@ Let&rsquo;s get rid of them!</p>
 <p> Here you can find a complete list of <a href="https://gist.github.com/cirpo/86d43ef8ef87b4cfd031">aliases</a>, and <a href="https://gist.github.com/cirpo/343376f1ac7fb00204a0">here</a> the global .gitconfig we are using</p>
 
 <p> Do you have any other tips or tricks to share? Write them down in the comments :)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #36]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/"/>
-    <updated>2014-05-01T12:36:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
-
-<ul>
-<li><p><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></p></li>
-<li><p><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></p></li>
-<li><p><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></p></li>
-<li><p><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></p></li>
-<li><p><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></p></li>
-<li><p><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></p></li>
-<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></p></li>
-<li><p><a href="http://www.therestartpage.com/">(old) The restart page</a></p></li>
-<li><p><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></p></li>
-<li><p><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></p></li>
-<li><p><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></p></li>
-<li><p><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
-<li><p><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></p></li>
-<li><p><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></p></li>
-<li><p><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></p></li>
-<li><p><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #35]]></title>
-    <link href="http://tech.namshi.com/blog/2014/04/24/newsletter-number-35/"/>
-    <updated>2014-04-24T14:36:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/04/24/newsletter-number-35</id>
-    <content type="html"><![CDATA[<p>Here we are again! #TechThursday</p>
-
-<ul>
-<li><p><a href="http://gameprogrammingpatterns.com/">Game programming patterns: a free online book by Bob Nystrom, ex Electronic Arts employee</a></p></li>
-<li><p><a href="http://css-tricks.com/examples/ShapesOfCSS">Use css to make all kinds of shapes</a></p></li>
-<li><p><a href="http://broxxar.itch.io/flappy48">Flappy bird meets 2048 (again!)</a></p></li>
-<li><p><a href="https://medium.com/p/3d1b0a9b810e">How animations are important</a></p></li>
-<li><p><a href="http://blog.angularjs.org/2014/04/angular-and-durandal-converge.htm">Angular and Durandal Converge</a></p></li>
-<li><p><a href="https://forums.unrealengine.com/showthread.php?2574-Why-C-for-Unreal-4&amp;p=16252&amp;viewfull=1#post16252">Why C++ for Unreal 4 </a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://strongloop.com/strongblog/node-js-express-introduction-koa-js-zone">Beyond Node.js Express: An Intro to Koa.js and a Preview of Zones</a></p></li>
-<li><p><a href="http://buff.ly/1iJ8d1R">Do The Simplest Thing That Could Possibly Work</a></p></li>
-<li><p><a href="https://groups.google.com/forum/m/?utm_content=bufferc7269&amp;utm_medium=social&amp;utm_source=twitter.com&amp;utm_campaign=buffer#!msg/redis-db/32VPw9X46Sg/GxHLzKeqRc0J">Redis 2.8.9 is out</a></p></li>
-<li><p><a href="http://buff.ly/1tszcXK">Community News: PHPUnit Announced End of Life on PEAR Installation Method</a></p></li>
-<li><p><a href="http://buff.ly/1sHMdwu">Varnish 4.0 Released</a></p></li>
-<li><p><a href="http://buff.ly/R6RdMM">Six programming paradigms that will change how you think about coding</a></p></li>
-<li><p><a href="https://www.destroyallsoftware.com/talks/the-birth-and-death-of-javascript">Birth and death of javascript</a></p></li>
-<li><p><a href="http://www.toptal.com/nodejs/why-the-hell-would-i-use-node-js">Why would I use node js &ndash; A Case-by-Case Introduction</a></p></li>
-<li><p><a href="http://www.html5rocks.com/en/tutorials/developertools/async-call-stack/">Debugging Asynchronous JavaScript with Chrome DevTools</a></p></li>
-<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs">Faster Angular Js rendering with React Js</a></p></li>
-<li><p><a href="http://gulpfiction.divshot.io/">Gulp Fiction &ndash;  an interactive online Gulp file generator</a></p></li>
-<li><p><a href="http://alexnisnevich.github.io/untrusted/">Untrusted: an exciting Meta-Javascript Adventure Game </a></p></li>
-<li><p><a href="http://stackoverflow.com/questions/8318911/why-does-html-think-chucknorris-is-a-color">bgcolor=&ldquo;chucknorris&rdquo;, turns your html background to red&hellip; WHY?</a></p></li>
-<li><p><a href="http://www.businessinsider.com/larry-page-the-untold-story-2014-4#ixzz2zriUhfg2">The Untold Story Of Larry Page&rsquo;s Incredible Comeback</a></p></li>
-</ul>
-
 ]]></content>
   </entry>
   
