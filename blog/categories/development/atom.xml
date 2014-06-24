@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: development | Tech @ Namshi.com]]></title>
+  <link href="http://tech.namshi.com/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-24T23:38:36+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[When you start working as a software developer...]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/"/>
+    <updated>2014-06-24T23:30:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p>&hellip;it&rsquo;s always a joy, full of surprises: what they don&rsquo;t tell you
+is that not all of the surprises are much fun.</p>
+
+<!-- more -->
+
+
+<p>Kudos to <a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad</a>
+who shared his <a href="http://mohdhallal.github.io/blog/2014/06/18/my-top-10-junior-developer-pitfalls/">10 most dramatic moments as a Junior software engineer</a>
+in his latest blog post: the whole team at Namshi had so much fun going through
+it because:</p>
+
+<ul>
+<li>we heard him shouting at Vim</li>
+<li>we&rsquo;ve all been there :)</li>
+</ul>
+
+
+<p>&hellip;and what about you? Which ones were your biggest #EPICFAIL?</p>
+
+<p>On a side note, it&rsquo;s great to see how passionate engineers like
+Mohamad grown on a daily basis &mdash; especially compared to the
+&ldquo;old guys&rdquo; like me: one of his open source libraries,
+<a href="https://github.com/namshi/mockserver">Mockserver</a>,
+is definitely something you should check out.</p>
+]]></content>
+  </entry>
+  
+</feed>
