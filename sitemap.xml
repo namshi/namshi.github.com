@@ -181,6 +181,16 @@
         <lastmod>2014-06-24T23:37:49+04:00</lastmod>
     </url>
     <url>
+        <loc>http://tech.namshi.com/blog/2014/06/26/newsletter-number-44/</loc>
+        <lastmod>2014-06-27T00:44:10+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/
+        </loc>
+        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
+    </url>
+    <url>
         <loc>http://tech.namshi.com/team/</loc>
         <lastmod>2014-06-24T23:20:15+04:00</lastmod>
     </url>
@@ -190,7 +200,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/archives/</loc>
-        <lastmod>2014-06-24T23:37:49+04:00</lastmod>
+        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/robots.txt</loc>
@@ -198,7 +208,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/</loc>
-        <lastmod>2014-06-24T23:37:49+04:00</lastmod>
+        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/about/</loc>
@@ -206,11 +216,11 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/archives/</loc>
-        <lastmod>2014-06-24T23:37:49+04:00</lastmod>
+        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/</loc>
-        <lastmod>2014-06-24T23:37:49+04:00</lastmod>
+        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/categories/</loc>

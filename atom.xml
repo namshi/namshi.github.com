@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-24T23:38:36+04:00</updated>
+  <updated>2014-06-27T02:29:47+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,281 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <updated>2014-06-27T00:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
+through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
+by using it and realizing we wanted to achieve zero-downtime
+deployments (ZDD) on our node apps we decided to kick in.</p>
+
+<!-- more -->
+
+
+<p>This afternoon <a href="http://tech.namshi.com/team#Luciano%20Colosio">Lucio</a> came up to me
+and asked me a simple question:</p>
+
+<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
+
+<p>and my answer was clear and simple: we need a robust solution
+for ZDD, let&rsquo;s do this.</p>
+
+<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
+we searched a bit and found a few alternatives, which
+weren&rsquo;t exactly fitting our scenarios:</p>
+
+<ul>
+<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
+quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
+<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
+seems to have a whole lot of great things but we wanted to have
+the startup script as a global command rather than having to write
+a script on our own (but we might wrap it, as it
+has a lot of cool features, like resizing your cluster)</li>
+</ul>
+
+
+<p>At the end we decided to go for a simple solution after reading
+<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
+that explains how to achieve ZDD on NodeJS.</p>
+
+<p>In a few, very productive hours, Lucio was able to write
+<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
+we decided to release it to the public, as it might
+be interesting out there (and because we really like
+to receive feedbacks!).</p>
+
+<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
+app that runs through an <code>app.js</code> script, in order to run it through
+ClusterJS you simply have to:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g clusterjs
+</span><span class='line'>
+</span><span class='line'>clusterjs path/to/app.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At this point you should be able to see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js
+</span><span class='line'>
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 4 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 21543
+</span><span class='line'>--- test app loaded as pid: 21544
+</span><span class='line'>--- test app loaded as pid: 21546
+</span><span class='line'>--- test app loaded as pid: 21547
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 4 running!</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Cool! You have just put your app in a cluster with four workers!</p>
+
+<p>By default, ClusterJS will boot as many workers as CPUs
+in your system; if you wanna change it, simply:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js --workers 10
+</span><span class='line'>
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 10 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 21636
+</span><span class='line'>--- test app loaded as pid: 21635
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>--- test app loaded as pid: 21650
+</span><span class='line'>--- test app loaded as pid: 21640
+</span><span class='line'>Worker 9 running!
+</span><span class='line'>--- test app loaded as pid: 21639
+</span><span class='line'>--- test app loaded as pid: 21641
+</span><span class='line'>Worker 4 running!
+</span><span class='line'>--- test app loaded as pid: 21644
+</span><span class='line'>Worker 5 running!
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 6 running!
+</span><span class='line'>--- test app loaded as pid: 21648
+</span><span class='line'>--- test app loaded as pid: 21646
+</span><span class='line'>Worker 8 running!
+</span><span class='line'>--- test app loaded as pid: 21652
+</span><span class='line'>Worker 7 running!
+</span><span class='line'>Worker 10 running!</span></code></pre></td></tr></table></div></figure>
+
+
+<p>How to achieve ZDD? Simply issue a SIGUSR2 command
+to your master process, after updating the files
+in your app:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js --workers 2
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 2 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 22007
+</span><span class='line'>--- test app loaded as pid: 22008
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>SIGUSR2 received, reloading the app
+</span><span class='line'>*** reloading workers!
+</span><span class='line'>restarting worker: 1
+</span><span class='line'>Shutdown complete for worker 1
+</span><span class='line'>Worker 1 died :(
+</span><span class='line'>--- test app loaded as pid: 22018
+</span><span class='line'>--- test app loaded as pid: 22021
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 4 running!
+</span><span class='line'>Replacement worker online.
+</span><span class='line'>*** reloading workers!
+</span><span class='line'>restarting worker: 2
+</span><span class='line'>Shutdown complete for worker 2
+</span><span class='line'>Worker 2 died :(
+</span><span class='line'>--- test app loaded as pid: 22055
+</span><span class='line'>--- test app loaded as pid: 22056
+</span><span class='line'>Worker 5 running!
+</span><span class='line'>Worker 6 running!
+</span><span class='line'>Replacement worker online.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you want to change the signal used to reload the cluster,
+you can do it with a simple option:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+
+<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
+feel free to have a look around, as
+<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #44]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/26/newsletter-number-44/"/>
+    <updated>2014-06-26T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/26/newsletter-number-44</id>
+    <content type="html"><![CDATA[<p><strong>TechThursday</strong> is here folks and we have two special mentions today.</p>
+
+<p><a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad Hallal</a> wrote an awesome post about <a href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/">his pitfalls as junior developer</a></p>
+
+<p><a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a> released a very cool personal project: <a href="https://github.com/unlucio/carmensandiego">Carmen Sandiego</a>.
+This nodejs app let&rsquo;s you visualize your Foursquare checkins on a world map!
+<a href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/">Check the dedicated blog post</a></p>
+
+<p>Here the list of other useful links of the week:</p>
+
+<ul>
+<li><p><a href="http://blog.andyet.com/2014/06/25/introducing-ampersand-js">Introducing Ampersand.js, a highly modular, loosely coupled, non-frameworky framework for building advanced JavaScript apps</a></p></li>
+<li><p><a href="http://the-paper-trail.org/blog/the-elephant-was-a-trojan-horse-on-the-death-of-map-reduce-at-google/">On the death of Map-Reduce at Google</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular/">Handling errors in asynchronous flow</a></p></li>
+<li><p><a href="http://www.collectionsjs.com/">Javascript implementation of common data structures</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://elm-lang.org/">A functional reactive language for interactive applications</a></p></li>
+<li><p><a href="http://plaintextoffenders.com/">Passwords in Plain text</a></p></li>
+<li><p><a href="https://developers.google.com/web/starter-kit/">Google Web Started Kit</a></p></li>
+<li><p><a href="http://blog.nullspace.io/recovering-deleted-files-using-only-grep.html">Recovering deleted files using only grep</a></p></li>
+<li><p><a href="http://www.paperplanes.de/2014/6/20/what-blameless-postmortem-taught-me.html">Benefits of post-mortems for incidents, the need to make them blameless &ndash; and the knock on effect that has on an organisation’s culture</a></p></li>
+<li><p><a href="http://blog.jaywayco.co.uk/sysops-are-end-users-too/">Why it’s important to have real users, in this case systems administrators, on the product team</a></p></li>
+<li><p><a href="http://newrelic.com/devops/toolset">A Short List of DevOps Tools</a></p></li>
+<li><p><a href="http://www.linuxinsider.com/story/Should-Everyone-Learn-to-Code-80634.html">Should Everyone Learn to Code?</a></p></li>
+<li><p><a href="http://knplabs.com/blog/2011/10/10/give-your-projects-a-gaufrette/">Gaufrette: a PHP library that provides a filesystem abstraction layer</a></p></li>
+<li><p><a href="http://marcjschmidt.de/blog/2014/02/08/php-high-performance.html">Bring High Performance Into Your PHP App</a></p></li>
+<li><p><a href="http://blog.tomaka17.com/2012/12/random-tricks-when-using-angularjs/">Random tricks when using AngularJS</a></p></li>
+<li><p><a href="http://infrequently.org/2013/11/long-term-web-semantics/">Long Term Web Semantics</a></p></li>
+<li><p><a href="http://techcrunch.com/2014/06/19/google-launches-web-starter-kit-a-boilerplate-for-multi-screen-web-development/">Google’s New Web Starter Kit Is A Boilerplate For Multi-Screen Web Development</a></p></li>
+<li><p><a href="http://www.youtube.com/playlist?list=PLOU2XLYxmsIJrr0ZjgPIR6n5PFTu7quwJ">Find out about the latest product and platform innovations at Google I/O 2014</a></p></li>
+<li><p><a href="http://code.tutsplus.com/articles/quick-tip-set-relative-urls-with-the-base-tag--cms-21399">Quick Tip: set relative URLs with the “base” Tag</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-6-attacking-complex-methods--cms-21522">Refactoring Legacy Code: Part 6 &ndash; Attacking Complex Methods</a></p></li>
+<li><p><a href="http://friendsofsymfony.github.io/slides/resting-with-symfony2.html">RESTing with Symfony 2</a></p></li>
+<li><p><a href="http://keyholesoftware.com/2014/06/16/code-for-maintainability/">Code for maintainability so the next developer doesn’t hate you</a></p></li>
+<li><p><a href="http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/">Docker: How speed up deployment involving npm install and bower install</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[When you start working as a software developer...]]></title>
@@ -915,196 +1190,6 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
 <li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #37]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/08/newsletter-number-37/"/>
-    <updated>2014-05-08T16:47:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/08/newsletter-number-37</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
-
-<ul>
-<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
-<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
-<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
-<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
-<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
-<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
-<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
-<li><p><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[3 PHP 5.5 features we are using at Namshi]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/"/>
-    <updated>2014-05-07T09:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi</id>
-    <content type="html"><![CDATA[<p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
-
-<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
-
-<!-- more -->
-
-
-<h3>array_column function</h3>
-
-<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productIds = [1001, 1005, 1007];</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//array with keys and values</span>
-</span><span class='line'><span class="x">$products = [</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Vito Solo Shirt&quot;, &quot;sku&quot; =&gt; &quot;VI714AT94SIB&quot;, &quot;price&quot; =&gt; 180.00],</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Core Ultra Shirt&quot;, &quot;sku&quot; =&gt; &quot;JA872AT40VYL&quot; , &quot;price&quot; =&gt; 195.00],</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Swoosh T-shirt&quot;, &quot;sku&quot; =&gt; &quot;NI727AT17RGG&quot; , &quot;price&quot; =&gt; 130.00]</span>
-</span><span class='line'><span class="x">];</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productTitles = array_column($products, &quot;title&quot;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//product titles will be a new array of titles extacted from products array in above example code</span>
-</span><span class='line'><span class="x">Array</span>
-</span><span class='line'><span class="x">(</span>
-</span><span class='line'><span class="x">    [0] =&gt; Vito Solo Shirt</span>
-</span><span class='line'><span class="x">    [1] =&gt; Core Ultra Shirt</span>
-</span><span class='line'><span class="x">    [2] =&gt; Swoosh T-shirt</span>
-</span><span class='line'><span class="x">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">$productPrices = array_column($products, &quot;price&quot;, &quot;sku&quot;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">Array</span>
-</span><span class='line'><span class="x">(</span>
-</span><span class='line'><span class="x">    [VI714AT94SIB] =&gt; 180</span>
-</span><span class='line'><span class="x">    [JA872AT40VYL] =&gt; 195</span>
-</span><span class='line'><span class="x">    [NI727AT17RGG] =&gt; 130</span>
-</span><span class='line'><span class="x">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The PHP <code>array_colum</code> function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
-
-<h3>finally</h3>
-
-<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
-
-<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
-
-<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">try {</span>
-</span><span class='line'><span class="x">     //open sql connection </span>
-</span><span class='line'><span class="x">     if ($condition) { </span>
-</span><span class='line'><span class="x">        return false;</span>
-</span><span class='line'><span class="x">     }</span>
-</span><span class='line'><span class="x">  }</span>
-</span><span class='line'><span class="x">  finally {</span>
-</span><span class='line'><span class="x">    //close the sql connection, this will be executed even if the return is called.</span>
-</span><span class='line'><span class="x">  }</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
-
-<h3>DateTimeImmutable</h3>
-
-<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
-
-<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$date           = new DateTimeImmutable();</span>
-</span><span class='line'><span class="x">$datePlusOneDay = $date-&gt;add(new DateInterval(&#39;P1D&#39;));</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">print $date-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
-</span><span class='line'><span class="x">print &quot;---&quot;;</span>
-</span><span class='line'><span class="x">print $datePlusOneDay-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//output</span>
-</span><span class='line'><span class="x">//2014-May-07 22:37:04---2014-May-08 22:37:04</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//in some entity class in the setCreatedAt method</span>
-</span><span class='line'><span class="x">$this-&gt;createdAt = new DateTimeImmutable();</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//in some entity class in some prePresist method</span>
-</span><span class='line'><span class="x">$this-&gt;updatedAt = new DateTimeImmutable();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
 ]]></content>
   </entry>
   

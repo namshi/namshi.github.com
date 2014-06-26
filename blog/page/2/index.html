@@ -9,7 +9,8 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Jun 3rd, 2014 Namshi, hiring, job Do you like Java? Ok, I possibly started from the wrongest question. Restart. Do you like Android? (sounds much &hellip;">
+	<meta name="description" content="Jun 4th, 2014 software development I am always amazed by the quantity of errors I make,
+on a daily basis, when writing some code: it&rsquo;s true &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,6 +101,194 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-04T21:07:00+04:00" data-updated="true" itemprop="datePublished">Jun 4<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/software-development/'>software development</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>I am always amazed by the quantity of errors I make,
+on a daily basis, when writing some code: it&rsquo;s true that&rsquo;s
+not my <strong>primary</strong> job, but at the same
+time it always feels painful to find bugs or edge cases.</p>
+
+<p>But one of the things I&rsquo;m usually good at it&rsquo;s trying
+to keep things as universal, simple and self-explanatory
+as possible, as I&rsquo;ve learnt, so far, that the worst enemy
+of my code is <strong>me in 6 months</strong>.</p>
+
+<!-- more -->
+
+
+<p>Today, for example, I was discussing with <a href="/blog/2014/05/26/welcome-lucio/">Lucio</a>
+how to handle a list of errors: suppose that the user
+performs an action that generates a bunch of errors, and that
+you have an error handler that needs to deal with all of them.</p>
+
+<p>The error handler might receive a list of these errors, process
+them one by one and then let other guys take the stage: a common
+solution would be to feed the handler the list of errors and let it
+pop them from the list as soon as he&rsquo;s  <em>handled</em> them.</p>
+
+<figure class='code'><figcaption><span>Some pseudo code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ErrorHandler</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">property</span> <span class="n">queue</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">addError</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">queue</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">handle</span> <span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>      <span class="n">foreach</span> <span class="p">(</span><span class="n">error</span> <span class="k">in</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>          <span class="n">doStuff</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nothing exceptional with the pseudo-code above, but we were wondering
+(as our piece of code is a bit more complex) how to name the list of
+errors that the handler deals with to make it a bit more declarative.</p>
+
+<p>Since the error handler acts as a <a href="http://en.wikipedia.org/wiki/FIFO">FIFO</a>
+it felt natural, for Lucio, call this a <strong>queue</strong>. I suggested <strong>stack</strong>
+but upon thinking about it we agreed that since a stack act as
+<a href="http://en.wikipedia.org/wiki/LIFO_(computing">LIFO</a> it wasn&rsquo;t the best idea.</p>
+
+<p><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html">Things like this</a> might sound silly, but they <strong>extremely important</strong>
+when you work with other ten people on a complex domain that
+you are trying to keep as simple (and real) as possible.</p>
+
+<p>We often forget that translating concepts into working code is our
+main duty, and by doing so we need to keep things as clear / clean as possible:
+how many times did you hear <em>&ldquo;Oh that guy wrote it, he knows how it works, ask him&rdquo;</em>?
+I cry everytime I hear that.</p>
+
+<p>When you are assigned a task, first think of the simplest and most exhaustive
+solution, then write the code: your job is not measured by lines of code, but by
+working software, which means maintainable, decoupled, easy to understand, (ultimately)
+beautiful code.</p>
+
+<p>What is the difference between an essay and some code? Ideally there is none:</p>
+
+<ul>
+<li>you explain / implement a concept / feature</li>
+<li>your artifact needs to be understandable</li>
+<li>it targets 2 audiences
+
+<ul>
+<li>a technical one, which needs to be able to understand it in depth</li>
+<li>a more general one, which needs to grasp the main concepts</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Actually, there is <strong>one</strong> difference between essays and software development: the
+language they&rsquo;re written in.</p>
+
+<p>But they all need to be self-explanatory, they
+all need to nail the problem without the need to dig too deep into
+the explanation, they all need to get straight to the point, making
+things explicit rather than implicit.</p>
+
+<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
+</div></article>
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-03T22:46:00+04:00" data-updated="true" itemprop="datePublished">Jun 3<span>rd</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/goodbye/'>goodbye</a>, <a class='category' href='/blog/categories/team/'>team</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
+
+<p>As much as we hate to see people leaving, I think
+it&rsquo;s a good thing to waive the nostalgic feelings
+and celebrate who has decided to move on: for better
+or for worse, each and everyone in our team has played
+a key role in evolving to what I call <em>&ldquo;The tech family&rdquo;</em>.</p>
+
+<p>I must admit that I&rsquo;m a bit late with saying goodbye to
+<a href="https://ae.linkedin.com/pub/muhammad-riaz/10/777/414">Muhammad</a>, but I eventually wanted to do this as I believe
+his mermerizing persona, the laugh, the commitment that
+he showed in his 2-year tenure are second to none.</p>
+
+<!-- more -->
+
+
+<p>Muhammad has joined us even before I got to Dubai,
+and left us after core contributions to our
+architecture: from rushing to fix as many bugs as possible
+to putting all he had in re-architecting core
+components of our stack, like our main API and
+integrations with payment providers: for example,
+he&rsquo;s been crucial in implementing 3D-secure
+authentication in our
+<a href="https://github.com/namshi/innovate">namshi/innovate</a> library.</p>
+
+<p>Last we heard is that he would have rushed to Europe
+in order to join an exciting startup.</p>
+
+<p>Bring your <a href="http://www.stylehoster.com/lpc/uploads/2014/01/Latest-Salwar-Kameez-Designs-2014-For-Pakistani-Men.gif">Kameez</a> with you man,
+and remember you still have some brothers in Dubai!</p>
+
+<p>Aye!</p>
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -624,236 +813,6 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
 <li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
 </ul>
 
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-08T16:47:00+04:00" data-updated="true" itemprop="datePublished">May 8<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/php/'>PHP</a>, <a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/nodejs/'>nodejs</a>, <a class='category' href='/blog/categories/phpunit/'>phpunit</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
-
-<ul>
-<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
-<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
-<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
-<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
-<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
-<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
-<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
-<li><p><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
-</ul>
-
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-07T09:03:00+04:00" data-updated="true" itemprop="datePublished">May 7<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/php/'>php</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>Here at  <a href="http://www.namshi.com">Namshi</a> we are constanty updating our software stack to exploit the best benefits latest technology has to offer. Keeping up to date with the latest stable version of PHP, we are using <a href="http://php.net/releases/5_5_0.php">PHP 5.5</a> for some time now. We also leverage the new features added in PHP 5.5; this post will shed light on some of the features that have come in handy during our development process.</p>
-
-<p>PHP <a href="https://php.net/manual/en/migration54.new-features.php">5.4</a> and PHP <a href="https://php.net/manual/en/migration55.new-features.php">5.5</a> both were feature packed PHP releases, we have found 3 of these features useful in our routine PHP development which are discussed below:</p>
-
-<!-- more -->
-
-
-<h3>array_column function</h3>
-
-<p>The short array syntax was introduced in PHP 5.4, which makes creating arrays simpler than the old syntax.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productIds = [1001, 1005, 1007];</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//array with keys and values</span>
-</span><span class='line'><span class="x">$products = [</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Vito Solo Shirt&quot;, &quot;sku&quot; =&gt; &quot;VI714AT94SIB&quot;, &quot;price&quot; =&gt; 180.00],</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Core Ultra Shirt&quot;, &quot;sku&quot; =&gt; &quot;JA872AT40VYL&quot; , &quot;price&quot; =&gt; 195.00],</span>
-</span><span class='line'><span class="x">    [&quot;title&quot; =&gt; &quot;Swoosh T-shirt&quot;, &quot;sku&quot; =&gt; &quot;NI727AT17RGG&quot; , &quot;price&quot; =&gt; 130.00]</span>
-</span><span class='line'><span class="x">];</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>For arrays like in the above example or for result sets from a database query, the <a href="http://www.php.net/manual/en/function.array-column.php">array_column</a> PHP function comes in very handy to extract out the needed data as shown below:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$productTitles = array_column($products, &quot;title&quot;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//product titles will be a new array of titles extacted from products array in above example code</span>
-</span><span class='line'><span class="x">Array</span>
-</span><span class='line'><span class="x">(</span>
-</span><span class='line'><span class="x">    [0] =&gt; Vito Solo Shirt</span>
-</span><span class='line'><span class="x">    [1] =&gt; Core Ultra Shirt</span>
-</span><span class='line'><span class="x">    [2] =&gt; Swoosh T-shirt</span>
-</span><span class='line'><span class="x">)</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//if you want to create a key value array where key is the sku and value is the price, it can be done by the following call</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">$productPrices = array_column($products, &quot;price&quot;, &quot;sku&quot;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">Array</span>
-</span><span class='line'><span class="x">(</span>
-</span><span class='line'><span class="x">    [VI714AT94SIB] =&gt; 180</span>
-</span><span class='line'><span class="x">    [JA872AT40VYL] =&gt; 195</span>
-</span><span class='line'><span class="x">    [NI727AT17RGG] =&gt; 130</span>
-</span><span class='line'><span class="x">)</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The PHP <code>array_colum</code> function is an easy yet effective way to extract out needed informaton from an array which will make working with PHP arrays pleasant than usual.</p>
-
-<h3>finally</h3>
-
-<p>Finally, the <code>finally</code> keyword has been added to PHP, as mentioned in the <a href="http://www.php.net/manual/en/language.exceptions.php">exceptions</a> documentation on the PHP website:</p>
-
-<blockquote><p>Code within the finally block will always be executed after the try and catch blocks, regardless of whether an exception has been thrown, and before normal execution resumes.</p></blockquote>
-
-<p>This makes a very good use case when some code needs to be executed if an exception occurs and <code>return</code> has to be called. A typical example is closing the database connection:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">try {</span>
-</span><span class='line'><span class="x">     //open sql connection </span>
-</span><span class='line'><span class="x">     if ($condition) { </span>
-</span><span class='line'><span class="x">        return false;</span>
-</span><span class='line'><span class="x">     }</span>
-</span><span class='line'><span class="x">  }</span>
-</span><span class='line'><span class="x">  finally {</span>
-</span><span class='line'><span class="x">    //close the sql connection, this will be executed even if the return is called.</span>
-</span><span class='line'><span class="x">  }</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are other use cases of finally, still beware of using it as you might find out your exception has been <a href="http://www.php.net/manual/en/language.exceptions.php#114207">silenced</a>. Use finally with care and utilize it where needed.</p>
-
-<h3>DateTimeImmutable</h3>
-
-<p>The <a href="http://www.php.net/manual/en/class.datetimeimmutable.php">DateTimeImmutable</a> class is useful if you want the date time to stay the same for the execution context. The main instance is never modified but returns a new object instead for any operation like adding date. It works very well when you want to save the <code>created_at</code> and <code>updated_at</code> date time columns in the database.</p>
-
-<p>An example to show that even adding date to <code>DateTimeImmutable</code> class does not change it:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">$date           = new DateTimeImmutable();</span>
-</span><span class='line'><span class="x">$datePlusOneDay = $date-&gt;add(new DateInterval(&#39;P1D&#39;));</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">print $date-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
-</span><span class='line'><span class="x">print &quot;---&quot;;</span>
-</span><span class='line'><span class="x">print $datePlusOneDay-&gt;format(&#39;Y-M-d H:i:s&#39;);</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//output</span>
-</span><span class='line'><span class="x">//2014-May-07 22:37:04---2014-May-08 22:37:04</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Another example for the <code>created_at</code> and <code>updated_at</code> use case:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//in some entity class in the setCreatedAt method</span>
-</span><span class='line'><span class="x">$this-&gt;createdAt = new DateTimeImmutable();</span>
-</span><span class='line'>
-</span><span class='line'><span class="x">//in some entity class in some prePresist method</span>
-</span><span class='line'><span class="x">$this-&gt;updatedAt = new DateTimeImmutable();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>There are lots of resources mentioning the new features of PHP 5.4 and PHP 5.5, I hope mentioning this useful subset helps you utilize them to solve issues.</p>
 </div></article>
 
 <nav id="pagenavi">

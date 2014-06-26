@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ClusterJS | Tech @ Namshi.com]]></title>
+  <link href="http://tech.namshi.com/blog/categories/clusterjs/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-06-27T02:29:47+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <updated>2014-06-27T00:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
+through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
+by using it and realizing we wanted to achieve zero-downtime
+deployments (ZDD) on our node apps we decided to kick in.</p>
+
+<!-- more -->
+
+
+<p>This afternoon <a href="/team#Luciano%20Colosio">Lucio</a> came up to me
+and asked me a simple question:</p>
+
+<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
+
+<p>and my answer was clear and simple: we need a robust solution
+for ZDD, let&rsquo;s do this.</p>
+
+<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
+we searched a bit and found a few alternatives, which
+weren&rsquo;t exactly fitting our scenarios:</p>
+
+<ul>
+<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
+quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
+<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
+seems to have a whole lot of great things but we wanted to have
+the startup script as a global command rather than having to write
+a script on our own (but we might wrap it, as it
+has a lot of cool features, like resizing your cluster)</li>
+</ul>
+
+
+<p>At the end we decided to go for a simple solution after reading
+<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
+that explains how to achieve ZDD on NodeJS.</p>
+
+<p>In a few, very productive hours, Lucio was able to write
+<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
+we decided to release it to the public, as it might
+be interesting out there (and because we really like
+to receive feedbacks!).</p>
+
+<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
+app that runs through an <code>app.js</code> script, in order to run it through
+ClusterJS you simply have to:</p>
+
+<p>```
+npm install -g clusterjs</p>
+
+<p>clusterjs path/to/app.js
+```</p>
+
+<p>At this point you should be able to see something like this:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js</p>
+
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 4 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21543
+&mdash;&ndash; test app loaded as pid: 21544
+&mdash;&ndash; test app loaded as pid: 21546
+&mdash;&ndash; test app loaded as pid: 21547
+Worker 1 running!
+Worker 2 running!
+Worker 3 running!
+Worker 4 running!
+```</p>
+
+<p>Cool! You have just put your app in a cluster with four workers!</p>
+
+<p>By default, ClusterJS will boot as many workers as CPUs
+in your system; if you wanna change it, simply:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 10</p>
+
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 10 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21636
+&mdash;&ndash; test app loaded as pid: 21635
+Worker 2 running!
+Worker 1 running!
+&mdash;&ndash; test app loaded as pid: 21650
+&mdash;&ndash; test app loaded as pid: 21640
+Worker 9 running!
+&mdash;&ndash; test app loaded as pid: 21639
+&mdash;&ndash; test app loaded as pid: 21641
+Worker 4 running!
+&mdash;&ndash; test app loaded as pid: 21644
+Worker 5 running!
+Worker 3 running!
+Worker 6 running!
+&mdash;&ndash; test app loaded as pid: 21648
+&mdash;&ndash; test app loaded as pid: 21646
+Worker 8 running!
+&mdash;&ndash; test app loaded as pid: 21652
+Worker 7 running!
+Worker 10 running!
+```</p>
+
+<p>How to achieve ZDD? Simply issue a SIGUSR2 command
+to your master process, after updating the files
+in your app:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 2
+Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 2 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 22007
+&mdash;&ndash; test app loaded as pid: 22008
+Worker 1 running!
+Worker 2 running!</p>
+
+<p>SIGUSR2 received, reloading the app
+<strong><em> reloading workers!
+restarting worker: 1
+Shutdown complete for worker 1
+Worker 1 died :(
+&mdash;&ndash; test app loaded as pid: 22018
+&mdash;&ndash; test app loaded as pid: 22021
+Worker 3 running!
+Worker 4 running!
+Replacement worker online.
+</em></strong> reloading workers!
+restarting worker: 2
+Shutdown complete for worker 2
+Worker 2 died :(
+&mdash;&ndash; test app loaded as pid: 22055
+&mdash;&ndash; test app loaded as pid: 22056
+Worker 5 running!
+Worker 6 running!
+Replacement worker online.
+```</p>
+
+<p>If you want to change the signal used to reload the cluster,
+you can do it with a simple option:</p>
+
+<p><code>
+clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1
+</code></p>
+
+<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+
+<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
+feel free to have a look around, as
+<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

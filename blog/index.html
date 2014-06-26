@@ -9,8 +9,8 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Jun 24th, 2014 development, team, web &hellip;it&rsquo;s always a joy, full of surprises: what they don&rsquo;t tell you
-is that not all of the &hellip;">
+	<meta name="description" content="Jun 27th, 2014 ClusterJS, JavaScript, NodeJS, OSS, cluster, namshi, open source NodeJS has a very nice built-in support for clusters
+through its &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -101,6 +101,321 @@ is that not all of the &hellip;">
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-27T00:45:00+04:00" data-updated="true" itemprop="datePublished">Jun 27<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/clusterjs/'>ClusterJS</a>, <a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/nodejs/'>NodeJS</a>, <a class='category' href='/blog/categories/oss/'>OSS</a>, <a class='category' href='/blog/categories/cluster/'>cluster</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>NodeJS has a very nice built-in support for clusters
+through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
+by using it and realizing we wanted to achieve zero-downtime
+deployments (ZDD) on our node apps we decided to kick in.</p>
+
+<!-- more -->
+
+
+<p>This afternoon <a href="/team#Luciano%20Colosio">Lucio</a> came up to me
+and asked me a simple question:</p>
+
+<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
+
+<p>and my answer was clear and simple: we need a robust solution
+for ZDD, let&rsquo;s do this.</p>
+
+<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
+we searched a bit and found a few alternatives, which
+weren&rsquo;t exactly fitting our scenarios:</p>
+
+<ul>
+<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
+quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
+<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
+seems to have a whole lot of great things but we wanted to have
+the startup script as a global command rather than having to write
+a script on our own (but we might wrap it, as it
+has a lot of cool features, like resizing your cluster)</li>
+</ul>
+
+
+<p>At the end we decided to go for a simple solution after reading
+<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
+that explains how to achieve ZDD on NodeJS.</p>
+
+<p>In a few, very productive hours, Lucio was able to write
+<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
+we decided to release it to the public, as it might
+be interesting out there (and because we really like
+to receive feedbacks!).</p>
+
+<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
+app that runs through an <code>app.js</code> script, in order to run it through
+ClusterJS you simply have to:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g clusterjs
+</span><span class='line'>
+</span><span class='line'>clusterjs path/to/app.js</span></code></pre></td></tr></table></div></figure>
+
+
+<p>At this point you should be able to see something like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js
+</span><span class='line'>
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 4 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 21543
+</span><span class='line'>--- test app loaded as pid: 21544
+</span><span class='line'>--- test app loaded as pid: 21546
+</span><span class='line'>--- test app loaded as pid: 21547
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 4 running!</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Cool! You have just put your app in a cluster with four workers!</p>
+
+<p>By default, ClusterJS will boot as many workers as CPUs
+in your system; if you wanna change it, simply:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js --workers 10
+</span><span class='line'>
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 10 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 21636
+</span><span class='line'>--- test app loaded as pid: 21635
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>--- test app loaded as pid: 21650
+</span><span class='line'>--- test app loaded as pid: 21640
+</span><span class='line'>Worker 9 running!
+</span><span class='line'>--- test app loaded as pid: 21639
+</span><span class='line'>--- test app loaded as pid: 21641
+</span><span class='line'>Worker 4 running!
+</span><span class='line'>--- test app loaded as pid: 21644
+</span><span class='line'>Worker 5 running!
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 6 running!
+</span><span class='line'>--- test app loaded as pid: 21648
+</span><span class='line'>--- test app loaded as pid: 21646
+</span><span class='line'>Worker 8 running!
+</span><span class='line'>--- test app loaded as pid: 21652
+</span><span class='line'>Worker 7 running!
+</span><span class='line'>Worker 10 running!</span></code></pre></td></tr></table></div></figure>
+
+
+<p>How to achieve ZDD? Simply issue a SIGUSR2 command
+to your master process, after updating the files
+in your app:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js --workers 2
+</span><span class='line'>Booting a cluster of ./test/testApp/app.js
+</span><span class='line'>We are gonna be launching 2 workers
+</span><span class='line'>The cluster will reload on: SIGUSR2
+</span><span class='line'>--- test app loaded as pid: 22007
+</span><span class='line'>--- test app loaded as pid: 22008
+</span><span class='line'>Worker 1 running!
+</span><span class='line'>Worker 2 running!
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>SIGUSR2 received, reloading the app
+</span><span class='line'>*** reloading workers!
+</span><span class='line'>restarting worker: 1
+</span><span class='line'>Shutdown complete for worker 1
+</span><span class='line'>Worker 1 died :(
+</span><span class='line'>--- test app loaded as pid: 22018
+</span><span class='line'>--- test app loaded as pid: 22021
+</span><span class='line'>Worker 3 running!
+</span><span class='line'>Worker 4 running!
+</span><span class='line'>Replacement worker online.
+</span><span class='line'>*** reloading workers!
+</span><span class='line'>restarting worker: 2
+</span><span class='line'>Shutdown complete for worker 2
+</span><span class='line'>Worker 2 died :(
+</span><span class='line'>--- test app loaded as pid: 22055
+</span><span class='line'>--- test app loaded as pid: 22056
+</span><span class='line'>Worker 5 running!
+</span><span class='line'>Worker 6 running!
+</span><span class='line'>Replacement worker online.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you want to change the signal used to reload the cluster,
+you can do it with a simple option:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+
+<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
+feel free to have a look around, as
+<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
+</div></article>
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-26T12:03:00+04:00" data-updated="true" itemprop="datePublished">Jun 26<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/api/'>api</a>, <a class='category' href='/blog/categories/devops/'>devops</a>, <a class='category' href='/blog/categories/docker/'>docker</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/json/'>json</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/symfony2/'>symfony2</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p><strong>TechThursday</strong> is here folks and we have two special mentions today.</p>
+
+<p><a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad Hallal</a> wrote an awesome post about <a href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/">his pitfalls as junior developer</a></p>
+
+<p><a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a> released a very cool personal project: <a href="https://github.com/unlucio/carmensandiego">Carmen Sandiego</a>.
+This nodejs app let&rsquo;s you visualize your Foursquare checkins on a world map!
+<a href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/">Check the dedicated blog post</a></p>
+
+<p>Here the list of other useful links of the week:</p>
+
+<ul>
+<li><p><a href="http://blog.andyet.com/2014/06/25/introducing-ampersand-js">Introducing Ampersand.js, a highly modular, loosely coupled, non-frameworky framework for building advanced JavaScript apps</a></p></li>
+<li><p><a href="http://the-paper-trail.org/blog/the-elephant-was-a-trojan-horse-on-the-death-of-map-reduce-at-google/">On the death of Map-Reduce at Google</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular/">Handling errors in asynchronous flow</a></p></li>
+<li><p><a href="http://www.collectionsjs.com/">Javascript implementation of common data structures</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://elm-lang.org/">A functional reactive language for interactive applications</a></p></li>
+<li><p><a href="http://plaintextoffenders.com/">Passwords in Plain text</a></p></li>
+<li><p><a href="https://developers.google.com/web/starter-kit/">Google Web Started Kit</a></p></li>
+<li><p><a href="http://blog.nullspace.io/recovering-deleted-files-using-only-grep.html">Recovering deleted files using only grep</a></p></li>
+<li><p><a href="http://www.paperplanes.de/2014/6/20/what-blameless-postmortem-taught-me.html">Benefits of post-mortems for incidents, the need to make them blameless &ndash; and the knock on effect that has on an organisation’s culture</a></p></li>
+<li><p><a href="http://blog.jaywayco.co.uk/sysops-are-end-users-too/">Why it’s important to have real users, in this case systems administrators, on the product team</a></p></li>
+<li><p><a href="http://newrelic.com/devops/toolset">A Short List of DevOps Tools</a></p></li>
+<li><p><a href="http://www.linuxinsider.com/story/Should-Everyone-Learn-to-Code-80634.html">Should Everyone Learn to Code?</a></p></li>
+<li><p><a href="http://knplabs.com/blog/2011/10/10/give-your-projects-a-gaufrette/">Gaufrette: a PHP library that provides a filesystem abstraction layer</a></p></li>
+<li><p><a href="http://marcjschmidt.de/blog/2014/02/08/php-high-performance.html">Bring High Performance Into Your PHP App</a></p></li>
+<li><p><a href="http://blog.tomaka17.com/2012/12/random-tricks-when-using-angularjs/">Random tricks when using AngularJS</a></p></li>
+<li><p><a href="http://infrequently.org/2013/11/long-term-web-semantics/">Long Term Web Semantics</a></p></li>
+<li><p><a href="http://techcrunch.com/2014/06/19/google-launches-web-starter-kit-a-boilerplate-for-multi-screen-web-development/">Google’s New Web Starter Kit Is A Boilerplate For Multi-Screen Web Development</a></p></li>
+<li><p><a href="http://www.youtube.com/playlist?list=PLOU2XLYxmsIJrr0ZjgPIR6n5PFTu7quwJ">Find out about the latest product and platform innovations at Google I/O 2014</a></p></li>
+<li><p><a href="http://code.tutsplus.com/articles/quick-tip-set-relative-urls-with-the-base-tag--cms-21399">Quick Tip: set relative URLs with the “base” Tag</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-6-attacking-complex-methods--cms-21522">Refactoring Legacy Code: Part 6 &ndash; Attacking Complex Methods</a></p></li>
+<li><p><a href="http://friendsofsymfony.github.io/slides/resting-with-symfony2.html">RESTing with Symfony 2</a></p></li>
+<li><p><a href="http://keyholesoftware.com/2014/06/16/code-for-maintainability/">Code for maintainability so the next developer doesn’t hate you</a></p></li>
+<li><p><a href="http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/">Docker: How speed up deployment involving npm install and bower install</a></p></li>
+</ul>
+
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -652,194 +967,6 @@ PHP (another big player in our stack) so&hellip;stay tuned!</p>
 <li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
 </ul>
 
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-04T21:07:00+04:00" data-updated="true" itemprop="datePublished">Jun 4<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/software-development/'>software development</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>I am always amazed by the quantity of errors I make,
-on a daily basis, when writing some code: it&rsquo;s true that&rsquo;s
-not my <strong>primary</strong> job, but at the same
-time it always feels painful to find bugs or edge cases.</p>
-
-<p>But one of the things I&rsquo;m usually good at it&rsquo;s trying
-to keep things as universal, simple and self-explanatory
-as possible, as I&rsquo;ve learnt, so far, that the worst enemy
-of my code is <strong>me in 6 months</strong>.</p>
-
-<!-- more -->
-
-
-<p>Today, for example, I was discussing with <a href="/blog/2014/05/26/welcome-lucio/">Lucio</a>
-how to handle a list of errors: suppose that the user
-performs an action that generates a bunch of errors, and that
-you have an error handler that needs to deal with all of them.</p>
-
-<p>The error handler might receive a list of these errors, process
-them one by one and then let other guys take the stage: a common
-solution would be to feed the handler the list of errors and let it
-pop them from the list as soon as he&rsquo;s  <em>handled</em> them.</p>
-
-<figure class='code'><figcaption><span>Some pseudo code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ErrorHandler</span> <span class="p">{</span>
-</span><span class='line'>  <span class="n">property</span> <span class="n">queue</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">addError</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">queue</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">handle</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">foreach</span> <span class="p">(</span><span class="n">error</span> <span class="k">in</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>          <span class="n">doStuff</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Nothing exceptional with the pseudo-code above, but we were wondering
-(as our piece of code is a bit more complex) how to name the list of
-errors that the handler deals with to make it a bit more declarative.</p>
-
-<p>Since the error handler acts as a <a href="http://en.wikipedia.org/wiki/FIFO">FIFO</a>
-it felt natural, for Lucio, call this a <strong>queue</strong>. I suggested <strong>stack</strong>
-but upon thinking about it we agreed that since a stack act as
-<a href="http://en.wikipedia.org/wiki/LIFO_(computing">LIFO</a> it wasn&rsquo;t the best idea.</p>
-
-<p><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html">Things like this</a> might sound silly, but they <strong>extremely important</strong>
-when you work with other ten people on a complex domain that
-you are trying to keep as simple (and real) as possible.</p>
-
-<p>We often forget that translating concepts into working code is our
-main duty, and by doing so we need to keep things as clear / clean as possible:
-how many times did you hear <em>&ldquo;Oh that guy wrote it, he knows how it works, ask him&rdquo;</em>?
-I cry everytime I hear that.</p>
-
-<p>When you are assigned a task, first think of the simplest and most exhaustive
-solution, then write the code: your job is not measured by lines of code, but by
-working software, which means maintainable, decoupled, easy to understand, (ultimately)
-beautiful code.</p>
-
-<p>What is the difference between an essay and some code? Ideally there is none:</p>
-
-<ul>
-<li>you explain / implement a concept / feature</li>
-<li>your artifact needs to be understandable</li>
-<li>it targets 2 audiences
-
-<ul>
-<li>a technical one, which needs to be able to understand it in depth</li>
-<li>a more general one, which needs to grasp the main concepts</li>
-</ul>
-</li>
-</ul>
-
-
-<p>Actually, there is <strong>one</strong> difference between essays and software development: the
-language they&rsquo;re written in.</p>
-
-<p>But they all need to be self-explanatory, they
-all need to nail the problem without the need to dig too deep into
-the explanation, they all need to get straight to the point, making
-things explicit rather than implicit.</p>
-
-<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-03T22:46:00+04:00" data-updated="true" itemprop="datePublished">Jun 3<span>rd</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/goodbye/'>goodbye</a>, <a class='category' href='/blog/categories/team/'>team</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
-
-<p>As much as we hate to see people leaving, I think
-it&rsquo;s a good thing to waive the nostalgic feelings
-and celebrate who has decided to move on: for better
-or for worse, each and everyone in our team has played
-a key role in evolving to what I call <em>&ldquo;The tech family&rdquo;</em>.</p>
-
-<p>I must admit that I&rsquo;m a bit late with saying goodbye to
-<a href="https://ae.linkedin.com/pub/muhammad-riaz/10/777/414">Muhammad</a>, but I eventually wanted to do this as I believe
-his mermerizing persona, the laugh, the commitment that
-he showed in his 2-year tenure are second to none.</p>
-
-<!-- more -->
-
-
-<p>Muhammad has joined us even before I got to Dubai,
-and left us after core contributions to our
-architecture: from rushing to fix as many bugs as possible
-to putting all he had in re-architecting core
-components of our stack, like our main API and
-integrations with payment providers: for example,
-he&rsquo;s been crucial in implementing 3D-secure
-authentication in our
-<a href="https://github.com/namshi/innovate">namshi/innovate</a> library.</p>
-
-<p>Last we heard is that he would have rushed to Europe
-in order to join an exciting startup.</p>
-
-<p>Bring your <a href="http://www.stylehoster.com/lpc/uploads/2014/01/Latest-Salwar-Kameez-Designs-2014-For-Pakistani-Men.gif">Kameez</a> with you man,
-and remember you still have some brothers in Dubai!</p>
-
-<p>Aye!</p>
 </div></article>
 
 <nav id="pagenavi">
