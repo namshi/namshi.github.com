@@ -14,7 +14,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips/</loc>
-        <lastmod>2014-01-30T16:06:24+04:00</lastmod>
+        <lastmod>2014-06-29T23:24:09+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/</loc>
@@ -191,6 +191,12 @@
         <lastmod>2014-06-27T02:28:05+04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/
+        </loc>
+        <lastmod>2014-06-29T23:25:04+04:00</lastmod>
+    </url>
+    <url>
         <loc>http://tech.namshi.com/team/</loc>
         <lastmod>2014-06-24T23:20:15+04:00</lastmod>
     </url>
@@ -200,7 +206,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/archives/</loc>
-        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
+        <lastmod>2014-06-29T23:25:04+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/robots.txt</loc>
@@ -208,7 +214,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/</loc>
-        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
+        <lastmod>2014-06-29T23:25:04+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/about/</loc>
@@ -216,11 +222,11 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/archives/</loc>
-        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
+        <lastmod>2014-06-29T23:25:04+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/</loc>
-        <lastmod>2014-06-27T02:28:05+04:00</lastmod>
+        <lastmod>2014-06-29T23:25:04+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/categories/</loc>

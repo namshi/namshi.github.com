@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conference | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-27T02:29:47+04:00</updated>
+  <updated>2014-06-29T23:25:35+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
+    <updated>2014-06-29T22:58:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re a geek somewhere around Boston, in September,
+you definitely don&rsquo;t want to miss the
+<a href="http://www.northeastphp.org/">PHP North East</a>
+conference, which has an amazing lineup of
+<a href="http://www.northeastphp.org/speakers">speakers</a>
+and <a href="http://www.northeastphp.org/speakers/view/176/Alessandro-Cinelli">a surprise</a>
+from Dubai.</p>
+
+<!-- more -->
+
+
+<p><img class="left <a" src="href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a>" width="250"></p>
+
+<p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
+there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua
+is the fool</a>&rdquo;
+given by our <a href="http://tech.namshi.com/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> who will entertain the crowd with some
+details on how we mesh a whole lot of languages and platforms
+together.</p>
+
+<p>Namshi&rsquo;s SOA is currently running on at least 4 different
+application platforms and Cirpo took the opportunity to share some insights
+about how we are doing it: it will be a <em>hands-on</em> talk focused on
+decision-making, benefits and pitfalls of running such a heterogeneous
+architecture and how crazy ideas (like flirting with Lua) could be a
+game-changer in your next long-term project.</p>
+
+<p>Cirpo is no newbie to the world of speaking, as he already delivered
+a few talks in the past and, <a href="https://joind.in/user/view/956">judging by the ratings</a>,
+has a track record of nothing but success. Being a leader, at Namshi, doesn&rsquo;t mean
+to only set the tone for our team, but also to confront with the community,
+explain (and validate) our infrastructure and learn from the feedbacks we get back:
+Cirpo knows that very well and this will be a great experience from this
+standpoint.</p>
+
+<p>We wish him a safe trip to the U.S. and wish <strong>you</strong> can
+attend his talk!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[jsDay and phpDay recap]]></title>

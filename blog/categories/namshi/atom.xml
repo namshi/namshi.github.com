@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Namshi | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/namshi/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-27T02:29:47+04:00</updated>
+  <updated>2014-06-29T23:25:35+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
+    <updated>2014-06-29T22:58:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re a geek somewhere around Boston, in September,
+you definitely don&rsquo;t want to miss the
+<a href="http://www.northeastphp.org/">PHP North East</a>
+conference, which has an amazing lineup of
+<a href="http://www.northeastphp.org/speakers">speakers</a>
+and <a href="http://www.northeastphp.org/speakers/view/176/Alessandro-Cinelli">a surprise</a>
+from Dubai.</p>
+
+<!-- more -->
+
+
+<p><img class="left <a" src="href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a>" width="250"></p>
+
+<p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
+there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua
+is the fool</a>&rdquo;
+given by our <a href="http://tech.namshi.com/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> who will entertain the crowd with some
+details on how we mesh a whole lot of languages and platforms
+together.</p>
+
+<p>Namshi&rsquo;s SOA is currently running on at least 4 different
+application platforms and Cirpo took the opportunity to share some insights
+about how we are doing it: it will be a <em>hands-on</em> talk focused on
+decision-making, benefits and pitfalls of running such a heterogeneous
+architecture and how crazy ideas (like flirting with Lua) could be a
+game-changer in your next long-term project.</p>
+
+<p>Cirpo is no newbie to the world of speaking, as he already delivered
+a few talks in the past and, <a href="https://joind.in/user/view/956">judging by the ratings</a>,
+has a track record of nothing but success. Being a leader, at Namshi, doesn&rsquo;t mean
+to only set the tone for our team, but also to confront with the community,
+explain (and validate) our infrastructure and learn from the feedbacks we get back:
+Cirpo knows that very well and this will be a great experience from this
+standpoint.</p>
+
+<p>We wish him a safe trip to the U.S. and wish <strong>you</strong> can
+attend his talk!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
@@ -246,42 +291,6 @@ development team to be growing as months will go by</li>
 <p>*<a href="http://www.slideshare.net/mathiasverraes/unbreakable-domain-models-phpuk-2014-london">Unbreakable Domain Models</a></p>
 
 <p>*<a href="http://www.slideshare.net/bluesmoon/presentations">web performance optimizations</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #27]]></title>
-    <link href="http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/"/>
-    <updated>2014-02-20T15:41:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27</id>
-    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/">#TechThursday</a>!</p>
-
-<p>Here are some of the Tech highlights of the week, and some interesting articles we have collected for you!</p>
-
-<ul>
-<li><p><a href="https://github.com/VerbalExpressions/PHPVerbalExpressions">VerbalExpressions is a PHP library that helps to construct hard regular expressions.</a></p></li>
-<li><p><a href="http://jsonstub.com/">Fake the backend while you develop the frontend</a></p></li>
-<li><p><a href="http://www.xdata.me/?p=301">Largest Redis Clusters Ever</a></p></li>
-<li><p><a href="https://sourcegraph.com/blog/switching-from-angularjs-to-server-side-html">5 surprisingly painful things about client-side JS</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html">The Next Phase of Node.js</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=aQipuiTcn3U">Protractor talks at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/keeping-php-code-well-documented/">Keeping Your PHP Code Well Documented</a></p></li>
-<li><p><a href="http://www.youtube.com/watch?v=3IqtmUscE_U">Zones.js talk at ngConf</a></p></li>
-<li><p><a href="http://www.sitepoint.com/hhvm-hack-part-1/">HHVM and Hack – Can We Expect Them to Replace PHP?</a></p></li>
-<li><p><a href="https://medium.com/user-experience-researche/e6a1e37028b4">A Guerilla Usability Test on Dropbox Photos How to make a test with real users, in a smart, simple and inexpensive way.</a></p></li>
-<li><p><a href="http://www.useronboard.com/how-evernote-onboards-new-users/">How Evernote Onboards New Users A new case-history on the User Onboarding website.</a></p></li>
-<li><p><a href="https://medium.com/art-of-product-design/5f8cd0d4560e">From inception to Apple store in just one year An amazing story of a successful product.</a></p></li>
-<li><p><a href="https://hacks.mozilla.org/2014/02/localforage-offline-storage-improved">localForage: Offline Storage, Improved</a></p></li>
-<li><p><a href="https://ochronus.com/git-tips-from-the-trenches/">Git tips from the trenches</a></p></li>
-</ul>
-
 ]]></content>
   </entry>
   

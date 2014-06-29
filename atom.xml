@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-27T02:29:47+04:00</updated>
+  <updated>2014-06-29T23:25:35+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
+    <updated>2014-06-29T22:58:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re a geek somewhere around Boston, in September,
+you definitely don&rsquo;t want to miss the
+<a href="http://www.northeastphp.org/">PHP North East</a>
+conference, which has an amazing lineup of
+<a href="http://www.northeastphp.org/speakers">speakers</a>
+and <a href="http://www.northeastphp.org/speakers/view/176/Alessandro-Cinelli">a surprise</a>
+from Dubai.</p>
+
+<!-- more -->
+
+
+<p><img class="left" src="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg" width="250"></p>
+
+<p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
+there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua
+is the fool</a>&rdquo;
+given by our <a href="http://tech.namshi.com/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> who will entertain the crowd with some
+details on how we mesh a whole lot of languages and platforms
+together.</p>
+
+<p>Namshi&rsquo;s SOA is currently running on at least 4 different
+application platforms and Cirpo took the opportunity to share some insights
+about how we are doing it: it will be a <em>hands-on</em> talk focused on
+decision-making, benefits and pitfalls of running such a heterogeneous
+architecture and how crazy ideas (like flirting with Lua) could be a
+game-changer in your next long-term project.</p>
+
+<p>Cirpo is no newbie to the world of speaking, as he already delivered
+a few talks in the past and, <a href="https://joind.in/user/view/956">judging by the ratings</a>,
+has a track record of nothing but success. Being a leader, at Namshi, doesn&rsquo;t mean
+to only set the tone for our team, but also to confront with the community,
+explain (and validate) our infrastructure and learn from the feedbacks we get back:
+Cirpo knows that very well and this will be a great experience from this
+standpoint.</p>
+
+<p>We wish him a safe trip to the U.S. and wish <strong>you</strong> can
+attend his talk!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
@@ -1149,45 +1194,6 @@ Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitte
 <li><p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p></li>
 <li><p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p></li>
 <li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #38]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/15/newsletter-number-38/"/>
-    <updated>2014-05-15T11:38:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/15/newsletter-number-38</id>
-    <content type="html"><![CDATA[<p>Hello everyone and welcome to <a href="http://tech.namshi.com/blog/categories/techthursday/"><strong>TechThursday</strong>!</a>!</p>
-
-<p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>
-
-<ul>
-<li><p><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></p></li>
-<li><p><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></p></li>
-<li><p><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></p></li>
-<li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></p></li>
-<li><p><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></p></li>
-<li><p><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></p></li>
-<li><p><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></p></li>
-<li><p><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></p></li>
-<li><p><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></p></li>
-<li><p><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></p></li>
-<li><p><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></p></li>
-<li><p><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></p></li>
-<li><p><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></p></li>
-<li><p><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></p></li>
-<li><p><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></p></li>
-<li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
 </ul>
 
 ]]></content>
