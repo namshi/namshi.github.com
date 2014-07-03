@@ -4,7 +4,7 @@
   <title><![CDATA[Category: goodbye | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/goodbye/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-29T23:25:35+04:00</updated>
+  <updated>2014-07-03T11:59:53+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Goodbye Lucianino!]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/"/>
+    <updated>2014-07-02T22:37:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino</id>
+    <content type="html"><![CDATA[<p>This week one of our teammates left the team
+to pursuit his next big challenge: we are talking
+about <a href="http://tech.namshi.com/team/#Luciano%20Amodio">Luciano</a>
+who is now in Spain, hacking, as usual, with
+JavaScript.</p>
+
+<!-- more -->
+
+
+<p><em>Lucianino</em>, as we liked to call him, has been
+instrumental in kicking off
+our whole &ldquo;frontend&rdquo; department, and we have been
+very happy to have him here, introducing us to
+the magical world of AngularJS, Grunt (even though
+we now use Gulp) and Single-Page Apps.</p>
+
+<p>While at Namshi, we&rsquo;ve seen him transitioning
+from the (traditional) world of PHP to JavaScript
+and even giving his very <a href="http://www.slideshare.net/adamquadmon/angular-js-mobile-jsday-2014-verona-14-may">first talk at a conference</a>.</p>
+
+<p>We really want to thank him for what he has done
+in the past 12 months at Namshi and wish him
+good luck for his next adventure!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Goodbye Muhammad!]]></title>

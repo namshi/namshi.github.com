@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: nodejs | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: NodeJS | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-29T23:25:35+04:00</updated>
+  <updated>2014-07-03T11:59:53+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,223 +14,159 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
-    <updated>2014-06-24T23:20:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
-    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
-that lights up our weekends or solves some of the small dilemmas we daily
-face at work.</p>
+    <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <updated>2014-06-27T00:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
+through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
+by using it and realizing we wanted to achieve zero-downtime
+deployments (ZDD) on our node apps we decided to kick in.</p>
 
 <!-- more -->
 
 
-<p>In the past days <a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>
-has been working on one of his side projects and released
-<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
-it lets you visualize your 4Square checkins on a map
-<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
-and it has been written in his beloved NodeJS.</p>
+<p>This afternoon <a href="/team#Luciano%20Colosio">Lucio</a> came up to me
+and asked me a simple question:</p>
 
-<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
-    <updated>2014-06-07T00:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
-    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
-deal with configurations, in JavaScript, in a very
-elegant way.</p>
+<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
 
-<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
-through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
-recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
-small and simple, and thought to keep your
-configuration as elegant, simple and declarative as possible.</p>
+<p>and my answer was clear and simple: we need a robust solution
+for ZDD, let&rsquo;s do this.</p>
 
-<!-- more -->
-
-
-<p>With reconfig you can do stuff like:</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">reconfig</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">pre</span><span class="o">&gt;&lt;</span><span class="nx">code</span><span class="o">&gt;</span><span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
-</span><span class='line'><span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
-</span><span class='line'><span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>    <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>        <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
-</span><span class='line'>        <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
-</span><span class='line'>    <span class="p">}</span>
-</span><span class='line'>    <span class="c1">// ...</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'><span class="o">&lt;</span><span class="err">/code&gt;&lt;/pre&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="p">});</span><span class="o">&lt;</span><span class="err">/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Retrieve a deep config value</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">countries</span><span class="p">.</span><span class="nx">uae</span><span class="p">.</span><span class="nx">nationalDay</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span> <span class="c1">// December, 2nd&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Pass parameters to the configuration</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">greet</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">John</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;});</span> <span class="c1">// Hello, John!&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Reference other configuration parameters</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">sayhi</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">John</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;});</span> <span class="c1">// Hello, John!&lt;/p&gt;</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">p</span><span class="o">&gt;</span><span class="c1">// Fallback values</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">something</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;,</span> <span class="p">{},</span> <span class="o">&amp;</span><span class="nx">lsquo</span><span class="p">;</span><span class="nx">invalid</span><span class="o">&amp;</span><span class="nx">rsquo</span><span class="p">;);</span> <span class="c1">// invalid</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>We&rsquo;re probably gonna look into porting the same to
-PHP (another big player in our stack) so&hellip;stay tuned!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #40]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
-    <updated>2014-05-29T12:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
-    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
+we searched a bit and found a few alternatives, which
+weren&rsquo;t exactly fitting our scenarios:</p>
 
 <ul>
-<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
-<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
-<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
-  Five principles that should guide you every time you write code.
-  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
+quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
+<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
+seems to have a whole lot of great things but we wanted to have
+the startup script as a global command rather than having to write
+a script on our own (but we might wrap it, as it
+has a lot of cool features, like resizing your cluster)</li>
 </ul>
 
 
-<!-- more -->
+<p>At the end we decided to go for a simple solution after reading
+<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
+that explains how to achieve ZDD on NodeJS.</p>
 
+<p>In a few, very productive hours, Lucio was able to write
+<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
+we decided to release it to the public, as it might
+be interesting out there (and because we really like
+to receive feedbacks!).</p>
 
-<ul>
-<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
-<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
-<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
-<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
-<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
-<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
-<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
-<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
-<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
-<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
-<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
-<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
-<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
-<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
-<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
-<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
-</ul>
+<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
+app that runs through an <code>app.js</code> script, in order to run it through
+ClusterJS you simply have to:</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #37]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/08/newsletter-number-37/"/>
-    <updated>2014-05-08T16:47:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/08/newsletter-number-37</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+<p>```
+npm install -g clusterjs</p>
 
-<ul>
-<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
-</ul>
+<p>clusterjs path/to/app.js
+```</p>
 
+<p>At this point you should be able to see something like this:</p>
 
-<!-- more -->
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js</p>
 
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 4 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21543
+&mdash;&ndash; test app loaded as pid: 21544
+&mdash;&ndash; test app loaded as pid: 21546
+&mdash;&ndash; test app loaded as pid: 21547
+Worker 1 running!
+Worker 2 running!
+Worker 3 running!
+Worker 4 running!
+```</p>
 
-<ul>
-<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
-<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
-<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
-<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
-<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
-<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
-<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
-<li><p><a href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
-</ul>
+<p>Cool! You have just put your app in a cluster with four workers!</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #36]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/"/>
-    <updated>2014-05-01T12:36:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+<p>By default, ClusterJS will boot as many workers as CPUs
+in your system; if you wanna change it, simply:</p>
 
-<ul>
-<li><p><a href="https://developers.google.com/web/fundamentals/">Web Fundamentals, A handbook for best practices (by Google)</a></p></li>
-<li><p><a href="https://github.com/spumko/joi">Object schema description language and validator for JavaScript objects</a></p></li>
-<li><p><a href="https://tessel.io/">Hardware development for software developers: Tessel is a microcontroller that runs JavaScript, node-compatible and with Wifi built in.</a></p></li>
-<li><p><a href="http://ramonvictor.github.io/protractor/slides">Cool slides about Protractor, E2E test framework for Angular apps</a></p></li>
-</ul>
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 10</p>
 
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 10 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21636
+&mdash;&ndash; test app loaded as pid: 21635
+Worker 2 running!
+Worker 1 running!
+&mdash;&ndash; test app loaded as pid: 21650
+&mdash;&ndash; test app loaded as pid: 21640
+Worker 9 running!
+&mdash;&ndash; test app loaded as pid: 21639
+&mdash;&ndash; test app loaded as pid: 21641
+Worker 4 running!
+&mdash;&ndash; test app loaded as pid: 21644
+Worker 5 running!
+Worker 3 running!
+Worker 6 running!
+&mdash;&ndash; test app loaded as pid: 21648
+&mdash;&ndash; test app loaded as pid: 21646
+Worker 8 running!
+&mdash;&ndash; test app loaded as pid: 21652
+Worker 7 running!
+Worker 10 running!
+```</p>
 
-<!-- more -->
+<p>How to achieve ZDD? Simply issue a SIGUSR2 command
+to your master process, after updating the files
+in your app:</p>
 
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 2
+Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 2 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 22007
+&mdash;&ndash; test app loaded as pid: 22008
+Worker 1 running!
+Worker 2 running!</p>
 
-<ul>
-<li><p><a href="https://github.com/JustinDrake/node-es6-examples">ECMAScript 6 in Node.JS</a></p></li>
-<li><p><a href="http://mattgreer.org/articles/promises-in-wicked-detail/">Javascript Promises&hellip; in wicked detail</a></p></li>
-<li><p><a href="https://github.com/boot2docker/boot2docker">boot2docker is a lightweight Linux distributionmade specifically to run Docker containers.</a></p></li>
-<li><p><a href="http://www.williambrownstreet.net/blog/2014/04/faster-angularjs-rendering-angularjs-and-reactjs/">Faster AngularJS Rendering (AngularJS and ReactJS)</a></p></li>
-<li><p><a href="http://www.therestartpage.com/">(old) The restart page</a></p></li>
-<li><p><a href="http://www.zdnet.com/hands-on-with-ubuntu-14-04-the-best-ubuntu-desktop-ever-7000028578/">Hands on with Ubuntu 14.04: The best Ubuntu desktop ever</a></p></li>
-<li><p><a href="http://wiki.apache.org/solr/ReleaseNote48">Solr 4.8.0 released</a></p></li>
-<li><p><a href="http://tech.gilt.com/post/83007618469/how-gilt-is-using-grunt">How Gilt uses Grunt</a></p></li>
-<li><p><a href="http://intercoolerjs.org/">Add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
-<li><p><a href="https://github.com/chutsu/ditto">Generate docs from markdown files</a></p></li>
-<li><p><a href="http://www.slideshare.net/lmrum/21-things-that-became-obsolete-this-decade">21 things that became obsolete this decade</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/gulp-as-a-development-web-server--cms-20903">Gulp as a Development Web Server</a></p></li>
-<li><p><a href="http://thehackernews.com/2014/04/skype-leaves-sensitive-user-data.html">Skype leaves Sensitive User Data Unencrypted Locally On Computers</a></p></li>
-<li><p><a href="http://7php.com/php-interview-josh-lockhart/">PHP: do it better!</a></p></li>
-</ul>
+<p>SIGUSR2 received, reloading the app
+<strong><em> reloading workers!
+restarting worker: 1
+Shutdown complete for worker 1
+Worker 1 died :(
+&mdash;&ndash; test app loaded as pid: 22018
+&mdash;&ndash; test app loaded as pid: 22021
+Worker 3 running!
+Worker 4 running!
+Replacement worker online.
+</em></strong> reloading workers!
+restarting worker: 2
+Shutdown complete for worker 2
+Worker 2 died :(
+&mdash;&ndash; test app loaded as pid: 22055
+&mdash;&ndash; test app loaded as pid: 22056
+Worker 5 running!
+Worker 6 running!
+Replacement worker online.
+```</p>
 
+<p>If you want to change the signal used to reload the cluster,
+you can do it with a simple option:</p>
+
+<p><code>
+clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1
+</code></p>
+
+<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+
+<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
+feel free to have a look around, as
+<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
 ]]></content>
   </entry>
   

@@ -9,7 +9,8 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Jun 5th, 2014 TechThursday, android, docker, hiring, ios, jobs, js, newsletter, os, php, swift Hi fellas, it&rsquo;s #techThursday an here we are &hellip;">
+	<meta name="description" content="Jun 8th, 2014 hiring, namshi, team A quick update from the trenches: for the past months
+we&rsquo;ve been beefing our team up and by doing so we &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -100,6 +101,148 @@
 			
 			<div class="mid-col-container">
 				<div id="content" class="inner">
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-08T11:44:00+04:00" data-updated="true" itemprop="datePublished">Jun 8<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/hiring/'>hiring</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/team/'>team</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>A quick update from the trenches: for the past months
+we&rsquo;ve been beefing our team up and by doing so we
+realized that some good coding challenges are
+almost a must.</p>
+
+<p>We just put all the challenges we&rsquo;ve used and are gonna
+be using on a <a href="https://github.com/namshi/coding-challenges">github repo for you to check them out</a>:
+feel free to solve them, fork them, improve them, do anything
+with them! :)</p>
+
+<p>We are currently hiring <a href="https://github.com/namshi/coding-challenges/blob/master/senior-api-engineer.md">senior API engineers</a>, <a href="https://github.com/namshi/coding-challenges/blob/master/senior-frontend-engineer.md">senior frontend
+engineers</a> and are looking to bootstrap our mobile team
+with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
+got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
+</div></article>
+
+
+    <article class="post">    <div class="meta">
+        <div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-07T00:50:00+04:00" data-updated="true" itemprop="datePublished">Jun 7<span>th</span>, 2014</time></div>
+        <div class="tags">
+
+
+	<a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/browserify/'>browserify</a>, <a class='category' href='/blog/categories/nodejs/'>nodejs</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>
+
+
+</div>
+        
+        <div class="author"><a href="/team/#"></a></div>
+    </div>
+	<h1 class="title" itemprop="name"></h1>
+	<div class="entry-content" itemprop="articleBody"><p>We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a very
+elegant way.</p>
+
+<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
+through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
+recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
+small and simple, and thought to keep your
+configuration as elegant, simple and declarative as possible.</p>
+
+<!-- more -->
+
+
+<p>With reconfig you can do stuff like:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;reconfig&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span>
+</span><span class='line'>    <span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
+</span><span class='line'>    <span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
+</span><span class='line'>    <span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>      <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
+</span><span class='line'>          <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
+</span><span class='line'>          <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>      <span class="c1">// ...</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'><span class="p">});</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Retrieve a deep config value</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;countries.uae.nationalDay&#39;</span><span class="p">);</span> <span class="c1">// December, 2nd</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Pass parameters to the configuration</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;greet&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Reference other configuration parameters</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;sayhi&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
+</span><span class='line'>
+</span><span class='line'><span class="c1">// Fallback values</span>
+</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;something&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;invalid&#39;</span><span class="p">);</span> <span class="c1">// invalid</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>We&rsquo;re probably gonna look into porting the same to
+PHP (another big player in our stack) so&hellip;stay tuned!</p>
+</div></article>
 
 
     <article class="post">    <div class="meta">
@@ -634,181 +777,6 @@ simplicity, clean code and good engineering.</p>
 <p>You can read more about Lucio in his <a href="http://blog.unlucio.com/">personal blog</a>
 or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
 as I sense we&rsquo;re gonna see some more NodeJS there!</p>
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-25T19:33:00+04:00" data-updated="true" itemprop="datePublished">May 25<span>th</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/community/'>community</a>, <a class='category' href='/blog/categories/conference/'>conference</a>, <a class='category' href='/blog/categories/jsday/'>jsday</a>, <a class='category' href='/blog/categories/phpday/'>phpday</a>, <a class='category' href='/blog/categories/presentation/'>presentation</a>, <a class='category' href='/blog/categories/slide/'>slide</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="center" src="/images/posts/rasmus-namshi-scaled.png" width="800" title="Rasmus Lerdorf - Namshi team" alt="Rasmus Lerdorf with the Namshi team"></p>
-
-<p>One week ago, Luciano, Lucio, Alex and I attended the annual <a href="http://jsday.it">jsDay</a> and <a href="http://phpday.it">phpDay</a> in Verona organized by the <a href="http://grusp.it">GrUSP</a>, the Italian PHP user Group.
-It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
-The conferences were sold out, with more than 300 attendees and two tracks per day. Kudos and props to the organizers!</p>
-
-<br />
-
-
-<!-- more -->
-
-
-<p><img class="left" src="/images/posts/phpday-namshi-sponsor.jpg" width="200" title="Namshi phpDay sponsor" alt="Namshi phpDay sponsor"> Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.com/join-us">join-us</a> page?)</p>
-
-<br />
-
-
-<br />
-
-
-<br />
-
-
-<br />
-
-
-<h2>jsDay</h2>
-
-<p>During the jsDay, Luciano spoke about “AngularJS and mobile applications”, giving good insight into our experience using AngularJS while developing a mobile website.</p>
-
-<p>There were other presentations worth mentioning:</p>
-
-<ul>
-<li><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">“AngularJS: The Good, The Bad and The Ugly “</a> by Gilles Rupert.</li>
-</ul>
-
-
-<div style="width:600px">
-<script async class="speakerdeck-embed" data-id="5f461ec0bd80013111d576b6210235ec" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-</div>
-
-
-<ul>
-<li><p><a href="http://www.slideshare.net/DanniFriedland/nsajs">“NSA.JS”</a> by Danni Friedland who presented this cool library to track the user browse experience</p></li>
-<li><p><a href="http://www.slideshare.net/fgalassi/the-strange-world-of-javascript-and-all-its-little-asynchronous-beasts">“The strange world of Javascript and all its little asynchronous beasts”</a> by Federico Galassi</p></li>
-<li><p><a href="http://massimiliano-mantione.github.io/talks/JsDay2014/ReactiveMetaprogramming/GHP/">“Monads, Promises, and Reactive Metaprogramming”</a> by Massimiliano Mantione</p></li>
-</ul>
-
-
-<p>The complete talks list with slides are on <a href="http://joind.in/event/view/1638">joind.in</a>.</p>
-
-<br />
-
-
-<h2>phpDay</h2>
-
-<p><a href="http://talks.php.net/phpday14#/">The opening keynote</a> was addressed by Rasmus Lerdord (the PHP creator), showing us an interesting, and sometimes passionate, overview of what’s new in PHP 5.6 and the technical/design choices behind it.</p>
-
-<p>Alex and I gave a talk about “How to build <strong>durable</strong> web apis” based on our experience at Namshi while
-building our Service Oriented Architechture.</p>
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/34815904" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-
-<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/cirpo/dont-screw-it-up-how-to-build-durable-web-apis" title="Don&#x27;t screw it up: how to build durable web apis" target="_blank">Don&#x27;t screw it up: how to build durable web apis</a> </strong> from <strong><a href="http://www.slideshare.net/cirpo" target="_blank">alessandro cinelli</a></strong> </div></p>
-
-<p>Other very interesting presentations:</p>
-
-<ul>
-<li><p>I really enjoyed the talk <a href="http://verraes.net/2014/03/practical-event-sourcing/">“Practical Event Sourcing”</a> by Mathias Verraes.
-I also suggest <a href="https://speakerdeck.com/mathiasverraes">checking other presentations</a> from this great speaker.</p></li>
-<li><p>Another great presentation was given by Marcello Duarte, the master of <a href="http://www.phpspec.net/">PHPspec</a>, <a href="http://www.slideshare.net/marcello.duarte/emergent-design-with-phpspec">&ldquo;Emergent design with phpspec&rdquo;</a></p></li>
-<li><p>Konstantin Kudryashov, the guy behind <a href="http://behat.org/">Behat</a> with <a href="http://www.slideshare.net/everzet/moving-away-from-legacy-code-with-bdd">&ldquo;Moving Away from Legacy code with BDD&rdquo;</a></p></li>
-</ul>
-
-
-<p>The complete phpDay talk list and slides can be found on <a href="http://joind.in/event/view/1637">joind.in</a> as well.</p>
-
-<h2>Join communities!</h2>
-
-<p>Attending conferences that are community driven like jsDay and phpDay
-are always a great moment to improve yourself as a developer and they give you the possibility to be part of the community.
-You have the chance to understand what’s going on in our field, talk in person with other devs that maybe you just know because you sent a PR to their awesome opensource project on Github, getting tons of advices and inspiration and so on.
-Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitter, a <strong>new community</strong> is coming in Dubai&hellip; <strong>stay tuned!</strong></p>
-
-<p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated on when they are going to release the talks videos.</p>
-</div></article>
-
-
-    <article class="post">    <div class="meta">
-        <div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-22T11:34:00+04:00" data-updated="true" itemprop="datePublished">May 22<span>nd</span>, 2014</time></div>
-        <div class="tags">
-
-
-	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/angularjs/'>angularjs</a>, <a class='category' href='/blog/categories/es6/'>es6</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/javascript/'>javascript</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/phalcon/'>phalcon</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/tdd/'>tdd</a>
-
-
-</div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>&hellip;another <strong>TechThursday</strong> here!</p>
-
-<ul>
-<li><p><a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">Presentation we gave at the PHPDay</a></p></li>
-<li><p><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">AngularJS: the Good, the Bad and the Ugly. Slides from jsDay</a></p></li>
-<li><p><a href="http://verraes.net/2014/03/practical-event-sourcing/">Practical Event Sourcing</a></p></li>
-<li><p><a href="http://diginomica.com/2014/05/07/asos-cio-talks-nightmare-aligning-technology-business">Asos: aligning technology with business</a></p></li>
-<li><p><a href="https://github.com/substack/browserify-handbook">Building modular applications with browserify</a></p></li>
-<li><p><a href="http://vimeo.com/63022489">Tutorial &ndash; Creating a Poll application in 15 minutes with Phalcon &lsquo;The fastest PHP framework&rsquo;</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067">An Introduction to the Device Orientation API</a></p></li>
-<li><p><a href="https://laracasts.com/lessons/gulp-this">Gulp this &ndash; a quick video to get started with Gulp</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://learn.ionicframework.com/">Start learning Ionic for mobile app development</a></p></li>
-<li><p><a href="http://www.oodesign.com/design-principles.html">Some good software design principles</a></p></li>
-<li><p><a href="http://hub.github.com/">Github access from command line</a></p></li>
-<li><p><a href="http://www.jamesshore.com/Blog/How-Does-TDD-Affect-Design.html">How does TDD affect design</a></p></li>
-<li><p><a href="http://erikaheidi.com/blog/setting-up-a-development-machine-with-ubuntu-1404-trusty-tahr">Setting up a development machine with Ubuntu 14.04 (Trusty Tahr)</a></p></li>
-<li><p><a href="https://forge.laravel.com/">Instant PHP Platforms on Linode, DigitalOcean, AWS, &amp; Rackspace</a></p></li>
-<li><p><a href="http://gethoneybadger.com/">A presonal look at websites</a></p></li>
-<li><p><a href="http://blog.makandra.com/2010/04/the-greatest-bug-i-never-fixed/">The greatest bug I never fixed</a></p></li>
-<li><p><a href="https://github.com/micahflee/onionshare">Share large files based on Tor</a></p></li>
-<li><p><a href="http://jacquesmattheij.com/choosing-web-framework-language-combo">Choosing a Web Frameword/Language Combo for the Next Decade</a></p></li>
-<li><p><a href="https://storify.com/1Marc/polymer-web-components-will-replace-angular-direct/">Future of AngularJS: Polymer/ Web components might replace directives</a></p></li>
-<li><p><a href="http://gent.ilcore.com/2011/03/how-not-to-trigger-layout-in-webkit.html">Improving rendering performance of webpages &ndash; reducing layout triggers</a></p></li>
-<li><p><a href="http://www.frontendjournal.com/javascript-es6-learn-important-features-in-a-few-minutes/">Learning the 6 important features of ES6 in few minutes</a></p></li>
-</ul>
-
 </div></article>
 
 <nav id="pagenavi">

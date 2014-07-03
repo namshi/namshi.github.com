@@ -4,7 +4,7 @@
   <title><![CDATA[Category: angularjs | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-06-29T23:25:35+04:00</updated>
+  <updated>2014-07-03T11:59:53+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #45]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/"/>
+    <updated>2014-07-03T11:30:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45</id>
+    <content type="html"><![CDATA[<p>Welcome to <strong>TechThursday</strong>!</p>
+
+<h2>Announcements</h2>
+
+<p>This week we say <a href="http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/">goodbye</a> to @luciano, you will be missed!</p>
+
+<p>We&rsquo;ve been working on <a href="https://github.com/namshi/clusterjs">clusterjs</a>! Take a look at the <a href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/">blog post</a> Today we released version 0.7!</p>
+
+<p>Our @Cirpo will be speaking at the PHP North East Conference in Boston in a couple of days! Read about his presentation <a href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/">here</a></p>
+
+<h2>Newsletter</h2>
+
+<ul>
+<li><a href="https://github.com/codemix/fast.js">Faster user-land re-implementations for several common built-in native JavaScript functions</a></li>
+<li><a href="http://blog.embed.ly/post/89265229166/what-twitter-isnt-telling-you-about-gifs">What Twitter Isn’t Telling You About GIFs</a></li>
+<li><a href="http://www.breefield.com/essays/affiliate">How I Made $3,000 with 90 Lines of Code</a></li>
+<li><a href="http://www.akamai.com/worldcup">Akamai delivers for the world cup</a></li>
+<li><a href="http://symfony.com/blog/first-online-symfony-community-hack-day-july-5th">First Online Symfony Community Hack Day: July 5th!</a></li>
+<li><a href="http://ng-inspector.org/">ng-inspect like a boss</a></li>
+<li><a href="http://www.smashingmagazine.com/2014/06/27/communicating-effectively-in-projects/">How To Communicate Effectively in IT Projects</a></li>
+<li><a href="http://blog.arvidandersson.se/2014/06/17/best-practices-in-modern-web-projects">Best practices in modern web projects</a></li>
+<li><a href="http://daemon.io/">PHP Deamon &ndash; Asynchronous server-side framework for Web and network applications implemented in PHP</a></li>
+<li><a href="http://phansible.com/">An easy to use interface that helps you generate Ansible Playbooks for PHP based projects</a></li>
+<li><a href="http://serversforhackers.com/editions/2014/07/01/ssh-tricks/">SSH Tricks</a></li>
+<li><a href="http://shields.io/">GitHub badges as a service</a></li>
+<li><a href="http://php-and-symfony.matthiasnoback.nl/2014/01/php-the-future-of-packages">PHP &ndash; The Future of Packages</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-7-identifying-the-presentation-layer--cms-21593">Refactoring Legacy Code: Part 7 &ndash; Identifying the Presentation Layer</a></li>
+<li><a href="http://www.slideshare.net/cakper/2014-0407-php-spec-the-only-design-tool-you-need-4developers">PHPSpec &ndash; the only Design Tool you need</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #40]]></title>
