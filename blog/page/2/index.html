@@ -9,8 +9,7 @@
 	<meta name="author" content="Namshi">
 
 	
-	<meta name="description" content="Jun 8th, 2014 hiring, namshi, team A quick update from the trenches: for the past months
-we&rsquo;ve been beefing our team up and by doing so we &hellip;">
+	<meta name="description" content="Jun 8th, 2014 hiring, namshi, team Alessandro Nadalin Wanna Join Us? We Have Cookies, Symfony2, Node, AngularJS and Coding Challenges for You! A &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -103,8 +102,8 @@ we&rsquo;ve been beefing our team up and by doing so we &hellip;">
 				<div id="content" class="inner">
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -117,18 +116,19 @@ we&rsquo;ve been beefing our team up and by doing so we &hellip;">
 
 
 <time datetime="2014-06-08T11:44:00+04:00" data-updated="true" itemprop="datePublished">Jun 8<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/hiring/'>hiring</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/team/'>team</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>A quick update from the trenches: for the past months
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/" itemprop="url">Wanna Join Us? We Have Cookies, Symfony2, Node, AngularJS and Coding Challenges for You!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>A quick update from the trenches: for the past months
 we&rsquo;ve been beefing our team up and by doing so we
 realized that some good coding challenges are
 almost a must.</p>
@@ -142,11 +142,14 @@ with them! :)</p>
 engineers</a> and are looking to bootstrap our mobile team
 with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
 got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
+
+    
+    
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -159,18 +162,19 @@ got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectur
 
 
 <time datetime="2014-06-07T00:50:00+04:00" data-updated="true" itemprop="datePublished">Jun 7<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/browserify/'>browserify</a>, <a class='category' href='/blog/categories/nodejs/'>nodejs</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>We recently published a new library that let&rsquo;s you
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/07/reconfi-declarative-javascript-configurations/" itemprop="url">Reconfig: Declarative JavaScript Configurations</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>We recently published a new library that let&rsquo;s you
 deal with configurations, in JavaScript, in a very
 elegant way.</p>
 
@@ -180,73 +184,14 @@ recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
 small and simple, and thought to keep your
 configuration as elegant, simple and declarative as possible.</p>
 
-<!-- more -->
 
-
-<p>With reconfig you can do stuff like:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;reconfig&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
-</span><span class='line'>    <span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
-</span><span class='line'>          <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>      <span class="c1">// ...</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Retrieve a deep config value</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;countries.uae.nationalDay&#39;</span><span class="p">);</span> <span class="c1">// December, 2nd</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Pass parameters to the configuration</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;greet&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Reference other configuration parameters</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;sayhi&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Fallback values</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;something&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;invalid&#39;</span><span class="p">);</span> <span class="c1">// invalid</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We&rsquo;re probably gonna look into porting the same to
-PHP (another big player in our stack) so&hellip;stay tuned!</p>
+    
+    <a href="/blog/2014/06/07/reconfi-declarative-javascript-configurations/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -259,50 +204,32 @@ PHP (another big player in our stack) so&hellip;stay tuned!</p>
 
 
 <time datetime="2014-06-05T12:03:00+04:00" data-updated="true" itemprop="datePublished">Jun 5<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/android/'>android</a>, <a class='category' href='/blog/categories/docker/'>docker</a>, <a class='category' href='/blog/categories/hiring/'>hiring</a>, <a class='category' href='/blog/categories/ios/'>ios</a>, <a class='category' href='/blog/categories/jobs/'>jobs</a>, <a class='category' href='/blog/categories/js/'>js</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/os/'>os</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/swift/'>swift</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
+    
+    <div class="author"><a href="/team/#Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/05/newsletter-number-41/" itemprop="url">Newsletter #41</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
 
 <p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
 
 <p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
 
-<!-- more -->
 
-
-<ul>
-<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
-<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
-<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
-<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
-<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
-<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
-<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
-<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
-<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
-<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
-<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
-<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
-<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
-<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
-<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
-<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
-</ul>
-
+    
+    <a href="/blog/2014/06/05/newsletter-number-41/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -315,18 +242,19 @@ PHP (another big player in our stack) so&hellip;stay tuned!</p>
 
 
 <time datetime="2014-06-04T21:07:00+04:00" data-updated="true" itemprop="datePublished">Jun 4<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/software-development/'>software development</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>I am always amazed by the quantity of errors I make,
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/04/developers-dont-write-code-they-write-essays/" itemprop="url">Developers Don&#8217;t Write Code, They Write Essays</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>I am always amazed by the quantity of errors I make,
 on a daily basis, when writing some code: it&rsquo;s true that&rsquo;s
 not my <strong>primary</strong> job, but at the same
 time it always feels painful to find bugs or edge cases.</p>
@@ -336,100 +264,14 @@ to keep things as universal, simple and self-explanatory
 as possible, as I&rsquo;ve learnt, so far, that the worst enemy
 of my code is <strong>me in 6 months</strong>.</p>
 
-<!-- more -->
 
-
-<p>Today, for example, I was discussing with <a href="/blog/2014/05/26/welcome-lucio/">Lucio</a>
-how to handle a list of errors: suppose that the user
-performs an action that generates a bunch of errors, and that
-you have an error handler that needs to deal with all of them.</p>
-
-<p>The error handler might receive a list of these errors, process
-them one by one and then let other guys take the stage: a common
-solution would be to feed the handler the list of errors and let it
-pop them from the list as soon as he&rsquo;s  <em>handled</em> them.</p>
-
-<figure class='code'><figcaption><span>Some pseudo code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ErrorHandler</span> <span class="p">{</span>
-</span><span class='line'>  <span class="n">property</span> <span class="n">queue</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">addError</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">queue</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">handle</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">foreach</span> <span class="p">(</span><span class="n">error</span> <span class="k">in</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>          <span class="n">doStuff</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Nothing exceptional with the pseudo-code above, but we were wondering
-(as our piece of code is a bit more complex) how to name the list of
-errors that the handler deals with to make it a bit more declarative.</p>
-
-<p>Since the error handler acts as a <a href="http://en.wikipedia.org/wiki/FIFO">FIFO</a>
-it felt natural, for Lucio, call this a <strong>queue</strong>. I suggested <strong>stack</strong>
-but upon thinking about it we agreed that since a stack act as
-<a href="http://en.wikipedia.org/wiki/LIFO_(computing">LIFO</a> it wasn&rsquo;t the best idea.</p>
-
-<p><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html">Things like this</a> might sound silly, but they <strong>extremely important</strong>
-when you work with other ten people on a complex domain that
-you are trying to keep as simple (and real) as possible.</p>
-
-<p>We often forget that translating concepts into working code is our
-main duty, and by doing so we need to keep things as clear / clean as possible:
-how many times did you hear <em>&ldquo;Oh that guy wrote it, he knows how it works, ask him&rdquo;</em>?
-I cry everytime I hear that.</p>
-
-<p>When you are assigned a task, first think of the simplest and most exhaustive
-solution, then write the code: your job is not measured by lines of code, but by
-working software, which means maintainable, decoupled, easy to understand, (ultimately)
-beautiful code.</p>
-
-<p>What is the difference between an essay and some code? Ideally there is none:</p>
-
-<ul>
-<li>you explain / implement a concept / feature</li>
-<li>your artifact needs to be understandable</li>
-<li>it targets 2 audiences
-
-<ul>
-<li>a technical one, which needs to be able to understand it in depth</li>
-<li>a more general one, which needs to grasp the main concepts</li>
-</ul>
-</li>
-</ul>
-
-
-<p>Actually, there is <strong>one</strong> difference between essays and software development: the
-language they&rsquo;re written in.</p>
-
-<p>But they all need to be self-explanatory, they
-all need to nail the problem without the need to dig too deep into
-the explanation, they all need to get straight to the point, making
-things explicit rather than implicit.</p>
-
-<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
+    
+    <a href="/blog/2014/06/04/developers-dont-write-code-they-write-essays/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -442,18 +284,19 @@ things explicit rather than implicit.</p>
 
 
 <time datetime="2014-06-03T22:46:00+04:00" data-updated="true" itemprop="datePublished">Jun 3<span>rd</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/goodbye/'>goodbye</a>, <a class='category' href='/blog/categories/team/'>team</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
+    
+    <div class="author"><a href="/team/#"></a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/03/goobye-muhammad/" itemprop="url">Goodbye Muhammad!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
 
 <p>As much as we hate to see people leaving, I think
 it&rsquo;s a good thing to waive the nostalgic feelings
@@ -466,31 +309,14 @@ a key role in evolving to what I call <em>&ldquo;The tech family&rdquo;</em>.</p
 his mermerizing persona, the laugh, the commitment that
 he showed in his 2-year tenure are second to none.</p>
 
-<!-- more -->
 
-
-<p>Muhammad has joined us even before I got to Dubai,
-and left us after core contributions to our
-architecture: from rushing to fix as many bugs as possible
-to putting all he had in re-architecting core
-components of our stack, like our main API and
-integrations with payment providers: for example,
-he&rsquo;s been crucial in implementing 3D-secure
-authentication in our
-<a href="https://github.com/namshi/innovate">namshi/innovate</a> library.</p>
-
-<p>Last we heard is that he would have rushed to Europe
-in order to join an exciting startup.</p>
-
-<p>Bring your <a href="http://www.stylehoster.com/lpc/uploads/2014/01/Latest-Salwar-Kameez-Designs-2014-For-Pakistani-Men.gif">Kameez</a> with you man,
-and remember you still have some brothers in Dubai!</p>
-
-<p>Aye!</p>
+    
+    <a href="/blog/2014/06/03/goobye-muhammad/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -503,18 +329,19 @@ and remember you still have some brothers in Dubai!</p>
 
 
 <time datetime="2014-06-03T16:42:00+04:00" data-updated="true" itemprop="datePublished">Jun 3<span>rd</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/namshi/'>Namshi</a>, <a class='category' href='/blog/categories/hiring/'>hiring</a>, <a class='category' href='/blog/categories/job/'>job</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p>Do you like Java? Ok, I possibly started from the wrongest question.</p>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/" itemprop="url">Like Android and iOS? Let&#8217;s Change Shopping in the Middle East Together!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p>Do you like Java? Ok, I possibly started from the wrongest question.</p>
 
 <p>Restart.</p>
 
@@ -527,56 +354,14 @@ dirty with both of the main platforms, and teach others how to do it: we&rsquo;d
 like you to bring in your expertise and help kicking off our mobile
 development team.</p>
 
-<!-- more -->
 
-
-<h2>What do we need?</h2>
-
-<p>Our need is to kickoff an internal development team, which could even be split by
-iOS and Android, and to do so we would need to make a first, very good hire and
-find a lead who can drive all the way to success.</p>
-
-<p>How will your typical day look like? You will go over a <a href="https://gist.github.com">gist</a> which has the specs for
-a feature together with the other leads, wrap up a bugfix for the next release,
-check one of the pull requests submitted by another team member and have
-<a href="http://upload.wikimedia.org/wikipedia/commons/d/d4/Shawarma_ad_Istanbul_(01.10.2008).JPG">lotsa shawarma</a> for lunch.</p>
-
-<p>As general rules, we would like:</p>
-
-<ul>
-<li>someone who speaks both <strong>Android and iOS</strong> (if you know only one of them but think you deserve a position, talk to us and we&rsquo;d be very happy to hear your point)</li>
-<li>a few years of proficient <strong>development of mobile applications</strong>, possibly being a leader of a small/mid-sized team</li>
-<li>knowledge of the <strong>latest trend</strong> in your technical sector (you tell us if <a href="http://www.omgchrome.com/android-webview-auto-update-future/">android auto-updates its webview component</a>, not the other way round :) as well as suggesting tools like <a href="http://hockeyapp.net/features/">Hockey</a>)</li>
-<li><strong>Object-Oriented design</strong>: sounds boring but we don&rsquo;t limit ourselves to MVC, we actually need you to <a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">consume our APIs and get the most out of them</a></li>
-<li>it would be a plus to get someone who is passionate about <strong>OSS</strong> and would like to release some of our stuff after polishing them for the public</li>
-</ul>
-
-
-<h2>What do we offer?</h2>
-
-<ul>
-<li>a good salary, we don&rsquo;t want to hire people who feel they&rsquo;ve been underpaid</li>
-<li>SPDY, HTTP APIs and a Service-Oriented Architecture</li>
-<li>a <a href="https://www.google.com/maps/dir/First+Gulf+Bank+Metro+Station+1+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/More+Cafe+Gold+%26+Diamond+Park+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1264065,55.2068206,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3e5f6bc621973f29:0x18a89384f349bdf6!2m2!1d55.207756!2d25.126699!1m5!1m1!1s0x3e5f6bc6122edfe3:0x435be27ccd3d1564!2m2!1d55.208316!2d25.126114!3e2">1-minute-walk</a> from the metro to the office</li>
-<li>a <a href="/team">great team</a></li>
-<li>you <strong>will and won&rsquo;t</strong> be alone: our team is made of ~15 software engineers and we share best practices at the architectual / software design level,
-but don&rsquo;t have a way to re-invent the current team members into mobile hackers</li>
-<li>growth, as mobile is getting bigger and bigger (for us and for the ecommerce market in general): we expect the mobile
-development team to be growing as months will go by</li>
-<li>a company which is standing on the <a href="http://www.rocket-internet.de/">shoulder of giants</a></li>
-<li>the <em>&ldquo;10th our breakpoint&rdquo;</em>: if you work for 10 hours then have a break, order food and we will reimburse it</li>
-<li>working with <a href="http://instagram.com/p/gpSOCenpPI/">these two guys</a></li>
-</ul>
-
-
-<h2>So what?</h2>
-
-<p>Simply drop an email at <code>alessandro.nadalin@namshi.com</code> and let&rsquo;s make it real! Need more infos? Check <a href="/join-us">this</a>!</p>
+    
+    <a href="/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -589,18 +374,19 @@ development team to be growing as months will go by</li>
 
 
 <time datetime="2014-05-29T12:45:00+04:00" data-updated="true" itemprop="datePublished">May 29<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/techthursday/'>TechThursday</a>, <a class='category' href='/blog/categories/angularjs/'>angularjs</a>, <a class='category' href='/blog/categories/aws/'>aws</a>, <a class='category' href='/blog/categories/games/'>games</a>, <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/html/'>html</a>, <a class='category' href='/blog/categories/newsletter/'>newsletter</a>, <a class='category' href='/blog/categories/nodejs/'>nodejs</a>, <a class='category' href='/blog/categories/php/'>php</a>, <a class='category' href='/blog/categories/phpstorm/'>phpstorm</a>, <a class='category' href='/blog/categories/qatar/'>qatar</a>, <a class='category' href='/blog/categories/raspberry-pi/'>raspberry-pi</a>, <a class='category' href='/blog/categories/vagrant/'>vagrant</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+    
+    <div class="author"><a href="/team/#Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/05/29/newsletter-number-40/" itemprop="url">Newsletter #40</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
 
 <ul>
 <li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
@@ -614,35 +400,14 @@ development team to be growing as months will go by</li>
 </ul>
 
 
-<!-- more -->
 
-
-<ul>
-<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
-<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
-<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
-<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
-<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
-<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
-<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
-<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
-<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
-<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
-<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
-<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
-<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
-<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
-<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
-<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
-</ul>
-
+    
+    <a href="/blog/2014/05/29/newsletter-number-40/" class="more-link">Read on &rarr;</a>
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -655,18 +420,19 @@ development team to be growing as months will go by</li>
 
 
 <time datetime="2014-05-26T23:40:00+04:00" data-updated="true" itemprop="datePublished">May 26<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/welcome/'>welcome</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="team left" src="/images/nikita.png"></p>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/05/26/welcome-nikita/" itemprop="url">Welcome Nikita!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><img class="team left" src="/images/nikita.png"></p>
 
 <p>Yesterday we got some cold breeze from Russia, which
 is never bad considered that Dubai is getting ready
@@ -681,11 +447,14 @@ a place where he likes to fork the official PHP repository
 to fix bugs on the language itself (kudos!) or&hellip;by starting
 to check our <a href="https://github.com/namshi">github page</a> out more often,
 as we&rsquo;re gonna see some more open-source PHP libraries over there!</p>
+
+    
+    
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -698,18 +467,19 @@ as we&rsquo;re gonna see some more open-source PHP libraries over there!</p>
 
 
 <time datetime="2014-05-26T15:36:00+04:00" data-updated="true" itemprop="datePublished">May 26<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/welcome/'>welcome</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="team left" src="/images/shidhin.jpg"></p>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/05/26/welcome-shidhin/" itemprop="url">Welcome Shidhin!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><img class="team left" src="/images/shidhin.jpg"></p>
 
 <p>Second announcement of the day (and we ain&rsquo;t done yet!):
 I am super-duper-excited to welcome <a href="https://twitter.com/shidhincr">Shidhin CR</a>
@@ -729,11 +499,14 @@ JavaScript in general (Did I mention <a href="/blog/2014/03/24/looking-for-some-
 <p>You can read more about Shidhin in his <a href="http://www.undefinednull.com/">personal blog</a>
 or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
 as we&rsquo;re gonna see some more AngularJS-ish stuff over there!</p>
+
+    
+    
 </div></article>
 
 
-    <article class="post">    <div class="meta">
-        <div class="date">
+    <article class="post" itemprop="blogPost"><div class="meta">
+    <div class="date">
 
 
 
@@ -746,18 +519,19 @@ as we&rsquo;re gonna see some more AngularJS-ish stuff over there!</p>
 
 
 <time datetime="2014-05-26T11:20:00+04:00" data-updated="true" itemprop="datePublished">May 26<span>th</span>, 2014</time></div>
-        <div class="tags">
+    <div class="tags">
 
 
 	<a class='category' href='/blog/categories/welcome/'>welcome</a>
 
 
 </div>
-        
-        <div class="author"><a href="/team/#"></a></div>
-    </div>
-	<h1 class="title" itemprop="name"></h1>
-	<div class="entry-content" itemprop="articleBody"><p><img class="team left" src="/images/lucio.jpg"></p>
+    
+    <div class="author"><a href="/team/#Alessandro Nadalin">Alessandro Nadalin</a></div>
+</div>
+<h1 class="title" itemprop="name"><a href="/blog/2014/05/26/welcome-lucio/" itemprop="url">Welcome Lucio!</a></h1>
+<div class="entry-content" itemprop="articleBody">
+    <p><img class="team left" src="/images/lucio.jpg"></p>
 
 <p>I am very happy to announce &ndash; even though I&rsquo;m a bit late &ndash; that
 <a href="https://twitter.com/unlucio">Luciano &ldquo;unlucio&rdquo; Colosio</a>
@@ -777,6 +551,9 @@ simplicity, clean code and good engineering.</p>
 <p>You can read more about Lucio in his <a href="http://blog.unlucio.com/">personal blog</a>
 or&hellip;starting to check our <a href="https://github.com/namshi">github page</a> out more often,
 as I sense we&rsquo;re gonna see some more NodeJS there!</p>
+
+    
+    
 </div></article>
 
 <nav id="pagenavi">

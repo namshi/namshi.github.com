@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Phpunit | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/phpunit/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-07-03T12:00:35+04:00</updated>
+  <updated>2014-07-03T12:19:00+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -88,10 +88,10 @@ to insert dummy data into the testing databases, and finally we add/delete requi
  to ensure the quality of our application and optimize it.</p>
 
 <p>for now we implemented around 200 test cases
-{% img center /images/posts/test-result-success.png test result %}</p>
+<img class="center" src="/images/posts/test-result-success.png" title="test result" ></p>
 
 <p>These tests won&rsquo;t pass if we have any bugs of the application
-{% img center /images/posts/test-result-failure.png test result %}</p>
+<img class="center" src="/images/posts/test-result-failure.png" title="test result" ></p>
 
 <h4>How we assert test results?</h4>
 
