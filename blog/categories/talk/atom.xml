@@ -4,7 +4,7 @@
   <title><![CDATA[Category: talk | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/talk/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-07-03T11:59:53+04:00</updated>
+  <updated>2014-07-03T12:00:35+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ from Dubai.</p>
 <!-- more -->
 
 
-<p><img class="left <a" src="href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a>" width="250"></p>
+<p>{% img left <a href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a> 250 %}</p>
 
 <p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
 there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua

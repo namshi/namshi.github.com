@@ -4,7 +4,7 @@
   <title><![CDATA[Category: goodbye | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/goodbye/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-07-03T11:59:53+04:00</updated>
+  <updated>2014-07-03T12:00:35+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -49,7 +49,7 @@ good luck for his next adventure!</p>
     <link href="http://tech.namshi.com/blog/2014/06/03/goobye-muhammad/"/>
     <updated>2014-06-03T22:46:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/06/03/goobye-muhammad</id>
-    <content type="html"><![CDATA[<p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
+    <content type="html"><![CDATA[<p>{% img left team /images/riaz.jpeg Muhammad Riaz %}</p>
 
 <p>As much as we hate to see people leaving, I think
 it&rsquo;s a good thing to waive the nostalgic feelings
