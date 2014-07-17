@@ -7,13 +7,18 @@ categories: [TechThursday, newsletter, api, javascript, php, cloud, symfony2, re
 author: Alessandro Cinelli (cirpo)
 ---
 
-This week, thanks to our teammate [nikita](http://tech.namshi.com/team/#Nikita Nefedov), we released a new version of [namshi/jose](https://github.com/namshi/jose).<br />
-**Jose** is a PHP library that provides a lightweight implementation of **JWS** ([JSON Web Signature](http://tools.ietf.org/html/draft-jones-json-web-signature-04)) specification.
-
-We are thrilled about the first [SymfonyLive New York](http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10), we sent a bunch of cfps... let's cross our fingers!
+TechThursday is here!
 
 
-Below the usual list of interesting resources we find out this week, enjoy!
+>*What happened this week in the Namshi Tech team?*
+>
+>This week our teammate [nikita](http://tech.namshi.com/team/#Nikita Nefedov) got the time to work a bit on [namshi/jose](https://github.com/namshi/jose), and we ended up releasing version 1.1.1!<br />
+>**Jose** is a PHP library that provides a lightweight implementation of **JWS** ([JSON Web Signature](http://tools.ietf.org/html/draft-jones-json-web-signature-04)) specification.
+
+>At the same time we are thrilled about the first [SymfonyLive New York](http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10), we sent a bunch of cfps... let's cross our fingers!
+
+
+Below the usual list of interesting resources we found out this week, enjoy!
 
 * [Security releases (CVE-2014-4931): #Symfony 2.3.18, 2.4.8, and 2.5.2 released](http://buff.ly/1jQCIdf)
 
