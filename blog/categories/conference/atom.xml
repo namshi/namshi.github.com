@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conference | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-07-03T12:19:00+04:00</updated>
+  <updated>2014-07-31T13:21:58+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A bit of Namshi at the 2014 AWS re:invent]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/"/>
+    <updated>2014-07-05T20:54:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent</id>
+    <content type="html"><![CDATA[<p><img class="left <a" src="href="http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png">http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png</a>" width="120"></p>
+
+<p>It&rsquo;s gonna be a great time in Las Vegas for
+<a href="/team#Oluwaseun%20Obajobi">Oba</a>, our Lead
+System Administrator, who is going to attend
+the 2014 edition of <a href="https://reinvent.awsevents.com/">AWS re:invent</a>,
+the international event for the cloud lovers.</p>
+
+<!-- more -->
+
+
+<p>re:invent, which is gonna gather professionals from
+all over the world, is definitely going to be a great
+source of inspiration for our systems, and we&rsquo;re
+very happy to have someone who will be able
+to get a closer look at best practices, processes
+and tools in the industry; to learn from the community
+and the industry leaders is something we value very
+much, here at Namshi.</p>
+
+<p>Never heard of re:invent before?</p>
+
+<ul>
+<li>the largest gathering of the AWS community</li>
+<li>sessions spread over <a href="https://reinvent.awsevents.com/sessions.html">20 topics</a></li>
+<li><a href="https://reinvent.awsevents.com/training.html#bootLink">bootcamps</a></li>
+<li>new AWS products get usually announced there</li>
+<li>on-the-spot <a href="https://reinvent.awsevents.com/training.html#certLink">certifications</a></li>
+</ul>
+
+
+<p>We wish Oba a safe trip there&hellip;   &hellip;and have
+a blast in the States!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>

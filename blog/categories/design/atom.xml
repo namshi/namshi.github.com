@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: design | Tech @ Namshi.com]]></title>
+  <link href="http://tech.namshi.com/blog/categories/design/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-07-31T13:21:58+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #48]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/"/>
+    <updated>2014-07-24T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48</id>
+    <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
+
+<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
+
+<p>This week we achieved a great result: our travis builds now take just 8 minutes to run all the test suite, we are super excited about this.<br />
+We will soon talk about it in a blog post, stay tuned and keep following <a href="http://twitter.com/technamshi">@TechNamshi</a></p></blockquote>
+
+<p>Enjoy the list of super uber interesting posts on the Web!</p>
+
+<ul>
+<li><p><a href="http://buff.ly/Uf8g0e">Zalando hits €1 billion in revenue in first half of 2014</a></p></li>
+<li><p><a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">Front-end performance for web designers and front-end developers, long but useful article by @csswizardry about web performance, a really hot topic now.</a></p></li>
+<li><p><a href="https://speakerdeck.com/mathiasbynens/3-dot-14-things-i-didnt-know-about-css-at-css-day-2014">3.14 things I didn’t know about CSS &ndash; a great presentation from CSS Day 2014</a></p></li>
+<li><p><a href="https://gds.blog.gov.uk/2014/07/18/whats-the-design-process-at-gds/">What’s the design process at Governement Digital Service in UK?</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/MvNu3WXg3A">Want a sneak peek at the PHP language spec the @HipHopVM team has been working on?</a></p></li>
+<li><p><a href="http://t.co/FVocuiIbur">How LinkedIn used PoPs and RUM to make dynamic content download 25% faster</a></p></li>
+<li><p><a href="http://buff.ly/1qrKDjV">Elasticsearch in 15 minutes</a></p></li>
+<li><p><a href="http://buff.ly/1mojG8x">gulp inject is one of the best things discovered over the past 3 months&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/UfOyBn">Redesigning the perfect checkout</a></p></li>
+<li><p><a href="http://buff.ly/1qOqW1x">Schedule Load Tests for #APIs in the Cloud for Free</a></p></li>
+<li><p><a href="http://buff.ly/1rweFjF">JadoPado InstaSearch with Algolia</a></p></li>
+<li><p><a href="http://buff.ly/1yB90Mq">What happens when you search &lsquo;ugly hack&rsquo; in GitHub</a></p></li>
+<li><p><a href="http://buff.ly/1qNmlN6">Programming Is Not Math</a></p></li>
+<li><p><a href="http://buff.ly/Uf2USD">Riemann &ndash; A network monitoring system</a></p></li>
+<li><p><a href="http://buff.ly/1qLpg8V">12 killer resources for #api practitioners</a></p></li>
+<li><p><a href="http://dl.hhvm.com/resources/PHPSpec-SneakPeak.pdf">PHP specification draft from Sara Golemon</a></p></li>
+<li><p><a href="http://labs.octivi.com/handling-1-billion-requests-a-week-with-symfony2/">Handling 1 Billion requests a week with Symfony2</a></p></li>
+<li><p><a href="https://markwillcollins.silvrback.com/7-things-i-wish-i-knew-about-angularjs">8 Things I wish I knew about AngularJs</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/7/14/bitly-lessons-learned-building-a-distributed-system-that-han.html">Bitly: Lessons Learned Building A Distributed System That Handles 6 Billion Clicks A Month</a></p></li>
+<li><p><a href="https://github.com/fgrehm/vagrant-notify">Vagrant Notify &ndash; forward notify-send from vagrant host machine</a></p></li>
+<li><p><a href="http://xmpp.org/about-xmpp/technology-overview/">XMPP: The Extensible Messaging and Presence Protocol overview</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/more-responsive-single-page-applications-with-angularjs-socketio-creating-the-library--cms-21738">More Responsive Single-Page Applications With AngularJS &amp; Socket.IO: Creating the Library</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-9-analyzing-concerns--cms-21760">Refactoring Legacy Code: Part 9 &ndash; Analyzing Concerns</a></p></li>
+<li><p><a href="http://templatespicy.com/2014/15-best-php-frameworks-2014/">15 best PHP frameworks in 2014</a></p></li>
+<li><p><a href="http://visualping.io/">Get notified on visual changes of a website or website area</a></p></li>
+<li><p><a href="http://pagekit.com/blog/2014/07/21/pagekit-public-alpha-launch">Pagekit, a new, modern CMS built with Symfony components</a></p></li>
+<li><p><a href="http://vexxhost.com/blog/small-dive-into-meteor-js/">Small dive into Meteor.js</a></p></li>
+<li><p><a href="http://9to5mac.com/2014/07/11/apple-launches-blog-to-highlight-new-swift-programming-language">Apple launches blog to highlight new Swift programming language</a></p></li>
+<li><p><a href="https://blog.codecentric.de/en/2014/06/10-early-thoughts-swift-programming-language">10 Early Thoughts on the Swift Programming Language</a></p></li>
+<li><p><a href="http://www.fastcolabs.com/3031400/whats-new-and-different-about-apples-new-swift-programming-language">The New And Different About Apple&rsquo;s New Swift Programming Language</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

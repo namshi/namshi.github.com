@@ -202,7 +202,29 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/</loc>
-        <lastmod>2014-07-03T11:55:46+04:00</lastmod>
+        <lastmod>2014-07-31T11:47:59+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/
+        </loc>
+        <lastmod>2014-07-31T11:47:59+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/07/10/newsletter-number-46/</loc>
+        <lastmod>2014-07-31T11:47:59+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/</loc>
+        <lastmod>2014-07-31T11:47:59+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/</loc>
+        <lastmod>2014-07-31T11:47:59+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/</loc>
+        <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/about/</loc>
@@ -214,7 +236,7 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/</loc>
-        <lastmod>2014-07-03T11:55:46+04:00</lastmod>
+        <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/categories/</loc>
@@ -222,11 +244,11 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/</loc>
-        <lastmod>2014-07-03T12:17:37+04:00</lastmod>
+        <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/blog/archives/</loc>
-        <lastmod>2014-07-03T11:55:46+04:00</lastmod>
+        <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
     <url>
         <loc>http://tech.namshi.com/team/</loc>
@@ -238,6 +260,6 @@
     </url>
     <url>
         <loc>http://tech.namshi.com/archives/</loc>
-        <lastmod>2014-07-03T11:55:46+04:00</lastmod>
+        <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
 </urlset>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cloud | Tech @ Namshi.com]]></title>
+  <link href="http://tech.namshi.com/blog/categories/cloud/atom.xml" rel="self"/>
+  <link href="http://tech.namshi.com/"/>
+  <updated>2014-07-31T13:21:58+04:00</updated>
+  <id>http://tech.namshi.com/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #47]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/"/>
+    <updated>2014-07-17T12:03:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47</id>
+    <content type="html"><![CDATA[<p>TechThursday is here!</p>
+
+<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
+
+<p>This week our teammate <a href="http://tech.namshi.com/team/#Nikita%20Nefedov">nikita</a> got the time to work a bit on <a href="https://github.com/namshi/jose">namshi/jose</a>, and we ended up releasing version 1.1.1!<br />
+<strong>Jose</strong> is a PHP library that provides a lightweight implementation of <strong>JWS</strong> (<a href="http://tools.ietf.org/html/draft-jones-json-web-signature-04">JSON Web Signature</a>) specification.</p>
+
+<p>At the same time we are thrilled about the first <a href="http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10">SymfonyLive New York</a>, we sent a bunch of cfps&hellip; let&rsquo;s cross our fingers!</p></blockquote>
+
+<p>Below the usual list of interesting resources we found out this week, enjoy!</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1jQCIdf">Security releases (CVE-2014-4931): #Symfony 2.3.18, 2.4.8, and 2.5.2 released</a></p></li>
+<li><p><a href="http://buff.ly/1mh5zBN">httpbin: #HTTP Client Testing Service</a></p></li>
+<li><p><a href="http://buff.ly/1rfPkgd">&ldquo;I Do Not Know One Person Who Is Happy at Amazon&rdquo;</a></p></li>
+<li><p><a href="http://buff.ly/1mdnKYY">Digging into #Angular’s “Controller as” syntax</a></p></li>
+<li><p><a href="http://buff.ly/1oTCIIf">Write your #git hooks in #PHP and keep them under git control</a></p></li>
+<li><p><a href="http://buff.ly/1tAEK55">Why I’m staying with NodeJS</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/ip61zsw87v">Guy writes a page explaining X11 for mortals <em>and embeds an X11 server in the page</em>. That’s it, everybody out.</a></p></li>
+<li><p><a href="http://buff.ly/1nh6IJW">Zero-downtime database migrations</a></p></li>
+<li><p><a href="http://buff.ly/1qqGUyy">Amazon Zocalo &ndash; Document Storage and Sharing for the Enterprise</a></p></li>
+<li><p><a href="http://buff.ly/1jhYrdw">Breach: a #browser for the #HTML5 era. Entirely written in #Javascript. Free. Modular. Hackable.</a></p></li>
+<li><p><a href="https://helloreverb.com/developers/swagger">Swagger: A simple, open standard for describing REST APIs with JSON | Reverb for Developers http://t.co/WZXF4VnAH3</a></p></li>
+<li><p><a href="http://www.infoq.com/presentations/8-lines-code-refactoring">8 Lines of Code: Greg Young discusses eight lines of very common code finding in them massive numbers of dependencies and difficulties, looking for ways to get rid of them.</a></p></li>
+<li><p><a href="http://msdn.microsoft.com/en-us/library/dn568099.aspx#_The_Sample_Applications">Cloud Design Patterns: Prescriptive Architecture Guidance for Cloud Applications</a></p></li>
+<li><p><a href="http://www.zdnet.com/developers-and-apple-open-up-on-new-swift-programming-language-7000031536">Developers and Apple open up on new Swift programming language</a></p></li>
+<li><p><a href="http://williamdurand.fr/2014/07/02/resting-with-symfony-sos/">RESTing with Symfony: SOS</a></p></li>
+<li><p><a href="https://github.com/jakubroztocil/httpie">HTTPie is a user-friendly cURL replacement</a></p></li>
+<li><p><a href="https://zapier.com/engineering/when-rest-gets-messy/">When REST Gets Messy</a></p></li>
+<li><p><a href="http://zsuraski.blogspot.co.il/2014/07/benchmarking-phpng.html?m=1">PHP-next-gen benchmark</a></p></li>
+<li><p><a href="https://github.com/cjbarber/ToolsOfTheTrade">HN Tools of the Trade, 2014 edition</a></p></li>
+<li><p><a href="https://medium.com/@manicho/how-a-password-changed-my-life-7af5d5f28038">How a Password changed my life</a></p></li>
+<li><p><a href="http://trackjs.com/">JavaScript Error Tracking</a></p></li>
+<li><p><a href="https://formcrafts.com/">Create amazing forms</a></p></li>
+<li><p><a href="http://nakedsecurity.sophos.com/2014/07/16/germany-considers-replacing-email-with-typewriters-to-evade-spying">Germany considers replacing email with typewriters to evade spying</a></p></li>
+<li><p><a href="https://github.com/sausheong/polyglot">A distributed web framework that allows programmers to create web applications in multiple programming languages</a></p></li>
+<li><p><a href="http://vimeo.com/92087878">Zach Holman: If Only I Knew This In College!</a></p></li>
+<li><p><a href="http://programmingisterrible.com/">Programming is terrible &ndash; lessons learned from a life wasted</a></p></li>
+<li><p><a href="http://brikis98.blogspot.ae/2014/03/the-ultimate-guide-to-getting-started.html">The Ultimate Guide to Getting Started with the Play Framework</a></p></li>
+<li><p><a href="http://www.andrisreinman.com/nodemailer-v1-0/">Nodemailer v1.0 released</a></p></li>
+<li><p><a href="http://blog.newrelic.com/2014/07/15/geekspeak-data/">10 Things Non-Developers Love To Say To Developers</a></p></li>
+<li><p><a href="http://realm.io/news/introducing-realm">Introducing Realm &ndash; a mobile-first database</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>
