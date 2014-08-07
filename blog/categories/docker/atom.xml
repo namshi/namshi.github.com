@@ -4,7 +4,7 @@
   <title><![CDATA[Category: docker | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/docker/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-07-31T13:21:58+04:00</updated>
+  <updated>2014-08-07T12:43:28+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #50]]></title>
+    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <updated>2014-08-07T11:21:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <content type="html"><![CDATA[<blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
+
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#97;&#x69;&#x6c;&#x74;&#111;&#x3a;&#119;&#x6f;&#x72;&#107;&#x2d;&#x69;&#110;&#x2d;&#116;&#101;&#x63;&#x68;&#64;&#110;&#x61;&#x6d;&#x73;&#x68;&#105;&#x2e;&#x63;&#x6f;&#109;">&#x77;&#111;&#114;&#107;&#x2d;&#x69;&#x6e;&#x2d;&#x74;&#101;&#99;&#104;&#64;&#x6e;&#97;&#x6d;&#x73;&#x68;&#105;&#x2e;&#x63;&#x6f;&#109;</a>"</p></blockquote>
+
+<ul>
+<li><a href="http://buff.ly/V0CWSU">Mind-blowing facts about Google</a></li>
+<li><a href="http://buff.ly/1sdQbLl">Is TLS Fast Yet?</a></li>
+<li><a href="http://buff.ly/1s9dGW2">Amazon RDS Now Supports T2 Instances</a></li>
+<li><a href="http://buff.ly/1qKumSE">The One Big Thing That Will Reduce Software Bugs, But No One Does It</a></li>
+<li><a href="http://buff.ly/1ktk8s2">CoreOS and Docker through Deis: Your Paas. Your Rules.</a></li>
+<li><a href="http://buff.ly/1rWPMNg">The Twelve-Factor App</a></li>
+<li><a href="http://buff.ly/UFHnmh">Redis 3.0.0 beta 8 is out</a></li>
+<li><a href="http://buff.ly/1qx66Ds">Critiquing Facebook’s new #PHP spec</a></li>
+<li><a href="http://superuser.com/questions/792607/why-does-windows-think-that-my-wireless-keyboard-is-a-toaster">Why does windows think that my wireless keyboard is a toaster</a></li>
+<li><a href="http://www.gameofhacks.com/">Game of Hacks</a></li>
+<li><a href="http://www.jvanbaarsen.com/blog/2014/07/02/why-i-think-having-passion-as-a-developer-matters">Why I think having passion as a developer matters</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/08/02/badusb-what-if-you-could-never-trust-a-usb-device-again">BadUSB what if you could never trust a USB device again</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/07/31/3-security-mistakes-small-companies-make-and-how-to-avoid-them">3 security mistakes small companies make and how to avoid them</a></li>
+<li><a href="https://www.aftership.com/">Track and Audit shipments for free</a></li>
+<li><a href="https://m.youtube.com/watch?v=SqeOPLB2xAM">DConf 2014: Declarative programming in D by Mihails Strasuns aka Dicebot</a></li>
+<li><a href="https://github.com/facebook/rocksdb/wiki">Welcome to RocksDB!</a></li>
+<li><a href="https://github.com/scobal/seyren">Alerting Dashboard for Graphite</a></li>
+<li><a href="http://www.fastcolabs.com/3033680/why-you-cant-learn-to-code-without-open-source">Why You Can&rsquo;t Learn To Code Without Open Source</a></li>
+<li><a href="http://keyholesoftware.com/2014/07/23/javascript-promises-are-cool">JavaScript Promises Are Cool</a></li>
+<li><a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages">The Top Programming Languages in IEEE Spectrum’s 2014 Ranking</a></li>
+<li><a href="https://blog.engineyard.com/2014/hhvm-hack-part-5">Building a Better PHP &ndash; Part 5: Static Analysis &amp; other CLI tools</a></li>
+<li><a href="http://www.youtube.com/watch?v=gpNbmEnRLBU">dotScale 2014 &ndash; Fabien Potencier &ndash; My Take on PHP</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #49]]></title>
@@ -198,42 +235,6 @@ We have cookies, #Symfony2, #nodejs, #AngularJS, #redis, #rabbitmq and coding ch
 <li><p><a href="http://css-tricks.com/using-encapsulation-semantic-markup/">Using Encapsulation for Semantic Markup</a></p></li>
 <li><p><a href="http://dev.opera.com/articles/css-will-change-property/">Everything You Need to Know About the CSS will-change Property</a></p></li>
 <li><p><a href="http://intercoolerjs.org/">intercooler.js: add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #41]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/"/>
-    <updated>2014-06-05T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41</id>
-    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
-
-<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
-
-<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
-<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
-<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
-<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
-<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
-<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
-<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
-<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
-<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
-<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
-<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
-<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
-<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
-<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
-<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
-<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
 </ul>
 
 ]]></content>
