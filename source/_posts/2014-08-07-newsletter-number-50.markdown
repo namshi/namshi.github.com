@@ -7,9 +7,12 @@ categories: [TLS, Amazon RDS, bugs, docker, redis, security, javascript, vim, ph
 author: Mohamad Hallal
 ---
 
+Hey folks! Hope you had a great week!
+
+Announcement:
 > We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript -- we <3 javascript :)
 >
-> We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to work-in-tech@namshi.com"
+> We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to work-in-tech@namshi.com
 
 Here are your links for this week!
 
