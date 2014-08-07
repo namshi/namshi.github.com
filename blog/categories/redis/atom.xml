@@ -4,7 +4,7 @@
   <title><![CDATA[Category: redis | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/redis/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:45:49+04:00</updated>
+  <updated>2014-08-07T12:51:58+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -20,7 +20,7 @@
     <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#111;&#x3a;&#x77;&#x6f;&#x72;&#x6b;&#45;&#x69;&#x6e;&#45;&#x74;&#x65;&#x63;&#x68;&#64;&#110;&#97;&#x6d;&#x73;&#x68;&#105;&#x2e;&#x63;&#111;&#109;">&#119;&#x6f;&#x72;&#x6b;&#x2d;&#105;&#110;&#45;&#x74;&#x65;&#x63;&#104;&#x40;&#110;&#x61;&#x6d;&#115;&#x68;&#x69;&#x2e;&#x63;&#x6f;&#109;</a>"</p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x77;&#111;&#x72;&#x6b;&#45;&#x69;&#x6e;&#x2d;&#x74;&#x65;&#x63;&#104;&#64;&#x6e;&#x61;&#x6d;&#115;&#x68;&#105;&#46;&#99;&#111;&#x6d;">&#x77;&#x6f;&#114;&#107;&#45;&#x69;&#110;&#x2d;&#x74;&#101;&#99;&#104;&#x40;&#x6e;&#x61;&#109;&#115;&#x68;&#x69;&#46;&#x63;&#111;&#x6d;</a>"</p></blockquote>
 
 <p>Here are your links for this week!</p>
 
@@ -36,6 +36,8 @@
 <li><a href="http://buff.ly/1rWPMNg">The Twelve-Factor App</a></li>
 <li><a href="http://buff.ly/UFHnmh">Redis 3.0.0 beta 8 is out</a></li>
 <li><a href="http://buff.ly/1qx66Ds">Critiquing Facebook’s new #PHP spec</a></li>
+<li><a href="http://www.youtube.com/watch?v=UlREhZ-orlk">ideavim &ndash;  plugin that let&rsquo;s you use vim keybindings inside a intellj based ides (phpstorm/webstorm ide</a></li>
+<li><a href="http://mckoss.com/jscript/object.htm">A very old post, but still super good, about object oriented programming in JavaScript</a></li>
 <li><a href="http://superuser.com/questions/792607/why-does-windows-think-that-my-wireless-keyboard-is-a-toaster">Why does windows think that my wireless keyboard is a toaster</a></li>
 <li><a href="http://www.gameofhacks.com/">Game of Hacks</a></li>
 <li><a href="http://www.jvanbaarsen.com/blog/2014/07/02/why-i-think-having-passion-as-a-developer-matters">Why I think having passion as a developer matters</a></li>
