@@ -3,7 +3,7 @@ layout: post
 title: "Newsletter #50"
 date: 2014-08-07 11:21
 comments: true
-categories: [TLS, Amazon RDS, bugs, docker, redis, security, javascript]
+categories: [TLS, Amazon RDS, bugs, docker, redis, security, javascript, vim, phpstorm, oop]
 author: Mohamad Hallal
 ---
 
@@ -23,6 +23,8 @@ Here are your links for this week!
 * [The Twelve-Factor App](http://buff.ly/1rWPMNg)
 * [Redis 3.0.0 beta 8 is out](http://buff.ly/UFHnmh)
 * [Critiquing Facebook’s new #PHP spec](http://buff.ly/1qx66Ds)
+* [ideavim -  plugin that let's you use vim keybindings inside a intellj based ides (phpstorm/webstorm ide](http://www.youtube.com/watch?v=UlREhZ-orlk)
+* [A very old post, but still super good, about object oriented programming in JavaScript](http://mckoss.com/jscript/object.htm)
 * [Why does windows think that my wireless keyboard is a toaster](http://superuser.com/questions/792607/why-does-windows-think-that-my-wireless-keyboard-is-a-toaster)
 * [Game of Hacks](http://www.gameofhacks.com/)
 * [Why I think having passion as a developer matters](http://www.jvanbaarsen.com/blog/2014/07/02/why-i-think-having-passion-as-a-developer-matters)
