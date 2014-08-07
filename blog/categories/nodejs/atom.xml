@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: nodejs | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: NodeJS | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/nodejs/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:44:46+04:00</updated>
+  <updated>2014-08-07T12:45:49+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,245 +14,225 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #48]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/"/>
-    <updated>2014-07-24T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48</id>
-    <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
-
-<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
-
-<p>This week we achieved a great result: our travis builds now take just 8 minutes to run all the test suite, we are super excited about this.<br />
-We will soon talk about it in a blog post, stay tuned and keep following <a href="http://twitter.com/technamshi">@TechNamshi</a></p></blockquote>
-
-<p>Enjoy the list of super uber interesting posts on the Web!</p>
-
-<ul>
-<li><p><a href="http://buff.ly/Uf8g0e">Zalando hits €1 billion in revenue in first half of 2014</a></p></li>
-<li><p><a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">Front-end performance for web designers and front-end developers, long but useful article by @csswizardry about web performance, a really hot topic now.</a></p></li>
-<li><p><a href="https://speakerdeck.com/mathiasbynens/3-dot-14-things-i-didnt-know-about-css-at-css-day-2014">3.14 things I didn’t know about CSS &ndash; a great presentation from CSS Day 2014</a></p></li>
-<li><p><a href="https://gds.blog.gov.uk/2014/07/18/whats-the-design-process-at-gds/">What’s the design process at Governement Digital Service in UK?</a></p></li>
-</ul>
-
+    <title type="html"><![CDATA[Newsletter #46]]></title>
+    <link href="http://tech.namshi.com/blog/2014/07/10/newsletter-number-46/"/>
+    <updated>2014-07-10T10:07:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/07/10/newsletter-number-46</id>
+    <content type="html"><![CDATA[<p>As usual, it&rsquo;s #TechThursday!</p>
 
 <!-- more -->
 
 
+<blockquote><p>We wanted to take a moment to share the <a href="http://www.gofundme.com/b9dfcg">fundraiser for
+Joe Watkins</a>, a very
+active contributor to the PHP core ecosystem, who has
+recently struggled and is looking for some help.</p></blockquote>
+
+<p>And&hellip;what about us?</p>
+
+<p>This week we&rsquo;ve been talking about <a href="http://buff.ly/1j5avP6">rules to follow when writing OS code</a>
+and are still very excited for <a href="/team#Oluwaseun%20Obajobi">Oba</a>, who is gonna be in Las Vegas to attend
+the <a href="http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/">AWS re:invent</a> later this year.</p>
+
+<p>Hungry for tech news and tutorials, the team has collected this amazing list of
+resources over the past weeK:</p>
+
 <ul>
-<li><p><a href="http://t.co/MvNu3WXg3A">Want a sneak peek at the PHP language spec the @HipHopVM team has been working on?</a></p></li>
-<li><p><a href="http://t.co/FVocuiIbur">How LinkedIn used PoPs and RUM to make dynamic content download 25% faster</a></p></li>
-<li><p><a href="http://buff.ly/1qrKDjV">Elasticsearch in 15 minutes</a></p></li>
-<li><p><a href="http://buff.ly/1mojG8x">gulp inject is one of the best things discovered over the past 3 months&hellip;</a></p></li>
-<li><p><a href="http://buff.ly/UfOyBn">Redesigning the perfect checkout</a></p></li>
-<li><p><a href="http://buff.ly/1qOqW1x">Schedule Load Tests for #APIs in the Cloud for Free</a></p></li>
-<li><p><a href="http://buff.ly/1rweFjF">JadoPado InstaSearch with Algolia</a></p></li>
-<li><p><a href="http://buff.ly/1yB90Mq">What happens when you search &lsquo;ugly hack&rsquo; in GitHub</a></p></li>
-<li><p><a href="http://buff.ly/1qNmlN6">Programming Is Not Math</a></p></li>
-<li><p><a href="http://buff.ly/Uf2USD">Riemann &ndash; A network monitoring system</a></p></li>
-<li><p><a href="http://buff.ly/1qLpg8V">12 killer resources for #api practitioners</a></p></li>
-<li><p><a href="http://dl.hhvm.com/resources/PHPSpec-SneakPeak.pdf">PHP specification draft from Sara Golemon</a></p></li>
-<li><p><a href="http://labs.octivi.com/handling-1-billion-requests-a-week-with-symfony2/">Handling 1 Billion requests a week with Symfony2</a></p></li>
-<li><p><a href="https://markwillcollins.silvrback.com/7-things-i-wish-i-knew-about-angularjs">8 Things I wish I knew about AngularJs</a></p></li>
-<li><p><a href="http://highscalability.com/blog/2014/7/14/bitly-lessons-learned-building-a-distributed-system-that-han.html">Bitly: Lessons Learned Building A Distributed System That Handles 6 Billion Clicks A Month</a></p></li>
-<li><p><a href="https://github.com/fgrehm/vagrant-notify">Vagrant Notify &ndash; forward notify-send from vagrant host machine</a></p></li>
-<li><p><a href="http://xmpp.org/about-xmpp/technology-overview/">XMPP: The Extensible Messaging and Presence Protocol overview</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/more-responsive-single-page-applications-with-angularjs-socketio-creating-the-library--cms-21738">More Responsive Single-Page Applications With AngularJS &amp; Socket.IO: Creating the Library</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-9-analyzing-concerns--cms-21760">Refactoring Legacy Code: Part 9 &ndash; Analyzing Concerns</a></p></li>
-<li><p><a href="http://templatespicy.com/2014/15-best-php-frameworks-2014/">15 best PHP frameworks in 2014</a></p></li>
-<li><p><a href="http://visualping.io/">Get notified on visual changes of a website or website area</a></p></li>
-<li><p><a href="http://pagekit.com/blog/2014/07/21/pagekit-public-alpha-launch">Pagekit, a new, modern CMS built with Symfony components</a></p></li>
-<li><p><a href="http://vexxhost.com/blog/small-dive-into-meteor-js/">Small dive into Meteor.js</a></p></li>
-<li><p><a href="http://9to5mac.com/2014/07/11/apple-launches-blog-to-highlight-new-swift-programming-language">Apple launches blog to highlight new Swift programming language</a></p></li>
-<li><p><a href="https://blog.codecentric.de/en/2014/06/10-early-thoughts-swift-programming-language">10 Early Thoughts on the Swift Programming Language</a></p></li>
-<li><p><a href="http://www.fastcolabs.com/3031400/whats-new-and-different-about-apples-new-swift-programming-language">The New And Different About Apple&rsquo;s New Swift Programming Language</a></p></li>
+<li><a href="http://techcrunch.com/2014/07/07/programmer-craig-muth-kickstarts-a-new-version-of-his-arguably-amazing-shell-xiki/">Programmer Craig Muth Kickstarts A New Version Of His (Arguably Amazing) Shell, Xiki</a></li>
+<li><a href="http://startuptabs.com/">Startup Tabs, Discover a new startup on each new tab</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/07/07/remember-macro-viruses-infected-word-and-excel-files-theyre-back/">Remember macro viruses? Infected Word and Excel files? They&rsquo;re back&hellip;</a></li>
+<li><a href="http://brikis98.blogspot.ae/2014/05/dont-learn-to-code-learn-to-think.html">Don&rsquo;t learn to code. Learn to think.</a></li>
+<li><a href="https://www.apichangelog.com/">API Changelog monitors the docs of APIs you depend on and sends you notifications when they change</a></li>
+<li><a href="https://medium.com/code-adventures/4ba9e7f3e52b">Farewell NodeJs, Hello Go</a></li>
+<li><a href="http://www.google.com/design/">Design @ Google</a></li>
+<li><a href="http://www.techempower.com/benchmarks/">Web Framework Benchmarks</a></li>
+<li><a href="http://buff.ly/1jZU0ip">Rob Pike&rsquo;s Rules of Programming</a></li>
+<li><a href="http://www.mysqlperformanceblog.com/2014/07/08/timestamp-columns-amazon-rds-5-6-and-you/">TIMESTAMP Columns, Amazon RDS 5.6, and You</a></li>
+<li><a href="http://flux7.com/blogs/uncategorized/examining-elastic-load-balancing-policies/?utm_source=Flux7+Blog+Subscriptions&amp;utm_medium=email&amp;utm_campaign=74cd5ecda2-RSS_EMAIL_CAMPAIGN&amp;utm_term=0_3f65e75df7-74cd5ecda2-108386453">Examining Elastic Load Balancing Policies</a></li>
+<li><a href="https://simplytestable.com/">Automated front-end web testing</a></li>
+<li><a href="https://xpect.io/">Xpect.io helps you monitor any piece of code as fast as copy-pasting, so you can be assured that what you did yesterday, is still working today. Get instantly notified so problems can be contained before they adversely affect your business</a></li>
+<li><a href="https://www.getstacker.com">Stacker:&ndash; The Easiest way to Publish &amp; Reply on Social Media</a></li>
+<li><a href="https://appthwack.com">AppThwack:&ndash; Test your app on 100s of real Android and iOS devices in the cloud</a></li>
+<li><a href="https://www.twilert.com/">Twilert:&ndash; Get realtime alerts via email when your brand names, keywords or hashtags are mentioned on Twitter </a></li>
+<li><a href="http://blog.pagerduty.com/2014/06/10-common-ops-mistakes/">10 Common Ops Mistakes</a></li>
+<li><a href="http://techblog.netflix.com/2014/06/announcing-security-monkey-aws-security.html">Netflix introduces new Security Monkey</a></li>
+<li><a href="https://github.com/whummer/toaster">Toaster:&ndash; Automated testing of Infrastructure as Code automation scripts (e.g., Chef)</a></li>
+<li><a href="http://www.ibm.com/developerworks/library/d-security-considerations-devops-adoption/index.html">Security considerations for DevOps adoption</a></li>
+<li><a href="http://buff.ly/1qcuj20">HTTP API Design guide</a></li>
+<li><a href="http://buff.ly/1zkxbzU">So you want to be a PHP Developer?</a></li>
+<li><a href="http://buff.ly/1qOTAD4">Google Has Given #HTTPS a Huge Boost</a></li>
+<li><a href="http://buff.ly/1jhGmfT">The Next Big #Programming Language You’ve Never Heard Of</a></li>
+<li><a href="http://buff.ly/1ou121C">Inbox — The next-generation email platform</a></li>
+<li><a href="http://buff.ly/1j99JRc">New Low Cost EC2 Instances with Burstable Performance</a></li>
+<li><a href="http://buff.ly/1q4ZA6Y">Call me maybe: Elasticsearch gotchas</a></li>
+<li><a href="http://jsmodules.io">A Guide to JavaScript Modules</a></li>
+<li><a href="http://journal.crushlovely.com/post/89978453593/7-patterns-to-refactor-javascript-applications-query">7 Patterns to Refactor JavaScript Applications: Query Objects</a></li>
+<li><a href="http://davidandsuzi.com/using-react-for-faster-renders-and-isomorphism-in-angular">Using React for Faster Renders and Isomosphism in Angular</a></li>
+<li><a href="http://css-tricks.com/fixing-tables-long-strings/">Understanding Fixed Table Layout in CSS</a></li>
+<li><a href="http://ariya.ofilabs.com/2014/07/extracting-parts-of-git-repository-and-keeping-the-history.html">Extracting Parts of Git Repository and Keeping the History</a></li>
+<li><a href="http://www.smashingmagazine.com/2014/07/08/breakpoints-and-the-future-websites">Breakpoints And The Future Of Websites</a></li>
+<li><a href="http://keyholesoftware.com/2014/07/07/lessons-in-automated-testing">Lessons Learned in Automated Testing</a></li>
+<li><a href="http://strongloop.com/strongblog/automatic-node-js-clustering-with-log-aggregation">Automatic Node.js Clustering with Log Aggregation </a></li>
+<li><a href="http://javascript.crockford.com/tdop/tdop.html">Top Down Operator Precedence</a></li>
 </ul>
 
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #47]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/"/>
-    <updated>2014-07-17T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47</id>
-    <content type="html"><![CDATA[<p>TechThursday is here!</p>
-
-<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
-
-<p>This week our teammate <a href="http://tech.namshi.com/team/#Nikita%20Nefedov">nikita</a> got the time to work a bit on <a href="https://github.com/namshi/jose">namshi/jose</a>, and we ended up releasing version 1.1.1!<br />
-<strong>Jose</strong> is a PHP library that provides a lightweight implementation of <strong>JWS</strong> (<a href="http://tools.ietf.org/html/draft-jones-json-web-signature-04">JSON Web Signature</a>) specification.</p>
-
-<p>At the same time we are thrilled about the first <a href="http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10">SymfonyLive New York</a>, we sent a bunch of cfps&hellip; let&rsquo;s cross our fingers!</p></blockquote>
-
-<p>Below the usual list of interesting resources we found out this week, enjoy!</p>
-
-<ul>
-<li><p><a href="http://buff.ly/1jQCIdf">Security releases (CVE-2014-4931): #Symfony 2.3.18, 2.4.8, and 2.5.2 released</a></p></li>
-<li><p><a href="http://buff.ly/1mh5zBN">httpbin: #HTTP Client Testing Service</a></p></li>
-<li><p><a href="http://buff.ly/1rfPkgd">&ldquo;I Do Not Know One Person Who Is Happy at Amazon&rdquo;</a></p></li>
-<li><p><a href="http://buff.ly/1mdnKYY">Digging into #Angular’s “Controller as” syntax</a></p></li>
-<li><p><a href="http://buff.ly/1oTCIIf">Write your #git hooks in #PHP and keep them under git control</a></p></li>
-<li><p><a href="http://buff.ly/1tAEK55">Why I’m staying with NodeJS</a></p></li>
-</ul>
-
+    <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
+    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <updated>2014-06-27T00:45:00+04:00</updated>
+    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
+through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
+by using it and realizing we wanted to achieve zero-downtime
+deployments (ZDD) on our node apps we decided to kick in.</p>
 
 <!-- more -->
 
 
-<ul>
-<li><p><a href="http://t.co/ip61zsw87v">Guy writes a page explaining X11 for mortals <em>and embeds an X11 server in the page</em>. That’s it, everybody out.</a></p></li>
-<li><p><a href="http://buff.ly/1nh6IJW">Zero-downtime database migrations</a></p></li>
-<li><p><a href="http://buff.ly/1qqGUyy">Amazon Zocalo &ndash; Document Storage and Sharing for the Enterprise</a></p></li>
-<li><p><a href="http://buff.ly/1jhYrdw">Breach: a #browser for the #HTML5 era. Entirely written in #Javascript. Free. Modular. Hackable.</a></p></li>
-<li><p><a href="https://helloreverb.com/developers/swagger">Swagger: A simple, open standard for describing REST APIs with JSON | Reverb for Developers http://t.co/WZXF4VnAH3</a></p></li>
-<li><p><a href="http://www.infoq.com/presentations/8-lines-code-refactoring">8 Lines of Code: Greg Young discusses eight lines of very common code finding in them massive numbers of dependencies and difficulties, looking for ways to get rid of them.</a></p></li>
-<li><p><a href="http://msdn.microsoft.com/en-us/library/dn568099.aspx#_The_Sample_Applications">Cloud Design Patterns: Prescriptive Architecture Guidance for Cloud Applications</a></p></li>
-<li><p><a href="http://www.zdnet.com/developers-and-apple-open-up-on-new-swift-programming-language-7000031536">Developers and Apple open up on new Swift programming language</a></p></li>
-<li><p><a href="http://williamdurand.fr/2014/07/02/resting-with-symfony-sos/">RESTing with Symfony: SOS</a></p></li>
-<li><p><a href="https://github.com/jakubroztocil/httpie">HTTPie is a user-friendly cURL replacement</a></p></li>
-<li><p><a href="https://zapier.com/engineering/when-rest-gets-messy/">When REST Gets Messy</a></p></li>
-<li><p><a href="http://zsuraski.blogspot.co.il/2014/07/benchmarking-phpng.html?m=1">PHP-next-gen benchmark</a></p></li>
-<li><p><a href="https://github.com/cjbarber/ToolsOfTheTrade">HN Tools of the Trade, 2014 edition</a></p></li>
-<li><p><a href="https://medium.com/@manicho/how-a-password-changed-my-life-7af5d5f28038">How a Password changed my life</a></p></li>
-<li><p><a href="http://trackjs.com/">JavaScript Error Tracking</a></p></li>
-<li><p><a href="https://formcrafts.com/">Create amazing forms</a></p></li>
-<li><p><a href="http://nakedsecurity.sophos.com/2014/07/16/germany-considers-replacing-email-with-typewriters-to-evade-spying">Germany considers replacing email with typewriters to evade spying</a></p></li>
-<li><p><a href="https://github.com/sausheong/polyglot">A distributed web framework that allows programmers to create web applications in multiple programming languages</a></p></li>
-<li><p><a href="http://vimeo.com/92087878">Zach Holman: If Only I Knew This In College!</a></p></li>
-<li><p><a href="http://programmingisterrible.com/">Programming is terrible &ndash; lessons learned from a life wasted</a></p></li>
-<li><p><a href="http://brikis98.blogspot.ae/2014/03/the-ultimate-guide-to-getting-started.html">The Ultimate Guide to Getting Started with the Play Framework</a></p></li>
-<li><p><a href="http://www.andrisreinman.com/nodemailer-v1-0/">Nodemailer v1.0 released</a></p></li>
-<li><p><a href="http://blog.newrelic.com/2014/07/15/geekspeak-data/">10 Things Non-Developers Love To Say To Developers</a></p></li>
-<li><p><a href="http://realm.io/news/introducing-realm">Introducing Realm &ndash; a mobile-first database</a></p></li>
-</ul>
+<p>This afternoon <a href="/team#Luciano%20Colosio">Lucio</a> came up to me
+and asked me a simple question:</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
-    <updated>2014-06-24T23:20:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
-    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
-that lights up our weekends or solves some of the small dilemmas we daily
-face at work.</p>
+<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
 
-<!-- more -->
+<p>and my answer was clear and simple: we need a robust solution
+for ZDD, let&rsquo;s do this.</p>
 
-
-<p>In the past days <a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>
-has been working on one of his side projects and released
-<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
-it lets you visualize your 4Square checkins on a map
-<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
-and it has been written in his beloved NodeJS.</p>
-
-<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
-    <updated>2014-06-07T00:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
-    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
-deal with configurations, in JavaScript, in a very
-elegant way.</p>
-
-<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
-through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
-recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
-small and simple, and thought to keep your
-configuration as elegant, simple and declarative as possible.</p>
-
-<!-- more -->
-
-
-<p>With reconfig you can do stuff like:</p>
-
-<p>{% codeblock lang:javascript %}
-{% raw %}
-var reconfig = require(&lsquo;reconfig&rsquo;);</p>
-
-<p>var config =  new reconfig({</p>
-
-<pre><code>greet: 'Hello :who!',
-sayhi: '{{ greet }}'
-countries: {
-    uae: {
-        population: '2M',
-        nationalDay: 'December 2nd'
-    }
-    // ...
-}
-</code></pre>
-
-<p>});</p>
-
-<p>// Retrieve a deep config value
-config.get(&lsquo;countries.uae.nationalDay&rsquo;); // December, 2nd</p>
-
-<p>// Pass parameters to the configuration
-config.get(&lsquo;greet&rsquo;, {who: &lsquo;John&rsquo;}); // Hello, John!</p>
-
-<p>// Reference other configuration parameters
-config.get(&lsquo;sayhi&rsquo;, {who: &lsquo;John&rsquo;}); // Hello, John!</p>
-
-<p>// Fallback values
-config.get(&lsquo;something&rsquo;, {}, &lsquo;invalid&rsquo;); // invalid
-{% endraw %}
-{% endcodeblock %}</p>
-
-<p>We&rsquo;re probably gonna look into porting the same to
-PHP (another big player in our stack) so&hellip;stay tuned!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #40]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
-    <updated>2014-05-29T12:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
-    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
+we searched a bit and found a few alternatives, which
+weren&rsquo;t exactly fitting our scenarios:</p>
 
 <ul>
-<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
-<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
-<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
-  Five principles that should guide you every time you write code.
-  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
-  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
+quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
+<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
+seems to have a whole lot of great things but we wanted to have
+the startup script as a global command rather than having to write
+a script on our own (but we might wrap it, as it
+has a lot of cool features, like resizing your cluster)</li>
 </ul>
 
 
-<!-- more -->
+<p>At the end we decided to go for a simple solution after reading
+<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
+that explains how to achieve ZDD on NodeJS.</p>
 
+<p>In a few, very productive hours, Lucio was able to write
+<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
+we decided to release it to the public, as it might
+be interesting out there (and because we really like
+to receive feedbacks!).</p>
 
-<ul>
-<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
-<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
-<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
-<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
-<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
-<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
-<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
-<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
-<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
-<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
-<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
-<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
-<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
-<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
-<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
-<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
-</ul>
+<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
+app that runs through an <code>app.js</code> script, in order to run it through
+ClusterJS you simply have to:</p>
 
+<p>```
+npm install -g clusterjs</p>
+
+<p>clusterjs path/to/app.js
+```</p>
+
+<p>At this point you should be able to see something like this:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js</p>
+
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 4 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21543
+&mdash;&ndash; test app loaded as pid: 21544
+&mdash;&ndash; test app loaded as pid: 21546
+&mdash;&ndash; test app loaded as pid: 21547
+Worker 1 running!
+Worker 2 running!
+Worker 3 running!
+Worker 4 running!
+```</p>
+
+<p>Cool! You have just put your app in a cluster with four workers!</p>
+
+<p>By default, ClusterJS will boot as many workers as CPUs
+in your system; if you wanna change it, simply:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 10</p>
+
+<p>Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 10 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 21636
+&mdash;&ndash; test app loaded as pid: 21635
+Worker 2 running!
+Worker 1 running!
+&mdash;&ndash; test app loaded as pid: 21650
+&mdash;&ndash; test app loaded as pid: 21640
+Worker 9 running!
+&mdash;&ndash; test app loaded as pid: 21639
+&mdash;&ndash; test app loaded as pid: 21641
+Worker 4 running!
+&mdash;&ndash; test app loaded as pid: 21644
+Worker 5 running!
+Worker 3 running!
+Worker 6 running!
+&mdash;&ndash; test app loaded as pid: 21648
+&mdash;&ndash; test app loaded as pid: 21646
+Worker 8 running!
+&mdash;&ndash; test app loaded as pid: 21652
+Worker 7 running!
+Worker 10 running!
+```</p>
+
+<p>How to achieve ZDD? Simply issue a SIGUSR2 command
+to your master process, after updating the files
+in your app:</p>
+
+<p>```
+~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 2
+Booting a cluster of ./test/testApp/app.js
+We are gonna be launching 2 workers
+The cluster will reload on: SIGUSR2
+&mdash;&ndash; test app loaded as pid: 22007
+&mdash;&ndash; test app loaded as pid: 22008
+Worker 1 running!
+Worker 2 running!</p>
+
+<p>SIGUSR2 received, reloading the app
+<strong><em> reloading workers!
+restarting worker: 1
+Shutdown complete for worker 1
+Worker 1 died :(
+&mdash;&ndash; test app loaded as pid: 22018
+&mdash;&ndash; test app loaded as pid: 22021
+Worker 3 running!
+Worker 4 running!
+Replacement worker online.
+</em></strong> reloading workers!
+restarting worker: 2
+Shutdown complete for worker 2
+Worker 2 died :(
+&mdash;&ndash; test app loaded as pid: 22055
+&mdash;&ndash; test app loaded as pid: 22056
+Worker 5 running!
+Worker 6 running!
+Replacement worker online.
+```</p>
+
+<p>If you want to change the signal used to reload the cluster,
+you can do it with a simple option:</p>
+
+<p><code>
+clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1
+</code></p>
+
+<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+
+<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
+feel free to have a look around, as
+<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: team | Tech @ Namshi.com]]></title>
   <link href="http://tech.namshi.com/blog/categories/team/atom.xml" rel="self"/>
   <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:44:46+04:00</updated>
+  <updated>2014-08-07T12:45:49+04:00</updated>
   <id>http://tech.namshi.com/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -103,7 +103,7 @@ got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectur
     <link href="http://tech.namshi.com/blog/2014/06/03/goobye-muhammad/"/>
     <updated>2014-06-03T22:46:00+04:00</updated>
     <id>http://tech.namshi.com/blog/2014/06/03/goobye-muhammad</id>
-    <content type="html"><![CDATA[<p>{% img left team /images/riaz.jpeg Muhammad Riaz %}</p>
+    <content type="html"><![CDATA[<p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
 
 <p>As much as we hate to see people leaving, I think
 it&rsquo;s a good thing to waive the nostalgic feelings
