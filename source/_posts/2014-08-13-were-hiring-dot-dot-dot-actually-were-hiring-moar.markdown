@@ -77,7 +77,7 @@ to help the team.
 > Drop us an email at work-in-tech@namshi.com to apply or simply
 > get more informations about this job opening!
 
-## I don't know if he's crying because of lonelyness of because of NodeJS...
+## I don't know if he's crying because of loneliness or because of NodeJS...
 
 Look at how sad Cirpo, our lead API engineer, was
 today:
@@ -110,11 +110,9 @@ test, then the code :-D).
 We have a [JOIN US](/join-us) page where we listed some of the key
 benefits in working with us, but to recap the most important ones:
 
-* we offer competitive salaries
 * the environment is great, young and people are passionate
-* the office is 1m away from the metro station
+* the office is 1 minute away from the metro station
+* we offer competitive salaries
 * flexible working hours
 * being paid to write [Open Source code](https://github.com/namshi)
 * cakes! cakes! cakes!
-
-
