@@ -61,5 +61,5 @@ Here's a taste of Namshi, as a company:
 
 <iframe src="//player.vimeo.com/video/71411406" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-What are you waiting for? Drop a line at `alessandro.nadalin@namshi.com`
+What are you waiting for? Drop a line at `work-in-tech@namshi.com`
 and let's have a chat!
