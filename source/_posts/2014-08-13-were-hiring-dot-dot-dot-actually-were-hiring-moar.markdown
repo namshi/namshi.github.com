@@ -4,7 +4,7 @@ title: "We're hiring...actually, we're hiring MOAR!"
 date: 2014-08-13 12:14
 comments: true
 categories: [hiring, team, namshi]
-Author: Alessandro Nadalin
+author: Alessandro Nadalin
 ---
 
 Just an heads up that we are looking for talented
