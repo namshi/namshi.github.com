@@ -4,6 +4,7 @@ title: "node-file-ensure, a small filesystem utility to make sure a file is ther
 date: 2014-08-22 19:42
 comments: true
 categories: [JavaScript, NodeJS, OSS, Open Source]
+author: Alessandro Nadalin
 ---
 
 This weekend we've come up with a small utility
