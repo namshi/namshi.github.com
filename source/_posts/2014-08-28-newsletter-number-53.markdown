@@ -6,15 +6,15 @@ comments: true
 categories: [TechThursday, Newsletter, nodejs, javascript, symfony, php, http, oss, github, docker, angular, node]
 ---
 
-> **BOOM!** As anticipated in the last newsletter, we were working on four new opensouce libraries and two of them are already out !!!
+> **BOOM!** As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!
 >
-> [**shisha, smoke tests made easy!**](https://github.com/namshi/shisha), a cool nodejs library by [http://tech.namshi.com/team#Shidhin](#Shidhin CR) and [Hallal](http://tech.namshi.com/team/#Mohamad Hallal) that let's you
-> write [smoke tests](http://en.wikipedia.org/wiki/Smoke_testing_(software)) in an easy way
+> [**shisha: smoke tests made easy!**](https://github.com/namshi/shisha), a cool nodejs library by [Shidhin](http://tech.namshi.com/team/#Shidhin CR) and [Hallal](http://tech.namshi.com/team/#Mohamad Hallal) that let's you
+> write smoke tests in an easy way.
 >
-> [**node-dock**, a sweet remedy for all your docker problems!](https://github.com/namshi/node-dock), another node library by [Hossam](http://tech.namshi.com/team/#Hossam Faris) and [Lucio](http://tech.namshi.com/team/##Luciano Colosio) that
-> has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy function on top of it.
+> [**node-dock**: a sweet remedy for all your docker problems!](https://github.com/namshi/node-dock), another node library by [Hossam](http://tech.namshi.com/team/#Hossam Faris) and [Lucio](http://tech.namshi.com/team/##Luciano Colosio) that
+> has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy functionality on top of it.
 >
-> Even [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) released another tiny-cool node lib called [**node-file-ensure**, a small filesystem utility to make sure a file is there](http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/)
+> Even [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) released another tiny and cool node lib called [**node-file-ensure**, a small filesystem utility to make sure a file is there](http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/)
 >
 > Lucio also wrote a post on his first months here at Namshi: [check it out](http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/)!
 >
