@@ -16,9 +16,9 @@ categories: [TechThursday, Newsletter, nodejs, javascript, symfony, php, http, o
 >
 > Even [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) released another tiny and cool node lib called [**node-file-ensure**, a small filesystem utility to make sure a file is there](http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/)
 >
-> Lucio also wrote a post on his first months here at Namshi: [check it out](http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/)!
+> Lucio also wrote a post detailing his first months here at Namshi: [check it out](http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/)!
 >
-> Last but not least [Geshan](http://tech.namshi.com/team/#Geshan Manandhar) on his vacation back home has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony http://mq-talk.herokuapp.com/
+> Last but not least, [Geshan](http://tech.namshi.com/team/#Geshan Manandhar) on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony http://mq-talk.herokuapp.com/
 
 
 And here we are as usual with a list of interesting links to keep you busy during the upcoming weekend:
