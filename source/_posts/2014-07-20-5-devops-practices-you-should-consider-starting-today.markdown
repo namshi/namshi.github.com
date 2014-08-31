@@ -2,7 +2,7 @@
 author: Geshan Manandhar
 layout: post
 title: "5 DevOps practices you should consider starting today"
-date: 2014-07-20 16:33
+date: 2014-09-01 09:33
 comments: true
 categories:
 - DevOps
@@ -13,7 +13,7 @@ categories:
 DevOps simply stresses on communication, collaboration and integration between software developers and information technology (IT) operations professionals a.k.a sys admins. it's goal is to support automation and maximize predictability, efficiency, security and maintainability of operational processes, meaning you can deploy 5 times on production on the same day with confidence that all systems will be fully operational. This post is moreover a software enginner's point of view on the DevOps side.
 <!-- more -->
 
-It goes without mentioning, to build a robust architecture you will need to follow the industry standards for example, use a distributed version control system - [git](http://git-scm.com/) is a great one, use automated deployment tools - you should check [Capistrano](http://capistranorb.com/), write automated tests using framework like [PHPUnit](http://phpunit.de/), have some form of continuous integration - you can run automated tests with [Travis CI](https://travis-ci.com/) on different versions of a language and have some internal documentation in place which includes basic to advanced things about the codebase and the systems used. Following similar rules, at [Namshi](http://www.namshi.com) we use some DevOps(http://en.wikipedia.org/wiki/DevOps) practices which are very helpful to us, here are some main ones:
+It goes without mentioning, to build a robust architecture you will need to follow the industry standards for example, use a distributed version control system - [git](http://git-scm.com/) is a great one, use automated deployment tools - you should check [Capistrano](http://capistranorb.com/), write automated tests using framework like [PHPUnit](http://phpunit.de/), have some form of continuous integration - you can run automated tests with [Travis CI](https://travis-ci.com/) on different versions of a language and have some internal documentation in place which includes basic to advanced things about the codebase and the systems used. Following similar rules, at [Namshi](http://www.namshi.com) we use some [DevOps](http://en.wikipedia.org/wiki/DevOps) practices which are very helpful to us, here are some main ones:
 
 
 ## Virtual Development Environment -Vagrant
@@ -56,7 +56,7 @@ For software engineers, it is always good to know that the code you wrote is beh
 
 ##Zero Downtime Deployment
 
-I remember the days around two years back, whenever we deployed to production it would have ~1 minute of downtime (maintenance page) for the files to be pulled and the database migrations to run and other tasks. Now, we see almost no downtime during deployments. It has been possible because of [Capistrano](http://capistranorb.com/). When deploying it performs all the tasks and if all tasks are fine then just switches the symlink to point to the new code resulting in almost zero downtime deployment. For NodeJs we use [clusterjs](http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/), which reloads a cluster in place of restarting it and eliminating any downtime.
+I remember the days around two years back, whenever we deployed to production it would have ~1 minute of downtime (maintenance page) for the files to be pulled and the database migrations to run and other tasks. Now, we see almost no downtime during deployments. It has been possible because of [Capistrano](http://capistranorb.com/). When deploying it performs all the tasks and if all tasks are fine then just switches the symlink to point to the new code resulting in almost zero downtime deployment. For NodeJs we use [clusterjs](http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/), which reloads a cluster in place of restarting it and eliminating any downtime without dropping any connection, thus we don't need the maintenance page any more.
 
 Zero Downtime Deployment in case of working system that needs feature upgrade is a shared responsibility between the development team and the sys admins team. In case it's related only to systems like upgrading MYSQL from 5.5 to 5.6, there will be nothing the software engineer can do while the upgrade happens, but before the upgrade the impact analysis should be done where both teams will need to collaborate. There should also be a contingency plan for rollback for each upgrade or new system deployment. Even when working for tickets that need big changes, we as software engineers implementing it should always think about backwards compatibility which can make sure least possible downtime.
 
