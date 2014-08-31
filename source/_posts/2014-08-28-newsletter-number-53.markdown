@@ -4,6 +4,7 @@ title: "Newsletter #53"
 date: 2014-08-28 16:11
 comments: true
 categories: [TechThursday, Newsletter, nodejs, javascript, symfony, php, http, oss, github, docker, angular, node]
+author: Alessandro Cinelli (cirpo)
 ---
 
 > **BOOM!** As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!

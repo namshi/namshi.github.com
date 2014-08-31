@@ -4,6 +4,7 @@ title: "Newsletter #52"
 date: 2014-08-21 12:37
 comments: true
 categories: [TechThursday, Newsletter, nodejs, javascript, symfony, php, http, oss, github]
+author: Alessandro Cinelli (cirpo)
 ---
 
 > As you know the IT team loves opensource and the idea [to give back to the "community"](http://github.com/namshi)! <br />

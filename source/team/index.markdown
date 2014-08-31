@@ -67,13 +67,6 @@ footer: true
     His interests are sliding towards the Backend and API solutions implementation and maintenance.
     With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
 
-*   ##<div id="Luciano Amodio">Luciano Amodio</div>
-    {% img left team /images/renzo.jpg Luciano Amodio %}
-    **Luciano Amodio**  Graduated with magna cum laude in Science and Technology of Artistic Production at the Università di Perugia with the
-    thesis "an architecture of human-machine interaction" and has been doing web development since 2000.
-    He's also interested in Zend Framework, Symfony2, Symfony CMF and Agile.
-    Other Interests: Multimedia (Photo/Video/3D Rendering, Post Production, Editing), Interaction Design (hardware: arduino. software: processing, MAX/MSP) and Philosophy, esoterism, playing piano, photography and research.
-
 *   ##<div id="Nikita Nefedov">Nikita Nefedov</div>
     {% img left team /images/nikita.png Nikita Nefedov %}
     Nikita, a PHP engineer, has experience with PHP since around 5 years, has worked with different frameworks (from CI to Symfony2)  and with Doctrine2 as well.
@@ -112,6 +105,13 @@ footer: true
 We'd also like to list here the rockstart who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Luciano Amodio">Luciano Amodio</div>
+    {% img left team /images/renzo.jpg Luciano Amodio %}
+    **Luciano Amodio**  Graduated with magna cum laude in Science and Technology of Artistic Production at the Università di Perugia with the
+    thesis "an architecture of human-machine interaction" and has been doing web development since 2000.
+    He's also interested in Zend Framework, Symfony2, Symfony CMF and Agile.
+    Other Interests: Multimedia (Photo/Video/3D Rendering, Post Production, Editing), Interaction Design (hardware: arduino. software: processing, MAX/MSP) and Philosophy, esoterism, playing piano, photography and research.
 
 *   ##<div id="Muhammad Riaz">Muhammad Riaz</div>
     {% img left team /images/riaz.jpeg Muhammad Riaz %}

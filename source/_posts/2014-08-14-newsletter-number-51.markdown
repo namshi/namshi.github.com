@@ -4,6 +4,7 @@ title: "Newsletter #51"
 date: 2014-08-14 13:35
 comments: true
 categories: [TechThursday, Newsletter]
+author: Mohamad Hallal
 ---
 
 It's #TechThursday again!
