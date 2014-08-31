@@ -15,6 +15,14 @@ footer: true
     Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
     Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
 
+*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
+    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
+    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
+    He is responsible for leading the System Administration team.
+    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
+    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
+    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
+
 *   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
     {% img left team /images/cirpo.jpg Alessandro Cinelli %}
     **Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
@@ -27,6 +35,12 @@ footer: true
     **Geshan Manandhar** is an experienced software engineer, who loves developing web applications.
     Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is an open source preacher.
     When not programming, he can be found blogging about technology related topics.
+
+*   ##<div id="Daniel Ribeiro">Daniel Ribeiro</div>
+    {% img left team /images/daniel.png Daniel Ribeiro %}
+    **Daniel Ribeiro** is a Technical Leader, Senior Software Engineer, PHP 5.3 Zend Certified Engineer (ZEND021458), Speaker and Evangelist from Brazil. He's also a member of the local PHP community (PHPSC), and has been working with software engineering since 2006.
+    His focus is on software engineering best practices, both concerning the code and the process of software development. He has a quite solid experience with agile practices and leading development teams to enterprise application standards and practices.
+    Technically, he works with a lot of best practices, such as Behavior-Driven Development (BDD). He also has a background on architecture patterns, such as Domain Driven Design (DDD) and Service Oriented Architecture (SOA). He loves to work with high quality code, especially concerning advanced software engineering concepts, such as the SOLID principles and the GoF design patterns.
 
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
@@ -78,14 +92,6 @@ footer: true
     Haneen holds a Bachelor's Degree in Computer Engineering, She basically channels the traffic between IT and other departments.
     She hopes one day she will be able to change the world and she is a shopaholic who needs counseling.
     In her free time she's either WhatsApping or at the gym.
-
-*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
-    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
-    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
-    He is responsible for leading the System Administration team.
-    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
-    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
-    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
 
 *   ##<div id="Vishnu Nair">Vishnu Nair</div>
     {% img left team /images/vishnu.jpg Vishnu Nair %}
