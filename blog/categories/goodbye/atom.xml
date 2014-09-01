@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: goodbye | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/goodbye/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/goodbye/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Goodbye Lucianino!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/"/>
+    <link href="http://namshi.github.io/blog/2014/07/02/goodbye-lucianino/"/>
     <updated>2014-07-02T22:37:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino</id>
+    <id>http://namshi.github.io/blog/2014/07/02/goodbye-lucianino</id>
     <content type="html"><![CDATA[<p>This week one of our teammates left the team
 to pursuit his next big challenge: we are talking
 about <a href="http://tech.namshi.com/team/#Luciano%20Amodio">Luciano</a>
@@ -46,9 +46,9 @@ good luck for his next adventure!</p>
   
   <entry>
     <title type="html"><![CDATA[Goodbye Muhammad!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/03/goobye-muhammad/"/>
+    <link href="http://namshi.github.io/blog/2014/06/03/goobye-muhammad/"/>
     <updated>2014-06-03T22:46:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/03/goobye-muhammad</id>
+    <id>http://namshi.github.io/blog/2014/06/03/goobye-muhammad</id>
     <content type="html"><![CDATA[<p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
 
 <p>As much as we hate to see people leaving, I think

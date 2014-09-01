@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://tech.namshi.com/sitemap.xml 
+Sitemap: http://namshi.github.io/sitemap.xml 

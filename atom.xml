@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -14,17 +14,936 @@
 
   
   <entry>
+    <title type="html"><![CDATA[5 DevOps practices you should consider starting today]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/01/5-devops-practices-you-should-consider-starting-today/"/>
+    <updated>2014-09-01T09:33:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/01/5-devops-practices-you-should-consider-starting-today</id>
+    <content type="html"><![CDATA[<p>DevOps simply stresses on communication, collaboration and integration between software developers and information technology (IT) operations professionals a.k.a sys admins. it&rsquo;s goal is to support automation and maximize predictability, efficiency, security and maintainability of operational processes, meaning you can deploy 5 times on production on the same day with confidence that all systems will be fully operational. This post is moreover a software enginner&rsquo;s point of view on the DevOps side.</p>
+
+<!-- more -->
+
+
+<p>It goes without mentioning, to build a robust architecture you will need to follow the industry standards for example, use a distributed version control system &ndash; <a href="http://git-scm.com/">git</a> is a great one, use automated deployment tools &ndash; you should check <a href="http://capistranorb.com/">Capistrano</a>, write automated tests using framework like <a href="http://phpunit.de/">PHPUnit</a>, have some form of continuous integration &ndash; you can run automated tests with <a href="https://travis-ci.com/">Travis CI</a> on different versions of a language and have some internal documentation in place which includes basic to advanced things about the codebase and the systems used. Following similar rules, at <a href="http://www.namshi.com">Namshi</a> we use some <a href="http://en.wikipedia.org/wiki/DevOps">DevOps</a> practices which are very helpful to us, here are some main ones:</p>
+
+<h2>Virtual Development Environment -Vagrant</h2>
+
+<p><a href="http://www.vagrantup.com/">Vagrant</a> is a virtual development environment that works as controller to a virtual machine on your main machine. The virtual machine has all needed software stack installed, each software is installed as a config. It creates a reproducible and portable development machine which is shared among all the developers, that in turn eliminates &ldquo;Works on my machine&rdquo; syndrome and also help to get started with working on the codebase in a matter of hours compared to a day.</p>
+
+<p>With use of vagrant, it is very easy to install new software and update them. You just add some scripts to how the vagrant box is configured and push the changes. All the software engineers will pull it, reload the vagrant machine and done. All of them have the new software and the correct version of it. As the configs, services and even file paths are shared everyone is on the same page when discussing about the system. If you are already interested in vagrant don&rsquo;t hesitate to start reading it&rsquo;s <a href="http://docs.vagrantup.com/v2/getting-started/index.html">docs</a>.</p>
+
+<h2>Atomic Deployments</h2>
+
+<p>Some months back we used to follow a revised version of <a href="http://nvie.com/posts/a-successful-git-branching-model/">gitflow</a> and grouped multiple tickets in same deployment, basically some completed tickets (generally 4-8) where merged to the <code>develop</code> branch and then merged to the  <code>release</code> branch. A tag was created from the <code>release</code> branch say <code>1.2.3</code> and it was deployed to <code>staging</code> then <code>production</code> after tests were ok. If all goes well the tag is merged to <code>master</code>. Issues with this was, if we had a problem after the deployment pinpointing which ticket introduced this issue was difficult.</p>
+
+<p>Lets fast forward to now, currently we do <strong>atomic deployments</strong>, it means only one ticket is deployed at a time. Each ticket has it&rsquo;s sole deployment. First the ticket is deployed to <code>staging</code> tested and if everything is fine then it&rsquo;s deployed to production.</p>
+
+<p>So, you completed your ticket all the automated tests have passed and your code has been reviewed, then</p>
+
+<ol>
+<li>You deploy it on <code>staging</code> environment after making sure that your branch is rebased with latest <code>master</code>.</li>
+<li>If all tests are fine a tag is created from your ticket&rsquo;s branch say <code>1.2.3</code>.</li>
+<li>The tag <code>1.2.3</code> is deployed to production.</li>
+<li>If all goes well on production, then the tag <code>1.2.3</code> is merged to master.</li>
+</ol>
+
+
+<p>The above steps are carried out for each completed ticket. In case of <strong>atomic deployment</strong> if anything goes wrong, we know what is the cause of it as a ticket is generally a small unit of work. In both cases atomic or grouped deployment, <code>master</code> is always the stable branch deployable to production anytime.</p>
+
+<h2>Multiple staging environments</h2>
+
+<p>As we adopted <strong>atomic deployments</strong>, we needed to wait for the staging environment to be free to test our completed ticket(s). Sometimes the wait was more that a day if we had multiple tickets that had higher priority. There by, we devised a new way to make multiple staging deployments possible, how? The basic idea is:</p>
+
+<ol>
+<li>Deploy with a <code>standalone</code> deployment flag for the ticket branch let&rsquo;s say <code>cancel-email</code>. (Standalone deployment will mean it will be deployed to a folder on the <code>staging</code> server same as the branch name which is <code>cancel-email</code> in this case.)</li>
+<li>To access codebase for this deployed branch (<code>cancel-email</code>), the software engineer who deployed will create a cookie lets say <code>staging-route</code> on the browser with value of the branch name <code>cancel-email</code> and send request from the browser which has this <strong>magic</strong> cookie.</li>
+<li>Nginx will read the <code>staging-route</code> cookie if it&rsquo;s not set, it will route the request to the main staging. If the <code>staging-route</code> cookie is set Nginx will route the request to the branch name folder which will be something like <code>/path/to/codebase/cancel-email</code> and not <code>/path/to/codebase/main</code>.</li>
+</ol>
+
+
+<p>Simple yet effective solution to having a single staging problem. We are still improving it to be used in all our use cases, but the basic idea makes it possible to test multiple tickets independently and without waiting for the <strong>main</strong> <code>staging</code> environment to be free. We used <code>cookie</code> to achieve this instead of URL parameters or subdomains because we can do cookie forwarding that works for all our apps which use Nginx or NodeJs.</p>
+
+<h2>Active logging and monitoring</h2>
+
+<p>We are very keen on logging the events that take place in our system for example, if an email is sent notifying a customer about order being shipped, it is logged. As the number of logs is huge, to help ourselves from drowning in the text logs we use some log management and monitoring tools that help both the development team and the sys admins team. We currently use <a href="http://newrelic.com/">NewRelic</a>, <a href="http://graylog2.org/">Graylog2</a> and <a href="https://www.pagerduty.com/">PagerDuty</a> with a mix of some internal notification systems. These useful tools give us a real time view of what is happening on the systems as well as the health report of the systems.</p>
+
+<p>For software engineers, it is always good to know that the code you wrote is behaving properly as you expected, this is where the Reports from NewRelic and the deliberate logs in Graylog come in very handy to know how the code is working.</p>
+
+<h2>Zero Downtime Deployment</h2>
+
+<p>I remember the days around two years back, whenever we deployed to production it would have ~1 minute of downtime (maintenance page) for the files to be pulled and the database migrations to run and other tasks. Now, we see almost no downtime during deployments. It has been possible because of <a href="http://capistranorb.com/">Capistrano</a>. When deploying it performs all the tasks and if all tasks are fine then just switches the symlink to point to the new code resulting in almost zero downtime deployment. For NodeJs we use <a href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/">clusterjs</a>, which reloads a cluster in place of restarting it and eliminating any downtime without dropping any connection, thus we don&rsquo;t need the maintenance page any more.</p>
+
+<p>Zero Downtime Deployment in case of working system that needs feature upgrade is a shared responsibility between the development team and the sys admins team. In case it&rsquo;s related only to systems like upgrading MYSQL from 5.5 to 5.6, there will be nothing the software engineer can do while the upgrade happens, but before the upgrade the impact analysis should be done where both teams will need to collaborate. There should also be a contingency plan for rollback for each upgrade or new system deployment. Even when working for tickets that need big changes, we as software engineers implementing it should always think about backwards compatibility which can make sure least possible downtime.</p>
+
+<p>If DevOps is about more collaboration and communication between the development team and the sys admins team to achieve higher predictability, maintainability, security and efficiency we are definitely striding to the right direction. We are looking for a <a href="http://tech.namshi.com/join-us/">devOps engineer</a>, if you think we are applying best practices in devOps and you want to join a vibrant team at Namshi get in touch.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Daniel!]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/31/welcome-daniel/"/>
+    <updated>2014-08-31T21:37:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/31/welcome-daniel</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="http://namshi.github.io/images/daniel.png"></p>
+
+<p>We are very excited to welcome <a href="http://namshi.github.io/team#Daniel%20Ribeiro">Daniel</a> in
+the crazy Namshi family!</p>
+
+<p>Daniel Ribeiro is a Technical Leader, Senior Software Engineer,
+PHP 5.3 Zend Certified Engineer (ZEND021458), Speaker and
+Evangelist from Brazil. He’s also a member of the local
+PHP community (PHPSC), and has been working with software
+engineering since 2006. His focus is on software engineering
+best practices, both concerning the code and the process of
+software development. He has a quite solid experience with agile
+practices and leading development teams to enterprise application
+standards and practices. Technically, he works with a lot of
+best practices, such as Behavior-Driven Development (BDD). He
+also has a background on architecture patterns, such as Domain
+Driven Design (DDD) and Service Oriented Architecture (SOA). He
+loves to work with high quality code, especially concerning
+advanced software engineering concepts, such as the SOLID
+principles and the GoF design patterns.</p>
+
+<!-- more -->
+
+
+<p>I am personally very excited as Daniel and me have been
+talking about working together for a while, and we finally
+managed to get a chance of getting hands down to the code
+together!</p>
+
+<p>He will bring good seniority to our team as well as good
+knowledge of best practices and enterprise <em>modus operandi</em>;
+last but not least, Daniel has been eager to accept the challenge
+of taking a closer look at NodeJS as it&rsquo;s getting bigger and
+bigger in our stack.</p>
+
+<p>Looking forward to get the brazilian vibes at our desks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[PHP Generators explained]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/31/php-generators-explained/"/>
+    <updated>2014-08-31T13:05:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/31/php-generators-explained</id>
+    <content type="html"><![CDATA[<p><code>Generators</code> are one of the new cool stuff on <code>PHP 5.5</code>, but it&rsquo;s not a new feature in software programming languages, for example it&rsquo;s on <code>Python</code> since version 2.2 on 2001 and now in the draft <code>ECMAScript</code> 6  (Javascript) specification.</p>
+
+<p>They are a simple and powerful tool for creating <code>iterators</code>. They are like regular functions but using the <code>yield</code> statement whenever they want to return data. A <code>generator</code> looks like a function but behaves like an iterator, it&rsquo;s useful for <code>lazy evaluation</code> &ldquo;which delays the evaluation of an expression until its value is needed&rdquo;.</p>
+
+<!-- more -->
+
+
+<p>Here are some examples in different languages:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="c1">// infinite id generator in JavaScript</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">function</span><span class="o">*</span> <span class="nx">generateId</span><span class="p">(){</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">while</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="nx">index</span><span class="o">++</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">gen</span> <span class="o">=</span> <span class="nx">idMaker</span><span class="p">();</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 0</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 1</span>
+</span><span class='line'><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">gen</span><span class="p">.</span><span class="nx">next</span><span class="p">().</span><span class="nx">value</span><span class="p">);</span> <span class="c1">// 2</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="o">//</span><span class="n">Python</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">def</span> <span class="nf">generateId</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span><span class='line'>    <span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span class='line'>    <span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">:</span>
+</span><span class='line'>        <span class="k">yield</span> <span class="n">num</span> <span class="o">++</span>
+</span><span class='line'>
+</span><span class='line'><span class="n">count_gen_ids</span> <span class="o">=</span> <span class="n">count</span><span class="p">(</span><span class="n">generateId</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="x">//PHP</span>
+</span><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">function</span> <span class="nf">generateId</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="nv">$currentId</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">while</span><span class="p">(</span><span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">yield</span> <span class="o">++</span> <span class="nv">$currentId</span><span class="p">;</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">for</span><span class="p">(</span><span class="nv">$index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nv">$index</span> <span class="o">&lt;</span> <span class="mi">1000</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">echo</span> <span class="nv">$index</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In this examples you would notice that we are using the keyword <code>yield</code> instead of <code>return</code>. <code>return</code> will pass value to the function caller then the function will finish the execution, <code>yield</code> will pass a value then pause the execution of the function &ldquo;which now became a generator&rdquo; till the function caller ask for the next value. Then <code>yield</code> again and again will return values to the function caller.</p>
+
+<p>Using generators is useful in cases where you want iterations on demand, and you will end up with less resources consumption and also still the chance to send some data back to the generator function on any given iteration.</p>
+
+<p>When you have situations that you are fetching large sets of data, you can use generators to <code>lazy load</code> (&ldquo;lazy load is to post pone fetching data till the point that you actually need it) your data sets or doing a lot of computation with big amounts of data.</p>
+
+<p>Imagine that you have the code to execute a query on the database, instead of fetching and returning the whole data at the same time, you can simply return a generator function containing the query cursor that yields one data row at a time.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class='php'><span class='line'><span class="cp">&lt;?php</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">function</span> <span class="nf">getUsers</span><span class="p">()</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>    <span class="nv">$dbh</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">PDO</span><span class="p">(</span><span class="s1">&#39;mysql:host=xyz;port=xyz;dbname=xyz&#39;</span><span class="p">,</span> <span class="s1">&#39;[...]&#39;</span><span class="p">);</span>
+</span><span class='line'>    <span class="nv">$stmt</span> <span class="o">=</span> <span class="nv">$dbh</span><span class="o">-&gt;</span><span class="na">prepare</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM users&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">execute</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>        <span class="k">while</span> <span class="p">(</span><span class="nv">$rs</span> <span class="o">=</span> <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">fetch</span><span class="p">(</span><span class="nx">PDO</span><span class="o">::</span><span class="na">FETCH_OBJ</span><span class="p">))</span> <span class="p">{</span>
+</span><span class='line'>           <span class="nx">yield</span> <span class="nv">$rs</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">}</span> <span class="nx">finally</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nv">$stmt</span><span class="o">-&gt;</span><span class="na">closeCursor</span><span class="p">();</span>
+</span><span class='line'>    <span class="p">}</span>
+</span><span class='line'> <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="nv">$users</span> <span class="o">=</span> <span class="nx">getUsers</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">foreach</span> <span class="p">(</span><span class="nv">$users</span> <span class="k">as</span> <span class="nv">$user</span><span class="p">){</span>
+</span><span class='line'>    <span class="nb">print_r</span><span class="p">(</span><span class="nv">$user</span><span class="p">);</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Speaking of Javascript, one great usage example for generators is the <a href="http://taskjs.org/">task</a> library, a combination of <a href="http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/"><code>promises</code></a>, and <code>generators</code> to write asynchronous callbacks as beautiful as synchronous code.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='js'><span class='line'><span class="kd">function</span> <span class="nx">go</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>    <span class="kd">var</span> <span class="p">{</span> <span class="nx">spawn</span><span class="p">,</span> <span class="nx">join</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">task</span><span class="p">;</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="kd">var</span> <span class="nx">out</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;out&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="nx">spawn</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span><span class='line'>        <span class="nx">out</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;reading...\n&quot;</span><span class="p">;</span>
+</span><span class='line'>        <span class="k">try</span> <span class="p">{</span>
+</span><span class='line'>            <span class="kd">var</span> <span class="p">[</span> <span class="nx">f1</span><span class="p">,</span> <span class="nx">f2</span> <span class="p">]</span> <span class="o">=</span> <span class="nx">yield</span> <span class="nx">join</span><span class="p">(</span><span class="nx">read</span><span class="p">(</span><span class="s2">&quot;sleep.html&quot;</span><span class="p">),</span> <span class="nx">read</span><span class="p">(</span><span class="s2">&quot;read.html&quot;</span><span class="p">));</span>
+</span><span class='line'>            <span class="nx">out</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s2">&quot;sleep.html: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">f1</span><span class="p">.</span><span class="nx">responseText</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;\n&quot;</span><span class="p">;</span>
+</span><span class='line'>            <span class="nx">out</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">+=</span> <span class="s2">&quot;read.html: &quot;</span> <span class="o">+</span> <span class="p">(</span><span class="nx">f2</span><span class="p">.</span><span class="nx">responseText</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;\n&quot;</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>            <span class="nx">e</span><span class="p">.</span><span class="nx">stack</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="sr">/\n/</span><span class="p">).</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">line</span><span class="p">)</span> <span class="p">});</span>
+</span><span class='line'>            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">);</span>
+</span><span class='line'>            <span class="nx">out</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s2">&quot;error: &quot;</span> <span class="o">+</span> <span class="nx">e</span><span class="p">;</span>
+</span><span class='line'>        <span class="p">}</span>
+</span><span class='line'>    <span class="p">});</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Finally you need to consider some stuff before start using <code>Generator</code>, beware that once it get consumed you cannot reset it, you will need to recall it again.</p>
+
+<p>Also keep resources like db connection and file stream busy on the <code>Generator</code> function could be a problem if you are heavily use this resources and you need to release it as soon as possible.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Shisha, smoke test those URLs!]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/30/shisha-smoke-test-those-urls/"/>
+    <updated>2014-08-30T00:35:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/30/shisha-smoke-test-those-urls</id>
+    <content type="html"><![CDATA[<p>Here comes Shisha! Yet another NodeJs based application from Namshi! Shisha is a smoke testing module,
+what is smoke testing? Read about it <a href="http://en.wikipedia.org/wiki/Smoke_testing_(software)">here</a>.
+In short, smoke testing is a term coming from Electrical Engineering, where an Electronic chip is simply tested by
+plugging it into an electric source and observing if smoke comes out of it! How does shisha relate to this? Well,
+just give shisha a list or a file of URLs and expected HTTP status code for each URL, and it will assert the expected
+status codes and show you back a report! It serves as a quick and fast testing platform for your website/APIs.
+Instead of waiting for a unit or an integration test to be prepared and run, simply set shisha to run on your URLs,
+it is fast and simple!</p>
+
+<h1>Install it</h1>
+
+<p>Install shisha globally form <a href="https://www.npmjs.org/package/shisha">NPM</a></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>npm install -g shisha</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Prepare it</h1>
+
+<p>Create a text file named <code>.smoke</code> where all your test cases will reside.</p>
+
+<p>Fill it as following:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>http://example.org 200
+</span><span class='line'>http://example.org/not-there 404</span></code></pre></td></tr></table></div></figure>
+
+
+<h1>Smoke it</h1>
+
+<p>From the directory where your <code>.smoke</code> file is, run <code>shisha</code> and observe the shisha smoking!</p>
+
+<p><video width='640' height='640' preload='none' controls poster=''><source src='http://127.0.0.1:4000/videos/out.mp4' type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'></video></p>
+
+<h1>Features</h1>
+
+<p>You can:&ndash;</p>
+
+<ul>
+<li>Pass a path to any text file containing the right URL status code mapping using <code>--smoke</code> argument</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>shisha --smoke /path/to/text/file</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Pass locals to be replaced in your text file</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>shisha --domain example.org --protocol http</span></code></pre></td></tr></table></div></figure>
+
+
+<pre><code>so your text file would look something like this
+</code></pre>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>:///path 200</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Easily extending shisha in your code as follows</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>var shisha = require('shisha');</span></code></pre></td></tr></table></div></figure>
+
+
+<p>you will have access to the <code>smoke</code> method which accepts the following arguments:</p>
+
+<ul>
+<li>data source, which can be a path to a text file, a list or an object as follows:</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>shisha.smoke('/path/to/text/file', ..., ...);
+</span><span class='line'>
+</span><span class='line'>shisha.smoke(
+</span><span class='line'>    [
+</span><span class='line'>        {
+</span><span class='line'>            url: 'http://example.org',
+</span><span class='line'>            status: 200
+</span><span class='line'>        },
+</span><span class='line'>        ...,
+</span><span class='line'>        ...
+</span><span class='line'>    ]
+</span><span class='line'>);
+</span><span class='line'>
+</span><span class='line'>shisha.smoke(
+</span><span class='line'>    {
+</span><span class='line'>        'http://example.org': 200,
+</span><span class='line'>        'http://example2.org': 404,
+</span><span class='line'>        ...,
+</span><span class='line'>        ...
+</span><span class='line'>    }
+</span><span class='line'>);</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>a list of locals to be replaced in the placeholders of the text file:</p></li>
+<li><p>a callback which accepts the report argument where the set of smoking results are parsed.</p></li>
+</ul>
+
+
+<p>Happy smoking!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #53]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/28/newsletter-number-53/"/>
+    <updated>2014-08-28T16:11:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/28/newsletter-number-53</id>
+    <content type="html"><![CDATA[<blockquote><p><strong>BOOM!</strong> As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!</p>
+
+<ul>
+<li><p><a href="https://github.com/namshi/shisha"><strong>shisha, smoke tests made easy!</strong></a> A cool nodejs library by <a href="http://tech.namshi.com/team/#Shidhin%20CR">Shidhin</a> and <a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Hallal</a> that let&rsquo;s you
+write smoke tests in an easy way.</p></li>
+<li><p><a href="https://github.com/namshi/node-dock"><strong>node-dock, a sweet remedy for all your docker problems!</strong></a> Another node library by <a href="http://tech.namshi.com/team/#Hossam%20Faris">Hossam</a> and <a href="http://tech.namshi.com/team/##Luciano%20Colosio">Lucio</a> that
+has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy functionality on top of it.</p></li>
+<li><p>Even <a href="http://tech.namshi.com/team/#Alessandro%20Nadalin">Alex</a> released another tiny and cool node lib called <a href="http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"><strong>node-file-ensure</strong>, a small filesystem utility to make sure a file is there</a></p></li>
+<li><p>Lucio also wrote a post detailing his first months here at Namshi: <a href="http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/">check it out</a>!</p></li>
+<li><p>Last but not least, <a href="http://tech.namshi.com/team/#Geshan%20Manandhar">Geshan</a> on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony <a href="http://mq-talk.herokuapp.com/">http://mq-talk.herokuapp.com/</a></p></li>
+</ul>
+</blockquote>
+
+<p>And here we are as usual with a list of interesting links to keep you busy during the upcoming weekend:</p>
+
+<ul>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://buff.ly/1nEYH2M">Open Source ain’t Charity</a></p></li>
+<li><p><a href="https://speakerdeck.com/patrickhamann/ship-it-re-develop-conference-august-2014">Ship it! A story of continuous delivery at theguardian.com</a></p></li>
+<li><p><a href="https://www.gov.uk/service-manual/agile/running-retrospectives.html">Reviewing a team&rsquo;s work and the way it is done at Gov.uk Design Services</a></p></li>
+<li><p><a href="http://buff.ly/1wDTrGe">Plain Old #JavaScript Object Visualization</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/eDh0CeQYpA">Stop whatever you are doing and look at p6 of this paper</a></p></li>
+<li><p><a href="http://buff.ly/1lrfCus">Rocket Internet co-founder sees venture take off in Middle East</a></p></li>
+<li><p><a href="http://buff.ly/1q9KvDq">V8&rsquo;s memory mysteries</a></p></li>
+<li><p><a href="http://buff.ly/1sh7Lhn">49ers’ stadium Wi-Fi served 25,000 concurrent users, 2.13TB in all</a></p></li>
+<li><p><a href="http://buff.ly/1mA3a6D">Software Developers and Asperger&rsquo;s Syndrome</a></p></li>
+<li><p><a href="http://buff.ly/1v8pUmg">Docker Service Discovery Using Etcd and Haproxy</a></p></li>
+<li><p><a href="http://buff.ly/1tqNB7a">Stellar: Fast database snapshot and restore tool for development</a></p></li>
+<li><p><a href="http://buff.ly/1seRoll">Javascript optimization killers</a></p></li>
+<li><p><a href="http://buff.ly/1mz2vlT">How I Hacked My Husband&rsquo;s Programming Addiction</a></p></li>
+<li><p><a href="http://mq-talk.herokuapp.com/#/14">programmming mantras to remember</a></p></li>
+<li><p><a href="http://buff.ly/1myYCxx">Facebook Unveils Its Load-Balancing System: Autoscale</a></p></li>
+<li><p><a href="http://buff.ly/1wiCeln">Docker 1.2.0, with restart policies</a></p></li>
+<li><p><a href="http://buff.ly/1lmw8vT">Semantic Versioning Is Not the Solution</a></p></li>
+<li><p><a href="http://buff.ly/1mtjtSS">The Plague of Methods and Frameworks</a></p></li>
+<li><p><a href="http://buff.ly/1s2pxot">Evolution of Docker and Its Impact on AWS &ndash; i build the cloud</a></p></li>
+<li><p><a href="http://buff.ly/1s2p4Cu">Uber opens up its API – and creates a new platform</a></p></li>
+<li><p><a href="https://www.glasswire.com">GlassWire Network Security Monitor &amp; Firewall Tool</a></p></li>
+<li><p><a href="https://netguru.co/blog/posts/procrastination-and-overcoming-programmers-block">Procrastination and Overcoming Programmer&rsquo;s Block</a></p></li>
+<li><p><a href="http://algorithm.dk/posts/rtfm-0day-in-ios-apps-g-gmail-fb-messenger-etc">RTFM 0day in iOS apps: G+, Gmail, FB Messenger</a></p></li>
+<li><p><a href="http://www.codefights.com">CodeFights &ndash; Become a Code Champion</a></p></li>
+<li><p><a href="http://hoa-project.net/En/">Hoa project, a cool set of PHP lib (they deserve more community involvement &ndash; i.e. tests are missing, own standards)</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/bubblejs-a-16k-solution-to-a-common-problem--cms-21986">Bubble.js: A 1.6K Solution to a Common Problem</a></p></li>
+<li><p><a href="http://knplabs.com/blog/2011/05/17/agile-nodejs/">We love Symfony2… but we also love Agility and Node.js</a></p></li>
+<li><p><a href="http://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t">Agile software development methodologies and how to apply them</a></p></li>
+<li><p><a href="http://lafikl.github.io/perfBar/">website performance metrics</a></p></li>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://mobileangularui.com/">Mobile Angular UI</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[So far... so fun!]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/27/so-far-dot-dot-dot-so-fun/"/>
+    <updated>2014-08-27T13:43:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/27/so-far-dot-dot-dot-so-fun</id>
+    <content type="html"><![CDATA[<p> Stardate: <strong>Wed, Apr 23, 2014 at 12:48 PM (GTM+1)</strong></p>
+
+<p> In a cold italian spring day my phone vibrates, as all nerd&rsquo;s phones do many and many times a day.<br>
+ The usual swipe, the screen unlocks and the conclusion of what started just 3 days earlier, in a rushing set of coding challenges and interviews, bears in front of my eyes:</p>
+
+<p><em>&ldquo;Dear Luciano,</em></p>
+
+<p><em>I am delighted to attach an Offer Letter in the capacity of a Senior Frontend Engineer at Namshi, please review and confirm the receipt of the same.</em></p>
+
+<p><em>Your provisional start date is the 11th May, 2014, we require the following scanned documents in order to process your visa:
+Passport – colored copy including first page, renewal page (if any).</em><br>
+<em>Photograph (with a white back ground)</em><br>
+<em>(Optional) Attested degree/high school certificates (stamped from the UAE embassy at the country the degree is issued and the Ministry of Foreign Affairs in Dubai)</em><br>
+<em>2 References (Names, Number &amp; Designation).</em><br>
+<em>If you have any questions, please feel free to get in touch with me directly.&ldquo;</em></p>
+
+<p>And that&rsquo;s how it started.</p>
+
+<br>
+
+
+<p>My departure gets postponed to allow me to attend the <a href="http://2014.jsday.it/">jsDay</a> &amp; <a href="http://2014.phpday.it/">phpDay</a> conference in italy, together with part of what soon will be my new team:</p>
+
+<p><a href="https://twitter.com/TechNamshi/status/467708302143815680"><img class="center" src="http://namshi.github.io/images/posts/rasmus-namshi-scaled.png" width="400" title="result" ></a></p>
+
+<br>
+
+
+<p>I&rsquo;m right now in the middle of my probation period, a 3 months long roller coaster ride in what&rsquo;s probably my most challenging and fulfilling work adventure in my career so far and, bare with me, I&rsquo;d like to share the story if you&rsquo;re pleased.</p>
+
+<br>
+
+
+<p>In a matter of a couple of weeks I&rsquo;m finally stepping on the groud of Dubai.<br>
+The next morning Alex picks me up from my hotel: <strong>Namshi</strong>, at last.<br></p>
+
+<p>The HR department gives me a warm welcome and I&rsquo;m ready to meet <a href="http://tech.namshi.com/team/#Shidhin%20CR">Shidhin</a>, the other new frontend developer I&rsquo;ll work with, we quickly find ourselves sharing the same keyboard and pair prgramming on our 1st project.<br>
+Easy welcome, really, the 1st task we&rsquo;re faced with is &ldquo;Just remake our checkout&hellip; we&rsquo;ll release it before Ramadan begins&rdquo;, states the boss&hellip; In a month!<br>
+After all it&rsquo;s probably one of the most important parts of an e-commerce&rsquo;s UI, if it doesn&rsquo;t work people cannot pay and you know what they say: <em>no money, no honey!</em><br>
+Peace of cake&hellip; &ndash;_^&#8217;</p>
+
+<p>It&rsquo;s almost 8pm and we manage to finally push out branch and open our 1st PR! Which, the next day, gets nicelly bashed of notes and comments.<br>
+Kind of slapping wake up. Well, nobody said it would have been easy here, one thing it&rsquo;s clear since the beginning: no matter how many years of experience you have, one of the most important things in our job is <strong>&ndash; never stop learning &ndash;</strong>, bring your expertiese within the team but be ready to learn a lot from what it quickly shows as a really high and capable group of professionals.</p>
+
+<p>Days go by and in a rush of javascript, PRs and more slap-in-the-face comments some how my enthusiasm grows and my passion gets refeshed. For once I&rsquo;m really feeling like I&rsquo;m back at 25, with tons of stuff to do and learn and with the push to do it.</p>
+
+<p>Julia, code name for the new checkout, is growing fast. I keep looking at the source, amazed by what it (she?) looks like.<br>
+Probably the cleanest and finest peace of software I ever contributed to at that point in time. With the dear help of Shidhin, often guiding me with good tips on the fine art of Angular&rsquo;s tameing, and <a href="http://tech.namshi.com/team/#Alessandro%20Nadalin">Alex</a> carefully preventing my bias from polluting the new baby.<br> Thanks guys :)<br>
+As said, it&rsquo;s always about learning, and I&rsquo;m in a place where for once in years I&rsquo;m not the one that kind of knows-it-all. After all, it&rsquo;s what I was looking for!</p>
+
+<p>It&rsquo;s well known one of the best ways to grow is to push your self, so don&rsquo;t pick the easy task.<br>
+In this spirit I blindly jump on the error handling. The catch is: the app needs to solve it&rsquo;s own errors.<br>
+It&rsquo;s while working on this part an idea came to my mind that in the evening got me publish my 1st oss project since I was here and 1st npm lib ever:<br>
+<a href="https://github.com/unlucio/vpo">Value Path Objects</a><br>
+It happened to be the last piece Alex was looking for in order to be able to publish one more namshi&rsquo;s oss project: <a href="https://github.com/namshi/reconfig">reconfig</a><br>
+Been shy at base I always had problems publishing my code, but that night I guess I got the right push and I finally did it, and I&rsquo;m glad it happened. A new frenzy grew and shortly after I had the urge of sharing some more <a href="https://github.com/unlucio/CarmenSandiego">CarmenSandiego</a>.</p>
+
+<p>This brings us to the new moon and with it Ramadn cames. Julia is done, but since the holy month is a great opportunity for sales, we hold her back from going public. I&rsquo;m still not sure how we got it done.</p>
+
+<p>With the 1st project reaching maturity I get the opportunity of bugging people to let me code some Node.js (finally :D). Looks like we need a 0 downtime solution for updating our node applications. A little bit of javascrit, and lots of wrestling with capistrano and the filesystem later, and <a href="https://github.com/namshi/clusterjs">clusterjs</a> is born. Published at ~1am on a Thursday night (well, actually Friday morning), it&rsquo;s the 1st oss I push in an official Namshi&rsquo;s public repo. And I obviusly manage to make a mess a couple of times before getting the publishing process right. It&rsquo;s amazing how the excitement sometimes gets you out of control.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/posts/clusterjs-publishing.jpg" width="800" title="result" ></p>
+
+<p>During Ramdan me and Shiddin take the change to refine the dear Julia and as Eid cames the lady is ready for her big Debut in Society.<br> The smoothest rollout I ever experienced.</p>
+
+<p>From that day on another month has gone by. A couple of more libs leaked to the public, and I&rsquo;m now mainly working on internal node project. <br>Everyday there&rsquo;s a new challenge and the fun is always on. In the struggles, the laughs, the shishas and the lines of code flow countlessly and every day the bar is pushed a little higher.</p>
+
+<p>It&rsquo;s not always all perfect, for sure. For instance during the week I don&rsquo;t see much sun light, but I try to catch up as much as possibile during the weekends :)<br>
+Living by the sea is definitely a pro, and I get to scuba dive a lot :D</p>
+
+<p>I always hated mondays (actually now Sundays are my Mondays, crazy reverse weekend ;P) and about an year ago I stumbled on this meme:</p>
+
+<p><img src="http://scontent-a.cdninstagram.com/hphotos-xfa1/t51.2885-15/10009391_636510409754554_1999474227_a.jpg" alt="meme" /></p>
+
+<p>Today I&rsquo;m happy to say: <strong>I don&rsquo;t hate mondays any more!</strong> :D</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[node-file-ensure, a small filesystem utility to make sure a file is there]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"/>
+    <updated>2014-08-22T19:42:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there</id>
+    <content type="html"><![CDATA[<p>This weekend we&rsquo;ve come up with a small utility
+that will make our life easier, and hopefully <strong>yours</strong>
+as well!</p>
+
+<!-- more -->
+
+
+<p>We use cascading mechanisms for our configurations, so, for
+example, we define the config in a few different files:</p>
+
+<ul>
+<li><code>base.yml</code>, that has all the common configurations</li>
+<li><code>dev.yml</code>, which is for local environments</li>
+<li><code>staging.yml</code>, which is for our staging environment</li>
+<li><code>live.yml</code>, well&hellip;you guessed it!</li>
+</ul>
+
+
+<p>So, for example, a <code>live.yml</code> might look like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">domain</span><span class="p-Indicator">:</span>   <span class="s">&#39;namshi.com&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>whereas the base one has many more values:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">apis</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">version</span><span class="p-Indicator">:</span>   <span class="s">&#39;v1&#39;</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">domain</span><span class="p-Indicator">:</span>    <span class="s">&#39;api.{{</span><span class="nv"> </span><span class="s">domain</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">baseUrl</span><span class="p-Indicator">:</span>   <span class="s">&#39;https://{{</span><span class="nv"> </span><span class="s">apis.domain</span><span class="nv"> </span><span class="s">}}&#39;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There&rsquo;s a problem with this approach: if one of the developers
+wants to change a value in his <code>dev.js</code> git will tell him that
+the file has changed, which is quite annoying!</p>
+
+<p>To overcome this we always put it in the <code>.gitignore</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">dev.yml</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and instead commit a <code>dev.yml.example</code> file that has the
+skeleton of the file, asking everyone, when booting the application
+for the first time, to copy that file to a <code>dev.js</code>.</p>
+
+<p>Things work flawlessly until you need to do this 10 times
+(I mean, in 10 projects, like we do) or when you forget this step
+during the installation and waste a lot of time trying to debug why
+the application is not running correctly.</p>
+
+<p>To overcome this annoying issue we decided to develop a small utility,
+<a href="https://github.com/namshi/node-file-ensure">node-file-ensure</a>, that
+does all of this for you:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">ensure</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;file-ensure&#39;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">ensure</span><span class="p">(</span><span class="s1">&#39;./config/dev.yml&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;./config/dev.yml.example&#39;</span><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Simple as that!</p>
+
+<p><code>ensure</code> will make sure to create an empty file if it doesnt find
+the one you specified:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">ensure</span><span class="p">(</span><span class="s1">&#39;./config/dev.yml&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>and is able to copy the contents from another file,
+like in the first example above:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">ensure</span><span class="p">(</span><span class="s1">&#39;./config/dev.yml&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">from</span><span class="o">:</span> <span class="s1">&#39;./config/dev.yml.example&#39;</span><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If you need to run any check after <code>ensure</code> has run,
+you can provide a callback:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">ensure</span><span class="p">(</span><span class="s1">&#39;path/to/config/dev.yml&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">src</span><span class="o">:</span> <span class="s1">&#39;path/to/config/dev.yml.example&#39;</span><span class="p">},</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">){</span>
+</span><span class='line'>  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;path/to/config/dev.yml&#39;</span><span class="p">).</span><span class="nx">toString</span><span class="p">()</span> <span class="o">===</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="s1">&#39;path/to/config/dev.yml.example&#39;</span><span class="p">).</span><span class="nx">toString</span><span class="p">());</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it! Tests run through mocha and we&rsquo;ve set them up
+on <a href="https://travis-ci.org/namshi/node-file-ensure">travis</a>,
+to be on the safe side :)</p>
+
+<p>If you have patches, suggestions or rants&hellip;feel free to open
+an <a href="https://github.com/namshi/node-file-ensure/issues">issue on GitHub</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #52]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/21/newsletter-number-52/"/>
+    <updated>2014-08-21T12:37:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/21/newsletter-number-52</id>
+    <content type="html"><![CDATA[<blockquote><p>As you know the IT team loves opensource and the idea <a href="http://github.com/namshi">to give back to the &ldquo;community&rdquo;</a>! <br />
+That&rsquo;s why on Tuesday evening we did an internal hackathon, we bootstrapped four open source projects that we are going to release soon, <br /> stay tuned!<br />
+<a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>, our Nodejs maniac, introduced the team to node&rsquo;s history:</p></blockquote>
+
+<p><img class="center" src="http://namshi.github.io/images/posts/lucio-node-presentation.png" width="800" title="result" ></p>
+
+<p>Below the usual list of interesting links we found this week:</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1z2jZga">On Sexual Harassment in the Tech Industry</a></p></li>
+<li><p><a href="http://buff.ly/1pYrQJF">Promoting Symfony: One step at a time</a></p></li>
+<li><p><a href="http://buff.ly/YsjYqC">Token-base AngularJS auth</a></p></li>
+<li><p><a href="http://buff.ly/1vZZGUm">Welcoming the Orchard and Fig team in Docker</a></p></li>
+<li><p><a href="http://buff.ly/1ptfB8L">HTTP Shaming</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://elnur.pro/symfony-without-bundles/">Symfony without bundles, an interesting approach</a></p></li>
+<li><p><a href="http://labs.qandidate.com/blog/2014/08/18/a-new-feature-toggling-library-for-php/">A new feature toggling library for PHP</a></p></li>
+<li><p><a href="http://buff.ly/1psgj62">Understanding process.nextTick() &ndash; How To Node</a></p></li>
+<li><p><a href="http://gwendall.github.io/way/">Way.JS: Simple, lightweight, persistent two-way databinding</a></p></li>
+<li><p><a href="http://bjorn.tipling.com/state-and-regular-expressions-in-javascript">What you should know about JavaScript regular expressions</a></p></li>
+<li><p><a href="http://fdietz.github.io/recipes-with-angular-js/">Recipes with Angular.js</a></p></li>
+<li><p><a href="https://github.com/krakjoe/pthreads">Threading for PHP &ndash; Share Nothing, Do Everything :)</a></p></li>
+<li><p><a href="https://github.com/propelorm/Propel2">Propel2 (ORM) for PHP 5.4</a></p></li>
+<li><p><a href="http://taskjs.org/">generators + promises = tasks</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #51]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/14/newsletter-number-51/"/>
+    <updated>2014-08-14T13:35:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/14/newsletter-number-51</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s #TechThursday again!</p>
+
+<!-- more -->
+
+
+<blockquote><p><a href="http://tech.namshi.com/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/">W E &ndash; A R E &ndash; H I R I N G, we are hiring moar&hellip;!</a></p>
+
+<p>Could you spot all those sad faces in the blog post? What are you waiting for? :)
+We are also looking for a Frontend Developer, someone who is skilled on HTML5 and CSS3 and knows the basics of JavaScript but wants to expand his knowledge in that direction, <a href="https://github.com/namshi/coding-challenges/blob/master/frontend-developer.md">here is the coding challenge!</a></p>
+
+<p>Other then open positions in the IT team, Namshi is looking for a <a href="https://www.smartrecruiters.com/Namshi/78541293-merchandising-data-processor-intern">Merchandising Data Processor intern</a>, please spread the word!</p></blockquote>
+
+<p>And below the usual gorgeus list of interesting linkes to spice up your next weekend:</p>
+
+<ul>
+<li><a href="http://buff.ly/Y70Gai">Why I design at Facebook</a></li>
+<li><a href="http://federico.galassi.net/2011/05/25/die-semicolon-die/">Die semicolon die!</a></li>
+<li><a href="http://buff.ly/1osA6U2">Doing good work with bad tools</a></li>
+<li><a href="http://buff.ly/Vgicql">Reserve your favorite username in new startups</a></li>
+<li><a href="http://buff.ly/1kRHhEO">Reasoned PHP</a></li>
+<li><a href="http://bocoup.com/weblog/javascript-arduino-digital-clock-johnny-five/">JavaScript: A Digital Clock with Johnny-Five</a></li>
+<li><a href="https://github.com/jmcunningham/AngularJS-Learning">AngularJS Learning Resources</a></li>
+<li><a href="https://t.co/FL1XdRK4kY">npm-dom Useful npm front-end modules</a></li>
+<li><a href="http://buff.ly/1nyEJFV">Why I am leaving the best job I ever had</a></li>
+<li><a href="http://buff.ly/1u4WIfx">MongoDB Inc. Appoints Dev Ittycheria as President and CEO</a></li>
+<li><a href="http://buff.ly/1vjF3Cn">Greatest pr of all time</a></li>
+<li><a href="http://buff.ly/1sDJhB5">Redis Sentinel at Flickr</a></li>
+<li><a href="http://www.zdnet.com/what-is-docker-and-why-is-it-so-darn-popular-7000032269/">What is Docker and why is it so darn popular?</a></li>
+<li><a href="http://codecondo.com/javascript-framework-showdown-use/">JavaScript Framework Showdown: Which Should You Use?</a></li>
+<li><a href="http://alistapart.com/blog/post/the-most-dangerous-word-in-software-development">The Most Dangerous Word In Software Development</a></li>
+<li><a href="https://github.com/krakjoe/pthreads">Threading for PHP &ndash; Share Nothing, Do Everything :)</a></li>
+<li><a href="https://bugs.launchpad.net/ubuntu/+source/cupsys/+bug/255161/comments/28">A funny bug in Ubuntu&hellip;</a></li>
+<li><a href="https://github.com/propelorm/Propel2">Propel2 (ORM) for PHP 5.4</a></li>
+<li><a href="http://taskjs.org/">Generators + promises = tasks</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[We're hiring...actually, we're hiring MOAR!]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/"/>
+    <updated>2014-08-13T12:14:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar</id>
+    <content type="html"><![CDATA[<p>Just an heads up that we are looking for talented
+engineers for our tech team, and our guys are very
+sad they don&rsquo;t have too many new friends!</p>
+
+<!-- more -->
+
+
+<p>Besides looking for a Lead Mobile developer, as we
+<a href="http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/">announced a few weeks back</a>,
+we are looking for some other key figures in our team.</p>
+
+<h2>No HTML/CSS love&hellip;</h2>
+
+<p>Our frontend team, usually happy to write AngularJS
+directives or a bunch of frontend-ish NodeJS apps,
+is devastated as they feel they are missing a third
+element who can help them achieve greatness.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/frontend-sad.png"></p>
+
+<p>To make Lucio and Shidhin happy, we want to add a new
+member in our team, a <strong>Frontend Developer</strong>, someone who
+is skilled on HTML5 and CSS3 and knows the basics of
+JavaScript but wants to expand his knowledge in that
+direction.</p>
+
+<p>You will work on a whole lot of new internal applications
+as well as help streamlining our frontend processes, together
+with the rest of the team: which frameworks shall we use? Bootstrap or
+Foundation? How can we use Yeoman&rsquo;s generator to speed up
+most of our code generation? How can we make our web apps
+faster <a href="https://github.com/addyosmani/critical">extracting critical styles</a>
+and so on? These are just a few questions you will need to
+ask yourself once you come here.</p>
+
+<p>You will come here knowing how to design a frontend (mastering
+the presentation layer, so HTML, CSS, jQuery) but will leave Namshi
+knowing how to build the presentation and logic behind a full
+frontend application (AngularJS, Node or something more spicy
+like <a href="http://www.polymer-project.org/">polymer</a>).</p>
+
+<blockquote><p>Drop us an email at <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#119;&#111;&#x72;&#x6b;&#x2d;&#105;&#x6e;&#x2d;&#x74;&#101;&#x63;&#x68;&#64;&#x6e;&#97;&#x6d;&#x73;&#x68;&#x69;&#46;&#99;&#x6f;&#x6d;">&#x77;&#111;&#114;&#107;&#x2d;&#105;&#x6e;&#x2d;&#x74;&#x65;&#99;&#104;&#64;&#110;&#x61;&#109;&#115;&#x68;&#x69;&#x2e;&#99;&#111;&#x6d;</a> to apply or simply
+get more informations about this job opening!</p></blockquote>
+
+<h2>Sitting on an empty (sysadmin) chair&hellip;</h2>
+
+<p>Look at the systeam, so sad: they really
+need some new buddy for their games.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/sys-sad.png"></p>
+
+<p>The chair is empty, and that makes me so sad! If only
+we could find someone who would like to come and join
+the hottest SOA of the Middle East&hellip;</p>
+
+<p>So yeah, we&rsquo;re also looking for a <strong>System Administrator</strong>,
+someone who knows how configuration management works,
+who has relevant experience on cloud infrastructures as
+AWS and wants to use some of the latest technologies, like
+Docker or Deis, to help us automate and scale the hell out
+of our architecture; we are trying to switch towards a more
+devops oriented organization, and need someone with that
+mindset to improve the current state of the team: as an example,
+we use <a href="http://serverspec.org/">serverspec</a> to test some of
+our configurations, and would like someone who can get his/her
+hands dirty with both programming and system administration
+to help the team.</p>
+
+<blockquote><p>Drop us an email at <a href="&#x6d;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#x77;&#111;&#114;&#x6b;&#45;&#105;&#110;&#45;&#x74;&#x65;&#x63;&#x68;&#x40;&#110;&#x61;&#109;&#115;&#x68;&#x69;&#x2e;&#99;&#x6f;&#x6d;">&#x77;&#x6f;&#114;&#107;&#45;&#105;&#x6e;&#45;&#x74;&#x65;&#99;&#x68;&#x40;&#110;&#x61;&#x6d;&#x73;&#104;&#x69;&#46;&#x63;&#x6f;&#109;</a> to apply or simply
+get more informations about this job opening!</p></blockquote>
+
+<h2>I don&rsquo;t know if he&rsquo;s crying because of loneliness or because of NodeJS&hellip;</h2>
+
+<p>Look at how sad Cirpo, our lead API engineer, was
+today:</p>
+
+<p><img class="center" src="http://namshi.github.io/images/cirpo-sad.png"></p>
+
+<p>It&rsquo;s true that he might be sad because we decided
+to use a lot of NodeJS instead of PHP, but I
+think his struggles also come from the fact that he feels
+we need a good <strong>Senior Software engineer</strong>, specialized in
+NodeJS, who can help the team getting more skilled with
+this &ldquo;new&rdquo; platform.</p>
+
+<p>The ideal candidate would have a few years of experience
+on production-ready Node systems, and it would be a great
+plus if we can get someone who has a broader experience
+with different programming paradigms, as we feel the most
+important part of this job is the brain, and it would be great
+if we get someone that has been in a few different battlefields :)</p>
+
+<p>We need someone who first solves the problem, then writes the
+code (or, even better: first solves the problem, then writes the
+test, then the code :-D).</p>
+
+<blockquote><p>Drop us an email at <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;&#x77;&#x6f;&#x72;&#x6b;&#x2d;&#x69;&#110;&#45;&#x74;&#x65;&#x63;&#x68;&#64;&#x6e;&#97;&#x6d;&#115;&#x68;&#x69;&#x2e;&#99;&#111;&#109;">&#119;&#x6f;&#x72;&#x6b;&#45;&#x69;&#x6e;&#45;&#116;&#x65;&#x63;&#104;&#64;&#110;&#97;&#x6d;&#x73;&#x68;&#105;&#46;&#99;&#x6f;&#109;</a> to apply or simply
+get more informations about this job opening!</p></blockquote>
+
+<h2>About Namshi</h2>
+
+<p>We have a <a href="http://namshi.github.io/join-us">JOIN US</a> page where we listed some of the key
+benefits in working with us, but to recap the most important ones:</p>
+
+<ul>
+<li>the environment is great, young and people are passionate</li>
+<li>the office is 1 minute away from the metro station</li>
+<li>we offer competitive salaries</li>
+<li>flexible working hours</li>
+<li>being paid to write <a href="https://github.com/namshi">Open Source code</a></li>
+<li>cakes! cakes! cakes!</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Newsletter #50]]></title>
-    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
     <updated>2014-08-07T11:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
 
 <p>Announcement:</p>
 
 <blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#119;&#111;&#114;&#x6b;&#45;&#105;&#x6e;&#x2d;&#x74;&#x65;&#99;&#104;&#64;&#110;&#97;&#109;&#x73;&#x68;&#x69;&#x2e;&#99;&#111;&#x6d;">&#x77;&#x6f;&#114;&#107;&#x2d;&#x69;&#x6e;&#45;&#x74;&#x65;&#99;&#104;&#64;&#110;&#97;&#x6d;&#x73;&#x68;&#x69;&#46;&#x63;&#111;&#109;</a></p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x77;&#x6f;&#114;&#107;&#45;&#x69;&#x6e;&#45;&#116;&#x65;&#99;&#x68;&#x40;&#x6e;&#x61;&#109;&#x73;&#x68;&#x69;&#46;&#x63;&#111;&#109;">&#x77;&#x6f;&#114;&#x6b;&#x2d;&#105;&#110;&#x2d;&#x74;&#x65;&#x63;&#104;&#64;&#x6e;&#x61;&#109;&#x73;&#104;&#x69;&#x2e;&#x63;&#111;&#109;</a></p></blockquote>
 
 <p>Here are your links for this week!</p>
 
@@ -63,9 +982,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #49]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/"/>
+    <link href="http://namshi.github.io/blog/2014/07/31/newsletter-number-49/"/>
     <updated>2014-07-31T11:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49</id>
+    <id>http://namshi.github.io/blog/2014/07/31/newsletter-number-49</id>
     <content type="html"><![CDATA[<p>TechThursday is here!</p>
 
 <blockquote><p>Namshi is hiring! <a href="http://t.co/kfUX1C0MMy">HR Generalist in United Arab Emirates</a> Please spread the word!</p>
@@ -113,9 +1032,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #48]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/"/>
+    <link href="http://namshi.github.io/blog/2014/07/24/newsletter-number-48/"/>
     <updated>2014-07-24T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48</id>
+    <id>http://namshi.github.io/blog/2014/07/24/newsletter-number-48</id>
     <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
 
 <blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
@@ -170,9 +1089,9 @@ We will soon talk about it in a blog post, stay tuned and keep following <a href
   
   <entry>
     <title type="html"><![CDATA[Newsletter #47]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/"/>
+    <link href="http://namshi.github.io/blog/2014/07/17/newsletter-number-47/"/>
     <updated>2014-07-17T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47</id>
+    <id>http://namshi.github.io/blog/2014/07/17/newsletter-number-47</id>
     <content type="html"><![CDATA[<p>TechThursday is here!</p>
 
 <blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
@@ -229,9 +1148,9 @@ We will soon talk about it in a blog post, stay tuned and keep following <a href
   
   <entry>
     <title type="html"><![CDATA[Newsletter #46]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/10/newsletter-number-46/"/>
+    <link href="http://namshi.github.io/blog/2014/07/10/newsletter-number-46/"/>
     <updated>2014-07-10T10:07:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/10/newsletter-number-46</id>
+    <id>http://namshi.github.io/blog/2014/07/10/newsletter-number-46</id>
     <content type="html"><![CDATA[<p>As usual, it&rsquo;s #TechThursday!</p>
 
 <!-- more -->
@@ -245,7 +1164,7 @@ recently struggled and is looking for some help.</p></blockquote>
 <p>And&hellip;what about us?</p>
 
 <p>This week we&rsquo;ve been talking about <a href="http://buff.ly/1j5avP6">rules to follow when writing OS code</a>
-and are still very excited for <a href="http://tech.namshi.com/team#Oluwaseun%20Obajobi">Oba</a>, who is gonna be in Las Vegas to attend
+and are still very excited for <a href="http://namshi.github.io/team#Oluwaseun%20Obajobi">Oba</a>, who is gonna be in Las Vegas to attend
 the <a href="http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/">AWS re:invent</a> later this year.</p>
 
 <p>Hungry for tech news and tutorials, the team has collected this amazing list of
@@ -295,13 +1214,13 @@ resources over the past weeK:</p>
   
   <entry>
     <title type="html"><![CDATA[A bit of Namshi at the 2014 AWS re:invent]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/"/>
+    <link href="http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/"/>
     <updated>2014-07-05T20:54:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent</id>
+    <id>http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png" width="120"></p>
 
 <p>It&rsquo;s gonna be a great time in Las Vegas for
-<a href="http://tech.namshi.com/team#Oluwaseun%20Obajobi">Oba</a>, our Lead
+<a href="http://namshi.github.io/team#Oluwaseun%20Obajobi">Oba</a>, our Lead
 System Administrator, who is going to attend
 the 2014 edition of <a href="https://reinvent.awsevents.com/">AWS re:invent</a>,
 the international event for the cloud lovers.</p>
@@ -336,9 +1255,9 @@ a blast in the States!</p>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #45]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/"/>
+    <link href="http://namshi.github.io/blog/2014/07/03/newsletter-number-45/"/>
     <updated>2014-07-03T11:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45</id>
+    <id>http://namshi.github.io/blog/2014/07/03/newsletter-number-45</id>
     <content type="html"><![CDATA[<p>Welcome to <strong>TechThursday</strong>!</p>
 
 <h2>Announcements</h2>
@@ -374,9 +1293,9 @@ a blast in the States!</p>
   
   <entry>
     <title type="html"><![CDATA[Goodbye Lucianino!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/"/>
+    <link href="http://namshi.github.io/blog/2014/07/02/goodbye-lucianino/"/>
     <updated>2014-07-02T22:37:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino</id>
+    <id>http://namshi.github.io/blog/2014/07/02/goodbye-lucianino</id>
     <content type="html"><![CDATA[<p>This week one of our teammates left the team
 to pursuit his next big challenge: we are talking
 about <a href="http://tech.namshi.com/team/#Luciano%20Amodio">Luciano</a>
@@ -405,9 +1324,9 @@ good luck for his next adventure!</p>
   
   <entry>
     <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
+    <link href="http://namshi.github.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
     <updated>2014-06-29T22:58:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
+    <id>http://namshi.github.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
     <content type="html"><![CDATA[<p>If you&rsquo;re a geek somewhere around Boston, in September,
 you definitely don&rsquo;t want to miss the
 <a href="http://www.northeastphp.org/">PHP North East</a>
@@ -450,9 +1369,9 @@ attend his talk!</p>
   
   <entry>
     <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <link href="http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
     <updated>2014-06-27T00:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <id>http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
     <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
 through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
 by using it and realizing we wanted to achieve zero-downtime
@@ -461,7 +1380,7 @@ deployments (ZDD) on our node apps we decided to kick in.</p>
 <!-- more -->
 
 
-<p>This afternoon <a href="http://tech.namshi.com/team#Luciano%20Colosio">Lucio</a> came up to me
+<p>This afternoon <a href="http://namshi.github.io/team#Luciano%20Colosio">Lucio</a> came up to me
 and asked me a simple question:</p>
 
 <blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
@@ -669,556 +1588,6 @@ you can do it with a simple option:</p>
 <p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
 feel free to have a look around, as
 <a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #44]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/26/newsletter-number-44/"/>
-    <updated>2014-06-26T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/26/newsletter-number-44</id>
-    <content type="html"><![CDATA[<p><strong>TechThursday</strong> is here folks and we have two special mentions today.</p>
-
-<p><a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad Hallal</a> wrote an awesome post about <a href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/">his pitfalls as junior developer</a></p>
-
-<p><a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a> released a very cool personal project: <a href="https://github.com/unlucio/carmensandiego">Carmen Sandiego</a>.
-This nodejs app let&rsquo;s you visualize your Foursquare checkins on a world map!
-<a href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/">Check the dedicated blog post</a></p>
-
-<p>Here the list of other useful links of the week:</p>
-
-<ul>
-<li><p><a href="http://blog.andyet.com/2014/06/25/introducing-ampersand-js">Introducing Ampersand.js, a highly modular, loosely coupled, non-frameworky framework for building advanced JavaScript apps</a></p></li>
-<li><p><a href="http://the-paper-trail.org/blog/the-elephant-was-a-trojan-horse-on-the-death-of-map-reduce-at-google/">On the death of Map-Reduce at Google</a></p></li>
-<li><p><a href="http://strongloop.com/strongblog/comparing-node-js-promises-trycatch-zone-js-angular/">Handling errors in asynchronous flow</a></p></li>
-<li><p><a href="http://www.collectionsjs.com/">Javascript implementation of common data structures</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://elm-lang.org/">A functional reactive language for interactive applications</a></p></li>
-<li><p><a href="http://plaintextoffenders.com/">Passwords in Plain text</a></p></li>
-<li><p><a href="https://developers.google.com/web/starter-kit/">Google Web Started Kit</a></p></li>
-<li><p><a href="http://blog.nullspace.io/recovering-deleted-files-using-only-grep.html">Recovering deleted files using only grep</a></p></li>
-<li><p><a href="http://www.paperplanes.de/2014/6/20/what-blameless-postmortem-taught-me.html">Benefits of post-mortems for incidents, the need to make them blameless &ndash; and the knock on effect that has on an organisation’s culture</a></p></li>
-<li><p><a href="http://blog.jaywayco.co.uk/sysops-are-end-users-too/">Why it’s important to have real users, in this case systems administrators, on the product team</a></p></li>
-<li><p><a href="http://newrelic.com/devops/toolset">A Short List of DevOps Tools</a></p></li>
-<li><p><a href="http://www.linuxinsider.com/story/Should-Everyone-Learn-to-Code-80634.html">Should Everyone Learn to Code?</a></p></li>
-<li><p><a href="http://knplabs.com/blog/2011/10/10/give-your-projects-a-gaufrette/">Gaufrette: a PHP library that provides a filesystem abstraction layer</a></p></li>
-<li><p><a href="http://marcjschmidt.de/blog/2014/02/08/php-high-performance.html">Bring High Performance Into Your PHP App</a></p></li>
-<li><p><a href="http://blog.tomaka17.com/2012/12/random-tricks-when-using-angularjs/">Random tricks when using AngularJS</a></p></li>
-<li><p><a href="http://infrequently.org/2013/11/long-term-web-semantics/">Long Term Web Semantics</a></p></li>
-<li><p><a href="http://techcrunch.com/2014/06/19/google-launches-web-starter-kit-a-boilerplate-for-multi-screen-web-development/">Google’s New Web Starter Kit Is A Boilerplate For Multi-Screen Web Development</a></p></li>
-<li><p><a href="http://www.youtube.com/playlist?list=PLOU2XLYxmsIJrr0ZjgPIR6n5PFTu7quwJ">Find out about the latest product and platform innovations at Google I/O 2014</a></p></li>
-<li><p><a href="http://code.tutsplus.com/articles/quick-tip-set-relative-urls-with-the-base-tag--cms-21399">Quick Tip: set relative URLs with the “base” Tag</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-6-attacking-complex-methods--cms-21522">Refactoring Legacy Code: Part 6 &ndash; Attacking Complex Methods</a></p></li>
-<li><p><a href="http://friendsofsymfony.github.io/slides/resting-with-symfony2.html">RESTing with Symfony 2</a></p></li>
-<li><p><a href="http://keyholesoftware.com/2014/06/16/code-for-maintainability/">Code for maintainability so the next developer doesn’t hate you</a></p></li>
-<li><p><a href="http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/">Docker: How speed up deployment involving npm install and bower install</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[When you start working as a software developer...]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/"/>
-    <updated>2014-06-24T23:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot</id>
-    <content type="html"><![CDATA[<p>&hellip;it&rsquo;s always a joy, full of surprises: what they don&rsquo;t tell you
-is that not all of the surprises are much fun.</p>
-
-<!-- more -->
-
-
-<p>Kudos to <a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad</a>
-who shared his <a href="http://mohdhallal.github.io/blog/2014/06/18/my-top-10-junior-developer-pitfalls/">10 most dramatic moments as a Junior software engineer</a>
-in his latest blog post: the whole team at Namshi had so much fun going through
-it because:</p>
-
-<ul>
-<li>we heard him shouting at Vim</li>
-<li>we&rsquo;ve all been there :)</li>
-</ul>
-
-
-<p>&hellip;and what about you? Which ones were your biggest #EPICFAIL?</p>
-
-<p>On a side note, it&rsquo;s great to see how passionate engineers like
-Mohamad grown on a daily basis &mdash; especially compared to the
-&ldquo;old guys&rdquo; like me: one of his open source libraries,
-<a href="https://github.com/namshi/mockserver">Mockserver</a>,
-is definitely something you should check out.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
-    <updated>2014-06-24T23:20:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
-    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
-that lights up our weekends or solves some of the small dilemmas we daily
-face at work.</p>
-
-<!-- more -->
-
-
-<p>In the past days <a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>
-has been working on one of his side projects and released
-<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
-it lets you visualize your 4Square checkins on a map
-<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
-and it has been written in his beloved NodeJS.</p>
-
-<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #43]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/19/newsletter-number-43/"/>
-    <updated>2014-06-19T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/19/newsletter-number-43</id>
-    <content type="html"><![CDATA[<p><strong>TechThursday is here again!</strong></p>
-
-<p>This week we released a new and opensource library on github: <a href="https://github.com/namshi/mockserver">Mockserver</a> for mocking apis, our fellow
-<a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad</a> <a href="http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/">wrote a post about it</a>, check it!</p>
-
-<ul>
-<li><p><a href="http://wavepot.com/">Wavepot&hellip; just check and have fun with it!</a></p></li>
-<li><p><a href="https://github.com/prezi/changelog">Changelog, a tool designed to answer the question “What changed in the last twenty minutes?” trough a simple HTTP api and a web interface</a></p></li>
-<li><p><a href="http://blog.kicksend.com/how-we-decreased-sign-up-confirmation-email-bounces-by-50">How we decreased sign up confirmation email bounces by 50%</a></p></li>
-<li><p><a href="http://welcometothebundle.com/domain-driven-design-and-symfony-for-simple-app">Domain Driven Design principles with Symfony2</a></p></li>
-<li><p><a href="http://php-and-symfony.matthiasnoback.nl/2014/06/how-to-create-framework-independent-controllers/">Symfony2: How to create framework independent controllers?</a></p></li>
-<li><p><a href="https://igor.io/2013/02/03/http-foundation-value.html">Symfony2: value of HttpFoundation</a></p></li>
-<li><p><a href="https://igor.io/2013/03/31/stateless-services.html">Stateless services</a></p></li>
-<li><p><a href="http://www.andresosinski.com/you-job-is-not-to-code.html">Your Job is not to code</a> &ndash; different perspective &ndash; <a href="http://joshsymonds.com/blog/2014/06/15/your-job-is-to-code/">Your job is to code</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://julo.ch/blog/docker-dev-environment/">Docker for your dev environment</a></p></li>
-<li><p><a href="http://thenextweb.com/dd/2014/06/17/7-web-design-disasters-drive-people-crazy/">7 Web design disasters that drive people crazy</a></p></li>
-<li><p><a href="http://stedolan.github.io/jq/">Lightweight and flexible command-line JSON Processor</a></p></li>
-<li><p><a href="http://ember.vicramon.com/">Ember Tutorial</a></p></li>
-<li><p><a href="http://www.daemonology.net/papers/crypto1hr.pdf">Everything you need to know about cryptography in one hour</a></p></li>
-<li><p><a href="http://t.co/GreAnQwaI7">MockServer, effortless API mocking library in Nodejs</a></p></li>
-<li><p><a href="http://buff.ly/1hUhRo6">Tesla drops all their patents</a></p></li>
-<li><p><a href="http://docs.deis.io/en/latest/understanding_deis/architecture/">Deis: Your PaaS, your rules.</a></p></li>
-<li><p><a href="http://www.centurylinklabs.com/flynn-vs-deis-the-tale-of-two-docker-micro-paas-technologies/">Flynn Vs Deis, two Docker-related open source projects compared</a></p></li>
-<li><p><a href="http://www.centurylinklabs.com/top-10-open-source-docker-developer-tools/">Top 10 Docker Tools</a></p></li>
-<li><p><a href="https://coreos.com/">CoreOs: Linux for Massive Server Deployments</a></p></li>
-<li><p><a href="http://www.clearlytech.com/2014/01/04/12-factor-apps-plain-english/">12 factors apps in plain english</a></p></li>
-<li><p><a href="https://cipherli.st/">A nice set of strong cipher settings for Apache, Nginx and Lighttpd. A good case study.</a></p></li>
-<li><p><a href="https://github.com/mickey/checkzilla">Checkzilla, a simple tool for letting you know about out-of-date software versions</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[MockServer, Effortless API Mocking Library in Node Js]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/"/>
-    <updated>2014-06-13T04:22:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js</id>
-    <content type="html"><![CDATA[<p>Namshi Tech Team is happy to roll-out a new node-based library!</p>
-
-<p>We present you <a href="https://github.com/namshi/mockserver">MockServer</a>, a library that allows you to easily mock your APIs&#8217; plain HTTP responses.</p>
-
-<!-- more -->
-
-
-<p>The main benefit of this library is to allow developers to focus on what is important to them, and in this case,
-<code>mockserver</code> allows front-end developers to focus their efforts on creating awesome front-end clients without having to worry about the
-availability of a complete and running API.</p>
-
-<p>The use of this library can be appreciated by developers following a <a href="http://www.frontendfirst.com/">Front-End First</a>
-methodology where development efforts initially focus on front-end clients rather than the back-end structure and tools.
-Front-end first suggests that front-end developers have their mocked servers return expected or anticipated HTTP responses
-based on the available specification instead of making an actual call to the API.
-Another benefit is to allow development for both front-end and back-end in parallel.</p>
-
-<p>In short, this library basically removes the dependency that the front-end development requires from the backend.</p>
-
-<h2>Usage</h2>
-
-<p>Create an empty directory inside your project, <code>mkdir api</code></p>
-
-<p>To start mocking your HTTP responses, you will need to have a sub-directory were all your mocks shall reside. In order to do so,
-in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s where all plain text HTTP responses will reside.</p>
-
-<p>Inside your <code>api</code> directory, run</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>npm install mockserver</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Create a new js file, say, <code>api.js</code> that has the following:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">http</span>       <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;http&#39;</span><span class="p">),</span>
-</span><span class='line'>    <span class="nx">mockserver</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;mockserver&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="nx">http</span><span class="p">.</span><span class="nx">createServer</span><span class="p">(</span><span class="nx">mockserver</span><span class="p">(</span><span class="s1">&#39;./mocks&#39;</span><span class="p">)).</span><span class="nx">listen</span><span class="p">(</span><span class="s1">&#39;9001&#39;</span><span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
-listens to port <code>9001</code>.</p>
-
-<p>Now, you should point your front-end client to <code>http://localhost:9001</code> instead of the actual api url.</p>
-
-<h2>Mocks</h2>
-
-<p>Now, your node server is running and your client can start making requests and getting back mocked HTTP responses.</p>
-
-<p>How do you create the mocks?</p>
-
-<p>Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
-The naming of those files goes as follows: <code>path_METHOD</code>, <code>path</code> is the relative url path without any slashes, i.e, <code>/test</code>
-should be <code>test</code> and <code>METHOD</code> is the upper-cased HTTP method (<code>GET</code>). The extension for the files should be <code>.mock</code>.
-The complete file name is: <code>test_GET.mock</code>.</p>
-
-<p>The contents of the mocked file should be a valid HTTP response text, as follows:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="nx">HTTP</span><span class="o">/</span><span class="mf">1.1</span> <span class="mi">200</span> <span class="nx">OK</span>
-</span><span class='line'><span class="nx">Content</span><span class="o">-</span><span class="nx">Type</span><span class="o">:</span> <span class="nx">text</span><span class="o">/</span><span class="nx">html</span><span class="p">;</span> <span class="nx">charset</span><span class="o">=</span><span class="nx">utf</span><span class="o">-</span><span class="mi">8</span>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="nx">html</span><span class="o">&gt;&lt;</span><span class="nx">body</span><span class="o">&gt;</span><span class="nx">Hello</span> <span class="nx">World</span><span class="o">&lt;</span><span class="err">/body&gt;&lt;/html&gt;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Now, whenever your client requests <code>http://localhost:9001/test</code>, <code>mockserver</code> will return that plain HTTP response you defined
-in <code>test_GET.mock</code>.</p>
-
-<h2>Header Variation</h2>
-
-<p>Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
-<code>mockserver-variation</code> header in your requests. The value of this header shall be appended to the mocked file name as follows: <code>path_METHOD_variation</code>.</p>
-
-<p>Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
-Simply set <code>mockserver-variation</code> to <code>500</code> and the file from our previous example should be named <code>test_GET_500.mock</code>.</p>
-
-<h2>Multi-level URLs</h2>
-
-<p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
-
-<ul>
-<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
-<li><code>cd test1</code> and <code>touch test2.mock</code></li>
-<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
-</ul>
-
-
-<h2>Conclusion</h2>
-
-<p>Although simple and straight forward, the idea behind <code>mockserver</code> is quite powerful. It is mostly suited for a Front-end First methodology, some of the
-benefits include parallel front-end and back-end development and the decoupling of the Front-end and back-end during the development phase.</p>
-
-<p>It would be great if you can take the time to try it out and let us know what you think!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #42]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/12/newsletter-number-42/"/>
-    <updated>2014-06-12T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/12/newsletter-number-42</id>
-    <content type="html"><![CDATA[<p><strong>techThursday is here folks!</strong></p>
-
-<p>Wanna join us? We are still hiring!
-We have cookies, #Symfony2, #nodejs, #AngularJS, #redis, #rabbitmq and coding challenges for you: <a href="http://buff.ly/1oyuSUK">http://buff.ly/1oyuSUK</a></p>
-
-<ul>
-<li><p><a href="http://serverspec.org">Serverspec: write rspec for your servers</a></p></li>
-<li><p><a href="https://wiki.php.net/rfc/uniform_variable_syntax">PHP: rfc on uniform variable syntax</a></p></li>
-<li><p><a href="https://github.com/r7kamura/jsonism">Jsonism, generate http clients from a json schema</a></p></li>
-<li><p><a href="https://devopsu.com/blog/docker-misconceptions">Docker Misconceptions</a></p></li>
-<li><p><a href="http://addyosmani.com/blog/automating-web-performance-measurement-with-psi-for-node/">Automating Web Performance Measurement With PSI For Node</a></p></li>
-<li><p><a href="http://jsnice.org/">Jsnice statical renaming, type inference and deobfuscation</a></p></li>
-<li><p><a href="https://tessel.io/">Tessel: hardware development for software developers (javascript and node)</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/">Building with Gulp &ndash; Bonus Browser Sync</a></p></li>
-<li><p><a href="http://www.leaseweblabs.com/2013/04/symfony2-consistent-routing/">Symfony2 consistent routing</a></p></li>
-<li><p><a href="http://www.entrepreneur.com/article/234492">7 Reasons to Ditch the Corporate World for a Career at a Startup</a></p></li>
-<li><p><a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTcxNjU">Civilization 5 is finally released for linux platform</a></p></li>
-<li><p><a href="http://www.allthingsdistributed.com/2008/12/eventually_consistent.html">Very good read on distributed systems/databases</a></p></li>
-<li><p><a href="https://github.com/krakjoe/jitfu">Create (and evaluate) native JIT code in PHP</a></p></li>
-<li><p><a href="http://jacquesmattheij.com/the-several-million-dollar-bug">The Several Million Dollar Bug</a></p></li>
-<li><p><a href="http://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/?utm_source=Leanstack+Weekly&amp;utm_campaign=7b735e78b9-Leanstack_Weekly_54&amp;utm_medium=email&amp;utm_term=0_2911f8fd09-7b735e78b9-341766961">10 Secrets You Should Have Learned With Your Software Engineering Degree &ndash; But Probably Didn’t</a></p></li>
-<li><p><a href="https://www.gitlab.com/">Open Source, Self Hosted, Git Management Software</a></p></li>
-<li><p><a href="http://www.landsnail.com/apple/local/steve-jobs-resume/Resume.html">Steve Jobs Resume</a></p></li>
-<li><p><a href="http://www.broken-links.com/2014/06/09/voyeurism-mutation-object-observers">Mutation and Object Observers for Watching DOM and JS Objects Changes</a></p></li>
-<li><p><a href="http://css-tricks.com/using-encapsulation-semantic-markup/">Using Encapsulation for Semantic Markup</a></p></li>
-<li><p><a href="http://dev.opera.com/articles/css-will-change-property/">Everything You Need to Know About the CSS will-change Property</a></p></li>
-<li><p><a href="http://intercoolerjs.org/">intercooler.js: add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Wanna join us? We have cookies, Symfony2, Node, AngularJS and coding challenges for you!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/"/>
-    <updated>2014-06-08T11:44:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you</id>
-    <content type="html"><![CDATA[<p>A quick update from the trenches: for the past months
-we&rsquo;ve been beefing our team up and by doing so we
-realized that some good coding challenges are
-almost a must.</p>
-
-<p>We just put all the challenges we&rsquo;ve used and are gonna
-be using on a <a href="https://github.com/namshi/coding-challenges">github repo for you to check them out</a>:
-feel free to solve them, fork them, improve them, do anything
-with them! :)</p>
-
-<p>We are currently hiring <a href="https://github.com/namshi/coding-challenges/blob/master/senior-api-engineer.md">senior API engineers</a>, <a href="https://github.com/namshi/coding-challenges/blob/master/senior-frontend-engineer.md">senior frontend
-engineers</a> and are looking to bootstrap our mobile team
-with a <a href="https://github.com/namshi/coding-challenges/blob/master/lead-mobile-engineer.md">Lead Mobile Engineer</a>:
-got leads? Got skills? Reach out and let&rsquo;s do Service-Oriented Architectures together!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
-    <updated>2014-06-07T00:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
-    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
-deal with configurations, in JavaScript, in a very
-elegant way.</p>
-
-<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
-through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
-recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
-small and simple, and thought to keep your
-configuration as elegant, simple and declarative as possible.</p>
-
-<!-- more -->
-
-
-<p>With reconfig you can do stuff like:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="kd">var</span> <span class="nx">reconfig</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;reconfig&#39;</span><span class="p">);</span>
-</span><span class='line'>
-</span><span class='line'><span class="kd">var</span> <span class="nx">config</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">reconfig</span><span class="p">({</span>
-</span><span class='line'>    <span class="nx">greet</span><span class="o">:</span> <span class="s1">&#39;Hello :who!&#39;</span><span class="p">,</span>
-</span><span class='line'>    <span class="nx">sayhi</span><span class="o">:</span> <span class="s1">&#39;{{ greet }}&#39;</span>
-</span><span class='line'>    <span class="nx">countries</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>      <span class="nx">uae</span><span class="o">:</span> <span class="p">{</span>
-</span><span class='line'>          <span class="nx">population</span><span class="o">:</span> <span class="s1">&#39;2M&#39;</span><span class="p">,</span>
-</span><span class='line'>          <span class="nx">nationalDay</span><span class="o">:</span> <span class="s1">&#39;December 2nd&#39;</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>      <span class="c1">// ...</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">});</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Retrieve a deep config value</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;countries.uae.nationalDay&#39;</span><span class="p">);</span> <span class="c1">// December, 2nd</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Pass parameters to the configuration</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;greet&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Reference other configuration parameters</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;sayhi&#39;</span><span class="p">,</span> <span class="p">{</span><span class="nx">who</span><span class="o">:</span> <span class="s1">&#39;John&#39;</span><span class="p">});</span> <span class="c1">// Hello, John!</span>
-</span><span class='line'>
-</span><span class='line'><span class="c1">// Fallback values</span>
-</span><span class='line'><span class="nx">config</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">&#39;something&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;invalid&#39;</span><span class="p">);</span> <span class="c1">// invalid</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>We&rsquo;re probably gonna look into porting the same to
-PHP (another big player in our stack) so&hellip;stay tuned!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #41]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/"/>
-    <updated>2014-06-05T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41</id>
-    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
-
-<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
-
-<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
-<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
-<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
-<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
-<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
-<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
-<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
-<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
-<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
-<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
-<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
-<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
-<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
-<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
-<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
-<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Developers don't write code, they write essays]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/04/developers-dont-write-code-they-write-essays/"/>
-    <updated>2014-06-04T21:07:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/04/developers-dont-write-code-they-write-essays</id>
-    <content type="html"><![CDATA[<p>I am always amazed by the quantity of errors I make,
-on a daily basis, when writing some code: it&rsquo;s true that&rsquo;s
-not my <strong>primary</strong> job, but at the same
-time it always feels painful to find bugs or edge cases.</p>
-
-<p>But one of the things I&rsquo;m usually good at it&rsquo;s trying
-to keep things as universal, simple and self-explanatory
-as possible, as I&rsquo;ve learnt, so far, that the worst enemy
-of my code is <strong>me in 6 months</strong>.</p>
-
-<!-- more -->
-
-
-<p>Today, for example, I was discussing with <a href="http://tech.namshi.com/blog/2014/05/26/welcome-lucio/">Lucio</a>
-how to handle a list of errors: suppose that the user
-performs an action that generates a bunch of errors, and that
-you have an error handler that needs to deal with all of them.</p>
-
-<p>The error handler might receive a list of these errors, process
-them one by one and then let other guys take the stage: a common
-solution would be to feed the handler the list of errors and let it
-pop them from the list as soon as he&rsquo;s  <em>handled</em> them.</p>
-
-<figure class='code'><figcaption><span>Some pseudo code</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ErrorHandler</span> <span class="p">{</span>
-</span><span class='line'>  <span class="n">property</span> <span class="n">queue</span><span class="p">;</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">addError</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">queue</span><span class="o">.</span><span class="n">push</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">def</span> <span class="nf">handle</span> <span class="p">()</span> <span class="p">{</span>
-</span><span class='line'>      <span class="n">foreach</span> <span class="p">(</span><span class="n">error</span> <span class="k">in</span> <span class="n">queue</span><span class="p">)</span> <span class="p">{</span>
-</span><span class='line'>          <span class="n">doStuff</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
-</span><span class='line'>      <span class="p">}</span>
-</span><span class='line'>  <span class="p">}</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Nothing exceptional with the pseudo-code above, but we were wondering
-(as our piece of code is a bit more complex) how to name the list of
-errors that the handler deals with to make it a bit more declarative.</p>
-
-<p>Since the error handler acts as a <a href="http://en.wikipedia.org/wiki/FIFO">FIFO</a>
-it felt natural, for Lucio, call this a <strong>queue</strong>. I suggested <strong>stack</strong>
-but upon thinking about it we agreed that since a stack act as
-<a href="http://en.wikipedia.org/wiki/LIFO_(computing">LIFO</a> it wasn&rsquo;t the best idea.</p>
-
-<p><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html">Things like this</a> might sound silly, but they <strong>extremely important</strong>
-when you work with other ten people on a complex domain that
-you are trying to keep as simple (and real) as possible.</p>
-
-<p>We often forget that translating concepts into working code is our
-main duty, and by doing so we need to keep things as clear / clean as possible:
-how many times did you hear <em>&ldquo;Oh that guy wrote it, he knows how it works, ask him&rdquo;</em>?
-I cry everytime I hear that.</p>
-
-<p>When you are assigned a task, first think of the simplest and most exhaustive
-solution, then write the code: your job is not measured by lines of code, but by
-working software, which means maintainable, decoupled, easy to understand, (ultimately)
-beautiful code.</p>
-
-<p>What is the difference between an essay and some code? Ideally there is none:</p>
-
-<ul>
-<li>you explain / implement a concept / feature</li>
-<li>your artifact needs to be understandable</li>
-<li>it targets 2 audiences
-
-<ul>
-<li>a technical one, which needs to be able to understand it in depth</li>
-<li>a more general one, which needs to grasp the main concepts</li>
-</ul>
-</li>
-</ul>
-
-
-<p>Actually, there is <strong>one</strong> difference between essays and software development: the
-language they&rsquo;re written in.</p>
-
-<p>But they all need to be self-explanatory, they
-all need to nail the problem without the need to dig too deep into
-the explanation, they all need to get straight to the point, making
-things explicit rather than implicit.</p>
-
-<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
 ]]></content>
   </entry>
   

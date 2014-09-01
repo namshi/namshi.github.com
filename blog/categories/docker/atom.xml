@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: docker | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/docker/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/docker/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -14,17 +14,82 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Newsletter #53]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/28/newsletter-number-53/"/>
+    <updated>2014-08-28T16:11:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/28/newsletter-number-53</id>
+    <content type="html"><![CDATA[<blockquote><p><strong>BOOM!</strong> As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!</p>
+
+<ul>
+<li><p><a href="https://github.com/namshi/shisha"><strong>shisha, smoke tests made easy!</strong></a> A cool nodejs library by <a href="http://tech.namshi.com/team/#Shidhin%20CR">Shidhin</a> and <a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Hallal</a> that let&rsquo;s you
+write smoke tests in an easy way.</p></li>
+<li><p><a href="https://github.com/namshi/node-dock"><strong>node-dock, a sweet remedy for all your docker problems!</strong></a> Another node library by <a href="http://tech.namshi.com/team/#Hossam%20Faris">Hossam</a> and <a href="http://tech.namshi.com/team/##Luciano%20Colosio">Lucio</a> that
+has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy functionality on top of it.</p></li>
+<li><p>Even <a href="http://tech.namshi.com/team/#Alessandro%20Nadalin">Alex</a> released another tiny and cool node lib called <a href="http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"><strong>node-file-ensure</strong>, a small filesystem utility to make sure a file is there</a></p></li>
+<li><p>Lucio also wrote a post detailing his first months here at Namshi: <a href="http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/">check it out</a>!</p></li>
+<li><p>Last but not least, <a href="http://tech.namshi.com/team/#Geshan%20Manandhar">Geshan</a> on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony <a href="http://mq-talk.herokuapp.com/">http://mq-talk.herokuapp.com/</a></p></li>
+</ul>
+</blockquote>
+
+<p>And here we are as usual with a list of interesting links to keep you busy during the upcoming weekend:</p>
+
+<ul>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://buff.ly/1nEYH2M">Open Source ain’t Charity</a></p></li>
+<li><p><a href="https://speakerdeck.com/patrickhamann/ship-it-re-develop-conference-august-2014">Ship it! A story of continuous delivery at theguardian.com</a></p></li>
+<li><p><a href="https://www.gov.uk/service-manual/agile/running-retrospectives.html">Reviewing a team&rsquo;s work and the way it is done at Gov.uk Design Services</a></p></li>
+<li><p><a href="http://buff.ly/1wDTrGe">Plain Old #JavaScript Object Visualization</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/eDh0CeQYpA">Stop whatever you are doing and look at p6 of this paper</a></p></li>
+<li><p><a href="http://buff.ly/1lrfCus">Rocket Internet co-founder sees venture take off in Middle East</a></p></li>
+<li><p><a href="http://buff.ly/1q9KvDq">V8&rsquo;s memory mysteries</a></p></li>
+<li><p><a href="http://buff.ly/1sh7Lhn">49ers’ stadium Wi-Fi served 25,000 concurrent users, 2.13TB in all</a></p></li>
+<li><p><a href="http://buff.ly/1mA3a6D">Software Developers and Asperger&rsquo;s Syndrome</a></p></li>
+<li><p><a href="http://buff.ly/1v8pUmg">Docker Service Discovery Using Etcd and Haproxy</a></p></li>
+<li><p><a href="http://buff.ly/1tqNB7a">Stellar: Fast database snapshot and restore tool for development</a></p></li>
+<li><p><a href="http://buff.ly/1seRoll">Javascript optimization killers</a></p></li>
+<li><p><a href="http://buff.ly/1mz2vlT">How I Hacked My Husband&rsquo;s Programming Addiction</a></p></li>
+<li><p><a href="http://mq-talk.herokuapp.com/#/14">programmming mantras to remember</a></p></li>
+<li><p><a href="http://buff.ly/1myYCxx">Facebook Unveils Its Load-Balancing System: Autoscale</a></p></li>
+<li><p><a href="http://buff.ly/1wiCeln">Docker 1.2.0, with restart policies</a></p></li>
+<li><p><a href="http://buff.ly/1lmw8vT">Semantic Versioning Is Not the Solution</a></p></li>
+<li><p><a href="http://buff.ly/1mtjtSS">The Plague of Methods and Frameworks</a></p></li>
+<li><p><a href="http://buff.ly/1s2pxot">Evolution of Docker and Its Impact on AWS &ndash; i build the cloud</a></p></li>
+<li><p><a href="http://buff.ly/1s2p4Cu">Uber opens up its API – and creates a new platform</a></p></li>
+<li><p><a href="https://www.glasswire.com">GlassWire Network Security Monitor &amp; Firewall Tool</a></p></li>
+<li><p><a href="https://netguru.co/blog/posts/procrastination-and-overcoming-programmers-block">Procrastination and Overcoming Programmer&rsquo;s Block</a></p></li>
+<li><p><a href="http://algorithm.dk/posts/rtfm-0day-in-ios-apps-g-gmail-fb-messenger-etc">RTFM 0day in iOS apps: G+, Gmail, FB Messenger</a></p></li>
+<li><p><a href="http://www.codefights.com">CodeFights &ndash; Become a Code Champion</a></p></li>
+<li><p><a href="http://hoa-project.net/En/">Hoa project, a cool set of PHP lib (they deserve more community involvement &ndash; i.e. tests are missing, own standards)</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/bubblejs-a-16k-solution-to-a-common-problem--cms-21986">Bubble.js: A 1.6K Solution to a Common Problem</a></p></li>
+<li><p><a href="http://knplabs.com/blog/2011/05/17/agile-nodejs/">We love Symfony2… but we also love Agility and Node.js</a></p></li>
+<li><p><a href="http://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t">Agile software development methodologies and how to apply them</a></p></li>
+<li><p><a href="http://lafikl.github.io/perfBar/">website performance metrics</a></p></li>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://mobileangularui.com/">Mobile Angular UI</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Newsletter #50]]></title>
-    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
     <updated>2014-08-07T11:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
 
 <p>Announcement:</p>
 
 <blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#109;&#97;&#105;&#x6c;&#x74;&#111;&#58;&#x77;&#111;&#114;&#x6b;&#45;&#x69;&#110;&#45;&#x74;&#x65;&#x63;&#x68;&#x40;&#x6e;&#97;&#109;&#115;&#104;&#x69;&#x2e;&#x63;&#111;&#109;">&#x77;&#111;&#114;&#x6b;&#45;&#x69;&#x6e;&#45;&#x74;&#101;&#99;&#104;&#64;&#x6e;&#x61;&#109;&#115;&#104;&#105;&#x2e;&#99;&#x6f;&#109;</a></p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#x3a;&#119;&#111;&#114;&#107;&#x2d;&#105;&#110;&#45;&#x74;&#101;&#x63;&#x68;&#x40;&#x6e;&#97;&#x6d;&#x73;&#x68;&#x69;&#x2e;&#99;&#x6f;&#x6d;">&#x77;&#111;&#x72;&#107;&#x2d;&#105;&#110;&#45;&#116;&#x65;&#99;&#x68;&#64;&#110;&#x61;&#x6d;&#115;&#104;&#105;&#x2e;&#x63;&#x6f;&#x6d;</a></p></blockquote>
 
 <p>Here are your links for this week!</p>
 
@@ -63,9 +128,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #49]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/"/>
+    <link href="http://namshi.github.io/blog/2014/07/31/newsletter-number-49/"/>
     <updated>2014-07-31T11:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49</id>
+    <id>http://namshi.github.io/blog/2014/07/31/newsletter-number-49</id>
     <content type="html"><![CDATA[<p>TechThursday is here!</p>
 
 <blockquote><p>Namshi is hiring! <a href="http://t.co/kfUX1C0MMy">HR Generalist in United Arab Emirates</a> Please spread the word!</p>
@@ -113,9 +178,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #44]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/26/newsletter-number-44/"/>
+    <link href="http://namshi.github.io/blog/2014/06/26/newsletter-number-44/"/>
     <updated>2014-06-26T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/26/newsletter-number-44</id>
+    <id>http://namshi.github.io/blog/2014/06/26/newsletter-number-44</id>
     <content type="html"><![CDATA[<p><strong>TechThursday</strong> is here folks and we have two special mentions today.</p>
 
 <p><a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Mohamad Hallal</a> wrote an awesome post about <a href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/">his pitfalls as junior developer</a></p>
@@ -164,9 +229,9 @@ This nodejs app let&rsquo;s you visualize your Foursquare checkins on a world ma
   
   <entry>
     <title type="html"><![CDATA[Newsletter #43]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/19/newsletter-number-43/"/>
+    <link href="http://namshi.github.io/blog/2014/06/19/newsletter-number-43/"/>
     <updated>2014-06-19T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/19/newsletter-number-43</id>
+    <id>http://namshi.github.io/blog/2014/06/19/newsletter-number-43</id>
     <content type="html"><![CDATA[<p><strong>TechThursday is here again!</strong></p>
 
 <p>This week we released a new and opensource library on github: <a href="https://github.com/namshi/mockserver">Mockserver</a> for mocking apis, our fellow
@@ -202,50 +267,6 @@ This nodejs app let&rsquo;s you visualize your Foursquare checkins on a world ma
 <li><p><a href="http://www.clearlytech.com/2014/01/04/12-factor-apps-plain-english/">12 factors apps in plain english</a></p></li>
 <li><p><a href="https://cipherli.st/">A nice set of strong cipher settings for Apache, Nginx and Lighttpd. A good case study.</a></p></li>
 <li><p><a href="https://github.com/mickey/checkzilla">Checkzilla, a simple tool for letting you know about out-of-date software versions</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #42]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/12/newsletter-number-42/"/>
-    <updated>2014-06-12T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/12/newsletter-number-42</id>
-    <content type="html"><![CDATA[<p><strong>techThursday is here folks!</strong></p>
-
-<p>Wanna join us? We are still hiring!
-We have cookies, #Symfony2, #nodejs, #AngularJS, #redis, #rabbitmq and coding challenges for you: <a href="http://buff.ly/1oyuSUK">http://buff.ly/1oyuSUK</a></p>
-
-<ul>
-<li><p><a href="http://serverspec.org">Serverspec: write rspec for your servers</a></p></li>
-<li><p><a href="https://wiki.php.net/rfc/uniform_variable_syntax">PHP: rfc on uniform variable syntax</a></p></li>
-<li><p><a href="https://github.com/r7kamura/jsonism">Jsonism, generate http clients from a json schema</a></p></li>
-<li><p><a href="https://devopsu.com/blog/docker-misconceptions">Docker Misconceptions</a></p></li>
-<li><p><a href="http://addyosmani.com/blog/automating-web-performance-measurement-with-psi-for-node/">Automating Web Performance Measurement With PSI For Node</a></p></li>
-<li><p><a href="http://jsnice.org/">Jsnice statical renaming, type inference and deobfuscation</a></p></li>
-<li><p><a href="https://tessel.io/">Tessel: hardware development for software developers (javascript and node)</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://www.smashingmagazine.com/2014/06/11/building-with-gulp/">Building with Gulp &ndash; Bonus Browser Sync</a></p></li>
-<li><p><a href="http://www.leaseweblabs.com/2013/04/symfony2-consistent-routing/">Symfony2 consistent routing</a></p></li>
-<li><p><a href="http://www.entrepreneur.com/article/234492">7 Reasons to Ditch the Corporate World for a Career at a Startup</a></p></li>
-<li><p><a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTcxNjU">Civilization 5 is finally released for linux platform</a></p></li>
-<li><p><a href="http://www.allthingsdistributed.com/2008/12/eventually_consistent.html">Very good read on distributed systems/databases</a></p></li>
-<li><p><a href="https://github.com/krakjoe/jitfu">Create (and evaluate) native JIT code in PHP</a></p></li>
-<li><p><a href="http://jacquesmattheij.com/the-several-million-dollar-bug">The Several Million Dollar Bug</a></p></li>
-<li><p><a href="http://blog.newrelic.com/2014/06/03/10-secrets-learned-software-engineering-degree-probably-didnt/?utm_source=Leanstack+Weekly&amp;utm_campaign=7b735e78b9-Leanstack_Weekly_54&amp;utm_medium=email&amp;utm_term=0_2911f8fd09-7b735e78b9-341766961">10 Secrets You Should Have Learned With Your Software Engineering Degree &ndash; But Probably Didn’t</a></p></li>
-<li><p><a href="https://www.gitlab.com/">Open Source, Self Hosted, Git Management Software</a></p></li>
-<li><p><a href="http://www.landsnail.com/apple/local/steve-jobs-resume/Resume.html">Steve Jobs Resume</a></p></li>
-<li><p><a href="http://www.broken-links.com/2014/06/09/voyeurism-mutation-object-observers">Mutation and Object Observers for Watching DOM and JS Objects Changes</a></p></li>
-<li><p><a href="http://css-tricks.com/using-encapsulation-semantic-markup/">Using Encapsulation for Semantic Markup</a></p></li>
-<li><p><a href="http://dev.opera.com/articles/css-will-change-property/">Everything You Need to Know About the CSS will-change Property</a></p></li>
-<li><p><a href="http://intercoolerjs.org/">intercooler.js: add AJAX to your web application using simple, declarative HTML attributes</a></p></li>
 </ul>
 
 ]]></content>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: job | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/job/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/job/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Like Android and iOS? Let's change shopping in the Middle East together!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/"/>
+    <link href="http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/"/>
     <updated>2014-06-03T16:42:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together</id>
+    <id>http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together</id>
     <content type="html"><![CDATA[<p>Do you like Java? Ok, I possibly started from the wrongest question.</p>
 
 <p>Restart.</p>
@@ -81,9 +81,9 @@ development team to be growing as months will go by</li>
   
   <entry>
     <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
+    <link href="http://namshi.github.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
     <updated>2014-03-24T14:37:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
+    <id>http://namshi.github.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
     <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
 boost your nerditude and have some fun, we might have what
 you are looking for.</p>

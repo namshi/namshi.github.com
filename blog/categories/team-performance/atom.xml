@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Team performance | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/team-performance/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/team-performance/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Daily Scrum, Effective or a waste of time?]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/22/daily-scrum/"/>
+    <link href="http://namshi.github.io/blog/2013/09/22/daily-scrum/"/>
     <updated>2013-09-22T14:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/22/daily-scrum</id>
+    <id>http://namshi.github.io/blog/2013/09/22/daily-scrum</id>
     <content type="html"><![CDATA[<p>We have been doing Daily Scrums for the past 15 months, but have you really thought of the real impact this activity has on us as an entire team? Or on the leads? Or the business? I don’t think so. I’m noticing lately that this practice is not being appreciated; therefore I’ll give you an insight into the importance of this practice we struggle to do every day.</p>
 
 <!-- more -->

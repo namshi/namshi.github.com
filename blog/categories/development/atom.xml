@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: development | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/development/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[When you start working as a software developer...]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/"/>
+    <link href="http://namshi.github.io/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/"/>
     <updated>2014-06-24T23:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot</id>
+    <id>http://namshi.github.io/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot</id>
     <content type="html"><![CDATA[<p>&hellip;it&rsquo;s always a joy, full of surprises: what they don&rsquo;t tell you
 is that not all of the surprises are much fun.</p>
 

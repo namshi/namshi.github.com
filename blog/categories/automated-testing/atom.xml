@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Automated Testing | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/automated-testing/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/automated-testing/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Frameworks And Tests in Namshi]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/23/frameworks/"/>
+    <link href="http://namshi.github.io/blog/2013/09/23/frameworks/"/>
     <updated>2013-09-23T15:44:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/23/frameworks</id>
+    <id>http://namshi.github.io/blog/2013/09/23/frameworks</id>
     <content type="html"><![CDATA[<p>As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
 website. However these changes are not stable all the time, sometimes some of these new changes
 end up breaking other working parts of our applications without a prior alert until after we deploy it on
@@ -126,9 +126,9 @@ $result = $service-&gt;execute($data);
   
   <entry>
     <title type="html"><![CDATA[Behat, Mink and Parallel Runner, A recipe for automated web testing!]]></title>
-    <link href="http://tech.namshi.com/blog/2013/09/20/behat/"/>
+    <link href="http://namshi.github.io/blog/2013/09/20/behat/"/>
     <updated>2013-09-20T17:13:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/09/20/behat</id>
+    <id>http://namshi.github.io/blog/2013/09/20/behat</id>
     <content type="html"><![CDATA[<p>It was not until I did my first weekend manual testing procedure on Namshi till I came to realize how much time consuming
 testing can become. All critical paths starting from registration and login to buying a product using the
 available payment methods should be accounted for. Along with that, any irregularities on different pages on the website

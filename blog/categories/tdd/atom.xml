@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tdd | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/tdd/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/tdd/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #39]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/22/newsletter-number-39/"/>
+    <link href="http://namshi.github.io/blog/2014/05/22/newsletter-number-39/"/>
     <updated>2014-05-22T11:34:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/22/newsletter-number-39</id>
+    <id>http://namshi.github.io/blog/2014/05/22/newsletter-number-39</id>
     <content type="html"><![CDATA[<p>&hellip;another <strong>TechThursday</strong> here!</p>
 
 <ul>

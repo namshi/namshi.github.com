@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: git | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/git/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #49]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/"/>
+    <link href="http://namshi.github.io/blog/2014/07/31/newsletter-number-49/"/>
     <updated>2014-07-31T11:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49</id>
+    <id>http://namshi.github.io/blog/2014/07/31/newsletter-number-49</id>
     <content type="html"><![CDATA[<p>TechThursday is here!</p>
 
 <blockquote><p>Namshi is hiring! <a href="http://t.co/kfUX1C0MMy">HR Generalist in United Arab Emirates</a> Please spread the word!</p>
@@ -65,9 +65,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #40]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
+    <link href="http://namshi.github.io/blog/2014/05/29/newsletter-number-40/"/>
     <updated>2014-05-29T12:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
+    <id>http://namshi.github.io/blog/2014/05/29/newsletter-number-40</id>
     <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
 
 <ul>
@@ -111,9 +111,9 @@
   
   <entry>
     <title type="html"><![CDATA[Git and Github at Namshi: our flow and tips&tricks]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/"/>
+    <link href="http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/"/>
     <updated>2014-05-04T20:38:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks</id>
+    <id>http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks</id>
     <content type="html"><![CDATA[<p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
 
 <p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>
@@ -341,9 +341,9 @@ alias gdiff='git diff --word-diff'
   
   <entry>
     <title type="html"><![CDATA[Newsletter #31]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/27/newsletter-number-31/"/>
+    <link href="http://namshi.github.io/blog/2014/03/27/newsletter-number-31/"/>
     <updated>2014-03-27T16:17:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/27/newsletter-number-31</id>
+    <id>http://namshi.github.io/blog/2014/03/27/newsletter-number-31</id>
     <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
 
 <p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
@@ -380,9 +380,9 @@ alias gdiff='git diff --word-diff'
   
   <entry>
     <title type="html"><![CDATA[Newsletter #30]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/20/newsletter-number-30/"/>
+    <link href="http://namshi.github.io/blog/2014/03/20/newsletter-number-30/"/>
     <updated>2014-03-20T17:59:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/20/newsletter-number-30</id>
+    <id>http://namshi.github.io/blog/2014/03/20/newsletter-number-30</id>
     <content type="html"><![CDATA[<p><a href="/blog/categories/techthursday/">#TechThursday</a>! Here are some interesting news!</p>
 
 <ul>

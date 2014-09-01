@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: angularjs | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/angularjs/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #45]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/"/>
+    <link href="http://namshi.github.io/blog/2014/07/03/newsletter-number-45/"/>
     <updated>2014-07-03T11:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45</id>
+    <id>http://namshi.github.io/blog/2014/07/03/newsletter-number-45</id>
     <content type="html"><![CDATA[<p>Welcome to <strong>TechThursday</strong>!</p>
 
 <h2>Announcements</h2>
@@ -53,9 +53,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #40]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/"/>
+    <link href="http://namshi.github.io/blog/2014/05/29/newsletter-number-40/"/>
     <updated>2014-05-29T12:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40</id>
+    <id>http://namshi.github.io/blog/2014/05/29/newsletter-number-40</id>
     <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
 
 <ul>
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #39]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/22/newsletter-number-39/"/>
+    <link href="http://namshi.github.io/blog/2014/05/22/newsletter-number-39/"/>
     <updated>2014-05-22T11:34:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/22/newsletter-number-39</id>
+    <id>http://namshi.github.io/blog/2014/05/22/newsletter-number-39</id>
     <content type="html"><![CDATA[<p>&hellip;another <strong>TechThursday</strong> here!</p>
 
 <ul>
@@ -140,9 +140,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #38]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/15/newsletter-number-38/"/>
+    <link href="http://namshi.github.io/blog/2014/05/15/newsletter-number-38/"/>
     <updated>2014-05-15T11:38:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/15/newsletter-number-38</id>
+    <id>http://namshi.github.io/blog/2014/05/15/newsletter-number-38</id>
     <content type="html"><![CDATA[<p>Hello everyone and welcome to <a href="/blog/categories/techthursday/"><strong>TechThursday</strong>!</a>!</p>
 
 <p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>

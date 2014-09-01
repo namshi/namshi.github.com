@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: redis | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/redis/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/redis/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,16 +15,16 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #50]]></title>
-    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
     <updated>2014-08-07T11:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
 
 <p>Announcement:</p>
 
 <blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#58;&#119;&#x6f;&#114;&#107;&#45;&#105;&#110;&#45;&#116;&#x65;&#99;&#x68;&#x40;&#110;&#97;&#109;&#x73;&#x68;&#x69;&#x2e;&#99;&#x6f;&#109;">&#119;&#x6f;&#114;&#x6b;&#x2d;&#105;&#x6e;&#x2d;&#x74;&#101;&#99;&#x68;&#64;&#110;&#x61;&#109;&#x73;&#104;&#105;&#46;&#99;&#x6f;&#109;</a></p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#58;&#x77;&#111;&#114;&#107;&#x2d;&#x69;&#x6e;&#x2d;&#x74;&#x65;&#99;&#x68;&#64;&#x6e;&#97;&#109;&#115;&#104;&#105;&#46;&#x63;&#x6f;&#x6d;">&#119;&#111;&#x72;&#x6b;&#x2d;&#x69;&#110;&#x2d;&#116;&#x65;&#x63;&#x68;&#64;&#x6e;&#97;&#x6d;&#115;&#x68;&#105;&#46;&#99;&#x6f;&#109;</a></p></blockquote>
 
 <p>Here are your links for this week!</p>
 
@@ -63,9 +63,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #31]]></title>
-    <link href="http://tech.namshi.com/blog/2014/03/27/newsletter-number-31/"/>
+    <link href="http://namshi.github.io/blog/2014/03/27/newsletter-number-31/"/>
     <updated>2014-03-27T16:17:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/03/27/newsletter-number-31</id>
+    <id>http://namshi.github.io/blog/2014/03/27/newsletter-number-31</id>
     <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
 
 <p>Oh, before the news, give us <strong>3 seconds</strong> to announce that:</p>
@@ -102,9 +102,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #23]]></title>
-    <link href="http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/"/>
+    <link href="http://namshi.github.io/blog/2014/01/23/newsletter-number-23/"/>
     <updated>2014-01-23T17:31:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23</id>
+    <id>http://namshi.github.io/blog/2014/01/23/newsletter-number-23</id>
     <content type="html"><![CDATA[<p>Hello, this is <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a>!</p>
 
 <br/>

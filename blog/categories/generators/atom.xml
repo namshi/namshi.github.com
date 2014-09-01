@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: generators | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/generators/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[PHP Generators explained]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/31/php-generators-explained/"/>
+    <updated>2014-08-31T13:05:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/31/php-generators-explained</id>
+    <content type="html"><![CDATA[<p><code>Generators</code> are one of the new cool stuff on <code>PHP 5.5</code>, but it&rsquo;s not a new feature in software programming languages, for example it&rsquo;s on <code>Python</code> since version 2.2 on 2001 and now in the draft <code>ECMAScript</code> 6  (Javascript) specification.</p>
+
+<p>They are a simple and powerful tool for creating <code>iterators</code>. They are like regular functions but using the <code>yield</code> statement whenever they want to return data. A <code>generator</code> looks like a function but behaves like an iterator, it&rsquo;s useful for <code>lazy evaluation</code> &ldquo;which delays the evaluation of an expression until its value is needed&rdquo;.</p>
+
+<!-- more -->
+
+
+<p>Here are some examples in different languages:</p>
+
+<p>```js
+// infinite id generator in JavaScript</p>
+
+<p>function* generateId(){</p>
+
+<pre><code>var index = 0;
+
+while(true) {
+    yield index++;
+}
+</code></pre>
+
+<p>}</p>
+
+<p>var gen = idMaker();
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+```</p>
+
+<p>```python
+//Python</p>
+
+<p>def generateId(n):</p>
+
+<pre><code>num = 0
+while num &lt; n:
+    yield num ++
+</code></pre>
+
+<p>count_gen_ids = count(generateId(1000))
+```</p>
+
+<p>```php
+//PHP
+&lt;?php</p>
+
+<p>function generateId() {</p>
+
+<pre><code>$currentId = 1;
+
+while(true) {
+    yield ++ $currentId;
+}
+</code></pre>
+
+<p>}</p>
+
+<p>for($index = 0; $index &lt; 1000) {</p>
+
+<pre><code>echo $index;
+</code></pre>
+
+<p>}</p>
+
+<p>```</p>
+
+<p>In this examples you would notice that we are using the keyword <code>yield</code> instead of <code>return</code>. <code>return</code> will pass value to the function caller then the function will finish the execution, <code>yield</code> will pass a value then pause the execution of the function &ldquo;which now became a generator&rdquo; till the function caller ask for the next value. Then <code>yield</code> again and again will return values to the function caller.</p>
+
+<p>Using generators is useful in cases where you want iterations on demand, and you will end up with less resources consumption and also still the chance to send some data back to the generator function on any given iteration.</p>
+
+<p>When you have situations that you are fetching large sets of data, you can use generators to <code>lazy load</code> (&ldquo;lazy load is to post pone fetching data till the point that you actually need it) your data sets or doing a lot of computation with big amounts of data.</p>
+
+<p>Imagine that you have the code to execute a query on the database, instead of fetching and returning the whole data at the same time, you can simply return a generator function containing the query cursor that yields one data row at a time.</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>function getUsers()
+{</p>
+
+<pre><code>$dbh = new PDO('mysql:host=xyz;port=xyz;dbname=xyz', '[...]');
+$stmt = $dbh-&gt;prepare("SELECT * FROM users");
+$stmt-&gt;execute();
+
+try {
+    while ($rs = $stmt-&gt;fetch(PDO::FETCH_OBJ)) {
+       yield $rs;
+    }
+} finally {
+    $stmt-&gt;closeCursor();
+}
+</code></pre>
+
+<p> }</p>
+
+<p>$users = getUsers();</p>
+
+<p>foreach ($users as $user){</p>
+
+<pre><code>print_r($user);
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Speaking of Javascript, one great usage example for generators is the <a href="http://taskjs.org/">task</a> library, a combination of <a href="http://domenic.me/2012/10/14/youre-missing-the-point-of-promises/"><code>promises</code></a>, and <code>generators</code> to write asynchronous callbacks as beautiful as synchronous code.</p>
+
+<p>```js
+function go() {</p>
+
+<pre><code>var { spawn, join } = task;
+
+var out = document.getElementById("out");
+
+spawn(function() {
+    out.innerHTML = "reading...\n";
+    try {
+        var [ f1, f2 ] = yield join(read("sleep.html"), read("read.html"));
+        out.innerHTML += "sleep.html: " + (f1.responseText.length) + "\n";
+        out.innerHTML += "read.html: " + (f2.responseText.length) + "\n";
+    } catch (e) {
+        e.stack.split(/\n/).forEach(function(line) { console.log(line) });
+        console.log("");
+        out.innerHTML = "error: " + e;
+    }
+});
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Finally you need to consider some stuff before start using <code>Generator</code>, beware that once it get consumed you cannot reset it, you will need to recall it again.</p>
+
+<p>Also keep resources like db connection and file stream busy on the <code>Generator</code> function could be a problem if you are heavily use this resources and you need to release it as soon as possible.</p>
+]]></content>
+  </entry>
+  
+</feed>

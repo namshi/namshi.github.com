@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: presentation | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/presentation/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/presentation/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[jsDay and phpDay recap]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/25/jsday-phpday-recap/"/>
+    <link href="http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap/"/>
     <updated>2014-05-25T19:33:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/25/jsday-phpday-recap</id>
+    <id>http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap</id>
     <content type="html"><![CDATA[<p><img class="center" src="/images/posts/rasmus-namshi-scaled.png" width="800" title="&lsquo;Rasmus Lerdorf &ndash; Namshi team&rsquo; &lsquo;Rasmus Lerdorf with the Namshi team&rsquo;" ></p>
 
 <p>One week ago, Luciano, Lucio, Alex and I attended the annual <a href="http://jsday.it">jsDay</a> and <a href="http://phpday.it">phpDay</a> in Verona organized by the <a href="http://grusp.it">GrUSP</a>, the Italian PHP user Group.
@@ -56,7 +56,7 @@ The conferences were sold out, with more than 300 attendees and two tracks per d
 
 
 <div style="width:600px">
-<script async class="speakerdeck-embed" data-id="5f461ec0bd80013111d576b6210235ec" data-ratio="1.33333333333333" src="http://tech.namshi.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="5f461ec0bd80013111d576b6210235ec" data-ratio="1.33333333333333" src="http://namshi.github.io//speakerdeck.com/assets/embed.js"></script>
 </div>
 
 

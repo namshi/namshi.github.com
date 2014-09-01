@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Virus | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/virus/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/virus/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Virus Detection and Prevention Tips]]></title>
-    <link href="http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips/"/>
+    <link href="http://namshi.github.io/blog/2013/12/10/virus-detection-and-prevention-tips/"/>
     <updated>2013-12-10T13:32:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips</id>
+    <id>http://namshi.github.io/blog/2013/12/10/virus-detection-and-prevention-tips</id>
     <content type="html"><![CDATA[<ul>
 <li>Make sure you have an anti-virus program installed on your computer. If an anti-virus is installed, also sure its updated regularly as well.</li>
 <li>Don&rsquo;t open email attachments from an unknown, suspicious or untrustworthy source. Also, be careful of email attachments you are not expecting, it might be that the sender&rsquo;s email has been compromised.</li>

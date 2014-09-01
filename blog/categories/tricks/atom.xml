@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tricks | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/tricks/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/tricks/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Git and Github at Namshi: our flow and tips&tricks]]></title>
-    <link href="http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/"/>
+    <link href="http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/"/>
     <updated>2014-05-04T20:38:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks</id>
+    <id>http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks</id>
     <content type="html"><![CDATA[<p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
 
 <p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>

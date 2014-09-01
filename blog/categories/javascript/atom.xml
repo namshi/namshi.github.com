@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: javascript | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/javascript/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/javascript/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -14,17 +14,122 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Newsletter #53]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/28/newsletter-number-53/"/>
+    <updated>2014-08-28T16:11:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/28/newsletter-number-53</id>
+    <content type="html"><![CDATA[<blockquote><p><strong>BOOM!</strong> As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!</p>
+
+<ul>
+<li><p><a href="https://github.com/namshi/shisha"><strong>shisha, smoke tests made easy!</strong></a> A cool nodejs library by <a href="http://tech.namshi.com/team/#Shidhin%20CR">Shidhin</a> and <a href="http://tech.namshi.com/team/#Mohamad%20Hallal">Hallal</a> that let&rsquo;s you
+write smoke tests in an easy way.</p></li>
+<li><p><a href="https://github.com/namshi/node-dock"><strong>node-dock, a sweet remedy for all your docker problems!</strong></a> Another node library by <a href="http://tech.namshi.com/team/#Hossam%20Faris">Hossam</a> and <a href="http://tech.namshi.com/team/##Luciano%20Colosio">Lucio</a> that
+has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy functionality on top of it.</p></li>
+<li><p>Even <a href="http://tech.namshi.com/team/#Alessandro%20Nadalin">Alex</a> released another tiny and cool node lib called <a href="http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"><strong>node-file-ensure</strong>, a small filesystem utility to make sure a file is there</a></p></li>
+<li><p>Lucio also wrote a post detailing his first months here at Namshi: <a href="http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/">check it out</a>!</p></li>
+<li><p>Last but not least, <a href="http://tech.namshi.com/team/#Geshan%20Manandhar">Geshan</a> on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony <a href="http://mq-talk.herokuapp.com/">http://mq-talk.herokuapp.com/</a></p></li>
+</ul>
+</blockquote>
+
+<p>And here we are as usual with a list of interesting links to keep you busy during the upcoming weekend:</p>
+
+<ul>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://buff.ly/1nEYH2M">Open Source ain’t Charity</a></p></li>
+<li><p><a href="https://speakerdeck.com/patrickhamann/ship-it-re-develop-conference-august-2014">Ship it! A story of continuous delivery at theguardian.com</a></p></li>
+<li><p><a href="https://www.gov.uk/service-manual/agile/running-retrospectives.html">Reviewing a team&rsquo;s work and the way it is done at Gov.uk Design Services</a></p></li>
+<li><p><a href="http://buff.ly/1wDTrGe">Plain Old #JavaScript Object Visualization</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/eDh0CeQYpA">Stop whatever you are doing and look at p6 of this paper</a></p></li>
+<li><p><a href="http://buff.ly/1lrfCus">Rocket Internet co-founder sees venture take off in Middle East</a></p></li>
+<li><p><a href="http://buff.ly/1q9KvDq">V8&rsquo;s memory mysteries</a></p></li>
+<li><p><a href="http://buff.ly/1sh7Lhn">49ers’ stadium Wi-Fi served 25,000 concurrent users, 2.13TB in all</a></p></li>
+<li><p><a href="http://buff.ly/1mA3a6D">Software Developers and Asperger&rsquo;s Syndrome</a></p></li>
+<li><p><a href="http://buff.ly/1v8pUmg">Docker Service Discovery Using Etcd and Haproxy</a></p></li>
+<li><p><a href="http://buff.ly/1tqNB7a">Stellar: Fast database snapshot and restore tool for development</a></p></li>
+<li><p><a href="http://buff.ly/1seRoll">Javascript optimization killers</a></p></li>
+<li><p><a href="http://buff.ly/1mz2vlT">How I Hacked My Husband&rsquo;s Programming Addiction</a></p></li>
+<li><p><a href="http://mq-talk.herokuapp.com/#/14">programmming mantras to remember</a></p></li>
+<li><p><a href="http://buff.ly/1myYCxx">Facebook Unveils Its Load-Balancing System: Autoscale</a></p></li>
+<li><p><a href="http://buff.ly/1wiCeln">Docker 1.2.0, with restart policies</a></p></li>
+<li><p><a href="http://buff.ly/1lmw8vT">Semantic Versioning Is Not the Solution</a></p></li>
+<li><p><a href="http://buff.ly/1mtjtSS">The Plague of Methods and Frameworks</a></p></li>
+<li><p><a href="http://buff.ly/1s2pxot">Evolution of Docker and Its Impact on AWS &ndash; i build the cloud</a></p></li>
+<li><p><a href="http://buff.ly/1s2p4Cu">Uber opens up its API – and creates a new platform</a></p></li>
+<li><p><a href="https://www.glasswire.com">GlassWire Network Security Monitor &amp; Firewall Tool</a></p></li>
+<li><p><a href="https://netguru.co/blog/posts/procrastination-and-overcoming-programmers-block">Procrastination and Overcoming Programmer&rsquo;s Block</a></p></li>
+<li><p><a href="http://algorithm.dk/posts/rtfm-0day-in-ios-apps-g-gmail-fb-messenger-etc">RTFM 0day in iOS apps: G+, Gmail, FB Messenger</a></p></li>
+<li><p><a href="http://www.codefights.com">CodeFights &ndash; Become a Code Champion</a></p></li>
+<li><p><a href="http://hoa-project.net/En/">Hoa project, a cool set of PHP lib (they deserve more community involvement &ndash; i.e. tests are missing, own standards)</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/bubblejs-a-16k-solution-to-a-common-problem--cms-21986">Bubble.js: A 1.6K Solution to a Common Problem</a></p></li>
+<li><p><a href="http://knplabs.com/blog/2011/05/17/agile-nodejs/">We love Symfony2… but we also love Agility and Node.js</a></p></li>
+<li><p><a href="http://www.codeproject.com/Articles/604417/Agile-software-development-methodologies-and-how-t">Agile software development methodologies and how to apply them</a></p></li>
+<li><p><a href="http://lafikl.github.io/perfBar/">website performance metrics</a></p></li>
+<li><p><a href="https://github.com/OptimalBits/redbird">A modern reverse proxy for node</a></p></li>
+<li><p><a href="http://mobileangularui.com/">Mobile Angular UI</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #52]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/21/newsletter-number-52/"/>
+    <updated>2014-08-21T12:37:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/21/newsletter-number-52</id>
+    <content type="html"><![CDATA[<blockquote><p>As you know the IT team loves opensource and the idea <a href="http://github.com/namshi">to give back to the &ldquo;community&rdquo;</a>! <br />
+That&rsquo;s why on Tuesday evening we did an internal hackathon, we bootstrapped four open source projects that we are going to release soon, <br /> stay tuned!<br />
+<a href="http://tech.namshi.com/team/#Luciano%20Colosio">Lucio</a>, our Nodejs maniac, introduced the team to node&rsquo;s history:</p></blockquote>
+
+<p>{% img center /images/posts/lucio-node-presentation.png 800 result %}</p>
+
+<p>Below the usual list of interesting links we found this week:</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1z2jZga">On Sexual Harassment in the Tech Industry</a></p></li>
+<li><p><a href="http://buff.ly/1pYrQJF">Promoting Symfony: One step at a time</a></p></li>
+<li><p><a href="http://buff.ly/YsjYqC">Token-base AngularJS auth</a></p></li>
+<li><p><a href="http://buff.ly/1vZZGUm">Welcoming the Orchard and Fig team in Docker</a></p></li>
+<li><p><a href="http://buff.ly/1ptfB8L">HTTP Shaming</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://elnur.pro/symfony-without-bundles/">Symfony without bundles, an interesting approach</a></p></li>
+<li><p><a href="http://labs.qandidate.com/blog/2014/08/18/a-new-feature-toggling-library-for-php/">A new feature toggling library for PHP</a></p></li>
+<li><p><a href="http://buff.ly/1psgj62">Understanding process.nextTick() &ndash; How To Node</a></p></li>
+<li><p><a href="http://gwendall.github.io/way/">Way.JS: Simple, lightweight, persistent two-way databinding</a></p></li>
+<li><p><a href="http://bjorn.tipling.com/state-and-regular-expressions-in-javascript">What you should know about JavaScript regular expressions</a></p></li>
+<li><p><a href="http://fdietz.github.io/recipes-with-angular-js/">Recipes with Angular.js</a></p></li>
+<li><p><a href="https://github.com/krakjoe/pthreads">Threading for PHP &ndash; Share Nothing, Do Everything :)</a></p></li>
+<li><p><a href="https://github.com/propelorm/Propel2">Propel2 (ORM) for PHP 5.4</a></p></li>
+<li><p><a href="http://taskjs.org/">generators + promises = tasks</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Newsletter #50]]></title>
-    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
     <updated>2014-08-07T11:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
 
 <p>Announcement:</p>
 
 <blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#109;&#97;&#x69;&#108;&#x74;&#x6f;&#x3a;&#119;&#111;&#114;&#x6b;&#45;&#x69;&#x6e;&#45;&#116;&#101;&#99;&#x68;&#x40;&#110;&#97;&#109;&#x73;&#x68;&#x69;&#x2e;&#x63;&#111;&#109;">&#119;&#111;&#114;&#107;&#45;&#x69;&#x6e;&#45;&#x74;&#x65;&#99;&#104;&#64;&#x6e;&#x61;&#109;&#115;&#x68;&#x69;&#x2e;&#99;&#x6f;&#x6d;</a></p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x77;&#x6f;&#x72;&#107;&#x2d;&#105;&#x6e;&#x2d;&#x74;&#x65;&#x63;&#x68;&#64;&#110;&#x61;&#109;&#x73;&#x68;&#105;&#x2e;&#x63;&#x6f;&#x6d;">&#x77;&#x6f;&#x72;&#107;&#x2d;&#105;&#x6e;&#x2d;&#x74;&#101;&#99;&#104;&#x40;&#110;&#x61;&#109;&#115;&#104;&#x69;&#x2e;&#99;&#111;&#109;</a></p></blockquote>
 
 <p>Here are your links for this week!</p>
 
@@ -63,9 +168,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #49]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/"/>
+    <link href="http://namshi.github.io/blog/2014/07/31/newsletter-number-49/"/>
     <updated>2014-07-31T11:50:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49</id>
+    <id>http://namshi.github.io/blog/2014/07/31/newsletter-number-49</id>
     <content type="html"><![CDATA[<p>TechThursday is here!</p>
 
 <blockquote><p>Namshi is hiring! <a href="http://t.co/kfUX1C0MMy">HR Generalist in United Arab Emirates</a> Please spread the word!</p>
@@ -113,9 +218,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #48]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/"/>
+    <link href="http://namshi.github.io/blog/2014/07/24/newsletter-number-48/"/>
     <updated>2014-07-24T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48</id>
+    <id>http://namshi.github.io/blog/2014/07/24/newsletter-number-48</id>
     <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
 
 <blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
@@ -163,103 +268,6 @@ We will soon talk about it in a blog post, stay tuned and keep following <a href
 <li><p><a href="http://9to5mac.com/2014/07/11/apple-launches-blog-to-highlight-new-swift-programming-language">Apple launches blog to highlight new Swift programming language</a></p></li>
 <li><p><a href="https://blog.codecentric.de/en/2014/06/10-early-thoughts-swift-programming-language">10 Early Thoughts on the Swift Programming Language</a></p></li>
 <li><p><a href="http://www.fastcolabs.com/3031400/whats-new-and-different-about-apples-new-swift-programming-language">The New And Different About Apple&rsquo;s New Swift Programming Language</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #47]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/"/>
-    <updated>2014-07-17T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47</id>
-    <content type="html"><![CDATA[<p>TechThursday is here!</p>
-
-<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
-
-<p>This week our teammate <a href="http://tech.namshi.com/team/#Nikita%20Nefedov">nikita</a> got the time to work a bit on <a href="https://github.com/namshi/jose">namshi/jose</a>, and we ended up releasing version 1.1.1!<br />
-<strong>Jose</strong> is a PHP library that provides a lightweight implementation of <strong>JWS</strong> (<a href="http://tools.ietf.org/html/draft-jones-json-web-signature-04">JSON Web Signature</a>) specification.</p>
-
-<p>At the same time we are thrilled about the first <a href="http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10">SymfonyLive New York</a>, we sent a bunch of cfps&hellip; let&rsquo;s cross our fingers!</p></blockquote>
-
-<p>Below the usual list of interesting resources we found out this week, enjoy!</p>
-
-<ul>
-<li><p><a href="http://buff.ly/1jQCIdf">Security releases (CVE-2014-4931): #Symfony 2.3.18, 2.4.8, and 2.5.2 released</a></p></li>
-<li><p><a href="http://buff.ly/1mh5zBN">httpbin: #HTTP Client Testing Service</a></p></li>
-<li><p><a href="http://buff.ly/1rfPkgd">&ldquo;I Do Not Know One Person Who Is Happy at Amazon&rdquo;</a></p></li>
-<li><p><a href="http://buff.ly/1mdnKYY">Digging into #Angular’s “Controller as” syntax</a></p></li>
-<li><p><a href="http://buff.ly/1oTCIIf">Write your #git hooks in #PHP and keep them under git control</a></p></li>
-<li><p><a href="http://buff.ly/1tAEK55">Why I’m staying with NodeJS</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://t.co/ip61zsw87v">Guy writes a page explaining X11 for mortals <em>and embeds an X11 server in the page</em>. That’s it, everybody out.</a></p></li>
-<li><p><a href="http://buff.ly/1nh6IJW">Zero-downtime database migrations</a></p></li>
-<li><p><a href="http://buff.ly/1qqGUyy">Amazon Zocalo &ndash; Document Storage and Sharing for the Enterprise</a></p></li>
-<li><p><a href="http://buff.ly/1jhYrdw">Breach: a #browser for the #HTML5 era. Entirely written in #Javascript. Free. Modular. Hackable.</a></p></li>
-<li><p><a href="https://helloreverb.com/developers/swagger">Swagger: A simple, open standard for describing REST APIs with JSON | Reverb for Developers http://t.co/WZXF4VnAH3</a></p></li>
-<li><p><a href="http://www.infoq.com/presentations/8-lines-code-refactoring">8 Lines of Code: Greg Young discusses eight lines of very common code finding in them massive numbers of dependencies and difficulties, looking for ways to get rid of them.</a></p></li>
-<li><p><a href="http://msdn.microsoft.com/en-us/library/dn568099.aspx#_The_Sample_Applications">Cloud Design Patterns: Prescriptive Architecture Guidance for Cloud Applications</a></p></li>
-<li><p><a href="http://www.zdnet.com/developers-and-apple-open-up-on-new-swift-programming-language-7000031536">Developers and Apple open up on new Swift programming language</a></p></li>
-<li><p><a href="http://williamdurand.fr/2014/07/02/resting-with-symfony-sos/">RESTing with Symfony: SOS</a></p></li>
-<li><p><a href="https://github.com/jakubroztocil/httpie">HTTPie is a user-friendly cURL replacement</a></p></li>
-<li><p><a href="https://zapier.com/engineering/when-rest-gets-messy/">When REST Gets Messy</a></p></li>
-<li><p><a href="http://zsuraski.blogspot.co.il/2014/07/benchmarking-phpng.html?m=1">PHP-next-gen benchmark</a></p></li>
-<li><p><a href="https://github.com/cjbarber/ToolsOfTheTrade">HN Tools of the Trade, 2014 edition</a></p></li>
-<li><p><a href="https://medium.com/@manicho/how-a-password-changed-my-life-7af5d5f28038">How a Password changed my life</a></p></li>
-<li><p><a href="http://trackjs.com/">JavaScript Error Tracking</a></p></li>
-<li><p><a href="https://formcrafts.com/">Create amazing forms</a></p></li>
-<li><p><a href="http://nakedsecurity.sophos.com/2014/07/16/germany-considers-replacing-email-with-typewriters-to-evade-spying">Germany considers replacing email with typewriters to evade spying</a></p></li>
-<li><p><a href="https://github.com/sausheong/polyglot">A distributed web framework that allows programmers to create web applications in multiple programming languages</a></p></li>
-<li><p><a href="http://vimeo.com/92087878">Zach Holman: If Only I Knew This In College!</a></p></li>
-<li><p><a href="http://programmingisterrible.com/">Programming is terrible &ndash; lessons learned from a life wasted</a></p></li>
-<li><p><a href="http://brikis98.blogspot.ae/2014/03/the-ultimate-guide-to-getting-started.html">The Ultimate Guide to Getting Started with the Play Framework</a></p></li>
-<li><p><a href="http://www.andrisreinman.com/nodemailer-v1-0/">Nodemailer v1.0 released</a></p></li>
-<li><p><a href="http://blog.newrelic.com/2014/07/15/geekspeak-data/">10 Things Non-Developers Love To Say To Developers</a></p></li>
-<li><p><a href="http://realm.io/news/introducing-realm">Introducing Realm &ndash; a mobile-first database</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #45]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/"/>
-    <updated>2014-07-03T11:30:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45</id>
-    <content type="html"><![CDATA[<p>Welcome to <strong>TechThursday</strong>!</p>
-
-<h2>Announcements</h2>
-
-<p>This week we say <a href="http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/">goodbye</a> to @luciano, you will be missed!</p>
-
-<p>We&rsquo;ve been working on <a href="https://github.com/namshi/clusterjs">clusterjs</a>! Take a look at the <a href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/">blog post</a> Today we released version 0.7!</p>
-
-<p>Our @Cirpo will be speaking at the PHP North East Conference in Boston in a September! Read about his presentation <a href="http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/">here</a></p>
-
-<h2>Newsletter</h2>
-
-<ul>
-<li><a href="https://github.com/codemix/fast.js">Faster user-land re-implementations for several common built-in native JavaScript functions</a></li>
-<li><a href="http://blog.embed.ly/post/89265229166/what-twitter-isnt-telling-you-about-gifs">What Twitter Isn’t Telling You About GIFs</a></li>
-<li><a href="http://www.breefield.com/essays/affiliate">How I Made $3,000 with 90 Lines of Code</a></li>
-<li><a href="http://www.akamai.com/worldcup">Akamai delivers for the world cup</a></li>
-<li><a href="http://symfony.com/blog/first-online-symfony-community-hack-day-july-5th">First Online Symfony Community Hack Day: July 5th!</a></li>
-<li><a href="http://ng-inspector.org/">ng-inspect like a boss</a></li>
-<li><a href="http://www.smashingmagazine.com/2014/06/27/communicating-effectively-in-projects/">How To Communicate Effectively in IT Projects</a></li>
-<li><a href="http://blog.arvidandersson.se/2014/06/17/best-practices-in-modern-web-projects">Best practices in modern web projects</a></li>
-<li><a href="http://daemon.io/">PHP Deamon &ndash; Asynchronous server-side framework for Web and network applications implemented in PHP</a></li>
-<li><a href="http://phansible.com/">An easy to use interface that helps you generate Ansible Playbooks for PHP based projects</a></li>
-<li><a href="http://serversforhackers.com/editions/2014/07/01/ssh-tricks/">SSH Tricks</a></li>
-<li><a href="http://shields.io/">GitHub badges as a service</a></li>
-<li><a href="http://php-and-symfony.matthiasnoback.nl/2014/01/php-the-future-of-packages">PHP &ndash; The Future of Packages</a></li>
-<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-7-identifying-the-presentation-layer--cms-21593">Refactoring Legacy Code: Part 7 &ndash; Identifying the Presentation Layer</a></li>
-<li><a href="http://www.slideshare.net/cakper/2014-0407-php-spec-the-only-design-tool-you-need-4developers">PHPSpec &ndash; the only Design Tool you need</a></li>
 </ul>
 
 ]]></content>

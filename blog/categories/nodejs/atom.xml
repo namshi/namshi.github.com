@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: NodeJS | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/nodejs/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:23+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -14,10 +14,113 @@
 
   
   <entry>
+    <title type="html"><![CDATA[node-file-ensure, a small filesystem utility to make sure a file is there]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"/>
+    <updated>2014-08-22T19:42:00+04:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there</id>
+    <content type="html"><![CDATA[<p>This weekend we&rsquo;ve come up with a small utility
+that will make our life easier, and hopefully <strong>yours</strong>
+as well!</p>
+
+<!-- more -->
+
+
+<p>We use cascading mechanisms for our configurations, so, for
+example, we define the config in a few different files:</p>
+
+<ul>
+<li><code>base.yml</code>, that has all the common configurations</li>
+<li><code>dev.yml</code>, which is for local environments</li>
+<li><code>staging.yml</code>, which is for our staging environment</li>
+<li><code>live.yml</code>, well&hellip;you guessed it!</li>
+</ul>
+
+
+<p>So, for example, a <code>live.yml</code> might look like:</p>
+
+<p><code>yaml
+domain:   'namshi.com'
+</code></p>
+
+<p>whereas the base one has many more values:</p>
+
+<p>{% raw %}
+<code>yaml
+apis:
+  version:   'v1'
+  domain:    'api.{{ domain }}'
+  baseUrl:   'https://{{ apis.domain }}'
+</code>
+{% endraw %}</p>
+
+<p>There&rsquo;s a problem with this approach: if one of the developers
+wants to change a value in his <code>dev.js</code> git will tell him that
+the file has changed, which is quite annoying!</p>
+
+<p>To overcome this we always put it in the <code>.gitignore</code>:</p>
+
+<p><code>
+dev.yml
+</code></p>
+
+<p>and instead commit a <code>dev.yml.example</code> file that has the
+skeleton of the file, asking everyone, when booting the application
+for the first time, to copy that file to a <code>dev.js</code>.</p>
+
+<p>Things work flawlessly until you need to do this 10 times
+(I mean, in 10 projects, like we do) or when you forget this step
+during the installation and waste a lot of time trying to debug why
+the application is not running correctly.</p>
+
+<p>To overcome this annoying issue we decided to develop a small utility,
+<a href="https://github.com/namshi/node-file-ensure">node-file-ensure</a>, that
+does all of this for you:</p>
+
+<p>``` javascript
+var ensure = require(&lsquo;file-ensure&rsquo;);</p>
+
+<p>ensure(&lsquo;./config/dev.yml&rsquo;, {from: &lsquo;./config/dev.yml.example&rsquo;});
+```</p>
+
+<p>Simple as that!</p>
+
+<p><code>ensure</code> will make sure to create an empty file if it doesnt find
+the one you specified:</p>
+
+<p><code>javascript
+ensure('./config/dev.yml');
+</code></p>
+
+<p>and is able to copy the contents from another file,
+like in the first example above:</p>
+
+<p><code>javascript
+ensure('./config/dev.yml', {from: './config/dev.yml.example'});
+</code></p>
+
+<p>If you need to run any check after <code>ensure</code> has run,
+you can provide a callback:</p>
+
+<p><code>javascript
+ensure('path/to/config/dev.yml', {src: 'path/to/config/dev.yml.example'}, function(err){
+  console.log(fs.readFileSync('path/to/config/dev.yml').toString() === fs.readFileSync('path/to/config/dev.yml.example').toString());
+});
+</code></p>
+
+<p>That&rsquo;s it! Tests run through mocha and we&rsquo;ve set them up
+on <a href="https://travis-ci.org/namshi/node-file-ensure">travis</a>,
+to be on the safe side :)</p>
+
+<p>If you have patches, suggestions or rants&hellip;feel free to open
+an <a href="https://github.com/namshi/node-file-ensure/issues">issue on GitHub</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Newsletter #46]]></title>
-    <link href="http://tech.namshi.com/blog/2014/07/10/newsletter-number-46/"/>
+    <link href="http://namshi.github.io/blog/2014/07/10/newsletter-number-46/"/>
     <updated>2014-07-10T10:07:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/07/10/newsletter-number-46</id>
+    <id>http://namshi.github.io/blog/2014/07/10/newsletter-number-46</id>
     <content type="html"><![CDATA[<p>As usual, it&rsquo;s #TechThursday!</p>
 
 <!-- more -->
@@ -81,9 +184,9 @@ resources over the past weeK:</p>
   
   <entry>
     <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
+    <link href="http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
     <updated>2014-06-27T00:45:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
+    <id>http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
     <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
 through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
 by using it and realizing we wanted to achieve zero-downtime

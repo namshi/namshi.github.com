@@ -1,269 +1,315 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://tech.namshi.com/blog/2013/09/20/behat/</loc>
+        <loc>http://namshi.github.io/blog/2013/09/20/behat/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2013/09/22/daily-scrum/</loc>
+        <loc>http://namshi.github.io/blog/2013/09/22/daily-scrum/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2013/09/23/frameworks/</loc>
+        <loc>http://namshi.github.io/blog/2013/09/23/frameworks/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2013/12/10/virus-detection-and-prevention-tips/</loc>
+        <loc>http://namshi.github.io/blog/2013/12/10/virus-detection-and-prevention-tips/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/</loc>
+        <loc>http://namshi.github.io/blog/2014/01/23/newsletter-number-23/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/01/30/newsletter-number-24/</loc>
+        <loc>http://namshi.github.io/blog/2014/01/30/newsletter-number-24/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/02/07/newsletter-number-25/</loc>
+        <loc>http://namshi.github.io/blog/2014/02/07/newsletter-number-25/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/02/13/newsletter-number-26/</loc>
+        <loc>http://namshi.github.io/blog/2014/02/13/newsletter-number-26/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/02/20/newsletter-number-27/</loc>
+        <loc>http://namshi.github.io/blog/2014/02/20/newsletter-number-27/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/02/21/symfony2-dot-4-expression-language/</loc>
+        <loc>http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/03/06/newsletter-number-28/</loc>
+        <loc>http://namshi.github.io/blog/2014/03/06/newsletter-number-28/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/03/13/newsletter-at-29/</loc>
+        <loc>http://namshi.github.io/blog/2014/03/13/newsletter-at-29/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/03/20/newsletter-number-30/</loc>
+        <loc>http://namshi.github.io/blog/2014/03/20/newsletter-number-30/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/
+            http://namshi.github.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/03/27/newsletter-number-31/</loc>
+        <loc>http://namshi.github.io/blog/2014/03/27/newsletter-number-31/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/04/03/newsletter-number-32/</loc>
+        <loc>http://namshi.github.io/blog/2014/04/03/newsletter-number-32/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/04/12/newsletter-number-33/</loc>
+        <loc>http://namshi.github.io/blog/2014/04/12/newsletter-number-33/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/04/18/newsletter-number-34/</loc>
+        <loc>http://namshi.github.io/blog/2014/04/18/newsletter-number-34/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/04/24/newsletter-number-35/</loc>
+        <loc>http://namshi.github.io/blog/2014/04/24/newsletter-number-35/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/01/newsletter-number-36/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/01/newsletter-number-36/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/
+            http://namshi.github.io/blog/2014/05/07/3-php-5-dot-5-features-we-are-using-at-namshi/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/08/newsletter-number-37/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/08/newsletter-number-37/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/15/newsletter-number-38/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/15/newsletter-number-38/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/22/newsletter-number-39/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/22/newsletter-number-39/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/25/jsday-phpday-recap/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/26/welcome-lucio/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/26/welcome-lucio/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/26/welcome-shidhin/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/26/welcome-shidhin/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/26/welcome-nikita/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/26/welcome-nikita/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/05/29/newsletter-number-40/</loc>
+        <loc>http://namshi.github.io/blog/2014/05/29/newsletter-number-40/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/
+            http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/06/03/goobye-muhammad/</loc>
+        <loc>http://namshi.github.io/blog/2014/06/03/goobye-muhammad/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/06/04/developers-dont-write-code-they-write-essays/
+            http://namshi.github.io/blog/2014/06/04/developers-dont-write-code-they-write-essays/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/06/05/newsletter-number-41/</loc>
+        <loc>http://namshi.github.io/blog/2014/06/05/newsletter-number-41/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/06/07/reconfi-declarative-javascript-configurations/
-        </loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://tech.namshi.com/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/
-        </loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://tech.namshi.com/blog/2014/06/12/newsletter-number-42/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/
-        </loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://tech.namshi.com/blog/2014/06/19/newsletter-number-43/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/
-        </loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>http://tech.namshi.com/blog/2014/06/26/newsletter-number-44/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
-    </url>
-    <url>
-        <loc>
-            http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/
+            http://namshi.github.io/blog/2014/06/07/reconfi-declarative-javascript-configurations/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/
+            http://namshi.github.io/blog/2014/06/08/wanna-join-us-we-have-cookies-symfony2-node-angularjs-and-coding-challenges-for-you/
         </loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/</loc>
+        <loc>http://namshi.github.io/blog/2014/06/12/newsletter-number-42/</loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/
+        </loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/06/19/newsletter-number-43/</loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/</loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/
+        </loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/06/26/newsletter-number-44/</loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/
+        </loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/
+        </loc>
+        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/07/02/goodbye-lucianino/</loc>
         <lastmod>2014-07-03T11:55:46+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/03/newsletter-number-45/</loc>
+        <loc>http://namshi.github.io/blog/2014/07/03/newsletter-number-45/</loc>
         <lastmod>2014-07-31T11:47:59+04:00</lastmod>
     </url>
     <url>
         <loc>
-            http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/
+            http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/
         </loc>
         <lastmod>2014-07-31T11:47:59+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/10/newsletter-number-46/</loc>
+        <loc>http://namshi.github.io/blog/2014/07/10/newsletter-number-46/</loc>
         <lastmod>2014-07-31T11:47:59+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/17/newsletter-number-47/</loc>
+        <loc>http://namshi.github.io/blog/2014/07/17/newsletter-number-47/</loc>
         <lastmod>2014-07-31T11:47:59+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/24/newsletter-number-48/</loc>
+        <loc>http://namshi.github.io/blog/2014/07/24/newsletter-number-48/</loc>
         <lastmod>2014-07-31T11:47:59+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/07/31/newsletter-number-49/</loc>
+        <loc>http://namshi.github.io/blog/2014/07/31/newsletter-number-49/</loc>
         <lastmod>2014-07-31T13:21:58+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/</loc>
+        <loc>http://namshi.github.io/blog/2014/08/07/newsletter-number-50/</loc>
         <lastmod>2014-08-07T12:56:56+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/about/</loc>
+        <loc>
+            http://namshi.github.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/
+        </loc>
+        <lastmod>2014-08-21T12:44:35+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/14/newsletter-number-51/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/21/newsletter-number-52/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/
+        </loc>
+        <lastmod>2014-08-30T00:33:40+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/27/so-far-dot-dot-dot-so-fun/</loc>
+        <lastmod>2014-08-30T00:33:40+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/28/newsletter-number-53/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/30/shisha-smoke-test-those-urls/</loc>
+        <lastmod>2014-08-31T23:45:26+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/31/php-generators-explained/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/blog/2014/08/31/welcome-daniel/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://namshi.github.io/blog/2014/09/01/5-devops-practices-you-should-consider-starting-today/
+        </loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://namshi.github.io/about/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/robots.txt</loc>
+        <loc>http://namshi.github.io/robots.txt</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/</loc>
-        <lastmod>2014-08-07T12:56:56+04:00</lastmod>
+        <loc>http://namshi.github.io/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/categories/</loc>
+        <loc>http://namshi.github.io/blog/categories/</loc>
         <lastmod>2014-07-03T11:23:18+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/</loc>
-        <lastmod>2014-08-07T12:56:56+04:00</lastmod>
+        <loc>http://namshi.github.io/blog/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/blog/archives/</loc>
-        <lastmod>2014-08-07T12:56:56+04:00</lastmod>
+        <loc>http://namshi.github.io/blog/archives/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/team/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+        <loc>http://namshi.github.io/team/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/join-us/</loc>
-        <lastmod>2014-07-03T11:23:18+04:00</lastmod>
+        <loc>http://namshi.github.io/join-us/</loc>
+        <lastmod>2014-08-21T12:44:35+04:00</lastmod>
     </url>
     <url>
-        <loc>http://tech.namshi.com/archives/</loc>
-        <lastmod>2014-08-07T12:56:56+04:00</lastmod>
+        <loc>http://namshi.github.io/archives/</loc>
+        <lastmod>2014-09-01T09:46:55+04:00</lastmod>
     </url>
 </urlset>

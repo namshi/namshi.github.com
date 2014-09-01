@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: oop | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/oop/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/oop/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,16 +15,16 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #50]]></title>
-    <link href="http://tech.namshi.com/blog/2014/08/07/newsletter-number-50/"/>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
     <updated>2014-08-07T11:21:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/08/07/newsletter-number-50</id>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
     <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
 
 <p>Announcement:</p>
 
 <blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
 
-<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x77;&#x6f;&#x72;&#x6b;&#45;&#105;&#x6e;&#45;&#x74;&#x65;&#x63;&#x68;&#64;&#110;&#97;&#109;&#x73;&#104;&#105;&#46;&#x63;&#111;&#x6d;">&#x77;&#x6f;&#114;&#107;&#45;&#105;&#110;&#45;&#x74;&#x65;&#x63;&#x68;&#64;&#110;&#97;&#109;&#x73;&#x68;&#105;&#46;&#x63;&#111;&#x6d;</a></p></blockquote>
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#111;&#58;&#x77;&#111;&#114;&#107;&#x2d;&#x69;&#110;&#45;&#x74;&#x65;&#99;&#x68;&#x40;&#110;&#x61;&#109;&#115;&#104;&#x69;&#x2e;&#x63;&#x6f;&#109;">&#x77;&#x6f;&#x72;&#x6b;&#x2d;&#105;&#110;&#x2d;&#116;&#101;&#x63;&#104;&#x40;&#110;&#97;&#x6d;&#x73;&#x68;&#x69;&#46;&#x63;&#111;&#x6d;</a></p></blockquote>
 
 <p>Here are your links for this week!</p>
 

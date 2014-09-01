@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ssl | Tech @ Namshi.com]]></title>
-  <link href="http://tech.namshi.com/blog/categories/ssl/atom.xml" rel="self"/>
-  <link href="http://tech.namshi.com/"/>
-  <updated>2014-08-07T12:57:24+04:00</updated>
-  <id>http://tech.namshi.com/</id>
+  <link href="http://namshi.github.io/blog/categories/ssl/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2014-09-01T09:47:05+04:00</updated>
+  <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Newsletter #43]]></title>
-    <link href="http://tech.namshi.com/blog/2014/06/19/newsletter-number-43/"/>
+    <link href="http://namshi.github.io/blog/2014/06/19/newsletter-number-43/"/>
     <updated>2014-06-19T12:03:00+04:00</updated>
-    <id>http://tech.namshi.com/blog/2014/06/19/newsletter-number-43</id>
+    <id>http://namshi.github.io/blog/2014/06/19/newsletter-number-43</id>
     <content type="html"><![CDATA[<p><strong>TechThursday is here again!</strong></p>
 
 <p>This week we released a new and opensource library on github: <a href="https://github.com/namshi/mockserver">Mockserver</a> for mocking apis, our fellow
