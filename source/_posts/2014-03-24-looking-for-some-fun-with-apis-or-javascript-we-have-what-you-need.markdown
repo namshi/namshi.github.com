@@ -45,7 +45,7 @@ a Service-Oriented Architecture (with [style](http://www.styleisnecessity.com/20
 based on Symfony2, HTTP APIs and Redis.
 
 We are looking for a *Senior API engineer*, and will offer a competitive
-retribution plus some other benefits ([working with cirpo](/images/cirpo.png), among others).
+retribution plus some other benefits ([working with cirpo](/images/cirpo.jpg), among others).
 
 ## Frontend ducktyper
 
