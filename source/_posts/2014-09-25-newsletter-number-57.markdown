@@ -11,13 +11,12 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 > News from the IT Team:
 >
 >Hallal has already landed in London for [Symfony Live](http://london2014.live.symfony.com) conference and he is having a blast.
->{% img team left /images/mohomad-sf-live.jpg %}
+>{% img thumb left /images/mohomad-sf-live.jpg %}
 >
 >And we are back with some more proposals to the [Confoo](http://confoo.ca/en) conference in Canada:
 >check, and support them by voting [for Alex]( http://tech.namshi.com/blog/2014/09/22/coding-on-the-edge-at-confoo/),
 >[for Lucio](http://tech.namshi.com/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo/) and [for Geshan](http://tech.namshi.com/blog/2014/09/20/stop-using-crons-start-listening-to-geshan/), go team Namshi!
 
-<br/><br/><br/>
 But what has the team been looking at over the past week? Below
 you'll find the usual list of interesting articles we discovered
 in the past 7 days.
