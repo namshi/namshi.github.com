@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What went down at SymfonyLive London?"
-date: 2014-09-28 01:26
+date: 2014-10-02 12:26
 comments: true
 author: Mohamad Hallal
 categories: [symfonylive, conference, presentations, talks]
@@ -28,6 +28,8 @@ The talk focused on:
 * Focusing on the community by having mentors and supporting other programmers
 * Enhancing productivity by dealing with customers as partners who understand your passion and approach
 in delivering code rather than focusing on completing tasks
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39722355" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/marcello.duarte/understanding-craftsmanship" title="Understanding craftsmanship" target="_blank">Understanding craftsmanship</a> </strong> from <strong><a href="http://www.slideshare.net/marcello.duarte" target="_blank">Marcello Duarte</a></strong> </div>
 
 ##The dependency Trap by [Jakub Zalas](https://twitter.com/jakub_zalas)
 
@@ -83,6 +85,8 @@ used wherever necessary, for example, the Adapther pattern achieved the goal of 
 required transformation on legacy input and 'adapt' it to the new one.
 
 Basically, the solution to a desing problem must reside in one of the design patterns in the Gang of Four!
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/39591398" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/everzet/decoupling-with-design-patterns-and-symfony2-dic" title="Decoupling with Design Patterns and Symfony2 DIC" target="_blank">Decoupling with Design Patterns and Symfony2 DIC</a> </strong> from <strong><a href="http://www.slideshare.net/everzet" target="_blank">Konstantin Kudryashov</a></strong> </div>
 
 ##Keynote: Doing Everything With Nothing, Ephemeralization In The Cloud by [David Zuelke](https://twitter.com/dzuelke)
 
