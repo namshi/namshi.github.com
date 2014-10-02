@@ -11,7 +11,7 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 
 > News from the IT Team:
 >
-> Hallal is back from [Symfony Live London](http://london2014.live.symfony.com) and wrote a [blog post](http://tech.namshi.com/blog/2014/10/02/what-went-down-at-symfonylive-london/) about it.
+> Our fella Hallal is back from [Symfony Live London](http://london2014.live.symfony.com) and he wrote a [nice recap](http://tech.namshi.com/blog/2014/10/02/what-went-down-at-symfonylive-london/), go and check it out.
 >
 
 But what has the team been looking at over the past week? Below
