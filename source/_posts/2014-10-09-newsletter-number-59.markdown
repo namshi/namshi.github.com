@@ -17,7 +17,7 @@ you'll find the usual list of interesting articles we discovered
 in the past 7 days.
 
 
-* [JavaScript MV* Framework compared](http://www.sitepoint.com/anatomy-javascript-mv-framework/)\
+* [JavaScript MV* Framework compared](http://www.sitepoint.com/anatomy-javascript-mv-framework/)
 
 * [The Definitive Guide to the JavaScript Generators](http://gajus.com/blog/2/the-definetive-guide-to-the-javascript-generators)
 
