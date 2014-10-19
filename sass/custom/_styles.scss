@@ -13,7 +13,7 @@
 
 
     html {
-      background: #262C33 url("../images/background.png");
+      background: #262C33 url("../images/background.jpeg");
       background-attachment: fixed;
     }
 
@@ -203,18 +203,37 @@
 		}
 	  }
 
+	  .entry-content blockquote {
+	  	overflow: hidden;
+	  }
+
+	  .entry-content .sharing {
+		padding: 10px 0;
+	  }
+
 	  img#logo {
 	  	border: none;
 	  	box-shadow: none;
 	  	margin-top: 30px;
 	  }
 
-	  section#titles, section#menu {
+	  section#titles {
 	  	text-align: center;
+	  }
+	  
+	  section#menu li i {
+		margin-right: 20px;
+		ul {
+			text-align: left;
+			li a {
+				margin-left: 10px;
+			}
+		}
 	  }
 
 	  section#social >  a {
 	  	margin: 0 1em;
 	  }
+
 
 
