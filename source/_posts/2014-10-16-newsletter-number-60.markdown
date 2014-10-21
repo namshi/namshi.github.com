@@ -56,8 +56,6 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 
 * [Meteor.js: not new but better recheck :)](http://buff.ly/1nhqhbV)
 
-* [What’s wrong with Angular.js](http://buff.ly/1nhq1JY)
-
 * [Sharing micro-service authentication using Nginx, Passport and Redis Glozic](http://buff.ly/1qG1b1s)
 
 * [5 Programming Languages Marked for Death](http://buff.ly/1vZdoon)
