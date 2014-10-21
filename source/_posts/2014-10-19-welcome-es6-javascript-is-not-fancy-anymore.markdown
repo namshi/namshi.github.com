@@ -1,21 +1,23 @@
 ---
 layout: post
-title: "Welcome ES6 !! JavaScript is not fancy anymore"
+title: "Welcome ES6 !!! JavaScript is not fancy anymore"
 date: 2014-10-19 12:04
 comments: true
 categories: [ES6, JavaScript]
 author: Shidhin CR
 ---
 
+__21/10/2014 UPDATE:__ *This post was updated ( See the new examples for arrow functions and template strings ). Thanks for the [comments](http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread) and [Reddit discussion](http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/).*
+## 
 For years, JavaScript was considered as a toy language. It was used for creating interactive web pages and could run only in the browser. But, things changed; JavaScript is used in both, the server and the browser these days. The simplicity of the language made it so popular that developers started using it for large and complex projects. 
 
-However, new developers felt JavaScript was fancy at times. This was because of some of the known drawbacks in the language itself -- and the workarounds put in place for fixing them. For example, a developer from a "C" language background is more familiar to block level scoping, but will have difficulties understanding lexical scoping in JavaScript. Along with lexical scoping, variable hoisting and closures might seem fancy or difficult to understand as well.
+However, new developers felt JavaScript was fancy at times. This was because of some of the known drawbacks in the language itself -- and the workarounds put in place for fixing them. For example, a developer from a "C" language background is more familiar to block level scoping, but will have difficulties understanding function scoping in JavaScript. Along with lexical scoping, variable hoisting and closures might seem fancy or difficult to understand as well.
+
+<!--more-->
 
 ES6, the future version, is going to give a vast makeover to JavaScript. The **TC39** committee (responsible for ES6 standardization) have taken care of most of the concerns about JavaScript, and now ES6 is getting a lot of new features added, and existing bad parts fixed. If you want to know about the JavaScript good vs bad parts, check out Douglas Crockford’s book [JavaScript, the Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742).
 
 This post is **not** about the complete ES6 feature-set. Here, we will see some of the areas of JavaScript that look fancy, and how they are getting improved in ES6.
-
-<!--more-->
 
 ## ES6, all good parts?
 
@@ -27,7 +29,7 @@ As of now, most ES6 features are not supported by browsers (as they’re in draf
 
 Here are some interesting improvements done in ES6:
 
-**Object.is for better comparison**
+### Object.is for better comparison
 
 New developers who learn JavaScript often stumble on the usage of `==` and `===`.  The `===` is a strict comparison operator where it checks the type of the operands also. For example, in this code:
 
@@ -55,7 +57,7 @@ Object.is(0 ,”0”) // false
 Object.is(0 ,0) // true
 Object.is(NaN, NaN) // true
 ```
-**Let for block scoping.**
+### Let for block scoping.
 
 As opposed to languages like "C", JavaScript doesn't have block scoping. All variables inside a block are hoisted to its containing function (if any) or will be part of the global scope. 
 
@@ -118,7 +120,7 @@ for(let i=0,len=anchors.length; i<len; i++){
 ```
 Now the above code should work as expected.
 
-**Multi-line strings and string interpolations.**
+### Multi-line strings and string interpolations
 
 Writing multiline strings is not so straightforward. The `\n` ( for newline ) has to be added where ever a line break is needed.
 
@@ -154,11 +156,11 @@ In ES6, the above code is really simplified, and can be written like this:
 ```javascript
 var name = 'Tony';
 var age = 20;
-var greeting = 'Hi, I am ${name} and my age is ${age}';
+var greeting = `Hi, I am ${name} and my age is ${age}`;
 console.log(greeting); // This prints 'Hi I am Tony and my age is 20'
 ```
 
-**Fat Arrow functions for binding `this`**
+### Fat Arrow functions for binding scope
 
 Most new developers struggle to understand the `this` keyword in JavaScript. `this` is nothing but the execution context for a function, and for methods, `this` points to the object holding it. If the function is executed not as a method of an object, `this` will point to the global object (usually the window object).
 
@@ -169,15 +171,19 @@ var name = 'Tom';
 var obj = {
     name: 'Jerry',
     sayName: function(){
-        console.log( this.name );
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout(function(){
+           console.log('Hi,' + this.name );
+       },100);
     }
 };
 obj.sayName(); // logs Jerry
-var sayName = obj.sayName;
-sayName(); // logs Tom
+obj.greet(); // logs Hi, Tom
 ```
 
-When the `sayName` is executed as an object method, `this` was pointing to object itself; but when it is executed as a normal function, `this` points to the global window object.
+When the `sayName` is executed as an object method, `this` was pointing to object itself, so `this.name` will output "Jerry". Inside the `greet` function, a `setTimeout` is used for delaying the function execution. `setTimeout` will invoke the function in global context, hence `this` will point to the global object.
 
 We usually use `Function.bind` or `Function.call` or `Function.apply` to fix these kinds of problems.
 
@@ -186,19 +192,16 @@ var name = 'Tom';
 var obj = {
     name: 'Jerry',
     sayName: function(){
-        console.log( this.name );
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout(function(){
+           console.log('Hi,' + this.name );
+       }.bind(this),100);
     }
 };
 obj.sayName(); // logs Jerry
-
-// Using call or apply
-var sayName = obj.sayName;
-sayName.call(obj); // logs Jerry
-sayName.apply(obj); // logs Jerry
-
-// Using bind
-var sayName = obj.sayName.bind(obj);
-sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry
 ```
 
 ES6 added arrow functions to get rid of scoping issues. An arrow function will always lexically bind the `this` value to its surrounding environment. So the above code can be written in ES6 like this:
@@ -207,17 +210,24 @@ ES6 added arrow functions to get rid of scoping issues. An arrow function will a
 var name = 'Tom';
 var obj = {
     name: 'Jerry',
-    sayName: => {
-        console.log( this.name );
+    sayName: function(){
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout( ()=> {
+           console.log('Hi,' + this.name );
+       },100);
     }
 };
 obj.sayName(); // logs Jerry
-var sayName = obj.sayName;
-sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry
 ```
+
+Here, inside the arrow function, `this` always points to the parent scope `this` value.
+
 **Note:** _Since the arrow function is already bound to its execution context, we cannot apply .bind(), .call() or .apply() methods on it again._
 
-**Destructuring**
+### Destructuring
 
 Destructuring is the process of assigning the property values of an object to a local variable. For example, in JavaScript, we can do this:
 
@@ -267,7 +277,7 @@ ES6 allows direct destructing assignments. So we can write the above example in 
     makeAjaxRequest( myGlobalConfig );
 ```
 
-**Default Argument Values for Functions**
+### Default Argument Values for Functions
 
 One of the best features in ES6 is default arguments. As of now, we use the `||` to have default values for the function parameters. See the below code:
 
@@ -286,7 +296,7 @@ Here is the same code written in ES6:
         return a*b*c;
     };
 ```
-**Object method shorthands**
+### Object method shorthands
 
 Look at the below object creation pattern. In this, all the public method/property of an object will have their own private counterparts. For example:
 
@@ -317,11 +327,11 @@ The above pattern is called **Revealing module pattern**. In ES6, it is much sim
     })();
 ```
 
-**The super keyword for invoking super class methods.**
+### The super keyword for invoking super class methods
 
 JavaScript supports object oriented programming. But, implementing inheritance is tricky in JavaScript, as it is not supported natively. JavaScript even has the `super` keyword, however, it is not functional.
 
-Most of the JavaScript frameworks, that implement inheritance, have a pattern like this:
+Most of the JavaScript frameworks those implement inheritance have a pattern like this:
 
 ```javascript
     var myBaseObj = {
