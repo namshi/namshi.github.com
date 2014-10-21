@@ -1,13 +1,18 @@
 ---
 layout: post
-title: "Welcome ES6 !!! JavaScript is not fancy anymore"
+title: "Welcome ES6 ! JavaScript is not fancy anymore"
 date: 2014-10-19 12:04
 comments: true
 categories: [ES6, JavaScript]
 author: Shidhin CR
 ---
 
-__21/10/2014 UPDATE:__ *This post was updated ( See the new examples for arrow functions and template strings ). Thanks for the [comments](http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread) and [Reddit discussion](http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/).*
+>__21/10/2014 UPDATE:__ This post was updated ( see the new examples for arrow functions and template strings ).
+>
+> Thanks for the [comments](http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread) 
+>and the [Reddit discussion](http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/).
+
+
 ## 
 For years, JavaScript was considered as a toy language. It was used for creating interactive web pages and could run only in the browser. But, things changed; JavaScript is used in both, the server and the browser these days. The simplicity of the language made it so popular that developers started using it for large and complex projects. 
 
