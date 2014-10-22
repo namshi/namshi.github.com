@@ -93,7 +93,7 @@ We use a **closure** to fix this problem. Using closure, we can bind the right v
 ```javascript
 var anchors = document.getElementsByTagName(“a”);
 for(var i=0,len=anchors.length; i<len; i++){
-    anchors[i].onclick = (function(){
+    anchors[i].onclick = (function(i){
         return function(){
             alert(i);
         };
