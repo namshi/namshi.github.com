@@ -1,30 +1,35 @@
 ---
 layout: page
 title: "Join us!"
-date: 2014-05-14 16:47
+date: 2014-10-14 16:47
 comments: true
 ---
 
 Whether you are an API maniac or you like to get your hands dirty on
-the Chrome DevTools, trying to optimize a bunch of JavaScript code,
-if you are passionate and enthusiast about what you're doing...then
-we should have a chat!
+the Chrome DevTools, trying to optimize a bunch of JavaScript code, love the opensource,
+get excited about new tools and tecnlogies (Docker, HHVM anyone?),
+if you are passionate and enthusiast about what you're doing... 
+**then we should have a chat!**
 
 At Namshi we are always looking for talented individuals who want to strive
 towards clean code, design patterns and want to use the latest
-technologies in their daily work -- ever heard of SPDY, WebP, AngularJS or Redis? These
-are just a few of the things we use at Namshi.
+technologies in their daily work -- ever heard of **SPDY, WebP, AngularJS, Docker, ElasticSearch or Redis? These
+are just a few of the things we use at Namshi**.
 
 ## About our stack
 
-On the backend, we like to use NodeJS, Symfony2 and have based our
+On the backend, we like to use **NodeJS, Symfony2** and have based our
 Service Oriented Architecture on "RESTish" APIs, while, at the front,
 we've decided to fight the battle with AngularJS and Javascript in general
 (gulp, browserify and all the *new kids on the block*).
 
+We are also using other cool tools in our architecture: RabbitMq, ElasticSearch, Docker, Mysql, Redis
+
 ## What do we offer?
 
 ...a good salary, we don't want to hire people who feel they've been underpaid
+
+...an opensource-community-driven enviroment. We love to give back to the community whenever we can: http://github.com/namshi
 
 ...SPDY, HTTP APIs and a Service-Oriented Architecture
 
@@ -44,7 +49,7 @@ we've decided to fight the battle with AngularJS and Javascript in general
 
 ## Openings
 
-Currently, we are looking for a [Mobile Lead Developer](/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/), a [Sr Frontend Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/) and a [Sr API Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/): if you have the passion, but lack of the experience, don't worry but submit
+Currently, we are looking for and a [Sr API Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/), a [Mobile Lead Developer](/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/) and a [Sr Frontend Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/): if you have the passion, but lack of the experience, don't worry but submit
 your application as we are very happy to hire youngsters who can grow
 during their time at Namshi!
 
