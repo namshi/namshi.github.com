@@ -11,7 +11,7 @@ As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
 Having already in out tool belt a [graylog2](http://www.graylog2.org/) facility in place, looking for a way to leverage it was the most natural thing to do.
 
 Because of its nice modular `transports feature` our node-logging weapon of choice is [winston](https://github.com/flatiron/winston), the `graylog2` transport library looked a bit alone though and in need of a maintainer.
-I our usual **give back** spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)
+In our usual **give back** spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)
 
 As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the [node-graylog2](https://github.com/Wizcorp/node-graylog2) library:
 they'll most likely do a better job than us on the protocol side, and we'll be able to focus more on the winston integration.
