@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Namshi went to Germany!<br>WebTechCon and International PHPConference 2014"
+date: 2014-10-30 06:51
+comments: true
+categories: [conference, talk, php, javascript, soa]
+author: Alessandro Cinelli (cirpo)
+---
+
+{% img left /images/posts/webtech14-ipc14.png 320 320 'WebTechCon' 'WebTechCon' %}
+
+I had the opportunity to attend the [WebTechCon](http://webtechcon.de/2014/) and the [International PHPConference 2014](https://phpconference.com/2014) as speaker in Munich, Germany.
+The location was very nice, and beeing a foodie, the food was great :).
+
+The only small complaint I have is that in 2014, Tech conference should be in English: I missed a lot of potentially great talks because they were in German.
+
+The International PHP Conference is the world's first PHP conference and stands since more than a decade while the WebTechCon is taking place 
+since the last 5 years. 
+The fact that you have these two events combined confirms the trend of horizontal events rather than focusing on just
+one technology or product. 
+Lots of different topics were covered: PHP, Javascript, HTML5, AngularJs, databases, devops, systems, automation, architecture etc.
+
+The concept of an heterogeneous technologies integration was addressed during the opening keynote and was a topic covered in many talks, mine were no exception.
+
+I presented two talks: ["Don't screw it up! How to build durable API"](http://www.slideshare.net/cirpo/don-t-screw-it-up-how-to-build-durable-api) and ["PHP is the king, nodejs the prince and Lua the fool"](http://www.slideshare.net/cirpo/php-is-the-king-nodejs-is-the-prince-and-lua-is-the-fool).
+
+Both talks are based on the experience at Namshi, building our current service oriented architecture and API and how our stack is evolving.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40808376" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> </div>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/40818800" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px">  </div>
+
+At Namshi we believe that attending conferences and meetups is a very important as that helps the team and the individual developers grow.
+It's a great opportunity to understand what's going on in our field and to meet other great developers.
+
+What's next? If you're attending [SymfonyCon Madrid](http://madrid2014.symfony.com/), don't miss ["Hey, I just met AngularJS, and this is crazy, so here’s my JavaScript, let’s use it maybe"](http://madrid2014.symfony.com/speakers) by [Alex](http://tech.namshi.com/team/#Alessandro Nadalin)!
