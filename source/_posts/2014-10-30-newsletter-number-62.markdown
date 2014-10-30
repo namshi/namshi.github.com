@@ -13,7 +13,7 @@ It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter
 >
 > Namshi is now maintaining [winston-graylog2](https://github.com/namshi/winston-graylog2)! [Lucio]() just merged the first PR!
 >
-> [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo)) just came back from Munich after giving two interesting talks, read all about it [here](http://tech.namshi.com/blog/2014/10/30/ipc14-wtc14-munich/)!
+> [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo\)) just came back from Munich after giving two interesting talks, read all about it [here](http://tech.namshi.com/blog/2014/10/30/ipc14-wtc14-munich/)!
 >
 > [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) will be hitting [SymfonyCon Madrid](http://madrid2014.symfony.com/speakers)
 > on November 27-29. He will talk about Namshi's experience with AngularJs!
@@ -32,7 +32,7 @@ It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter
 
 * [Why Open Source Is Becoming A Big Developer-Recruiting Tool](http://bit.ly/1weC6l8)
 
-* [React (and why it’s awesome) - Slides] (http://bit.ly/1yIRgyv)
+* [React and why it’s awesome) - Slides] (http://bit.ly/1yIRgyv)
 
 * [4 Biggest Reasons Why Software Developers Suck at Estimation](http://bit.ly/10ApTLP)
 

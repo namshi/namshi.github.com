@@ -25,7 +25,7 @@ teammates fight through the craziness of Javascript, NodeJs came into the pictur
 as you might think, this javascript craziness on the server?! But the simplicity and the ultimate performance of this
 platform proved me wrong again.
 
-The newly emplyed technologies brought with them a set of valuable practices like code review, code testing and
+The newly employed technologies brought with them a set of valuable practices like code review, code testing and
 automated testing tools, pair programming and many more which are very important skills for a software developer to pick up.
 
 Attending SymfonyLive London 2014 was a great chance to meet people from the Symfony and PHP community, getting to know
