@@ -87,5 +87,3 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 * [Lightweight Symfony2 Controllers](http://www.whitewashing.de/2014/10/14/lightweight_symfony2_controllers.html)
 
 * [The Future of PHP is Shared Power Tools](https://www.acquia.com/blog/future-php-shared-power-tools)
- 
-
