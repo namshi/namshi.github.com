@@ -7,7 +7,7 @@ author: Mohamad Hallal
 categories: [farewell, namshi, tech]
 ---
 
-Today, I bed farewell to the team and the culture that introduced me to software development. A year and six months have passed since I
+Today, I bade farewell to the team and the culture that introduced me to software development. A year and six months have passed since I
 landed my first job straight out of college as a Junior Software Engineer at Namshi where I had the great, the average and the bad
 days. I must admit, time has passed super fast.
 
