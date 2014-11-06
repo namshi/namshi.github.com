@@ -3,7 +3,7 @@ layout: post
 title: "Newsletter #62"
 date: 2014-10-30 11:09
 comments: true
-categories: 
+categories:  [newsletter, techthursday, javascript, php, symfony,  mongo, oop, docker]
 ---
 Hey folks!
 
