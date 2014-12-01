@@ -7,7 +7,7 @@ comments: true
 
 Whether you are an API maniac or you like to get your hands dirty on
 the Chrome DevTools, trying to optimize a bunch of JavaScript code, love the opensource,
-get excited about new tools and tecnlogies (Docker, HHVM anyone?),
+get excited about new tools and technologies (Docker, HHVM anyone?),
 if you are passionate and enthusiast about what you're doing... 
 **then we should have a chat!**
 
@@ -29,7 +29,7 @@ We are also using other cool tools in our architecture: RabbitMq, ElasticSearch,
 
 ...a good salary, we don't want to hire people who feel they've been underpaid
 
-...an opensource-community-driven enviroment. We love to give back to the community whenever we can: http://github.com/namshi
+...an opensource-community-driven environment. We love to give back to the community whenever we can: http://github.com/namshi
 
 ...SPDY, HTTP APIs and a Service-Oriented Architecture
 

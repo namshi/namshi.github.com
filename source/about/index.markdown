@@ -8,8 +8,7 @@ footer: true
 ---
 
 Namshi is an online shopping website that caters to all the GCC countries. <br />
-It is the Middle East's ultimate shopping destination with an ever expanding collection of your favorite brands of shoes, <br />
-bags, clothes, and accessories for women, men and kids. <br />
+It is the Middle East's ultimate shopping destination with an ever expanding collection of your favorite brands of shoes, bags, clothes, and accessories for women, men and kids. <br />
 
 {% img center /images/team.jpg 450 450 IT team %}
 

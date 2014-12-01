@@ -65,7 +65,7 @@ footer: true
     new startups where he was able to focus also on Agile and XP methodologies.
     For what it concerns software development he deeply values best practices, clean code and architectures and new cutting edge technologies.
     Quite of an *aficionado* in the italian development community he's one of the founding members of the web-centric communtiy "WEBdeBS".
-    He joined Namshi as frontend engneer bringing his deep love for both javascript and node.js
+    He joined Namshi as frontend engineer bringing his deep love for both javascript and node.js
 
 *   ##<div id="Hossam Faris">Hossam Faris</div>
     {% img left team /images/hossam.jpg Hossam Faris %}
