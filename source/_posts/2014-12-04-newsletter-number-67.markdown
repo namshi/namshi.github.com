@@ -6,6 +6,8 @@ comments: true
 author: Geshan Manandhar
 categories:  [newsletter, techthursday, javascript, php, Symfony, nodejs, testing, jws, kibana, nodejs, io.js, composer, development]
 ---
+{% img team center /images/docker-con-amsterdam2014.jpg %}
+
 Hello folks!
 
 > News from the tech team:
@@ -14,7 +16,6 @@ Hello folks!
 > We hope they are enjoying and get the latest insights about docker.
 > If you are at the dockercon, don't miss the opportunity to talk to our fellows there, as you know we are [hiring](http://tech.namshi.com/join-us/).
 
-{% img team /images/docker-con-amsterdam.jpg %}
 
 It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)!
 
