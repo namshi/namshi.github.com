@@ -4,7 +4,7 @@ title: "newsletter number 69"
 date: 2014-12-18 12:28
 comments: true
 author: Shidhin CR
-categories: [newsletter, techthursday, javascript, symphony2, io.js, api, php, llvm, css, angularjs, ELK, elasticsearch, rocksdb, logstash, performance, Docker, puppet]
+categories: [newsletter, techthursday, javascript, symfony, io.js, api, php, llvm, css, angularjs, ELK, elasticsearch, rocksdb, logstash, performance, Docker, puppet]
 ---
 
 Hello Folks!  It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)!
