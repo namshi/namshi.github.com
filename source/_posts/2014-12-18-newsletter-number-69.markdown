@@ -26,10 +26,9 @@ Hello Folks!  It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](
 
 * [Clean code linters](https://github.com/showcases/clean-code-linters)
 
-<!-- more -->
-
 * [Profiling with blackfire](http://blog.blackfire.io/profile-all-the-things.html?utm_content=buffer97e50&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
 
+<!-- more -->
 * [What are some biggest red flags during an interview?](https://www.quora.com/What-are-some-of-the-biggest-red-flags-in-an-interviewee?utm_content=buffer349f2&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
 
 * [Symfony2 @ Namshi](http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road?utm_content=buffer8c90f&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
