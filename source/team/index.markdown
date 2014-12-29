@@ -89,6 +89,11 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
+*   ##<div id="Filippo De Santis">Filippo De Santis</div>
+    {% img left team /images/filippo.jpg Filippo De Santis %}
+    **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
+    He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
+
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
     **Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012 and is the only girl in tech team.
