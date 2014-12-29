@@ -72,14 +72,22 @@ footer: true
     **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
     he hopes to be empowered and empowering others in this field.
 
-*   ##<div id="Mohamad Hallal">Mohamad Hallal</div>
-    {% img left team /images/hallal.jpg Mohamad Hallal %}
-    **Mohamad Hallal** is a Software Engineer at Namshi. He joined the Tech Team in May 2013.
-    Hallal is an American University of Sharjah Alumni holding a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering - Magna Cum Laude.
-    His passion for programming and technology led him to start his career in Software Engineering/Web Development at Namshi.
-    Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.
-    His interests are sliding towards the Backend and API solutions implementation and maintenance.
-    With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
+*   ##<div id="Mohamed Amin">Mohamed Amin</div>
+    {% img left team /images/amin.jpg Mohamed Amin %}
+    **Mohamed Amin** is a Front End Developer working at Namshi.com,
+    he has been passionate about Web development ever since the
+    33.6k internet modem! He acquired most of the experience
+    he has through self education since highschool. Amin worked
+    as a Web and UI Designer in creative agencies and software
+    houses in Egypt delivering creative designs and neat UI prototypes.
+    Amin is focuses on delivering solutions with optimized experience
+    therefore he stands and fights for the UX aspects in the products
+    he is involved in. He co-founded Web designers community in Alexandria
+    (AWB) also participated  in number of  startup conferences.
+    Amin believes that Web design became a comfort zone of his capabilities,
+    so, working in Namshi will give Amin exposure to new technologies
+    and opportunity to keep his learning curve alive and to explore
+    the new world of E-commerce!
 
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
@@ -119,3 +127,12 @@ to our technical stack.
     **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.  
     He has over five years of PHP development experience.He is interested in Enterprise applications,
     scalable web architecture and software development methodologies.
+
+*   ##<div id="Mohamad Hallal">Mohamad Hallal</div>
+    {% img left team /images/hallal.jpg Mohamad Hallal %}
+    **Mohamad Hallal** is a Software Engineer at Namshi. He joined the Tech Team in May 2013.
+    Hallal is an American University of Sharjah Alumni holding a Bachelor's Degree in Electrical Engineering with a second major in Computer Engineering - Magna Cum Laude.
+    His passion for programming and technology led him to start his career in Software Engineering/Web Development at Namshi.
+    Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.
+    His interests are sliding towards the Backend and API solutions implementation and maintenance.
+    With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
