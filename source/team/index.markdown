@@ -7,6 +7,7 @@ sharing: false
 footer: true
 ---
 
+# Tech
 
 *   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
     {% img left team /images/alex.jpeg Alessandro Nadalin %}
@@ -15,13 +16,7 @@ footer: true
     Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
     Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
 
-*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
-    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
-    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
-    He is responsible for leading the System Administration team.
-    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
-    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
-    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
+## Backend
 
 *   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
     {% img left team /images/cirpo.jpg Alessandro Cinelli %}
@@ -49,6 +44,41 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
+*   ##<div id="Hossam Faris">Hossam Faris</div>
+    {% img left team /images/hossam.jpg Hossam Faris %}
+    **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
+    he hopes to be empowered and empowering others in this field.
+
+*   ##<div id="Filippo De Santis">Filippo De Santis</div>
+    {% img left team /images/filippo.jpg Filippo De Santis %}
+    **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
+    He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
+
+## SysAdmin
+
+*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
+    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
+    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
+    He is responsible for leading the System Administration team.
+    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
+    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
+    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
+
+*   ##<div id="Vishnu Nair">Vishnu Nair</div>
+    {% img left team /images/vishnu.jpg Vishnu Nair %}
+    **Vishnu Nair** is a Linux System Administrator at Namshi (a Rocket Internet Venture).
+    His Job responsibilities include assisting the development team in infrastructure questions, problems and deployments.
+    He maintains and improves the existing server infrastructure as well as new installations and backups. He monitors uptime, failover, infrastructure performance proactively and many more.
+    He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He holds a Bachelor's Degree in B.TECH from the Pondicherry University in India.
+
+*   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
+    {% img left team /images/gurjeet.jpg Gurjeet Singh %}
+    **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
+    He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
+    He has around 8 years of experience in Telecom , Network and Linux Technologies.
+
+## Frontend
+
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
     Shidhin is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
@@ -67,11 +97,6 @@ footer: true
     Quite of an *aficionado* in the italian development community he's one of the founding members of the web-centric communtiy "WEBdeBS".
     He joined Namshi as frontend engineer bringing his deep love for both javascript and node.js
 
-*   ##<div id="Hossam Faris">Hossam Faris</div>
-    {% img left team /images/hossam.jpg Hossam Faris %}
-    **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
-    he hopes to be empowered and empowering others in this field.
-
 *   ##<div id="Mohamed Amin">Mohamed Amin</div>
     {% img left team /images/amin.jpg Mohamed Amin %}
     **Mohamed Amin** is a Front End Developer working at Namshi.com,
@@ -89,10 +114,78 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
-*   ##<div id="Filippo De Santis">Filippo De Santis</div>
-    {% img left team /images/filippo.jpg Filippo De Santis %}
-    **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
-    He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
+# Business intelligence
+
+*   ##<div id="Alessandro Casuccio">Alessandro Casuccio</div>
+    {% img left team /images/casuccio.png Alessandro Casuccio %}
+    **Alessandro (a.k.a. Casu)** is Head of Business Intelligence.
+    He joined Namshi in Dubai in 2012 and is currently leading the
+    BI & Data Science practice. Before moving to the U.A.E., he
+    worked one year in Australia for Rocket Internet contributing
+    to creation and launch of several successful startups (among
+    others TheIconic.com.au and Zanui.com.au). Alessandro has
+    experience in BI & Analytics, online marketing, business planning
+    and financial reporting. Prior to Namshi and Rocket Internet,
+    Alessandro was full time analyst at Unicredit Bank in Europe.
+    He obtained a MSc in Finance and a Bachelor in International
+    Economics & Management from Bocconi University in Milan (ITA).
+    Alessandro enjoys outdoor activities and loves travelling to
+    explore new cultures. He joined StartupWeekend as mentor both
+    in Dubai's 2013 and 2014 editions as well as Denver's last one
+    in 2014.
+
+*   ##<div id="Jaseena Yusuf">Jaseena Yusuf</div>
+    {% img left team /images/jaseena.png Jaseena Yusuf %}
+    **Jaseena Yusuf** is working as BI Analyst, at Namshi
+    for almost 3 years. Shifted from Outbound operations to
+    Order processing to finally Business Intelligence - here
+    since Namshi early stage operations till now with much
+    bigger scale and capacity. Jaseena's experience at Namshi
+    has been like a roller coaster ride and she is looking
+    forward to more eventful happenings at Namshi. An Indian
+    at heart(read drama queen), but a pure Dubai bred in every
+    other way. Other than enjoying the sumptuous burst of food,
+    in her free time, Jaseena also loves to go to the beach and
+    enjoy long walks with close friends. 
+
+*   ##<div id="Pinak Kakadiya">Pinak Kakadiya</div>
+    {% img left team /images/pinak.png Pinak Kakadiya %}
+    **Pinak Kakadiya** is BI Developer at Namshi. He joined
+    BI Team in May 2014. He is working with all kind of
+    Data and has strong knowledge of Database, ETL and Data
+    warehouse. Pinak works in various MSBI areas like SSAS,
+    SSIS, SSRS, Power View and Power Pivot. He completed
+    his Bachelor’s in Information Technology from Gujarat
+    University. His goal at Namshi is to turn data into
+    information, and information into insights.
+
+*   ##<div id="Prabeesh K">Prabeesh K</div>
+    {% img left team /images/prabeesh.png Prabeesh K %}
+    **Prabeesh K** is Junior Data Engineer at Namshi. He
+    is a Open Source enthusiast from Kerala and has been
+    very busy at BI desk since he joined last July 2014
+    with new APIs implementation and Google Biq Query.
+    Moreover, he has contributed to two major open source
+    Big Data projects namely Apache Spark and Apache Storm.
+    That passion spills over in the form of technical blogs
+    on which he works during his free time. Knowing about the
+    trends in the data science, signing up and auditing
+    online courses on Coursera, udacity, edx, MOOCS in general
+    are some of his other avocations. 
+
+*   ##<div id="Sarah Mujeeb">Sarah Mujeeb</div>
+    {% img left team /images/sarah.png Sarah Mujeeb %}
+    **Sarah Mujeeb** is a Senior Business Intelligence Analyst at
+    Namshi, having joined the firm in 2012. A finance graduate,
+    she is also currently pursuing her Masters in Applied Finances.
+    She thinks working with numbers is fun and enjoys being able
+    to turn sets of data into identifiable patterns and trends.
+    She also believes that one of the most exciting aspects of her
+    line of work is that it is fast paced and always evolving. A
+    big foodie, in her free time, you would probably find her
+    discovering new food joints or out exploring the country.
+
+# Product management
 
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
@@ -100,19 +193,6 @@ footer: true
     Haneen holds a Bachelor's Degree in Computer Engineering, She basically channels the traffic between IT and other departments.
     She hopes one day she will be able to change the world and she is a shopaholic who needs counseling.
     In her free time she's either WhatsApping or at the gym.
-
-*   ##<div id="Vishnu Nair">Vishnu Nair</div>
-    {% img left team /images/vishnu.jpg Vishnu Nair %}
-    **Vishnu Nair** is a Linux System Administrator at Namshi (a Rocket Internet Venture).
-    His Job responsibilities include assisting the development team in infrastructure questions, problems and deployments.
-    He maintains and improves the existing server infrastructure as well as new installations and backups. He monitors uptime, failover, infrastructure performance proactively and many more.
-    He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He holds a Bachelor's Degree in B.TECH from the Pondicherry University in India.
-
-*   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
-    {% img left team /images/gurjeet.jpg Gurjeet Singh %}
-    **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
-    He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
-    He has around 8 years of experience in Telecom , Network and Linux Technologies.
 
 ## Alumni: rockers who have been with us!
 
