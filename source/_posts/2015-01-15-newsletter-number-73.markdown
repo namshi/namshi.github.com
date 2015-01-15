@@ -4,7 +4,7 @@ title: "Newsletter #73"
 date: 2015-01-15 11:32
 comments: true
 author: Geshan Manandhar
-categories: [newsletter, techthursday, php, symfony, docker, javascript, angularjs, ]
+categories: [newsletter, techthursday, php, symfony, docker, javascript, angularjs, javascript, css, linux]
 ---
 
 > Hello folks!
