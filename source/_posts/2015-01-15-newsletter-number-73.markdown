@@ -8,14 +8,14 @@ categories: [newsletter, techthursday, php, symfony, docker, javascript, angular
 ---
 
 > Hello folks!
-> Here you go with your weekly dose of #techthrusday, we have some team updates for this week!
+> Here you go with your weekly dose of #techthursday, we have some team updates for this week!
 > Yeahh! the Business Intelligence (BI) team has also sent us some links for the newsletter.
 >
 > Thanks to [Lucio](http://tech.namshi.com/team/#Luciano_Colosio) for a new
 > [nginx docker image](https://github.com/namshi/docker-node-nginx-pagespeed) that applies the google page speed goodies.
 >
-> Woo hoo, we would like to welcome the new joiners [Disu](http://tech.namshi.com/team/#Adedamola_Disu)
-> and [Filippo](http://tech.namshi.com/team/#Filippo_De_Santis) to our team.
+> Woo hoo, we would like to welcome the new joiners [Disu](http://tech.namshi.com/team/#Adedamola Disu)
+> and [Filippo](http://tech.namshi.com/team/#Filippo De Santis) to our team.
 >
 > {% img center /images/disu-filippo.jpg %}
 >
