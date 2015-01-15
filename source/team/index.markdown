@@ -77,6 +77,17 @@ footer: true
     He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
     He has around 8 years of experience in Telecom , Network and Linux Technologies.
 
+*   ##<div id="Adedamola Disu">Adedamola Disu</div>
+    {% img left team /images/disu.png Adedamola Disu %}
+    **Adedamola Disu** is a Junior Desktop Support who joined Namshi in 2014.
+    He works with the team to keep network availability and provide support
+    to the Organization.
+    He is hardworking and reliable with excellent communication and IT skills
+    giving adaptability to new situations. Disu is currently studying for a
+    Master’s Degree in IT Management from the University of Wollongong.
+    He sees the Tech team as a motivation and hopes to be a coding geek
+    someday.
+
 ## Frontend
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
