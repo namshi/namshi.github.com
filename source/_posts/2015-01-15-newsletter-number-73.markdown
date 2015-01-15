@@ -9,6 +9,8 @@ categories: [newsletter, techthursday, php, symfony, docker, javascript, angular
 
 > Hello folks!
 > Here you go with your weekly dose of #techthrusday, we have some team updates for this week!
+> Yeahh! the Business Intelligence (BI) team has also sent us some links for the newsletter.
+>
 > Thanks to [Lucio](http://tech.namshi.com/team/#Luciano_Colosio) for a new
 > [nginx docker image](https://github.com/namshi/docker-node-nginx-pagespeed) that applies the google page speed goodies.
 >
@@ -59,5 +61,8 @@ categories: [newsletter, techthursday, php, symfony, docker, javascript, angular
 * [The Right Tool for The Right Job](http://www.commitstrip.com/en/2015/01/12/the-right-tool-for-the-right-job/)
 * [PHP Roundtable - Coding Securely in PHP](https://www.youtube.com/watch?v=c3xbErpHBK0)
 * [Mocking PHP](http://blog.krakjoe.ninja/2015/01/mocking-php.html)
-
+* [Google releases open-source Java SDK for Cloud Dataflow service to form data pipelines](http://venturebeat.com/2014/12/18/google-releases-open-source-java-sdk-for-cloud-dataflow-service-to-form-data-pipelines)
+* [Simplify your Google Analytics Reporting with Add-ons for Google Sheets](http://analytics.blogspot.ae/2015/01/simplify-your-google-analytics.html)
+* [Getting Started with Microsoft Azure Machine Learning](http://www.microsoftvirtualacademy.com/training-courses/getting-started-with-microsoft-azure-machine-learning)
+* [The 10 Most Important BI Stories of 2014](http://www.bisoftwareinsight.com/the-10-most-important-bi-stories-of-2014/)
 
