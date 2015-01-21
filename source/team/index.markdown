@@ -198,6 +198,10 @@ footer: true
 
 # Product management
 
+*   ##<div id="Razan Bilwani">Razan Bilwani</div>
+    {% img left team /images/razan.jpg Razan Bilwani %}
+    **Razan Bilwani** is a Senior Product Management Analyst, and has been at Namshi for almost 3 years. Before Product Management, he dabbled in Content, Digital Strategy, and Onsite Analytics. Razan used to run his own wholesale business in the heart of Dubai before deciding to go 'Online'. With a degree in Management Information Systems in one hand, and a thirst for studying the unknown in the other, he joined Namshi to learn and do - everything! On weekends you can find him reading by day and BBQ-ing by night. There are 3 things he takes very seriously: work, the Oxford comma, and Biryani.
+
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
     **Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012 and is the only girl in tech team.
