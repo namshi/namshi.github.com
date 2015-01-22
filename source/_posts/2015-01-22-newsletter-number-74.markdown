@@ -88,3 +88,13 @@ categories: [newsletter, techthursday, php, symfony, docker, javascript, awk, ho
 * [MVC and ADR are User-Interface Patterns, Not Application Architectures](http://paul-m-jones.com/archives/6079)
 
 * [Conduit: The Middleware for PHP](http://harikt.com/blog/2015/01/21/conduit-middleware-for-php/)
+
+* [18 Cool Things You Won’t Believe Were Built Using CSS](http://www.hongkiat.com/blog/built-with-css/)
+
+* [What comes after primary, secondary, tertiary?](http://www.oxforddictionaries.com/words/what-comes-after-primary-secondary-tertiary)
+
+* [What happens when...](https://github.com/alex/what-happens-when)
+
+* [AngularJS Style Guide](https://github.com/johnpapa/angularjs-styleguide)
+
+* [HTML5 Input Types for Credit Card Numbers?](http://css-tricks.com/forums/topic/html5-input-types-for-credit-card-numbers/)
