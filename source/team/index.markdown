@@ -133,7 +133,7 @@ footer: true
     in the software industry for around 5 years and is mainly focused on 
     enterprise javascript applications which allowed him to witness, from the front
     seat, the evolution of javascript from browser compatibilty hell to
-    te crazy stuff it does these days. In his free time you might find him
+    the crazy stuff it does these days. In his free time you might find him
     traveling, reading books or fancying about human psychology. 
 
 # Business intelligence
