@@ -17,8 +17,7 @@ categories: [newsletter, techthursday, JavaScript, flux, reactjs, docker, facebo
 
 * [Google SoundScript: faster OOP for JavaScript](http://buff.ly/1CYCbfV)
 
-* [A Pluggable Container for Isomorphic Flux Applications](http://buff.
-ly/1HZojXj)
+* [A Pluggable Container for Isomorphic Flux Applications](http://buff.ly/1HZojXj)
 
 * [Julia Reda: I raised €1 million to demonstrate security and freedom aren’t 
 opposites](http://buff.ly/1zPSzA9)
