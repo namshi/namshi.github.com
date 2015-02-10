@@ -214,10 +214,13 @@ footer: true
 
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
-    **Haneen Musleh** is a Junior Product Manager at Namshi. She joined the Tech Team in April 2012 and is the only girl in tech team.
-    Haneen holds a Bachelor's Degree in Computer Engineering, She basically channels the traffic between IT and other departments.
-    She hopes one day she will be able to change the world and she is a shopaholic who needs counseling.
-    In her free time she's either WhatsApping or at the gym.
+    **Haneen Musleh** is a Product Management Analyst. She joined the
+    Tech Team in April 2012 as part of the QA/Dev team and then moved to the 
+    PM team in April 2014. In the Tech team she used to channel the traffic 
+    between IT and other departments and do some PM activities. After moving to 
+    the PM team, she focused more on front end Projects and improvements.
+    She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline).
+    In her free time she’s either taking selfies, WhatsApping or at the gym.
 
 ## Alumni: rockers who have been with us!
 
