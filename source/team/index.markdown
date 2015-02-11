@@ -229,7 +229,7 @@ footer: true
     as part of the QA/Dev team and then moved to the PM team in April 2014. In the Tech team 
     she used to channel the traffic between IT and other departments and do some PM activities. 
     After moving to the PM team, she focused more on front end Projects and improvements.
-    She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline). 
+    She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline).
     In her free time she’s either taking selfies, WhatsApping or at the gym.
 
 ## Alumni: rockers who have been with us!
