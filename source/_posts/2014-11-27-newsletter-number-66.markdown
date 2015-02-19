@@ -75,3 +75,19 @@ categories:  [newsletter, techthursday, javascript, scrum, kibana, php, react, h
 * [Rackspace Page Load Speed checker](http://www.rackspace.co.uk/ecommerce-hosting/page-speed-checker)
 
 * [Auditing systemd: solving failed units with systemctl](http://linux-audit.com/auditing-systemd-solving-failed-units-with-systemctl/)
+
+* [Best Practices For Scaling Elasticsearch In The Cloud](http://www.slideshare.net/bigstep-infrastructure/bigstep-partners-elasticsearch-scaling-benchmarks)
+
+* [Working with Elasticsearch](http://wiki.joyent.com/wiki/display/jpc2/Working+with+Elasticsearch)
+
+* [How we built the new BBC Homepage](http://www.bbc.co.uk/blogs/internet/entries/47a96d23-ae04-444e-808f-678e6809765d)
+
+* [wallaby.js runs your code when you write it](http://wallabyjs.com/)
+
+* [conveyor-belt](https://github.com/svileng/conveyor-belt)
+
+* [How the Node Foundation will Unify Node.js with io.js](http://strongloop.com/strongblog/node-js-foundation-io-js-unification/)
+
+* [Programm a virtual robot which moves in a 3D](https://github.com/s-a/TRY.js)
+
+* [npm subreddit](https://www.reddit.com/r/npm)
