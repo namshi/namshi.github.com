@@ -75,3 +75,17 @@ information on that and how to fix it, read [http://tech.namshi.com/blog/2015/02
 * [Design Better Experiences For Web & Mobile - Invision App](http://bit.ly/1CLr6h4)
 
 * [Gmail Delay Send sciprt to schedule your emails for free](http://bit.ly/17XtVSf)
+
+* [Which Came First? The Chicken or the Egg](http://www.huffingtonpost.com/shelly-palmer/which-came-first-the-chic_b_6705482.html)
+
+* [Link Between Corruption and Wealth](http://www.technologyreview.com/view/535081/data-mining-reveals-a-global-link-between-corruption-and-wealth/)
+
+* [top 10 tech of 2015](http://www.technologyreview.com/lists/technologies/2015/)
+
+* [Are You A Serious Analyst](http://www.webanalyticsworld.net/2015/02/are-you-a-serious-analyst.html)
+
+* [The Amazing World of Freds Big Data](https://datafloq.com/read/amazing-world-freds-big-data/859)
+
+* [acquisitions in India for Ecommerce](http://www.firstpost.com/business/its-official-snapdeal-acquires-designer-wear-portal-exclusively-com-2105465.html)
+
+* [Zalando doing great](http://blogs.wsj.com/digits/2015/02/12/european-online-retailer-zalando-posts-first-annual-operating-profit/)
