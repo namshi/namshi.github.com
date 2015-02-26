@@ -17,6 +17,26 @@ categories: [newsletter, techthursday, nodejs, javascript, react, flux, angularj
 
 <!-- more -->
 
+* [why I dont like JWT](https://www.timmclean.net/2015/02/25/jwt-alg-none.html)
+
+* [an online photo editor built using React](http://buff.ly/17vdOdI)
+
+* [looking for a server to play with HTTP/2? check out h2o:  - fast and implements all the http/2 goodies!](http://blog.kazuhooku.com/2015/02/h2o-new-http-server-goes-version-100-as.html?utm_content=bufferba8ea&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [End of the road for RC4 on CloudFlare](https://blog.cloudflare.com/end-of-the-road-for-rc4/?utm_content=buffer2dcdd&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [How bad UX killed jenny](https://medium.com/@designuxui/how-bad-ux-killed-jenny-ef915419879e?utm_content=bufferb11f7&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [have fun with your HTTP logs](http://onethingwell.org/post/111280189260/goaccess)
+
+* [AWS container service update](https://aws.amazon.com/blogs/aws/ec2-container-service-ecs-update-access-private-docker-repos-mount-volumes-in-containers/?utm_content=buffer7b026&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [Preview of the new angular router](http://angularjs.blogspot.ae/2015/02/preview-of-new-angular-router.html?utm_content=buffer74e14&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [on the future of nodejs and io.js](http://strongloop.com/strongblog/node-js-foundation-io-js-unification/?utm_content=buffer830a9&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
+* [Microservices, by Martin Fowler](https://www.youtube.com/watch?v=wgdBVIX9ifA&feature=youtu.be&utm_content=buffer8c604&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+
 * [A React.js case study follow-up](http://blog.krawaller.se/posts/a-react-js-case-study-follow-up/)
 
 * [Removing User Interface Complexity, or Why React is Awesome](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome)
