@@ -4,7 +4,7 @@ title: "Newsletter #79"
 date: 2015-02-26 13:00
 author: Filippo De Santis
 comments: true
-categories: [newsletter, techthursday, nodejs, javascript, react, flux, angularjs, performance, prototyping, big data, data mining, html ]
+categories: [newsletter, techthursday, nodejs, javascript, react, flux, angularjs, performance, prototyping, big data, data mining, html, jwt, HTTP/2, io.js]
 ---
 
 > Hi there! It's **#TechThursday** at [#namshi](http://twitter.com/techNamshi)!
@@ -21,7 +21,7 @@ categories: [newsletter, techthursday, nodejs, javascript, react, flux, angularj
 
 * [an online photo editor built using React](http://buff.ly/17vdOdI)
 
-* [looking for a server to play with HTTP/2? check out h2o:  - fast and implements all the http/2 goodies!](http://blog.kazuhooku.com/2015/02/h2o-new-http-server-goes-version-100-as.html?utm_content=bufferba8ea&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
+* [looking for a server to play with HTTP/2? check out h2o: fast and implements all the http/2 goodies!](http://blog.kazuhooku.com/2015/02/h2o-new-http-server-goes-version-100-as.html?utm_content=bufferba8ea&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
 
 * [End of the road for RC4 on CloudFlare](https://blog.cloudflare.com/end-of-the-road-for-rc4/?utm_content=buffer2dcdd&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer)
 
