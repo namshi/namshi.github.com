@@ -31,12 +31,6 @@ footer: true
     Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is an open source preacher.
     When not programming, he can be found blogging about technology related topics.
 
-*   ##<div id="Daniel Ribeiro">Daniel Ribeiro</div>
-    {% img left team /images/daniel.png Daniel Ribeiro %}
-    **Daniel Ribeiro** is a Technical Leader, Senior Software Engineer, PHP 5.3 Zend Certified Engineer (ZEND021458), Speaker and Evangelist from Brazil. He's also a member of the local PHP community (PHPSC), and has been working with software engineering since 2006.
-    His focus is on software engineering best practices, both concerning the code and the process of software development. He has a quite solid experience with agile practices and leading development teams to enterprise application standards and practices.
-    Technically, he works with a lot of best practices, such as Behavior-Driven Development (BDD). He also has a background on architecture patterns, such as Domain Driven Design (DDD) and Service Oriented Architecture (SOA). He loves to work with high quality code, especially concerning advanced software engineering concepts, such as the SOLID principles and the GoF design patterns.
-
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
     **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
@@ -259,3 +253,9 @@ to our technical stack.
     Hallal is currently keeping himself busy in learning about the industry and the state of the art solutions implemented at Namshi.
     His interests are sliding towards the Backend and API solutions implementation and maintenance.
     With pre-intermediate knowledge about web development, he is looking to expand his expertise on the industry's best practices.
+
+*   ##<div id="Daniel Ribeiro">Daniel Ribeiro</div>
+    {% img left team /images/daniel.png Daniel Ribeiro %}
+    **Daniel Ribeiro** is a Technical Leader, Senior Software Engineer, PHP 5.3 Zend Certified Engineer (ZEND021458), Speaker and Evangelist from Brazil. He's also a member of the local PHP community (PHPSC), and has been working with software engineering since 2006.
+    His focus is on software engineering best practices, both concerning the code and the process of software development. He has a quite solid experience with agile practices and leading development teams to enterprise application standards and practices.
+    Technically, he works with a lot of best practices, such as Behavior-Driven Development (BDD). He also has a background on architecture patterns, such as Domain Driven Design (DDD) and Service Oriented Architecture (SOA). He loves to work with high quality code, especially concerning advanced software engineering concepts, such as the SOLID principles and the GoF design patterns.
