@@ -4,14 +4,16 @@ title: "Newsletter #81"
 date: 2015-03-12 12:52
 author: Hossam Fares
 comments: true
-categories:   [V8, linux, kernel, javascript, phpstorm, PHP]
+categories:   [V8, linux, kernel, javascript, phpstorm, PHP, HTML5, UX, Booboo, RedPen, Facebook, Google, Packages, Docker, VM, Cloud]
 ---
 
 > It's **#TechThursday** again!
+
 >  It's true that we are nerds but it's also true that we are working for a fashion company.
+
 > This is one of our attempts to get more fashionable: 
 >
-> {% img center /images/posts/dubytes-1st-meeting.jpg %}
+> {% img center /images/posts/lucio-with-network-cables.jpg %}
 
 **Here is the traditional "selection" of links our team found interesting this week , enjoy:**
 
