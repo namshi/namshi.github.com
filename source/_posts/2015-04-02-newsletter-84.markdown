@@ -1,0 +1,108 @@
+---
+layout: post
+title: "Newsletter #84"
+date: 2015-04-02 12:21
+comments: true
+categories: [newsletter, techthursday, PHP, Salary, BDD, golang, docker, node, test]
+---
+
+> **#TechThursday** time!
+>
+> Do you really need a desk to code ???
+>
+> ... Just do it!
+>
+> [Lucio's way](/team/#Luciano%20Colosio)
+>
+> {% img center /images/posts/lucio-under-desk-min.jpg %}
+
+**Here is the usual "selection" of links our team found interesting this week , enjoy:**
+
+* [Zoom on PHP objects and classes](http://jpauli.github.io/2015/03/24/zoom-on-php-objects.html)
+
+* [Salary Negotiations: Win by Losing](http://www.daedtech.com/salary-negotiations-win-by-losing)
+
+* [Behat - Page Object Extension](http://behat-page-object-extension.readthedocs.org/en/latest/)
+
+* [Page object pattern](http://martinfowler.com/bliki/PageObject.html)
+
+* [Of course it's difficult...](http://sethgodin.typepad.com/seths_blog/2015/03/of-course-its-difficult.html)
+
+* [Code As Documentation](http://martinfowler.com/bliki/CodeAsDocumentation.html)
+
+* [Active listening](http://sethgodin.typepad.com/seths_blog/2015/03/active-listening.html)
+
+<!-- more -->
+
+* [Your Tests Are Dragging You Down](http://blog.thecodewhisperer.com/2015/03/28/your-tests-are-dragging-you-down/)
+
+* [PHP 7 Infographic - 5 things you need to know](https://pages.zend.com/TY-Infographic.html)
+
+* [Import golang; struct microservice - Codemotion Rome 2015](http://www.slideshare.net/giorrrgio/import-golang-struct-microservice)
+
+* [Stop using tail -f (mostly)](http://buff.ly/1bNvrYw)
+
+* [node-objectify: convert a list of objects into an object](http://buff.ly/1Nt1Bo2)
+
+* [Acceptance tests for a CDN](http://buff.ly/1F5ZvZ9)
+
+* [Why do some developers at strong companies like Google consider Agile development to be nonsense?](http://buff.ly/1bEVn8S)
+
+* [The StackExchange architecture and its performance](http://buff.ly/1I4SOXB)
+
+* [Still one of my favourite hacks: Dublin Bus timetable boards use a Japanese あ character to denote disabled access](http://t.co/KxTLsZVmXf)
+
+* [HTML code news sites use for tragedies like Germanwings Flight 4U 9525](http://buff.ly/1M9ADq9)
+
+* [redis trivia](https://t.co/IxLxXW6OrU)
+
+* [Redis 3.0.0 is closer](http://buff.ly/1D1aoMB)
+
+* [Google rebrands and launches brand new platform](http://buff.ly/1HiuWQ3)
+
+* [Go interfaces communicate intent](http://buff.ly/1yBxPqn)
+
+* [Shrinking Docker Images](http://buff.ly/1COXm4r)
+
+* [The Realities of Docker in Production](http://buff.ly/1BRlHTi)
+
+* [What Every Open Source Project Needs]((http://bit.ly/1CcT16h)
+
+* [Docker security: making sure you get it right](http://bit.ly/1P1lVAq)
+
+* [A Beginner's Guide to HTTP and REST](http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340)
+
+* [Why you should not use AngularJS](https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99)
+
+* [What I would recommend instead of Angular.js?](https://medium.com/este-js-framework/what-i-would-recommend-instead-of-angular-js-62b057d8a9e)
+
+* [A Monad in Practicality: First-Class Failures](http://robotlolita.me/2013/12/08/a-monad-in-practicality-first-class-failures.html)
+
+* [Simplifying the ES6 Workflow with JSPM](http://www.joezimjs.com/javascript/simplifying-the-es6-workflow-with-jspm/)
+
+* [Osmosis](https://github.com/rc0x03/node-osmosis)
+
+* [Functional UI and Components as Higher Order Functions](http://blog.risingstack.com/functional-ui-and-components-as-higher-order-functions/)
+
+* [Test Your API With Supertest](http://willi.am/blog/2014/07/28/test-your-api-with-supertest/)
+
+* [Loading CSS without blocking render](http://keithclark.co.uk/articles/loading-css-without-blocking-render/)
+
+* [A General Theory of Reactivity](https://github.com/kriskowal/gtor)
+
+* [ng-wat And The Story Behind It](https://www.airpair.com/angularjs/posts/ng-wat-and-the-story-behind-it)
+
+* [Docker in production](http://blog.heavybit.com/blog/2015/3/23/dockermeetup)
+
+* [Stop using tail (mostly)](http://www.brianstorti.com/stop-using-tail)
+
+* [Golang and microservices](http://www.slideshare.net/giorrrgio/import-golang-struct-microservice)
+
+* [Kibana 4 – the beer analytics engine](http://blog.comperiosearch.com/blog/2015/02/09/kibana-4-beer-analytics-engine/)
+
+* [Insecure default in Elasticsearch enables remote code execution](http://bouk.co/blog/elasticsearch-rce/)
+
+* [How to format Python code without really trying](http://google-opensource.blogspot.ae/2015/03/how-to-format-python-code-without.html)
+
+* [Rearchitecting Spark for Mobile Platforms](https://databricks.com/blog/2015/04/01/spark-2-rearchitecting-spark-for-mobile.html)
+
