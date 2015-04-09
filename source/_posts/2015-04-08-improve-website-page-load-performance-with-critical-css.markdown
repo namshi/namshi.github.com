@@ -71,7 +71,7 @@ pagespeed InlineResourcesWithoutExplicitAuthorization
 pagespeed MapProxyDomain
 ```
 
-If you use Docker, we have something for you. Here in Namshi, we open-sourced a docker container running nginx with pagespeed module. Check out this link and read the documentation:
+If you use Docker and node.js, we have something for you. Here in Namshi, we open-sourced a docker container running nginx with pagespeed module. Check out this link and read the documentation:
 
 [Docker Node Nginx Pagespeed](https://github.com/namshi/docker-node-nginx-pagespeed)
 
