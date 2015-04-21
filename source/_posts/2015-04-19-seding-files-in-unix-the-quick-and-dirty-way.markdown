@@ -12,11 +12,12 @@ You're hacking around with a friend, and you need to send him a file. How would 
 Just use a USB stick (do people still carry those things around?).
 
 With the "power of the Internet" you have a bunch of possible ways to do it with a simple journey around the planet:
+
 - send an email
 - put it on dropbox/gdrive/box/etc
 - skype/facebookMessanger/*chat*/*IM*
 - ...
-
+<!-- more -->
 After all, who doesn't have an internet connection these days?
 
 I'm an old guy and back when I was in college, having an internet connection wasn't that obvious, but you could almost always count on a 

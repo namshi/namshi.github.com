@@ -190,6 +190,14 @@
 	  }
 
 	  /*------------ Namshi Specific    -----------*/
+
+		.entry-content {
+			font-size: 18px;
+			line-height: 1.7em;
+			font-family: SANS-SERIF, Arial;
+			font-weight: 300;
+			text-rendering: optimizeLegibility;
+		}
 	  
 	  [data-page*='/team/'] {
 		img.team {
