@@ -81,3 +81,7 @@ categories:
 * [How to Unit Test Private Functions in JavaScript](http://philipwalton.com/articles/how-to-unit-test-private-functions-in-javascript/)
 
 * [google mobilegeddon !!](http://www.businessinsider.com/google-mobilegeddon-2015-4)
+
+* [TCP "Silly Window Syndrome" and Changes To the Sliding Window System For Avoiding Small-Window Problems ](http://www.tcpipguide.com/free/t_TCPSillyWindowSyndromeandChangesTotheSlidingWindow.htm)
+
+* [Swift Function Fun Facts](http://dduan.net/post/2015/04/swift-function-fun-facts/)
