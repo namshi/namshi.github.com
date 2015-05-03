@@ -82,6 +82,19 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
+*   ##<div id="Armagan Kimonoglu">Armağan Kimyonoğlu</div>
+    {% img left team /images/armagan.png Armagan Kimonoglu %}
+    **Armagan Kimonoglu** graduated from Computer Science and
+    dove into web development with Django, then did some System
+    Administration with Fabric and regret that as soon as he met
+    Saltstack.
+    He introduced Saltstack to several companies, either built
+    orchestration from scratch or converted from other tools
+    like puppet or chef. Markafoni, Put.io, Koding, Kartaca and
+    Peakgames were among those companies. Meanwhile, he developed
+    a video on demand Android applications for Turkcell as a
+    freelancer.
+
 ## Frontend
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
