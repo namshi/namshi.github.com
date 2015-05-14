@@ -4,7 +4,7 @@ author: Filippo De Santis
 title: "Newsletter #90"
 date: 2015-05-14 13:00
 comments: true
-categories: [techthursday, javascript, go, golang, docker, php, symfony]
+categories: [techthursday, javascript, go, golang, docker, php, symfony, jsday]
 ---
 
 # TechThursday #90 is here!
