@@ -11,7 +11,7 @@ categories: [techthursday, javascript, go, golang, docker, php, symfony, jsday]
 
 > Hello folks!
 >
-> Today [Lucio](http://tech.namshi.com/team/#Luciano%20Colosio) will speack at [#jsday](http://2015.jsday.it/)!
+> Today [Lucio](http://tech.namshi.com/team/#Luciano%20Colosio) will speak at [#jsday](http://2015.jsday.it/)!
 > If you are there don't miss his talk ["Back to the future: Isomorphic javascript applications"](http://2015.jsday.it/talk/back-to-the-future-isomorphic-javascript-applications/)!
 >
 > And after his talk give a look at the usual awesome links of this newsletter!
