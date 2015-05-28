@@ -48,6 +48,11 @@ footer: true
     **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
     He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
 
+*   ##<div id="David Funaro">David Funaro</div>
+    {% img left team /images/david.jpg David Funaro %}
+    **David Funaro** is a Software Engineer with more that 10 years of experience and a strong passion in building highly maintainable software. He spent the last years coaching teams, providing tools, knowledge and mentorship to improve software design.
+    Over the years he has delivered software for companies like Eni, Ferrari, Nissan, Samsung, spoke at conferences, IT communities meet-ups. He also has contributed to OSS projects such as OrientDB Doctrine ODM.
+
 ## SysAdmin
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
