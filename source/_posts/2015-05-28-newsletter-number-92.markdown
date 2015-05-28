@@ -3,7 +3,7 @@ layout: post
 title: "Newsletter #92"
 date: 2015-05-28 13:48
 comments: true
-categories: [newsletter, techthursday, go, golang, docker, secutiry, node, devops, javascript, ui, ux, database, io.js, nodejs, elasticsearch]
+categories: [newsletter, techthursday, go, golang, docker, security, node, devops, javascript, ui, ux, database, io.js, nodejs, elasticsearch]
 author: Filippo De Santis
 ---
 
@@ -48,3 +48,6 @@ author: Filippo De Santis
 * [Brendan Eich: Javascript at 20](http://brendaneich.github.io/ModernWeb.tw-2015/?utm_source=hackernewsletter&utm_medium=email&utm_term=fav#1)
 * [Web vs. native: let’s concede defeat](http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html)
 * [On writing real CSS (again)](https://blog.colepeters.com/on-writing-real-css-again/)
+* [Angular 2 Template Syntax](http://victorsavkin.com/post/119943127151/angular-2-template-syntax)
+* [Preventing Side Effects in JavaScript](http://davidwalsh.name/preventing-sideeffects-javascript)
+* [JSX Looks Like An Abomination](https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918)
