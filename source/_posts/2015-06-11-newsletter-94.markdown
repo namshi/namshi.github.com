@@ -1,0 +1,53 @@
+---
+layout: post
+title: "newsletter #94"
+date: 2015-06-11 09:59
+comments: true
+categories: [newsletter, techthursday, Docker, Orchestration, Orm, Agile, PHP, javascript ]
+author: David Funaro
+---
+
+## TechThursday is here!
+
+This week Lucio, Filippo and David worked at the warehouse:
+as you can see, Lucio was pretty sad because he couldn't use the package slide
+
+{% img center /images/posts/teamQcWork.jpg %}
+
+
+### enjoy with our links:
+* [The Five Uncommon Habits Of Highly Productive People](http://blog.trello.com/the-five-uncommon-habits-of-highly-productive-people/)
+
+* [Spot ORM](http://phpdatamapper.com/)
+
+* [Why Software Engineering Isn’t Engineering, and the Implication for Deadlines](http://blog.iancackett.com/2015/06/07/software-engineering/)
+
+* [Autopsy - Lessons from Failed Startups](http://autopsy.io/)
+
+* [Convert a Go package into an Xcode project](https://github.com/rakyll/go2xcode)
+
+* [Infrastructure Orchestration and Automation at Datacenter Scale](https://mesosphere.com/product/)
+
+* [Introducing scrum - slides](http://bit.ly/1II6qfG)
+
+* [10 pillars of modern PHP development](http://bit.ly/1HVTf56)
+
+* [Software engineers are lazy bastards](http://bit.ly/1TcNKI4)
+
+* [Tips for building a dev-env with docker](http://bit.ly/1TcNVTz)
+
+* [Sharing Host Volumes with Docker Containers](http://oliverguenther.de/2015/05/docker-host-volume-synchronization/)
+
+* [Sepatation of Concerns with Docker and Containers](http://www.slideshare.net/jpetazzo/implementing-separation-of-concerns-with-docker-and-containers)
+
+* [Web Development with Docker, Docker-machine, Docker-compose, Tmux, Tmuxinator and wathdog](https://blog.docker.com/2015/05/web-development-with-docker-docker-machine-docker-compose-tmux-tmuxinator-and-watchdog/)
+
+* [Special sneak preview of the docker machine 0.3.0](http://nathanleclaire.com/blog/2015/06/02/docker-machine-0.3.0-sneak-preview-transmogrify-existing-servers-to-be-docker-ready-and-much-much-more/)
+
+* [Setting up a Minecraft server with Docker](http://blog.docker.com/2015/06/minecraft-server-docker-1/)
+
+* [The role of a Senior Developer](http://mattbriggs.net/blog/2015/06/01/the-role-of-a-senior-developer/)
+
+* [Javascript code smells](http://elijahmanor.com/javascript-smells/?utm_source=javascriptweekly&utm_medium=email)
+
+* [How necessary are var, let, and const?](http://raganwald.com/2015/05/30/de-stijl.html)
