@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Important 'namshi/jose' JWS library fix"
+date: 2015-06-16 16:39
+comments: true
+categories: namshi/jose, jws, opensource, 
+author: Alessandro Cinelli (cirpo)
+---
+
+>We just released a very important security fix on **namshi/jose**, our opensource lightweight implementation of the JWS (JSON Web Signature) in PHP.
+
+The issue is related to the fact that any jws token was valid if the algorithm specified in the header was 'none' (first 'n' lower case).
+Here you can find the [fix](https://github.com/namshi/jose/commit/be2db86f5224cc7d34ef98f9a315c6b45bc4fc4e#diff-afc7aff66a8cf751ea15e11dedf56b9bR113)
+
+There are three main relases:
+
+* **2.x** 
+* **3.x** (It introduces the support to PHPSecLib to the already existing OpenSSL implementation)
+* **4.x** (Added the ability to set custom properties in the header)
+* **5.x** (Fixed HMAC signature in order to be checked by other HMAC compliant library)
+
+**We strongly suggest to update to the latest major release (2.2.2, 3.0.1, 4.0.1, 5.0.1)**.
+
+On a side note thanks to everyone who contributed to this library, especially: 
+
+* [Simon Maxwell-Stewart](https://github.com/smaxwellstewart)
+* [Michael Irwin](https://github.com/mikesir87), [twitter](https://twitter.com/mikesir87)
+* [Florent Morselli](https://github.com/Spomky), [twitter](https://twitter.com/florentmorselli)
+* [Grégoire Paris](https://github.com/greg0ire), [twitter](https://twitter.com/ggreg0ire)
+* [Brian J. Miller](https://github.com/brianjmiller)
+* [n-s-f](https://github.com/n-s-f)
+* [Sean Tymon](https://github.com/tymondesigns), [twitter](https://twitter.com/tymondesigns)
+* [Callum Macrae](https://github.com/callumacrae), [twitter](https://twitter.com/callumacrae)
+
+<3 opensource, <3 github
