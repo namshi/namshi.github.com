@@ -55,7 +55,7 @@ And here we are with what we read this week! Enjoy!
 
 * [I'm Sorry, But Agile Won't Fix Your Products](http://firstround.com/review/im-sorry-but-agile-wont-fix-your-products/)
 
-* [Inbox (8) - alessandro.cinelli@namshi.com - Namshi MailThe web is fast by default, let’s keep it fast](https://hiddedevries.nl/en/blog/2015-05-18-the-web-is-fast-by-default-lets-keep-it-fast)
+* [The web is fast by default, let’s keep it fast](https://hiddedevries.nl/en/blog/2015-05-18-the-web-is-fast-by-default-lets-keep-it-fast)
 
 * [Introducing Incremental DOM](https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f)
 
