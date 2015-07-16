@@ -61,13 +61,7 @@ And here we are with what we read this week! Enjoy!
 
 * [Just Don’t Hire 0x Engineers](http://zachholman.com/posts/0x-engineers/)
 
-* [MIT comes up with a "no memory" solution for Big Data | ITworld](http://www.itworld.com/article/2947839/big-data/mit-comes-up-with-a-no-memory-solution-for-big-data.html)
-
-* [MIT comes up with a "no memory" solution for Big Data](http://www.itworld.com/article/2947839/big-data/mit-comes-up-with-a-no-memory-solution-for-big-data.html)
-
 * [Microservice Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html)
-
-* [Microsoft expands Cortana to power cloud-based predictive analytics](http://www.computerweekly.com/news/4500249955/Microsoft-expands-Cortana-to-power-cloud-based-predictive-analytics)
 
 * [Most commonly used git tips and tricks](https://github.com/git-tips/tips)
 
@@ -84,10 +78,6 @@ And here we are with what we read this week! Enjoy!
 * [Small Go Apps Containers](http://carlosbecker.com/posts/small-go-apps-containers/)
 
 * [Software Engineering Blogs](https://github.com/kilimchoi/engineering-blogs)
-
-* [The 10 Coolest Big Data Products Of 2015 (So Far) - Page: 1 | CRN](http://www.crn.com/slide-shows/applications-os/300077353/the-10-coolest-big-data-products-of-2015-so-far.htm)
-
-* [The 10 Coolest Big Data Products Of 2015 (So Far)](http://www.crn.com/slide-shows/applications-os/300077353/the-10-coolest-big-data-products-of-2015-so-far.htm)
 
 * [The Art of Monitoring](http://artofmonitoring.com/)
 
