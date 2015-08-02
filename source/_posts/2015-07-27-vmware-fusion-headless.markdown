@@ -4,7 +4,8 @@ title: "VMware fusion headless"
 date: 2015-08-02 15:30
 comments: true
 categories: osx, vmware fusion, vm
-author: David Funaro,
+alias: /blog/2015/07/29/vmware-fusion-headless
+author: David Funaro
 ---
 
 {% img center /images/posts/osx-vmware.jpg %}
