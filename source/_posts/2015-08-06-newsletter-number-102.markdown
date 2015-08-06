@@ -22,6 +22,8 @@ categories: [bdd, ddd, devops, docker, es2016, git, golang, javascript, php, rea
 
 * [Flux architecture on android](http://lgvalle.github.io/2015/08/04/flux-architecture)
 
+<!-- more -->
+
 * [A brief history of scaling linkedin](http://engineering.linkedin.com/architecture/brief-history-scaling-linkedin?utm_content=buffer09de4)
 
 * [A collection of useful stream utility modules](https://github.com/maxogden/mississippi)
