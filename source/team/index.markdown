@@ -140,33 +140,15 @@ footer: true
 *   ##<div id="Nitesh Sharma">Nitesh Sharma</div>
     {% img left team /images/nitesh.png Nitesh Sharma %}
     **Nitesh  Sharma** is a quite introvert software developer who also
-    believes that he has good taste in design. He is very interested in 
-    software design practices, TDD, and stuff like meditation. He has been 
-    in the software industry for around 5 years and is mainly focused on 
+    believes that he has good taste in design. He is very interested in
+    software design practices, TDD, and stuff like meditation. He has been
+    in the software industry for around 5 years and is mainly focused on
     enterprise javascript applications which allowed him to witness, from the front
     seat, the evolution of javascript from browser compatibilty hell to
     the crazy stuff it does these days. In his free time you might find him
-    traveling, reading books or fancying about human psychology. 
+    traveling, reading books or fancying about human psychology.
 
 # Business intelligence
-
-*   ##<div id="Alessandro Casuccio">Alessandro Casuccio</div>
-    {% img left team /images/casuccio.png Alessandro Casuccio %}
-    **Alessandro (a.k.a. Casu)** is Head of Business Intelligence.
-    He joined Namshi in Dubai in 2012 and is currently leading the
-    BI & Data Science practice. Before moving to the U.A.E., he
-    worked one year in Australia for Rocket Internet contributing
-    to creation and launch of several successful startups (among
-    others TheIconic.com.au and Zanui.com.au). Alessandro has
-    experience in BI & Analytics, online marketing, business planning
-    and financial reporting. Prior to Namshi and Rocket Internet,
-    Alessandro was full time analyst at Unicredit Bank in Europe.
-    He obtained a MSc in Finance and a Bachelor in International
-    Economics & Management from Bocconi University in Milan (ITA).
-    Alessandro enjoys outdoor activities and loves travelling to
-    explore new cultures. He joined StartupWeekend as mentor both
-    in Dubai's 2013 and 2014 editions as well as Denver's last one
-    in 2014.
 
 *   ##<div id="Jaseena Yusuf">Jaseena Yusuf</div>
     {% img left team /images/jaseena.png Jaseena Yusuf %}
@@ -180,7 +162,7 @@ footer: true
     at heart(read drama queen), but a pure Dubai bred in every
     other way. Other than enjoying the sumptuous burst of food,
     in her free time, Jaseena also loves to go to the beach and
-    enjoy long walks with close friends. 
+    enjoy long walks with close friends.
 
 *   ##<div id="Pinak Kakadiya">Pinak Kakadiya</div>
     {% img left team /images/pinak.png Pinak Kakadiya %}
@@ -205,7 +187,7 @@ footer: true
     on which he works during his free time. Knowing about the
     trends in the data science, signing up and auditing
     online courses on Coursera, udacity, edx, MOOCS in general
-    are some of his other avocations. 
+    are some of his other avocations.
 
 *   ##<div id="Sarah Mujeeb">Sarah Mujeeb</div>
     {% img left team /images/sarah.png Sarah Mujeeb %}
@@ -237,9 +219,9 @@ footer: true
 
 *   ##<div id="Haneen Musleh">Haneen Musleh</div>
     {% img left team /images/haneen.jpg Haneen Musleh %}
-    **Haneen Musleh** is a Product Management Analyst. She joined the Tech Team in April 2012 
-    as part of the QA/Dev team and then moved to the PM team in April 2014. In the Tech team 
-    she used to channel the traffic between IT and other departments and do some PM activities. 
+    **Haneen Musleh** is a Product Management Analyst. She joined the Tech Team in April 2012
+    as part of the QA/Dev team and then moved to the PM team in April 2014. In the Tech team
+    she used to channel the traffic between IT and other departments and do some PM activities.
     After moving to the PM team, she focused more on front end Projects and improvements.
     She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline).
     In her free time she’s either taking selfies, WhatsApping or at the gym.
@@ -277,3 +259,21 @@ to our technical stack.
     **Daniel Ribeiro** is a Technical Leader, Senior Software Engineer, PHP 5.3 Zend Certified Engineer (ZEND021458), Speaker and Evangelist from Brazil. He's also a member of the local PHP community (PHPSC), and has been working with software engineering since 2006.
     His focus is on software engineering best practices, both concerning the code and the process of software development. He has a quite solid experience with agile practices and leading development teams to enterprise application standards and practices.
     Technically, he works with a lot of best practices, such as Behavior-Driven Development (BDD). He also has a background on architecture patterns, such as Domain Driven Design (DDD) and Service Oriented Architecture (SOA). He loves to work with high quality code, especially concerning advanced software engineering concepts, such as the SOLID principles and the GoF design patterns.
+
+*   ##<div id="Alessandro Casuccio">Alessandro Casuccio</div>
+    {% img left team /images/casuccio.png Alessandro Casuccio %}
+    **Alessandro (a.k.a. Casu)** is Head of Business Intelligence.
+    He joined Namshi in Dubai in 2012 and is currently leading the
+    BI & Data Science practice. Before moving to the U.A.E., he
+    worked one year in Australia for Rocket Internet contributing
+    to creation and launch of several successful startups (among
+    others TheIconic.com.au and Zanui.com.au). Alessandro has
+    experience in BI & Analytics, online marketing, business planning
+    and financial reporting. Prior to Namshi and Rocket Internet,
+    Alessandro was full time analyst at Unicredit Bank in Europe.
+    He obtained a MSc in Finance and a Bachelor in International
+    Economics & Management from Bocconi University in Milan (ITA).
+    Alessandro enjoys outdoor activities and loves travelling to
+    explore new cultures. He joined StartupWeekend as mentor both
+    in Dubai's 2013 and 2014 editions as well as Denver's last one
+    in 2014.

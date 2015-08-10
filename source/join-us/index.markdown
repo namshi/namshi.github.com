@@ -6,30 +6,29 @@ comments: true
 ---
 
 Whether you are an API maniac or you like to get your hands dirty on
-the Chrome DevTools, trying to optimize a bunch of JavaScript code, love the opensource,
-get excited about new tools and technologies (Docker, HHVM anyone?),
-if you are passionate and enthusiast about what you're doing... 
-**then we should have a chat!**
+the Chrome DevTools, trying to optimize a bunch of JavaScript code,
+love Open Source, get excited about new tools and technologies
+(Docker, ES6 anyone?), if you are passionate and enthusiast about
+what you're doing...**then we should have a chat!**
 
-At Namshi we are always looking for talented individuals who want to strive
+At Namshi, we are always looking for talented individuals who want to strive
 towards clean code, design patterns and want to use the latest
-technologies in their daily work -- ever heard of **SPDY, WebP, AngularJS, Docker, ElasticSearch or Redis? These
-are just a few of the things we use at Namshi**.
+technologies in their daily work -- ever heard of **SPDY, WebP, AngularJS, Docker,
+Kubernetes, ElasticSearch or Redis? These are just a few of the
+things we use at Namshi**.
 
 ## About our stack
 
-On the backend, we like to use **NodeJS, Symfony2** and have based our
+On the backend, we like to mainly use **NodeJS** and have based our
 Service Oriented Architecture on "RESTish" APIs, while, at the front,
 we've decided to fight the battle with AngularJS and Javascript in general
 (gulp, browserify and all the *new kids on the block*).
-
-We are also using other cool tools in our architecture: RabbitMq, ElasticSearch, Docker, Mysql, Redis
 
 ## What do we offer?
 
 ...a good salary, we don't want to hire people who feel they've been underpaid
 
-...an opensource-community-driven environment. We love to give back to the community whenever we can: http://github.com/namshi
+...an opensource-community-driven environment. We love to give back to the community [whenever we can](http://github.com/namshi)
 
 ...SPDY, HTTP APIs and a Service-Oriented Architecture
 
@@ -39,19 +38,17 @@ We are also using other cool tools in our architecture: RabbitMq, ElasticSearch,
 
 ...you won't be alone: our team is made of ~15 software engineers
 
-...growth (`jr > intermediate > sr > lead` is the usual path that we let our guys take)
+...opportunity to grow with one of the best teams in the areas
 
 ...a company which is standing on the [shoulder of giants](http://www.rocket-internet.de/)
 
 ...the *"10th our breakpoint"*: if you work for 10 hours then have a break, order food and we will reimburse it
 
-...working with [these two guys](http://instagram.com/p/gpSOCenpPI/)
-
 ## Openings
 
-Currently, we are looking for and a [Sr API Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/), a [Mobile Lead Developer](/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/) and a [Sr Frontend Engineer](/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/): if you have the passion, but lack of the experience, don't worry but submit
-your application as we are very happy to hire youngsters who can grow
-during their time at Namshi!
+Currently, we do not have any open position -- though we are always open to
+have a chat with engineers who have the right mindset, no matter if junior,
+intermediate or senior: feel free to submit your application!
 
 ## Aaaaaand...
 
