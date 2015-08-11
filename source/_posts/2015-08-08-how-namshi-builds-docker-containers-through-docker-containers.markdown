@@ -103,7 +103,7 @@ auth:
 ```
 
 Then clone the [Roger repo](https://github.com/namshi/roger),
-build the container it and run it locally:
+build the container and run it locally:
 
 ``` bash
 git clone git@github.com:namshi/roger.git
@@ -309,6 +309,6 @@ a face (its frontend), experimenting with ReactJS for the first time
 being our beta-testers :)
 
 All of these guys, with their collective effort, helped turning a
-2-nights prorotype into our build system.
+2-nights prototype into our build system.
 
 Yallah!
