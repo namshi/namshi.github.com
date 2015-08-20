@@ -38,9 +38,9 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
-*   ##<div id="Hossam Faris">Hossam Faris</div>
-    {% img left team /images/hossam.jpg Hossam Faris %}
-    **Hossam Faris** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
+*   ##<div id="Hossam Fares">Hossam Faris</div>
+    {% img left team /images/hossam.jpg Hossam Fares %}
+    **Hossam Fares** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
     he hopes to be empowered and empowering others in this field.
 
 *   ##<div id="Filippo De Santis">Filippo De Santis</div>
