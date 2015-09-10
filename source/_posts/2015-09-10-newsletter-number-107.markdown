@@ -9,11 +9,14 @@ categories: [coding, css, devops, git, haskell, html, osx, swift]
 
 > Hi there!
 >
-> Tech Thursday has come again!, We had a big event last week! our Nerdy managers went to berlin last week to participate in the Rocket internet Summit 
+> Tech Thursday has come again! We had a big event last week!
+>
+> Our nerdy "managers" went to berlin last week to participate in the Rocket internet Summit 2015
 > {% img team center /images/berlin_rocket_team.jpg %}
 >
 > {% img team center /images/berlin_rocket_alex.jpg %}
-> He like to be that casual! Any way it was a good talk though :)
+> 
+> He like to be that casual! It was a good talk though :)
 >
 > Links? Here they are!
 >
