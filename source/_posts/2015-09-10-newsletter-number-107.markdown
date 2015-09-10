@@ -26,7 +26,7 @@ categories: [coding, css, devops, git, haskell, html, osx, swift]
 * [better commit messages with a .gitmessage template](https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template)
 
 * [devops bookmarks](http://www.devopsbookmarks.com/)
-
+<!-- more -->
 * [don’t fear the internet basico html & css for non-web designers](http://www.dontfeartheinternet.com/)
 
 * [eight terminal utilities every os x command line user should know](http://www.mitchchn.me/2014/os-x-terminal)
