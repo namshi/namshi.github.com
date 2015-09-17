@@ -13,7 +13,7 @@ categories: [api, c, database, docker, freelance, git, google, hubot, javascript
 > Filippo in action during his tech talk, showing us some cool tips and tricks with MySql:
 >
 
-{% img team center /images/posts/filippo_mysql_talk.png %}
+{% img team center /images/posts/filippo_mysql.png %}
 
 
 **Below you can find the usual list of interesting articles we discovered in the past 7 days.**
