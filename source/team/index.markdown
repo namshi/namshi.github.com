@@ -104,7 +104,7 @@ footer: true
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
-    Shidhin is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
+    **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
     best practices and front end technologies.
     He comes with over 6 years of experience in front end development, and core JavaScript expertise.
     In free time, he can be found updating his blog or checking out some open source stuff.
@@ -136,17 +136,6 @@ footer: true
     so, working in Namshi will give Amin exposure to new technologies
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
-
-*   ##<div id="Nitesh Sharma">Nitesh Sharma</div>
-    {% img left team /images/nitesh.png Nitesh Sharma %}
-    **Nitesh  Sharma** is a quite introvert software developer who also
-    believes that he has good taste in design. He is very interested in
-    software design practices, TDD, and stuff like meditation. He has been
-    in the software industry for around 5 years and is mainly focused on
-    enterprise javascript applications which allowed him to witness, from the front
-    seat, the evolution of javascript from browser compatibilty hell to
-    the crazy stuff it does these days. In his free time you might find him
-    traveling, reading books or fancying about human psychology.
 
 # Business intelligence
 
@@ -277,3 +266,14 @@ to our technical stack.
     explore new cultures. He joined StartupWeekend as mentor both
     in Dubai's 2013 and 2014 editions as well as Denver's last one
     in 2014.
+
+*   ##<div id="Nitesh Sharma">Nitesh Sharma</div>
+    {% img left team /images/nitesh.png Nitesh Sharma %}
+    **Nitesh  Sharma** is a quite introvert software developer who also
+    believes that he has good taste in design. He is very interested in
+    software design practices, TDD, and stuff like meditation. He has been
+    in the software industry for around 5 years and is mainly focused on
+    enterprise javascript applications which allowed him to witness, from the front
+    seat, the evolution of javascript from browser compatibilty hell to
+    the crazy stuff it does these days. In his free time you might find him
+    traveling, reading books or fancying about human psychology.
