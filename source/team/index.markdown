@@ -63,13 +63,6 @@ footer: true
     Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
     Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
 
-*   ##<div id="Vishnu Nair">Vishnu Nair</div>
-    {% img left team /images/vishnu.jpg Vishnu Nair %}
-    **Vishnu Nair** is a Linux System Administrator at Namshi (a Rocket Internet Venture).
-    His Job responsibilities include assisting the development team in infrastructure questions, problems and deployments.
-    He maintains and improves the existing server infrastructure as well as new installations and backups. He monitors uptime, failover, infrastructure performance proactively and many more.
-    He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He holds a Bachelor's Degree in B.TECH from the Pondicherry University in India.
-
 *   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
     {% img left team /images/gurjeet.jpg Gurjeet Singh %}
     **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
@@ -266,6 +259,13 @@ to our technical stack.
     explore new cultures. He joined StartupWeekend as mentor both
     in Dubai's 2013 and 2014 editions as well as Denver's last one
     in 2014.
+
+*   ##<div id="Vishnu Nair">Vishnu Nair</div>
+    {% img left team /images/vishnu.jpg Vishnu Nair %}
+    **Vishnu Nair** is a Linux System Administrator at Namshi (a Rocket Internet Venture).
+    His Job responsibilities include assisting the development team in infrastructure questions, problems and deployments.
+    He maintains and improves the existing server infrastructure as well as new installations and backups. He monitors uptime, failover, infrastructure performance proactively and many more.
+    He has around 3.7 years of experience in Linux and Cloud Computing Technologies. He holds a Bachelor's Degree in B.TECH from the Pondicherry University in India.
 
 *   ##<div id="Nitesh Sharma">Nitesh Sharma</div>
     {% img left team /images/nitesh.png Nitesh Sharma %}
