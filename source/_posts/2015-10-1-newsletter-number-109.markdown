@@ -17,6 +17,8 @@ categories: [ elm, javascript, api, architectinginformation, c, clojure, databas
 
 **Below you can find the usual list of interesting articles we discovered in the past 7 days.**
 
+<!-- more -->
+
 * [is it realistic to go from 0 coding experience to freelance developer in 6 months of full time study? - quora](https://www.quora.com/Is-it-realistic-to-go-from-0-coding-experience-to-freelance-developer-in-6-months-of-full-time-study)
 
 * [what frustrates beginner programmers the most? - quora](https://www.quora.com/What-frustrates-beginner-programmers-the-most)

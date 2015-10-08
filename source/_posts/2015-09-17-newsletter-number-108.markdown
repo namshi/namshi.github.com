@@ -18,6 +18,8 @@ categories: [api, c, database, docker, freelance, git, google, hubot, javascript
 
 **Below you can find the usual list of interesting articles we discovered in the past 7 days.**
 
+<!-- more -->
+
 * [Is it realistic to go from 0 coding experience to freelance developer in 6 months of full time study? - quora](https://www.quora.com/Is-it-realistic-to-go-from-0-coding-experience-to-freelance-developer-in-6-months-of-full-time-study)
 
 * [What frustrates beginner programmers the most? - quora](https://www.quora.com/What-frustrates-beginner-programmers-the-most)
