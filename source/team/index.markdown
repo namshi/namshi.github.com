@@ -80,19 +80,6 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
-*   ##<div id="Armagan Kimonoglu">Armağan Kimyonoğlu</div>
-    {% img left team /images/armagan.png Armagan Kimonoglu %}
-    **Armagan Kimonoglu** graduated from Computer Science and
-    dove into web development with Django, then did some System
-    Administration with Fabric and regret that as soon as he met
-    Saltstack.
-    He introduced Saltstack to several companies, either built
-    orchestration from scratch or converted from other tools
-    like puppet or chef. Markafoni, Put.io, Koding, Kartaca and
-    Peakgames were among those companies. Meanwhile, he developed
-    a video on demand Android applications for Turkcell as a
-    freelancer.
-
 ## Frontend
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
@@ -156,20 +143,6 @@ footer: true
     his Bachelor’s in Information Technology from Gujarat
     University. His goal at Namshi is to turn data into
     information, and information into insights.
-
-*   ##<div id="Prabeesh K">Prabeesh K</div>
-    {% img left team /images/prabeesh.png Prabeesh K %}
-    **Prabeesh K** is Junior Data Engineer at Namshi. He
-    is a Open Source enthusiast from Kerala and has been
-    very busy at BI desk since he joined last July 2014
-    with new APIs implementation and Google Biq Query.
-    Moreover, he has contributed to two major open source
-    Big Data projects namely Apache Spark and Apache Storm.
-    That passion spills over in the form of technical blogs
-    on which he works during his free time. Knowing about the
-    trends in the data science, signing up and auditing
-    online courses on Coursera, udacity, edx, MOOCS in general
-    are some of his other avocations.
 
 *   ##<div id="Sarah Mujeeb">Sarah Mujeeb</div>
     {% img left team /images/sarah.png Sarah Mujeeb %}
@@ -277,3 +250,30 @@ to our technical stack.
     seat, the evolution of javascript from browser compatibilty hell to
     the crazy stuff it does these days. In his free time you might find him
     traveling, reading books or fancying about human psychology.
+
+*   ##<div id="Armagan Kimonoglu">Armağan Kimyonoğlu</div>
+    {% img left team /images/armagan.png Armagan Kimonoglu %}
+    **Armagan Kimonoglu** graduated from Computer Science and
+    dove into web development with Django, then did some System
+    Administration with Fabric and regret that as soon as he met
+    Saltstack.
+    He introduced Saltstack to several companies, either built
+    orchestration from scratch or converted from other tools
+    like puppet or chef. Markafoni, Put.io, Koding, Kartaca and
+    Peakgames were among those companies. Meanwhile, he developed
+    a video on demand Android applications for Turkcell as a
+    freelancer.
+
+*   ##<div id="Prabeesh K">Prabeesh K</div>
+    {% img left team /images/prabeesh.png Prabeesh K %}
+    **Prabeesh K** is Junior Data Engineer at Namshi. He
+    is a Open Source enthusiast from Kerala and has been
+    very busy at BI desk since he joined last July 2014
+    with new APIs implementation and Google Biq Query.
+    Moreover, he has contributed to two major open source
+    Big Data projects namely Apache Spark and Apache Storm.
+    That passion spills over in the form of technical blogs
+    on which he works during his free time. Knowing about the
+    trends in the data science, signing up and auditing
+    online courses on Coursera, udacity, edx, MOOCS in general
+    are some of his other avocations.
