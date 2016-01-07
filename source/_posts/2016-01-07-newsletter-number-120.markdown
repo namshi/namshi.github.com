@@ -63,8 +63,6 @@ categories: [TechThursday, symfony, angular2, cli, composer, css, docker, docume
 
 * [react’s jsx: the other side of the coin — medium](https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98)
 
-* [recipe-oriented documentation — medium](https://medium.com/@andrewingram/recipe-oriented-documentation-1601caed8a44)
-
 * [recipe-oriented documentation](https://medium.com/@andrewingram/recipe-oriented-documentation-1601caed8a44)
 
 * [sebastian mckenzie: 2015 in review ](https://medium.com/@sebmck/2015-in-review-51ac7035e272)
@@ -98,5 +96,3 @@ categories: [TechThursday, symfony, angular2, cli, composer, css, docker, docume
 * [why did i write a machine learning book in ruby?](http://matthewkirk.com/why-did-i-write-a-machine-learning-book-in-ruby/?utm_content=buffer4f976)
 
 * [writing clear code, not clever code](https://medium.com/@mikesherov/writing-clear-code-not-clever-code-d6b90353a3c5)
-
-* [~2015 in review — sebastian mckenzie](https://medium.com/@sebmck/2015-in-review-51ac7035e272)
