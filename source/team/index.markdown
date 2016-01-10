@@ -277,3 +277,15 @@ to our technical stack.
     trends in the data science, signing up and auditing
     online courses on Coursera, udacity, edx, MOOCS in general
     are some of his other avocations.
+
+*   ##<div id="Vivek">Vivek Pandya</div>
+    {% img left team /images/vivek.jpg Vivek Pandya %}
+    Vivek is an undergraduate at the University Of California,
+    Los Angeles (Class of 2016) studying Economics, Entrepreneurship and
+    Computing. He is passionate about everything technology related and
+    aims to be a part of the upcoming digital revolution in a big way.
+    Prior to Namshi, he was at a 3 month software engineering bootcamp
+    in New York called Fullstack Academy that specialized in the MEAN
+    stack. After graduation, Vivek aims to travel around South America and
+    Europe for a few months before getting burdened with the pressures of
+    adult life.
