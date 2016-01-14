@@ -9,7 +9,7 @@ categories: [ felxbox, flex, hhvm, code, css, docker, fun, ha, javascript, osx, 
 
 > Hi there!
 >
-> The week is over and a we have a new good list of links for you.
+> The week is over and we have a new list of links for you.
 >
 
 * [ xhyve hypervisor: a port of bhyve to os x](xhyve.org)
