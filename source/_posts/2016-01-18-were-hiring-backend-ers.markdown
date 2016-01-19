@@ -34,7 +34,19 @@ things we care about, and they're not platform-specific:
 * know how to build fault-tolerance services that can run in high-availability setups
 * crunch on DRY, KISS and YAGNI ([whaaaat?](http://www.itexico.com/blog/bid/99765/Software-Development-KISS-YAGNI-DRY-3-Principles-to-simplify-your-life))
 * you are a detail-oriented, result-driven individual and are looking to grow in a multi-faceted environment
-* allergic to monolithic architectures is a plus :)
+* allergic to monolithic architectures is a plus
+
+We love to innovate and try to always follow the latest
+trends in Web development -- here are some of the things
+we did over the past couple of years:
+
+* developed [isomorphic JavaScript apps](http://www.slideshare.net/unlucio/back-to-the-future-isomorphic-javascript-applications)
+* deployed a fleet of [containers](https://www.docker.com/) through [Kubernetes](http://kubernetes.io/)
+* been on the frontline to adopt SPDY -- now it's time to switch to HTTP/2
+* have spent a substantial amount of time trying to help the [Open Source community](https://github.com/namshi)
+
+Now we're playing around with React Native and Redux to see
+if JavaScript could conquer the mobile apps landscape.
 
 Our core team is based in Dubai but we're open to remote
 candidates: you can find more about us by having a look

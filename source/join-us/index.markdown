@@ -26,29 +26,33 @@ we've decided to fight the battle with AngularJS and Javascript in general
 
 ## What do we offer?
 
-...a good salary, we don't want to hire people who feel they've been underpaid
-
 ...an opensource-community-driven environment. We love to give back to the community [whenever we can](http://github.com/namshi)
 
 ...SPDY, HTTP APIs and a Service-Oriented Architecture
 
+...the ability to try to innovate with tools such as [React Native](https://facebook.github.io/react-native/) and [Redux](https://github.com/rackt/redux)
+
 ...a [1-minute-walk](https://www.google.com/maps/dir/First+Gulf+Bank+Metro+Station+1+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/More+Cafe+Gold+%26+Diamond+Park+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1264065,55.2068206,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3e5f6bc621973f29:0x18a89384f349bdf6!2m2!1d55.207756!2d25.126699!1m5!1m1!1s0x3e5f6bc6122edfe3:0x435be27ccd3d1564!2m2!1d55.208316!2d25.126114!3e2) from the metro to the office
+
+...a good, tax-free salary
 
 ...a [great team](/team)
 
-...you won't be alone: our team is made of ~15 software engineers
+...you won't be alone: our team is made of ~12 software engineers
 
 ...opportunity to grow with one of the best teams in the areas
 
 ...a company which is standing on the [shoulder of giants](http://www.rocket-internet.de/)
 
-...the *"10th our breakpoint"*: if you work for 10 hours then have a break, order food and we will reimburse it
+...the *"10th our breakpoint"*: if you work for 10 hours...have a break, order food and we will reimburse it
 
 ## Openings
 
-Currently, we do not have any open position -- though we are always open to
-have a chat with engineers who have the right mindset, no matter if junior,
-intermediate or senior: feel free to submit your application!
+Currently, we are looking for backend heroes who'd love to hack with JavaScript.
+
+If you don't feel we have the right opening for you, we are always keen on
+having a chat with engineers who have the right mindset, no matter the stack or
+the role: feel free to submit your application!
 
 ## Aaaaaand...
 
