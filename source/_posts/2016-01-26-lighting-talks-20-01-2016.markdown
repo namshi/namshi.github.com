@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Lightning talks #2"
+date: 2016-01-25 12:08
+comments: true
+categories: [Lightning talks, emmet, flexbox, soap, freshshell, letsencrypt]
+---
+
+{% img center /images/posts/lighting-talks-2.png %}
+
+>At Namshi, as you probably know, we do several activities in parallel, like - small presentations about new technologies,
+>showcases of the latest projects, watching interesting conference talks, etc.
+>Sometimes we get together and some of the team members give a small presentation, lightning talks, about something they found really interesting.
+>Here is a recap of the last lightning talks we had, and we hope, like the weekly newsletter, you will find it interesting as well!
+
+<!-- more -->
+
+[Cirpo](/team/#Alessandro%20Cinelli%20(cirpo)
+
+**My billion dollar mistake**
+
+How the invention of the null reference is affecting the software industry:
+
+<iframe src="https://docs.google.com/presentation/d/1OQCFWKeGYJbNWy5z0O1IG8I07SsxOtwQjfohhBZo3mc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<hr />
+
+[Filo](/team/#Filippo%20De%20Santis)
+
+[Let’s Encrypt](letsencrypt.org) is a free, automated, and open certificate authority (CA), run for the public’s benefit.
+
+The idea behind this project is to push for a more secure, transparent and open web. It provides free TLS/SSL certificates in an automated way, developing all its tools as open source projects
+<iframe src="https://docs.google.com/presentation/d/1ztJha7JaJP087YJ1l28l42sVkqBNjbCgm0oAz0lrj_g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<hr />
+
+[David](/team#David%20Funaro)
+
+**Freshshell**
+ Your terminal is really personal thing: during your career you probably change its features with plugins, configuration and everything that can be useful for you. So why not automate the way you can configure it? Think what is happening every time you have a brand new you pc in front of you ... or even working with multiple computers (home, work).
+
+<iframe src="https://docs.google.com/presentation/d/1TnaYDqk0uw36oEiuWx6H_HVM0sMwULjej78MoS4ngmE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<hr />
+
+[Ayham](/team/#Ayham%20Alzoubi)
+
+**Boomerang, SOAP & REST Client**
+
+It's a really powerful Chrome extension.
+It lets you upload the WSDL and then you can create a request, it will create the structure for you and with the default values.
+You can debug and save the requests and responses, change the http headers and parameters, and also you can use different types of authentication, import/export  to json file to save your projects.
+[Check it out](https://chrome.google.com/webstore/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=en)
+
+<hr />
+
+[Amin](/team#Mohamed%20Amin)
+
+He gave an introduction to **Flexbox** and **css3**. To get a great overview about Flexbox just browse 	[egghead.io](https://egghead.io/lessons/misc-flexbox-fundamentals)
+You can play with his examples [here](http://codepen.io/Mohamedamin/pen/xZdBNg)
+
+<hr />
+
+[Shidhin](/team#Shidhin%20CR)
+
+[Emmet](http://emmet.io/) ( previously known as Zen coding ) is a plugin to enhance development workflow. By using simple css-selectors and html short-codes, it helps to generate the code snippets in seconds."
+
+<iframe src="https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/pub?start=false&loop=false&delayms=3000&slide=id.gc6f73a04f_0_42
+
+<hr />
+
+[Alex](/team/#Alessandro%20Nadalin)
+
+Alex gave us a show case about interesting libraries he found on github:
+
+* [remote.js](https://github.com/hacksparrow/remote.js)
+* [nigit](https://github.com/lukasmartinelli/nigit)
+
+And he showed us his first steps/experiments with [Webpack](https://webpack.github.io/), the module bundler:
+
+* https://github.com/odino/webpack-example
+* https://github.com/odino/dev/blob/master/play/Dockerfile / https://github.com/odino/dev/blob/master/aliases#L4-L6
+
+
+
