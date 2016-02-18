@@ -3,6 +3,7 @@ layout: post
 title: "Newsletter #124"
 date: 2016-02-11 12:38
 comments: true
+author: Geshan Manandhar
 categories: [reactjs, agile, cli, code-metrics, css, ddd, docker, es6, facebook, flux, javascript, js, logging, mobile, oop, react, redux]
 ---
 
@@ -24,6 +25,8 @@ categories: [reactjs, agile, cli, code-metrics, css, ddd, docker, es6, facebook,
 * [codekitchen/dinghy: faster, friendlier docker on os x](https://github.com/codekitchen/dinghy?utm_content=bufferf938d)
 
 * [compose 1.6: new compose file for defining networks and volumes | docker blog](https://blog.docker.com/2016/02/compose-1-6/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uovUKe/lMI/0ER3fOvrPUfGjI4DScBkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=)
+
+<!-- more -->
 
 * [css buttons with icons but no images](http://www.paulund.co.uk/css-buttons-with-icons-but-no-images)
 
