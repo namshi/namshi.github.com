@@ -24,6 +24,8 @@ categories: [ angular, elixir, asm.js, docker, git, javascript, js, microservice
 
 * [a simple way to dockerize applications ·](http://jasonwilder.com/blog/2014/10/13/a-simple-way-to-dockerize-applications/)
 
+<!-- more -->
+
 * [asm.sj - chess ](https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/chess/?utm_source=hackernewsletter)
 
 * [climem: monitor the memory consumption of your node process via cli](https://github.com/mcollina/climem)
