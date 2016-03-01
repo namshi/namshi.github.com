@@ -18,13 +18,6 @@ footer: true
 
 ## Backend
 
-*   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
-    {% img left team /images/cirpo.jpg Alessandro Cinelli %}
-    **Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
-    and methodologies. His focus is on web businesses where agile and XP methods could yield the most efficient results in terms of productivity and group interactions.
-    Besides his commitment to his job, he has a track record of setting up and running developer groups to discuss and share the latest advancements in web technologies.
-    He was also an active board member of Italian PHP, Javascript User Group, WEBdeBS and has co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
-
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
     **Geshan Manandhar** is an experienced software engineer, who loves developing web applications.
@@ -186,6 +179,14 @@ footer: true
 We'd also like to list here the rockstart who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
+    {% img left team /images/cirpo.jpg Alessandro Cinelli %}
+    **Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
+    and methodologies. His focus is on web businesses where agile and XP methods could yield the most efficient results in terms of productivity and group interactions.
+    Besides his commitment to his job, he has a track record of setting up and running developer groups to discuss and share the latest advancements in web technologies.
+    He was also an active board member of Italian PHP, Javascript User Group, WEBdeBS and has co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
+
 
 *   ##<div id="Luciano Amodio">Luciano Amodio</div>
     {% img left team /images/renzo.jpg Luciano Amodio %}
