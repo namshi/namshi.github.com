@@ -20,9 +20,10 @@ footer: true
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
-    **Geshan Manandhar** is an experienced software engineer, who loves developing web applications.
-    Currently in Dubai working at Namshi as Quality and Maintenance (QM) lead, he is an open source preacher.
-    When not programming, he can be found blogging about technology related topics.
+    **Geshan Manandhar** Quality and Maintenance Lead (QM Lead), is a seasoned software engineer, with more than 6 years of 
+    professional web development experience. He is focused on enterprise application architecture and methodologies. 
+    With a keen interest on REST architecture and Service Oriented Architecture (SOA), Microservices. 
+    He believes in agile methods for software engineering. Blogging is also something he likes to do in his free time.
 
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
@@ -154,7 +155,7 @@ footer: true
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
     **Razan Bilwani** is a Senior Product Management Analyst,
-    and has been at Namshi for almost 3 years. Before Product
+    and has been at Namshi for almost 4 years. Before Product
     Management, he dabbled in Content, Digital Strategy, and
     Onsite Analytics. Razan used to run his own wholesale
     business in the heart of Dubai before deciding to go
