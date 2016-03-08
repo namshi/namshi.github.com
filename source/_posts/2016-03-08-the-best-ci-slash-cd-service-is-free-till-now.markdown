@@ -22,8 +22,7 @@ We are currently using [Travis CI](https://travis-ci.com/) for running our tests
 Here are the slides:
 
 <center>
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/1AzqQ1yGYkX8af" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
-</iframe> 
+<script async class="speakerdeck-embed" data-id="48dcb61db6eb4a50b03bfea1320bfeb4" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script> 
 </center>
 <br/>
 
