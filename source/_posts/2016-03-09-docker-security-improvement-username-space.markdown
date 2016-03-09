@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Docker security improvement - Username Space"
+title: "Docker security improvement - User namespace"
 date: 2016-03-09 10:00
 comments: true
 categories: [ docker ]
