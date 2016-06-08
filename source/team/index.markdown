@@ -20,9 +20,9 @@ footer: true
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
-    **Geshan Manandhar** Quality and Maintenance Lead (QM Lead), is a seasoned software engineer, with more than 6 years of 
-    professional web development experience. He is focused on enterprise application architecture and methodologies. 
-    With a keen interest on REST architecture and Service Oriented Architecture (SOA), Microservices. 
+    **Geshan Manandhar** Quality and Maintenance Lead (QM Lead), is a seasoned software engineer, with more than 6 years of
+    professional web development experience. He is focused on enterprise application architecture and methodologies.
+    With a keen interest on REST architecture and Service Oriented Architecture (SOA), Microservices.
     He believes in agile methods for software engineering. Blogging is also something he likes to do in his free time.
 
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
@@ -41,11 +41,6 @@ footer: true
     {% img left team /images/filippo.jpg Filippo De Santis %}
     **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
     He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
-
-*   ##<div id="David Funaro">David Funaro</div>
-    {% img left team /images/david.jpg David Funaro %}
-    **David Funaro** is a Software Engineer with more that 10 years of experience and a strong passion in building highly maintainable software. He spent the last years coaching teams, providing tools, knowledge and mentorship to improve software design.
-    Over the years he has delivered software for companies like Eni, Ferrari, Nissan, Samsung, spoke at conferences, IT communities meet-ups. He also has contributed to OSS projects such as OrientDB Doctrine ODM.
 
 ## SysAdmin
 
@@ -82,17 +77,6 @@ footer: true
     best practices and front end technologies.
     He comes with over 6 years of experience in front end development, and core JavaScript expertise.
     In free time, he can be found updating his blog or checking out some open source stuff.
-
-*   ##<div id="Luciano Colosio">Luciano Colosio</div>
-    {% img left team /images/lucio.jpg Luciano Colosio %}
-    **Luciano Colosio**  is a Senior IT professional with a long experience in the field on different topics and a keen attention for software development,
-    web-technologies and ditributed architectures.
-    Starting as system administrator in his career he has been building his expertise in both the development and operational aspects
-    while working for big italian new-media companies as well as
-    new startups where he was able to focus also on Agile and XP methodologies.
-    For what it concerns software development he deeply values best practices, clean code and architectures and new cutting edge technologies.
-    Quite of an *aficionado* in the italian development community he's one of the founding members of the web-centric communtiy "WEBdeBS".
-    He joined Namshi as frontend engineer bringing his deep love for both javascript and node.js
 
 *   ##<div id="Mohamed Amin">Mohamed Amin</div>
     {% img left team /images/amin.jpg Mohamed Amin %}
@@ -138,18 +122,6 @@ footer: true
     University. His goal at Namshi is to turn data into
     information, and information into insights.
 
-*   ##<div id="Sarah Mujeeb">Sarah Mujeeb</div>
-    {% img left team /images/sarah.png Sarah Mujeeb %}
-    **Sarah Mujeeb** is a Senior Business Intelligence Analyst at
-    Namshi, having joined the firm in 2012. A finance graduate,
-    she is also currently pursuing her Masters in Applied Finances.
-    She thinks working with numbers is fun and enjoys being able
-    to turn sets of data into identifiable patterns and trends.
-    She also believes that one of the most exciting aspects of her
-    line of work is that it is fast paced and always evolving. A
-    big foodie, in her free time, you would probably find her
-    discovering new food joints or out exploring the country.
-
 # Product management
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
@@ -166,28 +138,17 @@ footer: true
     by night. There are 3 things he takes very seriously:
     work, the Oxford comma, and Biryani.
 
-*   ##<div id="Haneen Musleh">Haneen Musleh</div>
-    {% img left team /images/haneen.jpg Haneen Musleh %}
-    **Haneen Musleh** is a Product Management Analyst. She joined the Tech Team in April 2012
-    as part of the QA/Dev team and then moved to the PM team in April 2014. In the Tech team
-    she used to channel the traffic between IT and other departments and do some PM activities.
-    After moving to the PM team, she focused more on front end Projects and improvements.
-    She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline).
-    In her free time she’s either taking selfies, WhatsApping or at the gym.
-
 ## Alumni: rockers who have been with us!
 
 We'd also like to list here the rockstart who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
 
-*   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
-    {% img left team /images/cirpo.jpg Alessandro Cinelli %}
-    **Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
-    and methodologies. His focus is on web businesses where agile and XP methods could yield the most efficient results in terms of productivity and group interactions.
-    Besides his commitment to his job, he has a track record of setting up and running developer groups to discuss and share the latest advancements in web technologies.
-    He was also an active board member of Italian PHP, Javascript User Group, WEBdeBS and has co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
-
+*   ##<div id="Muhammad Riaz">Muhammad Riaz</div>
+    {% img left team /images/riaz.jpeg Muhammad Riaz %}
+    **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.  
+    He has over five years of PHP development experience.He is interested in Enterprise applications,
+    scalable web architecture and software development methodologies.
 
 *   ##<div id="Luciano Amodio">Luciano Amodio</div>
     {% img left team /images/renzo.jpg Luciano Amodio %}
@@ -195,12 +156,6 @@ to our technical stack.
     thesis "an architecture of human-machine interaction" and has been doing web development since 2000.
     He's also interested in Zend Framework, Symfony2, Symfony CMF and Agile.
     Other Interests: Multimedia (Photo/Video/3D Rendering, Post Production, Editing), Interaction Design (hardware: arduino. software: processing, MAX/MSP) and Philosophy, esoterism, playing piano, photography and research.
-
-*   ##<div id="Muhammad Riaz">Muhammad Riaz</div>
-    {% img left team /images/riaz.jpeg Muhammad Riaz %}
-    **Muhammad Riaz** is a Senior Developer joined Namshi Tech team in March 2012.  
-    He has over five years of PHP development experience.He is interested in Enterprise applications,
-    scalable web architecture and software development methodologies.
 
 *   ##<div id="Mohamad Hallal">Mohamad Hallal</div>
     {% img left team /images/hallal.jpg Mohamad Hallal %}
@@ -291,3 +246,47 @@ to our technical stack.
     stack. After graduation, Vivek aims to travel around South America and
     Europe for a few months before getting burdened with the pressures of
     adult life.
+
+*   ##<div id="Alessandro Cinelli (cirpo)">Alessandro Cinelli (cirpo)</div>
+    {% img left team /images/cirpo.jpg Alessandro Cinelli %}
+    **Alessandro Cinelli** Lead Developer, is a seasoned PHP and Javascript developer with more than 10 years experience and a keen attention for enterprise patterns
+    and methodologies. His focus is on web businesses where agile and XP methods could yield the most efficient results in terms of productivity and group interactions.
+    Besides his commitment to his job, he has a track record of setting up and running developer groups to discuss and share the latest advancements in web technologies.
+    He was also an active board member of Italian PHP, Javascript User Group, WEBdeBS and has co-organized several events such as agileday, phpday, jsday, nosqlday and nodejsconf some of which were the first of their kind in Italy.
+
+*   ##<div id="Haneen Musleh">Haneen Musleh</div>
+    {% img left team /images/haneen.jpg Haneen Musleh %}
+    **Haneen Musleh** is a Product Management Analyst. She joined the Tech Team in April 2012
+    as part of the QA/Dev team and then moved to the PM team in April 2014. In the Tech team
+    she used to channel the traffic between IT and other departments and do some PM activities.
+    After moving to the PM team, she focused more on front end Projects and improvements.
+    She is by far one of Namshi's Gold customers and a SHOPAHOLIC by all means (online and offline).
+    In her free time she’s either taking selfies, WhatsApping or at the gym.
+
+*   ##<div id="Luciano Colosio">Luciano Colosio</div>
+    {% img left team /images/lucio.jpg Luciano Colosio %}
+    **Luciano Colosio**  is a Senior IT professional with a long experience in the field on different topics and a keen attention for software development,
+    web-technologies and ditributed architectures.
+    Starting as system administrator in his career he has been building his expertise in both the development and operational aspects
+    while working for big italian new-media companies as well as
+    new startups where he was able to focus also on Agile and XP methodologies.
+    For what it concerns software development he deeply values best practices, clean code and architectures and new cutting edge technologies.
+    Quite of an *aficionado* in the italian development community he's one of the founding members of the web-centric communtiy "WEBdeBS".
+    He joined Namshi as frontend engineer bringing his deep love for both javascript and node.js
+
+*   ##<div id="David Funaro">David Funaro</div>
+    {% img left team /images/david.jpg David Funaro %}
+    **David Funaro** is a Software Engineer with more that 10 years of experience and a strong passion in building highly maintainable software. He spent the last years coaching teams, providing tools, knowledge and mentorship to improve software design.
+    Over the years he has delivered software for companies like Eni, Ferrari, Nissan, Samsung, spoke at conferences, IT communities meet-ups. He also has contributed to OSS projects such as OrientDB Doctrine ODM.
+
+*   ##<div id="Sarah Mujeeb">Sarah Mujeeb</div>
+    {% img left team /images/sarah.png Sarah Mujeeb %}
+    **Sarah Mujeeb** is a Senior Business Intelligence Analyst at
+    Namshi, having joined the firm in 2012. A finance graduate,
+    she is also currently pursuing her Masters in Applied Finances.
+    She thinks working with numbers is fun and enjoys being able
+    to turn sets of data into identifiable patterns and trends.
+    She also believes that one of the most exciting aspects of her
+    line of work is that it is fast paced and always evolving. A
+    big foodie, in her free time, you would probably find her
+    discovering new food joints or out exploring the country.
