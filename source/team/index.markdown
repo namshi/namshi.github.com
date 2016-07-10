@@ -42,6 +42,12 @@ footer: true
     **Filippo De Santis** is an experienced PHP programmer with a rock solid knowledge about OOP, design patterns, TDD and best practices. He was an early symfony adopter, starting from version 1.0, and he contributed to the Symfony CMF project.
     He is also an active member of several IT communities in Italy, and  he is used to share his experience as a speaker at meetups and conferences.
 
+*   ##<div id="Joe Jean">Joe Jean</div>
+    {% img left team /images/joe.png Joe Jean %}
+    **Joe Jean** holds a B.S. in Computer Science from NYU Abu Dhabi. He loves building software that make people's lives easier. He is always looking for opportunities to improve his programming skills. And he has never missed such opportunities, whether it is participating at a hackathon, working on a side project, or doing technical internships.
+    His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
+    When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
+
 ## SysAdmin
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
