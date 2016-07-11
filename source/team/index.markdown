@@ -101,33 +101,6 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
-# Business intelligence
-
-*   ##<div id="Jaseena Yusuf">Jaseena Yusuf</div>
-    {% img left team /images/jaseena.png Jaseena Yusuf %}
-    **Jaseena Yusuf** is working as BI Analyst, at Namshi
-    for almost 3 years. Shifted from Outbound operations to
-    Order processing to finally Business Intelligence - here
-    since Namshi early stage operations till now with much
-    bigger scale and capacity. Jaseena's experience at Namshi
-    has been like a roller coaster ride and she is looking
-    forward to more eventful happenings at Namshi. An Indian
-    at heart(read drama queen), but a pure Dubai bred in every
-    other way. Other than enjoying the sumptuous burst of food,
-    in her free time, Jaseena also loves to go to the beach and
-    enjoy long walks with close friends.
-
-*   ##<div id="Pinak Kakadiya">Pinak Kakadiya</div>
-    {% img left team /images/pinak.png Pinak Kakadiya %}
-    **Pinak Kakadiya** is BI Developer at Namshi. He joined
-    BI Team in May 2014. He is working with all kind of
-    Data and has strong knowledge of Database, ETL and Data
-    warehouse. Pinak works in various MSBI areas like SSAS,
-    SSIS, SSRS, Power View and Power Pivot. He completed
-    his Bachelor’s in Information Technology from Gujarat
-    University. His goal at Namshi is to turn data into
-    information, and information into insights.
-
 # Product management
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
@@ -296,3 +269,14 @@ to our technical stack.
     line of work is that it is fast paced and always evolving. A
     big foodie, in her free time, you would probably find her
     discovering new food joints or out exploring the country.
+
+*   ##<div id="Pinak Kakadiya">Pinak Kakadiya</div>
+    {% img left team /images/pinak.png Pinak Kakadiya %}
+    **Pinak Kakadiya** is BI Developer at Namshi. He joined
+    BI Team in May 2014. He is working with all kind of
+    Data and has strong knowledge of Database, ETL and Data
+    warehouse. Pinak works in various MSBI areas like SSAS,
+    SSIS, SSRS, Power View and Power Pivot. He completed
+    his Bachelor’s in Information Technology from Gujarat
+    University. His goal at Namshi is to turn data into
+    information, and information into insights.
