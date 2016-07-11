@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Join us!"
-date: 2014-10-14 16:47
+date: 2016-07-11 16:47
 comments: true
 ---
 
@@ -21,8 +21,8 @@ things we use at Namshi**.
 
 On the backend, we like to mainly use **NodeJS** and have based our
 Service Oriented Architecture on "RESTish" APIs, while, at the front,
-we've decided to fight the battle with AngularJS and Javascript in general
-(gulp, browserify and all the *new kids on the block*).
+we've decided to fight the battle with React, AngularJS and Javascript in general
+(webpack, gulp, browserify and all the *new kids on the block*).
 
 ## What do we offer?
 
@@ -48,20 +48,16 @@ we've decided to fight the battle with AngularJS and Javascript in general
 
 ## Openings
 
-Currently, we are looking for backend heroes who'd love to hack with JavaScript.
+Currently, we are looking for:
+
+* a (sr) DevOps engineer (main tools and platforms we use: docker, coreos, kubernetes, aws, saltstack)
+* a (sr) frontend engineer, who can hack really well with Angular / React
 
 If you don't feel we have the right opening for you, we are always keen on
 having a chat with engineers who have the right mindset, no matter the stack or
 the role: feel free to submit your application!
 
 ## Aaaaaand...
-
-For this year, we've planned great things:
-
-<iframe src="http://www.slideshare.net/slideshow/embed_code/33642971" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-
-and want **you** as part of our amazing
-tech team.
 
 Here's a taste of Namshi, as a company:
 
