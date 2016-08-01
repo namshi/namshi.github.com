@@ -12,6 +12,8 @@ categories:
 
 On July 10th, I joined [Namshi](https://namshi.com/) as a Junior Software Engineer. I was really excited to start my first full time job writing software. Though, I have to confess that I was also a bit afraid and nervous. Fortunately, after just two days working with the team the fear and nervousness went away. In this post, I will share with you some of the things I have learned so far as well as what I love about working in this awesome team.
 
+<!-- more -->
+
 ##### Everyone is super nice
 From the first day I joined the team, everyone has been going out of their way to help me and make me feel welcome. In order to better understand the business as a whole, HR arranged for me to meet people from many other teams such as warehouse, business intelligence, and project management. All of those people were really nice and did a great job explaining to me how their department works.
 In the tech team, I have interrupted some of my colleagues countless times to ask questions and they have always done their best to give me answers or point me to someone else who knows the answer. The VP of technology, Alex, who is also my manager has urged me to not be afraid to ask questions and discuss things with our senior engineers. In my opinion, this ability to ask questions without feeling like you are being annoying to your peers is crucial for a smooth integration of a new member, especially a junior like me, onto a team.
