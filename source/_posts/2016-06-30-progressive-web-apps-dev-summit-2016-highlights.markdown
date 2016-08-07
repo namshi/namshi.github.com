@@ -10,7 +10,7 @@ categories:
 ---
 
 The first Progressive Web App dev summit happened in Amsterdam last week. I got a chance to attend the event and meet a lot of new people. All the sessions were nice, and I was so amazed to see the different browser vendors working together to push the web forward.
-
+<!-- more -->
 {% img center /images/posts/pwa-dev-summit-highlights.jpg %}
 
 Today I shared the highlights of all the sessions and code labs happened at the dev summit to the team. It's a very high-level overview of the whole event and the future of Progressive Web Apps. You can find my slides here:

@@ -1,0 +1,50 @@
+/* CONFIGURATION */
+
+/* Bodytext font */
+$font: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Font for headings */
+$fontheadings: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+/* Text colors */
+$text: #21272d;
+$textmuted: #848484;
+$accent: #2077b2;
+
+
+/* IMPORT CSS FILES */
+@import "bootstrap";
+@import "base";
+@import "nav";
+@import "article";
+@import "icons";
+@import "syntax";
+@import "responsive";
+
+/* Custom styles */ 
+figcaption {
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    color: #607D8B;
+}
+/*Temp style -- will remove later*/ 
+.namshi-team {
+    padding: 0 20px;
+    ul {
+        list-style: none;
+        clear: both;
+        padding: 10px;
+    }
+    li{
+        overflow: hidden;
+    }
+    img.left.team {
+        width: 150px;
+        border-radius: 50%;
+        display: block;
+        float: left;
+        clear: left;
+        margin-right: 20px;
+    }
+}

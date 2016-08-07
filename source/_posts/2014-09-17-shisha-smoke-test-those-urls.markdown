@@ -23,7 +23,7 @@ it is fast and simple!
 
 Install shisha globally from [NPM](https://www.npmjs.org/package/shisha)
 
-```
+```sh
 npm install -g shisha
 ```
 
@@ -33,7 +33,7 @@ Create a text file named `.smoke` where all your test cases will reside.
 
 Fill it as following:
 
-```
+```sh
 http://example.org 200
 http://example.org/not-there 404
 ```
@@ -50,13 +50,13 @@ You can:-
 
 * Pass a path to any text file containing the right URL status code mapping using `--smoke` argument
 
-```
+```sh
 shisha --smoke /path/to/text/file
 ```
 
 * Pass locals to be replaced in your text file
 
-```
+```sh
 shisha --domain example.org --protocol http
 ```
 
@@ -74,13 +74,13 @@ Here is how locals work:
 
 * Easily extend shisha in your code as follows:
 
-```
+```sh
 npm install --save shisha
 ```
 
 then, in your code:
 
-```
+```js
 var shisha = require('shisha');
 ```
 
@@ -90,13 +90,13 @@ you will have access to the `smoke` method which accepts the following arguments
 2. A list of locals to be replaced in the placeholders of the text file.
 3. A callback which accepts the report argument where the set of smoking results are parsed.
 
-```
+```js
  shisha.smoke('/path/to/a/text/file', options, callback);
 ```
 
 or
 
-```
+```js
 shisha.smoke(
     [
         {
@@ -111,7 +111,7 @@ shisha.smoke(
 
 or
 
-```
+```js
 shisha.smoke(
     {
         'http://example.org': 200,
@@ -124,7 +124,7 @@ shisha.smoke(
 
 `locals` as mentioned before, is a list of placeholders to be replaced in the smoke file
 
-```
+```js
 shisha.smoke(urls, {protocol: 'https', domain: 'namshi.com'}
 ```
 
@@ -132,7 +132,7 @@ shisha.smoke(urls, {protocol: 'https', domain: 'namshi.com'}
 
 if you do not have any locals, you can simply omit it.
 
-```
+```js
 shisha.smoke(urls, callback);
 ```
 

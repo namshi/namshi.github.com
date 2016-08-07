@@ -15,14 +15,14 @@ categories:
 ES6 is lovely, right?
 
 I believe "Yes" it is! However, ES6 is not quite ready yet. Present JavaScript environments (NODE and Browser ) cannot run all the ES6 proposed features. Browser vendors are slowly shipping the features to their JS engines. Hence, as of today, only ES5 is guaranteed to work seamlessly in every JS environment.
-
+<!-- more -->
 So, how can we write ES6 ?
 
 Luckily, we have transpilers. They allow us to transpile ( a term for compiling from a language to the same language but a different version ) ES6 code to ES5. In this post, we'll see how to write a cross platform ( UMD ) module in ES6 and compile to ES5 using `webpack` and `babel`.
-<!-- more -->
+
 ## Let's Start
 
-In a nutshell, our project includes:
+In a nutshell, our project includes: 
 
 1. [Webpack](https://webpack.github.io/) is a code bundling tool and will use for building our module.
 2. [Babel-loader](https://github.com/babel/babel-loader) for transpiling ES6 code to ES5

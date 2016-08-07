@@ -86,6 +86,7 @@ for(var i=0,len=anchors.length; i<len; i++){
     };
 }
 ```
+
 If we think the above code works, we are wrong. It is the last value of `i` that is alerted. Here we will see **10** getting alerted.
 
 We use a **closure** to fix this problem. Using closure, we can bind the right value of `i` to the onClick handler. See the code below:

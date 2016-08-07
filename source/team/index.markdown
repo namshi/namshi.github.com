@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: team
 title: "Tech Team"
 date: 2013-06-15 21:51
 comments: false
