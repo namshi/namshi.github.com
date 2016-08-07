@@ -11,6 +11,8 @@ Hey folks, here at [Namshi](https://www.namshi.com) we're currently looking
 to beef our team up -- without further ado, let me quickly go through both
 of them:
 
+<!-- more -->
+
 * **Sr. DevOps engineer**: we run our entire stack on AWS, and 99% of our
 services run in Docker containers orchestrated via [Kubernetes](http://kubernetes.io/):
 a big chunk of our infrastructure is provisioned through [SaltStack](https://saltstack.com/)
