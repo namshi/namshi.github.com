@@ -9,7 +9,7 @@ author: Alessandro Nadalin
 
 Hey folks, here at [Namshi](https://www.namshi.com) we're currently looking
 to beef our team up -- without further ado, let me quickly go through both
-of them:
+of them!
 
 <!-- more -->
 
