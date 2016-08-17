@@ -39,9 +39,9 @@ call.
 Imagine what I had to learn, to start building an angular application while,
 back then, I barely heard of Javascript as a programming language: the best I knew was to search StackOverflow to get something that would work … in jQuery!
 
-> It worked, … I don’t how it did, though!
+> It worked, … I don’t know how, but it did!
 
-“It worked, … I don’t how it did, though!” I said to my team mates and manager hundreds of times!
+“It worked, … I don’t know how, but it did!” I said to my team mates and manager hundreds of times!
 
 You might think that life isn’t easy to grasp, **but Javascript is much harder** from a point of view of a designer who wants to code.<br>
 I kept fighting every day to get through with an output that would make me feel quite
