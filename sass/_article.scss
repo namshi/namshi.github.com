@@ -113,9 +113,9 @@ article {
     }
 
     h2 {
-        font-size:1.5em;
+        font-size:2.2em;
         margin:0.5em 0 1em;
-        font-weight:600;
+        font-weight:500;
     }
 
     h3 {
@@ -129,7 +129,7 @@ article {
     }
 
     hr {
-        margin:3em 0;
+        margin:2.7em 0;
     }
 
     .meta {
@@ -159,11 +159,11 @@ article {
 
     .title {
         margin:0.2em 0;
-        font-weight:bold;
+        font-weight:600;
+        text-shadow: 0 2px 1px rgba(0,0,0,0.2);
 
         a {
             border:0;
-            color:#000;
             text-transform:uppercase;
         }
     }

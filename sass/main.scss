@@ -1,15 +1,16 @@
 /* CONFIGURATION */
+@import url('https://fonts.googleapis.com/css?family=Lato|Rajdhani:400,500,600,700');
 
 /* Bodytext font */
-$font: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font:'Lato', sans-serif;
 
 /* Font for headings */
-$fontheadings: "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fontheadings:'Rajdhani', sans-serif;
 
 /* Text colors */
 $text: #21272d;
 $textmuted: #848484;
-$accent: #2077b2;
+$accent: #d80e3b;
 
 
 /* IMPORT CSS FILES */
@@ -21,14 +22,14 @@ $accent: #2077b2;
 @import "syntax";
 @import "responsive";
 
-/* Custom styles */ 
+/* Custom styles */
 figcaption {
     font-style: italic;
     text-align: center;
     font-weight: bold;
     color: #607D8B;
 }
-/*Temp style -- will remove later*/ 
+/*Temp style -- will remove later*/
 .namshi-team {
     padding: 0 20px;
     ul {

@@ -107,9 +107,9 @@ inc:
   # Blog Information
   title:        "Namshi Engineering"
   subtitle:     "Tech @ Namshi.com"
-  cover_image:  blog-cover.jpg
+  cover_image:  bg.jpg
   logo:         namshi-logo.png
-  
+
   # Company information
   company:      Namshi
   url:          https://tech.namshi.com
@@ -118,29 +118,29 @@ inc:
   gplus:        false
   about_link:   https://tech.namshi.com
   team_link:    /team
-  
+
   # Product Information
   product_link: https://en-ae.namshi.com/careers/
   tagline:      "Hack With Us"
-  
+
   # Comments
   disqus:
     # Eg. "exampleblog" Set to false to disable comments
     shortname:  false
-  
+
   # Sharing settings
   sharing:
     twitter:    false
     facebook:   false
     gplus:      false
     hn:         false
-    
-  
- # Analytics     
+
+
+ # Analytics
   analytics:
     google: false # Add tracking code in _includes/_google-analytics.html
-      
-      
+
+
   # Google Fonts
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
