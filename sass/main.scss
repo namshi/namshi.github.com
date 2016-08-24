@@ -32,6 +32,14 @@ figcaption {
 /*Temp style -- will remove later*/
 .namshi-team {
     padding: 0 20px;
+    width:850px;
+    margin:0 auto;
+
+    h2.department {
+      text-align: center;
+      font-weight:bold;
+    }
+
     ul {
         list-style: none;
         clear: both;
@@ -39,10 +47,12 @@ figcaption {
     }
     li{
         overflow: hidden;
+        margin:10px 0;
+        border-bottom:dashed 1px #ccc;
+        padding-bottom:30px;
     }
     img.left.team {
         width: 150px;
-        border-radius: 50%;
         display: block;
         float: left;
         clear: left;
