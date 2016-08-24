@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" href="/images/{{ site.inc.logo }}"/>
-    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
+    <link href="{{ site_url }}/atom.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
     <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.inc.gplus }}">{% endif %}
@@ -60,8 +60,9 @@
         <nav>
             <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
             <a href="/">Blog</a> &middot;
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a> &middot; {% endif %}
-            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
+            {% if site.inc.team_link %}<a href="{{ site.inc.team_link }}">Team</a> &middot; {% endif %}
+            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a> &middot; {% endif %}
+            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Careers</a> {% endif %}
         </nav>
 
         <nav class="social">
@@ -71,7 +72,7 @@
             {% if site.inc.facebook %}
             <a href="http://facebook.com/{{ site.inc.facebook }}" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
             {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
+            <a href="/atom.xml" title="RSS Feed">
                 <i class="icon icon-rss black"></i>
             </a>
         </nav>

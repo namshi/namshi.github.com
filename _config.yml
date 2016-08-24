@@ -115,6 +115,7 @@ inc:
   url:          https://tech.namshi.com
   facebook:     NamshiFans
   twitter:      technamshi
+  github:       namshi
   gplus:        false
   about_link:   https://tech.namshi.com
   team_link:    /team
@@ -145,6 +146,39 @@ inc:
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
 team:
+    'Alessandro Nadalin':
+        bio: 'About Alessandro Nadalin'
+        image: 'alex.jpg'
     'Shidhin CR':
         bio: 'Shidhin is a Senior UI Engineer at Namshi'
         image: 'shidhin.jpg'
+    'Mohamed Amin':
+        bio: 'About Mohamed Amin'
+        image: 'amin.jpg'
+    'Joe Jean':
+        bio: 'About Joe Jean'
+        image: 'joe.png'
+    'Geshan Manandhar':
+        bio: 'About Geshan Manandhar'
+        image: 'geshan.jpg'
+    'Ayham Alzoubi':
+        bio: 'About Ayham Alzoubi'
+        image: 'ayham.jpg'
+    'Hossam Fares':
+        bio: 'About Hossam Fares'
+        image: 'hossam.jpg'
+    'Filippo De Santis':
+        bio: 'About Filippo De Santis'
+        image: 'filippo.jpg'
+    'Oluwaseun Obajobi':
+        bio: 'About Oluwaseun Obajobi'
+        image: 'oba.jpg'
+    'Gurjeet Singh':
+        bio: 'About Gurjeet Singh'
+        image: 'gurjeet.jpg'
+    'Adedamola Disu':
+        bio: 'About Adedamola Disu'
+        image: 'disu.png'
+    'Razan Bilwani':
+        bio: 'About Razan Bilwani'
+        image: 'razan.jpg'

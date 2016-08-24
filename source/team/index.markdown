@@ -31,7 +31,7 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
-*   ##<div id="Hossam Fares">Hossam Faris</div>
+*   ##<div id="Hossam Fares">Hossam Fares</div>
     {% img left team /images/hossam.jpg Hossam Fares %}
     **Hossam Fares** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
     he hopes to be empowered and empowering others in this field.

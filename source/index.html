@@ -14,7 +14,7 @@ layout: base
             {% if site.inc.facebook %}
             <a href="http://facebook.com/{{ site.inc.facebook }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
             {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
+            <a href="/atom.xml" title="RSS Feed">
                 <i class="icon icon-rss"></i>
             </a>
         </div>
@@ -29,10 +29,25 @@ layout: base
         <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
             <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.content | excerpt }}</p>
             <div class="meta">
-                Written By <address>{% if post.author %} {{ post.author }} {% else %}Namshi{% endif %}</address> &mdash;
                 <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
+            </div>
+            <div class="excerpt">{{ post.content | excerpt }}</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                       {% if post.author and site.team[post.author].image %}<img src="/images/{{ site.team[post.author].image }}">{% endif %}
+                        <p>Written by <strong><a rel="author" href="{{site.inc.team_link}}/#{{ post.author }}" title="{{ post.author }}">
+                        {% if post.author %}
+                            {{ post.author }}
+                        {% else %}
+                            Namshi
+                        {% endif %}
+                        </a></strong><br>
+                        <span class="muted">{{ site.team[post.author].bio }}</span>
+                        </p>
+                    </address>
+                </footer>
             </div>
         </div>
         <hr>

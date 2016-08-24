@@ -83,7 +83,7 @@
         }
     }
     
-    .site-nav .tagline span {
+    .site-nav .tagline a {
         display:none;
     }
     
@@ -117,10 +117,7 @@
         
         > div {
             margin:0;
-        }
-        
-        img {
-            display:none;
+            display: block;
         }
     }
 }

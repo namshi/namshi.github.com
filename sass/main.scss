@@ -29,15 +29,20 @@ figcaption {
     font-weight: bold;
     color: #607D8B;
 }
-/*Temp style -- will remove later*/
+
+/* Team page */ 
 .namshi-team {
     padding: 0 20px;
     width:850px;
     margin:0 auto;
+    p {
+        line-height: 1.8;
+    }
 
     h2.department {
       text-align: center;
       font-weight:bold;
+      text-transform: uppercase;
     }
 
     ul {

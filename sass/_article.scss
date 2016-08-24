@@ -44,7 +44,6 @@ article {
     address {
         margin:0;
         font-size:0.9em;
-        max-height:48px;
 
         p {
             margin:0;
@@ -57,7 +56,7 @@ article {
             height: 64px;
             margin: 0 20px 0 0;
             display: inline-block;
-            margin-top: -28px;
+            vertical-align: bottom;
         }
 
         .follow {
@@ -79,6 +78,7 @@ article {
         font-weight: 600;
         margin: 1.5em 0;
         padding: 0;
+        line-height: 1.8;
         list-style-position: outside;
         padding-left: 1.5em;
 
@@ -129,25 +129,24 @@ article {
     }
 
     hr {
-        margin:2.7em 0;
+        margin:2.4em 0;
     }
 
     .meta {
         color:$textmuted;
-        font-size:13px;
-        text-transform:uppercase;
+        font-size:15px;
         margin-bottom:0.3em;
         font-weight:400;
         letter-spacing:1px;
 
         time, address {
             display:inline;
-            font-size:13px;
+            font-size:15px;
         }
 
         a {
             border:0;
-            color:$textmuted;
+            color:$accent;
         }
     }
 
@@ -205,7 +204,7 @@ article {
     }
 
     code {
-        color: #F44336;
+        color: #d45757;
         background-color: #f9f9f9;
     }
 

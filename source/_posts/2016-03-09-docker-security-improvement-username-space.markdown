@@ -7,11 +7,14 @@ categories: [ docker ]
 author: David Funaro
 ---
 
-{% img center /images/posts/docker-share-volume.png %}
 
 With the 1.10 release, Docker added a huge list of new features. Whith this post we are going do analyze one of options: username spaces.
 
 Prior to version 1.10, running an alpine container mounting an external volume `/var/log/` was done as follows:
+
+<!-- more -->
+
+{% img center /images/posts/docker-share-volume.png %}
 
 ```
 ➜  ~  docker run -it --rm -v /var/log:/var/log --name=demo alpine ls -latr /var/log/
