@@ -148,38 +148,38 @@ inc:
   google_font: 'Droid+Sans:400,700'
 team:
     'Alessandro Nadalin':
-        bio: 'About Alessandro Nadalin'
+        bio: 'Rusty VP Technology'
         image: 'alex.jpg'
     'Shidhin CR':
-        bio: 'Shidhin is a Senior UI Engineer at NAMSHI'
+        bio: 'Frontend Engineer'
         image: 'shidhin.jpg'
     'Mohamed Amin':
-        bio: 'Frontend Engineer at NAMSHI'
+        bio: 'Frontend Engineer'
         image: 'amin.jpg'
     'Joe Jean':
-        bio: 'About Joe Jean'
+        bio: 'Software Engineer'
         image: 'joe.png'
     'Geshan Manandhar':
-        bio: 'About Geshan Manandhar'
+        bio: 'Senior Software Engineer'
         image: 'geshan.jpg'
     'Ayham Alzoubi':
-        bio: 'About Ayham Alzoubi'
+        bio: 'Senior Software Engineer'
         image: 'ayham.jpg'
     'Hossam Fares':
-        bio: 'About Hossam Fares'
+        bio: 'Senior Software Engineer'
         image: 'hossam.jpg'
     'Filippo De Santis':
-        bio: 'About Filippo De Santis'
+        bio: 'Senior Software Engineer'
         image: 'filippo.jpg'
     'Oluwaseun Obajobi':
-        bio: 'About Oluwaseun Obajobi'
+        bio: 'Lead System Administrator'
         image: 'oba.jpg'
     'Gurjeet Singh':
-        bio: 'About Gurjeet Singh'
+        bio: 'System Administrator'
         image: 'gurjeet.jpg'
     'Adedamola Disu':
-        bio: 'About Adedamola Disu'
+        bio: 'System Administrator'
         image: 'disu.png'
     'Razan Bilwani':
-        bio: 'About Razan Bilwani'
+        bio: 'VP Product Management'
         image: 'razan.jpg'
