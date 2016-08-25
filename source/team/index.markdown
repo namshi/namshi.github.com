@@ -8,7 +8,6 @@ footer: true
 ---
 
 <h2 class="department">Tech</h2>
-
 *   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
     {% img left team /images/alex.jpeg Alessandro Nadalin %}
     **Alessandro Nadalin** VP Technology, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.

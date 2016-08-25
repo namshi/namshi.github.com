@@ -20,7 +20,11 @@ layout: base
         </header>
         <footer>
             <address>
-               {% if page.author and site.team[page.author].image %}<img src="/images/{{ site.team[page.author].image }}">{% endif %}
+               {% if page.author and site.team[page.author].image %}
+                <div class="author-pic">
+                  <img src="/images/{{ site.team[page.author].image }}">
+                </div>
+               {% endif %}
                 <p>Written by <strong><a rel="author" href="{{site.inc.team_link}}/#{{ page.author }}" title="{{ page.author }}">
                 {% if page.author %}
                     {{ page.author }}

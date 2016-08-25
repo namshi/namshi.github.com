@@ -33,10 +33,9 @@ figcaption {
     padding: 30px 0;
 }
 
-/* Team page */ 
-.namshi-team {
+/* Team page */
+.namshi-team, .join-us {
     padding: 0 20px;
-    width:850px;
     margin:0 auto;
     p {
         line-height: 1.8;
@@ -66,4 +65,15 @@ figcaption {
         clear: left;
         margin-right: 20px;
     }
+}
+
+@media (min-width: 720px) {
+  .namshi-team, .join-us {
+      width:850px;
+  }
+}
+@media (max-width: 720px) {
+  .namshi-team, .join-us{
+    width:100%;
+  }
 }

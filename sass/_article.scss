@@ -49,14 +49,20 @@ article {
             margin:0;
             display:inline-block;
         }
-
+        .author-pic{
+          border-radius: 1000px;
+          width: 64px;
+          height: 64px;
+          margin: 0px 20px -8px 0;
+          display: inline-block;
+          overflow:hidden;
+        }
         img {
-            border-radius: 54px;
-            width: 64px;
-            height: 64px;
-            margin: 0 20px 0 0;
-            display: inline-block;
+            margin:0 0;
             vertical-align: bottom;
+            outline: none;
+            box-shadow: none;
+            min-height: 64px;
         }
 
         .follow {
@@ -153,6 +159,8 @@ article {
     img {
         max-width:100%;
         margin:1em 0;
+        box-shadow: 0 0 29px 1px rgba(0, 0, 0, 0.23);
+        outline: solid 1px rgb(239, 239, 239);
     }
 
 

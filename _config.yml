@@ -123,7 +123,7 @@ inc:
 
   # Product Information
   product_link: https://en-ae.namshi.com/careers/
-  tagline:      "Hack With Us"
+  tagline:      "JOIN US"
 
   # Comments
   disqus:
@@ -151,10 +151,10 @@ team:
         bio: 'About Alessandro Nadalin'
         image: 'alex.jpg'
     'Shidhin CR':
-        bio: 'Shidhin is a Senior UI Engineer at Namshi'
+        bio: 'Shidhin is a Senior UI Engineer at NAMSHI'
         image: 'shidhin.jpg'
     'Mohamed Amin':
-        bio: 'About Mohamed Amin'
+        bio: 'Frontend Engineer at NAMSHI'
         image: 'amin.jpg'
     'Joe Jean':
         bio: 'About Joe Jean'

@@ -36,7 +36,11 @@ layout: base
             <div class="meta">
                 <footer>
                     <address>
-                       {% if post.author and site.team[post.author].image %}<img src="/images/{{ site.team[post.author].image }}">{% endif %}
+                        {% if post.author and site.team[post.author].image %}
+                          <div class="author-pic">
+                            <img src="/images/{{ site.team[post.author].image }}">
+                          </div>
+                        {% endif %}
                         <p>Written by <strong><a rel="author" href="{{site.inc.team_link}}/#{{ post.author }}" title="{{ post.author }}">
                         {% if post.author %}
                             {{ post.author }}
