@@ -122,8 +122,8 @@ inc:
   github_link: https://github.com/namshi
 
   # Product Information
-  product_link: https://en-ae.namshi.com/careers/
-  tagline:      "JOIN US"
+  product_link: /join-us/
+  tagline:      "HACK WITH US"
 
   # Comments
   disqus:

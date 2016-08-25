@@ -1,63 +1,67 @@
 @media (max-width: 1000px) {
-    
+
     .tagline span {
         display:none;
     }
-    
+
     .container > header, .container > section, .container > footer {
         padding:0;
         margin:1.5em 10%;
     }
-    
+
     .container > section {
         padding-bottom:1.5em;
     }
 
 }
-
+@media (min-width:720px){
+  .burger-icon{
+    display:none;
+  }
+}
 @media (max-width: 720px) {
-    
+
     article {
         padding-top:30px;
-        
+
         .container > header, .container > section, .container > footer {
             padding:0;
             margin:1.5em 10%;
         }
-        
+
         .container > footer {
             padding:2em 0;
         }
-        
+
         .full, pre {
             margin:1em 0;
         }
-        
+
         pre {
             padding:1em;
         }
-        
+
         blockquote {
             margin:1em 0;
-            
+
             p {
                 font-size:1em;
             }
         }
-        
+
         h1 {
             font-size:1.8em;
         }
-        
+
         h2 {
             font-size:1.4em;
         }
-        
+
         p {
             font-size:0.9em;
         }
     }
-    
+
     .blog-cover {
         height:200px;
 
@@ -65,11 +69,11 @@
             height:200px;
             width:auto;
         }
-        
+
         section {
             padding:60px 0 0;
             text-align:center;
-            
+
             a {
                 margin:0.5em;
             }
@@ -77,44 +81,58 @@
         h1 {
             font-size:1.5em;
         }
-        
+
         h3 {
             font-size:1em;
         }
     }
-    
+
     .site-nav .tagline a {
         display:none;
     }
-    
+
     .site-nav {
-        #navigation {
-            a {
-                display:none;
-            }
-            
-            .brand {
-                display:inline-block;
-            } 
+      .brand {
+        left:10px;
+        right:auto;
+      }
+      .burger-icon{
+        display:block;
+      }
+      #navigation {
+        background: #fff;
+        height: 201px;
+        position: absolute;
+        right: -150px;
+        top: 79px;
+        transition:right 0.3s;
+        &.showNav{
+          right:0;
         }
+        a {
+          display:block;
+          padding:10px 5px;
+        }
+
+      }
     }
-    
+
     .site-footer {
         margin-top:0;
         padding:2em 10%;
         text-align:center;
-        
+
         nav {
             display:block;
             float:none !important;
             padding:1em;
         }
     }
-    
+
     .index {
         padding:0;
         margin:0 10%;
-        
+
         > div {
             margin:0;
             display: block;

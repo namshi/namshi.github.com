@@ -15,7 +15,15 @@
     .caret {
         opacity:0.2;
     }
-
+    .burger-icon{
+      background: url("../images/burger_icon.png") no-repeat;
+      width: 52px;
+      height: 48px;
+      right: 10px;
+      top: 15px;
+      position: absolute;
+      background-size: contain;
+    }
     .brand{
       position: absolute;
       left: 0;
