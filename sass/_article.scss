@@ -256,5 +256,11 @@ article {
             box-shadow:0 2px 5px rgba(0,0,0,0.5);
         }
     }
+    .categories {
+        font-size: 0.9em;
+        a {
+            color: lighten($accent, 10%);
+        }
+    }
 
 }

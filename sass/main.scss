@@ -34,7 +34,7 @@ figcaption {
 }
 
 /* Team page */
-.namshi-team, .join-us {
+.namshi-team, .join-us, .blog-archives {
     padding: 0 20px;
     margin:0 auto;
     p {
@@ -67,13 +67,41 @@ figcaption {
     }
 }
 
+.blog-archives {
+    article {
+        padding: 15px 0;
+        margin-left: 60px;
+        border-bottom: 1px dashed #ccc;
+    }
+    h1{
+        text-align: center;
+        font-weight: 600;
+    }
+    h3 {
+        font-family: $fontheadings;
+        text-transform: uppercase;
+        a {
+            color: darken($accent, 40%);
+        }
+    }
+    .categories {
+        a {
+            color: lighten($accent, 10%);
+        }
+    }
+    .categories, time {
+        font-size: 0.9em;
+        color: #666;
+    }
+}
+
 @media (min-width: 720px) {
-  .namshi-team, .join-us {
+  .namshi-team, .join-us, .blog-archives {
       width:850px;
   }
 }
 @media (max-width: 720px) {
-  .namshi-team, .join-us{
+  .namshi-team, .join-us, .blog-archives {
     width:100%;
   }
 }

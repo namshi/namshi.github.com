@@ -39,6 +39,11 @@ layout: base
         </footer>
         <section>
             {{ content }}
+            {% if category != '0' %}
+            <footer>
+                <span class="categories">Posted in {{ page.categories | category_links }}</span>
+            </footer>
+            {% endif %}
             {% include _social.html %}
         </section>
 
