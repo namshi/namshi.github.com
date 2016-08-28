@@ -43,6 +43,7 @@
             {% if site.inc.product_link %}<a href="{{ site.inc.team_link }}">Team</a>{% endif %}
             {% if site.inc.github_link %}<a href="{{ site.inc.github_link }}">Github</a>{% endif %}
             <a href="/archives">Archives</a>
+            <a class="join-us-link" href="{{ site.inc.product_link }}">{{site.inc.tagline}}</a>
         </nav>
         {% if site.inc.tagline or site.inc.product_url %}<nav class="tagline">
             <!--{% if site.inc.tagline %}<span>{{ site.inc.tagline }}</span>{% endif %}-->
@@ -55,10 +56,9 @@
 
 <footer class="site-footer">
     <div class="container">
-        &copy; {{ site.time | date: "%Y" }}
-
+        &copy; {{ site.time | date: "%Y" }} <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
+        
         <nav>
-            <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
             <a href="/">Blog</a> &middot;
             {% if site.inc.team_link %}<a href="{{ site.inc.team_link }}">Team</a> &middot; {% endif %}
             {% if site.inc.github_link %}<a href="{{ site.inc.github_link }}">Github</a> &middot; {% endif %}

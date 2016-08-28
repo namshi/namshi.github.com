@@ -14,8 +14,8 @@
     }
     .site-nav {
       .brand {
-        left: 20px;
-        right: auto;
+        // left: 20px;
+        // right: auto;
         margin: 26px auto;
         height: 30px;
         img{
@@ -29,18 +29,33 @@
       }
       #navigation {
         background: #fff;
-        height: 201px;
+        height: 230px;
         position: absolute;
-        right: -150px;
+        right: 0;
         top: 79px;
-        transition:right 0.4s;
+        transition:transform 0.4s;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        padding: 10px;
+        
+        -webkit-transform: translateX(100%);
+          -ms-transform: translateX(100%);
+          -o-transform: translateX(100%);
+          transform: translateX(100%);
+
         &.showNav{
-          right:0;
+          -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+          transform: translateX(0);
         }
+
         a {
           display:block;
           padding:10px 5px;
+        }
+
+        .join-us-link {
+            display: block;
         }
 
       }
