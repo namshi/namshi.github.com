@@ -1,5 +1,10 @@
 @media (max-width: 1000px) {
 
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
     .site-nav .tagline a {
         display:none;
     }
@@ -10,7 +15,7 @@
     }
 
     .container > section {
-        padding-bottom:1.5em;
+        // padding-bottom:1.5em;
     }
     .site-nav {
       .brand {
