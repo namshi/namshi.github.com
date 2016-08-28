@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: team
 title: "Tech Team"
 date: 2013-06-15 21:51
 comments: false
@@ -7,8 +7,7 @@ sharing: false
 footer: true
 ---
 
-# Tech
-
+<h2 class="department">Tech</h2>
 *   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
     {% img left team /images/alex.jpeg Alessandro Nadalin %}
     **Alessandro Nadalin** VP Technology, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
@@ -16,7 +15,6 @@ footer: true
     Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
     Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
 
-## Backend
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
@@ -32,7 +30,7 @@ footer: true
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
 
-*   ##<div id="Hossam Fares">Hossam Faris</div>
+*   ##<div id="Hossam Fares">Hossam Fares</div>
     {% img left team /images/hossam.jpg Hossam Fares %}
     **Hossam Fares** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
     he hopes to be empowered and empowering others in this field.
@@ -48,7 +46,6 @@ footer: true
     His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
     When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
 
-## SysAdmin
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
     {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
@@ -75,7 +72,6 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
-## Frontend
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
@@ -101,7 +97,6 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
-# Product management
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
@@ -117,7 +112,7 @@ footer: true
     by night. There are 3 things he takes very seriously:
     work, the Oxford comma, and Biryani.
 
-## Alumni: rockers who have been with us!
+<h2 class="department">Alumni: rockers who have been with us!</h2>
 
 We'd also like to list here the rockstart who have been with us
 over the past months or years, and have given a core contribution

@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: joinus
 title: "Join us!"
 date: 2016-07-11 16:47
 comments: true
 ---
+<h2 class="department">JOIN US</h2>
 
 Whether you are an API maniac or you like to get your hands dirty on
 the Chrome DevTools, trying to optimize a bunch of JavaScript code,

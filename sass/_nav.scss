@@ -1,0 +1,109 @@
+.site-nav {
+    background:#fff;
+    height:80px;
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    box-shadow:0 -1px  8px rgba(0,0,0,0.4);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    transition:all 0.35s ease;
+    z-index:100;
+    background:url(../images/pattern.png);
+
+    .caret {
+        opacity:0.2;
+    }
+    .burger-icon{
+      background: url("../images/burger_icon.png") no-repeat;
+      width: 52px;
+      height: 48px;
+      right: 10px;
+      top: 15px;
+      position: absolute;
+      background-size: contain;
+    }
+    .brand{
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 20px auto;
+      width: 189px;
+      height:42px;
+      overflow:hidden;
+      img {
+        height:90px;
+        margin-right:10px;
+        margin-top:-49px;
+      }
+
+    }
+
+    .dropdown {
+        display:inline-block;
+    }
+
+    nav {
+        padding:22px 30px;
+        float:left;
+        height:80px;
+        display:table-cell;
+    }
+
+    #navigation {
+        padding-right:0;
+
+        a {
+            border:0;
+            margin:0 0.9em;
+            display:inline-block;
+
+            &:hover {
+                color:$accent;
+            }
+        }
+
+        > a, .dropdown-toggle  {
+            color:#444;
+            border:0;
+            font-weight:600;
+            font-size:15px;
+            display:inline-block;
+            text-transform:uppercase;
+        }
+
+        .dropdown-toggle {
+            padding: 6px 0.5em;
+            text-align: center;
+
+            &:hover {
+                background:#eee;
+            }
+        }
+        
+        .join-us-link {
+            display: none;
+        }
+    }
+
+    .tagline {
+        float:right;
+        text-align:right;
+        font-size:15px;
+        font-weight:600;
+
+        span {
+            line-height:0;
+            padding-right:20px;
+        }
+    }
+}
+
+body.nav-hidden {
+    .site-nav {
+        top:-100px;
+        transition:all 0.35s ease;
+        -webkit-transform: translate3d(0px, 0, 0px);
+    }
+}

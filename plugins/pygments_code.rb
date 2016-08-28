@@ -1,6 +1,7 @@
 require 'pygments'
 require 'fileutils'
 require 'digest/md5'
+require 'htmlentities'
 
 PYGMENTS_CACHE_DIR = File.expand_path('../../.pygments-cache', __FILE__)
 FileUtils.mkdir_p(PYGMENTS_CACHE_DIR)
@@ -11,8 +12,12 @@ module HighlightCode
     lang = 'objc' if lang == 'm'
     lang = 'perl' if lang == 'pl'
     lang = 'yaml' if lang == 'yml'
-    str = pygments(str, lang).match(/<pre>(.+)<\/pre>/m)[1].to_s.gsub(/ *$/, '') #strip out divs <div class="highlight">
-    tableize_code(str, lang)
+    lang = 'javascript' if lang == 'js'
+    lang = 'bash' if not lang
+    # str = pygments(str, lang).match(/<pre>(.+)<\/pre>/m)[1].to_s.gsub(/ *$/, '') #strip out divs <div class="highlight">
+    # tableize_code(str, lang)
+    coder = HTMLEntities.new
+    highlightedCode = "<pre><code class='language-#{lang}'>#{coder.encode(str)}</code></pre>"
   end
 
   def pygments(code, lang)

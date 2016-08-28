@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://namshi.github.io
+url: http://tech.namshi.com
 title: Tech @ Namshi.com
 subtitle: Namshi Tech Blog
 author: Namshi
@@ -102,3 +102,84 @@ facebook_like: true
 
 #facebook
 facebook_user: NamshiFans
+
+inc:
+  # Blog Information
+  title:        "Namshi Engineering"
+  subtitle:     "Tech @ Namshi.com"
+  cover_image:  bg.jpg
+  logo:         namshi-logo.png
+
+  # Company information
+  company:      Namshi
+  url:          https://tech.namshi.com
+  facebook:     NamshiFans
+  twitter:      technamshi
+  github:       namshi
+  gplus:        false
+  about_link:   https://tech.namshi.com
+  team_link:    /team
+  github_link: https://github.com/namshi
+
+  # Product Information
+  product_link: /join-us/
+  tagline:      "HACK WITH US"
+
+  # Comments
+  disqus:
+    # Eg. "exampleblog" Set to false to disable comments
+    shortname:  false
+
+  # Sharing settings
+  sharing:
+    twitter:    false
+    facebook:   false
+    gplus:      false
+    hn:         false
+
+
+ # Analytics
+  analytics:
+    google: false # Add tracking code in _includes/_google-analytics.html
+
+
+  # Google Fonts
+  # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
+  google_font: 'Droid+Sans:400,700'
+team:
+    'Alessandro Nadalin':
+        bio: 'Rusty VP Technology'
+        image: 'alex.jpg'
+    'Shidhin CR':
+        bio: 'Frontend Engineer'
+        image: 'shidhin.jpg'
+    'Mohamed Amin':
+        bio: 'Frontend Engineer'
+        image: 'amin.jpg'
+    'Joe Jean':
+        bio: 'Software Engineer'
+        image: 'joe.png'
+    'Geshan Manandhar':
+        bio: 'Senior Software Engineer'
+        image: 'geshan.jpg'
+    'Ayham Alzoubi':
+        bio: 'Senior Software Engineer'
+        image: 'ayham.jpg'
+    'Hossam Fares':
+        bio: 'Senior Software Engineer'
+        image: 'hossam.jpg'
+    'Filippo De Santis':
+        bio: 'Senior Software Engineer'
+        image: 'filippo.jpg'
+    'Oluwaseun Obajobi':
+        bio: 'Lead System Administrator'
+        image: 'oba.jpg'
+    'Gurjeet Singh':
+        bio: 'System Administrator'
+        image: 'gurjeet.jpg'
+    'Adedamola Disu':
+        bio: 'System Administrator'
+        image: 'disu.png'
+    'Razan Bilwani':
+        bio: 'VP Product Management'
+        image: 'razan.jpg'
