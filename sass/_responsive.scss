@@ -42,16 +42,22 @@
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         padding: 10px;
         
-        -webkit-transform: translateX(100%);
-          -ms-transform: translateX(100%);
-          -o-transform: translateX(100%);
-          transform: translateX(100%);
+        -webkit-transform: scale(1,0);
+          -ms-transform: scale(1,0);
+          -o-transform: scale(1,0);
+          transform: scale(1,0);
+
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        -ms-transform-origin: top;
+        -o-transform-origin: top;
+        transform-origin: top;
 
         &.showNav{
-          -webkit-transform: translateX(0);
-          -ms-transform: translateX(0);
-          -o-transform: translateX(0);
-          transform: translateX(0);
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1);
         }
 
         a {
