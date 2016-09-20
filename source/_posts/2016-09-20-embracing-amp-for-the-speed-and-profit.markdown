@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Embracing Accelerated Mobile Pages (AMP) for Speed and Profit"
-date: 2016-09-09 16:24
+date: 2016-09-20 11:30
 comments: true
 author: Shidhin CR
 categories:
