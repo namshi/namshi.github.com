@@ -95,6 +95,11 @@ figcaption {
     }
 }
 
+img.center {
+    margin: 1em auto;
+    display: block;
+}
+
 @media (min-width: 720px) {
   .namshi-team, .join-us, .blog-archives {
       width:850px;
