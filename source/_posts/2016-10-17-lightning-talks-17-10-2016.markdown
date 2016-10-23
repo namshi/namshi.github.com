@@ -9,7 +9,7 @@ categories: [Lightning talks, nodejs, promise, bash, generator, sync, await, bre
 
 >At Namshi, as you probably know, we do several activities, like - small presentations about new technologies,
 >showcases of the latest projects, watching interesting conference talks, etc.
->We had our third edition of lighting talk. Each of our team members gave a small presentation about something they found interesting.
+>We had our third edition of lightning talk. Each of our team members gave a small presentation about something they found interesting.
 >Here is a recap of what they spoke about, and we hope you will find it interesting as well!
 
 <!-- more -->
