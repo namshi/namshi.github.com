@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Lightning talks #3"
+date: 2016-10-17
+author: Ayham Alzoubi
+comments: true
+categories: [Lightning talks, nodejs, promise, bash, generator, sync, await, breadth algorithm, dev tools, codecept, aiml, nock, yarn]
+---
+
+>At Namshi, as you probably know, we do several activities, like - small presentations about new technologies,
+>showcases of the latest projects, watching interesting conference talks, etc.
+>We had our third edition of lighting talk. Each of our team members gave a small presentation about something they found interesting.
+>Here is a recap of what they spoke about, and we hope you will find it interesting as well!
+
+<!-- more -->
+
+[Alex](/team/#Alessandro%20Nadalin) Spoke about some tricks in bash
+
+[Hossam](team/#Hossam%20Fares) Explained how to use generators for sequential promises
+
+[Amin](team/#Mohamed%20Amin) Spoke about Promises Breakdown
+
+[Ayham](team/#Ayham%20Alzoubi) Introduced the await/async features in nodejs to the team
+
+[Joe](team/Joe%20Jean) Gave an example about how to use the shortest path algorithm
+
+[Oba](team/#Oluwaseun%20Obajobi) Gave us some system tweaks
+
+[Shidhin](team/#Shidhin%20CR) Showed us some tips in Chrome DevTools
+
+[Geshan](team/#Geshan%20Manandhar) Introduced CodeceptJs as a modern acceptance testing tool for NodeJS to the team
+
+[Samar]() Spoke about Artificial Intelligence Markup Language (AIML)
+
+[Disu](team/#Adedamola%20Disu) Showed us the benefits of The Great Suspender Chrome extension 
+
+[Filo](team/#filippo%20de%20santis) Mentioned Yarn package manager and Nock as mocking library
+
+And here are the slides:
+
+<iframe src="https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/pub?start=false&loop=false&delayms=3000
