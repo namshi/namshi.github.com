@@ -97,6 +97,17 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
+*   ##<div id="Gabriel Izebhigie">Gabriel Izebhigie</div>
+    {% img left team /images/gabriel.jpg Gabriel Izebhigie %}
+    **Gabriel Izebhigie** is a Frontend Engineer. He holds a B.Sc in Engineering
+    from University of Ibadan Nigeria. He loves to build products that are functional,
+    beautiful and easy to use.
+    His main focus is Frontend development (a lot of Javascript, HTML,  CSS, Sass...)
+    and some UX to go with it. On the server NodeJS and basic PHP.
+    He loves challenging myself to do more and push beyond the limits.
+    His best quote is “if you do it right, it would last forever - Massimo Vignelli”.
+    In his leisures he plays basketball, watches movies and spends time with
+    family and friends.
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
@@ -114,8 +125,8 @@ footer: true
 
 *   ##<div id="Yomna Sabry">Yomna Sabry</div>
     {% img left team /images/yomna.png Yomna Sabry %}
-    **Yomna Sabry** is a Product Management Analyst at Namshi. She joined Namshi eager to learn more about the E-commerce industry because of its growing potential and its importance in people’s lives nowadays. 
-    Prior to joining Namshi, she was a Product Owner at Adabisc in Qatar where she spent a year focusing on the development of products in Entertainment Technology. Her work there made her realize that product management is what she wants to specialize in;  she very much likes being part of and foreseeing every aspect of product development. 
+    **Yomna Sabry** is a Product Management Analyst at Namshi. She joined Namshi eager to learn more about the E-commerce industry because of its growing potential and its importance in people’s lives nowadays.
+    Prior to joining Namshi, she was a Product Owner at Adabisc in Qatar where she spent a year focusing on the development of products in Entertainment Technology. Her work there made her realize that product management is what she wants to specialize in;  she very much likes being part of and foreseeing every aspect of product development.
     Before that, Yomna worked in research and software development in Carnegie Mellon University in Qatar for 2 years. She holds a B.Sc. in Computer Engineering from the American University in Cairo. She also wants to tour the world: 18 done and 188 more to go!
 
 
