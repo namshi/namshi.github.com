@@ -136,7 +136,7 @@ footer: true
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
-We'd also like to list here the rockstart who have been with us
+We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
 
