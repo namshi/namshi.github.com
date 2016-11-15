@@ -72,6 +72,10 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
+*   ##<div id="Marco Matos">Marco Matos</div>
+    {% img left team /images/marco.jpg Marco Matos %}
+    **Marco Matos** is a seasoned Senior DevOps Engineer with strong background in systems administration, Linux and ethical hacking. Today he's focusing in everything docker and automation, and used to maintain and teach technology in Brazil, Timor-Leste, Thailand, Indonesia, Singapore and now in Dubai. Always concerned about social causes, he maintains a project to teach technology for people in need. Just having the best time of his life :)
+
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
