@@ -47,6 +47,11 @@ footer: true
     an early age and he admires new cutting edge technologies with data crunching being his current passion. He has been a technical reviewer on "OpenGL Data Visualization Cookbook" and is currently part of the University of Sheffield mentoring programme.
     In his free time, he can be found reading, trying new stuff or exploring new places. He is currently based in Dubai and holds a masters in Advanced Software Engineering from University of Sheffield, UK and Bachelors in Computer Science Engineering.
 
+*   ##<div id="Folorunsho Solomon Opeyemi">Folorunsho Solomon Opeyemi</div>
+    {% img left team /images/solomon.png Folorunsho Solomon Opeyemi %}
+    **Folorunsho Solomon Opeyemi** earned Msc Electronics and Computer Engineering from the University of Birmingham and BEng Information and Communication Technology from Covenant University Nigeria. Deep down, he wishes he had studied Computer Science, because a conversation about Big O is much interesting then circuit theory.
+
+    He enjoys computer science theory and spends most of his free time learning and having fun with it.
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
     {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
@@ -72,11 +77,6 @@ footer: true
     Master’s Degree in IT Management from the University of Wollongong.
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
-
-*   ##<div id="Marco Matos">Marco Matos</div>
-    {% img left team /images/marco.jpg Marco Matos %}
-    **Marco Matos** is a seasoned Senior DevOps Engineer with strong background in systems administration, Linux and ethical hacking. Today he's focusing in everything docker and automation, and used to maintain and teach technology in Brazil, Timor-Leste, Thailand, Indonesia, Singapore and now in Dubai. Always concerned about social causes, he maintains a project to teach technology for people in need. Just having the best time of his life :)
-
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
