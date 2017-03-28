@@ -78,6 +78,13 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
+*   ##<div id="Abdelrahman Shiddo">Abdelrahman Shiddo</div>
+    {% img left team /images/abz.jpg Abdelrahman Shiddo %}
+    **Abdelrahman Shiddo** is a DevOps Engineer from Ireland, who holds a BEng in Mechatronics Engineering from University of Nottingham Malaysia Campus.
+    He loves automating, building reliable, highly available platforms that make it easier for developers to deploy more frequently and is always looking for ways to improve the performance of platforms by using the appropriate tools for the job required.
+    His main focus is implementing automation and infrastructure-as-code with technical skills that include Python, Terraform, Docker, Bash, AWS and more.
+    He's always up for a challenge and loves to get out of his comfort zone to learn more.
+
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
     **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
