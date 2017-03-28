@@ -148,10 +148,10 @@ inc:
   google_font: 'Droid+Sans:400,700'
 team:
     'Alessandro Nadalin':
-        bio: 'Rusty VP Technology'
+        bio: 'Rusty CTO'
         image: 'alex.jpg'
     'Shidhin CR':
-        bio: 'Frontend Engineer'
+        bio: 'Senior Frontend Engineer'
         image: 'shidhin.jpg'
     'Mohamed Amin':
         bio: 'Frontend Engineer'
