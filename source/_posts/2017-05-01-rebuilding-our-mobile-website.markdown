@@ -18,7 +18,7 @@ At Namshi, we’re very big on simplicity and "*back to the basics”* but, as y
 
 Flash-forward to Q4 2016, we looked at our mobile website and our metrics combined and decided it was time to completely re-think our approach: 2 of our engineers quickly hacked together a prototype within less than a week and, after discussing it with our PM team, we decided it was worth a shot.
 
-The Falafel Project was born. Sounds like a joke but that’s how we actually called it :)
+The Falafel Project was born. Sounds like a joke but that’s what we actually called it :)
 
 
 ## Fundamental ideas
@@ -26,9 +26,9 @@ The Falafel Project was born. Sounds like a joke but that’s how we actually ca
 The project kicked off by embracing 3 very important ideas:
 
 
-- most of Namshi’s  traffic is served through our mobile apps (iOS + Android), which are working very well. We should probably **mimic the app as much as possible****.**
+- most of Namshi’s  traffic is served through our mobile apps ([iOS](https://itunes.apple.com/us/app/namshi-online-fashion-shopping/id840127349?mt=8) + [Android](https://play.google.com/store/apps/details?id=com.namshi.android)). We should probably **mimic the app as much as possible****.**
 - the journey of the user is defined by very few, key components: landing pages, product listing pages, product detail pages, cart and checkout. We want to make sure we waste no time presenting these pages to the user, and **server-side rendering** gives that to us
-- if we want this webapp to look like it’s 2017 client-side interactions are unavoidable: **picking React**, given its rise in the frontend community and the fact that it’s a library, rather than a framework, was a no-brainer
+- if we want this webapp to look like it’s 2017, client-side interactions are unavoidable: **picking React**, given its rise in the frontend community and the fact that it’s a library, rather than a framework, was a no-brainer
 
 
 
@@ -42,12 +42,12 @@ The project kicked off by embracing 3 very important ideas:
 
 
 
-We trashed the old css and rewrote it from scratch following the BEM way of doing things, which allowed us to separate styles per page and also have some of them shared between pages.
+We trashed the old css and rewrote it from scratch following the [BEM](http://getbem.com/) way of doing things, which allowed us to separate styles per page and also have some of them shared between pages.
 The total size of the minified styles was 18kb, now it is **1****0****kb:** almost half of our css is gone!
 
 ## RTL styles
 
-It's always painful to handle direction in css, especially considering that things could have been much easier if [logical properties](https://www.google.ae/search?q=css+logical+porperties&oq=css+logical+porperties&aqs=chrome..69i57j69i64.1382j0j7&sourceid=chrome&ie=UTF-8) where introduced, but yet we still use the old techniques until we can fully dump rules overriding.
+It's always painful to handle direction in css, especially considering that things could have been much easier if [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties) where introduced, but yet we still use the old techniques until we can fully dump rules overriding.
 
 For example:
 
@@ -82,7 +82,7 @@ Strange, right? Have a look:
 <iframe width="276" height="500" src="https://www.youtube.com/embed/WIOe1ID3ocM" frameborder="0" allowfullscreen></iframe>
 </div>
 So how we can use it for our own good?
-We came up with idea of a “**Shadow Product”:**  when the user is viewing the catalog listing page, once he/she taps on a product, we delay the tap event for 10ms and we show a fake preview of what the next product page will look like. Simple, dirty but looks great!
+We came up with idea of a “**Shadow Product”:**  When a user taps on a product while on the catalog listing page, we delay the tap event for 10ms and we show a fake preview of what the next product page will look like. Simple, dirty but looks great!
 
 ```js
     on('click', 'body', '.is-shadow-product', e => {      
@@ -169,11 +169,11 @@ We built most of our components in Preact and re-used them across pages. Althoug
 
 ## Simplifying the DOM states
 
-Managing state is one of the crucial parts of  "react like" development, especially state shared between components (Shared State) can be difficult to manage. We have good libraries that can help you achieve this efficiently -- ie. [Redux](http://redux.js.org/) and [Mobx](https://mobx.js.org/) that we use on some of our SPAs.
+Managing state is one of the crucial parts of  "react like" development, especially state shared between components (Shared State) can be difficult to manage. We have good libraries that achieves this efficiently -- ie. [Redux](http://redux.js.org/) and [Mobx](https://mobx.js.org/) that we use on some of our SPAs.
 
 In the new mobile website, our approach is a bit different because each page is SSR and we have very less shared state: we try to reduce client-side code to the minimum, to keep things simple and less bloated.
 
-We have one store which is the single source of truth. To keep things simple every component has it own actions as part of the component, and we only focus on resolving all data into the store and the store automatically updates the state of the components. Unlike most redux implementations, where reducers are used to update the current state based on the actions,  every update always produces a “next state“ without reference to the current state -- so basically no need for reducers.
+We have one store which is the single source of truth. To keep things simple every component has it own actions as part of the component, and we only focus on resolving all data into the store and the store automatically updates the state of the components. Unlike most redux implementations, where reducers are used to update the current state based on the actions,  every update always produces a “next state“ without reference to the current state.
 
 
 ## Webpack, Code splitting and Preloading techniques
@@ -216,7 +216,7 @@ Thanks to HTTP/2, making HTTP requests is cheaper than ever: multiplexing reduce
 
 This doesn’t mean sprites won’t give you any advantage: as always, making 10 HTTP requests instead of 1 is generally heavier, but with HTTP/2 you don’t “feel” it as much. Another argument *pro* sprites is that by combining images together we end up allowing the compression algorithm (ie. GZIP/DEFLATE) to better optimize the size of the final, combined image.
 
-All in all, though, we eventually decided to not worry about these and live a less complicated life because:
+All in all, though, we eventually decided not to worry about these and live a less complicated life because:
 
 
 - we generally bundle all required images into one sprite, whereas each page might just need 2/3 of them: this means that instead of downloading 100% of your images on the first page load we only require 20/30% of them
