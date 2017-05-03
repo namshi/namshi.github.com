@@ -15,6 +15,10 @@ footer: true
     Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
     Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
 
+*   ##<div id="Abdul Hannan">Abdul Hannan</div>
+    {% img left team /images/abdul-hannan.png Abdul Hannan %}
+    **Abdul Hannan** is Namshi’s Mobile Ninja who is married to iOS but was also dating Android in the past. He has been doing mobile apps development since 2011 and was working on apps for Banking Industry and Dubai Government prior to joining Namshi. He holds Computer Engineering degree from Karachi Pakistan. He loves to spend time with his family along with learning new things in mobility domain.
+
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
