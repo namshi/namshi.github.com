@@ -19,6 +19,9 @@ footer: true
     {% img left team /images/abdul-hannan.png Abdul Hannan %}
     **Abdul Hannan** is Namshi’s Mobile Ninja who is married to iOS but was also dating Android in the past. He has been doing mobile apps development since 2011 and was working on apps for Banking Industry and Dubai Government prior to joining Namshi. He holds Computer Engineering degree from Karachi Pakistan. He loves to spend time with his family along with learning new things in mobility domain.
 
+*   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
+    {% img left team /images/Khaled.jpg Khaled %}
+    **Khaled Alqasrawi** is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He's been working with Android since its early days in 2010. Khaled is interested in behavioral economics, neuroscience, and psychology, and if he ever decides to get a tattoo, it will be the Android mascot.
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
