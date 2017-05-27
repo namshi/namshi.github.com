@@ -9,7 +9,7 @@ author: Ayham Alzoubi
 
 At the beginning of 2017, we decided to revamp our catalog API which is one of the backbones of our infrastructure, as it’s the API that serves 60 to 70% of our overall traffic.
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_79CF46B1F82669BDC07130BB590658C9F47F2539341E341C3D668DC9805B70B9_1495717615093_file.png %}
+{% img center /images/posts/catalog_api_main.png %}
 
 <!-- more -->
 
@@ -58,7 +58,7 @@ Our answer to how to grow a JS codebase? **Don’t grow it, split it**!
 
 **Architecture**
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_79CF46B1F82669BDC07130BB590658C9F47F2539341E341C3D668DC9805B70B9_1495771389482_image.png %}
+{% img center /images/posts/catalog_api_architecture.png %}
 
 The architecture consists of a cluster of Node.js applications running within docker containers each of which are capped to 1 GB of RAM and 50% of 1 CPU core. We use Kubernetes to handle auto-scaling of our application. We have a Kubernetes configuration that handles automatically scaling our application once the CPU usage reaches 40% of 1 CPU core. We also have a Redis cluster (in [ElastiCache](https://aws.amazon.com/elasticache)) alongside a [highly available S](http://tech.namshi.com/blog/2017/02/06/towards-high-availability-and-beyond/)[olr cluster](http://tech.namshi.com/blog/2017/02/06/towards-high-availability-and-beyond/).
 
@@ -97,7 +97,7 @@ After looking at the results coming from vegeta, we would then analyze them and 
 NewRelic was instrumental during this phase, as we were able to see if we were hitting other layers too many times:
 
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_36CE9256A2775ED0DF3D9AA869BC20FF4CF9952E9ED0FCE2539F342144093D85_1495480335615_image.png %}
+{% img center /images/posts/catalog_api_newrelic.png %}
 
 
 Why is Redis taking 10 milliseconds? Are we hitting it multiple times? Can we batch requests together and instead of sending 3 `HGET` we simply issue 1 `HMGET`? Those were the kind of things we were looking at the time. By doing so, we optimized chunks of our code and were ready to take it to the next level.
@@ -133,31 +133,31 @@ Yeah, it’s boring.
 
 Now comes the time to show what we were able to achieve in terms of performance improvement. In the old application, our average response time was around 82 milliseconds.
 
-{% img center https://lh5.googleusercontent.com/wpStngtmK5Gy4YaNTNgEoX6gTXYsNQYhafQKi5LCGPf_u2BdV0dxql49mUqwnUuDshBqiRkU_DMIvo27KHC-pO_rNoUPdYjBqM8s149Q7YulQWKtoaCRsgmv4I3LcaE6Idu4vuppBl0 %}
+{% img center /images/posts/catalog_api_results_1.png %}
 
 In the new application we managed to achieve an average response time of around 27 milliseconds — that is a 67% performance improvement:
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_EB000008CFAA77B8E06899DDEA6A2D95C394992C6D84D23BB79FBE23CF694B05_1495636204113_file.png %}
+{% img center /images/posts/catalog_api_results_2.png  %}
 
 Since averages can be misleading let’s look at the percentile graph of the new application’s response time data.
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_79CF46B1F82669BDC07130BB590658C9F47F2539341E341C3D668DC9805B70B9_1495719726546_file.png %}
+{% img center /images/posts/catalog_api_results_3.png %}
 
 What the graph above tells us is that 50% (red line) of our requests are served under 20 milliseconds and 95% (yellow line) of them are served below 100 milliseconds.
 
 Using an histogram we also see the same pattern.
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_EB000008CFAA77B8E06899DDEA6A2D95C394992C6D84D23BB79FBE23CF694B05_1495637203424_file.png %}
+{% img center /images/posts/catalog_api_results_4.png %}
 
 Basically, according to the histogram above, 20% of our requests are served within less than 10 milliseconds, and 53% of them are served within 20 milliseconds.
 
 Now let’s look at the improvements in terms of resources utilization: as indicated in the graph below, our old PHP application used to consume about 25% of 2 CPU cores and 4 GB of memory. We went live with the new application on April 12, hence the considerable drop in resource consumption that you see in the graph.
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_79CF46B1F82669BDC07130BB590658C9F47F2539341E341C3D668DC9805B70B9_1495718400323_file.png %}
+{% img center /images/posts/catalog_api_results_5.png %}
 
 The new application however as you can see in the graph uses way less resources. The graph below is for one of our host, which serves around 1000 rpm (requests per minute), and uses half a CPU ([capped by k8s](https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/)) with a memory limit of 1 GB. You would agree  that’s a huge improvement on the old application!
 
-{% img center https://d2mxuefqeaa7sj.cloudfront.net/s_EB000008CFAA77B8E06899DDEA6A2D95C394992C6D84D23BB79FBE23CF694B05_1495701526999_file.png %}
+{% img center /images/posts/catalog_api_results_6.png %}
 
 ## What’s Next?
 
