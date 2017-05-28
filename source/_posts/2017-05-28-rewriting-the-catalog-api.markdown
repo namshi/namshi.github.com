@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "70% faster: rewriting the API that serves most of our traffic"
-date: 2017-05-26 18:37
+date: 2017-05-28 18:37
 comments: true
 categories: [Node, Express, api, js, performance]
 author: Ayham Alzoubi
 ---
 
-At the beginning of 2017, we decided to revamp our catalog API which is one of the backbones of our infrastructure, as it’s the API that serves 60 to 70% of our overall traffic.
+At the beginning of 2017, we decided to revamp our catalog API which is one of the main parts of our infrastructure, as it’s the API that serves 60 to 70% of our overall traffic.
 
 {% img center /images/posts/catalog_api_main.png %}
 
@@ -17,7 +17,7 @@ The catalog API provides a way to access our product offering. Broadly, it serve
 
 - static pages (https://en-ae.namshi.com/women/)
 - product details (https://en-ae.namshi.com/buy-anaya-patchwork-detail-kaftan-for-women-kaftans-263349.html)
-- product search and suggestion (https://en-ae.namshi.com/women-clothing-arabian_clothing/)
+- product listing with search and suggestions (https://en-ae.namshi.com/women-clothing-arabian_clothing/)
 
 Static pages, which are HTML files prepared by our content team, are stored on the file system. The product details are a set of product-specific information; the bulk of that information is stored in Redis so that we only have to go to the database to fetch stock availability for a particular product (as we want that to be real-time and extremely accurate). Product search and suggestions are powered by Solr, using keys based on product category, brand and so on.
 
