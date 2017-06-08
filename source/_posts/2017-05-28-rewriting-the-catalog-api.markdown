@@ -165,5 +165,5 @@ We are really happy with what we have achieved so far with the rewrite of the ca
 
 If what you read here sounds interesting to you and you would like to build cool stuff with us, [please come join us](http://tech.namshi.com/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/).
 
-*This article has been a joint effort between the 3 backenders that revamped our
-catalog API between February and April 2017: [Ayham](http://tech.namshi.com/team/#Ayham%20Alzoubi), [Joe](http://tech.namshi.com/team/#Joe%20Jean) and [Solomon](http://tech.namshi.com/team/#Folorunsho%20Solomon%20Opeyemi).*
+*This article has been a joint effort between the backenders that revamped our
+catalog API between February and April 2017: [Ayham](http://tech.namshi.com/team/#Ayham%20Alzoubi) and [Joe](http://tech.namshi.com/team/#Joe%20Jean).*
