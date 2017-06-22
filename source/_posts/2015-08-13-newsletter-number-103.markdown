@@ -10,12 +10,12 @@ categories: [ chat, netflix, office, 0day, angularjs, bigdata, devops, docker, e
 > Hi fellas,
 > in the last two weeks we started having tech lightning talks here at Namshi.
 >
-> Below you can see [Shidhin](http://tech.namshi.com/team/#Shidhin CR) in this (creative) shot while is showing the rest of the gang
+> Below you can see [Shidhin](http://tech.namshi.io/team/#Shidhin CR) in this (creative) shot while is showing the rest of the gang
 > how [React](http://facebook.github.io/react/) works and how he used it in our latest open-source project [Roger](https://github.com/namshi/roger).
 >
 {% img team center /images/posts/shidhin-react.png %}
 
-> Talking about Roger, have you checked the blog post ["How Namshi builds Docker containers through Docker containers"](http://tech.namshi.com/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/)?
+> Talking about Roger, have you checked the blog post ["How Namshi builds Docker containers through Docker containers"](http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/)?
 >
 > And ofc it's TechThursday:
 >

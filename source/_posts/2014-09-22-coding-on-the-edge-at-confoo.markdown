@@ -16,7 +16,7 @@ That's how we started using nodejs, Angular, Docker, SPDY and much more...
 <!-- more -->
 
 {% img left team /images/alex.jpg %}
-[Alex](http://tech.namshi.com/team#Alessandro Nadalin) submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
+[Alex](http://tech.namshi.io/team#Alessandro Nadalin) submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
 [vote for his talks](http://confoo.ca/en/call-for-papers/speaker/alessandro-nadalin).<br>
 His talks cover a wide variety of topics from Symfony, Angular, HTTP to Dockerinzing your application.
 

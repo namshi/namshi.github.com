@@ -14,7 +14,7 @@ categories: [newsletter, techthursday, php, symfony, docker, javascript, awk, ho
 > 
 > {% img center /images/nitesh.jpg %} 
 > 
-> Thanks to [Oba](http://tech.namshi.com/team/#Oluwaseun%20Obajobi) that published a [container](https://github.com/namshi/docker-akeneo) to run the Akeneo PIM through docker a few days ago!
+> Thanks to [Oba](http://tech.namshi.io/team/#Oluwaseun%20Obajobi) that published a [container](https://github.com/namshi/docker-akeneo) to run the Akeneo PIM through docker a few days ago!
 > 
 
 * [A week of symfony 420 (12-18 January 2015)](http://buff.ly/1BAAUMG)

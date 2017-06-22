@@ -10,7 +10,7 @@ author: Alessandro Cinelli (cirpo)
 **TechThursday is here again!**
 
 This week we released a new and opensource library on github: [Mockserver](https://github.com/namshi/mockserver) for mocking apis, our fellow
-[Mohamad](http://tech.namshi.com/team/#Mohamad Hallal) [wrote a post about it](http://tech.namshi.com/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/), check it!
+[Mohamad](http://tech.namshi.io/team/#Mohamad Hallal) [wrote a post about it](http://tech.namshi.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/), check it!
 
 * [Wavepot... just check and have fun with it!](http://wavepot.com/)
 

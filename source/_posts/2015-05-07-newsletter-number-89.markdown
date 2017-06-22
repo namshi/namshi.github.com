@@ -11,7 +11,7 @@ categories: [newsletter, techthursday, javascript, haskell, ember, react, python
 
 > Hello folks!
 >
-> Please join us in welcoming [Armagan](http://tech.namshi.com/blog/2015/05/03/welcome-armagan/) our new DevOps Engineer!
+> Please join us in welcoming [Armagan](http://tech.namshi.io/blog/2015/05/03/welcome-armagan/) our new DevOps Engineer!
 > 
 > This week we released [node-nmconfig](https://github.com/namshi/node-nmconfig), a handy wrapper that combines other two 
 > Namshi node opensource libraries: [reconfig](https://github.com/namshi/reconfig) and [file-ensure](https://github.com/namshi/node-file-ensure)

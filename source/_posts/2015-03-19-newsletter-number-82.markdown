@@ -12,7 +12,7 @@ categories: [agile, techthursday, git, docker, regex, angular, javascript, es6, 
 >
 > News from the IT Team:
 >
-> As you may have heard we have a new joiner in the backend team: welcome [David](http://tech.namshi.com/blog/2015/03/18/welcome-david)!
+> As you may have heard we have a new joiner in the backend team: welcome [David](http://tech.namshi.io/blog/2015/03/18/welcome-david)!
 >
 
  **And here you have the usual list with awesome links to keep you busy during the weekend under your beach umbrella between your dives (if you are in the area of course :P):**

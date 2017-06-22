@@ -10,7 +10,7 @@ categories: [TechThursday, symfony, angular2, cli, composer, css, docker, docume
 >
 > Hello everyone, 
 > for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
-> After an intense final match between [David](http://tech.namshi.com/team/#David Funaro) and Geshan, the winner is... [Geshan](http://tech.namshi.com/team/#Geshan Manandhar)!
+> After an intense final match between [David](http://tech.namshi.io/team/#David Funaro) and Geshan, the winner is... [Geshan](http://tech.namshi.io/team/#Geshan Manandhar)!
 >
 
 {% img center /images/posts/ping-pong-final.jpg %}

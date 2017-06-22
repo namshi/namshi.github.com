@@ -39,7 +39,7 @@ categories: [coding, css, db, devops, git, haskell, html, osx, swift, culture, p
 
 * [go gc: prioritizing low latency and simplicity - the go blog](http://blog.golang.org/go15gc?utm_content=bufferabe53)
 
-* [http://tech.namshi.com/blog/2015/09/10/newsletter-number-107/](https://github.com/black-screen/black-screen?utm_content=bufferea558)
+* [http://tech.namshi.io/blog/2015/09/10/newsletter-number-107/](https://github.com/black-screen/black-screen?utm_content=bufferea558)
 
 * [Run similar commands concurrently](https://github.com/jroes/par?utm_content=bufferf1d16)
 

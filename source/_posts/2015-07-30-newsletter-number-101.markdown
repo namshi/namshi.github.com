@@ -8,7 +8,7 @@ author: David Funaro
 ---
 Hi guys, even after the 100th newsletter we still have something to suggest you.
 
-This week [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli), [David](http://tech.namshi.com/team/#David Funaro) and [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) went to the warehouse ... it seems Namshi Tech will release a new application soon.
+This week [Cirpo](http://tech.namshi.io/team/#Alessandro Cinelli), [David](http://tech.namshi.io/team/#David Funaro) and [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) went to the warehouse ... it seems Namshi Tech will release a new application soon.
 
 {% img center /images/posts/alex-cirpo-david-wh.jpg %}
 

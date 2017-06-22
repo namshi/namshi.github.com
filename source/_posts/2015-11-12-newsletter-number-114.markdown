@@ -11,7 +11,7 @@ categories: [react, aws, devops, docker, js, php, refactoring, remotework, rest,
 >
 > The last weekeed the tech team had a fun couple of hours playing paintball! Some scratches here and there but it was definitely worth it! :)
 >
-> This week we have some of our team mates ([Alex](http://tech.namshi.com/team/#Alessandro%20Nadalin), [Oba](http://tech.namshi.com/team/#Oluwaseun%20Obajobi) and [Cirpo](<http://tech.namshi.com/team/#Alessandro Cinelli (cirpo)>) ) going to the [DockerCon Europe 2015](http://europe-2015.dockercon.com/) in Barcelona!!
+> This week we have some of our team mates ([Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin), [Oba](http://tech.namshi.io/team/#Oluwaseun%20Obajobi) and [Cirpo](<http://tech.namshi.io/team/#Alessandro Cinelli (cirpo)>) ) going to the [DockerCon Europe 2015](http://europe-2015.dockercon.com/) in Barcelona!!
 > If you are there and wanna have a chat with them, just go and say "hi!".
 >
 > And now: enjoy the links!

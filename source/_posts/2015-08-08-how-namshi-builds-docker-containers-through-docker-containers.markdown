@@ -299,13 +299,13 @@ Roger where it is right now:
 
 * [Pedro Dias](https://github.com/apocas), who wrote the amazing [dockerode](https://github.com/apocas/dockerode)
 that Roger uses to talk to Docker
-* [Armagan](http://tech.namshi.com/team/#Armagan Kimonoglu),
+* [Armagan](http://tech.namshi.io/team/#Armagan Kimonoglu),
 who has been instrumental in getting Roger as straightforward
 and "automatic" as possible
-* [Shidhin](http://tech.namshi.com/team/#Shidhin CR), who gave Roger
+* [Shidhin](http://tech.namshi.io/team/#Shidhin CR), who gave Roger
 a face (its frontend), experimenting with ReactJS for the first time
 (parts of the [perks of working at Namshi](/join-us/))
-* the whole [Namshi tech team](http://tech.namshi.com/team/), for
+* the whole [Namshi tech team](http://tech.namshi.io/team/), for
 being our beta-testers :)
 
 All of these guys, with their collective effort, helped turning a

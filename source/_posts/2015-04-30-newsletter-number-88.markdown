@@ -20,11 +20,11 @@ categories:
 
 
 > Hello folks!
-> It's [#TechThursday](http://tech.namshi.com/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
+> It's [#TechThursday](http://tech.namshi.io/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
 > 
-> This week we held our first ["lighting talks" session](http://tech.namshi.com/blog/2015/04/26/lighting-talks-1/) with a lot of new and useful insight on tools and libraries!
+> This week we held our first ["lighting talks" session](http://tech.namshi.io/blog/2015/04/26/lighting-talks-1/) with a lot of new and useful insight on tools and libraries!
 > 
-> We also realease another oss library for nodejs [mysql2-promise](https://www.npmjs.com/package/mysql2-promise) that is based on [node-mysql2](https://github.com/sidorares/node-mysql2) and let you take advantage of client-side query prepare/escape, connection pooling and [other features](https://github.com/sidorares/node-mysql2#documentation) that are not in the [node-mysql](https://github.com/felixge/node-mysql) library. Thanks to [Hossam](http://tech.namshi.com/team/#Hossam%20Faris) for this!
+> We also realease another oss library for nodejs [mysql2-promise](https://www.npmjs.com/package/mysql2-promise) that is based on [node-mysql2](https://github.com/sidorares/node-mysql2) and let you take advantage of client-side query prepare/escape, connection pooling and [other features](https://github.com/sidorares/node-mysql2#documentation) that are not in the [node-mysql](https://github.com/felixge/node-mysql) library. Thanks to [Hossam](http://tech.namshi.io/team/#Hossam%20Faris) for this!
 > 
 
 **And here is the list of awesome links we found this week!**

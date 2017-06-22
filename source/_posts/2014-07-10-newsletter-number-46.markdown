@@ -19,7 +19,7 @@ And...what about us?
 
 This week we've been talking about [rules to follow when writing OS code](http://buff.ly/1j5avP6)
 and are still very excited for [Oba](/team#Oluwaseun Obajobi), who is gonna be in Las Vegas to attend
-the [AWS re:invent](http://tech.namshi.com/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/) later this year.
+the [AWS re:invent](http://tech.namshi.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/) later this year.
 
 Hungry for tech news and tutorials, the team has collected this amazing list of
 resources over the past weeK:

@@ -10,7 +10,7 @@ Hello friends from the software engineering community!
 
 > News from the tech team:
 > 
-> [Cirpo](http://tech.namshi.com/team/#Alessandro_Cinelli), [Alex](http://tech.namshi.com/team/#Alessandro Nadalin), [Oba](http://tech.namshi.com/team/#Oluwaseun Obajobi) and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
+> [Cirpo](http://tech.namshi.io/team/#Alessandro_Cinelli), [Alex](http://tech.namshi.io/team/#Alessandro Nadalin), [Oba](http://tech.namshi.io/team/#Oluwaseun Obajobi) and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
 > Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss 
 > with other tech leads from all the Rocket Internet ventures from all around the world.
 

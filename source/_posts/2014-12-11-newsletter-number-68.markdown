@@ -8,14 +8,14 @@ categories:  [newsletter, techthursday, javascript, php, Symfony, nodejs, compos
 ---
 Hello folks!
 > News from the tech team:
-> [Lucio](http://tech.namshi.com/team/#Luciano_Colosio), [Alex](http://tech.namshi.com/team/#Alessandro Nadalin), [Oba](http://tech.namshi.com/team/#Oluwaseun Obajobi)
+> [Lucio](http://tech.namshi.io/team/#Luciano_Colosio), [Alex](http://tech.namshi.io/team/#Alessandro Nadalin), [Oba](http://tech.namshi.io/team/#Oluwaseun Obajobi)
 > are back from the [dockercon](http://europe.dockercon.com/) that took place in the cold Amsterdam.
 > The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.
 
 {% img center /images/dockercon.jpg %}
 
 > We have a new pet in the office, the Docker whale!
-> Thanks  [Lucio](http://tech.namshi.com/team/#Luciano_Colosio) for the gift!
+> Thanks  [Lucio](http://tech.namshi.io/team/#Luciano_Colosio) for the gift!
 
 {% img center /images/docker.jpg %}
 

@@ -9,7 +9,7 @@ author: Alessandro Cinelli (cirpo)
 
 > As you know the IT team loves opensource and the idea [to give back to the "community"](http://github.com/namshi)! <br />
 > That's why on Tuesday evening we did an internal hackathon, we bootstrapped four open source projects that we are going to release soon, <br /> stay tuned!<br />
-> [Lucio](http://tech.namshi.com/team/#Luciano Colosio), our Nodejs maniac, introduced the team to node's history:
+> [Lucio](http://tech.namshi.io/team/#Luciano Colosio), our Nodejs maniac, introduced the team to node's history:
 
 {% img center /images/posts/lucio-node-presentation.png 800 result %}
 

@@ -9,11 +9,11 @@ author: Alessandro Cinelli (cirpo)
 
 **TechThursday** is here folks and we have two special mentions today.
 
-[Mohamad Hallal](http://tech.namshi.com/team/#Mohamad%20Hallal) wrote an awesome post about [his pitfalls as junior developer](http://tech.namshi.com/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/)
+[Mohamad Hallal](http://tech.namshi.io/team/#Mohamad%20Hallal) wrote an awesome post about [his pitfalls as junior developer](http://tech.namshi.io/blog/2014/06/24/when-you-start-working-as-a-software-developer-dot-dot-dot/)
 
-[Lucio](http://tech.namshi.com/team/#Luciano Colosio) released a very cool personal project: [Carmen Sandiego](https://github.com/unlucio/carmensandiego).
+[Lucio](http://tech.namshi.io/team/#Luciano Colosio) released a very cool personal project: [Carmen Sandiego](https://github.com/unlucio/carmensandiego).
 This nodejs app let's you visualize your Foursquare checkins on a world map!
-[Check the dedicated blog post](http://tech.namshi.com/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/)
+[Check the dedicated blog post](http://tech.namshi.io/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/)
 
 
 Here the list of other useful links of the week:

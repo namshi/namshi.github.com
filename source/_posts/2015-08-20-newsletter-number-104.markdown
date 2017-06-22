@@ -9,7 +9,7 @@ categories: [architecture, devops, golang, javascript, mysql, php 7, php, symfon
 
 > Hello geeks,
 >
-> You know what they say - work hard, play hard! So, at Namshi, we started playing basketball, no PS4 involved! [Alessandro Nadalin](http://tech.namshi.com/team/#Alessandro Nadalin), [Alessandro Cinelli (cirpo)](http://tech.namshi.com/team/#Alessandro Cinelli), [David Funaro](http://tech.namshi.com/team/#David Funaro), [Luciano Colosio](http://tech.namshi.com/team/#Luciano Colosio) , [Armagan Kimonoglu](http://tech.namshi.com/team/#Armagan Kimonoglu), [Mohamed Amin](http://tech.namshi.com/team/#Mohamed Amin) , and [Hossam Fares](http://tech.namshi.com/team/#Hossam Fares) joined in. Let's see if it got the team in shape :)
+> You know what they say - work hard, play hard! So, at Namshi, we started playing basketball, no PS4 involved! [Alessandro Nadalin](http://tech.namshi.io/team/#Alessandro Nadalin), [Alessandro Cinelli (cirpo)](http://tech.namshi.io/team/#Alessandro Cinelli), [David Funaro](http://tech.namshi.io/team/#David Funaro), [Luciano Colosio](http://tech.namshi.io/team/#Luciano Colosio) , [Armagan Kimonoglu](http://tech.namshi.io/team/#Armagan Kimonoglu), [Mohamed Amin](http://tech.namshi.io/team/#Mohamed Amin) , and [Hossam Fares](http://tech.namshi.io/team/#Hossam Fares) joined in. Let's see if it got the team in shape :)
 >
 > And here is your weekly dose of TechThursday:
 >

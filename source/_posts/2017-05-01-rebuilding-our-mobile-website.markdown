@@ -251,4 +251,4 @@ Percentiles are really what you want to look at:
 See you next time!
 
 *This article is a joint effort between the 3 frontend musketeers of Namshi:
-[Shidhin](http://tech.namshi.com/team/#Shidhin CR), [Amin](http://tech.namshi.com/team/#Mohamed Amin) and [Gabriel](http://tech.namshi.com/team/#Gabriel Izebhigie)*.
+[Shidhin](http://tech.namshi.io/team/#Shidhin CR), [Amin](http://tech.namshi.io/team/#Mohamed Amin) and [Gabriel](http://tech.namshi.io/team/#Gabriel Izebhigie)*.

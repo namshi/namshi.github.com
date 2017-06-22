@@ -22,7 +22,7 @@ from Dubai.
 Among the plethora of [interesting talks](http://www.northeastphp.org/agenda)
 there will be a (definitely) fun one, "[PHP is the king, NodeJS the price and Lua
 is the fool](http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool)"
-given by our [Cirpo](<http://tech.namshi.com/team/#Alessandro Cinelli (cirpo)>) who will entertain the crowd with some
+given by our [Cirpo](<http://tech.namshi.io/team/#Alessandro Cinelli (cirpo)>) who will entertain the crowd with some
 details on how we mesh a whole lot of languages and platforms
 together.
 

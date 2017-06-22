@@ -9,8 +9,8 @@ categories: [api, phpspec, reactjs, golang, bdd, chatops, code, docker, flux, go
 
 > Hi folks!
 >
-> [Alex](http://tech.namshi.com/team/#Alessandro%20Nadalin) and [Oba](http://tech.namshi.com/team/#Oluwaseun%20Obajobi) are back from [DockerCon Europe 2015](http://europe-2015.dockercon.com/). 
-> Looks like Oba and [Cirpo](<http://tech.namshi.com/team/#Alessandro Cinelli (cirpo)>) had fun at DockerCon.
+> [Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin) and [Oba](http://tech.namshi.io/team/#Oluwaseun%20Obajobi) are back from [DockerCon Europe 2015](http://europe-2015.dockercon.com/). 
+> Looks like Oba and [Cirpo](<http://tech.namshi.io/team/#Alessandro Cinelli (cirpo)>) had fun at DockerCon.
 
 {% img center /images/posts/oba-cirpo-docker-con-15.jpg %}
 

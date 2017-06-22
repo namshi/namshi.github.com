@@ -12,7 +12,7 @@ Hey folks!
 It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)!
 
 > Thanks to [Shidhin](https://github.com/shidhincr), we have a shiny new blog theme! Also, he wrote an incredible 
-> [blog post]( http://tech.namshi.com/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/) about Javascript ES6, 
+> [blog post]( http://tech.namshi.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/) about Javascript ES6, 
 > you should check it out!
 
 **Here is the list with awesome links to keep you busy during the weekend:** 

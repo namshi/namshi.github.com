@@ -33,4 +33,4 @@ Both talks are based on the experience at Namshi, building our current service o
 At Namshi we believe that attending conferences and meetups is a very important as that helps the team and the individual developers grow.
 It's a great opportunity to understand what's going on in our field and to meet other great developers.
 
-What's next? If you're attending [SymfonyCon Madrid](http://madrid2014.symfony.com/), don't miss ["Hey, I just met AngularJS, and this is crazy, so here’s my JavaScript, let’s use it maybe"](http://madrid2014.symfony.com/speakers) by [Alex](http://tech.namshi.com/team/#Alessandro Nadalin)!
+What's next? If you're attending [SymfonyCon Madrid](http://madrid2014.symfony.com/), don't miss ["Hey, I just met AngularJS, and this is crazy, so here’s my JavaScript, let’s use it maybe"](http://madrid2014.symfony.com/speakers) by [Alex](http://tech.namshi.io/team/#Alessandro Nadalin)!

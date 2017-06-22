@@ -60,7 +60,7 @@ Our answer to how to grow a JS codebase? **Don’t grow it, split it**!
 
 {% img center /images/posts/catalog_api_architecture.png %}
 
-The architecture consists of a cluster of Node.js applications running within docker containers each of which are capped to 1 GB of RAM and 50% of 1 CPU core. We use Kubernetes to handle auto-scaling of our application. We have a Kubernetes configuration that handles automatically scaling our application once the CPU usage reaches 40% of 1 CPU core. We also have a Redis cluster (in [ElastiCache](https://aws.amazon.com/elasticache)) alongside a [highly available S](http://tech.namshi.com/blog/2017/02/06/towards-high-availability-and-beyond/)[olr cluster](http://tech.namshi.com/blog/2017/02/06/towards-high-availability-and-beyond/).
+The architecture consists of a cluster of Node.js applications running within docker containers each of which are capped to 1 GB of RAM and 50% of 1 CPU core. We use Kubernetes to handle auto-scaling of our application. We have a Kubernetes configuration that handles automatically scaling our application once the CPU usage reaches 40% of 1 CPU core. We also have a Redis cluster (in [ElastiCache](https://aws.amazon.com/elasticache)) alongside a [highly available S](http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/)[olr cluster](http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/).
 
 Sidecar is a container running beside each instance of our catalog API, responsible for downloading the static HTML files from Amazon’s S3 when we want to update our static pages. It first downloads them to a shared volume and then notifies the catalog API by creating an update lock file: the application is always checking for the existence of this lock file and, once it finds it, it will clear the internally cached static files.  You can checkout our open source [s3-sidecar](https://github.com/namshi/s3-sidecar).
 
@@ -163,7 +163,7 @@ The new application however as you can see in the graph uses way less resources.
 
 We are really happy with what we have achieved so far with the rewrite of the catalog's API. As we move forward, we would like to keep improving it — as we do for all of our codebase — by introducing appropriate tools and technologies. For example we would like to upgrade to node 8 so that we can take advantages of some nice features such as `async`  and `await` (without relying on harmony flags). We are also exploring the idea of using gRPC in order to improve how we do distributed systems overall.  
 
-If what you read here sounds interesting to you and you would like to build cool stuff with us, [please come join us](http://tech.namshi.com/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/).
+If what you read here sounds interesting to you and you would like to build cool stuff with us, [please come join us](http://tech.namshi.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/).
 
 *This article has been a joint effort between the backenders that revamped our
-catalog API between February and April 2017: [Ayham](http://tech.namshi.com/team/#Ayham%20Alzoubi) and [Joe](http://tech.namshi.com/team/#Joe%20Jean).*
+catalog API between February and April 2017: [Ayham](http://tech.namshi.io/team/#Ayham%20Alzoubi) and [Joe](http://tech.namshi.io/team/#Joe%20Jean).*

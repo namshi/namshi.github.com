@@ -13,7 +13,7 @@ Oh, before the news, give us **3 seconds** to announce that:
 
 * our [IOS app is available in the AppStore](https://itunes.apple.com/app/id840127349?mt=8&ls=1)!
 * we released a [new TV commercial](http://www.youtube.com/watch?v=HN15lWEyRJY)!
-* we are looking for a [frontend and backend code monkeys](http://tech.namshi.com/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/)!
+* we are looking for a [frontend and backend code monkeys](http://tech.namshi.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/)!
 
 And now...this week in Tech:
 

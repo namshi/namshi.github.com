@@ -15,7 +15,7 @@ The conferences were sold out, with more than 300 attendees and two tracks per d
 <br />
 <!-- more -->
 
-{% img left /images/posts/phpday-namshi-sponsor.jpg 200 'Namshi phpDay sponsor' 'Namshi phpDay sponsor' %} Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the [join-us](http://tech.namshi.com/join-us) page?)
+{% img left /images/posts/phpday-namshi-sponsor.jpg 200 'Namshi phpDay sponsor' 'Namshi phpDay sponsor' %} Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the [join-us](http://tech.namshi.io/join-us) page?)
 
 <br />
 <br />

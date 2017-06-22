@@ -38,9 +38,9 @@ our job as software developers. During this period at Namshi, I had the chance t
 and [shisha](https://www.npmjs.org/package/shisha).
  
 
-Finally, words of gratitude go to [Alessandro Nadalin](http://tech.namshi.com/team/#Alessandro Nadalin) for taking a
+Finally, words of gratitude go to [Alessandro Nadalin](http://tech.namshi.io/team/#Alessandro Nadalin) for taking a
 leap of faith in hiring a fresh graduate and going through the painful process of developing him from scratch.
-I just hope I set a right example. Of course, lots of thanks to the team and to [Alessandro Cinelli](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo\))
+I just hope I set a right example. Of course, lots of thanks to the team and to [Alessandro Cinelli](http://tech.namshi.io/team/#Alessandro Cinelli (cirpo\))
 for sharing their knowledge and their guidance along the way.
 
 

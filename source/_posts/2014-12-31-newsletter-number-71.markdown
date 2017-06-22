@@ -13,9 +13,9 @@ categories: [newsletter, techthursday, javascript, php, angularjs, microservices
 >
 > It has been an amazing year here at Namshi, our tech stack evolved a lot, new challenges, new technologies, new ppl... can't wait to see what will happen in 2015!
 >
-> What's you new year resolution? Have you ever thought to be part of our team? :)  [JOIN US!](http://tech.namshi.com/join-us/)
+> What's you new year resolution? Have you ever thought to be part of our team? :)  [JOIN US!](http://tech.namshi.io/join-us/)
 >
-> *Happy new year from the Namshi [Tech team](http://tech.namshi.com/team/)*
+> *Happy new year from the Namshi [Tech team](http://tech.namshi.io/team/)*
 
 **Here is usual the list with interesting links to keep you busy after you wake up from new year's eve:**
 

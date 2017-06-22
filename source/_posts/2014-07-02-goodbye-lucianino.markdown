@@ -9,7 +9,7 @@ author: Alessandro Nadalin
 
 This week one of our teammates left the team
 to pursuit his next big challenge: we are talking
-about [Luciano](http://tech.namshi.com/team/#Luciano Amodio)
+about [Luciano](http://tech.namshi.io/team/#Luciano Amodio)
 who is now in Spain, hacking, as usual, with
 JavaScript.
 

@@ -13,7 +13,7 @@ face at work.
 
 <!-- more -->
 
-In the past days [Lucio](http://tech.namshi.com/team/#Luciano Colosio)
+In the past days [Lucio](http://tech.namshi.io/team/#Luciano Colosio)
 has been working on one of his side projects and released
 [CarmenSandiego](https://github.com/unlucio/carmensandiego) on Github:
 it lets you visualize your 4Square checkins on a map

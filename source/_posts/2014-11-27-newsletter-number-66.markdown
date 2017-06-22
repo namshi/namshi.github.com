@@ -10,10 +10,10 @@ categories:  [newsletter, techthursday, javascript, scrum, kibana, php, react, h
 >
 > It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)!
 > 
-> Our comrade [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) is at [SymfonyCon Madrid](http://madrid2014.symfony.com/speakers)
+> Our comrade [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) is at [SymfonyCon Madrid](http://madrid2014.symfony.com/speakers)
 > with an awesome and super exciting talk about angular.
  
-> Next week, [Oba](http://tech.namshi.com/team/#Oluwaseun Obajobi), [Lucio](http://tech.namshi.com/team/#Luciano Colosio) and Alex will be at 
+> Next week, [Oba](http://tech.namshi.io/team/#Oluwaseun Obajobi), [Lucio](http://tech.namshi.io/team/#Luciano Colosio) and Alex will be at 
 > the super exciting Docker Eu Conference to collect some thoughts about the newest technologies.
 
 **Here is the list with awesome links to keep you busy during the week:**

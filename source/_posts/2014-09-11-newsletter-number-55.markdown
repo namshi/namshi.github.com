@@ -12,12 +12,12 @@ It's TechThursday again!
 >
 > News from the IT Team:
 >
-> In a few days [Hallal](http://tech.namshi.com/team/#Mohamad Hallal) will attend [Symfony Live 2014 in London](http://london2014.live.symfony.com/). He also submitted
+> In a few days [Hallal](http://tech.namshi.io/team/#Mohamad Hallal) will attend [Symfony Live 2014 in London](http://london2014.live.symfony.com/). He also submitted
 > a talk, called [frontend-first](http://frontendfirst.com/), to [Confoo](http://confoo.ca) - a conference that will take place in Canada on February 2015.
 > Please [vote for his talk](http://confoo.ca/en/call-for-papers/speaker/mohamad-hallal) as ConFoo democratically
 > selects talks based on community votes.
 >
-> [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo\)) is back from the USA, where he attended the [Northeast PHP 2014](http://2014.northeastphp.org) conference.
+> [Cirpo](http://tech.namshi.io/team/#Alessandro Cinelli (cirpo\)) is back from the USA, where he attended the [Northeast PHP 2014](http://2014.northeastphp.org) conference.
 > He also gave a presentation called "PHP is the king, Nodejs is the prince, Lua is the fool", check out the slides:
 >
 > <iframe src="//www.slideshare.net/slideshow/embed_code/38794123" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/cirpo/newp" title="PHP is the King, nodejs is the Prince and Lua is the fool" target="_blank">PHP is the King, nodejs is the Prince and Lua is the fool</a> </strong></div>

@@ -11,7 +11,7 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 >
 > News from the IT Team:
 >
->[Hallal](http://tech.namshi.com/team/#Mohamad Hallal) wrote an interesting [post](http://buff.ly/1wpoLEN) about **Shisha**: a nodejs library for creating smoke tests in no time.
+>[Hallal](http://tech.namshi.io/team/#Mohamad Hallal) wrote an interesting [post](http://buff.ly/1wpoLEN) about **Shisha**: a nodejs library for creating smoke tests in no time.
 >
 >We submitted some proposals to the [Confoo](http://confoo.ca/en) conference in Canada:
 >check, and support them by voting [for Hallal](http://confoo.ca/en/call-for-papers/speaker/mohamad-hallal) and [for Cirpo!](http://confoo.ca/en/call-for-papers/speaker/alessandro-cinelli)
