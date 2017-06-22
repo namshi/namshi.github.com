@@ -82,5 +82,5 @@ Needless to say, both position would be **quite hands-on** :)
 What are you waiting for? Send your application at `work-in-tech@namshi.com` and
 let's have a chat!
 
-P.S. A few weeks back I wrote a small piece about [Namshi's hiring process and *desiderata*](http://tech.namshi.com/blog/2016/12/06/get-that-job-at-namshi/),
+P.S. A few weeks back I wrote a small piece about [Namshi's hiring process and *desiderata*](http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/),
 give it a look!

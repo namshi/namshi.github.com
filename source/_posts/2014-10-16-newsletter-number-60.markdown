@@ -12,7 +12,7 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 > News from the IT Team:
 >
 > As you probably know reading our newsletter we are very interested in Docker, the open platform for distributed applications, that's why
-> [Oba](http://tech.namshi.com/team/#Oluwaseun Obajobi), [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) and [Lucio](http://tech.namshi.com/team/#Luciano Colosio) will attend
+> [Oba](http://tech.namshi.io/team/#Oluwaseun Obajobi), [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) and [Lucio](http://tech.namshi.io/team/#Luciano Colosio) will attend
 > the [Docker Europe conference in December](http://europe.dockercon.com/)
 >
 > Have fun in the cold and grey Amsterdam guys :D 

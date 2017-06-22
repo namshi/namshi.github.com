@@ -17,13 +17,13 @@ categories:
 
 
 > Hello folks!
-> It's [#TechThursday](http://tech.namshi.com/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
+> It's [#TechThursday](http://tech.namshi.io/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
 > 
-> This week our teammates [Alex](http://tech.namshi.com/team/#Alessandro%20Nadalin) and [Lucio](http://tech.namshi.com/team/#Luciano%20Colosio) have been busy writing about network tools and languages :)
+> This week our teammates [Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin) and [Lucio](http://tech.namshi.io/team/#Luciano%20Colosio) have been busy writing about network tools and languages :)
 > 
-> [Godo, Our First Open Source Library Written in Golang](http://tech.namshi.com/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/)
+> [Godo, Our First Open Source Library Written in Golang](http://tech.namshi.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/)
 >
-> [Sending Files in Unix: The Quick and Dirty Way](http://tech.namshi.com/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way/)
+> [Sending Files in Unix: The Quick and Dirty Way](http://tech.namshi.io/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way/)
 >
 
 **And here is the list of links to keep you busy during the weekend:**

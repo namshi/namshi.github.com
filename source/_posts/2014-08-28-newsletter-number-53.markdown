@@ -9,17 +9,17 @@ author: Alessandro Cinelli (cirpo)
 
 > **BOOM!** As mentioned in the last newsletter, we were working on four new open souce libraries and two of them are already out !!!
 >
-> * [**shisha, smoke tests made easy!**](https://github.com/namshi/shisha) A cool nodejs library by [Shidhin](http://tech.namshi.com/team/#Shidhin CR) and [Hallal](http://tech.namshi.com/team/#Mohamad Hallal) that let's you
+> * [**shisha, smoke tests made easy!**](https://github.com/namshi/shisha) A cool nodejs library by [Shidhin](http://tech.namshi.io/team/#Shidhin CR) and [Hallal](http://tech.namshi.io/team/#Mohamad Hallal) that let's you
 > write smoke tests in an easy way.
 >
-> * [**node-dock, a sweet remedy for all your docker problems!**](https://github.com/namshi/node-dock) Another node library by [Hossam](http://tech.namshi.com/team/#Hossam Faris) and [Lucio](http://tech.namshi.com/team/##Luciano Colosio) that
+> * [**node-dock, a sweet remedy for all your docker problems!**](https://github.com/namshi/node-dock) Another node library by [Hossam](http://tech.namshi.io/team/#Hossam Faris) and [Lucio](http://tech.namshi.io/team/##Luciano Colosio) that
 > has an handy command (dock) that plugs on top of your usual docker commands adding some sugar and some handy functionality on top of it.
 >
-> * Even [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) released another tiny and cool node lib called [**node-file-ensure**, a small filesystem utility to make sure a file is there](http://tech.namshi.com/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/)
+> * Even [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) released another tiny and cool node lib called [**node-file-ensure**, a small filesystem utility to make sure a file is there](http://tech.namshi.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/)
 >
-> * Lucio also wrote a post detailing his first months here at Namshi: [check it out](http://tech.namshi.com/blog/2014/08/27/so-far-dot-dot-dot-so-fun/)!
+> * Lucio also wrote a post detailing his first months here at Namshi: [check it out](http://tech.namshi.io/blog/2014/08/27/so-far-dot-dot-dot-so-fun/)!
 >
-> * Last but not least, [Geshan](http://tech.namshi.com/team/#Geshan Manandhar) on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony http://mq-talk.herokuapp.com/
+> * Last but not least, [Geshan](http://tech.namshi.io/team/#Geshan Manandhar) on his vacation back home, has improvised this talk at PHP Developers Meetup Nepal on message queues (AMQP) with RabbitMQ and Symfony http://mq-talk.herokuapp.com/
 
 
 And here we are as usual with a list of interesting links to keep you busy during the upcoming weekend:

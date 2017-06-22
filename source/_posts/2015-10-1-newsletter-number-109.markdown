@@ -9,7 +9,7 @@ categories: [ elm, javascript, api, architectinginformation, c, clojure, databas
 
 > Yo folks!
 >
-> This week we bid farewell to one of our team member [Nitesh](http://tech.namshi.com/team/#Nitesh Sharma), he posted an [interesting summary](http://tech.namshi.com/blog/2015/09/28/goodbye-nitesh/) of his delightful journey at Namshi, we wish him best of luck.
+> This week we bid farewell to one of our team member [Nitesh](http://tech.namshi.io/team/#Nitesh Sharma), he posted an [interesting summary](http://tech.namshi.io/blog/2015/09/28/goodbye-nitesh/) of his delightful journey at Namshi, we wish him best of luck.
 >
 
 {% img center /images/nitesh-bye-bye.jpg %}

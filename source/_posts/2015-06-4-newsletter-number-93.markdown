@@ -13,7 +13,7 @@ author: Hossam Fares
 
 ### Team updates:
 
-Team congratulates [Odino](http://tech.namshi.com/team/#Alessandro%20Nadalin) for his wedding that will be held today :)
+Team congratulates [Odino](http://tech.namshi.io/team/#Alessandro%20Nadalin) for his wedding that will be held today :)
  
 ### and here the links:
 * [Hello World: Windows 10 Available on July 29](http://blogs.windows.com/bloggingwindows/2015/06/01/hello-world-windows-10-available-on-july-29/)

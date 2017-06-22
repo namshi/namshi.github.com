@@ -13,9 +13,9 @@ It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter
 >
 > Namshi is now maintaining [winston-graylog2](https://github.com/namshi/winston-graylog2)! [Lucio]() just merged the first PR!
 >
-> [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo\)) just came back from Munich after giving two interesting talks, read all about it [here](http://tech.namshi.com/blog/2014/10/30/ipc14-wtc14-munich/)!
+> [Cirpo](http://tech.namshi.io/team/#Alessandro Cinelli (cirpo\)) just came back from Munich after giving two interesting talks, read all about it [here](http://tech.namshi.io/blog/2014/10/30/ipc14-wtc14-munich/)!
 >
-> [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) will be hitting [SymfonyCon Madrid](http://madrid2014.symfony.com/speakers)
+> [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) will be hitting [SymfonyCon Madrid](http://madrid2014.symfony.com/speakers)
 > on November 27-29. He will talk about Namshi's experience with AngularJs!
 
 **Here is the list with awesome links to keep you busy during the weekend:** 

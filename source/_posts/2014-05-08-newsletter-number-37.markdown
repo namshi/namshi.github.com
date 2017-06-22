@@ -30,4 +30,4 @@ It's **TechThursday** again: here's what we've been excited about over the past 
 
 * [Gremlins.js, Monkey testing library for web apps and Node.js](https://github.com/marmelab/gremlins.js/)
 
-* [Git tips and tricks](http://tech.namshi.com/blog/2014/05/04/git-tips-and-tricks/)
+* [Git tips and tricks](http://tech.namshi.io/blog/2014/05/04/git-tips-and-tricks/)

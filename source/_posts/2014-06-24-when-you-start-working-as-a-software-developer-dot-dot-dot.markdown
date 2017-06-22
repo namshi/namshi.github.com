@@ -12,7 +12,7 @@ is that not all of the surprises are much fun.
 
 <!-- more -->
 
-Kudos to [Mohamad](http://tech.namshi.com/team/#Mohamad Hallal)
+Kudos to [Mohamad](http://tech.namshi.io/team/#Mohamad Hallal)
 who shared his [10 most dramatic moments as a Junior software engineer](http://mohdhallal.github.io/blog/2014/06/18/my-top-10-junior-developer-pitfalls/)
 in his latest blog post: the whole team at Namshi had so much fun going through
 it because:

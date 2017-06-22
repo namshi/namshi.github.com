@@ -14,8 +14,8 @@ Hello, It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://
 >{% img thumb left /images/mohomad-sf-live.jpg %}
 >
 >And we are back with some more proposals to the [Confoo](http://confoo.ca/en) conference in Canada:
->check, and support them by voting [for Alex]( http://tech.namshi.com/blog/2014/09/22/coding-on-the-edge-at-confoo/),
->[for Lucio](http://tech.namshi.com/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo/) and [for Geshan](http://tech.namshi.com/blog/2014/09/20/stop-using-crons-start-listening-to-geshan/), go team Namshi!
+>check, and support them by voting [for Alex]( http://tech.namshi.io/blog/2014/09/22/coding-on-the-edge-at-confoo/),
+>[for Lucio](http://tech.namshi.io/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo/) and [for Geshan](http://tech.namshi.io/blog/2014/09/20/stop-using-crons-start-listening-to-geshan/), go team Namshi!
 
 But what has the team been looking at over the past week? Below
 you'll find the usual list of interesting articles we discovered

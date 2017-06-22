@@ -112,12 +112,12 @@ inc:
 
   # Company information
   company:      Namshi
-  url:          https://tech.namshi.com
+  url:          https://tech.namshi.io
   facebook:     NamshiFans
   twitter:      technamshi
   github:       namshi
   gplus:        false
-  about_link:   https://tech.namshi.com
+  about_link:   https://tech.namshi.io
   team_link:    /team
   github_link: https://github.com/namshi
 

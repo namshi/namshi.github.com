@@ -11,11 +11,11 @@ Welcome to **TechThursday**!
 
 ##Announcements
 
-This week we say [goodbye](http://tech.namshi.com/blog/2014/07/02/goodbye-lucianino/) to @luciano, you will be missed!
+This week we say [goodbye](http://tech.namshi.io/blog/2014/07/02/goodbye-lucianino/) to @luciano, you will be missed!
 
-We've been working on [clusterjs](https://github.com/namshi/clusterjs)! Take a look at the [blog post](http://tech.namshi.com/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/) Today we released version 0.7!
+We've been working on [clusterjs](https://github.com/namshi/clusterjs)! Take a look at the [blog post](http://tech.namshi.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/) Today we released version 0.7!
 
-Our @Cirpo will be speaking at the PHP North East Conference in Boston in a September! Read about his presentation [here](http://tech.namshi.com/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/)
+Our @Cirpo will be speaking at the PHP North East Conference in Boston in a September! Read about his presentation [here](http://tech.namshi.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/)
 
 ##Newsletter
 

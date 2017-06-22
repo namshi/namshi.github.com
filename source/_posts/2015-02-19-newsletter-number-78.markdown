@@ -14,7 +14,7 @@ categories: [newsletter, techthursday, nodejs, javascript, react, hadoop, docker
 > {% img center /images/posts/t-shirt-daniel-ayham.jpg %}
 
 **Important notice**: There is a vulnerability in the [namshi/jose](https://github.com/namshi/jose) library which you should worry about. For more
-information on that and how to fix it, read [http://tech.namshi.com/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/](http://tech.namshi.com/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/)
+information on that and how to fix it, read [http://tech.namshi.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/](http://tech.namshi.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/)
 
 **Here is the list with awesome links to keep you busy during the weekend:**
 

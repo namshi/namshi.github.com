@@ -19,7 +19,7 @@ categories:
 
 
 > Hello folks!
-> It's [#TechThursday](http://tech.namshi.com/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
+> It's [#TechThursday](http://tech.namshi.io/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
 > 
 > Yay! Cirpo 2.0 got released. The new version is soo much lighter than the old one.. :)
 > 

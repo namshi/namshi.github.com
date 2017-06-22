@@ -42,7 +42,7 @@ From the directory where your `.smoke` file is, run `shisha` and observe the shi
 
 Here is a video illustration:
 
-{% video http://tech.namshi.com/videos/example.mp4 640 640 %}
+{% video http://tech.namshi.io/videos/example.mp4 640 640 %}
 
 #Features
 
@@ -70,7 +70,7 @@ so your text file would look something like this
 
 Here is how locals work:
 
-{% video http://tech.namshi.com/videos/locals.mp4 640 640 %}
+{% video http://tech.namshi.io/videos/locals.mp4 640 640 %}
 
 * Easily extend shisha in your code as follows:
 

@@ -51,7 +51,7 @@ if JavaScript could conquer the mobile apps landscape.
 Our core team is based in Dubai but we're open to remote
 candidates: you can find more about us by having a look
 at our [open source libraries](https://github.com/namshi) or
-scraping our [tech blog](http://tech.namshi.com).
+scraping our [tech blog](http://tech.namshi.io).
 
-If you think you could [fit into the team](http://tech.namshi.com/join-us/), drop us a line
+If you think you could [fit into the team](http://tech.namshi.io/join-us/), drop us a line
 at *work-in-tech@namshi.com* and let's make it happen!

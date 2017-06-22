@@ -9,7 +9,7 @@ categories: [experience, angularjs, blog, docker, node, nodejs, php, reactjs, so
 
 > Hi there!
 >
-> Tech Thursday has come again and our [Alex](http://tech.namshi.com/team/#Alessandro%20Nadalin), [Cirpo](http://tech.namshi.com/team/#Alessandro%20Cinelli) and [Oba](http://tech.namshi.com/team/#Oluwaseun%20Obajobi) are flying towards Europe to attend a conference!
+> Tech Thursday has come again and our [Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin), [Cirpo](http://tech.namshi.io/team/#Alessandro%20Cinelli) and [Oba](http://tech.namshi.io/team/#Oluwaseun%20Obajobi) are flying towards Europe to attend a conference!
 > Have fun guys!
 >
 > Links? Here they are!

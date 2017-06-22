@@ -11,7 +11,7 @@ It's #TechThursday again!
 
 <!-- more -->
 
-> [W E - A R E - H I R I N G, we are hiring moar...!](http://tech.namshi.com/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/)
+> [W E - A R E - H I R I N G, we are hiring moar...!](http://tech.namshi.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/)
 >
 > Could you spot all those sad faces in the blog post? What are you waiting for? :)
 > We are also looking for a Frontend Developer, someone who is skilled on HTML5 and CSS3 and knows the basics of JavaScript but wants to expand his knowledge in that direction, [here is the coding challenge!](https://github.com/namshi/coding-challenges/blob/master/frontend-developer.md)

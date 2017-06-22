@@ -8,9 +8,9 @@ categories: [newsletter, techthursday, JavaScript, flux, reactjs, docker, facebo
 ---
 
 > Hello folks!
-> It's [#TechThursday](http://tech.namshi.com/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
+> It's [#TechThursday](http://tech.namshi.io/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)
 > 
-> We're super excited to have [Nitesh](http://tech.namshi.com/team/#Nitesh Sharma) in the Front end team. You can read more about him [here](http://tech.namshi.com/blog/2015/02/05/welcome-nitesh/)
+> We're super excited to have [Nitesh](http://tech.namshi.io/team/#Nitesh Sharma) in the Front end team. You can read more about him [here](http://tech.namshi.io/blog/2015/02/05/welcome-nitesh/)
 
 **Here is the list with awesome links to keep you busy during the weekend:**
 

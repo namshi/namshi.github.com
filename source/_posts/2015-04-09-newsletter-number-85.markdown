@@ -10,7 +10,7 @@ author: Geshan Manandhar
 ## TechThursday is here folks!
 
 >
-> [Cirpo](<http://tech.namshi.com/team/#Alessandro Cinelli (cirpo)>) talked about Vagrant and Docker for the 2nd Dubytes Meet up, woo hoo!
+> [Cirpo](<http://tech.namshi.io/team/#Alessandro Cinelli (cirpo)>) talked about Vagrant and Docker for the 2nd Dubytes Meet up, woo hoo!
 > See him in action
 >
 > {% img center /images/posts/cirpo-dubytes.jpg %}

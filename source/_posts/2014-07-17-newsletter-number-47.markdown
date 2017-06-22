@@ -12,7 +12,7 @@ TechThursday is here!
 
 >*What happened this week in the Namshi Tech team?*
 >
->This week our teammate [nikita](http://tech.namshi.com/team/#Nikita Nefedov) got the time to work a bit on [namshi/jose](https://github.com/namshi/jose), and we ended up releasing version 1.1.1!<br />
+>This week our teammate [nikita](http://tech.namshi.io/team/#Nikita Nefedov) got the time to work a bit on [namshi/jose](https://github.com/namshi/jose), and we ended up releasing version 1.1.1!<br />
 >**Jose** is a PHP library that provides a lightweight implementation of **JWS** ([JSON Web Signature](http://tools.ietf.org/html/draft-jones-json-web-signature-04)) specification.
 
 >At the same time we are thrilled about the first [SymfonyLive New York](http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10), we sent a bunch of cfps... let's cross our fingers!

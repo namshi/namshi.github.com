@@ -57,7 +57,7 @@ That's why we, from time to time, publicly release code on [github](http://githu
 team is encouraged to take part.
 
 That’s also why our tech stack evolves quickly, embracing the latest technologies and platforms: it’s like being in wonderland.
-Creating and maintaining such a culture is not easy, but it's really rewarding (thanks [Alex](http://tech.namshi.com/team/#Alessandro Nadalin) for starting this ).  
+Creating and maintaining such a culture is not easy, but it's really rewarding (thanks [Alex](http://tech.namshi.io/team/#Alessandro Nadalin) for starting this ).  
 As a friend of mine once said: [**"Lone developers are gone"**](http://www.slideshare.net/jakuza78/many-to-many-no-man-is-an-island-9627237). You can't build a successful product alone.
 
 ##Personal Growth

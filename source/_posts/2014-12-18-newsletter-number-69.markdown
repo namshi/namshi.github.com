@@ -13,7 +13,7 @@ Hello Folks!  It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](
 > 
 > We're super excited to have [Mohamed Amin](https://github.com/Mohamed-amin) ( our new front end developer ) in Namshi family.
 > 
->  The tech team was learning #PhpSpec from [Daniel](http://tech.namshi.com/team/#Daniel Ribeiro)
+>  The tech team was learning #PhpSpec from [Daniel](http://tech.namshi.io/team/#Daniel Ribeiro)
 
 {% img center /images/phpspec-presentation.jpg %}
 

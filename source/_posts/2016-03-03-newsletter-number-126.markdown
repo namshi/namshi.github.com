@@ -9,11 +9,11 @@ categories: [php, phpunit, alpine, blobstorage, chatops, checkout, dev, devops, 
 
 > #TechThursday is here!
 
-> We are featuring a **T-shirt clash** after [more](http://tech.namshi.com/blog/2015/02/12/newsletter-number-77/) than 
-> a [year](http://tech.namshi.com/blog/2015/02/19/newsletter-number-78/), this time it is Shidhin and Geshan but different colors:)
+> We are featuring a **T-shirt clash** after [more](http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/) than 
+> a [year](http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/), this time it is Shidhin and Geshan but different colors:)
 {% img center /images/posts/shidhin-geshan.jpg %}
 
-> We would also like to welcome back [Shidhin](http://tech.namshi.com/team/#Shidhin%20CR) from his vacation. 
+> We would also like to welcome back [Shidhin](http://tech.namshi.io/team/#Shidhin%20CR) from his vacation. 
 > And here is your weekly quota of some interesting links
 >
 > Enjoy!

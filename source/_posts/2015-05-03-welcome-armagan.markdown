@@ -15,9 +15,9 @@ the DevOps culture over here!
 We've been trying to make some key
 hires over the past few months,
 and after beefing up the team with
-[talented JavaScripters](http://tech.namshi.com/blog/2015/02/05/welcome-nitesh/),
-[diligent (and very funny!) webdevelopers](http://tech.namshi.com/blog/2014/12/29/welcome-amin/)
-and experienced [software engineers](http://tech.namshi.com/blog/2014/12/29/welcome-filippo/),
+[talented JavaScripters](http://tech.namshi.io/blog/2015/02/05/welcome-nitesh/),
+[diligent (and very funny!) webdevelopers](http://tech.namshi.io/blog/2014/12/29/welcome-amin/)
+and experienced [software engineers](http://tech.namshi.io/blog/2014/12/29/welcome-filippo/),
 we felt we needed to add someone with
 DevOps in his blood to help our whole
 team in this long, rewarding transition.

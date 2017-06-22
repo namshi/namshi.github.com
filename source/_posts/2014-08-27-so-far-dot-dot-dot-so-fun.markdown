@@ -41,7 +41,7 @@ I'm right now in the middle of my probation period, a 3 months long roller coast
 In a matter of a couple of weeks I'm finally stepping on the groud of Dubai.<br>
 The next morning Alex picks me up from my hotel: **Namshi**, at last.<br>
 
-The HR department gives me a warm welcome and I'm ready to meet [Shidhin](http://tech.namshi.com/team/#Shidhin%20CR), the other new frontend developer I'll work with, we quickly find ourselves sharing the same keyboard and pair prgramming on our 1st project.<br>
+The HR department gives me a warm welcome and I'm ready to meet [Shidhin](http://tech.namshi.io/team/#Shidhin%20CR), the other new frontend developer I'll work with, we quickly find ourselves sharing the same keyboard and pair prgramming on our 1st project.<br>
 Easy welcome, really, the 1st task we're faced with is "Just remake our checkout... we'll release it before Ramadan begins", states the boss... In a month!<br>
 After all it's probably one of the most important parts of an e-commerce's UI, if it doesn't work people cannot pay and you know what they say: *no money, no honey!*<br>
 Peace of cake... -_^'
@@ -52,7 +52,7 @@ Kind of slapping wake up. Well, nobody said it would have been easy here, one th
 Days go by and in a rush of javascript, PRs and more slap-in-the-face comments some how my enthusiasm grows and my passion gets refeshed. For once I'm really feeling like I'm back at 25, with tons of stuff to do and learn and with the push to do it.
 
 Julia, code name for the new checkout, is growing fast. I keep looking at the source, amazed by what it (she?) looks like.<br>
-Probably the cleanest and finest peace of software I ever contributed to at that point in time. With the dear help of Shidhin, often guiding me with good tips on the fine art of Angular's tameing, and [Alex](http://tech.namshi.com/team/#Alessandro%20Nadalin) carefully preventing my bias from polluting the new baby.<br> Thanks guys :)<br>
+Probably the cleanest and finest peace of software I ever contributed to at that point in time. With the dear help of Shidhin, often guiding me with good tips on the fine art of Angular's tameing, and [Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin) carefully preventing my bias from polluting the new baby.<br> Thanks guys :)<br>
 As said, it's always about learning, and I'm in a place where for once in years I'm not the one that kind of knows-it-all. After all, it's what I was looking for!
 
 It's well known one of the best ways to grow is to push your self, so don't pick the easy task.<br>

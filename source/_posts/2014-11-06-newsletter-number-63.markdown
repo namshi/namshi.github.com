@@ -11,7 +11,7 @@ It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter
 
 > News from the IT Team:
 >
-> [Cirpo](http://tech.namshi.com/team/#Alessandro Cinelli (cirpo\)) wrote a happy post about [completing 1 year at Namshi](http://tech.namshi.com/blog/2014/11/03/one-year-in-namshi/),
+> [Cirpo](http://tech.namshi.io/team/#Alessandro Cinelli (cirpo\)) wrote a happy post about [completing 1 year at Namshi](http://tech.namshi.io/blog/2014/11/03/one-year-in-namshi/),
 > we all share the same happiness :) at Namshi.
 >
 >

@@ -14,12 +14,12 @@ spend a few words on how meaningful this platform is to us.
 <!-- more -->
 
 It's been more than a year since we've started sharing to the
-outside world stuff that we, [Namshees](http://tech.namshi.com/team/),
+outside world stuff that we, [Namshees](http://tech.namshi.io/team/),
 find useful; our very first public newsletter went out in
-[January last year](http://tech.namshi.com/blog/2014/01/23/newsletter-number-23/)
+[January last year](http://tech.namshi.io/blog/2014/01/23/newsletter-number-23/)
 after we kept it in-between us for 5 months or so.
 
-The Namshi team has seen people [coming](http://tech.namshi.com/blog/categories/welcome/)
+The Namshi team has seen people [coming](http://tech.namshi.io/blog/categories/welcome/)
 and going, but we always made sure that everyone who would come
 on board would bring the right mindset to work altogether:
 being hungry of knowledge, passionate about helping others
@@ -42,7 +42,7 @@ thanks to what other great engineers have done throughout
 many years.
 
 If Namshi is here, we owe a **huge** "*thank you*" to the OS community;
-and by open-sourcing [this blog](https://github.com/namshi/namshi.github.com), what [we share](http://tech.namshi.com/archives/) and a [few, small libraries](https://github.com/namshi?utf8=%E2%9C%93&query=+only%3Apublic+)
+and by open-sourcing [this blog](https://github.com/namshi/namshi.github.com), what [we share](http://tech.namshi.io/archives/) and a [few, small libraries](https://github.com/namshi?utf8=%E2%9C%93&query=+only%3Apublic+)
 we hope to give back to the community at least 1% of what we got
 during our careers.
 

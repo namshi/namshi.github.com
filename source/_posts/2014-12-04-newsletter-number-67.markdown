@@ -12,9 +12,9 @@ Hello folks!
 
 > News from the tech team:
 >
-> Hurray! Namshi turned 3 and we are having a party :). [Lucio](http://tech.namshi.com/team/#Luciano_Colosio), [Alex](http://tech.namshi.com/team/#Alessandro Nadalin), [Oba](http://tech.namshi.com/team/#Oluwaseun Obajobi) are off to Amsterdam for the [dockercon](http://europe.dockercon.com/).
+> Hurray! Namshi turned 3 and we are having a party :). [Lucio](http://tech.namshi.io/team/#Luciano_Colosio), [Alex](http://tech.namshi.io/team/#Alessandro Nadalin), [Oba](http://tech.namshi.io/team/#Oluwaseun Obajobi) are off to Amsterdam for the [dockercon](http://europe.dockercon.com/).
 > We hope they are enjoying and get the latest insights about docker.
-> If you are at the dockercon, don't miss the opportunity to talk to our fellows there, as you know we are [hiring](http://tech.namshi.com/join-us/).
+> If you are at the dockercon, don't miss the opportunity to talk to our fellows there, as you know we are [hiring](http://tech.namshi.io/join-us/).
 
 
 It's [#TechThursday](/blog/categories/techthursday/) at [#namshi](http://twitter.com/techNamshi)!
