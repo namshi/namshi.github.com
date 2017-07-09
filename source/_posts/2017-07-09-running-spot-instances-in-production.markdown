@@ -10,6 +10,8 @@ author: Oluwaseun Obajobi
 Around this time last year, we decided to try running subset of our customer-facing web traffic on spot instances.<br/>
 This decision was solely based to reduce our AWS instance bill. We've heard of people running workloads on spot instances but most of the workloads are usually long-running jobs where you don't mind if the instance gets terminated at any time. Running customer-facing apps is a completely different challenge where we can't afford any downtime of any sort.
 
+<!-- more -->
+
 ### Background
 We are fully running [kubernetes](https://kubernetes.io/) in production which makes it exciting for the challenge of how we can actually test chaos engineering in production with our microservices.<br/>
 We chose [CoreOS Container Linux](https://coreos.com/os/docs/latest/booting-on-ecs.html) as our preferred operating system because of faster bootup time and it does only 2 things for us: docker service (for running containers) and flannel networking (for inter-pod networking).<br/>
