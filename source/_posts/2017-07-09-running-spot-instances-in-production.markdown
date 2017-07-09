@@ -8,10 +8,10 @@ author: Oluwaseun Obajobi
 ---
 
 Around this time last year, we decided to try running subset of our customer-facing web traffic on spot instances.<br/>
-This decision was solely based to reduce our AWS instance bill. We've heard of people running workloads on spot instances but most of the workloads are usually long-running jobs where we couldn't afford the instance to get terminated at any time. Running customer-facing apps is a completely different challenge where we can't afford any downtime of any sort.
+This decision was solely based to reduce our AWS instance bill. We've heard of people running workloads on spot instances but most of the workloads are usually long-running jobs where you don't mind if the instance gets terminated at any time. Running customer-facing apps is a completely different challenge where we can't afford any downtime of any sort.
 
 ### Background
-We fully running [Kubernetes](https://kubernetes.io/) in production which makes it exciting for the challenge of how we can actually test chaos engineering in production with our microservices.<br/>
+We are fully running [kubernetes](https://kubernetes.io/) in production which makes it exciting for the challenge of how we can actually test chaos engineering in production with our microservices.<br/>
 We chose [CoreOS Container Linux](https://coreos.com/os/docs/latest/booting-on-ecs.html) as our preferred operating system because of faster bootup time and it does only 2 things for us: docker service (for running containers) and flannel networking (for inter-pod networking).<br/>
 We use both launch configuration and autoscaling service to manage our fleet of spot instance.<br/>
 
@@ -23,7 +23,7 @@ Some of the questions we asked oursleves on how to setup a robust infrastructure
 
 ### How do we gracefully reschedule the pods to other nodes before the spot instance goes down?
 
-Gracefully rescheduling pods initially do seem straightforward until we started noticing some issues with image pulling from our private registry and docker hosts. This usually happens as a result of spike requests if more than ten (10) images of around 200MB size are being pulled at the same time. There is [kubectl drain](https://kubernetes.io/docs/user-guide/kubectl/v1.6/#drain) which works pretty well but not for us because of the issue mentioned above.
+Gracefully rescheduling pods initially do seem straightforward until we started noticing some issues with image pulling from our private registry and the docker hosts. This usually happens as a result of spike requests if more than ten (10) images of around 200MB size are being pulled at the same time. There is [kubectl drain](https://kubernetes.io/docs/user-guide/kubectl/v1.6/#drain) which works pretty well but not for us because of the issue mentioned earlier.
 
 Luckily, AWS introduced [spot instance termination notice](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html) which is a 2-min window to do cleanups before the spot-instance is terminated, we wrote a simple golang binary which watches the instance metadata for the termination notice and does the following within the 2-min grace:
 
@@ -75,7 +75,7 @@ All the tasks above are completed within 2-min window to match the spot-instance
 
 ### How do we handle the surge in price for the whole region?
 
-We use [Sensu](https://sensuapp.org/) as part of our monitoring stack and developed a simple sensu (ruby) check which compares the current spot price from AWS API against our bidding price used in the launch configuration. We do mark the check state as failed as **warning** when the spot price is within the warning and critical threshold for all the zones in the region and the check is only marked as **critical** if the spot price is higher than our critical threshold in all the zones in the region. When the check state is critical, there is an auto-remediation script which switches the launch configuration of the autoscaling group for the spot instances from spot to on-demand (the script clones the current launch configuration, removes the spot price and replaces the launch config in the autoscaling group). With this, we don't end up with no running instances.
+We use [Sensu](https://sensuapp.org/) as part of our monitoring stack and developed a simple sensu (ruby) check which compares the current spot price from AWS API against our bidding price used in the launch configuration. We do mark the check state as **warning** when the spot price is within the warning and critical threshold for all the zones in the region and the check is only marked as **critical** if the spot price is higher than our critical threshold in all the zones in the region. When the check state is critical, there is an auto-remediation script which switches the launch configuration of the autoscaling group for the spot instances from spot to on-demand (the script clones the current launch configuration, removes the spot price and replaces the launch config in the autoscaling group). With this, we don't end up with no running instances.
 
 ```
 {
@@ -107,4 +107,5 @@ We use [Sensu](https://sensuapp.org/) as part of our monitoring stack and develo
 
 <br/><br/>
 
-So far, this has been working well for over a year without any major issue. Hope you can give it a try and feedbacks are appreciated.
+So far, this has been working well for over a year without any major issues and we have been able to save between 35% and 45% on the instance cost since then.<br/>
+Hope you can give it a try and feedbacks are appreciated.
