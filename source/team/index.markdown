@@ -10,7 +10,7 @@ footer: true
 <h2 class="department">Tech</h2>
 *   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
     {% img left team /images/alex.jpeg Alessandro Nadalin %}
-    **Alessandro Nadalin** VP Technology, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
+    **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
     He heavily focused his attention to agile practices, patterns of enterprise application architecture and leading mid/big-sized development teams.
     Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
     Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
@@ -48,11 +48,9 @@ footer: true
     His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
     When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
 
-*   ##<div id="Samar Agrawal">Samar Agrawal</div>
-    {% img left team /images/samar.png Samar Agrawal %}
-    **Samar Agrawal** is a python enthusiast with experience in developing large scalable ERP`s, SaaS systems, and other cloud based systems. His love for computers comes from
-    an early age and he admires new cutting edge technologies with data crunching being his current passion. He has been a technical reviewer on "OpenGL Data Visualization Cookbook" and is currently part of the University of Sheffield mentoring programme.
-    In his free time, he can be found reading, trying new stuff or exploring new places. He is currently based in Dubai and holds a masters in Advanced Software Engineering from University of Sheffield, UK and Bachelors in Computer Science Engineering.
+*   ##<div id="Tedj Meabiou">Tedj Meabiou</div>
+    {% img left team /images/tedj.jpg Tedj Meabiou %}
+    **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
     {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
@@ -148,6 +146,12 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Samar Agrawal">Samar Agrawal</div>
+    {% img left team /images/samar.png Samar Agrawal %}
+    **Samar Agrawal** is a python enthusiast with experience in developing large scalable ERP`s, SaaS systems, and other cloud based systems. His love for computers comes from
+    an early age and he admires new cutting edge technologies with data crunching being his current passion. He has been a technical reviewer on "OpenGL Data Visualization Cookbook" and is currently part of the University of Sheffield mentoring programme.
+    In his free time, he can be found reading, trying new stuff or exploring new places. He is currently based in Dubai and holds a masters in Advanced Software Engineering from University of Sheffield, UK and Bachelors in Computer Science Engineering.
 
 *   ##<div id="Filippo De Santis">Filippo De Santis</div>
     {% img left team /images/filippo.jpg Filippo De Santis %}
