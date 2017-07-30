@@ -48,6 +48,11 @@ footer: true
     His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
     When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
 
+
+*   ##<div id="Ruba Noureldin">Ruba Noureldin</div>
+    {% img left team /images/ruba.jpg Ruba Noureldin %}
+    **Ruba Noureldin** is a senior software engineer with 6 years of experience. She has a B.Sc. in Communications and Electronics Engineering, but she found her passion in software. Since then, she worked in different industries including banking, automotive and mobile VAS. She is polyglot who has worked with Java, Python, C and currently JavaScript. She is never afraid of jumping into a new challenge. Ruba is also a big movie enthusiast.
+
 *   ##<div id="Tedj Meabiou">Tedj Meabiou</div>
     {% img left team /images/tedj.jpg Tedj Meabiou %}
     **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
