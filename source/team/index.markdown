@@ -19,6 +19,10 @@ footer: true
     {% img left team /images/abdul-hannan.png Abdul Hannan %}
     **Abdul Hannan** is Namshi’s Mobile Ninja who is married to iOS but was also dating Android in the past. He has been doing mobile apps development since 2011 and was working on apps for Banking Industry and Dubai Government prior to joining Namshi. He holds Computer Engineering degree from Karachi Pakistan. He loves to spend time with his family along with learning new things in mobility domain.
 
+*   ##<div id="noor">Noor Ul Ain Ali</div>
+    {% img left team /images/noor.jpg Noor %}
+    **Noor Ul Ain Ali** is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.
+
 *   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
     {% img left team /images/Khaled.jpg Khaled %}
     **Khaled Alqasrawi** is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He's been working with Android since its early days in 2010. Khaled is interested in behavioral economics, neuroscience, and psychology, and if he ever decides to get a tattoo, it will be the Android mascot.
@@ -113,18 +117,6 @@ footer: true
     and opportunity to keep his learning curve alive and to explore
     the new world of E-commerce!
 
-*   ##<div id="Gabriel Izebhigie">Gabriel Izebhigie</div>
-    {% img left team /images/gabriel.jpg Gabriel Izebhigie %}
-    **Gabriel Izebhigie** is a Frontend Engineer. He holds a B.Sc in Engineering
-    from University of Ibadan Nigeria. He loves to build products that are functional,
-    beautiful and easy to use.
-    His main focus is Frontend development (a lot of Javascript, HTML,  CSS, Sass...)
-    and some UX to go with it. On the server NodeJS and basic PHP.
-    He loves challenging myself to do more and push beyond the limits.
-    His best quote is “if you do it right, it would last forever - Massimo Vignelli”.
-    In his leisures he plays basketball, watches movies and spends time with
-    family and friends.
-
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
     **Razan Bilwani** is a Senior Product Management Analyst,
@@ -151,6 +143,18 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Gabriel Izebhigie">Gabriel Izebhigie</div>
+    {% img left team /images/gabriel.jpg Gabriel Izebhigie %}
+    **Gabriel Izebhigie** is a Frontend Engineer. He holds a B.Sc in Engineering
+    from University of Ibadan Nigeria. He loves to build products that are functional,
+    beautiful and easy to use.
+    His main focus is Frontend development (a lot of Javascript, HTML,  CSS, Sass...)
+    and some UX to go with it. On the server NodeJS and basic PHP.
+    He loves challenging myself to do more and push beyond the limits.
+    His best quote is “if you do it right, it would last forever - Massimo Vignelli”.
+    In his leisures he plays basketball, watches movies and spends time with
+    family and friends.
 
 *   ##<div id="Samar Agrawal">Samar Agrawal</div>
     {% img left team /images/samar.png Samar Agrawal %}
