@@ -61,14 +61,6 @@ footer: true
     {% img left team /images/tedj.jpg Tedj Meabiou %}
     **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
 
-*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
-    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
-    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
-    He is responsible for leading the System Administration team.
-    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
-    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
-    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
-
 *   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
     {% img left team /images/gurjeet.jpg Gurjeet Singh %}
     **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
@@ -100,23 +92,6 @@ footer: true
     He comes with over 6 years of experience in front end development, and core JavaScript expertise.
     In free time, he can be found updating his blog or checking out some open source stuff.
 
-*   ##<div id="Mohamed Amin">Mohamed Amin</div>
-    {% img left team /images/amin.jpg Mohamed Amin %}
-    **Mohamed Amin** is a Front End Developer working at Namshi.com,
-    he has been passionate about Web development ever since the
-    33.6k internet modem! He acquired most of the experience
-    he has through self education since highschool. Amin worked
-    as a Web and UI Designer in creative agencies and software
-    houses in Egypt delivering creative designs and neat UI prototypes.
-    Amin is focuses on delivering solutions with optimized experience
-    therefore he stands and fights for the UX aspects in the products
-    he is involved in. He co-founded Web designers community in Alexandria
-    (AWB) also participated  in number of  startup conferences.
-    Amin believes that Web design became a comfort zone of his capabilities,
-    so, working in Namshi will give Amin exposure to new technologies
-    and opportunity to keep his learning curve alive and to explore
-    the new world of E-commerce!
-
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
     **Razan Bilwani** is a Senior Product Management Analyst,
@@ -137,12 +112,43 @@ footer: true
     Prior to joining Namshi, she was a Product Owner at Adabisc in Qatar where she spent a year focusing on the development of products in Entertainment Technology. Her work there made her realize that product management is what she wants to specialize in;  she very much likes being part of and foreseeing every aspect of product development.
     Before that, Yomna worked in research and software development in Carnegie Mellon University in Qatar for 2 years. She holds a B.Sc. in Computer Engineering from the American University in Cairo. She also wants to tour the world: 18 done and 188 more to go!
 
+*   ##<div id="Andrey Komarov">Andrey Komarov</div>
+    {% img left team /images/andrey.jpg Andrey Komarov %}
+    I always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
+    In the mean time I've tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. I really like to debug internal system processes, this gives a better understanding of how systems works from deep inside.
+    Around a year ago I  discovered a kubernetes and focused on this amazing technology. I hope I'll continue to grow professionally in this direction together with the Namshi team.
+
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
+    {% img left team /images/oba.jpeg Oluwaseun Obajobi %}
+    **Oluwaseun Obajobi** is the Lead System Administrator at Namshi.com (a Rocket Internet Venture),
+    He is responsible for leading the System Administration team.
+    Prior to joining Namshi, he has been involved in numerous IT projects in Nigeria, Serbia and the UAE for the past 5 years.
+    Oba drives the team approach from traditional system administration to DevOps with implementation of different practices and tools.
+    Oba holds a Bachelor's Degree in Computer Engineering, and a Master's Degree in IT Management from Obafemi Awolowo University and University of Wollongong respectively.
+
+*   ##<div id="Mohamed Amin">Mohamed Amin</div>
+    {% img left team /images/amin.jpg Mohamed Amin %}
+    **Mohamed Amin** is a Front End Developer working at Namshi.com,
+    he has been passionate about Web development ever since the
+    33.6k internet modem! He acquired most of the experience
+    he has through self education since highschool. Amin worked
+    as a Web and UI Designer in creative agencies and software
+    houses in Egypt delivering creative designs and neat UI prototypes.
+    Amin is focuses on delivering solutions with optimized experience
+    therefore he stands and fights for the UX aspects in the products
+    he is involved in. He co-founded Web designers community in Alexandria
+    (AWB) also participated  in number of  startup conferences.
+    Amin believes that Web design became a comfort zone of his capabilities,
+    so, working in Namshi will give Amin exposure to new technologies
+    and opportunity to keep his learning curve alive and to explore
+    the new world of E-commerce!
 
 *   ##<div id="Gabriel Izebhigie">Gabriel Izebhigie</div>
     {% img left team /images/gabriel.jpg Gabriel Izebhigie %}
