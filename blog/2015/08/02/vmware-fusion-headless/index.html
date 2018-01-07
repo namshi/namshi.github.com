@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>VMware fusion headless &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="VMware fusion headless ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless/">
+    
+    
+    <meta property="og:title" content="VMware fusion headless "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2015-02-August" title="August 02, 2015">August 02, 2015</time>
+            </div>
+            <h1 class="title">VMware fusion headless</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                
+                    David Funaro
+                
+                </a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p><img class="center" src="/images/posts/osx-vmware.jpg"></p>
+
+<p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
+OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.
+ It&rsquo;s true that there are alternatives like boot2docker, but there are some situations (more on that in a future post) where it is not enough.
+  At Namshi instead of using <code>Virtualbox</code>/boot2docker, we chose to use the more reliable and stable <code>Vmware fusion</code>. From our experience, it is actually better in terms of memory performance and sharing directories (compared to virtualbox 4, we will see if the brand new vbox 5 is better).</p>
+
+<p>Just like  <code>Virtualbox</code>, <code>Vmware Fusion</code> is able to handle a virtual machine in headless mode (with a little bit of shell fu). <code>Headless mode</code> is a way to handle (create, start, stop) a virtual machine by just interacting from the command line. So you don&rsquo;t need to interact with the UI. Everything is hidden, even the application window. It just works.
+We were looking for a way to run the virtual machine in headless mode, just because once you start and access it with ssh, you don&rsquo;t need to bother about anything else. Sometimes leaving the window open without any interaction may cause some performance issues with the vm. Also, in Headless mode, your desktop doesn&rsquo;t consume extra memory.</p>
+
+<p>Enough talking, SHOW ME THE CODE!</p>
+
+<figure class='code'><pre><code class='language-bash'>vmrun power-commands &lt;path-to-vmx-file&gt; nogui</code></pre></figure>
+
+
+
+
+<!-- more -->
+
+
+<p>The command <code>vmrun</code> should be located in the <code>/Applications/VMwareFusion.app/Contents/Library</code> directory. The <code>power-commands</code> are all the actions  you can perform on the virtual machine (<code>start|stop|pause|halt</code>). You can get all possible options running with the <code>vmrun --help</code> command (or by checking the docs: <a href="http://www.vmware.com/pdf/vix162_vmrun_command.pdf">http://www.vmware.com/pdf/vix162_vmrun_command.pdf</a>).</p>
+
+<p>You also have to specify the virtual machine vmx file that you want to handle. By default, Vmware puts all the vm images in the user Document folder.</p>
+
+<p>In order to use the <code>vmrun</code> command without specifying the path, just create a symbolic link:</p>
+
+<p><code>sudo ln -s "/Applications/VMware Fusion.app/Contents/Library/vmrun" /usr/bin/vmrun</code></p>
+
+<p>If you are going to always use the same vm (as we are doing here at Namshi in order to use Docker in the best way), specifying the vm file&rsquo;s path can be annoying. To simplify that operation, just create a little script like:</p>
+
+<figure class='code'><pre><code class='language-bash'>#!/bin/sh
+
+if [ -z &quot;$vmFile&quot; ]
+  then
+    echo &quot;please set your &apos;vmFile&apos; environment variable to point to your vm&apos;s .vmx file&quot;
+    exit 1
+fi
+
+case &quot;$1&quot; in
+  start)
+    vmrun start &quot;$vmFile&quot; nogui
+    ;;
+  stop)
+    vmrun stop &quot;$vmFile&quot; nogui
+    ;;
+  suspend)
+    vmrun suspend &quot;$vmFile&quot; nogui
+    ;;
+  pause)
+    vmrun pause &quot;$vmFile&quot; nogui
+    ;;
+  unpause)
+    vmrun unpause &quot;$vmFile&quot; nogui
+    ;;
+  reset)
+    vmrun reset &quot;$vmFile&quot; nogui
+    ;;
+  status)
+    vmrun list
+    ;;
+  *)
+    echo &quot;Usage: possible options are: start | stop | suspend | pause | unpause | reset | status&quot;
+    exit 1
+esac</code></pre></figure>
+
+
+<p>Once you have this file in the path <code>/usr/local/bin/vm</code> (or the path you prefer) you are able to run these commands:</p>
+
+<figure class='code'><pre><code class='language-bash'>$ vm start
+$ vm stop
+$ vm pause
+...
+</code></pre></figure>
+
+
+<p>As you can see from the script, you need one more thing: you have to define the <code>vmFile</code> <code>env</code> variable  (set it in your .bash_profile, or .zshrc):</p>
+
+<figure class='code'><pre><code class='language-bash'>export vmFile=&quot;/Users/&lt;username&gt;/Documents/Virtual Machines.localized/Ubuntu 15.04 server64-bit.vmwarevm/Ubuntu 15.04 server64-bit.vmx&quot;</code></pre></figure>
+
+
+<p>Ok, that&rsquo;s it. Easy peasy. Now you can handle your vmware vm from the command line. We are using this approach on OS X, but it should work on windows too (the helper script might work with <a href="https://www.cygwin.com/">cygwin</a>).</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/fusion/'>fusion,</a>, <a class='category' href='/blog/categories/osx/'>osx,</a>, <a class='category' href='/blog/categories/vm/'>vm</a>, <a class='category' href='/blog/categories/vmware/'>vmware</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: retro | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/retro/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #99]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/16/newsletter-number-99/"/>
+    <updated>2015-07-16T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/16/newsletter-number-99</id>
+    <content type="html"><![CDATA[<h2>It&rsquo;s TechThursday again!</h2>
+
+<p>And here we are with what we read this week! Enjoy!</p>
+
+<ul>
+<li><p><a href="http://www.sitepoint.com/12-little-known-css-facts-the-sequel/?utm_source=html5weekly">12 Little-Known CSS Facts (The Sequel)</a></p></li>
+<li><p><a href="http://jjuliano.github.io/markdown-ui/">A framework for creating responsive UI’s for mobile and web using Markdown Syntax</a></p></li>
+<li><p><a href="https://github.com/tuvalie/historic_events">A large data set of historic human events</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/mailgun/oxy">A proxy written in Go with Http middlewares like stream, forward, roundrobin, rate limiting etc..</a></p></li>
+<li><p><a href="https://sourcemaking.com/antipatterns">AntiPatterns</a></p></li>
+<li><p><a href="http://ceramic.github.io/docs/introduction.html">Ceramic is a library for creating desktop applications with web technologies and Common Lisp</a></p></li>
+<li><p><a href="https://www.cloudboost.io/?utm_content=buffer733af">CloudBoost | Database as a Service for the next web</a></p></li>
+<li><p><a href="https://github.com/wouterdebie/i2cssh">ClusterSSH for your iTerm</a></p></li>
+<li><p><a href="http://codeception.com/">Codeception &ndash; BDD-style PHP testing.</a></p></li>
+<li><p><a href="https://github.com/Swordfish90/cool-retro-term">Cool Retro Terminal with QT for OSX and Linux</a></p></li>
+<li><p><a href="http://symfony.com/blog/create-your-own-framework-on-top-of-the-symfony-components">Create your own framework on top of the Symfony Components</a></p></li>
+<li><p><a href="https://medium.com/we-build-vend/defining-a-high-performance-team-it-s-not-just-about-structure-9417150b659d">Defining a High Performance Team: It’s not just about Structure</a></p></li>
+<li><p><a href="http://sirile.github.io/2015/07/15/docker-swarm-and-experimental-multihost-networking-with-docker-machine-and-boot2docker.html?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Docker Swarm and experimental multihost networking with docker-machine and boot2docker</a></p></li>
+<li><p><a href="http://kartar.net/2013/11/docker-and-configuration-management/">Docker and Configuration Management</a></p></li>
+<li><p><a href="http://www.infoq.com/news/2015/07/docker-testing-infrastructure?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Docker&rsquo;s Testing Infrastructure</a></p></li>
+<li><p><a href="http://container-solutions.com/docker-latest-confusion/">Docker: The &ldquo;latest&rdquo; Confusion</a></p></li>
+<li><p><a href="http://blog.travisthieman.com/fast-zero-downtime-deploy-with-serf-and-lox/">Fast, Zero-Downtime Deploy with Serf and Lox</a></p></li>
+<li><p><a href="http://zachholman.com/posts/fired/">Fired</a></p></li>
+<li><p><a href="http://www.soasta.com/blog/docker-awesome-devops">How Docker has made life awesome for SOASTA DevOps | SOASTA</a></p></li>
+<li><p><a href="http://abdelrahmanhosny.com/2015/07/11/how-to-merge-two-docker-images/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">How to Merge Two Docker Images</a></p></li>
+<li><p><a href="http://filimanjaro.com/blog/2014/introducing-lazy-evaluation/">How to Speed Up Lo-Dash ×100? Introducing Lazy Evaluation.</a></p></li>
+<li><p><a href="http://firstround.com/review/im-sorry-but-agile-wont-fix-your-products/">I&rsquo;m Sorry, But Agile Won&rsquo;t Fix Your Products</a></p></li>
+<li><p><a href="https://hiddedevries.nl/en/blog/2015-05-18-the-web-is-fast-by-default-lets-keep-it-fast">The web is fast by default, let’s keep it fast</a></p></li>
+<li><p><a href="https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f">Introducing Incremental DOM</a></p></li>
+<li><p><a href="http://zachholman.com/posts/0x-engineers/">Just Don’t Hire 0x Engineers</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/microservice-trade-offs.html">Microservice Trade-Offs</a></p></li>
+<li><p><a href="https://github.com/git-tips/tips">Most commonly used git tips and tricks</a></p></li>
+<li><p><a href="http://www.giorgiosironi.com/2015/06/property-based-testing-primer.html">Property-based testing primer</a></p></li>
+<li><p><a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By</a></p></li>
+<li><p><a href="http://zachholman.com/posts/saying-no-to-sales/">Saying No to Sales</a></p></li>
+<li><p><a href="http://instagram-engineering.tumblr.com/post/124162066737/search-architecture">Search Architecture @ Instagram</a></p></li>
+<li><p><a href="https://github.com/Shopify/shipit-engine">ShipIt by Shopify</a></p></li>
+<li><p><a href="http://carlosbecker.com/posts/small-go-apps-containers/">Small Go Apps Containers</a></p></li>
+<li><p><a href="https://github.com/kilimchoi/engineering-blogs">Software Engineering Blogs</a></p></li>
+<li><p><a href="http://artofmonitoring.com/">The Art of Monitoring</a></p></li>
+<li><p><a href="https://github.com/dfguo/blog">Thoughts and learnings from buliding Strikingly</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/Tuli">Tuli &ndash; A static analysis engine for PHP</a></p></li>
+<li><p><a href="http://www.solinea.com/blog/up-and-running-with-docker-machine-and-openstack?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Up and Running with Docker Machine and OpenStack</a></p></li>
+<li><p><a href="https://dunglas.fr/2015/06/using-psr-7-in-symfony/">Using PSR-7 in Symfony</a></p></li>
+<li><p><a href="http://zachholman.com/posts/git-commit-history/">Utter Disregard for Git Commit History</a></p></li>
+<li><p><a href="http://tech.zumba.com/2015/05/29/chrome-push-api/">W3C Push API Crash Course</a></p></li>
+<li><p><a href="https://medium.com/materialup-exploring-material-design/what-happens-when-an-apple-guy-explores-material-design-cb739c49ca2d">What happens when an Apple guy explores Material Design? — Exploring Material Design</a></p></li>
+<li><p><a href="https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4">Why I use Tape Instead of Mocha </a></p></li>
+<li><p><a href="https://github.com/cyclejs/cycle-core">cycle-core: A fully reactive JavaScript framework for Human-Computer Interaction</a></p></li>
+<li><p><a href="https://github.com/google/incremental-dom">google/incremental-dom</a></p></li>
+<li><p><a href="https://github.com/marcacohen/polychat">multi-lingual decentralized p2p chat based on web RTC and Google Translate API</a></p></li>
+<li><p><a href="https://www.airpair.com/angularjs/posts/ngmodeloptions-total-model-control?utm_content=bufferf25bb">ng-model-options: Total Model Control</a></p></li>
+<li><p><a href="https://github.com/progrium/go-shell">progrium/go-shell</a></p></li>
+<li><p><a href="http://www.itworld.com/article/2947839/big-data/mit-comes-up-with-a-no-memory-solution-for-big-data.html">MIT comes up with a &ldquo;no memory&rdquo; solution for Big Data</a></p></li>
+<li><p><a href="http://www.crn.com/slide-shows/applications-os/300077353/the-10-coolest-big-data-products-of-2015-so-far.htm">The 10 Coolest Big Data Products Of 2015 (So Far)</a></p></li>
+<li><p><a href="http://www.computerweekly.com/news/4500249955/Microsoft-expands-Cortana-to-power-cloud-based-predictive-analytics">Microsoft expands Cortana to power cloud-based predictive analytics</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

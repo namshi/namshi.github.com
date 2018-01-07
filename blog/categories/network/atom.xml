@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: network | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/network/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sending files in unix: the quick and dirty way]]></title>
+    <link href="http://namshi.github.io/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way/"/>
+    <updated>2015-04-19T09:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way</id>
+    <content type="html"><![CDATA[<p>You&rsquo;re hacking around with a friend, and you need to send him a file. How would you do that?</p>
+
+<p>Just use a USB stick (do people still carry those things around?).</p>
+
+<p>With the &ldquo;power of the Internet&rdquo; you have a bunch of possible ways to do it with a simple journey around the planet:</p>
+
+<ul>
+<li>send an email</li>
+<li>put it on dropbox/gdrive/box/etc</li>
+<li>skype/facebookMessanger/<em>chat</em>/<em>IM</em></li>
+<li>&hellip;</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>After all, who doesn&rsquo;t have an internet connection these days?</p>
+
+<p>I&rsquo;m an old guy and back when I was in college, having an internet connection wasn&rsquo;t that obvious, but you could almost always count on a
+<a href="http://en.wikipedia.org/wiki/Category_5_cable">cat 5</a> <a href="http://en.wikipedia.org/wiki/Twisted_pair">twisted pair</a> with an <a href="http://en.wikipedia.org/wiki/RJ45">rj45</a> plug. Why? Simple &ndash; stumbling on a sudden <a href="http://en.wikipedia.org/wiki/LAN_party">LAN party</a>, or just craving a quick <a href="http://slanggeek.com/Slang/Details/frag">frag</a> with a pal in your fav map on <a href="http://en.wikipedia.org/wiki/Quake_III_Arena">Quake3</a> or <a href="http://en.wikipedia.org/wiki/Unreal_Tournament">Unreal</a> was way more common than finding a USB stick or a wifi connection in an age they didn&rsquo;t yet exist.</p>
+
+<p>So now you have a nice TPC/IP connection you can leverage on (but no internet). Great, what to do?</p>
+
+<p>NFS/SMB share? Perhaps not: there were always concerns about security. <a href="http://en.wikipedia.org/wiki/Iptables">Iptables</a> were tighter than my belt, after living almost an year in Dubai and gaining 10KGs; plus configuring one of those shares from scratch used to take more time than just spelling out the file bit by bit and have your friend manually type it.</p>
+
+<p>Second option: we have <a href="http://en.wikipedia.org/wiki/Secure_Shell">SSH</a>! It&rsquo;s secure, and comes with <a href="http://en.wikipedia.org/wiki/SCP">scp</a>!<br>
+Great! <br>
+NO! <br>
+No way I&rsquo;d give remote shell access to someone to my laptop. Right?</p>
+
+<p>FTP, WEBDAV, and a plethora of other options could have probably done it, sure. With configuration or giving account on your machine&hellip; See what I mean?</p>
+
+<p>Today probably some young entrepreneur would come up with a whole startup to solve this problem, however, our simple solution used to be: <a href="http://en.wikipedia.org/wiki/Netcat">netcat</a>, the TCP/IP swiss army knife.</p>
+
+<p>NC (short for netcat) can open tcp sockets for both reading (listen) and writing:</p>
+
+<p>```bash</p>
+
+<h1>read/listen</h1>
+
+<p>nc -l <port></p>
+
+<h1>write</h1>
+
+<p>nc <host> <port>
+```</p>
+
+<p>So, how do you do it? Simple:</p>
+
+<p>Just set up a listener on the destination machine and divert it&rsquo;s output into a file:</p>
+
+<p><code>bash
+nc -l 1234 &gt; destination.jpeg
+</code></p>
+
+<p>and simply cat it to netcat on your sending machine:</p>
+
+<p>```bash</p>
+
+<p>cat source.jpeg | nc <destination host ip> 1234
+```</p>
+
+<p>Add sugar and gpg for any extra privacy, because if you do it on you campus' internal network, you don&rsquo;t want sniffers to grab your stuff ;)</p>
+
+<p>The same trick works with a directory. It&rsquo;s unix, just add pipes and some other commands:</p>
+
+<p>receiver:
+<code>bash
+nc -l 1234 | tar x
+</code></p>
+
+<p>sender:
+<code>bash
+tar -c &lt;your dir name&gt; | nc &lt;host&gt; 1234
+</code>
+And that&rsquo;s all :)</p>
+
+<p>PS: Thanks to <a href="/team#David%20Funaro">David</a> and <a href="/team#Filippo%20De%20Santis">Filo</a> for reminding me about those days when learning and using old tools was simpler than making a new company ;P</p>
+]]></content>
+  </entry>
+  
+</feed>

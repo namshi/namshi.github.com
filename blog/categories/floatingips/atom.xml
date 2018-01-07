@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: floatingips | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/floatingips/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #112]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/22/newsletter-number-112/"/>
+    <updated>2015-10-22T15:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/22/newsletter-number-112</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>The week is over and a we have a new good list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.securityinnovationeurope.com/blog/40-blogs-every-software-developer-should-be-reading">40 blogs every software developer should be reading</a></p></li>
+<li><p><a href="https://youtu.be/RrX_28s70ww">chad fowler &ndash; the wunderlist 3 story</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/10/docker-acquires-tutum/">docker acquires tutum to help it teams deploy and manage production apps</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://ocramius.github.io/blog/doctrine-orm-optimization-hydration/">doctrine orm hydration performance optimization</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/economy-of-scope/1041710055861858">economy of scope</a></p></li>
+<li><p><a href="https://www.digitalocean.com/company/blog/floating-ips-start-architecting-your-applications-for-high-availability/">floating ips: start architecting your applications for high availability | digitalocean</a></p></li>
+<li><p><a href="https://www.gitbook.com/book/frontendmasters/front-end-handbook/details">front-end handbook &ndash; gitbook</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLDWZ5uzn69ezRJYeWxYNRMYebvf8DerHd">golang uk conference 2015 (videos)</a></p></li>
+<li><p><a href="https://github.com/henryr/cap-faq?utm_content=bufferd22dc">henryr/cap-faq</a></p></li>
+<li><p><a href="https://medium.com/swlh/lessons-from-five-years-in-mobile-news-apps-1-don-t-have-a-news-app-c46939195389">lessons from five years in mobile news apps: </a></p></li>
+<li><p><a href="http://zurb.com/playground/motion-ui">motion ui | playground from zurb</a></p></li>
+<li><p><a href="http://zachholman.com/posts/opt-in-transparency/?utm_content=buffer28360">opt-in transparency</a></p></li>
+<li><p><a href="https://blog.bufferapp.com/pablo-images-for-instagram-pinterest-twitter-facebook?utm_content=buffera093b">pablo 2.0: create social media images, perfect for everywhere</a></p></li>
+<li><p><a href="http://firstround.com/review/Product-Hunt-is-Everywhere-This-is-How-It-Got-There/">product hunt is everywhere &ndash; this is how it got there &ndash; first round review</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/07/react-is-an-exciting-future/">react is an exciting future &ndash; atlassian developers</a></p></li>
+<li><p><a href="https://facebook.github.io/react/blog/2015/10/19/reactiflux-is-moving-to-discord.html">reactiflux is moving to discord</a></p></li>
+<li><p><a href="https://stackfiles.io/">stackfiles.io</a></p></li>
+<li><p><a href="https://morsmachine.dk/netpoller?utm_content=buffer0cb47">the go netpoller &ndash; morsing&rsquo;s blog</a></p></li>
+<li><p><a href="https://css-tricks.com/examples/ShapesOfCSS/?utm_content=buffer6372e">the shapes of css</a></p></li>
+<li><p><a href="http://www.forbes.com/sites/ericjackson/2014/05/11/the-top-8-reasons-your-best-people-are-about-to-quit-and-how-you-can-keep-them/?utm_content=buffer4136f">the top 8 reasons your best people are about to quit &mdash; and how you can keep them &ndash; forbes</a></p></li>
+<li><p><a href="http://usersnap.com/blog/tracking-js-the-computer-vision-power-of-javascript/">tracking.js </a></p></li>
+<li><p><a href="https://medium.com/life-tips/why-i-don-t-answer-most-phone-calls-4a71e1418854">why i don’t answer most phone calls — life tips. — medium</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kevin-frei/your-os-sucks/10153643564654427">your os sucks</a></p></li>
+<li><p><a href="http://techcrunch.com/2015/10/21/an-offer-creators-cant-refuse/?ncid=rss">youtube will completely remove videos of creators who don’t sign its red subscription deal | techcrunch</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

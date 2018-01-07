@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: boot2docker | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/boot2docker/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #97]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/02/newsletter-number-97/"/>
+    <updated>2015-07-02T11:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/02/newsletter-number-97</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>Always on the move: Our brand new office (WIP).</p>
+
+<p><img class="center" src="/images/posts/new_office.jpg"></p>
+
+<p>Here you can find our last list of links:</p>
+
+<ul>
+<li><p><a href="https://tideways.io/profiler/blog/5-doctrine-orm-performance-traps-you-should-avoid">5 Doctrine ORM Performance Traps You Should Avoid &ndash; Blog &ndash; Tideways</a></p></li>
+<li><p><a href="https://github.com/chjj/tng">A full-featured PNG renderer for the terminal</a></p></li>
+<li><p><a href="http://criu.org/Main_Page">CRIU &ndash; checkpoint/restore functionality for Linux in userspace</a></p></li>
+<li><p><a href="http://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/">Callbacks, synchronous and asynchronous</a></p></li>
+<li><p><a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">Container Queries: Once More Unto the Breach · An A List Apart Article</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.slideshare.net/jpetazzo/containers-from-development-to-production-at-devnation-2015">Containers: from development to production</a></p></li>
+<li><p><a href="https://github.com/jserv/kernel-in-kernel">Develop your own OS kernel by reusing Linux infrastructure</a></p></li>
+<li><p><a href="http://davidwalsh.name/developers-wordpress-amateurs-squarespace-professional-designers-webydo">Developers Have WordPress, Amateurs Have Squarespace, Professional Designers Have the NEW Webydo!</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/06/dockercon-2015-videos-day-1-advanced-tech/">DockerCon 2015 Videos: Day 1 of Advanced Tech | Docker Blog</a></p></li>
+<li><p><a href="http://www.udidahan.com/2015/02/02/finding-service-boundaries-%E2%80%93-illustrated-in-healthcare/">Finding Service Boundaries (illustrated in healthcare)</a></p></li>
+<li><p><a href="https://github.com/flyjs/fly">FlyJs: New Generation Build System</a></p></li>
+<li><p><a href="http://taligarsiel.com/Projects/howbrowserswork1.htm">How browsers work</a></p></li>
+<li><p><a href="http://www.quora.com/Emulators-computing/How-does-bellard-org-jslinux-work">How does jslinux work?</a></p></li>
+<li><p><a href="http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide">How to Use Docker on OS X: The Missing Guide | Viget</a></p></li>
+<li><p><a href="http://appendto.com/2015/06/making-sense-of-git-a-visual-perspective/">Making Sense of Git &ndash; A Visual Perspective</a></p></li>
+<li><p><a href="http://www.leancrew.com/all-this/2011/12/more-shell-less-egg/">On simplicity of computer programming</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=J9emzl_VmIs">PhpStorm: 42 Tips and Tricks Talk by Mikhail Vink, Dutch PHP Conference 2015</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/refactoring-pipelines.html">Refactoring with Loops and Collection Pipelines</a></p></li>
+<li><p><a href="http://www.marcotroisi.com/the-ethics-of-code-reviews/">The Ethics of Code Reviews</a></p></li>
+<li><p><a href="https://blazemeter.com/blog/top-10-monitoring-tools-every-devops-needs">Top 10 Monitoring Tools that Every DevOps Needs</a></p></li>
+<li><p><a href="http://www.strapui.com/themes/utoo-material-angularjs-theme/">Utoo Material AngularJS Theme &ndash; StrapUI</a></p></li>
+<li><p><a href="https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c">boot2docker together with VirtualBox Guest Additions</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #96]]></title>
+    <link href="http://namshi.github.io/blog/2015/06/25/newsletter-number-96/"/>
+    <updated>2015-06-25T16:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/06/25/newsletter-number-96</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>We hope you are enjoying the lesser working hours because of Ramadan, here are the usual links to enjoy over the weekend.</p>
+
+<h3>and a huge list of links for you:</h3>
+
+<ul>
+<li><p><a href="http://mysqlha.blogspot.ae/2008/07/do-you-really-want-to-use-xa-with-mysql.html">Do you really want to use XA with MySQL?</a></p></li>
+<li><p><a href="http://www.agilejourneyman.com/2012/05/you-build-it-you-run-it.html">You Build It, You Run It</a></p></li>
+<li><p><a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">Teach, Don&rsquo;t Tell / Steve Losh</a></p></li>
+<li><p><a href="http://stackshare.io/posts/how-docker-was-born">How Docker Was Born</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/SacrificialArchitecture.html">Sacrificial Architecture</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://martinfowler.com/articles/tor-for-technologists.html">Tor for Technologists</a></p></li>
+<li><p><a href="http://antirez.com/news/90">Commit messages are not titles &ndash; Antirez weblog</a></p></li>
+<li><p><a href="https://www.npmjs.com/package/nd">nd documentation viewer on terminal</a></p></li>
+<li><p><a href="http://www.pagetable.com/?p=831">xhyve – Lightweight Virtualization on OS X Based on bhyve | pagetable.com</a></p></li>
+<li><p><a href="https://github.com/ailispaw/boot2docker-xhyve?utm_content=buffer3becc">ailispaw/boot2docker-xhyve</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/its-all-good-the-false-dichotomy-between-planned-and-improvisational-projects/983573665008831">It&rsquo;s All Good: The False Dichotomy Between Planned and Improvisational Projects</a></p></li>
+<li><p><a href="http://qafoo.com/blog/075_developers_life_trade_off.html">Developers Life is a Trade-Off</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/itsNotJustStandingUp.html">It&rsquo;s Not Just Standing Up: Patterns for Daily Standup Meetings</a></p></li>
+<li><p><a href="https://github.com/coodict/javascript-in-one-pic">Learn JS in one picture</a></p></li>
+<li><p><a href="http://www.johndcook.com/blog/2015/06/18/most-important-skill-in-software/">The most important skill in software development </a></p></li>
+<li><p><a href="http://endoflineblog.com/gitflow-considered-harmful">GitFlow considered harmful</a></p></li>
+<li><p><a href="http://blog.codeclimate.com/blog/2015/06/19/code-climate-platform/">The Code Climate Platform &ndash; Code Climate Blog</a></p></li>
+<li><p><a href="http://www.javaworld.com/article/2937781/java-app-dev/devops-for-developers.html">Devops for developers</a></p></li>
+<li><p><a href="https://blog.newrelic.com/2015/06/19/docker-monitoring-general-availability/?mkt_tok=3RkMMJWWfF9wsRonv63Me+/hmjTEU5z17u0vUa+ygokz2EFye+LIHETpodcMTcBlMbvYDBceEJhqyQJxPr3BLdIN189uRhnrDA==">New Relic’s Docker Monitoring Now Generally Available</a></p></li>
+<li><p><a href="http://marijnhaverbeke.nl/blog/common-lisp-monads.html?utm_content=bufferd9120">Why monads have not taken the Common Lisp world by storm (2008)</a></p></li>
+<li><p><a href="http://jpetazzo.github.io/2015/01/14/amazon-docker-ecs-ec2-container-service/?utm_content=buffer85cb6">My notes on Amazon&rsquo;s ECS (EC2 Container Service), aka Docker on AWS</a></p></li>
+<li><p><a href="http://stackshare.io/posts/how-docker-was-born?utm_content=buffere7c7d">How Docker Was Born</a></p></li>
+<li><p><a href="http://jpetazzo.github.io/2015/05/27/docker-images-vulnerabilities/?utm_content=buffer0ece1">Someone said that 30% of the images on the Docker Registry contain vulnerabilities</a></p></li>
+<li><p><a href="http://symfony.com/blog/symfony-support-stack-overflow-as-the-main-medium">Symfony Support: Stack Overflow as the Main Medium</a></p></li>
+<li><p><a href="http://www.prototypingwithframer.com/zero-inbox-animation/">Creating the Zero Inbox Animation | Prototyping with Framer</a></p></li>
+<li><p><a href="http://framerjs.com/">Framer &ndash; Prototyping Tool for Designing UI, Interaction and Animation</a></p></li>
+<li><p><a href="https://medium.com/@jbae/how-to-make-a-prototype-in-3-days-5cbb5a573ada?ref=webdesignernews.com">How to Make a Prototype in 3 Days — Medium</a></p></li>
+<li><p><a href="http://heydesigner.com/material-design-is-design-science/">Material Design is design science | HeyDesigner</a></p></li>
+<li><p><a href="http://www.quora.com/Are-good-gaming-laptops-good-for-programming">Are good gaming laptops good for programming?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

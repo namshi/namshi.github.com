@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software development | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/software-development/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Developers don't write code, they write essays]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/04/developers-dont-write-code-they-write-essays/"/>
+    <updated>2014-06-04T21:07:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/04/developers-dont-write-code-they-write-essays</id>
+    <content type="html"><![CDATA[<p>I am always amazed by the quantity of errors I make,
+on a daily basis, when writing some code: it&rsquo;s true that&rsquo;s
+not my <strong>primary</strong> job, but at the same
+time it always feels painful to find bugs or edge cases.</p>
+
+<p>But one of the things I&rsquo;m usually good at it&rsquo;s trying
+to keep things as universal, simple and self-explanatory
+as possible, as I&rsquo;ve learnt, so far, that the worst enemy
+of my code is <strong>me in 6 months</strong>.</p>
+
+<!-- more -->
+
+
+<p>Today, for example, I was discussing with <a href="/blog/2014/05/26/welcome-lucio/">Lucio</a>
+how to handle a list of errors: suppose that the user
+performs an action that generates a bunch of errors, and that
+you have an error handler that needs to deal with all of them.</p>
+
+<p>The error handler might receive a list of these errors, process
+them one by one and then let other guys take the stage: a common
+solution would be to feed the handler the list of errors and let it
+pop them from the list as soon as he&rsquo;s  <em>handled</em> them.</p>
+
+<p>``` ruby Some pseudo code
+class ErrorHandler {</p>
+
+<pre><code>property queue;
+
+def addError (error) {
+    queue.push(error);
+}
+
+def handle () {
+    foreach (error in queue) {
+        doStuff(error);
+    }
+}
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Nothing exceptional with the pseudo-code above, but we were wondering
+(as our piece of code is a bit more complex) how to name the list of
+errors that the handler deals with to make it a bit more declarative.</p>
+
+<p>Since the error handler acts as a <a href="http://en.wikipedia.org/wiki/FIFO">FIFO</a>
+it felt natural, for Lucio, call this a <strong>queue</strong>. I suggested <strong>stack</strong>
+but upon thinking about it we agreed that since a stack act as
+<a href="http://en.wikipedia.org/wiki/LIFO_(computing">LIFO</a> it wasn&rsquo;t the best idea.</p>
+
+<p><a href="http://www.cs.cmu.edu/~adamchik/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html">Things like this</a> might sound silly, but they <strong>extremely important</strong>
+when you work with other ten people on a complex domain that
+you are trying to keep as simple (and real) as possible.</p>
+
+<p>We often forget that translating concepts into working code is our
+main duty, and by doing so we need to keep things as clear / clean as possible:
+how many times did you hear <em>&ldquo;Oh that guy wrote it, he knows how it works, ask him&rdquo;</em>?
+I cry everytime I hear that.</p>
+
+<p>When you are assigned a task, first think of the simplest and most exhaustive
+solution, then write the code: your job is not measured by lines of code, but by
+working software, which means maintainable, decoupled, easy to understand, (ultimately)
+beautiful code.</p>
+
+<p>What is the difference between an essay and some code? Ideally there is none:</p>
+
+<ul>
+<li>you explain / implement a concept / feature</li>
+<li>your artifact needs to be understandable</li>
+<li>it targets 2 audiences
+
+<ul>
+<li>a technical one, which needs to be able to understand it in depth</li>
+<li>a more general one, which needs to grasp the main concepts</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Actually, there is <strong>one</strong> difference between essays and software development: the
+language they&rsquo;re written in.</p>
+
+<p>But they all need to be self-explanatory, they
+all need to nail the problem without the need to dig too deep into
+the explanation, they all need to get straight to the point, making
+things explicit rather than implicit.</p>
+
+<p>Keep writing essays, no matter if in C, JavaScript or English. Just avoid COBOL.</p>
+]]></content>
+  </entry>
+  
+</feed>

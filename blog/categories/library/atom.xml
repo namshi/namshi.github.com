@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: library | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/library/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[winston-graylog2: a new life under Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi/"/>
+    <updated>2014-10-27T10:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi</id>
+    <content type="html"><![CDATA[<p>As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
+Having already in out tool belt a <a href="http://www.graylog2.org/">graylog2</a> facility in place, looking for a way to leverage it was the most natural thing to do.</p>
+
+<p>Because of its nice modular <code>transports feature</code> our node-logging weapon of choice is <a href="https://github.com/flatiron/winston">winston</a>, the <code>graylog2</code> transport library looked a bit alone though and in need of a maintainer.
+I our usual <strong>give back</strong> spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)</p>
+
+<p>As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the <a href="https://github.com/Wizcorp/node-graylog2">node-graylog2</a> library:
+they&rsquo;ll most likely do a better job than us on the protocol side, and we&rsquo;ll be able to focus more on the winston integration.
+We also started introducing some basic tests: definitely some better work can be done on this side ;)</p>
+
+<p>So here it is: <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>
+and here&rsquo;s briefly how you use it:</p>
+
+<p>the usual
+<code>bash
+npm install winston-graylog2
+</code>
+and then</p>
+
+<p>```javascript
+  var winston = require(&lsquo;winston&rsquo;);
+  winston.add(require(&lsquo;winston-graylog2&rsquo;), options);</p>
+
+<p>```</p>
+
+<p>or</p>
+
+<p>```javascript
+var WinstonGraylog2 = require(&lsquo;winston-graylog2&rsquo;);
+var logger = new(winston.Logger)({</p>
+
+<pre><code>    exitOnError: false,
+    transports: [new(WinstonGraylog2)(options)]
+  });
+</code></pre>
+
+<p>```</p>
+
+<p>Enjoy! :)</p>
+
+<p>Publishing something new is always a great feeling, and it&rsquo;s even more fulfilling when it involves not letting a project die :)<br> So let us know if you like it and share the love with some RP!!!! ;)</p>
+]]></content>
+  </entry>
+  
+</feed>

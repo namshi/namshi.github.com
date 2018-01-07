@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Lightning talks | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/lightning-talks/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Lightning talks #3]]></title>
+    <link href="http://namshi.github.io/blog/2016/10/17/lightning-talks-17-10-2016/"/>
+    <updated>2016-10-17T00:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/10/17/lightning-talks-17-10-2016</id>
+    <content type="html"><![CDATA[<blockquote><p>At Namshi, as you probably know, we do several activities, like &ndash; small presentations about new technologies,
+showcases of the latest projects, watching interesting conference talks, etc.
+We had our third edition of lightning talk. Each of our team members gave a small presentation about something they found interesting.
+Here is a recap of what they spoke about, and we hope you will find it interesting as well!</p></blockquote>
+
+<!-- more -->
+
+
+<p><a href="/team/#Alessandro%20Nadalin">Alex</a> Spoke about some tricks in bash</p>
+
+<p><a href="team/#Hossam%20Fares">Hossam</a> Explained how to use generators for sequential promises</p>
+
+<p><a href="team/#Mohamed%20Amin">Amin</a> Spoke about Promises Breakdown</p>
+
+<p><a href="team/#Ayham%20Alzoubi">Ayham</a> Introduced the await/async features in nodejs to the team</p>
+
+<p><a href="team/Joe%20Jean">Joe</a> Gave an example about how to use the shortest path algorithm</p>
+
+<p><a href="team/#Oluwaseun%20Obajobi">Oba</a> Gave us some system tweaks</p>
+
+<p><a href="team/#Shidhin%20CR">Shidhin</a> Showed us some tips in Chrome DevTools</p>
+
+<p><a href="team/#Geshan%20Manandhar">Geshan</a> Introduced CodeceptJs as a modern acceptance testing tool for NodeJS to the team</p>
+
+<p><a href="">Samar</a> Spoke about Artificial Intelligence Markup Language (AIML)</p>
+
+<p><a href="team/#Adedamola%20Disu">Disu</a> Showed us the benefits of The Great Suspender Chrome extension</p>
+
+<p><a href="team/#filippo%20de%20santis">Filo</a> Mentioned Yarn package manager and Nock as mocking library</p>
+
+<p>And here are the slides:</p>
+
+<iframe src="https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p><a href="https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/pub?start=false&amp;loop=false&amp;delayms=3000">https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/pub?start=false&amp;loop=false&amp;delayms=3000</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Lightning talks #2]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016/"/>
+    <updated>2016-01-25T12:08:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/lighting-talks-2.png"></p>
+
+<blockquote><p>At Namshi, as you probably know, we do several activities in parallel, like &ndash; small presentations about new technologies,
+showcases of the latest projects, watching interesting conference talks, etc.
+Sometimes we get together and some of the team members give a small presentation, lightning talks, about something they found really interesting.
+Here is a recap of the last lightning talks we had, and we hope, like the weekly newsletter, you will find it interesting as well!</p></blockquote>
+
+<!-- more -->
+
+
+<p><a href="/team/#Alessandro%20Cinelli%20(cirpo">Cirpo</a></p>
+
+<p><strong>My billion dollar mistake</strong></p>
+
+<p>How the invention of the null reference is affecting the software industry:</p>
+
+<iframe src="https://docs.google.com/presentation/d/1OQCFWKeGYJbNWy5z0O1IG8I07SsxOtwQjfohhBZo3mc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team/#Filippo%20De%20Santis">Filo</a></p>
+
+<p><a href="letsencrypt.org">Let’s Encrypt</a> is a free, automated, and open certificate authority (CA), run for the public’s benefit.</p>
+
+<p>The idea behind this project is to push for a more secure, transparent and open web. It provides free TLS/SSL certificates in an automated way, developing all its tools as open source projects</p>
+
+<iframe src="https://docs.google.com/presentation/d/1ztJha7JaJP087YJ1l28l42sVkqBNjbCgm0oAz0lrj_g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team#David%20Funaro">David</a></p>
+
+<p><strong>Freshshell</strong>
+ Your terminal is really personal thing: during your career you probably change its features with plugins, configuration and everything that can be useful for you. So why not automate the way you can configure it? Think what is happening every time you have a brand new you pc in front of you &hellip; or even working with multiple computers (home, work).</p>
+
+<iframe src="https://docs.google.com/presentation/d/1TnaYDqk0uw36oEiuWx6H_HVM0sMwULjej78MoS4ngmE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team/#Ayham%20Alzoubi">Ayham</a></p>
+
+<p><strong>Boomerang, SOAP &amp; REST Client</strong></p>
+
+<p>It&rsquo;s a really powerful Chrome extension.
+It lets you upload the WSDL and then you can create a request, it will create the structure for you and with the default values.
+You can debug and save the requests and responses, change the http headers and parameters, and also you can use different types of authentication, import/export  to json file to save your projects.
+<a href="https://chrome.google.com/webstore/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=en">Check it out</a></p>
+
+<hr />
+
+
+<p><a href="/team#Mohamed%20Amin">Amin</a></p>
+
+<p>He gave an introduction to <strong>Flexbox</strong> and <strong>css3</strong>. To get a great overview about Flexbox just browse  <a href="https://egghead.io/lessons/misc-flexbox-fundamentals">egghead.io</a>
+You can play with his examples <a href="http://codepen.io/Mohamedamin/pen/xZdBNg">here</a></p>
+
+<hr />
+
+
+<p><a href="/team#Shidhin%20CR">Shidhin</a></p>
+
+<p><a href="http://emmet.io/">Emmet</a> ( previously known as Zen coding ) is a plugin to enhance development workflow. By using simple css-selectors and html short-codes, it helps to generate the code snippets in seconds."</p>
+
+<iframe src="https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p><a href="https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.gc6f73a04f_0_42">https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.gc6f73a04f_0_42</a></p>
+
+<hr />
+
+
+<p><a href="/team/#Alessandro%20Nadalin">Alex</a></p>
+
+<p>Alex gave us a show case about interesting libraries he found on github:</p>
+
+<ul>
+<li><a href="https://github.com/hacksparrow/remote.js">remote.js</a></li>
+<li><a href="https://github.com/lukasmartinelli/nigit">nigit</a></li>
+</ul>
+
+
+<p>And he showed us his first steps/experiments with <a href="https://webpack.github.io/">Webpack</a>, the module bundler:</p>
+
+<ul>
+<li><a href="https://github.com/odino/webpack-example">https://github.com/odino/webpack-example</a></li>
+<li><a href="https://github.com/odino/dev/blob/master/play/Dockerfile">https://github.com/odino/dev/blob/master/play/Dockerfile</a> / <a href="https://github.com/odino/dev/blob/master/aliases#L4-L6">https://github.com/odino/dev/blob/master/aliases#L4-L6</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

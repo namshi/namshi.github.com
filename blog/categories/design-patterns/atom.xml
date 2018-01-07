@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: design-patterns | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/design-patterns/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #101]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/30/newsletter-number-101/"/>
+    <updated>2015-07-30T12:56:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/30/newsletter-number-101</id>
+    <content type="html"><![CDATA[<p>Hi guys, even after the 100th newsletter we still have something to suggest you.</p>
+
+<p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
+
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+
+<!-- more -->
+
+
+<p>Here the links, enjoy:</p>
+
+<ul>
+<li><p><a href="https://developer.salesforce.com/blogs/engineering/2015/07/365-days-cultural-kaizen.html">365 days of cultural kaisen</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/php-optimizer">a cfg optimizer for php</a></p></li>
+<li><p><a href="http://www.slideshare.net/Codemotion/orlando-mashapebuildsuccessful-apis">building successful apis overnight</a></p></li>
+<li><p><a href="https://speakerdeck.com/jnewland/chatops-at-github">chatops at github</a></p></li>
+<li><p><a href="http://addyosmani.com/first/">components should be focused, independent, reusable, small and testable (first)</a></p></li>
+<li><p><a href="https://speakerdeck.com/derekprior/cultivating-a-code-review-culture">cultivating a code review culture // speaker deck</a></p></li>
+<li><p><a href="https://github.com/p8952/bocker">docker implemented in 100 lines of bash</a></p></li>
+<li><p><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/">es6 in depth: arrow functions ✩ mozilla hacks – the web developer blog</a></p></li>
+<li><p><a href="https://www.nginx.com/blog/how-nginx-plans-to-support-http2/">how nginx plans to support http/2</a></p></li>
+<li><p><a href="https://medium.com/@jeffbski/is-react-js-fast-faster-than-framework-or-are-there-more-relevant-questions-to-be-asking-bcf40211f89b">is react.js fast? faster than {framework}? … or are there more relevant questions to be asking? — medium</a></p></li>
+<li><p><a href="http://managingbias.fb.com/">managing bias | facebook</a></p></li>
+<li><p><a href="http://mashable.com/2015/07/29/microsoft-edge-vs-google-chrome/?utm_cid=mash-com-fb-tech-link">microsoft edge vs. google chrome: which web browser is faster?</a></p></li>
+<li><p><a href="https://medium.com/@kevincennis/on-unit-testing-1cc6798f81ee">on unit testing by kevin cennis</a></p></li>
+<li><p><a href="http://www.jamiembrown.com/blog/one-in-every-600-websites-has-git-exposed/">one in every 600 websites has .git exposed</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/06/09/react-contexts-and-dependency-injection/">react contexts and dependency injection — jack hsu</a></p></li>
+<li><p><a href="https://www.firebase.com/blog/2015-07-15-reactfire-0-5-0.html">reactfire 0.5.0 &ndash; firebase</a></p></li>
+<li><p><a href="http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html">seven surprising javascript &lsquo;features&rsquo;</a></p></li>
+<li><p><a href="http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/">the hitchhiker&rsquo;s guide to modern javascript tooling</a></p></li>
+<li><p><a href="https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04">the real 10 algorithms that dominate our world — medium</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">the ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930">understanding design patterns in javascript &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/way-we-work-ef431646ab17">way we work — medium engineering</a></p></li>
+<li><p><a href="https://www.pagerduty.com/blog/what-is-chatops/">what is chatops? and how do i get started?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

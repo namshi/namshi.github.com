@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tmux | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/tmux/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Lighting talks #1]]></title>
+    <link href="http://namshi.github.io/blog/2015/04/26/lighting-talks-1/"/>
+    <updated>2015-04-26T11:59:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/04/26/lighting-talks-1</id>
+    <content type="html"><![CDATA[<blockquote><p>On Thursday afternoons the Namshi tech team usually spend some times together, either watching an interesting tech video
+or having a small retrospective on what&rsquo;s going on together.</p>
+
+<p>Last Thursday we introduced a new activity: The Namshi Tech Lighting talks.
+As you probably know, sharing knowledge and experience is very important for us, that&rsquo;s why we decided to have this new activity where everyone in
+the team is showing an interesting library/tool.</p>
+
+<p>And we want also to share this with you!</p></blockquote>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a>, one of our frontend developers, showed us a very good way to perform functional test on the UI</li>
+</ul>
+
+
+<p><a href="http://funcunit.com/">http://funcunit.com/</a></p>
+
+<p>This is a simple and powerful example written by him:
+<a href="http://www.niteshsharma.com/js.metalist/tests/functional/specrunner.html">http://www.niteshsharma.com/js.metalist/tests/functional/specrunner.html</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Filippo%20De%20Santis">Filippo</a>, from the backend team, talked about a new programming language: Elixir</li>
+</ul>
+
+
+<p><a href="http://elixir-lang.org/getting-started/introduction.html">http://elixir-lang.org/getting-started/introduction.html</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Mohamed%20Amin">Amin</a>, from the frontend team, showed us a fancy way of filling empty gaps in the layout:</li>
+</ul>
+
+
+<p><a href="http://packery.metafizzy.co/">http://packery.metafizzy.co/</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Ayham%20Alzoubi">Ayham</a>, from the backend team, gave a showcase about some very handy libraries he used in our nodejs projects:</li>
+</ul>
+
+
+<p><a href="https://github.com/nfriedly/express-rate-limit">https://github.com/nfriedly/express-rate-limit</a></p>
+
+<p><a href="https://github.com/medikoo/memoize">https://github.com/medikoo/memoize</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#David">David</a>, a Symfony lover, talked about new cool stuff on the latest Symfony release, a friendly curl client written in python and
+a useful git plugin for Sublime editor:</li>
+</ul>
+
+
+<p><a href="http://symfony.com/blog/new-in-symfony-2-6-vardumper-component">http://symfony.com/blog/new-in-symfony-2-6-vardumper-component</a></p>
+
+<p><a href="https://github.com/jakubroztocil/httpie#examples">https://github.com/jakubroztocil/httpie#examples</a></p>
+
+<p><a href="http://www.jisaacks.com/gitgutter#shocked">http://www.jisaacks.com/gitgutter#shocked</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a>, went really low level and showed us some tips and tricks to understand what&rsquo;s going on a network.</li>
+</ul>
+
+
+<p><a href="http://nmap.org/">http://nmap.org/</a></p>
+
+<p><a href="https://www.wireshark.org/">https://www.wireshark.org/</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Hossam%20Faris">Hossam</a>, showed us some good tips and advice on how to use promises:</li>
+</ul>
+
+
+<p><a href="http://taoofcode.net/promise-anti-patterns/">http://taoofcode.net/promise-anti-patterns/</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, shared how tmux and CDPATH can enhance your terminal usage experience:</li>
+</ul>
+
+
+<p><a href="http://tmux.sourceforge.net/">http://tmux.sourceforge.net/</a>
+<a href="https://gist.github.com/henrik/1967800">https://gist.github.com/henrik/1967800</a></p>
+
+<p><a href="http://linux.101hacks.com/cd-command/cdpath/">http://linux.101hacks.com/cd-command/cdpath/</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a>, one of our frontend developers, showed us a nice tool to analyze and optimize your website speed and performance,
+and he also talked about the easiest way to use git, the regular expressions in JS, and how to run the terminal inside Chrome:</li>
+</ul>
+
+
+<p><a href="https://github.com/sitespeedio/sitespeed.io">https://github.com/sitespeedio/sitespeed.io</a></p>
+
+<p><a href="https://github.com/FredrikNoren/ungit">https://github.com/FredrikNoren/ungit</a></p>
+
+<p><a href="https://github.com/VerbalExpressions/JSVerbalExpressions">https://github.com/VerbalExpressions/JSVerbalExpressions</a></p>
+
+<p><a href="https://github.com/petethepig/devtools-terminal">https://github.com/petethepig/devtools-terminal</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>, our system admin, showed us an open source system-level tool for analyzing docker containers:</li>
+</ul>
+
+
+<p><a href="https://github.com/draios/sysdig/wiki/Container-Enabled-Chisels">https://github.com/draios/sysdig/wiki/Container-Enabled-Chisels</a></p>
+
+<ul>
+<li><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, shared a simple library that allows you to run commands on multiple hosts via SSH,
+and also he showed how to extend services in docker containers, and how to get your container metrics:</li>
+</ul>
+
+
+<p><a href="https://github.com/crosbymichael/slex">https://github.com/crosbymichael/slex</a></p>
+
+<p><a href="https://github.com/docker/compose/pull/1088">https://github.com/docker/compose/pull/1088</a></p>
+
+<p><a href="https://github.com/docker/docker/pull/9984">https://github.com/docker/docker/pull/9984</a></p>
+
+<p>See you again at the next Namshi Tech Lighting talks!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #59]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/09/newsletter-number-59/"/>
+    <updated>2014-10-09T11:44:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/09/newsletter-number-59</id>
+    <content type="html"><![CDATA[<p>Hello, It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a> again!</p>
+
+<blockquote><p>News from the IT Team:
+Well, not so much today, it was a short week thanks to the cool EID break :)</p></blockquote>
+
+<p>But what has the team been looking at over the past week? Below
+you&rsquo;ll find the usual list of interesting articles we discovered
+in the past 7 days.</p>
+
+<ul>
+<li><p><a href="http://www.sitepoint.com/anatomy-javascript-mv-framework/">JavaScript MV* Framework compared</a></p></li>
+<li><p><a href="http://gajus.com/blog/2/the-definetive-guide-to-the-javascript-generators">The Definitive Guide to the JavaScript Generators</a></p></li>
+<li><p><a href="http://bit.ly/10TxPHK">Cyclomatic and NPath complexity explained</a></p></li>
+<li><p><a href="http://bit.ly/1xrDuPY">Best Practices for Designing a Pragmatic RESTful API</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.sitepoint.com/preparing-ecmascript-6-new-string-methods/">ECMAScript 6 new String Methods</a></p></li>
+<li><p><a href="https://github.com/alexfernandez/prototypes">Interesting lib of utility function. Use with caution, it touched the prototype (as the name suggestes)</a></p></li>
+<li><p><a href="https://github.com/WhichBrowser/WhichBrowser">WhichBrowser &ndash; User agent sniffing gone too far</a></p></li>
+<li><p><a href="http://www.quora.com/What-are-some-things-that-programmers-and-computer-scientists-know-but-most-people-dont">Things that programmers know, but most people don&rsquo;t?</a></p></li>
+<li><p><a href="http://www.slideshare.net/Kevlin/worse-is-better-for-better-or-for-worse-38743956">Worse Is Better, for Better or for Worse</a></p></li>
+<li><p><a href="http://www.slideshare.net/jeharrell/9-antipatterns-for-nodejs-teams">9 anti-patterns for node.js teams</a></p></li>
+<li><p><a href="https://nakedsecurity.sophos.com/2014/10/07/dubai-police-add-facial-recognition-to-google-glass/">Dubai police add facial recognition to Google Glass</a></p></li>
+<li><p><a href="http://www.quora.com/How-does-a-computer-chip-work/answer/Subhasis-Das">How does a computer chip work?</a></p></li>
+<li><p><a href="http://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make">Top 10 mistakes AngularJS developers make</a></p></li>
+<li><p><a href="https://speakerdeck.com/ubermuda/a-multi-container-symfony2-setup-with-docker">A multi-container Symfony2 setup with Docker</a></p></li>
+<li><p><a href="http://buff.ly/1ndfRKh">Move Fast and Break Nothing</a></p></li>
+<li><p><a href="http://buff.ly/1vOKash">New in Symfony 2.6: Security component improvements</a></p></li>
+<li><p><a href="http://buff.ly/1vKUXni">Nightmare.js, a high level wrapper for phantomJS</a></p></li>
+<li><p><a href="http://buff.ly/1xjPkvB">A Symfony bundle for providing Rate Limiting for your APIs</a></p></li>
+<li><p><a href="http://buff.ly/1s72YSL">awesome shell</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=X6y-OyMPqfw">Design How Your Objects Talk Through Mocking</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=PSGEjv3Tqo0">The Better Parts, the new talk by Douglas Crockford. Mind blowing, not just for Js, about programming in general</a></p></li>
+<li><p><a href="https://speakerdeck.com/jaytaph/the-new-features-of-php-5-dot-6-webinar">PHP 5.6 new features</a></p></li>
+<li><p><a href="http://venturebeat.com/2014/10/06/the-cookie-is-dead-heres-how-facebook-google-and-apple-are-tracking-you-now/">The cookie is dead. Here’s how Facebook, Google, and Apple are tracking you now</a></p></li>
+<li><p><a href="http://codon.com/refactoring-ruby-with-monads">Refactoring Ruby with Monads</a></p></li>
+<li><p><a href="http://robots.thoughtbot.com/a-tmux-crash-course">A tmux Crash Course</a></p></li>
+<li><p><a href="http://zachholman.com/talk/move-fast-break-nothing/">Move Fast and Break Nothing</a></p></li>
+<li><p><a href="https://blog.twitter.com/2014/push-our-limits-reliability-testing-at-twitter">Push our limits &ndash; reliability testing at Twitter</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-6-bootstrap-form-theme">New in Symfony 2.6: Bootstrap form theme</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-6-simpler-security-voters">New in Symfony 2.6: Simpler Security Voters</a></p></li>
+<li><p><a href="https://github.com/dannyvankooten/AltoRouter">AltoRouter, simple PHP router inspired by Sinatra</a></p></li>
+<li><p><a href="https://medium.com/aws-activate-startup-blog/a-better-dev-test-experience-docker-and-aws-291da5ab1238">A Better Dev/Test Experience: Docker and AWS</a></p></li>
+<li><p><a href="http://www.calazan.com/docker-cleanup-commands/">Docker Cleanup Commands</a></p></li>
+<li><p><a href="http://geoffrey.io/a-php-development-environment-with-docker.html">A PHP development environment with Docker</a></p></li>
+<li><p><a href="http://www.slideshare.net/PuppetLabs/tag/puppetconf-2014">PuppetConf 2014 slides</a></p></li>
+<li><p><a href="https://github.com/airbnb/zonify">Zonify is a set of command line tools for managing Route53 DNS for an AWS infrastructure</a></p></li>
+<li><p><a href="https://practicingruby.com/articles/infrastructure-automation">Infrastructure automation by example</a></p></li>
+<li><p><a href="http://totems.co/blog/machine-learning-nodejs-gender-instagram/">Using Machine Learning and NodeJS to detect the gender of Instagram Users</a></p></li>
+<li><p><a href="http://tylergaw.com/articles/building-osx-apps-with-js">Building OS X Apps with JavaScript</a></p></li>
+<li><p><a href="http://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf">Writing a Simple Operating System from Scratch</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vagrant | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/vagrant/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #111]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/14/newsletter-number-111/"/>
+    <updated>2015-10-14T14:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/14/newsletter-number-111</id>
+    <content type="html"><![CDATA[<blockquote><p>Hey!</p>
+
+<p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
+
+<p><img class="center" src="/images/hug_an_engineer.jpg"></p>
+
+<p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
+
+<ul>
+<li><p><a href="http://www.alexkras.com/11-tips-to-improve-angularjs-performance/">11 tips to improve angularjs performance</a></p></li>
+<li><p><a href="https://medium.com/@orliesaurus/api-tools-for-every-occasion-10-api-tools-released-in-2015-i-can-t-live-without-d5947d9ca9c3">api tool for every occasion</a></p></li>
+<li><p><a href="https://github.com/rimusz/coreos-osx-gui">coreos-vagrant gui for mac os x</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.wired.com/2015/10/meet-walking-dead-hp-cisco-dell-emc-ibm-oracle/?utm_content=bufferff50e">dell. emc. hp. cisco. these tech giants are the walking dead | wired</a></p></li>
+<li><p><a href="http://ericjmritz.name/2015/09/29/display-random-git-tips-in-your-terminal/">display random git tips in your terminal</a></p></li>
+<li><p><a href="https://github.com/docker/swarm/pull/1292">docker swarm @1.0.0</a></p></li>
+<li><p><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></p></li>
+<li><p><a href="http://www.shortlistdubai.com/events-attractions/article/4739-dubai-to-abu-dhabi-commute-in-15-minutes?utm_content=buffer827ca">dubai to abu dhabi commute in 15 minutes? &ndash; city highlights &ndash; shortlist dubai</a></p></li>
+<li><p><a href="http://www.mfranc.com/unit-testing/good-unit-test-one-assert/">good unit test &ndash; one assert | pragmatic developer</a></p></li>
+<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/">how to write unmaintainable php code</a></p></li>
+<li><p><a href="http://shadowhand.me/immutable-data-structures-in-php/">immutable data structures in php</a></p></li>
+<li><p><a href="http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html">improving angular web app performance example. &ndash; better world by better software</a></p></li>
+<li><p><a href="http://blog.thoughtram.io//angular/2015/09/17/resolve-service-dependencies-in-angular-2.html">injecting services in services in angular 2</a></p></li>
+<li><p><a href="http://jsrocks.org/2015/09/javascript-iterables-and-iterators/">javascript iterables and iterators &ndash; js rocks</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">learn to stop using shiny new things and love mysql | pinterest engineering</a></p></li>
+<li><p><a href="http://www.lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator">new in php 7: null coalesce operator</a></p></li>
+<li><p><a href="http://nodetuts.com/series/asynchronous-programming.html">node tuts &ndash; asynchronous programming</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist | risingstack</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist</a></p></li>
+<li><p><a href="https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e">nodejs: a quick optimization advice</a></p></li>
+<li><p><a href="http://zachholman.com/posts/opt-in-transparency/">opt-in transparency</a></p></li>
+<li><p><a href="https://esdiscuss.org/topic/performance-concern-with-let-const">performance concern with let/const</a></p></li>
+<li><p><a href="http://geek.bluemangointeractive.com/react-router-an-introduction/">react router: a comprehensive introduction &ndash; by blue mango geek</a></p></li>
+<li><p><a href="https://github.com/sebastianbergmann/phpunit/wiki/Release-Announcement-for-PHPUnit-5.0.0">release announcement for phpunit 5.0.0</a></p></li>
+<li><p><a href="http://zachholman.com/posts/remote-first/">remote-first vs. remote-friendly</a></p></li>
+<li><p><a href="http://llvm.org/">the llvm compiler infrastructure project</a></p></li>
+<li><p><a href="https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/">top elb health and performance metrics</a></p></li>
+<li><p><a href="http://matschaffer.com/2015/01/what-to-monitor/">what should i monitor?</a></p></li>
+<li><p><a href="http://xip.io/?utm_content=buffer557a8">xip.io: wildcard dns for everyone</a></p></li>
+<li><p><a href="https://www.sitepen.com/blog/2015/10/08/stronger-javascript/">stronger javascript?</a></p></li>
+<li><p><a href="https://shellvatore.us/2015/10/09/please-stop-curl-wgeting-directly-to-bash-sh/">PLEASE STOP CURL/WGET'ING DIRECTLY TO BASH/SH</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #40]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/29/newsletter-number-40/"/>
+    <updated>2014-05-29T12:45:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/29/newsletter-number-40</id>
+    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+
+<ul>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
+<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
+<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
+  Five principles that should guide you every time you write code.
+  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
+<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
+<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
+<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
+<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
+<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
+<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
+<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
+<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
+<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
+<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
+<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
+<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
+<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
+<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: encryption | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/encryption/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #126]]></title>
+    <link href="http://namshi.github.io/blog/2016/03/03/newsletter-number-126/"/>
+    <updated>2016-03-03T14:41:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/03/03/newsletter-number-126</id>
+    <content type="html"><![CDATA[<blockquote><h1>TechThursday is here!</h1>
+
+<p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
+a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
+<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
+
+<p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
+And here is your weekly quota of some interesting links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/">8 ways to become a better coder</a></p></li>
+<li><p><a href="http://arxiv.org/abs/1602.07168">[1602.07168] zerodb white paper</a></p></li>
+<li><p><a href="http://www.noupe.com/inspiration/tutorials-inspiration/blob-storage-how-i-used-it-to-host-my-podcast-mp3-files-92313.html">blob storage: how i used it to host my podcast mp3 files | noupe</a></p></li>
+<li><p><a href="https://medium.com/ux-immersion-interactions/design-s-fully-baked-deliverables-and-half-baked-artifacts-761106df4ca9">design’s fully-baked deliverables and half-baked artifacts — ux immersion: interactions — medium</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://mrjoy.com/2016/02/14/docker_alpine_garbage_and_you/">docker, alpine, garbage and you &ndash; mrjoy</a></p></li>
+<li><p><a href="http://nauts.io/videos/2016/02/09/dockerize-your-development-workstation/">dockerize your development workstation</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=18PNEwt18P0">don&rsquo;t let chatops become chatoops &ndash; michael ansel</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">finding memory leaks in go programs</a></p></li>
+<li><p><a href="https://nathany.com/good/">go object oriented design</a></p></li>
+<li><p><a href="http://engineeredweb.com/blog/2016/path-go-pkg-mgmt/">how to fix the go package management problem</a></p></li>
+<li><p><a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a></p></li>
+<li><p><a href="http://developer.telerik.com/featured/leveling-up-your-javascript/">leveling up your javascript &ndash; telerik developer network</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-clock-mocking-and-time-sensitive-tests">new in symfony 2.8: clock mocking and time sensitive tests (symfony blog)</a></p></li>
+<li><p><a href="http://www.columnfivemedia.com/work-items/infographic-no-cart-left-behind-why-shoppers-arent-following-through-on-online-purchases">no cart left behind</a></p></li>
+<li><p><a href="http://venturebeat.com/2016/02/28/playtime-is-over-investors-want-their-money-back/?utm_content=buffer7feb5">playtime is over: investors want their money back</a></p></li>
+<li><p><a href="https://articles.uie.com/three_hund_million_button/">the $300 million button ux articles by uie</a></p></li>
+<li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

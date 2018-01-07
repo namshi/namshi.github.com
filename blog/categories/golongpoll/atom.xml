@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: golongpoll | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/golongpoll/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #115]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/19/newsletter-number-115/"/>
+    <updated>2015-11-19T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/19/newsletter-number-115</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
+
+<p><img class="center" src="/images/posts/oba-cirpo-docker-con-15.jpg"></p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="http://blog.takipi.com/7-essential-slack-integrations-developers-should-know/">7 essential slack integrations developers should know | takipi blog</a></p></li>
+<li><p><a href="http://magento.com/blog/magento-news/new-era-commerce-innovation?mkt_tok=3RkMMJWWfF9wsRolvanAZKXonjHpfsX66uQtWqawlMI/0ER3fOvrPUfGjI4CRMBqI+SLDwEYGJlv6SgFSbHNMbhiwrgOUhM=">a new era of commerce innovation | magento</a></p></li>
+<li><p><a href="https://coreos.com/blog/vulnerability-analysis-for-containers/?utm_content=buffer286eb">coreos introduces clair: open source vulnerability analysis for your containers</a></p></li>
+<li><p><a href="https://egghead.io/lessons/node-js-creating-a-fake-api-with-hapi-for-your-client-side-application">creating a fake api with hapi for your client-side application &ndash; node.js video tutorial </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://blog.docker.com/2015/11/deploy-manage-cluster-docker-swarm/?utm_content=buffer8101e">deploy and manage any cluster manager with docker swarm</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/11/dockercon-eu-2015-docker-universal-control-plane/?utm_content=buffer66692">dockercon eu 2015: docker trusted registry 1.4 with integrated content trust and universal control plane</a></p></li>
+<li><p><a href="https://speakerdeck.com/benvinegar/fsto-re-evaluating-front-end-peformance-best-practices">fsto: re-evaluating front-end peformance best practices // speaker deck</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/11/anonymous-hacker-isis.html">hey isis! check out how &lsquo;idiot&rsquo; anonymous hackers can disrupt your online propaganda &ndash; the hacker news</a></p></li>
+<li><p><a href="https://github.com/jcuga/golongpoll">jcuga/golongpoll</a></p></li>
+<li><p><a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">jessie frazelle&rsquo;s blog: docker containers on the desktop</a></p></li>
+<li><p><a href="https://github.com/nature/shunter">nature/shunter</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/08/01/node-js-at-netflix-with-yunong-xiao/">node.js at netflix with yunong xiao | software engineering daily</a></p></li>
+<li><p><a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/">on currying and partial function application</a></p></li>
+<li><p><a href="http://www.slideshare.net/joshuaswarren/phpspec-behat-two-testing-tools-that-write-code-for-you-phptek-edition">phpspec &amp; behat: two testing tools that write code for you </a></p></li>
+<li><p><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">progressive web apps: escaping tabs without losing our soul – infrequently noted</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/09/17/react-at-facebook-with-ben-alpert/">react at facebook with ben alpert &ndash; software engineering daily</a></p></li>
+<li><p><a href="http://redux.js.org/">redux &ndash; predictable state container for javascript apps</a></p></li>
+<li><p><a href="https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app?utm_term=server-rendering-redux">server-side rendering with redux and react-router | codementor</a></p></li>
+<li><p><a href="http://blog.golang.org/6years">six years of go</a></p></li>
+<li><p><a href="https://medium.com/engineering-leadership/software-engineer-traits-fbf5dee9289c">software engineer traits — engineering leadership — medium</a></p></li>
+<li><p><a href="http://www.sourcecodepoetry.com/">source code poetry</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/offline-cookbook/">the offline cookbook &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://blog.bufferapp.com/optimal-work-time-how-long-should-we-work-every-day-the-science-of-mental-strength?utm_content=buffer33b8e">the origin of the 8-hour work day and why we should rethink it</a></p></li>
+<li><p><a href="http://www.zerohedge.com/news/2015-11-10/unicorns-dropping-flies-first-dropbox-then-square-now-fidelity-cuts-snapchat-valuati">unicorns dropping like flies: first dropbox; then square; now fidelity cuts snapchat valuation by 25%</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/">what the web platform can learn from node.js &ndash; atlassian developers</a></p></li>
+<li><p><a href="http://joel.is/zero-notifications/">zero notifications</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

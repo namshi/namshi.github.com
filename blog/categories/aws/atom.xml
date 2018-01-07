@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: AWS | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/aws/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #93]]></title>
+    <link href="http://namshi.github.io/blog/2015/06/04/newsletter-number-93/"/>
+    <updated>2015-06-04T13:48:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/06/04/newsletter-number-93</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p><strong>Yet another post of our weekly newsletter to make your weekend more enjoyable :)</strong></p>
+
+<h3>Team updates:</h3>
+
+<p>Team congratulates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Odino</a> for his wedding that will be held today :)</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="http://blogs.windows.com/bloggingwindows/2015/06/01/hello-world-windows-10-available-on-july-29/">Hello World: Windows 10 Available on July 29</a></p></li>
+<li><p><a href="http://blog.500tech.com/is-reactjs-fast/">Is ReactJS really fast?</a></p></li>
+<li><p><a href="https://steveedson.co.uk/javascript/es6/">Using the future of JavaScript, today</a></p></li>
+<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.didoo.net/2015/06/web-tools-and-walls/">Web, tools and walls</a></p></li>
+<li><p><a href="http://motherboard.vice.com/en_uk/read/how-is-critical-life-or-death-software-tested">How Is Critical &lsquo;Life or Death&rsquo; Software Tested?</a></p></li>
+<li><p><a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/05/04/sql-server-2016-public-preview-coming-this-summer.aspx">SQL 2016-What&rsquo;s new</a></p></li>
+<li><p><a href="http://www.dbi-services.com/index.php/blog/entry/sql-server-2016-live-query-statistics">SQL Server 2016: Live query statistics</a></p></li>
+<li><p><a href="http://www.washingtonpost.com/sf/business/2015/05/31/net-of-insecurity-part-2/">The long  life of a quick ‘fix’</a></p></li>
+<li><p><a href="http://githubengineering.com/deploying-branches-to-github-com/">Deployments at Github.com</a></p></li>
+<li><p><a href="http://symfony.com/blog/psr-7-support-in-symfony-is-here">PSR-7 Support in Symfony is Here</a></p></li>
+<li><p><a href="https://kinsta.com/blog/hhvm-vs-php-7/">HHVM vs PHP 7 – The Competition Gets Closer!</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/developer-preview-of-aws-sdk-for-go-is-now-available/">Official Announcement of AWS Golang SDK Dev. Preview</a></p></li>
+<li><p><a href="http://blogs.msdn.com/b/powershell/archive/2015/06/03/looking-forward-microsoft-support-for-secure-shell-ssh.aspx">Looking Forward: Microsoft:  Support for Secure Shell (SSH) &ndash; MSDN Blogs</a></p></li>
+<li><p><a href="https://getmondo.co.uk/blog/">Mondo – It&rsquo;s time for a new kind of bank</a></p></li>
+<li><p><a href="http://www.passportjs.org/">Passport – Simple, unobtrusive authentication for Node.js</a></p></li>
+<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
+<li><p><a href="http://bit.ly/1FVjL0k">Docker for PHP developers</a></p></li>
+<li><p><a href="http://bit.ly/1dggqz3">ChatOps: Everything about deployments right inside your chat</a></p></li>
+<li><p><a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">Octpress 3.0 is comming</a></p></li>
+<li><p><a href="http://www.thatjsdude.com/interview/js1.html#removeDuplicate">JS: Interview Algorithm</a></p></li>
+<li><p><a href="https://sassline.com/">Set text on the web to a baseline grid with Sass &amp; rems</a></p></li>
+<li><p><a href="http://www.flexbox.website/">Building Flexbox website</a></p></li>
+<li><p><a href="http://sakurity.com/blog/2015/05/21/starbucks.html">Hacking Starbucks for unlimited coffee</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/developer-preview-of-aws-sdk-for-go-is-now-available">Developer Preview of AWS SDK for Go is Now Available</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A bit of Namshi at the 2014 AWS re:invent]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/"/>
+    <updated>2014-07-05T20:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent</id>
+    <content type="html"><![CDATA[<p><img class="left <a" src="href="http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png">http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png</a>" width="120"></p>
+
+<p>It&rsquo;s gonna be a great time in Las Vegas for
+<a href="/team#Oluwaseun%20Obajobi">Oba</a>, our Lead
+System Administrator, who is going to attend
+the 2014 edition of <a href="https://reinvent.awsevents.com/">AWS re:invent</a>,
+the international event for the cloud lovers.</p>
+
+<!-- more -->
+
+
+<p>re:invent, which is gonna gather professionals from
+all over the world, is definitely going to be a great
+source of inspiration for our systems, and we&rsquo;re
+very happy to have someone who will be able
+to get a closer look at best practices, processes
+and tools in the industry; to learn from the community
+and the industry leaders is something we value very
+much, here at Namshi.</p>
+
+<p>Never heard of re:invent before?</p>
+
+<ul>
+<li>the largest gathering of the AWS community</li>
+<li>sessions spread over <a href="https://reinvent.awsevents.com/sessions.html">20 topics</a></li>
+<li><a href="https://reinvent.awsevents.com/training.html#bootLink">bootcamps</a></li>
+<li>new AWS products get usually announced there</li>
+<li>on-the-spot <a href="https://reinvent.awsevents.com/training.html#certLink">certifications</a></li>
+</ul>
+
+
+<p>We wish Oba a safe trip there&hellip;   &hellip;and have
+a blast in the States!</p>
+]]></content>
+  </entry>
+  
+</feed>

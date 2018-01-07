@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dev | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/dev/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #126]]></title>
+    <link href="http://namshi.github.io/blog/2016/03/03/newsletter-number-126/"/>
+    <updated>2016-03-03T14:41:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/03/03/newsletter-number-126</id>
+    <content type="html"><![CDATA[<blockquote><h1>TechThursday is here!</h1>
+
+<p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
+a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
+<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
+
+<p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
+And here is your weekly quota of some interesting links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/">8 ways to become a better coder</a></p></li>
+<li><p><a href="http://arxiv.org/abs/1602.07168">[1602.07168] zerodb white paper</a></p></li>
+<li><p><a href="http://www.noupe.com/inspiration/tutorials-inspiration/blob-storage-how-i-used-it-to-host-my-podcast-mp3-files-92313.html">blob storage: how i used it to host my podcast mp3 files | noupe</a></p></li>
+<li><p><a href="https://medium.com/ux-immersion-interactions/design-s-fully-baked-deliverables-and-half-baked-artifacts-761106df4ca9">design’s fully-baked deliverables and half-baked artifacts — ux immersion: interactions — medium</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://mrjoy.com/2016/02/14/docker_alpine_garbage_and_you/">docker, alpine, garbage and you &ndash; mrjoy</a></p></li>
+<li><p><a href="http://nauts.io/videos/2016/02/09/dockerize-your-development-workstation/">dockerize your development workstation</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=18PNEwt18P0">don&rsquo;t let chatops become chatoops &ndash; michael ansel</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">finding memory leaks in go programs</a></p></li>
+<li><p><a href="https://nathany.com/good/">go object oriented design</a></p></li>
+<li><p><a href="http://engineeredweb.com/blog/2016/path-go-pkg-mgmt/">how to fix the go package management problem</a></p></li>
+<li><p><a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a></p></li>
+<li><p><a href="http://developer.telerik.com/featured/leveling-up-your-javascript/">leveling up your javascript &ndash; telerik developer network</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-clock-mocking-and-time-sensitive-tests">new in symfony 2.8: clock mocking and time sensitive tests (symfony blog)</a></p></li>
+<li><p><a href="http://www.columnfivemedia.com/work-items/infographic-no-cart-left-behind-why-shoppers-arent-following-through-on-online-purchases">no cart left behind</a></p></li>
+<li><p><a href="http://venturebeat.com/2016/02/28/playtime-is-over-investors-want-their-money-back/?utm_content=buffer7feb5">playtime is over: investors want their money back</a></p></li>
+<li><p><a href="https://articles.uie.com/three_hund_million_button/">the $300 million button ux articles by uie</a></p></li>
+<li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #125]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/18/newsletter-number-125/"/>
+    <updated>2016-02-18T12:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/18/newsletter-number-125</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>This week went by pretty fast,  as usual we have a new list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="http://zhen.org/blog/two-developers-walk-into-a-bar/">a modern app developer and an old-timer system developer walk into a bar </a></p></li>
+<li><p><a href="http://www.slideshare.net/gionn2/clustering-with-docker-swarm-dockerops-2016-cento-fe-italy">clustering with docker swarm &ndash; dockerops 2016 @ cento (fe) italy</a></p></li>
+<li><p><a href="https://ookami86.github.io/event-sourcing-in-practice/">event sourcing in practice</a></p></li>
+<li><p><a href="http://blog.golang.org/go1.6">go 1.6 is released !</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.proreactnative.com/How-to-Develop-iOS-Apps-on-Linux-Using-React-Native/">how to develop ios apps on linux using react native – pro react native – master your tools. build great apps.</a></p></li>
+<li><p><a href="http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html">how to do distributed locking</a></p></li>
+<li><p><a href="http://inviqa.com/insights/how-to-tackle-legacy-systems">how to work with legacy systems — inviqa</a></p></li>
+<li><p><a href="http://www.2ality.com/2016/02/js-fatigue-fatigue.html">javascript fatigue fatigue</a></p></li>
+<li><p><a href="http://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/">nick craver &ndash; stack overflow: the architecture &ndash; 2016 edition</a></p></li>
+<li><p><a href="https://rhonabwy.com/2016/01/31/six-rules-for-setting-up-continuous-integration-systems/">six rules for setting up continuous integration systems | rhonabwy</a></p></li>
+<li><p><a href="https://blog.8thlight.com/mike-knepper/2016/01/20/hidden-costs-of-leaving-a-monolith.html">the hidden costs of leaving a monolith</a></p></li>
+<li><p><a href="http://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/">the product managers' guide to continuous delivery and devops &ndash; mindtheproduct</a></p></li>
+<li><p><a href="https://medium.com/@producthunt/the-rise-and-fall-of-everest-the-app-b0d2e6cb594c">the rise and fall of everest (the app) </a></p></li>
+<li><p><a href="http://12factor.net/">the twelve-factor app</a></p></li>
+<li><p><a href="https://thephp.cc/news/2016/02/typed-arrays-in-php">thephp.cc &ndash; typed arrays in php</a></p></li>
+<li><p><a href="http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to">write code that is easy to delete, not easy to&hellip; — programming is terrible</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #96]]></title>
+    <link href="http://namshi.github.io/blog/2015/06/25/newsletter-number-96/"/>
+    <updated>2015-06-25T16:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/06/25/newsletter-number-96</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>We hope you are enjoying the lesser working hours because of Ramadan, here are the usual links to enjoy over the weekend.</p>
+
+<h3>and a huge list of links for you:</h3>
+
+<ul>
+<li><p><a href="http://mysqlha.blogspot.ae/2008/07/do-you-really-want-to-use-xa-with-mysql.html">Do you really want to use XA with MySQL?</a></p></li>
+<li><p><a href="http://www.agilejourneyman.com/2012/05/you-build-it-you-run-it.html">You Build It, You Run It</a></p></li>
+<li><p><a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">Teach, Don&rsquo;t Tell / Steve Losh</a></p></li>
+<li><p><a href="http://stackshare.io/posts/how-docker-was-born">How Docker Was Born</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/SacrificialArchitecture.html">Sacrificial Architecture</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://martinfowler.com/articles/tor-for-technologists.html">Tor for Technologists</a></p></li>
+<li><p><a href="http://antirez.com/news/90">Commit messages are not titles &ndash; Antirez weblog</a></p></li>
+<li><p><a href="https://www.npmjs.com/package/nd">nd documentation viewer on terminal</a></p></li>
+<li><p><a href="http://www.pagetable.com/?p=831">xhyve – Lightweight Virtualization on OS X Based on bhyve | pagetable.com</a></p></li>
+<li><p><a href="https://github.com/ailispaw/boot2docker-xhyve?utm_content=buffer3becc">ailispaw/boot2docker-xhyve</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/its-all-good-the-false-dichotomy-between-planned-and-improvisational-projects/983573665008831">It&rsquo;s All Good: The False Dichotomy Between Planned and Improvisational Projects</a></p></li>
+<li><p><a href="http://qafoo.com/blog/075_developers_life_trade_off.html">Developers Life is a Trade-Off</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/itsNotJustStandingUp.html">It&rsquo;s Not Just Standing Up: Patterns for Daily Standup Meetings</a></p></li>
+<li><p><a href="https://github.com/coodict/javascript-in-one-pic">Learn JS in one picture</a></p></li>
+<li><p><a href="http://www.johndcook.com/blog/2015/06/18/most-important-skill-in-software/">The most important skill in software development </a></p></li>
+<li><p><a href="http://endoflineblog.com/gitflow-considered-harmful">GitFlow considered harmful</a></p></li>
+<li><p><a href="http://blog.codeclimate.com/blog/2015/06/19/code-climate-platform/">The Code Climate Platform &ndash; Code Climate Blog</a></p></li>
+<li><p><a href="http://www.javaworld.com/article/2937781/java-app-dev/devops-for-developers.html">Devops for developers</a></p></li>
+<li><p><a href="https://blog.newrelic.com/2015/06/19/docker-monitoring-general-availability/?mkt_tok=3RkMMJWWfF9wsRonv63Me+/hmjTEU5z17u0vUa+ygokz2EFye+LIHETpodcMTcBlMbvYDBceEJhqyQJxPr3BLdIN189uRhnrDA==">New Relic’s Docker Monitoring Now Generally Available</a></p></li>
+<li><p><a href="http://marijnhaverbeke.nl/blog/common-lisp-monads.html?utm_content=bufferd9120">Why monads have not taken the Common Lisp world by storm (2008)</a></p></li>
+<li><p><a href="http://jpetazzo.github.io/2015/01/14/amazon-docker-ecs-ec2-container-service/?utm_content=buffer85cb6">My notes on Amazon&rsquo;s ECS (EC2 Container Service), aka Docker on AWS</a></p></li>
+<li><p><a href="http://stackshare.io/posts/how-docker-was-born?utm_content=buffere7c7d">How Docker Was Born</a></p></li>
+<li><p><a href="http://jpetazzo.github.io/2015/05/27/docker-images-vulnerabilities/?utm_content=buffer0ece1">Someone said that 30% of the images on the Docker Registry contain vulnerabilities</a></p></li>
+<li><p><a href="http://symfony.com/blog/symfony-support-stack-overflow-as-the-main-medium">Symfony Support: Stack Overflow as the Main Medium</a></p></li>
+<li><p><a href="http://www.prototypingwithframer.com/zero-inbox-animation/">Creating the Zero Inbox Animation | Prototyping with Framer</a></p></li>
+<li><p><a href="http://framerjs.com/">Framer &ndash; Prototyping Tool for Designing UI, Interaction and Animation</a></p></li>
+<li><p><a href="https://medium.com/@jbae/how-to-make-a-prototype-in-3-days-5cbb5a573ada?ref=webdesignernews.com">How to Make a Prototype in 3 Days — Medium</a></p></li>
+<li><p><a href="http://heydesigner.com/material-design-is-design-science/">Material Design is design science | HeyDesigner</a></p></li>
+<li><p><a href="http://www.quora.com/Are-good-gaming-laptops-good-for-programming">Are good gaming laptops good for programming?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

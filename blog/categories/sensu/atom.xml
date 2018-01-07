@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sensu | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/sensu/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Running Spot Instances in Production]]></title>
+    <link href="http://namshi.github.io/blog/2017/07/09/running-spot-instances-in-production/"/>
+    <updated>2017-07-09T10:12:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2017/07/09/running-spot-instances-in-production</id>
+    <content type="html"><![CDATA[<p>Around this time last year, we decided to try running subset of our customer-facing web traffic on spot instances.<br/>
+This decision was solely based to reduce our AWS instance bill. We&rsquo;ve heard of people running workloads on spot instances but most of the workloads are usually long-running jobs where you don&rsquo;t mind if the instance gets terminated at any time. Running customer-facing apps is a completely different challenge where we can&rsquo;t afford any downtime of any sort.</p>
+
+<!-- more -->
+
+
+<h3>Background</h3>
+
+<p>We are fully running <a href="https://kubernetes.io/">kubernetes</a> in production which makes it exciting for the challenge of how we can actually test chaos engineering in production with our microservices.<br/>
+We chose <a href="https://coreos.com/os/docs/latest/booting-on-ecs.html">CoreOS Container Linux</a> as our preferred operating system because of faster bootup time and it does only 2 things for us: docker service (for running containers) and flannel networking (for inter-pod networking).<br/>
+We use both launch configuration and autoscaling service to manage our fleet of spot instance.<br/></p>
+
+<p>Some of the questions we asked oursleves on how to setup a robust infrastructure to support any kind of termination of the spot instances</p>
+
+<ol>
+<li>How do we gracefully reschedule the pods to other nodes before the spot instance goes down?</li>
+<li>How do we handle the surge in price for one availability zone?</li>
+<li>How do we handle the surge in price for the whole region?</li>
+</ol>
+
+
+<h3>How do we gracefully reschedule the pods to other nodes before the spot instance goes down?</h3>
+
+<p>Gracefully rescheduling pods initially do seem straightforward until we started noticing some issues with image pulling from our private registry and the docker hosts. This usually happens as a result of spike requests if more than ten (10) images of around 200MB size are being pulled at the same time. There is <a href="https://kubernetes.io/docs/user-guide/kubectl/v1.6/#drain">kubectl drain</a> which works pretty well but not for us because of the issue mentioned earlier.</p>
+
+<p>Luckily, AWS introduced <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html">spot instance termination notice</a> which is a 2-min window to do cleanups before the spot-instance is terminated, we wrote a simple golang binary which watches the instance metadata for the termination notice and does the following within the 2-min grace:</p>
+
+<ul>
+<li>Detach the instance from the ELB (if applicable)</li>
+<li>Mark the instance as unschedulable</li>
+<li>Delete the pods with a sleep in-between of 10secs (This should take care of approximately 20pods, which is a very rare case for us)</li>
+</ul>
+
+
+<p>This binary is managed by a systemd service</p>
+
+<h2>```</h2>
+
+<p>coreos:
+  units:</p>
+
+<pre><code>- name: spot-terminate-cleaner.service
+  command: start
+  content: |
+    [Unit]
+    Description=Graceful cleanup of spot instances before termination
+    Requires=network-online.target
+    After=network-online.target
+    ConditionPathExists=/etc/spot
+
+    [Service]
+    ExecStart=/opt/bin/nm-tools spot-shutdown
+    Restart=always
+    RestartSec=10
+</code></pre>
+
+<p>```</p>
+
+<h3>How do we handle the surge in price for one availability zone?</h3>
+
+<p>It is advisable to run the spot-instances in at least two availability zones to cope with surge in price in one of the availability zones. If there is a price surge above the bidding price in one zone and the spot instances are terminated, autoscaling group service automatically launches the same number of terminated instances in the zone(s) with bidding price higher than the current spot price. With this, we achieve something close zero-downtime during the re-scaling activity.<br/></p>
+
+<p><img class="center" src="/images/spot-stage-1.png" width="500" title="price surge in one availability zone" ></p>
+
+<br/><br/>
+
+
+<p>This also poses another challenge when the spot price drops below the bidding price in the previously affected region. What happens is that two instances launched back in <code>eu-west-1b</code> while the same number of instances are terminated to balance the autoscaling desired capacity. In this activity, we are going to lose instances abruptly, but luckily AWS autocaling service has a feature called <a href="http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html">lifecycle hooks</a>.<br/></p>
+
+<p>To avoid abrupty autoscaling termination, we added a lifecycle hook for <code>autoscaling:EC2_INSTANCE_TERMINATING</code> transition state with the notification target as SQS. This sends an event containing the instance to be terminated to the SQS. We now have a python script (can be converted to a lambda function) which:</p>
+
+<ul>
+<li>Consumes the SQS message</li>
+<li>Detach the instance from the ELB (if applicable)</li>
+<li>Mark the instance as unschedulable</li>
+<li>Delete the pods with a sleep in-between of 10secs (This should take care of approximately 20pods, which is a very rare case for us)</li>
+<li>Delete the SQS message once the task is completed</li>
+</ul>
+
+
+<p>All the tasks above are completed within 2-min window to match the spot-instance termination notice period.</p>
+
+<h3>How do we handle the surge in price for the whole region?</h3>
+
+<p>We use <a href="https://sensuapp.org/">Sensu</a> as part of our monitoring stack and developed a simple sensu (ruby) check which compares the current spot price from AWS API against our bidding price used in the launch configuration. We do mark the check state as <strong>warning</strong> when the spot price is within the warning and critical threshold for all the zones in the region and the check is only marked as <strong>critical</strong> if the spot price is higher than our critical threshold in all the zones in the region. When the check state is critical, there is an auto-remediation script which switches the launch configuration of the autoscaling group for the spot instances from spot to on-demand (the script clones the current launch configuration, removes the spot price and replaces the launch config in the autoscaling group). With this, we don&rsquo;t end up with no running instances.</p>
+
+<p>```
+{
+  &ldquo;checks&rdquo;: {</p>
+
+<pre><code>"lc_spot_price_check": {
+  "command": "/etc/sensu/plugins-custom/check-lc-spot-price.rb -n namshi-spot -r :::aws.region:::",
+  "subscribers": [ "aws" ],
+  "interval": 60,
+  "refresh": 14400,
+  "handlers": [ "default", "ses", "remediator" ],
+  "remediation": {
+    "lc_spot_price_check_remediation": {
+      "occurrences": [1, 2],
+      "severities": [2]
+    }
+  }
+},
+"lc_spot_price_check_remediation": {
+  "command": "sudo /usr/bin/salt-call spot_price.update_spot_asg namshi-spot ondemand=True",
+  "subscribers": [],
+  "handlers": [ "default", "ses" ],
+  "interval": 10,
+  "publish": false
+}
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>```</p>
+
+<br/><br/>
+
+
+<p>So far, this has been working well for over a year without any major issues and we have been able to save between 35% and 45% on the instance cost since then.<br/>
+Hope you can give it a try and feedbacks are appreciated.</p>
+]]></content>
+  </entry>
+  
+</feed>

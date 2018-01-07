@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: smoke-testing, | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/smoke-testing/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Shisha, smoke test those URLs!]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/17/shisha-smoke-test-those-urls/"/>
+    <updated>2014-09-17T10:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/17/shisha-smoke-test-those-urls</id>
+    <content type="html"><![CDATA[<p>Here comes Shisha! Yet another NodeJs based application from Namshi! Shisha is a smoke testing module,
+what is smoke testing? Read about it <a href="http://en.wikipedia.org/wiki/Smoke_testing_(software)">here</a>.
+In short, smoke testing is a term coming from Electrical Engineering, where an Electronic chip is simply tested by
+plugging it into an electric source and observing if smoke comes out! How does shisha relate to this? Well,
+just give shisha a list or a file of URLs and expected HTTP status code for each URL, and it will assert the expected
+status codes and show you back a report! It serves as a quick and fast testing platform for your website/APIs.
+Instead of waiting for a unit or an integration test to be prepared and run, simply set shisha to run on your URLs,
+it is fast and simple!</p>
+
+<!-- more -->
+
+
+<h1>Install it</h1>
+
+<p>Install shisha globally from <a href="https://www.npmjs.org/package/shisha">NPM</a></p>
+
+<p><code>sh
+npm install -g shisha
+</code></p>
+
+<h1>Prepare it and smoke it</h1>
+
+<p>Create a text file named <code>.smoke</code> where all your test cases will reside.</p>
+
+<p>Fill it as following:</p>
+
+<p><code>sh
+http://example.org 200
+http://example.org/not-there 404
+</code></p>
+
+<p>From the directory where your <code>.smoke</code> file is, run <code>shisha</code> and observe the shisha smoking!</p>
+
+<p>Here is a video illustration:</p>
+
+<p><video width='640' height='640' preload='none' controls poster=''><source src='http://tech.namshi.io/videos/example.mp4">http://tech.namshi.io/videos/example.mp4</a>' ></video></p>
+
+<h1>Features</h1>
+
+<p>You can:&ndash;</p>
+
+<ul>
+<li>Pass a path to any text file containing the right URL status code mapping using <code>--smoke</code> argument</li>
+</ul>
+
+
+<p><code>sh
+shisha --smoke /path/to/text/file
+</code></p>
+
+<ul>
+<li>Pass locals to be replaced in your text file</li>
+</ul>
+
+
+<p><code>sh
+shisha --domain example.org --protocol http
+</code></p>
+
+<p>so your text file would look something like this</p>
+
+<p>
+<code>
+{{ protocol }}://{{ domain }}/path 200
+</code>
+</p>
+
+<p>Here is how locals work:</p>
+
+<p><video width='640' height='640' preload='none' controls poster=''><source src='http://tech.namshi.io/videos/locals.mp4">http://tech.namshi.io/videos/locals.mp4</a>' ></video></p>
+
+<ul>
+<li>Easily extend shisha in your code as follows:</li>
+</ul>
+
+
+<p><code>sh
+npm install --save shisha
+</code></p>
+
+<p>then, in your code:</p>
+
+<p><code>js
+var shisha = require('shisha');
+</code></p>
+
+<p>you will have access to the <code>smoke</code> method which accepts the following arguments:</p>
+
+<ol>
+<li>data source, which can be a path to a text file, a list or an object.</li>
+<li>A list of locals to be replaced in the placeholders of the text file.</li>
+<li>A callback which accepts the report argument where the set of smoking results are parsed.</li>
+</ol>
+
+
+<p><code>js
+ shisha.smoke('/path/to/a/text/file', options, callback);
+</code></p>
+
+<p>or</p>
+
+<p>```js
+shisha.smoke(</p>
+
+<pre><code>[
+    {
+         url: 'http://example.org',
+         status: 200
+     },
+     ...,
+     ...
+], locals, callback
+</code></pre>
+
+<p>);
+```</p>
+
+<p>or</p>
+
+<p>```js
+shisha.smoke(</p>
+
+<pre><code>{
+    'http://example.org': 200,
+    'http://example2.org': 404,
+    ...,
+    ...
+}, locals, callback
+</code></pre>
+
+<p>);
+```</p>
+
+<p><code>locals</code> as mentioned before, is a list of placeholders to be replaced in the smoke file</p>
+
+<p><code>js
+shisha.smoke(urls, {protocol: 'https', domain: 'namshi.com'}
+</code></p>
+
+<p><code>callback</code> is a function called when smoking is done!</p>
+
+<p>if you do not have any locals, you can simply omit it.</p>
+
+<p><code>js
+shisha.smoke(urls, callback);
+</code></p>
+
+<p>Happy smoking!</p>
+]]></content>
+  </entry>
+  
+</feed>

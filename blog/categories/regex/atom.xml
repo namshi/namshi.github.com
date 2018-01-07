@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: regex | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/regex/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #122]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/21/newsletter-number-122/"/>
+    <updated>2016-01-21T15:40:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/21/newsletter-number-122</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>This week we had a very nice lighting talks session, we will have a post about it next week, also don&rsquo;t forget that <a href="/blog/2016/01/18/were-hiring-backend-ers/">We&rsquo;re hiring backend-ers</a>,</p>
+
+<p>and here are the weekly links,</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://github.com/thank-you-github/thank-you-github"> an open letter of gratitude to github</a></p></li>
+<li><p><a href="https://css-tricks.com/a-specificity-battle/">a specificity battle! (and other trickery) | css-tricks</a></p></li>
+<li><p><a href="http://techblog.constantcontact.com/devops/a-tale-of-three-docker-anti-patterns/">a tale of three docker anti-patterns | constant contact tech blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://medium.com/google-developer-experts/angular-2-introduction-to-redux-1cf18af27e6e">angular 2 — introduction to redux — google developer experts — medium</a></p></li>
+<li><p><a href="https://medium.com/@yamalight/danger-of-using-async-await-in-es7-8006e3eb7efb">danger of using async/await in es7 — medium</a></p></li>
+<li><p><a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">designing a product page layout with flexbox | css-tricks</a></p></li>
+<li><p><a href="http://www.slideshare.net/damovsky/dockerize-the-world-presentation-from-hradec-kralove">dockerize the world &ndash; presentation from hradec kralove</a></p></li>
+<li><p><a href="https://medium.com/user-experience-design-1/facebook-and-how-uis-twist-your-words-4ceedc5fd93">facebook and how uis twist your words — user experience design (ux) — medium</a></p></li>
+<li><p><a href="https://thesearemoments.com/feel-good-interfaces-9c4b9590b80d">feel-good interfaces — moments — medium</a></p></li>
+<li><p><a href="https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d">functional stateless components in react 0.14 — medium</a></p></li>
+<li><p><a href="http://rafaltomal.com/visually-effective-cta/">how to create visually effective calls-to-action &ndash; rafal tomal</a></p></li>
+<li><p><a href="https://medium.com/@tjholowaychuk/introducing-apex-800824ffaa70">introducing apex — serverless architecture with aws lambda</a></p></li>
+<li><p><a href="https://egghead.io/lessons/javascript-javascript-regular-expressions-introduction">javascript regular expressions: introduction &ndash; javascript video tutorial </a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2995-managing-locally-cached-data-with-redux-in-angularjs.htm">managing locally cached data with redux in angularjs</a></p></li>
+<li><p><a href="https://github.com/gaearon/normalizr">normalizes deeply nested json api responses according to a schema for flux and redux apps</a></p></li>
+<li><p><a href="https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f">react.js pure render performance anti-pattern — medium</a></p></li>
+<li><p><a href="http://blog.lambda-it.ch/reactive-data-flow-in-angular-2/?utm_content=buffer45642">reactive data flow in angular 2</a></p></li>
+<li><p><a href="http://gizmodo.com/the-25-most-popular-passwords-of-2015-were-all-such-id-1753591514?utm_campaign=socialflow_lifehacker_facebook">the 25 most popular passwords of 2015: we&rsquo;re all such idiots</a></p></li>
+<li><p><a href="https://medium.com/@meagle/understanding-87566abcfb7a">understanding redux middleware — medium</a></p></li>
+<li><p><a href="https://medium.com/@housecor/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8">why i left gulp and grunt for npm scripts — medium</a></p></li>
+<li><p><a href="https://medium.com/@verybadhello/wordpress-with-node-react-and-graphql-part-1-introduction-ee0fc491730e">wordpress with node, react, and graphql </a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #82]]></title>
+    <link href="http://namshi.github.io/blog/2015/03/19/newsletter-number-82/"/>
+    <updated>2015-03-19T14:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/03/19/newsletter-number-82</id>
+    <content type="html"><![CDATA[<h1>TechThursday is here folks!</h1>
+
+<blockquote><p>News from the IT Team:</p>
+
+<p>As you may have heard we have a new joiner in the backend team: welcome <a href="http://tech.namshi.io/blog/2015/03/18/welcome-david">David</a>!</p></blockquote>
+
+<p> <strong>And here you have the usual list with awesome links to keep you busy during the weekend under your beach umbrella between your dives (if you are in the area of course :P):</strong></p>
+
+<ul>
+<li><p><a href="http://videlalvaro.github.io/2015/02/programming-myths.html">Harmful GOTOs, Premature Optimizations, and Programming Myths are the Root of all Evil</a></p></li>
+<li><p><a href="http://blog.donnywals.com/dont-depend-on-javascript-to-render-your-page/?utm_content=buffer99071&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Dont depend on javascript to render your pages</a></p></li>
+<li><p><a href="http://thinkingonthinking.com/serial-input-with-streams/">Nodejs: streaming data to the serial port</a></p></li>
+<li><p><a href="http://www.2ality.com/2014/08/es6-today.html">Using ECMAScript 6 today</a>
+<!-- more --></p></li>
+<li><p><a href="http://bit.ly/1LwBDnU">Why Agile and DevOps fit like a hand in a glove</a></p></li>
+<li><p><a href="http://bit.ly/1xAgqxN">Ideal REST API design</a></p></li>
+<li><p><a href="http://bit.ly/1Gsk2GW">Git Pre-commit scripts appropiate for any PHP project</a></p></li>
+<li><p><a href="http://bit.ly/1LwBEYQ">What is Docker &ndash; Slides</a></p></li>
+<li><p><a href="http://davidwalsh.name/regular-expressions-rest">Regular Expressions for the Rest of Us</a></p></li>
+<li><p><a href="http://davidwalsh.name/visual-regression-testing-angular-applications">Visual Regression Testing For Angular Applications</a></p></li>
+<li><p><a href="http://victorsavkin.com/post/110170125256/change-detection-in-angular-2">Change Detection in Angular 2</a></p></li>
+<li><p><a href="http://ng-learn.org/2014/03/AngularJS-2-Status-Preview/">AngularJS 2.0 Status and Preview</a></p></li>
+<li><p><a href="http://tech-curation.esy.es/programming/js/create-todo-app-with-angular2/">Create Todo App with Angular2</a></p></li>
+<li><p><a href="http://facebook.github.io/react/blog/2015/02/24/streamlining-react-elements.html#compiler-optimizations-unlocked">Streamlining React Elements</a></p></li>
+<li><p><a href="https://leanpub.com/javascriptallongesix/read">JavaScript Allongé, The &ldquo;Six&rdquo; Edition</a></p></li>
+<li><p><a href="http://tagtree.io/courses/expert-es6">Expert ES6 online course</a></p></li>
+<li><p><a href="https://github.com/ericdouglas/ES6-Learning">ES6 learning collections</a></p></li>
+<li><p><a href="http://alistapart.com/article/quantity-queries-for-css">Quantity Queries for CSS</a></p></li>
+<li><p><a href="http://updates.html5rocks.com/2015/03/introduction-to-fetch">Introduction to fetch()</a></p></li>
+<li><p><a href="http://updates.html5rocks.com/2015/01/ES6-Template-Strings">Getting Literal With ES6 Template Strings</a></p></li>
+<li><p><a href="http://blog.cloudera.com/blog/2015/03/how-to-build-re-usable-spark-programs-using-spark-shell-and-maven/">How to Build Reusable Spark Programs</a></p></li>
+<li><p><a href="http://www.webanalyticsworld.net/2015/03/ten-tips-to-improve-your-google-analytics-data-quality.html">Improve your Google Analytics Data Quality</a></p></li>
+<li><p><a href="https://datafloq.com/read/5-painful-prediction-pitfalls/954">Five Painful Prediction Pitfalls</a></p></li>
+<li><p><a href="http://www.lunametrics.com/blog/2015/03/17/defining-audiences-custom-dimensions/">Defining Audiences with Google Analytics</a></p></li>
+<li><p><a href="http://www.pcauthority.com.au/News/401788,first-look-microsoft-office-2016-it-pro-and-developer-preview.aspx/">First look at Office 2016</a></p></li>
+<li><p><a href="http://brewhouse.io/blog/2014/11/04/big-data-with-elk-stack.html">Big data in minutes with the ELK Stack</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/02/realtime-requests-psql-elasticsearch/">Realtime updates from PostgreSQL to Elasticsearch</a></p></li>
+<li><p><a href="http://mashable.com/2015/03/12/livecoding-tv/">Watch people code in real time with Livecoding.tv</a></p></li>
+<li><p><a href="https://github.com/rlerdorf/php7dev">Documentation for the php7dev Vagrant box image</a></p></li>
+<li><p><a href="https://algorithmia.com/">An Open Marketplace For Algorithms</a></p></li>
+<li><p><a href="http://rockhealth.com/2015/03/important-api-youve-never-heard/?utm_content=buffer35665&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">the most important API you&rsquo;ve heard of</a></p></li>
+<li><p><a href="http://evertpot.com/psr-7-issues/?utm_content=buffercf90e&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">PSR7 is imminent, and here&rsquo;s my issues with it</a></p></li>
+<li><p><a href="http://tech.paulcz.net/2015/03/optimizing-your-dockerfiles/?utm_content=bufferc0b5b&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">optimizing your dockerfiles</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/03/thirteen-new-official-repositories-added-in-january-and-february/?utm_content=buffer50779&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">13 new official repositories in the docker hub</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-amazon-cloudfront-signed-cookies-for-private-content/?utm_content=buffer2c88e&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">AWS added signed private cookies for cloudfront</a></p></li>
+<li><p><a href="http://docs.fidor.de/?utm_content=bufferf4ebc&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">The fidor (banking) API</a></p></li>
+<li><p><a href="https://medium.com/@landongn/12-years-later-what-i-ve-learned-about-being-a-software-engineer-d6e334d6e8a3?utm_content=buffer0523b&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">12 years later: what I learned as a software engineer</a></p></li>
+<li><p><a href="http://www.pocketables.com/2015/03/exclusive-google-is-working-on-a-new-vpn-service-for-use-on-open-wifi-networks.html?utm_content=buffer5b3f8&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Google planning to enter the VPN market</a></p></li>
+<li><p><a href="http://blog.statuspage.io/we-tried-building-a-remote-team-and-it-sucked?utm_content=buffer58b8c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">We tried building a remote team and it sucked</a></p></li>
+<li><p><a href="http://queue.acm.org/detail.cfm?ref=rss&amp;id=2745385&amp;utm_content=buffer5c18b&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">There is no &ldquo;now&rdquo; &ndash; distributed systems</a></p></li>
+<li><p><a href="https://speakerdeck.com/hgmnz/redis-at-heroku?mkt_tok=3RkMMJWWfF9wsRons6zOZKXonjHpfsX56ugqW6KzlMI%2F0ER3fOvrPUfGjI4DT8VjI%2BSLDwEYGJlv6SgFQ7HAMa5m3rgMWRk%3D&amp;utm_content=buffer64ab5&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Redis at heroku</a></p></li>
+<li><p><a href="https://speakerdeck.com/siddharthlatest/appbase-a-realtime-events-based-document-store?mkt_tok=3RkMMJWWfF9wsRons6zOZKXonjHpfsX56ugqW6KzlMI%2F0ER3fOvrPUfGjI4DT8VjI%2BSLDwEYGJlv6SgFQ7HAMa5m3rgMWRk%3D&amp;utm_content=buffer3990b&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Appbase, a realtime event based store</a></p></li>
+<li><p><a href="https://github.com/mgechev/angularjs-in-patterns?utm_content=buffer9602a&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Angularjs in patterns</a></p></li>
+<li><p><a href="http://engineering.pinterest.com/post/113537918179/making-pinterest-https?utm_content=buffer93f72&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Making pinterest HTTPS</a></p></li>
+<li><p><a href="http://agileoverflow.com/t/scrum-seems-to-be-mostly-about-having-better-alibis/47?utm_content=bufferbf9d3&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">SCRUM seems to be mostly about having better alibis</a></p></li>
+<li><p><a href="http://www.jandrewrogers.com/2015/03/02/geospatial-databases-are-hard/?h&amp;utm_content=buffereba01&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">why are geospatial databases so hard to build?</a></p></li>
+<li><p><a href="http://tools.ietf.org/html/rfc2550?utm_content=buffer2c2ff&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">RFC 2550: Y10k and beyond</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=csyL9EC0S0c&amp;utm_content=buffer3f1a4&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">programming is terrible: lessons learned from a wasted life</a></p></li>
+<li><p><a href="http://blog.stephenwyattbush.com/2012/04/07/dad-and-the-ten-commandments-of-egoless-programming?utm_content=buffer8ae34&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Dad and the 10 commandments of  the egoless proggrammer</a></p></li>
+<li><p><a href="https://localizejs.com/blog/startup/developer-productivity-saying-no?utm_content=bufferfea50&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">The art of saying no</a></p></li>
+<li><p><a href="https://github.com/mackyle/sqlite/blob/3cf493d4018042c70a4db733dd38f96896cd825f/src/os.h?utm_content=buffer470f5&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer#L52">Poor sqlite developers</a></p></li>
+<li><p><a href="https://github.com/Mashape/httpsnippet?utm_content=buffer270e8&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Generate HTTP snippets in various languages</a></p></li>
+<li><p><a href="http://www.zdnet.com/article/linux-storage-futures/?utm_content=bufferb0a37&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">The future of linux storages</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/03/openssl-vulnerabilities-patch.html">OpenSSL to Patch High Severity Vulnerability this Week</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

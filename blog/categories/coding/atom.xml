@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: coding | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #125]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/18/newsletter-number-125/"/>
+    <updated>2016-02-18T12:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/18/newsletter-number-125</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>This week went by pretty fast,  as usual we have a new list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="http://zhen.org/blog/two-developers-walk-into-a-bar/">a modern app developer and an old-timer system developer walk into a bar </a></p></li>
+<li><p><a href="http://www.slideshare.net/gionn2/clustering-with-docker-swarm-dockerops-2016-cento-fe-italy">clustering with docker swarm &ndash; dockerops 2016 @ cento (fe) italy</a></p></li>
+<li><p><a href="https://ookami86.github.io/event-sourcing-in-practice/">event sourcing in practice</a></p></li>
+<li><p><a href="http://blog.golang.org/go1.6">go 1.6 is released !</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.proreactnative.com/How-to-Develop-iOS-Apps-on-Linux-Using-React-Native/">how to develop ios apps on linux using react native – pro react native – master your tools. build great apps.</a></p></li>
+<li><p><a href="http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html">how to do distributed locking</a></p></li>
+<li><p><a href="http://inviqa.com/insights/how-to-tackle-legacy-systems">how to work with legacy systems — inviqa</a></p></li>
+<li><p><a href="http://www.2ality.com/2016/02/js-fatigue-fatigue.html">javascript fatigue fatigue</a></p></li>
+<li><p><a href="http://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/">nick craver &ndash; stack overflow: the architecture &ndash; 2016 edition</a></p></li>
+<li><p><a href="https://rhonabwy.com/2016/01/31/six-rules-for-setting-up-continuous-integration-systems/">six rules for setting up continuous integration systems | rhonabwy</a></p></li>
+<li><p><a href="https://blog.8thlight.com/mike-knepper/2016/01/20/hidden-costs-of-leaving-a-monolith.html">the hidden costs of leaving a monolith</a></p></li>
+<li><p><a href="http://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/">the product managers' guide to continuous delivery and devops &ndash; mindtheproduct</a></p></li>
+<li><p><a href="https://medium.com/@producthunt/the-rise-and-fall-of-everest-the-app-b0d2e6cb594c">the rise and fall of everest (the app) </a></p></li>
+<li><p><a href="http://12factor.net/">the twelve-factor app</a></p></li>
+<li><p><a href="https://thephp.cc/news/2016/02/typed-arrays-in-php">thephp.cc &ndash; typed arrays in php</a></p></li>
+<li><p><a href="http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to">write code that is easy to delete, not easy to&hellip; — programming is terrible</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #107]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/10/newsletter-number-107/"/>
+    <updated>2015-09-10T15:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/10/newsletter-number-107</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again! We had a big event last week!</p>
+
+<p>Our nerdy &ldquo;managers&rdquo; went to Berlin last week to participate in the Rocket Tech Summit 2015
+<img class="team center" src="/images/berlin_rocket_team.jpg"></p>
+
+<p><img class="team center" src="/images/berlin_rocket_alex.jpg"></p>
+
+<p>He like to be that casual! It was a good talk though :)</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.facebook.com/bbcnews/videos/10153081461092217/">&ldquo;without google maps we&rsquo;d be lost&rdquo; &ndash; syrian refugee explains how he has been using apps bbc.co.uk/panorama </a></p></li>
+<li><p><a href="https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template">better commit messages with a .gitmessage template</a></p></li>
+<li><p><a href="https://stefanscherer.github.io/create-an-io-js-container-image-for-windows/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4AT8dkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">create a node.js container image for windows</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.devopsbookmarks.com/">devops bookmarks</a></p></li>
+<li><p><a href="http://www.dontfeartheinternet.com/">don’t fear the internet basico html &amp; css for non-web designers</a></p></li>
+<li><p><a href="http://www.mitchchn.me/2014/os-x-terminal">eight terminal utilities every os x command line user should know</a></p></li>
+<li><p><a href="https://medium.com/@kellan/five-years-building-a-culture-and-handing-it-off-54a38c3ab8de">five years, building a culture, and handing it off. — medium</a></p></li>
+<li><p><a href="http://blog.golang.org/go15gc?utm_content=bufferabe53">go gc: prioritizing low latency and simplicity &ndash; the go blog</a></p></li>
+<li><p><a href="https://github.com/black-screen/black-screen?utm_content=bufferea558">http://tech.namshi.io/blog/2015/09/10/newsletter-number-107/</a></p></li>
+<li><p><a href="https://github.com/jroes/par?utm_content=bufferf1d16">Run similar commands concurrently</a></p></li>
+<li><p><a href="https://google.github.io/lovefield/?utm_content=bufferf89f8">lovefield: the data access library that loves you</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/minimising-font-downloads/">minimising font downloads &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/release/v4.0.0/?utm_content=bufferb4c18">node v4.0.0 (stable) | node.js</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/announcements/foundation-elects-board/?utm_content=buffer81979">node.js foundation elects board of directors | node.js</a></p></li>
+<li><p><a href="http://onethingwell.org/post/128103218146/wordsafety">one thing well | wordsafety</a></p></li>
+<li><p><a href="http://php.net/index.php?utm_content=buffer0b04a">php 7.0.0 rc 2 released</a></p></li>
+<li><p><a href="https://groups.google.com/forum/">redis 3.0.4 and 2.8.22</a></p></li>
+<li><p><a href="http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html">stop pushing the web forward &ndash; quirksblog</a></p></li>
+<li><p><a href="http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/">swift functors, applicatives, and monads in pictures</a></p></li>
+<li><p><a href="http://virtuecenter.com/blog/the_effects_of_computer_programming_on_the_brain.html">the effects of computer programming on the brain</a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/announcing-sleepy-puppy-cross-site.html?utm_content=buffer8d3de">the netflix tech blog: announcing sleepy puppy &ndash; cross-site scripting payload management for web application security testing</a></p></li>
+<li><p><a href="http://www.itskeptic.org/content/what-devops-role">what is a devops role?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #66]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/27/newsletter-number-66/"/>
+    <updated>2014-11-27T13:25:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/27/newsletter-number-66</id>
+    <content type="html"><![CDATA[<blockquote><p>Hey folks from the software engineering community!</p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p>Our comrade <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> is at <a href="http://madrid2014.symfony.com/speakers">SymfonyCon Madrid</a>
+with an awesome and super exciting talk about angular.</p>
+
+<p>Next week, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>, <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> and Alex will be at
+the super exciting Docker Eu Conference to collect some thoughts about the newest technologies.</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the week:</strong></p>
+
+<ul>
+<li><p><a href="http://www.stevesouders.com/blog/2014/11/25/serious-confusion-with-resource-timing/">SERIOUS CONFUSION with Resource Timing</a></p></li>
+<li><p><a href="http://bocoup.com/weblog/whats-in-a-function-name/">What&rsquo;s in a Function Name?</a></p></li>
+<li><p><a href="http://www.webperformancetoday.com/2014/11/12/real-cost-slow-time-vs-downtime-slides/">The Real Cost of Slow Time vs Downtime</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.infoworld.com/article/2850056/application-virtualization/microsoft-docker-cli-windows.html">Microsoft brings Docker CLI to Windows</a></p></li>
+<li><p><a href="http://techcrunch.com/2014/11/26/rocket-internet-backed-jumia-raises-150m-for-its-african-e-commerce-business/">Rocket Internet-Backed Jumia Raises $150M For Its African E-Commerce Business</a></p></li>
+<li><p><a href="https://medium.com/@ericeriksson/what-is-product-design-9709572cb3ff">What is product design?</a></p></li>
+<li><p><a href="http://browsenpm.org/package.json">An interactive guide for exploring various important properties of the package.json  for node.js apps</a></p></li>
+<li><p><a href="http://www.businessinsider.com/learning-how-to-code-imposter-syndrome-2014-11">A Programmer Describes How He Nearly Went Insane Learning To Code</a></p></li>
+<li><p><a href="http://www.codewars.com/">Codewars, improve your programming skills</a></p></li>
+<li><p><a href="https://github.com/i-like-robots/react-tube-tracker">React Tube Tracker &ndash; a simple application to check the predicted arrival times of trains at stations on the London Underground network built with React.</a></p></li>
+<li><p><a href="http://www.slideshare.net/rmsguhan/react-meetup-mailonreact">Yahoo! Mail moving to React </a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-toolbox/docker-vs-vms/">Docker vs VMs</a></p></li>
+<li><p><a href="http://blog.arungupta.me/2014/11/create-own-docker-image-techtip57/">Create your own Docker image</a></p></li>
+<li><p><a href="http://agiletesting.blogspot.co.uk/2014/11/service-discovery-with-consul-and.html">Service discovery with consul and consul-template</a></p></li>
+<li><p><a href="https://blog.twitter.com/2014/building-a-complete-tweet-index">Building a complete Tweet index</a></p></li>
+<li><p><a href="https://github.com/vclfiddle/vclfiddle">VclFiddle is an online tool for experimenting with the Varnish Cache HTTP reverse-proxy</a></p></li>
+<li><p><a href="http://www.bravenewgeek.com/sometimes-kill-9-isnt-enough/">Sometimes Kill -9 Isn&rsquo;t Enough</a></p></li>
+<li><p><a href="http://www.slideshare.net/brendangregg/performance-tuning-ec2-instances">Performance Tuning EC2 Instances</a></p></li>
+<li><p><a href="https://github.com/sosedoff/pgweb">Web-based PostgreSQL database browser</a></p></li>
+<li><p><a href="https://eager.io/blog/go-and-json/">Go and JSON</a></p></li>
+<li><p><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Aurora.html">Aurora on Amazon RDS</a></p></li>
+<li><p><a href="http://aws.amazon.com/blogs/aws/aws-ip-ranges-json/">AWS Public IP Address Ranges Now Available in JSON Form</a></p></li>
+<li><p><a href="http://blog.deimos.fr/2014/11/17/which-configuration-management-tool-should-you-use/">Which configuration management tool should you use?</a></p></li>
+<li><p><a href="https://github.com/madflojo/salt-api-reactor-formula">A Saltstack salt-api and reactor formula for integrating HTTP webhooks with Saltstack executions</a></p></li>
+<li><p><a href="https://wiki.jenkins-ci.org/display/JENKINS/saltstack-plugin">Jenkins: saltstack-plugin</a></p></li>
+<li><p><a href="http://www.informationweek.com/cloud/infrastructure-as-a-service/docker-security-flaw-found/d/d-id/1317751">Docker Security Flaw Found</a></p></li>
+<li><p><a href="http://www.rackspace.co.uk/ecommerce-hosting/page-speed-checker">Rackspace Page Load Speed checker</a></p></li>
+<li><p><a href="http://linux-audit.com/auditing-systemd-solving-failed-units-with-systemctl/">Auditing systemd: solving failed units with systemctl</a></p></li>
+<li><p><a href="http://www.slideshare.net/bigstep-infrastructure/bigstep-partners-elasticsearch-scaling-benchmarks">Best Practices For Scaling Elasticsearch In The Cloud</a></p></li>
+<li><p><a href="http://wiki.joyent.com/wiki/display/jpc2/Working+with+Elasticsearch">Working with Elasticsearch</a></p></li>
+<li><p><a href="http://www.bbc.co.uk/blogs/internet/entries/47a96d23-ae04-444e-808f-678e6809765d">How we built the new BBC Homepage</a></p></li>
+<li><p><a href="http://wallabyjs.com/">wallaby.js runs your code when you write it</a></p></li>
+<li><p><a href="https://github.com/svileng/conveyor-belt">conveyor-belt</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/node-js-foundation-io-js-unification/">How the Node Foundation will Unify Node.js with io.js</a></p></li>
+<li><p><a href="https://github.com/s-a/TRY.js">Programm a virtual robot which moves in a 3D</a></p></li>
+<li><p><a href="https://www.reddit.com/r/npm">npm subreddit</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

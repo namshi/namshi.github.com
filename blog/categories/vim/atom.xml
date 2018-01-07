@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: vim | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/vim/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #109]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/01/newsletter-number-109/"/>
+    <updated>2015-10-01T15:55:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/01/newsletter-number-109</id>
+    <content type="html"><![CDATA[<blockquote><p>Yo folks!</p>
+
+<p>This week we bid farewell to one of our team member <a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a>, he posted an <a href="http://tech.namshi.io/blog/2015/09/28/goodbye-nitesh/">interesting summary</a> of his delightful journey at Namshi, we wish him best of luck.</p></blockquote>
+
+<p><img class="center" src="/images/nitesh-bye-bye.jpg"></p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.quora.com/Is-it-realistic-to-go-from-0-coding-experience-to-freelance-developer-in-6-months-of-full-time-study">is it realistic to go from 0 coding experience to freelance developer in 6 months of full time study? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/What-frustrates-beginner-programmers-the-most">what frustrates beginner programmers the most? &ndash; quora</a></p></li>
+<li><p><a href="https://medium.com/@linclark/a-cartoon-guide-to-flux-6157355ab207">a cartoon guide to flux — medium</a></p></li>
+<li><p><a href="http://bropages.org/">bro: just get to the point!</a></p></li>
+<li><p><a href="https://www.interviewbit.com/">coding interview preparation made easy</a></p></li>
+<li><p><a href="http://prog21.dadgum.com/210.html">computer science courses that don&rsquo;t exist, but should</a></p></li>
+<li><p><a href="https://github.com/gilesp/docker/tree/master/react_native?utm_content=buffer67abd">docker container for react native android development</a></p></li>
+<li><p><a href="http://blog.wercker.com/2015/07/28/Dockerfiles-considered-harmful.html">dockerfiles considered harmful</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=X0VH78ye4yY">f8 2015 &ndash; big code: developer infrastructure at facebook&rsquo;s scale &ndash; youtube</a></p></li>
+<li><p><a href="http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html">full-stack redux tutorial</a></p></li>
+<li><p><a href="https://github.com/getify/You-Dont-Know-JS">getify/you-dont-know-js</a></p></li>
+<li><p><a href="https://www.packtpub.com/books/content/getting-started-bem-little-help-sass/">getting started with bem (with a little help from sass) </a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=zBV9TkTXxg0">hacker way: facebook&rsquo;s high performance server infrastructure &ndash; youtube</a></p></li>
+<li><p><a href="https://hoist.io/">hoist is how you integrate &ndash; meet the microservices platform that talks to apis</a></p></li>
+<li><p><a href="https://medium.com/meedan-updates/how-docker-helped-me-love-writing-css-again-b1339c2e77ff">how docker helped me love writing css again — meedan updates — medium</a></p></li>
+<li><p><a href="https://medium.com/salesforce-ux/how-we-designed-the-new-salesforce-at-scale-6d3607fd92e5">how we designed the new salesforce at scale</a></p></li>
+<li><p><a href="https://github.com/statianzo/hubot-newrelic2">hubot newrelic</a></p></li>
+<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
+<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things?utm_content=buffer551b5">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
+<li><p><a href="https://vimeo.com/140275020">kerning 2015 &ndash; oliver reichenstein &ndash; architecting information on vimeo</a></p></li>
+<li><p><a href="http://blog.jenkster.com/">kris jenkins' blog (javascript, elm, clojure, vim)</a></p></li>
+<li><p><a href="https://blog.growth.supply/launching-a-product-in-just-3652-days-4d4e74e2dcd5">launching a product, in just 3652 days</a></p></li>
+<li><p><a href="https://google.github.io/lovefield">lovefield is a relational database for web apps.</a></p></li>
+<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code · evan todd</a></p></li>
+<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code</a></p></li>
+<li><p><a href="http://blog.cloud66.com/pulling-git-into-a-docker-image-without-leaving-ssh-keys-behind/">pulling git into a docker image without leaving ssh keys behind</a></p></li>
+<li><p><a href="http://wl3.me/2015/05/01/react-in-your-react-native-webview-so-you-can-react-while-you-react.html?utm_content=buffer6555a">putting react in your react native webview so you can react while you react</a></p></li>
+<li><p><a href="http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/">react.js and dynamic children &ndash; why the keys are important &ndash; arkency blog</a></p></li>
+<li><p><a href="http://code.flickr.net/2015/06/25/real-time-resizing-of-flickr-images-using-gpus/">real-time resizing of flickr images using gpus</a></p></li>
+<li><p><a href="http://rackt.github.io/redux/">redux for reactr</a></p></li>
+<li><p><a href="http://mmikowski.github.io/the_lie/">restful apis, the big lie</a></p></li>
+<li><p><a href="http://www.brianstorti.com/stop-using-tail/">stop using tail -f (mostly)</a></p></li>
+<li><p><a href="http://www.independent.ie/business/technology/news/tech-overkill-destroyed-the-loveliest-liveliest-city-on-the-west-coast-31541735.html?utm_content=buffer6e254">tech overkill destroyed the loveliest, liveliest city on the west coast</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?t=6&amp;v=W71BTkUbdqE">the motivation for a monolithic codebase </a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/making-netflixcom-faster.html">the netflix tech blog: making netflix.com faster</a></p></li>
+<li><p><a href="https://webmozart.io/blog/2015/09/09/value-objects-in-symfony-forms/">value objects in symfony forms &ndash; webmozart.io</a></p></li>
+<li><p><a href="https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225">want to learn javascript in 2015?</a></p></li>
+<li><p><a href="https://anvaka.github.io/pm/#/">welcome to the code galaxies, commander</a></p></li>
+<li><p><a href="https://www.quora.com/What-feature-of-C-is-used-very-often-by-experienced-programmers-but-not-so-much-by-a-newbie">what feature of c is used very often by experienced programmers but not so much by a newbie? &ndash; quora</a></p></li>
+<li><p><a href="https://speakerdeck.com/addyosmani/whats-new-in-chrome-devtools">what&rsquo;s new in chrome devtools?</a></p></li>
+<li><p><a href="https://open.bufferapp.com/sharing-bad-news/">why i don&rsquo;t shield my team from bad news</a></p></li>
+<li><p><a href="http://www.bothsidesofthetable.com/2015/09/27/why-i-fucking-hate-unicorns-and-the-culture-they-breed/">why i f#!@ing hate unicorns and the culture they breed</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #50]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/07/newsletter-number-50/"/>
+    <updated>2014-08-07T11:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/07/newsletter-number-50</id>
+    <content type="html"><![CDATA[<p>Hey folks! Hope you had a great week!</p>
+
+<p>Announcement:</p>
+
+<blockquote><p>We are looking for a senior software engineer passionate about NodeJS and a frontend designer who is passionate and kick-ass in CSS and HTML and wants to expand his skillset with some JavaScript &mdash; we &lt;3 javascript :)</p>
+
+<p>We will detail in a separate post but, for the time being, feel free to reach out to submit your linkedin / github profile to <a href="&#x6d;&#97;&#105;&#108;&#116;&#x6f;&#58;&#119;&#111;&#114;&#107;&#x2d;&#105;&#110;&#45;&#x74;&#x65;&#x63;&#104;&#64;&#110;&#x61;&#109;&#x73;&#x68;&#x69;&#46;&#x63;&#111;&#x6d;">&#119;&#111;&#x72;&#107;&#45;&#105;&#x6e;&#x2d;&#116;&#101;&#x63;&#x68;&#x40;&#x6e;&#x61;&#x6d;&#115;&#104;&#105;&#x2e;&#99;&#111;&#109;</a></p></blockquote>
+
+<p>Here are your links for this week!</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://buff.ly/V0CWSU">Mind-blowing facts about Google</a></li>
+<li><a href="http://buff.ly/1sdQbLl">Is TLS Fast Yet?</a></li>
+<li><a href="http://buff.ly/1s9dGW2">Amazon RDS Now Supports T2 Instances</a></li>
+<li><a href="http://buff.ly/1qKumSE">The One Big Thing That Will Reduce Software Bugs, But No One Does It</a></li>
+<li><a href="http://buff.ly/1ktk8s2">CoreOS and Docker through Deis: Your Paas. Your Rules.</a></li>
+<li><a href="http://buff.ly/1rWPMNg">The Twelve-Factor App</a></li>
+<li><a href="http://buff.ly/UFHnmh">Redis 3.0.0 beta 8 is out</a></li>
+<li><a href="http://buff.ly/1qx66Ds">Critiquing Facebook’s new #PHP spec</a></li>
+<li><a href="http://www.youtube.com/watch?v=UlREhZ-orlk">ideavim &ndash;  plugin that let&rsquo;s you use vim keybindings inside a intellj based ides (phpstorm/webstorm ide</a></li>
+<li><a href="http://mckoss.com/jscript/object.htm">A very old post, but still super good, about object oriented programming in JavaScript</a></li>
+<li><a href="http://superuser.com/questions/792607/why-does-windows-think-that-my-wireless-keyboard-is-a-toaster">Why does windows think that my wireless keyboard is a toaster</a></li>
+<li><a href="http://www.gameofhacks.com/">Game of Hacks</a></li>
+<li><a href="http://www.jvanbaarsen.com/blog/2014/07/02/why-i-think-having-passion-as-a-developer-matters">Why I think having passion as a developer matters</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/08/02/badusb-what-if-you-could-never-trust-a-usb-device-again">BadUSB what if you could never trust a USB device again</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/07/31/3-security-mistakes-small-companies-make-and-how-to-avoid-them">3 security mistakes small companies make and how to avoid them</a></li>
+<li><a href="https://www.aftership.com/">Track and Audit shipments for free</a></li>
+<li><a href="https://m.youtube.com/watch?v=SqeOPLB2xAM">DConf 2014: Declarative programming in D by Mihails Strasuns aka Dicebot</a></li>
+<li><a href="https://github.com/facebook/rocksdb/wiki">Welcome to RocksDB!</a></li>
+<li><a href="https://github.com/scobal/seyren">Alerting Dashboard for Graphite</a></li>
+<li><a href="http://www.fastcolabs.com/3033680/why-you-cant-learn-to-code-without-open-source">Why You Can&rsquo;t Learn To Code Without Open Source</a></li>
+<li><a href="http://keyholesoftware.com/2014/07/23/javascript-promises-are-cool">JavaScript Promises Are Cool</a></li>
+<li><a href="http://spectrum.ieee.org/static/interactive-the-top-programming-languages">The Top Programming Languages in IEEE Spectrum’s 2014 Ranking</a></li>
+<li><a href="https://blog.engineyard.com/2014/hhvm-hack-part-5">Building a Better PHP &ndash; Part 5: Static Analysis &amp; other CLI tools</a></li>
+<li><a href="http://www.youtube.com/watch?v=gpNbmEnRLBU">dotScale 2014 &ndash; Fabien Potencier &ndash; My Take on PHP</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

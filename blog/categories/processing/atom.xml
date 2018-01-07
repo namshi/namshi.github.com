@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: processing | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/processing/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #49]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/31/newsletter-number-49/"/>
+    <updated>2014-07-31T11:50:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/31/newsletter-number-49</id>
+    <content type="html"><![CDATA[<p>TechThursday is here!</p>
+
+<blockquote><p>Namshi is hiring! <a href="http://t.co/kfUX1C0MMy">HR Generalist in United Arab Emirates</a> Please spread the word!</p>
+
+<p>So, Ramadan is over! The team is excited to get be back on full throttle! Lots of exciting stuff on the way!</p></blockquote>
+
+<p>Here are the links we have for you this week:</p>
+
+<!-- more -->
+
+
+<ul>
+<li><a href="http://www.smashingmagazine.com/2014/07/30/declarative-programming/">Declarative Programming And The Web</a></li>
+<li><a href="http://jessitron.github.io/git-happens/">Git Happens &ndash; A must watch video for every git user</a></li>
+<li><a href="http://phptest.club/t/selenium-client-libraries-comparison/36">Selenium Client Libraries built with PHP, a comparison</a></li>
+<li><a href="http://www.slideshare.net/rdohms/composer-for-busy-developers-phptek13">Composer for busy developers &ndash; slides from php|tek13 talk</a></li>
+<li><a href="http://marcomanzoni.me/blog/how-pgp-works-under-the-hood">How PGP works under the hood</a></li>
+<li><a href="http://keystonejs.com/">Node.js CMS and web application platform built on Express and MongoDB</a></li>
+<li><a href="http://nakedsecurity.sophos.com/2014/07/28/panopticlick-reveals-the-cookie-you-cant-delete">Panopticlick reveals the cookie you can’t delete</a></li>
+<li><a href="http://t.co/aywaIqN901">The community now has an initial draft of a PHP language specification</a></li>
+<li><a href="http://buff.ly/UB1Rg3">Eloquent JavaScript</a></li>
+<li><a href="https://t.co/AU3sTqw0xc">Facebook have released an in-depth guide for their Flux architecture for frontend applications, including a TodoMVC</a></li>
+<li><a href="http://buff.ly/1o6ZqJ7">The New GitHub Issues</a></li>
+<li><a href="http://buff.ly/1rKwfTA">Zappos just abolished bosses. Inside tech&rsquo;s latest management craze</a></li>
+<li><a href="http://buff.ly/1o3tANi">Polymer vs. X-Tag &ndash; Here&rsquo;s the difference</a></li>
+<li><a href="http://buff.ly/1nIIf4L">Express to Hapi.js</a></li>
+<li><a href="http://natureofcode.com/">A book focused on the programming strategies and techniques behind computer simulations of natural systems using the programming language Processing.</a></li>
+<li><a href="http://www.fig.sh/index.html">Fast, isolated development environments using Docker</a></li>
+<li><a href="https://wiki.php.net/rfc/php6#vote">The next major PHP version will be number 7 and not number 6</a></li>
+<li><a href="https://www.braintreepayments.com/braintrust/when-rest-isnt-good-enough">When REST isn&rsquo;t good enough</a></li>
+<li><a href="http://www.slideshare.net/cog/chmod-x-chmod">chmod -x chmod , a brilliant presentation on sys will answer to a tricky question</a></li>
+<li><a href="https://github.com/eddiezane/lunchy">A friendly wrapper for launchctl on osx. Start your agents and go to lunch!</a></li>
+<li><a href="https://www.youtube.com/watch?v=C6cQUlbJLKY">PHPUnit Best Practices</a></li>
+<li><a href="http://thephp.cc/dates/2013/ez-publish-summer-camp/testable-symfony2-applications">Test{able|ing} Symfony2 Applications</a></li>
+<li><a href="[https://www.youtube.com/watch?v=TejBj_N-3rI">Webinar: PhpStorm Best Practices &ndash; The Perfect Workflow for PHP Developers</a></li>
+<li><a href="http://gregrickaby.com/turn-chrome-developer-tools-into-an-ide/">Turn Chrome Dev Tools into an IDE</a></li>
+<li><a href="http://filamentgroup.com/lab/performance-rwd.html">How we make RWD sites load fast as heck</a></li>
+<li><a href="http://markdotto.com/2014/07/23/githubs-css/">Github&rsquo;s CSS and Style Guide</a></li>
+<li><a href="http://alistapart.com/blog/post/ten-css-one-liners-to-replace-native-apps">Ten CSS One-Liners to Replace Native Apps</a></li>
+<li><a href="http://javascriptplayground.com/the-refactoring-tales/refactoring-tales.html">The Refactoring Tales: Efficiently Refactoring the Code</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

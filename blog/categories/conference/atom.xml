@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: conference | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/conference/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[SymfonyCon Madrid 2014, the Sf2 community it's getting as stable as it can get]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/29/symfonycon-madrid-2014-the-sf2-community-its-getting-as-stable-as-it-can-get/"/>
+    <updated>2014-11-29T17:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/29/symfonycon-madrid-2014-the-sf2-community-its-getting-as-stable-as-it-can-get</id>
+    <content type="html"><![CDATA[<p>Since I had the privilege of attending
+the SymfonyCon in Madrid, in the past couple
+of days, I thought it would be nice
+to wrap up my thoughts on the event and
+the state, from my point of view, of the
+symfony community.</p>
+
+<!-- more -->
+
+
+<h2>Broader expansion</h2>
+
+<p>From what I could see, it looks like symfony
+is trying to expand in a way so that it can
+reach out to a <strong>bigger part of the PHP community</strong>:
+both <a href="http://fabien.potencier.org/">Fabien</a> and <a href="https://twitter.com/weaverryan">Ryan</a> spent a few words on how
+we should make the process of embracing symfony
+a bit easier and the importance of the <a href="http://symfony.com/blog/making-the-symfony-experience-exceptional">DX initiative</a>
+in this direction.</p>
+
+<p>To me, this looks like a very good move as it will
+influence the community, as a whole, in a drastic way:
+if we can get PHP developers to embrace, by default,
+all the best practices that symfony endorses (decoupling,
+testing, etc.) then we&rsquo;ve got a great road ahead of us.</p>
+
+<p>When I first bumped into PHP I must admit that the
+panorama was much messier, whereas today developers
+are already used to tools like Composer, standards like
+the ones promoted by the php-fig, which shows that we&rsquo;ve
+improved <strong>a lot</strong>, but there&rsquo;s still a lot to do (and more
+legacy to fight :)).</p>
+
+<p>Fabien also pointed out how we shouldn&rsquo;t expect drastic changes
+for Symfony 3 and the <em>leit motif</em> of his first keynote was
+a focus on making the ecosystem around the framework more
+complete, stable, rather than pushing towards innovation:
+as you probably already know, Symfony2 is <a href="http://symfony.com/doc/current/contributing/code/bc.html">really stable</a>
+and the overall feeling I had is that we won&rsquo;t see anything
+technically crazy in the next couple of years but rather
+see the framework and the surroundings getting simpler
+and more &ldquo;complete&rdquo;.</p>
+
+<h2>Blackfire.io</h2>
+
+<p>I particularly appreciated one of the final presentations,
+about Sensio&rsquo;s newborn <a href="https://blackfire.io/">Blackfire</a>, which looks like
+a very promising tool in order to monitor performances and
+optimize without too much hassle.</p>
+
+<p>It is now in public beta so I invite you to try it on
+any random project you are developing, as the <a href="https://blackfire.io/getting-started">setup</a>
+literally takes 5 minutes.</p>
+
+<h2>Time to look beyond Symfony2</h2>
+
+<p>I should also be a little critical :)</p>
+
+<p>One of the things that I missed, not being in the trenches
+with symfony on a daily basis, were those in-depth contents
+&ndash; not necessarily related to Symfony &ndash; that you will bring home
+&ndash; after the conference.</p>
+
+<p>I am talking about new technologies that can be integrated with
+the framework (I tried by giving an overview about <a href="http://www.slideshare.net/odino/hey-i-just-met-angularjs-and-this-is-crazy-so-heres-my-javascript-lets-use-it-maybe">our experience with AngularJS</a>),
+generic best practices (ie. <a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">API design</a>) and so on. I actually
+left the SymfonyCon without too much (technical)
+inspiration.</p>
+
+<p>(but again, this is the <strong>Symfony</strong>Con, so maybe&hellip; :))</p>
+
+<h2>Organization</h2>
+
+<p>Well, probably the best part of the conference: I already mentioned
+<a href="http://odino.org/angularjs-almost-a-year-later/">elsewhere</a> that food and WiFi were amazing, plus Sensio did
+a great job in making the speakers feel welcome.</p>
+
+<p>It doesn&rsquo;t always happen, but when an event is <strong>facilitated
+by the venue / organization / detail-orientation of the organizer</strong>
+you can then spend your time focusing on what really matters
+(the content) rather than complaining that the WiFi is slow,
+feel hungry or tired because the venue is 2000 miles away
+from the nearest, affordable hotel.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Well, Symfony turns ten next year&hellip;and will celebrate its most
+important birthday back in Paris so&hellip;hope to see you there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #64]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/06/newsletter-number-64/"/>
+    <updated>2014-11-06T13:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/06/newsletter-number-64</id>
+    <content type="html"><![CDATA[<p>Hello friends from the software engineering community!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro_Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
+Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
+with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
+
+<p><img class="team right" src="/images/berlin.png"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="https://tacoapp.com/">Taco App &ndash; a unified task list, getting tasks from 40+ sources</a></p></li>
+<li><p><a href="http://bit.ly/1BdO42A">Become a Better Programmer: 5 Essential Methods at a Glance</a></p></li>
+<li><p><a href="http://bit.ly/1qEThXn">FrontEnd Vs Backend Developer Infographic</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://stackshare.io/">StackShare.io &ndash; Discover &amp; discuss software stacks</a></p></li>
+<li><p><a href="http://bit.ly/111sQEA">Technical Debt Takes Many Forms</a></p></li>
+<li><p><a href="http://buff.ly/1wUf5nO">Master Developers: Addy Osmani</a></p></li>
+<li><p><a href="http://buff.ly/1wnN5ow">Windows port of Docker Client by ahmetalpbalkan..things start moving!</a></p></li>
+<li><p><a href="http://buff.ly/1v4oVER">A Quick Introduction to CoreOS</a></p></li>
+<li><p><a href="http://buff.ly/1GNLOPV">Front-end Tooling Workflows // this is a GREAT presentation</a></p></li>
+<li><p><a href="http://buff.ly/1Es3nBj">Symfony 3.0: The roadmap</a></p></li>
+<li><p><a href="http://buff.ly/1v25Gf7">Amazon Deploys to Production Every 11.6 Seconds // I think now its around every 6s&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/1Eq1FAf">React’s diff algorithm</a></p></li>
+<li><p><a href="http://buff.ly/1Ey5GVc">VisualOps: no more heavy lifting in the cloud</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-aws-reinvent-pagerduty">SaltStack Delivers More Advanced Cloud Orchestration for Amazon Web Services and Pagerduty</a></p></li>
+<li><p><a href="http://aws.amazon.com/codedeploy/">AWS CodeDeploy</a></p></li>
+<li><p><a href="http://aws.amazon.com/rds/aurora/">Amazon RDS for Aurora</a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-scorecard/">The DevOps Scorecard</a></p></li>
+<li><p><a href="http://blog.socialcast.com/realtime-search-solr-vs-elasticsearch">Realtime Search: Solr vs Elasticsearch</a></p></li>
+<li><p><a href="http://blog.trifork.com/2013/10/24/how-to-avoid-the-split-brain-problem-in-elasticsearch/comment-page-1/">How to avoid the split-brain problem in elasticsearch</a></p></li>
+<li><p><a href="http://www.slideshare.net/kucrafal/scaling-massive-elastic-search-clusters-rafa-ku-sematext">Scaling Massive Elastic-Search Clusters</a></p></li>
+<li><p><a href="http://hhvm.h4cc.de">HHVM packages support</a></p></li>
+<li><p><a href="https://hacksummit.org/">HackSummit, a virtual conference for developers</a></p></li>
+<li><p><a href="http://keithclark.co.uk/labs/css-fps/desktop/">A 3D environment with lighting, shadows built with CSS transforms</a></p></li>
+<li><p><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive mvc and the virtual dom</a></p></li>
+<li><p><a href="https://speakerdeck.com/jmikola/async-php-with-react"> Async PHP with React</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/0B3UKOMH_4lgBUTdjUGxIZ3l1Ukk/view"> A presentation about PHP 7</a></p></li>
+<li><p><a href="https://speakerdeck.com/ezimuel/information-security-in-php-the-cia-triad-approach">Information Security in PHP: the CIA Triad Approach</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Namshi went to Germany!<br>WebTechCon and International PHPConference 2014]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich/"/>
+    <updated>2014-10-30T06:51:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich</id>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/webtech14-ipc14.png" width="320" height="320" title="&lsquo;WebTechCon&rsquo; &lsquo;WebTechCon&rsquo;" ></p>
+
+<p>I had the opportunity to attend the <a href="http://webtechcon.de/2014/">WebTechCon</a> and the <a href="https://phpconference.com/2014">International PHPConference 2014</a> as speaker in Munich, Germany.
+The location was very nice, and beeing a foodie, the food was great :).</p>
+
+<p>The only small complaint I have is that in 2014, Tech conference should be in English: I missed a lot of potentially great talks because they were in German.</p>
+
+<p>The International PHP Conference is the world&rsquo;s first PHP conference and stands since more than a decade while the WebTechCon is taking place
+since the last 5 years.
+The fact that you have these two events combined confirms the trend of horizontal events rather than focusing on just
+one technology or product.
+Lots of different topics were covered: PHP, Javascript, HTML5, AngularJs, databases, devops, systems, automation, architecture etc.</p>
+
+<p>The concept of an heterogeneous technologies integration was addressed during the opening keynote and was a topic covered in many talks, mine were no exception.</p>
+
+<p>I presented two talks: <a href="http://www.slideshare.net/cirpo/don-t-screw-it-up-how-to-build-durable-api">&ldquo;Don&rsquo;t screw it up! How to build durable API&rdquo;</a> and <a href="http://www.slideshare.net/cirpo/php-is-the-king-nodejs-is-the-prince-and-lua-is-the-fool">&ldquo;PHP is the king, nodejs the prince and Lua the fool&rdquo;</a>.</p>
+
+<p>Both talks are based on the experience at Namshi, building our current service oriented architecture and API and how our stack is evolving.</p>
+
+<iframe src="http://namshi.github.io//www.slideshare.net/slideshow/embed_code/40808376" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> </div></p>
+
+<iframe src="http://namshi.github.io//www.slideshare.net/slideshow/embed_code/40818800" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px">  </div></p>
+
+<p>At Namshi we believe that attending conferences and meetups is a very important as that helps the team and the individual developers grow.
+It&rsquo;s a great opportunity to understand what&rsquo;s going on in our field and to meet other great developers.</p>
+
+<p>What&rsquo;s next? If you&rsquo;re attending <a href="http://madrid2014.symfony.com/">SymfonyCon Madrid</a>, don&rsquo;t miss <a href="http://madrid2014.symfony.com/speakers">&ldquo;Hey, I just met AngularJS, and this is crazy, so here’s my JavaScript, let’s use it maybe&rdquo;</a> by <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[What went down at SymfonyLive London?]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london/"/>
+    <updated>2014-10-02T12:26:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/symfonylive.png" width="640" height="640" title="&lsquo;SymfonyLive&rsquo; &lsquo;SymfonyLive&rsquo;" >
+SymfonyLive London 2014 concluded with top-notch presentations from Symfony and industry gurus. It was an exceptional
+opportunity being able to attend this conference and meet those people.</p>
+
+<p>Here is my summary about some of the talks I had the chance to attend:</p>
+
+<!-- more -->
+
+
+<h2>Keynote: Understanding Craftsmanship by <a href="https://twitter.com/_md">Marcello Duarte</a></h2>
+
+<p>Marcello delivered an outstanding keynote presentation on achieving craftsmanship in software.
+He provided a walk through the <a href="http://manifesto.softwarecraftsmanship.org/">Software Craftsmanship Manifesto</a>
+and how the Agile methodology should have been evolved to consider software craftsmanship as one of its practices.</p>
+
+<p>The talk focused on:</p>
+
+<ul>
+<li>Delivering a well crafted software by following good practices such as clean code</li>
+<li>Being steadfast by considering yourself a craftsman rather than an executionar</li>
+<li>Focusing on the community by having mentors and supporting other programmers</li>
+<li>Enhancing productivity by dealing with customers as partners who understand your passion and approach
+in delivering code rather than focusing on completing tasks</li>
+</ul>
+
+
+<iframe src="http://namshi.github.io//www.slideshare.net/slideshow/embed_code/39722355" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/marcello.duarte/understanding-craftsmanship" title="Understanding craftsmanship" target="_blank">Understanding craftsmanship</a> </strong> from <strong><a href="http://www.slideshare.net/marcello.duarte" target="_blank">Marcello Duarte</a></strong> </div></p>
+
+<h2>The dependency Trap by <a href="https://twitter.com/jakub_zalas">Jakub Zalas</a></h2>
+
+<p>Jakub explained how bad it can be having a number of services depend on one external service and at a certain point,
+when that external service needs to be replaced, you fall into what is called &lsquo;The Dependency Trap&rsquo; due
+to high coupling.</p>
+
+<p>The approach to follow in order to avoid such situations is to work on making internal services
+loosely coupled from external ones by introducing interfaces and &lsquo;Dependency Inversion&rsquo;. The guidelines
+of the Dependency Inversion principal are:</p>
+
+<ul>
+<li>High level modules (your services) should not depend on low level ones (libraries) instead, they should
+depend on abstractions. In other words, both your services and the library should depend on interfaces that clearly
+describe what they are expected to accomplish.</li>
+<li>Abstractions should not depend on details. This means that your interface should not be a detail in a possible
+more generic interface.</li>
+</ul>
+
+
+<p>Here at Namshi, we are introducing these practices, and as a starting point, we are loosely coupling our services from doctrine. It is
+amazing to notice that we are on the right track and addressing industry wide issues!</p>
+
+<h2>The Naked Bundle by <a href="https://twitter.com/matthiasnoback">Matthias Noback</a></h2>
+
+<p>This was one of the most contreversial talks at the confrence! Matthias&rsquo;s goal through this talk was to motivate the symfony
+community to start considering the fact that one day, they will be faced with a situation where they have to port their
+code to a different framework. Motivated by that fact, he started exploring ways that allow a Symfony2 based codebase to be easily portable
+to other frameworks and thus, depend less on the Symfony2 framework itself. Now the good part is that most of Symfony is based on components, however,
+Bundles are not. He moves on by trying to introduce workarounds for controllers, entities and templates to reside outside the bundle and create the
+&lsquo;Naked Bundle&rsquo;.</p>
+
+<h2>Sylius e-commerce for symfony2 developers by Pawel Jedrzejewski</h2>
+
+<p>A walk through Sylius, a powerful Symfony2 based E-commerce platform. Pawel explained how to start with Sylius, the available
+bundles and components it introduces and how it can be used in non-Symfony codebase.</p>
+
+<h2>Decoupling with design patterns and symfony DIC by <a href="https://twitter.com/everzet">Konstantin Kudryashov (everzet)</a></h2>
+
+<p>One of the best presentations that took place at SymfonyLive, Everzet just rocked it! He introduced the techniques he
+followed in building Behat v.3. His main goal was to try and deliver the most extensible test framework while
+maintaining backword compatibility. He used these goals and techniques as examples on how Symfony2 based projects
+should be built.</p>
+
+<p>The main guidelines to achieve decoupling, extensibilty and backword compatibility are to:</p>
+
+<ul>
+<li>Avoid premature abstractions.</li>
+<li>Close your code for any extensions (by using private attributes and final classes, for example).</li>
+<li>When a use case that requires opening up a class or an attribute rises, identify a proper extension point and put lots of thought in it.</li>
+<li>Whenever opening up a class or an attribute, keep in mind backward compatibility.</li>
+<li>Utilize the Gang of Four design patterns wherever needed!</li>
+</ul>
+
+
+<p>In case of Behat, achieving the framework design goals was done by leveraging compiler passes as extension points and
+using Delegation Loop, Decorator, Observer, Compsite, Chain of Responsibility and Adapter patterns. Each pattern was
+used wherever necessary, for example, the Adapther pattern achieved the goal of backword compatibility by executing the
+required transformation on legacy input and &lsquo;adapt&rsquo; it to the new one.</p>
+
+<p>Basically, the solution to a desing problem must reside in one of the design patterns in the Gang of Four!</p>
+
+<iframe src="http://namshi.github.io//www.slideshare.net/slideshow/embed_code/39591398" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/everzet/decoupling-with-design-patterns-and-symfony2-dic" title="Decoupling with Design Patterns and Symfony2 DIC" target="_blank">Decoupling with Design Patterns and Symfony2 DIC</a> </strong> from <strong><a href="http://www.slideshare.net/everzet" target="_blank">Konstantin Kudryashov</a></strong> </div></p>
+
+<h2>Keynote: Doing Everything With Nothing, Ephemeralization In The Cloud by <a href="https://twitter.com/dzuelke">David Zuelke</a></h2>
+
+<p>A very inspiring talk by David, he walks through the history of the evolution of daily life tools and how they keep doing
+more with less (Ephemeralization).
+From that point onwords, he explains how this observation relates to the computing world. We see that the cloud is
+evolving daily by intorducing enhancements that makes developers' life easier and making them focus on what is important to them.
+Infrastructure-as-a-service (IaaS) and Platform-as-a-Service (PaaS) are examples of this evolution. He moves on by introducing heroku,
+a PaaS, and how it contributes to this fact by providing out of the box system solutions to developers.</p>
+
+<p>All in all, the talks were inspiring and addressed current issues in web development. Can&rsquo;t wait for SymfonyLive London 2015!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Design, Architecture and Code on the edge @Confoo]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/22/coding-on-the-edge-at-confoo/"/>
+    <updated>2014-09-22T09:01:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/22/coding-on-the-edge-at-confoo</id>
+    <content type="html"><![CDATA[<p>At Namshi we run a product that needs to evolve quickly and be ready to change: new features and
+technologies are integrated every week to be able to keep up to date with the market and the technology around us.
+That&rsquo;s how we started using nodejs, Angular, Docker, SPDY and much more&hellip;</p>
+
+<p><strong>Do you want to hear more?</strong></p>
+
+<!-- more -->
+
+
+<p><img class="left team" src="/images/alex.jpg">
+<a href="http://tech.namshi.io/team#Alessandro%20Nadalin">Alex</a> submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
+<a href="http://confoo.ca/en/call-for-papers/speaker/alessandro-nadalin">vote for his talks</a>.<br>
+His talks cover a wide variety of topics from Symfony, Angular, HTTP to Dockerinzing your application.</p>
+
+<p>How cool is that?<br>
+If you are looking for sharp and engaging sessions, <strong>these are definitely bound to make you sit up and notice</strong>.</p>
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+
+]]></content>
+  </entry>
+  
+</feed>

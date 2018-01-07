@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: RedPen | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/redpen/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #81]]></title>
+    <link href="http://namshi.github.io/blog/2015/03/12/newsletter-number-81/"/>
+    <updated>2015-03-12T12:52:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/03/12/newsletter-number-81</id>
+    <content type="html"><![CDATA[<blockquote><p>It&rsquo;s <strong>#TechThursday</strong> again!</p>
+
+<p> It&rsquo;s true that we are nerds but it&rsquo;s also true that we are working for a fashion company.</p>
+
+<p>This is one of our attempts to get more fashionable:</p>
+
+<p><img class="center" src="/images/posts/lucio-with-network-cables.jpg"></p></blockquote>
+
+<p><strong>Here is the traditional &ldquo;selection&rdquo; of links our team found interesting this week , enjoy:</strong></p>
+
+<ul>
+<li><p><a href="https://css-tricks.com/using-the-html5-history-api/">Using the HTML5 History API</a></p></li>
+<li><p><a href="http://www.uxbooth.com/articles/what-ux-can-learn-from-print/">What UX Can Learn from Print</a></p></li>
+<li><p><a href="http://0xax.gitbooks.io/linux-insides/">Linux insides ebook</a></p></li>
+<li><p><a href="https://developers.google.com/v8/experiments">V8 &ndash; Experimental new directions for Javascript</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/thephpleague/booboo">Booboo: error handler for PHP </a></p></li>
+<li><p><a href="http://blog.jetbrains.com/phpstorm/2015/03/debugging-with-phpstorm/">Debugging with PhpStorm</a></p></li>
+<li><p><a href="https://redpen.io/">RedPen: an awesome visual feedback tool</a></p></li>
+<li><p><a href="http://macleodsawyer.com/2015/03/06/nine-truths-computer-programmers-know-that-most-people-dont/">9 truths that computer programmers know that most people don&rsquo;t</a></p></li>
+<li><p><a href="http://mashable.com/2015/03/10/googles-cfo-retires-memo/?utm_content=buffer3bc8c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Google CFO retires with a candid memo about work/life balance</a></p></li>
+<li><p><a href="https://medium.com/node-js-javascript/numbers-everyone-should-know-37a93d4e0013?utm_content=buffer246df&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Numbers everyone should know</a></p></li>
+<li><p><a href="https://www.mnot.net/blog/2014/05/05/how_many_package_managers_should_i_support?utm_content=bufferb7354&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How many package managers should I support?</a></p></li>
+<li><p><a href="http://wiredcraft.com/blog/multi-host-docker-network/?utm_content=bufferfa991&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Multi-host docker network</a></p></li>
+<li><p><a href="http://blogmaverick.com/2015/03/04/why-this-tech-bubble-is-worse-than-the-tech-bubble-of-2000/?utm_content=buffer83721&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Why this tech bubble is worse than the one in 2000</a></p></li>
+<li><p><a href="http://superuser.com/questions/297550/how-can-i-simulate-a-slow-machine-in-a-vm?utm_content=buffera730c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How can I simulate a slow machine in a VM?</a></p></li>
+<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/03/introducing-Google-Cloud-Storage-Nearline-near-online-data-at-an-offline-price.html">Introducing Google Cloud Storage Nearline: (near)online data at an offline price</a></p></li>
+</ul>
+
+
+<blockquote><p>that&rsquo;s all folks, see you next week! :)</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>

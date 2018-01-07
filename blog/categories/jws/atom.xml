@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jws, | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/jws/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Important 'namshi/jose' JWS library fix]]></title>
+    <link href="http://namshi.github.io/blog/2015/06/16/jose-fix/"/>
+    <updated>2015-06-16T16:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/06/16/jose-fix</id>
+    <content type="html"><![CDATA[<blockquote><p>We just released a very important security fix on <strong>namshi/jose</strong>, our opensource lightweight implementation of the JWS (JSON Web Signature) in PHP.</p></blockquote>
+
+<p>The issue is related to the fact that any jws token was valid if the algorithm specified in the header was &lsquo;none&rsquo; (first &lsquo;n&rsquo; lower case).
+Here you can find the <a href="https://github.com/namshi/jose/commit/be2db86f5224cc7d34ef98f9a315c6b45bc4fc4e#diff-afc7aff66a8cf751ea15e11dedf56b9bR113">fix</a></p>
+
+<p>There are three main relases:</p>
+
+<ul>
+<li><strong>2.x</strong></li>
+<li><strong>3.x</strong> (It introduces the support to PHPSecLib to the already existing OpenSSL implementation)</li>
+<li><strong>4.x</strong> (Added the ability to set custom properties in the header)</li>
+<li><strong>5.x</strong> (Fixed HMAC signature in order to be checked by other HMAC compliant library)</li>
+</ul>
+
+
+<p><strong>We strongly suggest to update to the latest major release (2.2.2, 3.0.1, 4.0.1, 5.0.1)</strong>.</p>
+
+<p>On a side note thanks to everyone who contributed to this library, especially:</p>
+
+<ul>
+<li><a href="https://github.com/smaxwellstewart">Simon Maxwell-Stewart</a></li>
+<li><a href="https://github.com/mikesir87">Michael Irwin</a>, <a href="https://twitter.com/mikesir87">twitter</a></li>
+<li><a href="https://github.com/Spomky">Florent Morselli</a>, <a href="https://twitter.com/florentmorselli">twitter</a></li>
+<li><a href="https://github.com/greg0ire">Grégoire Paris</a>, <a href="https://twitter.com/ggreg0ire">twitter</a></li>
+<li><a href="https://github.com/brianjmiller">Brian J. Miller</a></li>
+<li><a href="https://github.com/n-s-f">n-s-f</a></li>
+<li><a href="https://github.com/tymondesigns">Sean Tymon</a>, <a href="https://twitter.com/tymondesigns">twitter</a></li>
+<li><a href="https://github.com/callumacrae">Callum Macrae</a>, <a href="https://twitter.com/callumacrae">twitter</a></li>
+</ul>
+
+
+<p>&lt;3 opensource, &lt;3 github</p>
+]]></content>
+  </entry>
+  
+</feed>

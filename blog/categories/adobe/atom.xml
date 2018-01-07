@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: adobe | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/adobe/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #117]]></title>
+    <link href="http://namshi.github.io/blog/2015/12/10/newsletter-number-117/"/>
+    <updated>2015-12-10T17:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/12/10/newsletter-number-117</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi all!</p>
+
+<p>After a couple of weeks of long weekends we are back again!! :)</p>
+
+<p>Check out the list of awesome links we have got for you!</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.infoq.com/presentations/availability-consistency">availability &amp; consistency</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/backing-thinkwards/1060123207353876">backing thinkwards</a></p></li>
+<li><p><a href="http://racksburg.com/choosing-an-http-status-code/">choosing an http status code — stop making it hard | racksburg</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://blog.thecodewhisperer.com/2015/12/08/clearing-up-the-integrated-tests-scam/">clearing up the integrated tests scam</a></p></li>
+<li><p><a href="https://github.com/mzabriskie/rackt-cli">command line interface for automating common tasks when building react.js components</a></p></li>
+<li><p><a href="https://css-tricks.com/snippets/sass/deep-getset-maps/">deep get/set in maps | css-tricks</a></p></li>
+<li><p><a href="https://www.quora.com/Did-Facebook-save-PHP-Or-did-WordPress-save-PHP">did facebook save php? or did wordpress save php? &ndash; quora</a></p></li>
+<li><p><a href="https://blog.8thlight.com/uncle-bob/2015/10/30/futureproof.html">future proof</a></p></li>
+<li><p><a href="http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html">getters/setters. evil. period.</a></p></li>
+<li><p><a href="http://hhvm.com/blog/10859/php-7-support">hhvm php 7 support</a></p></li>
+<li><p><a href="https://open.buffer.com/diversity-strategies/">how facebook, pinterest and google build diverse teams</a></p></li>
+<li><p><a href="https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/">microsoft edge’s javascript engine to go open-source</a></p></li>
+<li><p><a href="http://www.businessinsider.com/navy-seals-explain-consequences-of-ego-2015-11">navy seals explain consequences of ego</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-symfony-as-a-microframework">new in symfony 2.8: symfony as a microframework</a></p></li>
+<li><p><a href="http://pointnorth.io/">north</a></p></li>
+<li><p><a href="http://en.arguman.org/react-is-killing-angular">react is killing angular | argument map</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/12/04/engineering-at-uber-with-matt-ranney/">scaling uber with matt ranney &ndash; software engineering daily</a></p></li>
+<li><p><a href="http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html">user experience, prototyping and design app | adobe project comet</a></p></li>
+<li><p><a href="https://www.quora.com/What-are-the-three-most-important-things-non-programmers-should-know-about-programming/answer/Simon-Effing">what are the three most important things non-programmers should know about programming? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/What-happens-when-you-receive-over-a-million-dollars-into-your-bank-account">what happens when you receive over a million dollars into your bank account? &ndash; quora</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

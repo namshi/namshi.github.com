@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: roger | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/roger/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How Namshi builds Docker containers through Docker containers]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/"/>
+    <updated>2015-08-08T10:14:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers</id>
+    <content type="html"><![CDATA[<p>When we started experimenting with <a href="https://www.docker.com/">Docker</a>,
+its environment was pretty new: private registries weren&rsquo;t <em>en vogue</em>
+and the DockerHub seemed to be the only decent alternative to store
+images and build your delivery pipeline on, even though it could take
+up to 15 minutes to get a simple image pushed to S3 from the Hub.</p>
+
+<p>We wanted a cheap, reliable, fast build tool that could fit our
+delivery pipeline: we wanted our code to <strong>seamlessly</strong> go from an
+engineer&rsquo;s machine to production; we wanted to <strong>build containers
+in seconds</strong>; we wanted stability and a (almost) <strong>zero-configuration</strong>
+approach.</p>
+
+<p>At the end of it, we wrote a build system for containers that goes
+Open-Source today: in this post we are going to look at the reasons
+behind it, how it works (for us), how it can work (for you) and
+what are our plans for the future.</p>
+
+<!-- more -->
+
+
+<h2>Why the heck did you write a build system to begin with?</h2>
+
+<p>First off, to call this tool a build system seems to be a bit
+pretentious: at the end of the day we only wanted a fast and
+reliable way to run docker builds on a remote machine and push
+them to our own private registry.</p>
+
+<p>We haven&rsquo;t built our own DockerHub, CodeShip, Shippable or
+Travis-CI: it is not our philosophy. We hate to re-invent
+the wheel and only do so if we find a roadblock ahead.</p>
+
+<p>When we started working with containers, our first choice
+was to simply rely on the <a href="https://hub.docker.com">hub</a>,
+which turned out to be quite frustrating; we can summarize
+our experience with the hub with these words:</p>
+
+<p><blockquote><p>Docker Hub also has an automated build system which detects new commits in your repository and triggers a container build. It is also completely useless for many reasons. Build configuration is restrictive with little to no ability for customisation, missing even the basics of pre/post script hooks. It enforces a specific project structure, expecting a single Dockerfile in the project root, which breaks our previously mentioned build workarounds, and build times were horribly slow.</p><footer><strong>Cal Leeming <a href="http://iops.io/blog/docker-hype/">http://iops.io/blog/docker-hype/</a></strong></footer></blockquote></p>
+
+<p>As much as we love the guys behind Docker (and the hub as well!),
+we tend to agree with the words of the above post: the hub is slow
+and the fact that you need to manually configure which branches
+you can build off from it&rsquo;s a poor design choice. A developer branches
+off master, creates <code>$devname-patch-1</code>, pushes and&hellip;   &hellip;hey,
+nothing gets built: we need to log into the hub and tell it that
+it has to build from that new branch as well. <strong>No good</strong>.</p>
+
+<p>We looked around but, 6 months ago, CodeShip wasn&rsquo;t planning anything (they just <a href="https://blog.codeship.com/continuous-integration-and-delivery-with-docker/">recently launched</a>
+a private beta, which we&rsquo;re eager to try out) and
+<a href="https://github.com/drone/drone">Drone.io</a> was still <a href="http://paislee.io/how-to-build-and-deploy-docker-images-with-drone/">too quirky</a>
+(it still is).</p>
+
+<p>Then we decided to spend 2 evenings on a prototype to
+trigger builds from github hooks: we hacked a very basic
+software (which runs in a container) that could talk to
+the Docker demon and tell it that it needs to build
+from a Dockerfile. We deployed it in our internal
+infrastructure, moved our deployment script from pulling
+images from the hub to our private registry (where the
+builder pushes) and never looked back.</p>
+
+<p>We now have some builds that run in 5 seconds or so.</p>
+
+<p>Thank you, <a href="https://github.com/namshi/roger">Roger</a>.</p>
+
+<h2>Welcome Roger!</h2>
+
+<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png</a>"></p>
+
+<p><a href="https://github.com/namshi/roger">Roger</a> is a
+JavaScript app (the server is built with Node,
+the client with React) that runs in a container
+and tells Docker to build images, at will: you
+can trigger builds manually or simply setup some
+hooks so that whenever you push Roger is going to
+trigger a new build.</p>
+
+<p>We are making it publicly available today, after weeks spent on
+discussing if it was worth it and then refining the
+tool for the public: we don&rsquo;t think Roger is the
+Next Big Thing but we are hopeful that the approach
+we used could inspire some of you and solve the
+same kind of problems that bugged us.</p>
+
+<p>To run roger, simply create a minimal <code>config.yml</code> file:</p>
+
+<p>``` yaml config.yml
+auth:
+  dockerhub: # these credentials are only useful if you need to push to the dockerhub</p>
+
+<pre><code>username: user # your username on the dockerhub
+email:    someone@gmail.com # your...well, you get it
+password: YOUR_DOCKERHUB_PASSWORD
+</code></pre>
+
+<p>  github: YOUR_GITHUB_TOKEN # used to clone private repos
+```</p>
+
+<p>Then clone the <a href="https://github.com/namshi/roger">Roger repo</a>,
+build the container and run it locally:</p>
+
+<p>``` bash
+git clone git@github.com:namshi/roger.git</p>
+
+<p>cd roger</p>
+
+<p>docker build -t namshi/roger .</p>
+
+<p>docker run -ti -p 6600:6600 \
+-v /tmp/logs:/tmp/roger-builds/logs \
+-v $(pwd)/db:/db \
+-v /path/to/your/config.yml:/config.yml \
+-v /var/run/docker.sock:/tmp/docker.sock \
+namshi/roger
+```</p>
+
+<p>You now have Roger up and running on your
+localhost: time to trigger our first build!</p>
+
+<p>Head over to <code>localhost:6600/api/build?repo=https://github.com/namshi/test-build</code>
+to schedule your first build, you should see
+a simple confirmation message:</p>
+
+<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png</a>"></p>
+
+<p>and, on the web interface at <code>localhost:6600</code>:</p>
+
+<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png</a>"></p>
+
+<p>Eureka!</p>
+
+<p>Wondering how Roger knows how to build the given
+repo? It first clones it and then reads a <code>build.yml</code>
+file in the root of the repo, just like
+<a href="https://github.com/namshi/test-build/blob/master/build.yml">this one</a>
+(don&rsquo;t worry about understanding how the <code>build.yml</code> works now,
+we will have a look at it later).</p>
+
+<p>Triggering manual builds wouldn&rsquo;t be much
+fun on the long run, as you will probably
+want your images to be built everytime
+someone pushes to your repo.</p>
+
+<p>You can do that by setting up a github hook,
+in your repo, that will hit Roger:</p>
+
+<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png</a>"></p>
+
+<p>That simple: now, everytime you push or create
+a new tag in your repo, Roger will create a new
+image.</p>
+
+<p>What is really interesting about Roger is the fact
+that you really need a very minimal configuration:
+a github access token in your <code>config.yml</code>, a <code>build.yml</code>
+in your repo and you&rsquo;re done. We wanted to build
+our system so that we wouldn&rsquo;t have to spend too much
+time configuring it, so that it could be smart enough
+to infer most things from the outside.</p>
+
+<h2>A few use cases</h2>
+
+<p>Say that your github repo actually contains 2 projects,
+a client and a server:</p>
+
+<p><code>yaml build.yml
+redis-client:
+  dockerfilePath: src/client
+redis-server:
+  dockerfilePath: src/server
+</code></p>
+
+<p>What about pushing one of them to the dockerhub
+and the other one to your private registry?</p>
+
+<p><code>yaml build.yml
+redis-client:
+  dockerfilePath: src/client
+  registry: dockerhub
+redis-server:
+  dockerfilePath: src/server
+  registry: private-registry.company.org
+</code></p>
+
+<p>After Roger has created your new Docker image,
+before pushing it to the registry, you might
+want to run some tests:</p>
+
+<p>``` yaml build.yml
+redis-client:
+  dockerfilePath: src/client
+  registry: dockerhub
+  after-build:</p>
+
+<pre><code>- make test
+</code></pre>
+
+<p>```</p>
+
+<p>and, after all of this, you might also want
+Roger to send you an email:</p>
+
+<p>``` yaml build.yml
+redis-client:
+  dockerfilePath: src/client
+  registry: dockerhub
+  after-build:</p>
+
+<pre><code>- make test
+</code></pre>
+
+<p>  notify:</p>
+
+<pre><code>- emailSes
+</code></pre>
+
+<p>```</p>
+
+<p>AWS SES is going to be used for sending emails,
+and you only need to configure it on Roger&rsquo;s <code>config.yml</code>:</p>
+
+<p>``` yaml config.yml
+notifications:
+  emailSes:</p>
+
+<pre><code>accessKey: 1234
+secret: 5678
+region: eu-west-1
+to:
+  - john.doe@gmail.com # a list of people who will be notified
+  - committer # this is a special value that references the email of the commit author
+from: builds@company.com # sender email (needs to be verified on SES: http://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html)
+</code></pre>
+
+<p>```</p>
+
+<p>At the same time, if your workflow happens through
+Pull Requests on github, you might want Roger to
+give you a heads up:</p>
+
+<p>``` yaml build.yml
+redis-client:
+  dockerfilePath: src/client
+  registry: dockerhub
+  after-build:</p>
+
+<pre><code>- make test
+</code></pre>
+
+<p>  notify:</p>
+
+<pre><code>- emailSes
+- github
+</code></pre>
+
+<p>```</p>
+
+<p>Which results in something like this:</p>
+
+<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png</a>"></p>
+
+<p>For a more detailed overview, check the
+<a href="https://github.com/namshi/roger#configuration-reference">configuration reference</a>:
+Roger can also upload assets to S3 and create <code>revfiles</code> for you
+(revfiles are files containing informations about the version that
+has been built, so that once you deploy your app you can expose them
+at <code>https://app.com/revision</code> and see what&rsquo;s running in production).</p>
+
+<h2>Roger in production</h2>
+
+<p>We have been running <a href="https://github.com/namshi/roger#in-production">Roger in production</a>
+for the past 6 months or so and are quite happy with it: everytime a developer pushes, we get our
+builds ready in seconds (or a couple minutes, if the projects is super-heavy!):
+if there is a glitch while running a build, the developer goes to
+github, open his PR and comments with <code>build please!</code> and Roger triggers
+that build again. It&rsquo;s that simple.</p>
+
+<p>If I compare Roger to our old build pipeline, which was based on
+Jenkins, it feels like day and night: we had to configure jobs directly
+on the jekins web interface, copy them over when we had a new project
+etc etc. We wanted this to be smart and with (almost) zero overhead,
+and we&rsquo;re happy where we got so far.</p>
+
+<h2>The road ahead</h2>
+
+<p>We don&rsquo;t have a masterplan for Roger: it works very well for us and
+we do not intend to bloat it or &ldquo;push it to the next level&rdquo;: we think
+great software gets born from straightforward use cases, takes advantage
+of other tools and stays simple &mdash; these are the 3 basic rules we
+have been following while developing it.</p>
+
+<p>Open-sourcing Roger means that you can now run your own Docker builds,
+for free, on your own infrastructure, thus saving on costs and time
+with a simple yet powerful solution.</p>
+
+<p>Of course, we are also making it public so that you can <a href="https://github.com/namshi/roger#contributing">hack on it</a>:
+if you feel there&rsquo;s something you hate about Roger, head to github
+and <a href="https://github.com/namshi/roger/pulls">open a PR</a>!</p>
+
+<p>I don&rsquo;t personally know what we&rsquo;re going to be using in a year:
+<a href="https://codeship.com/">CodeShip</a> seems promising and we are
+actively experimenting with their private beta but, at the same
+time, having our build tool running on our premises looks like
+a very good solution; performances are great and we deploy it
+just like any other container we run in production.</p>
+
+<h2>Thanks to</h2>
+
+<p>I thought of mentioning 3 or 4 people that really helped with getting
+Roger where it is right now:</p>
+
+<ul>
+<li><a href="https://github.com/apocas">Pedro Dias</a>, who wrote the amazing <a href="https://github.com/apocas/dockerode">dockerode</a>
+that Roger uses to talk to Docker</li>
+<li><a href="http://tech.namshi.io/team/#Armagan%20Kimonoglu">Armagan</a>,
+who has been instrumental in getting Roger as straightforward
+and &ldquo;automatic&rdquo; as possible</li>
+<li><a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a>, who gave Roger
+a face (its frontend), experimenting with ReactJS for the first time
+(parts of the <a href="/join-us/">perks of working at Namshi</a>)</li>
+<li>the whole <a href="http://tech.namshi.io/team/">Namshi tech team</a>, for
+being our beta-testers :)</li>
+</ul>
+
+
+<p>All of these guys, with their collective effort, helped turning a
+2-nights prototype into our build system.</p>
+
+<p>Yallah!</p>
+]]></content>
+  </entry>
+  
+</feed>

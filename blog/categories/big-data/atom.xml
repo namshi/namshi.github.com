@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: big data | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/big-data/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #104]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/20/newsletter-number-104/"/>
+    <updated>2015-08-20T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/20/newsletter-number-104</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello geeks,</p>
+
+<p>You know what they say &ndash; work hard, play hard! So, at Namshi, we started playing basketball, no PS4 involved! <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alessandro Nadalin</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Alessandro Cinelli (cirpo)</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David Funaro</a>, <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Luciano Colosio</a> , <a href="http://tech.namshi.io/team/#Armagan%20Kimonoglu">Armagan Kimonoglu</a>, <a href="http://tech.namshi.io/team/#Mohamed%20Amin">Mohamed Amin</a> , and <a href="http://tech.namshi.io/team/#Hossam%20Fares">Hossam Fares</a> joined in. Let&rsquo;s see if it got the team in shape :)</p>
+
+<p>And here is your weekly dose of TechThursday:</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.crn.com/slide-shows/data-center/300077566/10-big-data-business-intelligence-emerging-vendors-you-need-to-know-about.htm">10 big data/business intelligence emerging vendors you need to know about</a></p></li>
+<li><p><a href="https://github.com/unlucio/promiseKit">a collection of small and useful enhancements to es6 native promises without reinventing the wheel</a></p></li>
+<li><p><a href="http://daveyshafik.com/archives/69237-an-exceptional-change-in-php-7-0.html">an exceptional change in php 7.0</a></p></li>
+<li><p><a href="http://engineering.linkedin.com/security/open-source-tool-improve-android-application-security?utm_content=bufferbec32">an open source tool to improve android application security | linkedin engineering</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.forbes.com/sites/lisabrownlee/2015/08/19/ashley-madison-affairs-site-alleged-data-dump-how-to-find-it/">ashley madison affairs site alleged data dump and how to find it &ndash; forbes</a></p></li>
+<li><p><a href="http://glenmaddern.com/articles/css-modules">css modules &ndash; welcome to the future</a></p></li>
+<li><p><a href="http://blog.devopsguys.com/2015/07/31/devops-and-automating-the-repayment-of-technical-debt/">devops and automating the repayment of technical debt</a></p></li>
+<li><p><a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/?utm_content=buffera2f0d">eliminating roundtrips with preconnect &ndash; igvita.com</a></p></li>
+<li><p><a href="https://blog.golang.org/go1.5?utm_content=bufferc3f93">go 1.5 is released &ndash; the go blog</a></p></li>
+<li><p><a href="http://blog.golang.org/go1.5">go 1.5 is released</a></p></li>
+<li><p><a href="http://www.dataversity.net/google-cloud-makes-data-analysis-products-dataflow-and-pubsub-generally-available/">google cloud makes data analysis products, dataflow and pub/sub, generally available</a></p></li>
+<li><p><a href="http://www.bloomberg.com/news/features/2015-07-28/how-goldman-sachs-became-a-tech-investing-powerhouse">how goldman sachs became a tech-investing powerhouse</a></p></li>
+<li><p><a href="http://www.dataversity.net/how-it-can-and-should-get-involved-in-data-analytics/">how it can and should get involved in data analytics</a></p></li>
+<li><p><a href="https://github.com/blog/2047-language-trends-on-github">language trends on github</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?t=20">making architecture matter &ndash; martin fowler keynote</a></p></li>
+<li><p><a href="http://seld.be/notes/mysql-s-group-concat-limitations-and-cascading-bad-luck">mysql&rsquo;s group_concat limitations and cascading bad luck</a></p></li>
+<li><p><a href="http://www.techrepublic.com/article/real-time-data-science-how-to-embrace-this-new-reality/">real-time data science: how to embrace this new reality</a></p></li>
+<li><p><a href="https://github.com/yudai/gotty">share your terminal as a web application</a></p></li>
+<li><p><a href="http://regex.info/blog/2006-09-15/247">source of the famous “now you have two problems” quote</a></p></li>
+<li><p><a href="http://symfony.com/blog/symfony-achieves-100-php7-compatibility">symfony achieves 100% php7 compatibility</a></p></li>
+<li><p><a href="https://tonicdev.com/">the async-friendl/time traveling/data visualizing repl for node</a></p></li>
+<li><p><a href="http://scottberkun.com/2015/mistakes-of-company-culture/">the mistakes of writing about company culture</a></p></li>
+<li><p><a href="http://www.dataversity.net/whats-the-difference-between-predictive-analytics-and-data-science/">what’s the difference between predictive analytics and data science? &ndash; dataversity</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #79]]></title>
+    <link href="http://namshi.github.io/blog/2015/02/26/newsletter-number-79/"/>
+    <updated>2015-02-26T13:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/02/26/newsletter-number-79</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there! It&rsquo;s <strong>#TechThursday</strong> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.codementor.io/reactjs/tutorial/understanding-react-js-rendering">Understanding ReactJS rendering</a></p></li>
+<li><p><a href="http://blog.andrewray.me/flux-for-stupid-people/">Flux for Stupid People</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/02/06/what-the-flux/">What the Flux? (On Flux, DDD, and CQRS)</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.timmclean.net/2015/02/25/jwt-alg-none.html">why I dont like JWT</a></p></li>
+<li><p><a href="http://buff.ly/17vdOdI">an online photo editor built using React</a></p></li>
+<li><p><a href="http://blog.kazuhooku.com/2015/02/h2o-new-http-server-goes-version-100-as.html?utm_content=bufferba8ea&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">looking for a server to play with HTTP/2? check out h2o: fast and implements all the http/2 goodies!</a></p></li>
+<li><p><a href="https://blog.cloudflare.com/end-of-the-road-for-rc4/?utm_content=buffer2dcdd&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">End of the road for RC4 on CloudFlare</a></p></li>
+<li><p><a href="https://medium.com/@designuxui/how-bad-ux-killed-jenny-ef915419879e?utm_content=bufferb11f7&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How bad UX killed jenny</a></p></li>
+<li><p><a href="http://onethingwell.org/post/111280189260/goaccess">have fun with your HTTP logs</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/ec2-container-service-ecs-update-access-private-docker-repos-mount-volumes-in-containers/?utm_content=buffer7b026&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">AWS container service update</a></p></li>
+<li><p><a href="http://angularjs.blogspot.ae/2015/02/preview-of-new-angular-router.html?utm_content=buffer74e14&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Preview of the new angular router</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/node-js-foundation-io-js-unification/?utm_content=buffer830a9&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">on the future of nodejs and io.js</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=wgdBVIX9ifA&amp;feature=youtu.be&amp;utm_content=buffer8c604&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Microservices, by Martin Fowler</a></p></li>
+<li><p><a href="http://blog.krawaller.se/posts/a-react-js-case-study-follow-up/">A React.js case study follow-up</a></p></li>
+<li><p><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">Removing User Interface Complexity, or Why React is Awesome</a></p></li>
+<li><p><a href="http://angularjs.blogspot.co.uk/2015/02/new-angularjs-releases-140-beta5-and.html">New AngularJS Releases 1.4.0-beta.5 and 1.3.14</a></p></li>
+<li><p><a href="https://github.com/paulirish/memory-stats.js">minimal monitor for JS Heap Size via performance.memory</a></p></li>
+<li><p><a href="http://facebook.github.io/origami/">Origami: A tool for design prototyping from facebook</a></p></li>
+<li><p><a href="http://www.quora.com/When-and-how-do-you-apply-pressure-to-a-software-engineering-team">When and how do you apply pressure to a software engineering team?</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/02/vulnerable-operating-system.html">Windows? NO, Linux and Mac OS X Most Vulnerable Operating System In 2014</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/02/23/ebay-launches-pulsar-an-open-source-tool-for-quickly-taming-big-data/">EBAY into big data</a></p></li>
+<li><p><a href="https://datafloq.com/read/data-preparation-checking-analytics-software/869">Data Preparation Checking Analytics Software</a></p></li>
+<li><p><a href="http://www.technologyreview.com/view/535451/data-mining-indian-recipes-reveals-new-food-pairing-phenomenon/">Now Data Mining in Food</a></p></li>
+<li><p><a href="http://www.fastcompany.com/3042357/tableau-elastic-tinder-like-data-visualization">Tableau still growing fast</a></p></li>
+<li><p><a href="http://arstechnica.com/information-technology/2015/02/the-big-deal-about-big-data-your-guide-to-what-the-heck-it-actually-means/">Big Deal with Big Data</a></p></li>
+<li><p><a href="https://github.com/enaqx/awesome-react">Awesome React! A collection of useful resources about React</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=Tda7jCwvSzg">Photoshop &ndash; the first demo</a></p></li>
+<li><p><a href="http://sarasoueidan.com/blog/svg-picture/">Better SVG Fallback and Art Direction With The <picture> Element</a></p></li>
+<li><p><a href="http://estuts.com/">estuts</a></p></li>
+<li><p><a href="http://www.slideshare.net/clintongormley/terms-of-endearment-the-elasticsearch-query-dsl-explained">Terms of endearment &ndash; the ElasticSearch Query DSL explained</a></p></li>
+<li><p><a href="http://slidesha.re/1DZ6y83">Driving Design with PhpSpec</a></p></li>
+<li><p><a href="http://bit.ly/1wrctAs">HHVM at Etsy</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #30]]></title>
+    <link href="http://namshi.github.io/blog/2014/03/20/newsletter-number-30/"/>
+    <updated>2014-03-20T17:59:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/03/20/newsletter-number-30</id>
+    <content type="html"><![CDATA[<p><a href="/blog/categories/techthursday/">#TechThursday</a>! Here are some interesting news!</p>
+
+<ul>
+<li><p><a href="http://lab.arc90.com/2012/04/03/git-sweep/">Git-sweep</a>: A command-line tool that helps you clean up Git branches that have been merged into master</p></li>
+<li><p><a href="https://git.kernel.org/cgit/git/git.git/tree/Documentation/RelNotes/2.0.0.txt">GIT 2.0 released!</a></p></li>
+<li><p><a href="http://dillinger.io/">wysiwyg for markdown</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/introduction-to-the-mean-stack--cms-19918">JavaScript: Introduction to the MEAN Stack</a></p></li>
+<li><p><a href="http://blog.codeship.io/2013/10/31/unit-testing-best-practices-in-angularjs.html">Unit Testing Best Practices in AngularJS</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://github.com/rupa/z">Z, tracks your most used directories in your shell, based on &lsquo;frecency&rsquo;</a></p></li>
+<li><p><a href="http://hczhcz.github.io/Flappy-2048/">Flappy 2048</a></p></li>
+<li><p><a href="https://github.com/showcases">Github showcases</a></p></li>
+<li><p><a href="http://www.slideshare.net/emadb/wroclove-rb">From ActiveRecord to Events</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=R8W_6xWphtw">Fluent 2014 Paul Irish, about what&rsquo;s behind a simple HTTP request for a page</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=aZqhRICne_M">Fluent 2014 Brendan Eich, &ldquo;JavaScript Taking Both the High and Low Roads&rdquo;</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=WQZio5DlSXM">Redefining a function as you debug it in Chrome DevTools</a></p></li>
+<li><p><a href="http://www.uvm.edu/~cdanfort/csc-reading-group/lazer-flu-science-2014.pdf">BIG DATA: The Parable of Google Flu</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

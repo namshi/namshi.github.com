@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: swarm | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/swarm/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #111]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/14/newsletter-number-111/"/>
+    <updated>2015-10-14T14:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/14/newsletter-number-111</id>
+    <content type="html"><![CDATA[<blockquote><p>Hey!</p>
+
+<p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
+
+<p><img class="center" src="/images/hug_an_engineer.jpg"></p>
+
+<p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
+
+<ul>
+<li><p><a href="http://www.alexkras.com/11-tips-to-improve-angularjs-performance/">11 tips to improve angularjs performance</a></p></li>
+<li><p><a href="https://medium.com/@orliesaurus/api-tools-for-every-occasion-10-api-tools-released-in-2015-i-can-t-live-without-d5947d9ca9c3">api tool for every occasion</a></p></li>
+<li><p><a href="https://github.com/rimusz/coreos-osx-gui">coreos-vagrant gui for mac os x</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.wired.com/2015/10/meet-walking-dead-hp-cisco-dell-emc-ibm-oracle/?utm_content=bufferff50e">dell. emc. hp. cisco. these tech giants are the walking dead | wired</a></p></li>
+<li><p><a href="http://ericjmritz.name/2015/09/29/display-random-git-tips-in-your-terminal/">display random git tips in your terminal</a></p></li>
+<li><p><a href="https://github.com/docker/swarm/pull/1292">docker swarm @1.0.0</a></p></li>
+<li><p><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></p></li>
+<li><p><a href="http://www.shortlistdubai.com/events-attractions/article/4739-dubai-to-abu-dhabi-commute-in-15-minutes?utm_content=buffer827ca">dubai to abu dhabi commute in 15 minutes? &ndash; city highlights &ndash; shortlist dubai</a></p></li>
+<li><p><a href="http://www.mfranc.com/unit-testing/good-unit-test-one-assert/">good unit test &ndash; one assert | pragmatic developer</a></p></li>
+<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/">how to write unmaintainable php code</a></p></li>
+<li><p><a href="http://shadowhand.me/immutable-data-structures-in-php/">immutable data structures in php</a></p></li>
+<li><p><a href="http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html">improving angular web app performance example. &ndash; better world by better software</a></p></li>
+<li><p><a href="http://blog.thoughtram.io//angular/2015/09/17/resolve-service-dependencies-in-angular-2.html">injecting services in services in angular 2</a></p></li>
+<li><p><a href="http://jsrocks.org/2015/09/javascript-iterables-and-iterators/">javascript iterables and iterators &ndash; js rocks</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">learn to stop using shiny new things and love mysql | pinterest engineering</a></p></li>
+<li><p><a href="http://www.lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator">new in php 7: null coalesce operator</a></p></li>
+<li><p><a href="http://nodetuts.com/series/asynchronous-programming.html">node tuts &ndash; asynchronous programming</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist | risingstack</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist</a></p></li>
+<li><p><a href="https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e">nodejs: a quick optimization advice</a></p></li>
+<li><p><a href="http://zachholman.com/posts/opt-in-transparency/">opt-in transparency</a></p></li>
+<li><p><a href="https://esdiscuss.org/topic/performance-concern-with-let-const">performance concern with let/const</a></p></li>
+<li><p><a href="http://geek.bluemangointeractive.com/react-router-an-introduction/">react router: a comprehensive introduction &ndash; by blue mango geek</a></p></li>
+<li><p><a href="https://github.com/sebastianbergmann/phpunit/wiki/Release-Announcement-for-PHPUnit-5.0.0">release announcement for phpunit 5.0.0</a></p></li>
+<li><p><a href="http://zachholman.com/posts/remote-first/">remote-first vs. remote-friendly</a></p></li>
+<li><p><a href="http://llvm.org/">the llvm compiler infrastructure project</a></p></li>
+<li><p><a href="https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/">top elb health and performance metrics</a></p></li>
+<li><p><a href="http://matschaffer.com/2015/01/what-to-monitor/">what should i monitor?</a></p></li>
+<li><p><a href="http://xip.io/?utm_content=buffer557a8">xip.io: wildcard dns for everyone</a></p></li>
+<li><p><a href="https://www.sitepen.com/blog/2015/10/08/stronger-javascript/">stronger javascript?</a></p></li>
+<li><p><a href="https://shellvatore.us/2015/10/09/please-stop-curl-wgeting-directly-to-bash-sh/">PLEASE STOP CURL/WGET'ING DIRECTLY TO BASH/SH</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mongo | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/mongo/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #62]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/30/newsletter-number-62/"/>
+    <updated>2014-10-30T11:09:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/30/newsletter-number-62</id>
+    <content type="html"><![CDATA[<p>Hey folks!</p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<blockquote><p>News from the IT Team:</p>
+
+<p>Namshi is now maintaining <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>! <a href="">Lucio</a> just merged the first PR!</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> just came back from Munich after giving two interesting talks, read all about it <a href="http://tech.namshi.io/blog/2014/10/30/ipc14-wtc14-munich/">here</a>!</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> will be hitting <a href="http://madrid2014.symfony.com/speakers">SymfonyCon Madrid</a>
+on November 27-29. He will talk about Namshi&rsquo;s experience with AngularJs!</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://osquery.io/">SQL powered operating system instrumentation and analytics.</a></p></li>
+<li><p><a href="http://www.regexper.com/">Regexper: a good way to visualize your regex</a></p></li>
+<li><p><a href="http://monkey.org/~marius/unix-tools-hints.html?">Hints for writing Unix tools</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://jonathan.bergknoff.com/journal/building-good-docker-images">Building good docker images</a></p></li>
+<li><p><a href="http://bit.ly/1weC6l8">Why Open Source Is Becoming A Big Developer-Recruiting Tool</a></p></li>
+<li><p>[React and why it’s awesome) &ndash; Slides] (<a href="http://bit.ly/1yIRgyv">http://bit.ly/1yIRgyv</a>)</p></li>
+<li><p><a href="http://bit.ly/10ApTLP">4 Biggest Reasons Why Software Developers Suck at Estimation</a></p></li>
+<li><p><a href="http://davidwalsh.name/for-and-against-let">For and Against ‘Let’ in ES6</a></p></li>
+<li><p><a href="https://github.com/enaqx/awesome-react">A collection of awesome React libraries, resources and shiny things.</a></p></li>
+<li><p><a href="http://www.andrewconnell.com/blog/atscript-another-language-to-compile-down-to-javascript">AtScript &ndash; Another Language to Compile Down to JavaScript?</a></p></li>
+<li><p><a href="https://medium.com/@garychambers108/understanding-flux-f93e9f650af7">Understanding Flux Architecture</a></p></li>
+<li><p><a href="http://blog.pascal-martin.fr/post/php-versions-stats-2014-10-en">PHP versions stats &ndash; Oct 2014: >70% of installs are unmaintained versions!</a></p></li>
+<li><p><a href="http://blog.ircmaxell.com/2014/10/foundations-of-oo-design.html?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+Ircmaxell+%28ircmaxell%29">Foundation of OOP design</a></p></li>
+<li><p><a href="https://blog.engineyard.com/2014/on-love-open-course-and-community">On love, open source and community</a></p></li>
+<li><p><a href="https://github.com/virtkick/virtkick">VirtKick is a simple, open source orchestrator for managing virtual machines and Docker containers.</a></p></li>
+<li><p><a href="https://www.atatus.com/">Atatus: Frontend JavaScript Contextual Error Tracking &ndash; See which user actions triggered your frontend errors.</a></p></li>
+<li><p><a href="https://humongous.io/">Humongous.io: mongoDB User Interface</a></p></li>
+<li><p><a href="http://contribsys.com/inspeqtor/">Inspeqtor: Easy application infrastructure monitoring</a></p></li>
+<li><p><a href="http://lwan.ws/">Lwan: Experimental, scalable, high performance HTTP server</a></p></li>
+<li><p><a href="http://www.javaworld.com/article/2840332/html-css-js/next-up-for-node-js-going-mobile.html">Next up for Node.js: Going mobile</a></p></li>
+<li><p><a href="https://ahmetalpbalkan.com/blog/docker-http-basic-auth/">Securing Docker with HTTP Basic Authentication</a></p></li>
+<li><p><a href="http://tylermcginnis.com/angularjs-factory-vs-service-vs-provider/">AngularJS: Factory vs Service vs Provider</a></p></li>
+<li><p><a href="http://java.dzone.com/articles/docker-rabbitmq-cluster">Docker RabbitMQ Cluster</a></p></li>
+<li><p><a href="http://ropensci.org/blog/2014/10/23/introducing-rocker/">Introducing Rocker: Docker for R</a></p></li>
+<li><p><a href="https://clusterhq.com/blog/deploying-multi-node-elasticsearch-logstash-kibana-cluster-using-docker/">Deploying and migrating a multi-node ElasticSearch-Logstash-Kibana cluster using Docker</a></p></li>
+<li><p><a href="https://www.linkedin.com/today/post/article/20141027200232-1485298-why-i-left-my-254-895-pm-role-at-microsoft-to-start-a-seattle-tech-startup">Why I left my $254,895 PM role at Microsoft to start a Seattle tech startup</a></p></li>
+<li><p><a href="http://nginx.com/blog/deploying-nginx-nginx-plus-docker/">Deploying NGINX and NGINX Plus with Docker</a></p></li>
+<li><p><a href="http://jonathan.bergknoff.com/journal/building-good-docker-images">What constitutes a good docker image</a></p></li>
+<li><p><a href="http://www.infoworld.com/article/2838008/javascript/nginx-has-big-plans-for-javascript.html">Nginx has big plans for JavaScript</a></p></li>
+<li><p><a href="http://flapjack.io/">flapjack: monitoring notification routing + event processing system</a></p></li>
+<li><p><a href="http://venturebeat.com/2013/11/08/the-future-of-web-apps-is-ready-isomorphic-javascript/">The future of web apps is — ready? — isomorphic JavaScript</a></p></li>
+<li><p><a href="http://berzniz.com/post/98422338286/ocd-js-javascript-obsessive-compulsive-disorder">OCD.JS: JavaScript Obsessive-Compulsive disorder</a></p></li>
+<li><p><a href="https://readme.io/">Beautiful Documentation made easy</a></p></li>
+<li><p><a href="https://nakedsecurity.sophos.com/2014/10/24/do-we-really-need-strong-passwords">Do we really need strong passwords?</a></p></li>
+<li><p><a href="http://www.infoworld.com/article/2838799/node-js/next-up-for-nodejs-going-mobile.html">Next up for NodeJs, going mobile</a></p></li>
+<li><p><a href="http://www.elasticsearchtutorial.com/elasticsearch-in-5-minutes.html">ElasticSearch in 5 minutes</a></p></li>
+<li><p><a href="http://www.elasticsearch.org/blog/kibana-3-0-0-ga-now-available/">Kibana 3.0.0 GA is now available!</a></p></li>
+<li><p><a href="https://www.joyent.com/blog/node-js-advisory-board">Node gets an advisory board</a></p></li>
+<li><p><a href="http://blog.nodejs.org/2014/10/23/node-v0-10-33-stable/">And don&rsquo;t forget to update your nodes to the 0.10.33!!</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

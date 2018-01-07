@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: generator | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/generator/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Lightning talks #3]]></title>
+    <link href="http://namshi.github.io/blog/2016/10/17/lightning-talks-17-10-2016/"/>
+    <updated>2016-10-17T00:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/10/17/lightning-talks-17-10-2016</id>
+    <content type="html"><![CDATA[<blockquote><p>At Namshi, as you probably know, we do several activities, like &ndash; small presentations about new technologies,
+showcases of the latest projects, watching interesting conference talks, etc.
+We had our third edition of lightning talk. Each of our team members gave a small presentation about something they found interesting.
+Here is a recap of what they spoke about, and we hope you will find it interesting as well!</p></blockquote>
+
+<!-- more -->
+
+
+<p><a href="/team/#Alessandro%20Nadalin">Alex</a> Spoke about some tricks in bash</p>
+
+<p><a href="team/#Hossam%20Fares">Hossam</a> Explained how to use generators for sequential promises</p>
+
+<p><a href="team/#Mohamed%20Amin">Amin</a> Spoke about Promises Breakdown</p>
+
+<p><a href="team/#Ayham%20Alzoubi">Ayham</a> Introduced the await/async features in nodejs to the team</p>
+
+<p><a href="team/Joe%20Jean">Joe</a> Gave an example about how to use the shortest path algorithm</p>
+
+<p><a href="team/#Oluwaseun%20Obajobi">Oba</a> Gave us some system tweaks</p>
+
+<p><a href="team/#Shidhin%20CR">Shidhin</a> Showed us some tips in Chrome DevTools</p>
+
+<p><a href="team/#Geshan%20Manandhar">Geshan</a> Introduced CodeceptJs as a modern acceptance testing tool for NodeJS to the team</p>
+
+<p><a href="">Samar</a> Spoke about Artificial Intelligence Markup Language (AIML)</p>
+
+<p><a href="team/#Adedamola%20Disu">Disu</a> Showed us the benefits of The Great Suspender Chrome extension</p>
+
+<p><a href="team/#filippo%20de%20santis">Filo</a> Mentioned Yarn package manager and Nock as mocking library</p>
+
+<p>And here are the slides:</p>
+
+<iframe src="https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/embed?start=true&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p><a href="https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/pub?start=false&amp;loop=false&amp;delayms=3000">https://docs.google.com/presentation/d/1733hpKGtrz46rJPE44SObqsZWsWIoVsjDGBh9RlPsPc/pub?start=false&amp;loop=false&amp;delayms=3000</a></p>
+]]></content>
+  </entry>
+  
+</feed>

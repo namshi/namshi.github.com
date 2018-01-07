@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Upgrading our search server towards high availability and beyond &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Upgrading our search server towards high availability and beyond ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond/">
+    
+    
+    <meta property="og:title" content="Upgrading our search server towards high availability and beyond "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2017-06-February" title="February 06, 2017">February 06, 2017</time>
+            </div>
+            <h1 class="title">Upgrading our search server towards high availability and beyond</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/hossam.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Hossam Fares" title="Hossam Fares">
+                
+                    Hossam Fares
+                
+                </a></strong><br>
+                <span class="muted">Senior Software Engineer</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>In this post, we are going to highlight how and why we did a solr upgrade from solr v3 to solr-cloud v6 with no downtime.</p>
+
+<!-- more -->
+
+
+<p>We have adopted solr v3 as our search server since the beginning because solr has a nice schema and a very responsive search indexer.
+The old indexer was running on one solr server and whenever we needed to change the schema or trigger a full import we had to follow these steps:</p>
+
+<ol>
+<li>Unload the core<code>[SOLR_URL]/admin/cores?action=UNLOAD&amp;core=[CORE_NAME]</code></li>
+<li>Recreate the core with new schema changes, if any: <code>[SOLR_URL]/admin/cores?action=CREATE&amp;name=[CORE_NAME]&amp;config=[solrconfig.xml]&amp;schema=[schema.xml]</code></li>
+<li>Delete and then then re-import all documents</li>
+<li>Commit the updates <code>[SOLR_URL]/update?commit=true</code> to see it effective</li>
+</ol>
+
+
+<p>The major drawback with this approach is that if the solr machine down it takes time to boot up another machine and re-import all the products again.</p>
+
+<h2>How do we handle our solr updates?</h2>
+
+<h3>Partial imports:</h3>
+
+<p>Happens periodically: get the latest updates from DB and then update/delete only the changed documents in the given time frame.</p>
+
+<h3>Full imports:</h3>
+
+<p>Happens on request or on schema update: clear the indexer completely then insert all available documents.</p>
+
+<p><img src="http://www.employeescreen.com/wp-content/uploads/2015/06/Upgrade-e1434047810231.jpg" alt="time to upgrade" /></p>
+
+<p><a href="http://lucene.apache.org/solr/features.html">Solr has lots of improvements</a> and by using Solr-cloud in case of any solr instance failure we are not screwed.
+The new structure is a solr cluster, and contains 3 zookeeper nodes with 2 solr cloud nodes.
+<img src="/images/solr-cluster.png" alt="Solr cluster!" /></p>
+
+<h2>How do we handle the solr clients app during transition with confidence and no downtime on live environment?</h2>
+
+<ul>
+<li>We built a nodeJS service to handle periodic solr imports. The <a href="https://www.npmjs.com/package/zindex">Zindex library</a> is used to import data from mySQL (backend source) to solr.</li>
+<li>We kept the old solr server running side by side with the new solr on live environment.</li>
+<li>We made a change in our product catalog API that allowed us to return a response using the new or old solr, by simply using a special parameter. This allowed us to compare results coming from the old and new solr.</li>
+<li>Finally, we switched catalog requests to use the new solr one locale at a time till all supported locales were served with the new solr.</li>
+</ul>
+
+
+<h2>During the upgrade we faced some challenges &ndash; we are listing them below and how we dealt with them:</h2>
+
+<h3>How to revert unwanted updates?</h3>
+
+<p>After a full import we tried to run some validations to accept or reject the import, since <a href="https://wiki.apache.org/solr/UpdateXmlMessages#A.22rollback.22">solr supports rollbacks!</a>
+But we were disappointed because <a href="https://issues.apache.org/jira/browse/SOLR-4896">solr cloud mode doesn&rsquo;t support rollbacks</a>
+We solved this issue by <strong>saving the import in temporary files, running validations on these files, then commit</strong></p>
+
+<h3>How to swap collections?</h3>
+
+<p>Another issue we faced was that during the full imports the product count in our catalog API decreased significantly, then increased slowly till the import finished.
+The reason behind this is that we were deleting all products during the full import, then re-adding the products so solr  would show updates as fast as possible.
+To solve this issue we were thinking about <a href="https://wiki.apache.org/solr/CoreAdmin#SWAP">swapping</a> but this, again, was not supported in solr cloud
+So instead we used collections alias &ndash; every time we need to do a full import we <strong>create a new collection and after the updates and validations are done, we change the alias and delete the old collection</strong>.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-sh'>## Get the current collection OM-1
+
+curl [SOLR_HOST]/solr/admin/collections?action=LIST
+
+#
+#{
+#  &quot;responseHeader&quot;: {
+#    &quot;status&quot;: 0,
+#    &quot;QTime&quot;: 0
+#  },
+# &quot;collections&quot;: [
+#    &quot;OM-1&quot;
+#  ]
+#}
+
+## Create the new collection OM-2
+curl [SOLR_HOST]//solr/admin/collections?Action=CREATE&amp;name:OM-2
+
+## Create the new data file and post it to the new collection
+curl -XPOST -d @updates.json [SOLR_HOST]/solr/OM-2/update
+
+##  Override the alias to point to the new collection OM-2
+curl [SOLR_HOST]/solr/admin/collections?action=CREATEALIAS&amp;collections=OM-2&amp;name=OM
+
+## Delete the old collection
+curl [SOLR_HOST]/solr/admin/collections?action=DELETE&amp;name=OM-1&amp;wt=json</code></pre></figure>
+
+
+<h3>How to do a full import for all collections without causing high CPU usage?</h3>
+
+<p>In our architecture we have a collection for each country and since all countries share similar documents with small variations, like price, we use one mysql source and fork the backend to import updates for each country <a href="https://www.npmjs.com/package/zindex">(see Zindex)</a>
+When we pushed updates for all countries in parallel, the solr CPU usage spiked and in order to solve this, we had to <strong>do the update synchronously with <a href="https://github.com/tj/co">co</a></strong></p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>  return prepareSolr(availableCountries, options).then(() =&gt; {
+    return co(function* () {
+      for(var i = 0; i &lt; availableCountries.length; i++) {
+        var country = availableCountries[i];
+        var result = yield importProducts(country, options);
+        logger.info(`Solr Import has been finished for country ${country} with result`, result);
+      }
+    }).then(()=&gt;{
+        logger.info(`All solr countries finished!`);
+    })</code></pre></figure>
+
+
+<p><img src="/images/solr-cpu-usage-spike.png" alt="CPU usage went down!" /></p>
+
+<h3>How to maintain solr cluster well?</h3>
+
+<p>Just like most of our services, we <strong><a href="https://www.docker.com/">dockerize it</a></strong>. We have a monitoring script that checks the container status and another one that checks the app status e.g zookeeper replication status and solr ping, if any check fails we get an alert and apply the necessary fix.</p>
+
+<p><img src="http://img.photobucket.com/albums/v418/bawanaal/MissionAccomplished.gif" alt="Mission Accomplished" /></p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/tech-team/'>tech team</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

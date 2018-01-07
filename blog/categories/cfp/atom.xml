@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cfp | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/cfp/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Interested in the history of NodeJS? Then let's hear it from Lucio at the ConFoo]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo/"/>
+    <updated>2014-09-20T22:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo</id>
+    <content type="html"><![CDATA[<p>Not really hard to believe, NodeJS is a beloved one among
+the plethora of technologies that we use at <a href="https://namshi.com">Namshi</a>;
+that&rsquo;s why we got people like <a href="/team#Luciano%20Colosio">Lucio</a> on board so that we
+could expand in that direction.</p>
+
+<!-- more -->
+
+
+<p><img class="left team" src="/images/lucio.jpg" title="Luciano Colosio" ></p>
+
+<p>And you know what? Lucio loves Node so much that he&rsquo;d like
+to talk about it at a big stage, like the one the
+<a href="http://confoo.ca/">ConFoo</a> of next february.</p>
+
+<p>Then don&rsquo;t miss the chance to
+<a href="http://confoo.ca/en/call-for-papers/speaker/luciano-colosio">vote one of his proposals</a>
+as he&rsquo;d be very happy to introduce you the history of NodeJS
+(I heard part of that talk, since he already gave it internally
+for the Namshi team, and I have to admit it was freaking
+interesting), how it was born and what pushed
+<a href="http://www.quora.com/Who-is-Ryan-Dahl">Rian Dahl</a> to write
+this beautiful platform; the other talk that he has in the
+pipeline is a good introduction on how to embrace the
+non-blocking paradigm and he will explain how to make sure
+that you treat the Event Loop responsibly :)</p>
+
+<p>Definitely worth it!</p>
+]]></content>
+  </entry>
+  
+</feed>

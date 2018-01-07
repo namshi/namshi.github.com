@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ELK | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/elk/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter number 69]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/18/newsletter-number-69/"/>
+    <updated>2014-12-18T12:28:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/18/newsletter-number-69</id>
+    <content type="html"><![CDATA[<p>Hello Folks!  It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p>We&rsquo;re super excited to have <a href="https://github.com/Mohamed-amin">Mohamed Amin</a> ( our new front end developer ) in Namshi family.</p>
+
+<p> The tech team was learning #PhpSpec from <a href="http://tech.namshi.io/team/#Daniel%20Ribeiro">Daniel</a></p></blockquote>
+
+<p><img class="center" src="/images/phpspec-presentation.jpg"></p>
+
+<p><strong>Here is the list with awesome links our team been looking at over past week:</strong></p>
+
+<ul>
+<li><p><a href="http://blog.izs.me/post/104685388058/io-js">Whaat&rsquo;s going on with io.js</a></p></li>
+<li><p><a href="http://www.youtube.com/watch?v=NJ6QgMH2KPU">State of RocksDB &ndash; RocksDB Meetup</a></p></li>
+<li><p><a href="https://github.com/showcases/clean-code-linters">Clean code linters</a></p></li>
+<li><p><a href="http://blog.blackfire.io/profile-all-the-things.html?utm_content=buffer97e50&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Profiling with blackfire</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.quora.com/What-are-some-of-the-biggest-red-flags-in-an-interviewee?utm_content=buffer349f2&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">What are some biggest red flags during an interview?</a></p></li>
+<li><p><a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road?utm_content=buffer8c90f&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Symfony2 @ Namshi</a></p></li>
+<li><p><a href="https://medium.com/@addyosmani/javascript-application-architecture-on-the-road-to-2015-d8125811101b">JavaScript application architecture</a></p></li>
+<li><p><a href="http://bit.ly/1DQ3746">Logging with logstash at clay.io</a></p></li>
+<li><p><a href="http://bit.ly/1zyyIlj">Beautiful static documentation for your API with Slate</a></p></li>
+<li><p><a href="http://bit.ly/1z6TYkz">PHP At 5000 Requests Per Second: Hootsuite’s Scaling Story</a></p></li>
+<li><p><a href="http://bit.ly/1wHgs9H">The Art of Programming &ndash; By Erika Heidi</a></p></li>
+<li><p><a href="https://bolt.cm/newsitem/bolt-20-released">Bolt 2.0 released &ndash; New major version release of the Simple &amp; Sophisticated CMS based on Silex, Symfony and modern technologies.</a></p></li>
+<li><p><a href="http://phpbb.com/">phpBB.com Hacked!</a></p></li>
+<li><p><a href="http://littlehart.net/atthekeyboard/2014/12/14/stop-telling-me-to-refactor/">Stop Telling Me To Refactor</a></p></li>
+<li><p><a href="http://www.drdobbs.com/architecture-and-design/the-design-of-llvm/240001128">The Design of LLVM</a></p></li>
+<li><p><a href="http://marcofiset.com/programming-language-implementation-part-1-lexer/">Programming Language Implementation</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=90NsjKvz9Ns&amp;list=PL37ZVnwpeshFXOP2lqCUykYPXYNsK_fgN">Mark DiMarco: User Interface Algorithms JSConf2014</a></p></li>
+<li><p><a href="http://codepen.io/chriscoyier/blog/codepens-css">CodePen&rsquo;s CSS</a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2744-exposing-a-service-directly-on-the-scope-in-angularjs.htm">Exposing A Service Directly On The $scope In AngularJS</a></p></li>
+<li><p><a href="http://www.webperformancetoday.com/2014/12/17/5-things-know-ddos-attacks-outages-ssl-web-performance/">5 things you should know about DDoS attacks, outages, SSL, and web performance</a></p></li>
+<li><p><a href="http://www.filamentgroup.com/lab/mv-initial-load-times.html">Research: Performance Impact of Popular JavaScript MVC Frameworks</a></p></li>
+<li><p><a href="http://www.elasticsearch.org/blog/use-elk-display-security-datasources-iptables-kippo-honeypot/">Use ELK to visualise security data</a></p></li>
+<li><p><a href="http://brewhouse.io/blog/2014/11/04/big-data-with-elk-stack.html">Big data in minutes with the ELK Stack</a></p></li>
+<li><p><a href="http://blog.mongodb.org/post/95839709598/how-to-perform-fuzzy-matching-with-mongo-connector">How to Perform Fuzzy-Matching with Mongo Connector and Elastic Search</a></p></li>
+<li><p><a href="http://txt.fliglio.com/2014/10/consul-with-puppet/">Provisioning Consul with Puppet</a></p></li>
+<li><p><a href="https://github.com/knsv/mermaid">Generation of diagram and flowchart from text in a similar manner as markdown</a></p></li>
+<li><p><a href="https://github.com/garnaat/kappa">Kappa is a command line tool that makes it easier to deploy, update, and test functions for AWS Lambda.</a></p></li>
+<li><p><a href="https://github.com/Netflix/Hystrix">Hystrix: Latency and Fault Tolerance for Distributed Systems</a></p></li>
+<li><p><a href="http://www.centurylinklabs.com/tutorials/docker-on-the-mac-without-boot2docker/">Docker on the Mac (without boot2docker)</a></p></li>
+<li><p><a href="https://github.com/linkedin/dustjs">Asynchronous templates for the browser and node.js</a></p></li>
+<li><p><a href="https://github.com/linkedin/rest.li">Rest.li is a REST+JSON framework for building robust, scalable service architectures using dynamic discovery and simple asynchronous APIs.</a></p></li>
+<li><p><a href="http://engineering.clever.com/2014/12/10/when-your-ip-traffic-in-aws-disappears-into-a-black-hole/">When your IP traffic in AWS disappears into a black hole</a></p></li>
+<li><p><a href="http://www.aerospike.com/">Flash-optimized in-memory open source NoSQL database</a></p></li>
+<li><p><a href="http://fossil-scm.org/index.html/doc/tip/www/index.wiki">Simple, high-reliability, distributed software configuration management</a></p></li>
+<li><p><a href="https://atlas.hashicorp.com/">Develop, deploy, and maintain your application anywhere. Use one console and one workflow from development to production</a></p></li>
+<li><p><a href="http://aws.amazon.com/blogs/aws/ec2-container-service-in-action/">EC2 Container Service In Action</a></p></li>
+<li><p><a href="http://www.slideshare.net/SOON_/salt-docker-1">Deploying Dockerized Applications with Salt</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

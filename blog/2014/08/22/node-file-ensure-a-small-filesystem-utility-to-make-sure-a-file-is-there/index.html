@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>node-file-ensure, a small filesystem utility to make sure a file is there &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="node-file-ensure, a small filesystem utility to make sure a file is there ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/">
+    
+    
+    <meta property="og:title" content="node-file-ensure, a small filesystem utility to make sure a file is there "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-22-August" title="August 22, 2014">August 22, 2014</time>
+            </div>
+            <h1 class="title">node-file-ensure, a small filesystem utility to make sure a file is there</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/alex.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                
+                    Alessandro Nadalin
+                
+                </a></strong><br>
+                <span class="muted">Rusty CTO</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>This weekend we&rsquo;ve come up with a small utility
+that will make our life easier, and hopefully <strong>yours</strong>
+as well!</p>
+
+<!-- more -->
+
+
+<p>We use cascading mechanisms for our configurations, so, for
+example, we define the config in a few different files:</p>
+
+<ul>
+<li><code>base.yml</code>, that has all the common configurations</li>
+<li><code>dev.yml</code>, which is for local environments</li>
+<li><code>staging.yml</code>, which is for our staging environment</li>
+<li><code>live.yml</code>, well&hellip;you guessed it!</li>
+</ul>
+
+
+<p>So, for example, a <code>live.yml</code> might look like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-yaml'>domain:   &apos;namshi.com&apos;</code></pre></figure>
+
+
+<p>whereas the base one has many more values:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-yaml'>apis:
+  version:   &apos;v1&apos;
+  domain:    &apos;api.{{ domain }}&apos;
+  baseUrl:   &apos;https://{{ apis.domain }}&apos;</code></pre></figure>
+
+
+<p>There&rsquo;s a problem with this approach: if one of the developers
+wants to change a value in his <code>dev.js</code> git will tell him that
+the file has changed, which is quite annoying!</p>
+
+<p>To overcome this we always put it in the <code>.gitignore</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-yaml'>dev.yml</code></pre></figure>
+
+
+<p>and instead commit a <code>dev.yml.example</code> file that has the
+skeleton of the file, asking everyone, when booting the application
+for the first time, to copy that file to a <code>dev.js</code>.</p>
+
+<p>Things work flawlessly until you need to do this 10 times
+(I mean, in 10 projects, like we do) or when you forget this step
+during the installation and waste a lot of time trying to debug why
+the application is not running correctly.</p>
+
+<p>To overcome this annoying issue we decided to develop a small utility,
+<a href="https://github.com/namshi/node-file-ensure">node-file-ensure</a>, that
+does all of this for you:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var ensure = require(&apos;file-ensure&apos;);
+
+ensure(&apos;./config/dev.yml&apos;, {from: &apos;./config/dev.yml.example&apos;});</code></pre></figure>
+
+
+<p>Simple as that!</p>
+
+<p><code>ensure</code> will make sure to create an empty file if it doesnt find
+the one you specified:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>ensure(&apos;./config/dev.yml&apos;);</code></pre></figure>
+
+
+<p>and is able to copy the contents from another file,
+like in the first example above:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>ensure(&apos;./config/dev.yml&apos;, {from: &apos;./config/dev.yml.example&apos;});</code></pre></figure>
+
+
+<p>If you need to run any check after <code>ensure</code> has run,
+you can provide a callback:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>ensure(&apos;path/to/config/dev.yml&apos;, {src: &apos;path/to/config/dev.yml.example&apos;}, function(err){
+  console.log(fs.readFileSync(&apos;path/to/config/dev.yml&apos;).toString() === fs.readFileSync(&apos;path/to/config/dev.yml.example&apos;).toString());
+});</code></pre></figure>
+
+
+<p>That&rsquo;s it! Tests run through mocha and we&rsquo;ve set them up
+on <a href="https://travis-ci.org/namshi/node-file-ensure">travis</a>,
+to be on the safe side :)</p>
+
+<p>If you have patches, suggestions or rants&hellip;feel free to open
+an <a href="https://github.com/namshi/node-file-ensure/issues">issue on GitHub</a>!</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/javascript/'>JavaScript</a>, <a class='category' href='/blog/categories/nodejs/'>NodeJS</a>, <a class='category' href='/blog/categories/oss/'>OSS</a>, <a class='category' href='/blog/categories/open-source/'>Open Source</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

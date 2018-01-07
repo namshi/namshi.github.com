@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: job | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/job/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Get that job at Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi/"/>
+    <updated>2016-12-06T10:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi</id>
+    <content type="html"><![CDATA[<p>Inspired by <a href="https://hautelook.github.io/jekyll/update/2015/04/01/get-that-job-at-hautelook.html">HauteLook</a> who,
+in turn, were inspired by <a href="http://steve-yegge.blogspot.ae/2008/03/get-that-job-at-google.html">Steve Yegge</a>,
+I decided to write a small article that briefly describes what we&rsquo;re looking for
+when interviewing potential candidates.</p>
+
+<!-- more -->
+
+
+<h2>The process</h2>
+
+<p>Our recruitment process tends to be quite lean (with a few exceptions :)):</p>
+
+<ul>
+<li>a first, introductory chat with me to get to know each other (<em>45m</em>)</li>
+<li>a chat with someone from our HR department, so that the candidate gets a solid overview on our company, the culture, benefits and so on. This is also very helpful for people who are relocating, as it&rsquo;s the best time to ask anything about working in Dubai and so on (<em>1h</em>)</li>
+<li>a more technical interview with someone from our <a href="/team">tech team</a> (usually 2 of our senior engineers) (<em>1/2h</em>)</li>
+</ul>
+
+
+<p>Additionally, depending on the candidate and the position, there <strong>might</strong> be a
+few additional steps required:</p>
+
+<ul>
+<li>coding challenge (<em>no deadlines, should take up to 2 hours of your time</em>)</li>
+<li>additional technical screening with me (<em>1h</em>)</li>
+<li>chat with one of our managing directors (<em>45m</em>)</li>
+</ul>
+
+
+<p>So you can generally assume that, after 3 positive interviews (&frac34; hours in total), you
+could theoretically receive an offer letter.</p>
+
+<p>Expect the whole process to take around 3 weeks.</p>
+
+<h2>Backend</h2>
+
+<p>You should be familiar with minimalist frameworks like Express or Silex, as that&rsquo;s
+how we build 99% of our services nowadays. We&rsquo;re not big on any particular language,
+but if you worked with Node that&rsquo;s definitely a plus, as well as understanding
+async programming.</p>
+
+<p>Being familiar with a shell is kind of a must, as we want people who can poke
+around with Linux and are aware of the potential of the &ldquo;<em>do one thing and do it well</em>&rdquo;
+philosophy.</p>
+
+<p>The HTTP protocol (both 1.1 and 2) is another must as that&rsquo;s what we speak each
+and every day &mdash; you will be mainly tasked to write applications that talk to
+other services through HTTP. Knowing what changes with HTTP/2 and why that&rsquo;s
+great shows the kind of awareness we&rsquo;re looking for.</p>
+
+<p>We&rsquo;re not big on algorithms and data structures but that doesn&rsquo;t mean you
+shouldn&rsquo;t be able to understand them &mdash; having some basic knowledge of Big O
+is always appreciated, as well as understanding how to pick a data structure in
+order to make the most out of it.</p>
+
+<p>We use both relational and non-relational databases, and you should be
+comfortable with a few names here (mostly MySQL and Redis). On MySQL, questions
+about race conditions, locking and <code>ALTER TABLE</code> might come up.</p>
+
+<h2>Frontend</h2>
+
+<p>This position is all about JS &mdash; forget CSS, forget HTML: 99% of this position
+will mean JavaScript.</p>
+
+<p>Callbacks? Promises? async / await? Breakfast for you :)</p>
+
+<p>You should be familiar with technologies like Angular 1 and React, and how they
+work behind the curtain. We could ask you to write a simpler, smaller version of
+redux so you&rsquo;d better understand how these libraries work.
+For example, knowing that virtual DOM makes things faster won&rsquo;t cut it &mdash; why,
+how and thanks to what data structure will.</p>
+
+<p>We also have a keen eye on performance, and you should too: understanding what
+changes HTTP/2 brings to frontend engineering is a must, as well as knowing basic
+rules for performance optimization (<code>webpack -p</code> anyone?). We aren&rsquo;t super-fussy
+about the more advanced stuff, but if you mention tree-shaking and friends we
+won&rsquo;t mind :)</p>
+
+<p>You should be familiar with methodologies such as BEM as you will be required to
+discuss what&rsquo;s the best approach to structure our styles for the long run.
+We also like to sometimes use CSS animations, so knowing how to make them perform
+better, especially for mobile browsers, is highly appreciated.</p>
+
+<h2>DevOps</h2>
+
+<p>You should be very familiar with AWS or similar providers ie. Google Cloud, and
+have some sort of experience with containers and orchestrators &mdash;
+we use Kubernetes but if you worked with Mesos / Swarm we won&rsquo;t really mind.
+A good answer to &ldquo;<em>Why would you want to use an init system inside a container?</em>&rdquo;
+will definitely speed up the hiring process :)</p>
+
+<p>Be big on Linux, as we expect you to be a ninja there &mdash; utilities
+like <code>awk</code>, <code>sed</code> and so on should be music to your ears.</p>
+
+<p>You should be familiar with one scripting language (make it python, ruby, php, bash)
+and be open to jump into code, as you might be required to provide bugfixes on
+some of our services, or implement system-related features. In general, the more
+you can code the happier everyone is!</p>
+
+<p>A keen eye on security is a big plus &mdash; we&rsquo;re a small team and we need brilliant
+people who are going to take into account the problems that might happen when
+using (or <strong>not using</strong>) a particular technology, pattern or methodology.</p>
+
+<p>We are also big fans of automation and, in some sense, immutable infrastructures.
+Know the basics.</p>
+
+<h2>And we also generally look for&hellip;</h2>
+
+<ul>
+<li>automated testing is king here: despite the fact that we don&rsquo;t try to cover
+100% of the use-cases, we rely on automated tests a lot. Knowing how to write
+them, and what methodologies to use to make tests more maintainable is a must.</li>
+<li>it would be great to see some of your code &mdash; github is a fan-favorite here :)</li>
+<li>people who like <a href="https://en.wikipedia.org/wiki/Shawarma">shawarma</a></li>
+</ul>
+
+
+<p>What are you waiting for? Drop everything and <del>order some shawarma</del> <a href="/join-us/">apply now</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Like Android and iOS? Let's change shopping in the Middle East together!]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/"/>
+    <updated>2014-06-03T16:42:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together</id>
+    <content type="html"><![CDATA[<p>Do you like Java? Ok, I possibly started from the wrongest question.</p>
+
+<p>Restart.</p>
+
+<p>Do you like Android? (sounds much better!) And what about iOS? Tablets?
+Mobile devices in general? If so, come over and let&rsquo;s change the way
+people shop in the Middle East.</p>
+
+<p>We are looking for a <strong>Lead Mobile Developer</strong>, someone who can get his hands
+dirty with both of the main platforms, and teach others how to do it: we&rsquo;d
+like you to bring in your expertise and help kicking off our mobile
+development team.</p>
+
+<!-- more -->
+
+
+<h2>What do we need?</h2>
+
+<p>Our need is to kickoff an internal development team, which could even be split by
+iOS and Android, and to do so we would need to make a first, very good hire and
+find a lead who can drive all the way to success.</p>
+
+<p>How will your typical day look like? You will go over a <a href="https://gist.github.com">gist</a> which has the specs for
+a feature together with the other leads, wrap up a bugfix for the next release,
+check one of the pull requests submitted by another team member and have
+<a href="http://upload.wikimedia.org/wikipedia/commons/d/d4/Shawarma_ad_Istanbul_(01.10.2008).JPG">lotsa shawarma</a> for lunch.</p>
+
+<p>As general rules, we would like:</p>
+
+<ul>
+<li>someone who speaks both <strong>Android and iOS</strong> (if you know only one of them but think you deserve a position, talk to us and we&rsquo;d be very happy to hear your point)</li>
+<li>a few years of proficient <strong>development of mobile applications</strong>, possibly being a leader of a small/mid-sized team</li>
+<li>knowledge of the <strong>latest trend</strong> in your technical sector (you tell us if <a href="http://www.omgchrome.com/android-webview-auto-update-future/">android auto-updates its webview component</a>, not the other way round :) as well as suggesting tools like <a href="http://hockeyapp.net/features/">Hockey</a>)</li>
+<li><strong>Object-Oriented design</strong>: sounds boring but we don&rsquo;t limit ourselves to MVC, we actually need you to <a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">consume our APIs and get the most out of them</a></li>
+<li>it would be a plus to get someone who is passionate about <strong>OSS</strong> and would like to release some of our stuff after polishing them for the public</li>
+</ul>
+
+
+<h2>What do we offer?</h2>
+
+<ul>
+<li>a good salary, we don&rsquo;t want to hire people who feel they&rsquo;ve been underpaid</li>
+<li>SPDY, HTTP APIs and a Service-Oriented Architecture</li>
+<li>a <a href="https://www.google.com/maps/dir/First+Gulf+Bank+Metro+Station+1+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/More+Cafe+Gold+%26+Diamond+Park+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1264065,55.2068206,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3e5f6bc621973f29:0x18a89384f349bdf6!2m2!1d55.207756!2d25.126699!1m5!1m1!1s0x3e5f6bc6122edfe3:0x435be27ccd3d1564!2m2!1d55.208316!2d25.126114!3e2">1-minute-walk</a> from the metro to the office</li>
+<li>a <a href="/team">great team</a></li>
+<li>you <strong>will and won&rsquo;t</strong> be alone: our team is made of ~15 software engineers and we share best practices at the architectual / software design level,
+but don&rsquo;t have a way to re-invent the current team members into mobile hackers</li>
+<li>growth, as mobile is getting bigger and bigger (for us and for the ecommerce market in general): we expect the mobile
+development team to be growing as months will go by</li>
+<li>a company which is standing on the <a href="http://www.rocket-internet.de/">shoulder of giants</a></li>
+<li>the <em>&ldquo;10th our breakpoint&rdquo;</em>: if you work for 10 hours then have a break, order food and we will reimburse it</li>
+<li>working with <a href="http://instagram.com/p/gpSOCenpPI/">these two guys</a></li>
+</ul>
+
+
+<h2>So what?</h2>
+
+<p>Simply drop an email at <code>alessandro.nadalin@namshi.com</code> and let&rsquo;s make it real! Need more infos? Check <a href="/join-us">this</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Looking for some fun with APIs or JavaScript? We have what you need!]]></title>
+    <link href="http://namshi.github.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need/"/>
+    <updated>2014-03-24T14:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/03/24/looking-for-some-fun-with-apis-or-javascript-we-have-what-you-need</id>
+    <content type="html"><![CDATA[<p>To the army of developers out there: if you are looking to
+boost your nerditude and have some fun, we might have what
+you are looking for.</p>
+
+<p><em>(no, it&rsquo;s not a cookie)</em></p>
+
+<!-- more -->
+
+
+<p>Here at <a href="https://en-ae.namshi.com">Namshi</a>, in the cold (yes, it&rsquo;s an euphemism) lands of Dubai, things have gone quite well
+so far, and we&rsquo;re extremely excited everytime there&rsquo;s room for
+someone else in our little room (actually, our office it&rsquo;s kind of an open-space).</p>
+
+<p>I am very happy to announce that we are now actively looking for 2
+new members of our <a href="/team">team</a> in order to expand our team, vision,
+objectives and count of the <a href="https://www.google.com/search?q=shisha&amp;espv=2&amp;es_sm=125&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ei=zA8wU46_CoezhAePwgE&amp;ved=0CAkQ_AUoAQ&amp;biw=1687&amp;bih=871">shishas</a> we order when we&rsquo;re out together.</p>
+
+<h2>API monkey</h2>
+
+<p>If you know what the <code>PSR-4</code> is&hellip;</p>
+
+<p>If you are willing to switch to HHVM, in production, in the next six months&hellip;</p>
+
+<p>If you have ever heard of Event Sourcing&hellip;</p>
+
+<p>If you get excited everytime someone names Redis (even if it&rsquo;s for no apparent reason at all, the important is to get excited regardless)&hellip;</p>
+
+<p>If you know the 5 tenets of the REST architectural style&hellip;</p>
+
+<p>if you want to give back to the <a href="https://github.com/namshi">opensource community</a></p>
+
+<p>If you like <a href="http://en.wikipedia.org/wiki/Shawarma">shawarma</a>&hellip;</p>
+
+<p>&hellip;if all of this and that, then think of coming over to Dubai to join
+a startup that has been disruptive in his market and has been writing
+a Service-Oriented Architecture (with <a href="http://www.styleisnecessity.com/2012/12/15/namshi-2/">style</a>! :&ndash;))
+based on Symfony2, HTTP APIs and Redis.</p>
+
+<p>We are looking for a <em>Senior API engineer</em>, and will offer a competitive
+retribution plus some other benefits (<a href="/images/cirpo.jpg">working with cirpo</a>, among others).</p>
+
+<h2>Frontend ducktyper</h2>
+
+<p>As a <em>Senior Frontend Engineer</em>, you will need to get bored with old school
+technologies like <strong>NodeJS, AngularJS, Gulp</strong>, on which our frontends are
+currently running (to be honest, if we had to rewrite today, we would go
+for PERL, #FORSURE).</p>
+
+<p>Unfortunately, your duties will also include having to deal with the DevTools
+in order to speed up performances and eliminate any waste and overengineering
+we might have on our frontends.</p>
+
+<p>Last but not least &ndash; I know, I&rsquo;m sorry :( &ndash; you will be disgusted to be consuming our backend APIs,
+trying to get your head around HTTP headers, caching and everything bad about webservices.</p>
+
+<p>Ah, I almost forgot to mention that we might have to add SPDY and WebP. Yesterday.</p>
+
+<h2>About Namshi</h2>
+
+<p>We honestly want to keep it cool and fun, that&rsquo;s why I wante to give this
+post this kind of tone.</p>
+
+<p>One thing I am really proud of, at Namshi, is that <a href="http://www.slideshare.net/odino/soa-with-symfony2-confoo-2014-in-montreal-ca/159">we don&rsquo;t stick to one
+technology</a> just because we think that we can do everything with it, we use the
+correct technology for each and every context. <strong>We use what makes sense</strong>, which
+means that even PERL could do something, one day, in our architecture.</p>
+
+<p>We&rsquo;d like to hire someone who relies on the community around him, who likes
+to write open source code (and use it as well!), someone who likes enterprise
+design patterns and is afraid every time a feature not covered by a test goes to production.</p>
+
+<p>The team has been steadily growing since I joined the company in 2012,
+both from an headcount perspective and the level of skills.</p>
+
+<p>Our guys and girls tend to have fun on a daily basis, commit to the company
+values (and to github as well!) and (I hope :-P) are having a great run
+with technologies that is not always possible to use in other scenarios.</p>
+
+<p>But we are also aware that without other points of view, without growth,
+without some fresh energy, our journey to perfection would be even harder
+(and I personally make it even harder, I know!).</p>
+
+<p>Even though we are happy with our stack and what we achieved so far, we&rsquo;re aware that
+we are far from being perfect: that&rsquo;s why we need <strong>you</strong> :)</p>
+
+<p>Drop us an email (<code>alessandro.nadalin@namshi.com</code>) and let&rsquo;s have fun together!</p>
+
+<p><a href="https://github.com/namshi">github</a>
+<a href="https://twitter.com/technamshi">twitter</a></p>
+]]></content>
+  </entry>
+  
+</feed>

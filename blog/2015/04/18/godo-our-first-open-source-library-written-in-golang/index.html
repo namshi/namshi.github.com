@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>godo, our first open source library written in golang &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="godo, our first open source library written in golang ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/">
+    
+    
+    <meta property="og:title" content="godo, our first open source library written in golang "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2015-18-April" title="April 18, 2015">April 18, 2015</time>
+            </div>
+            <h1 class="title">godo, our first open source library written in golang</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/alex.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                
+                    Alessandro Nadalin
+                
+                </a></strong><br>
+                <span class="muted">Rusty CTO</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>Time for some more OS goodness in these days at
+<a href="https://www.namshi.com">Namshi</a>: this time we&rsquo;ve
+been experimenting with <a href="http://golang.org/">Go</a>
+and decided to release a small project we&rsquo;ve built
+in the last couple of days.</p>
+
+<!-- more -->
+
+
+<p>The library, called <a href="https://github.com/namshi/godo">godo</a>
+(which literally means <em>go and do</em>) is trying to
+solve the problem of always doing repetitive tasks
+on remote servers (remote execution) without having
+to use more advanced tools like Fabric / Salt / etc.</p>
+
+<p>Tired of &ldquo;<em>let me check what&rsquo;s up Varnish on our frontend servers</em>&rdquo;? Enter godo.</p>
+
+<p>With godo, you define a configuration file, put it in your
+home (on your local machine) and you can start invoking
+remote commands.</p>
+
+<p>This is how your configuration file would look like:</p>
+
+<figure class='code'><figcaption><span>~/godo.yml</span></figcaption><pre><code class='language-yaml'>servers:
+  web1:
+    address: &quot;xxx.xxx.xx.xxx:22&quot;
+    user:    &quot;me&quot;
+  web2:
+    address: &quot;xxx.xxx.xx.xxx:22&quot;
+    user:    &quot;me&quot;
+  db:
+    address: &quot;xxx.xxx.xx.xxx:22&quot;
+    tunnel:  &quot;tunnel.yourcompany.com:22&quot;
+    user:    &quot;me&quot;
+groups:
+  web: [web1, web2]
+commands:
+  uptime:
+    target:       all
+    exec:         &quot;uptime&quot;  
+    description:  &quot;Retrieves uptime info for all machines&quot;  
+  slow-queries:
+    target: db
+    exec: &quot;mysql-log -n 10&quot;
+  nginx-logs:
+    target: web
+    exec: &quot;sudo tail -10f /var/log/nginx/access.log&quot;
+hostfile: &quot;/home/YOU/.ssh/known_hosts&quot;
+timeout: 2</code></pre></figure>
+
+
+<p>and here&rsquo;s a little GIF that is pretty self-explatory:</p>
+
+<p><img src="https://raw.githubusercontent.com/namshi/godo/master/images/gif-example.gif"></p>
+
+<p>For more infos, please refer to the <a href="https://github.com/namshi/godo#usage">usage</a> section of the <a href="https://github.com/namshi/godo">readme</a>.</p>
+
+<h2>A bit of background&hellip;</h2>
+
+<p>We&rsquo;ve been starting to play around with Go since we believe it
+is a solid language for DevOps-ish things and is overall interesting
+and simple enough when you have to deal with stuff that needs
+to be running on different platforms &mdash; in fact, before godo
+we started hacking on go to write some small programs that run
+at our warehouse in Dubai, and run on windows :)</p>
+
+<p>Of course, Go is very different from other players in our stack
+(ie. JavaScript and the good old PHP) and serves very different
+purposes, but seems like we will be experimenting much more in the
+next months.</p>
+
+<p>Though, don&rsquo;t worry, we &lt;3 JavaScript and aren&rsquo;t planning to
+leave it anytime soon ;&ndash;)</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/golang/'>golang</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>, <a class='category' href='/blog/categories/oss/'>oss</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: angular1.x | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/angular1-dot-x/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #119]]></title>
+    <link href="http://namshi.github.io/blog/2015/12/31/newsletter-number-119/"/>
+    <updated>2015-12-31T16:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/12/31/newsletter-number-119</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi everyone,
+we are back after the Christmas break!</p></blockquote>
+
+<p><img class="center" src="/images/posts/christmas_team.png"></p>
+
+<blockquote><p>2015 is almost over and it was a great tech year here at Namshi, can&rsquo;t wait for 2016!</p>
+
+<p>HAPPY NEW YEAR dear geeks!</p></blockquote>
+
+<ul>
+<li><p><a href="https://keen.io/blog/135255657976/permission-to-fail">permission to fail </a></p></li>
+<li><p><a href="https://cloudonaut.io/5-aws-mistakes-you-should-avoid/?utm_content=buffer6a8c6">5 aws mistakes you should avoid</a></p></li>
+<li><p><a href="http://blog.jhades.org/introduction-to-angular2-the-main-goals/">angular 1 vs angular 2 &ndash; a high-level comparison</a></p></li>
+<li><p><a href="https://github.com/ChALkeR/notes/blob/master/Do-not-underestimate-credentials-leaks.md">do not underestimate credentials leaks</a></p></li>
+<li><p><a href="https://dotfiles.github.io/">github does dotfiles </a></p></li>
+<li><p><a href="https://github.com/golang/go/wiki/CodeReviewComments">go code review comments</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.nngroup.com/articles/ux-learn-in-restaurants/">good ux: what i learned while working in restaurants</a></p></li>
+<li><p><a href="http://thenewstack.io/docker-helped-turbocharge-ubers-deployments/">how docker turbocharged uber&rsquo;s deployments</a></p></li>
+<li><p><a href="https://developer.chrome.com/apps/api_index">javascript apis &ndash; google chrome</a></p></li>
+<li><p><a href="https://github.com/mafintosh/dns-discovery">mafintosh/dns-discovery</a></p></li>
+<li><p><a href="http://githubengineering.com/move-fast">move fast and fix things </a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-dx-improvements">new in symfony 2.8: dx improvements</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-simpler-security-voters">new in symfony 2.8: simpler security voters</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=a8zYmRmtss0">node js authentication and data security &ndash; jsconf.asia 2015</a></p></li>
+<li><p><a href="https://corbt.com/posts/2015/09/16/one-day-with-react-native-for-android.html">one day with react native for android &ndash; corbt blog</a></p></li>
+<li><p><a href="https://medium.com/@tjholowaychuk/semver-bccee96cc9ac">semver</a></p></li>
+<li><p><a href="https://agilein3minut.es/29/">simplest explanation of refactor in 3 mins</a></p></li>
+<li><p><a href="http://blog.speedchecker.xyz/2015/12/30/google-cdn-performance-benchmark/?utm_content=buffercc72e">surprise! google cdn alpha already outperforming competitors in europe</a></p></li>
+<li><p><a href="http://www.bash.academy/">the bash academy</a></p></li>
+<li><p><a href="http://thetechtoolshed.com/">the tech toolshed | the ultimate tech resource</a></p></li>
+<li><p><a href="https://developer.wordpress.com/2015/12/17/wordpress-com-desktop-app-goes-open-source-linux-app-arrives/">wordpress.com desktop app goes open source, linux app arrives</a></p></li>
+<li><p><a href="http://blog.ng-book.com/you-need-to-learn-angular-2/">you need to learn angular 2 « ng-book.com – blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

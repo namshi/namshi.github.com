@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: node | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/node/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #123]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/28/newsletter-number-123/"/>
+    <updated>2016-01-28T16:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/28/newsletter-number-123</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>We are looking for <a href="/blog/2016/01/18/were-hiring-backend-ers/">backend software engineers</a>.</p>
+
+<p>and here is your weekly dose of links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://jakearchibald.com/2016/streams-ftw/">2016 &ndash; the year of web streams</a></p></li>
+<li><p><a href="http://manuel.bernhardt.io/2015/11/13/5-years-of-scala-and-counting-debunking-some-myths-about-the-language-and-its-environment/?utm_source=hackernewsletter">5 years of scala and counting – debunking some myths about the language and its environment </a></p></li>
+<li><p><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">9 things every react.js beginner should know &ndash; cam jackson</a></p></li>
+<li><p><a href="http://jasonwilder.com/blog/2014/10/13/a-simple-way-to-dockerize-applications/">a simple way to dockerize applications ·</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://dev.windows.com/en-us/microsoft-edge/testdrive/demos/chess/?utm_source=hackernewsletter">asm.sj &ndash; chess </a></p></li>
+<li><p><a href="https://github.com/mcollina/climem">climem: monitor the memory consumption of your node process via cli</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/creating-single-page-applications-with-wordpress-and-angularjs--cms-25095">creating single page applications with wordpress and angular.js &ndash; envato tuts code tutorial</a></p></li>
+<li><p><a href="http://wesbos.com/css-highlight-animation">css highlight on hover animation | wes bos</a></p></li>
+<li><p><a href="https://davehall.com.au/blog/dave/2016/01/19/internal-applications-when-semantic-versioning-doesnt-make-sense">internal applications: when semantic versioning doesn&rsquo;t make sense | dave hall consulting</a></p></li>
+<li><p><a href="https://jamesmckay.net/2015/07/check-in-before-code-review-is-an-antipattern/">james mckay dot net » check-in before code review is an antipattern</a></p></li>
+<li><p><a href="https://www.nczonline.net/blog/2016/01/react-and-the-economics-of-dynamic-web-interfaces/">react and the economics of dynamic web interfaces &ndash; nczonline</a></p></li>
+<li><p><a href="https://github.com/aerofs/react-native-auto-updater">reat native auto updater &ndash; a library to manage dynamic updates to react native apps</a></p></li>
+<li><p><a href="http://importjake.io/testing-express-routes-with-mocha-supertest-and-mock-goose/">testing express routes with mocha, chai, supertest, and mockgoose</a></p></li>
+<li><p><a href="https://m.signalvnoise.com/the-fidelity-curve-weighing-the-costs-and-benefits-of-interface-design-mockups-b259634807e2">the fidelity curve: how to weigh the costs and benefits of creating ui mockups — signal v. noise — medium</a></p></li>
+<li><p><a href="http://www.infoq.com/presentations/7-sins-microservices">the seven deadly sins of microservices</a></p></li>
+<li><p><a href="http://www.fastcompany.com/3053036/how-to-be-a-success-at-everything/the-simple-technique-to-fit-a-40-hour-work-week-into-167-h">the simple technique to fit a 40-hour workweek into 16.7 hours</a></p></li>
+<li><p><a href="http://vorlonjs.com/">vorlon.js</a></p></li>
+<li><p><a href="http://www.onegeek.com.au/articles/waiting-for-dependencies-in-docker-compose">waiting for dependencies in docker compose | web, apis </a></p></li>
+<li><p><a href="https://medium.com/@stueccles/what-i-learned-migrating-a-rails-app-to-elixir-phoenix-f707436749aa">what i learned migrating a rails app to elixir/phoenix</a></p></li>
+<li><p><a href="http://brolik.com/blog/when-to-use-flexbox/">when to use flexbox : the brolik blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #119]]></title>
+    <link href="http://namshi.github.io/blog/2015/12/31/newsletter-number-119/"/>
+    <updated>2015-12-31T16:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/12/31/newsletter-number-119</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi everyone,
+we are back after the Christmas break!</p></blockquote>
+
+<p><img class="center" src="/images/posts/christmas_team.png"></p>
+
+<blockquote><p>2015 is almost over and it was a great tech year here at Namshi, can&rsquo;t wait for 2016!</p>
+
+<p>HAPPY NEW YEAR dear geeks!</p></blockquote>
+
+<ul>
+<li><p><a href="https://keen.io/blog/135255657976/permission-to-fail">permission to fail </a></p></li>
+<li><p><a href="https://cloudonaut.io/5-aws-mistakes-you-should-avoid/?utm_content=buffer6a8c6">5 aws mistakes you should avoid</a></p></li>
+<li><p><a href="http://blog.jhades.org/introduction-to-angular2-the-main-goals/">angular 1 vs angular 2 &ndash; a high-level comparison</a></p></li>
+<li><p><a href="https://github.com/ChALkeR/notes/blob/master/Do-not-underestimate-credentials-leaks.md">do not underestimate credentials leaks</a></p></li>
+<li><p><a href="https://dotfiles.github.io/">github does dotfiles </a></p></li>
+<li><p><a href="https://github.com/golang/go/wiki/CodeReviewComments">go code review comments</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.nngroup.com/articles/ux-learn-in-restaurants/">good ux: what i learned while working in restaurants</a></p></li>
+<li><p><a href="http://thenewstack.io/docker-helped-turbocharge-ubers-deployments/">how docker turbocharged uber&rsquo;s deployments</a></p></li>
+<li><p><a href="https://developer.chrome.com/apps/api_index">javascript apis &ndash; google chrome</a></p></li>
+<li><p><a href="https://github.com/mafintosh/dns-discovery">mafintosh/dns-discovery</a></p></li>
+<li><p><a href="http://githubengineering.com/move-fast">move fast and fix things </a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-dx-improvements">new in symfony 2.8: dx improvements</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-simpler-security-voters">new in symfony 2.8: simpler security voters</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=a8zYmRmtss0">node js authentication and data security &ndash; jsconf.asia 2015</a></p></li>
+<li><p><a href="https://corbt.com/posts/2015/09/16/one-day-with-react-native-for-android.html">one day with react native for android &ndash; corbt blog</a></p></li>
+<li><p><a href="https://medium.com/@tjholowaychuk/semver-bccee96cc9ac">semver</a></p></li>
+<li><p><a href="https://agilein3minut.es/29/">simplest explanation of refactor in 3 mins</a></p></li>
+<li><p><a href="http://blog.speedchecker.xyz/2015/12/30/google-cdn-performance-benchmark/?utm_content=buffercc72e">surprise! google cdn alpha already outperforming competitors in europe</a></p></li>
+<li><p><a href="http://www.bash.academy/">the bash academy</a></p></li>
+<li><p><a href="http://thetechtoolshed.com/">the tech toolshed | the ultimate tech resource</a></p></li>
+<li><p><a href="https://developer.wordpress.com/2015/12/17/wordpress-com-desktop-app-goes-open-source-linux-app-arrives/">wordpress.com desktop app goes open source, linux app arrives</a></p></li>
+<li><p><a href="http://blog.ng-book.com/you-need-to-learn-angular-2/">you need to learn angular 2 « ng-book.com – blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #116]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/26/newsletter-number-116/"/>
+    <updated>2015-11-26T13:35:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/26/newsletter-number-116</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
+
+<p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
+<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="https://open.buffer.com/impostor-syndrome-8-tips-i-wish-i-had-known/?utm_content=buffer2bcc4">8 tips about overcoming impostor syndrom</a></p></li>
+<li><p><a href="https://netguru.co/blog/a-quick-guide-to-peer-code-review">a quick guide to peer code review (and why you should do it)</a></p></li>
+<li><p><a href="https://medium.com/@darrenrush/after-docker-unikernels-and-immutable-infrastructure-93d5a91c849e">after docker: unikernels and immutable infrastructure</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/chatops-at-summit2015/">chatting about chatops from atlassian summit &ndash; atlassian developers</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://ma.tt/2015/11/dance-to-calypso/">dance to calypso &ndash; wordpress -php +react/nodejs</a></p></li>
+<li><p><a href="https://philsturgeon.uk/2015/11/20/deploying-with-git-flow-tags-and-circleci/">deploying with git-flow, tags and circleci</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/swapping-array-elements-in-place/">javascript swap in-place array elements</a></p></li>
+<li><p><a href="https://github.com/magento/magento2">magento/magento2</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?list=PLqrz4nXepkz4FIkZPnyJl6hk-SC-034K1">one-click deploy for service oriented architectures &ndash; kate heddleston (software engineer) &ndash; youtube</a></p></li>
+<li><p><a href="http://www.tedunangst.com/flak/post/pinboard-tips-for-web-design">pinboard tips for web design</a></p></li>
+<li><p><a href="http://grodola.blogspot.com/2015/11/openbsd-support-for-psutil.html">random writings and thoughts about python: openbsd support for psutil</a></p></li>
+<li><p><a href="https://github.com/eanplatter/react-starter">react-starter for beginners</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/quadratic-time-sorting-algorithms/">simple o(n<sup>2</sup>) sorting algorithms in javascript</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/11/18/software-and-entrepreneurship-with-seth-godin/">software and entrepreneurship with seth godin &ndash; software engineering daily</a></p></li>
+<li><p><a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">support for older versions of internet explorer ends on january 12, 2016 </a></p></li>
+<li><p><a href="http://www.slideshare.net/jasonmesut/the-craft-of-collaboration">the craft of collaboration</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #115]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/19/newsletter-number-115/"/>
+    <updated>2015-11-19T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/19/newsletter-number-115</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
+
+<p><img class="center" src="/images/posts/oba-cirpo-docker-con-15.jpg"></p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="http://blog.takipi.com/7-essential-slack-integrations-developers-should-know/">7 essential slack integrations developers should know | takipi blog</a></p></li>
+<li><p><a href="http://magento.com/blog/magento-news/new-era-commerce-innovation?mkt_tok=3RkMMJWWfF9wsRolvanAZKXonjHpfsX66uQtWqawlMI/0ER3fOvrPUfGjI4CRMBqI+SLDwEYGJlv6SgFSbHNMbhiwrgOUhM=">a new era of commerce innovation | magento</a></p></li>
+<li><p><a href="https://coreos.com/blog/vulnerability-analysis-for-containers/?utm_content=buffer286eb">coreos introduces clair: open source vulnerability analysis for your containers</a></p></li>
+<li><p><a href="https://egghead.io/lessons/node-js-creating-a-fake-api-with-hapi-for-your-client-side-application">creating a fake api with hapi for your client-side application &ndash; node.js video tutorial </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://blog.docker.com/2015/11/deploy-manage-cluster-docker-swarm/?utm_content=buffer8101e">deploy and manage any cluster manager with docker swarm</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/11/dockercon-eu-2015-docker-universal-control-plane/?utm_content=buffer66692">dockercon eu 2015: docker trusted registry 1.4 with integrated content trust and universal control plane</a></p></li>
+<li><p><a href="https://speakerdeck.com/benvinegar/fsto-re-evaluating-front-end-peformance-best-practices">fsto: re-evaluating front-end peformance best practices // speaker deck</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/11/anonymous-hacker-isis.html">hey isis! check out how &lsquo;idiot&rsquo; anonymous hackers can disrupt your online propaganda &ndash; the hacker news</a></p></li>
+<li><p><a href="https://github.com/jcuga/golongpoll">jcuga/golongpoll</a></p></li>
+<li><p><a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">jessie frazelle&rsquo;s blog: docker containers on the desktop</a></p></li>
+<li><p><a href="https://github.com/nature/shunter">nature/shunter</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/08/01/node-js-at-netflix-with-yunong-xiao/">node.js at netflix with yunong xiao | software engineering daily</a></p></li>
+<li><p><a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/">on currying and partial function application</a></p></li>
+<li><p><a href="http://www.slideshare.net/joshuaswarren/phpspec-behat-two-testing-tools-that-write-code-for-you-phptek-edition">phpspec &amp; behat: two testing tools that write code for you </a></p></li>
+<li><p><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">progressive web apps: escaping tabs without losing our soul – infrequently noted</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/09/17/react-at-facebook-with-ben-alpert/">react at facebook with ben alpert &ndash; software engineering daily</a></p></li>
+<li><p><a href="http://redux.js.org/">redux &ndash; predictable state container for javascript apps</a></p></li>
+<li><p><a href="https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app?utm_term=server-rendering-redux">server-side rendering with redux and react-router | codementor</a></p></li>
+<li><p><a href="http://blog.golang.org/6years">six years of go</a></p></li>
+<li><p><a href="https://medium.com/engineering-leadership/software-engineer-traits-fbf5dee9289c">software engineer traits — engineering leadership — medium</a></p></li>
+<li><p><a href="http://www.sourcecodepoetry.com/">source code poetry</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/offline-cookbook/">the offline cookbook &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://blog.bufferapp.com/optimal-work-time-how-long-should-we-work-every-day-the-science-of-mental-strength?utm_content=buffer33b8e">the origin of the 8-hour work day and why we should rethink it</a></p></li>
+<li><p><a href="http://www.zerohedge.com/news/2015-11-10/unicorns-dropping-flies-first-dropbox-then-square-now-fidelity-cuts-snapchat-valuati">unicorns dropping like flies: first dropbox; then square; now fidelity cuts snapchat valuation by 25%</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/">what the web platform can learn from node.js &ndash; atlassian developers</a></p></li>
+<li><p><a href="http://joel.is/zero-notifications/">zero notifications</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #106]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/03/newsletter-number-106/"/>
+    <updated>2015-09-03T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/03/newsletter-number-106</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again and our <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are flying towards Europe to attend a conference!
+Have fun guys!</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.quora.com/Front-End-Web-Development/What-is-the-most-bizarre-CSS-or-HTML-question-you-have-ever-been-asked-in-a-job-interview">what is the most bizarre css or html question you have ever been asked in a job interview? &ndash; quora</a></p></li>
+<li><p><a href="https://github.com/Coffcer/vue-chat">chat example by vue.js + webpack</a></p></li>
+<li><p><a href="https://github.com/clowwindy/Awesome-Networking">clowwindy/awesome-networking</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.hostingadvice.com/blog/comparing-node-js-vs-php-performance/">comparing node.js vs php performance &ndash; hostingadvice.com</a></p></li>
+<li><p><a href="http://www.infoq.com/articles/docker-executable-images">executable images &ndash; how to dockerize your development machine</a></p></li>
+<li><p><a href="http://gilliam.github.io/">gilliam &ndash; a micro services platform</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/08/ui-at-docker/">how ui became a thing at docker | docker blog</a></p></li>
+<li><p><a href="http://www.quora.com/Is-ReactJS-overtaking-AngularJS-as-the-most-popular-front-end-web-framework">is reactjs overtaking angularjs as the most popular front end web framework? &ndash; quora</a></p></li>
+<li><p><a href="http://robertheaton.com/2015/08/31/migrating-bajillions-of-database-records-at-stripe/">migrating bajillions of database records at stripe | robert heaton</a></p></li>
+<li><p><a href="http://googleblog.blogspot.it/2015/09/google-update.html">official google blog: google’s look, evolved</a></p></li>
+<li><p><a href="http://www.infoworld.com/article/2866712/php/php-vs-node-js-an-epic-battle-for-developer-mind-share.html">php vs. node.js: an epic battle for developer mind share | infoworld</a></p></li>
+<li><p><a href="https://engblog.nextdoor.com/2015/08/27/publishing-blog-with-github-circleci-and-google-analytics/">publishing blogs with github, circleci, and google analytics | nextdoor engineering</a></p></li>
+<li><p><a href="https://github.com/semantic-release/semantic-release">semantic release: automated package publishing</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2015/08/the-illusion-of-control.html">the illusion of control</a></p></li>
+<li><p><a href="http://dailydigest.com/technology/drone-helicopter-swarm/">this smart guy’s built an awesome personal helicopter using drone parts!&ndash; daily digest</a></p></li>
+<li><p><a href="http://www.quora.com/Why-is-it-so-hard-for-so-many-software-engineers-to-get-high-quality-work-experience">why is it so hard for so many software engineers to get high-quality work experience? &ndash; quora</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/08/ui-at-docker/">How UI Became a Thing at Docker | Docker Blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

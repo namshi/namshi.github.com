@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>MockServer, Effortless API Mocking Library in Node Js &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="MockServer, Effortless API Mocking Library in Node Js ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/">
+    
+    
+    <meta property="og:title" content="MockServer, Effortless API Mocking Library in Node Js "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-13-June" title="June 13, 2014">June 13, 2014</time>
+            </div>
+            <h1 class="title">MockServer, Effortless API Mocking Library in Node Js</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Mohamad Hallal" title="Mohamad Hallal">
+                
+                    Mohamad Hallal
+                
+                </a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>Namshi Tech Team is happy to roll-out a new node-based library!</p>
+
+<p>We present you <a href="https://github.com/namshi/mockserver">MockServer</a>, a library that allows you to easily mock your APIs&#8217; plain HTTP responses.</p>
+
+<!-- more -->
+
+
+<p>The main benefit of this library is to allow developers to focus on what is important to them, and in this case,
+<code>mockserver</code> allows front-end developers to focus their efforts on creating awesome front-end clients without having to worry about the
+availability of a complete and running API.</p>
+
+<p>The use of this library can be appreciated by developers following a <a href="http://www.frontendfirst.com/">Front-End First</a>
+methodology where development efforts initially focus on front-end clients rather than the back-end structure and tools.
+Front-end first suggests that front-end developers have their mocked servers return expected or anticipated HTTP responses
+based on the available specification instead of making an actual call to the API.
+Another benefit is to allow development for both front-end and back-end in parallel.</p>
+
+<p>In short, this library basically removes the dependency that the front-end development requires from the backend.</p>
+
+<h2>Usage</h2>
+
+<p>Create an empty directory inside your project, <code>mkdir api</code></p>
+
+<p>To start mocking your HTTP responses, you will need to have a sub-directory were all your mocks shall reside. In order to do so,
+in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s where all plain text HTTP responses will reside.</p>
+
+<p>Inside your <code>api</code> directory, run</p>
+
+<figure class='code'><pre><code class='language-bash'>npm install mockserver</code></pre></figure>
+
+
+<p>Create a new js file, say, <code>api.js</code> that has the following:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var http       = require(&apos;http&apos;),
+    mockserver = require(&apos;mockserver&apos;);
+
+http.createServer(mockserver(&apos;./mocks&apos;)).listen(&apos;9001&apos;);</code></pre></figure>
+
+
+<p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
+listens to port <code>9001</code>.</p>
+
+<p>Now, you should point your front-end client to <code>http://localhost:9001</code> instead of the actual api url.</p>
+
+<h2>Mocks</h2>
+
+<p>Now, your node server is running and your client can start making requests and getting back mocked HTTP responses.</p>
+
+<p>How do you create the mocks?</p>
+
+<p>Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
+The naming of those files goes as follows: <code>path_METHOD</code>, <code>path</code> is the relative url path without any slashes, i.e, <code>/test</code>
+should be <code>test</code> and <code>METHOD</code> is the upper-cased HTTP method (<code>GET</code>). The extension for the files should be <code>.mock</code>.
+The complete file name is: <code>test_GET.mock</code>.</p>
+
+<p>The contents of the mocked file should be a valid HTTP response text, as follows:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8
+
+&lt;html&gt;&lt;body&gt;Hello World&lt;/body&gt;&lt;/html&gt;</code></pre></figure>
+
+
+<p>Now, whenever your client requests <code>http://localhost:9001/test</code>, <code>mockserver</code> will return that plain HTTP response you defined
+in <code>test_GET.mock</code>.</p>
+
+<h2>Header Variation</h2>
+
+<p>Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
+<code>mockserver-variation</code> header in your requests. The value of this header shall be appended to the mocked file name as follows: <code>path_METHOD_variation</code>.</p>
+
+<p>Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
+Simply set <code>mockserver-variation</code> to <code>500</code> and the file from our previous example should be named <code>test_GET_500.mock</code>.</p>
+
+<h2>Multi-level URLs</h2>
+
+<p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
+
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
+
+<h2>Conclusion</h2>
+
+<p>Although simple and straight forward, the idea behind <code>mockserver</code> is quite powerful. It is mostly suited for a Front-end First methodology, some of the
+benefits include parallel front-end and back-end development and the decoupling of the Front-end and back-end during the development phase.</p>
+
+<p>It would be great if you can take the time to try it out and let us know what you think!</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/api/'>API</a>, <a class='category' href='/blog/categories/front-end/'>front-end</a>, <a class='category' href='/blog/categories/mock/'>mock</a>, <a class='category' href='/blog/categories/node/'>node</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

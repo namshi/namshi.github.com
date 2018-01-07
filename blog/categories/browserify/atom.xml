@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: browserify | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/browserify/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
+    <updated>2014-06-07T00:50:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
+    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a very
+elegant way.</p>
+
+<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
+through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
+recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
+small and simple, and thought to keep your
+configuration as elegant, simple and declarative as possible.</p>
+
+<!-- more -->
+
+
+<p>With reconfig you can do stuff like:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <pre><code class='language-javascript'>
+
+var reconfig = require(&amp;lsquo;reconfig&amp;rsquo;);&lt;/p&gt;
+
+&lt;p&gt;var config =  new reconfig({&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;greet: &apos;Hello :who!&apos;,
+sayhi: &apos;{{ greet }}&apos;
+countries: {
+    uae: {
+        population: &apos;2M&apos;,
+        nationalDay: &apos;December 2nd&apos;
+    }
+    // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;});&lt;/p&gt;
+
+&lt;p&gt;// Retrieve a deep config value
+config.get(&amp;lsquo;countries.uae.nationalDay&amp;rsquo;); // December, 2nd&lt;/p&gt;
+
+&lt;p&gt;// Pass parameters to the configuration
+config.get(&amp;lsquo;greet&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
+
+&lt;p&gt;// Reference other configuration parameters
+config.get(&amp;lsquo;sayhi&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
+
+&lt;p&gt;// Fallback values
+config.get(&amp;lsquo;something&amp;rsquo;, {}, &amp;lsquo;invalid&amp;rsquo;); // invalid
+
+</code></pre></figure></notextile></div></p>
+
+<p>We&rsquo;re probably gonna look into porting the same to
+PHP (another big player in our stack) so&hellip;stay tuned!</p>
+]]></content>
+  </entry>
+  
+</feed>

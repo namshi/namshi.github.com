@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rabbitmq | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/rabbitmq/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #95]]></title>
+    <link href="http://namshi.github.io/blog/2015/06/18/newsletter-number-95/"/>
+    <updated>2015-06-18T13:35:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/06/18/newsletter-number-95</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>&hellip; Hi Guys, the week is over and a we have a new good list of links for
+you. Ramadan Kareem!!</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="https://github.com/jlevy/the-art-of-command-line">The Art of the command line</a></p></li>
+<li><p><a href="https://github.com/blog/2024-read-only-deploy-keys">GitHub: Read-only deploy keys</a></p></li>
+<li><p><a href="http://engineering.remind.com/introducing-empire/">Introducing Empire: A self-hosted PaaS built on Docker </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1IlNcXC">A guide for reviewing code and having your code reviewed</a></p></li>
+<li><p><a href="http://bit.ly/1J5m9Wj">Web Caching Basics: Terminology, HTTP Headers, and Caching Strategies</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/06/kitematic-windows-alpha/">Kitematic for Windows Alpha Now Available! | Docker Blog</a></p></li>
+<li><p><a href="http://bit.ly/1CeHvbS">How to undo (almost) anything with Git</a></p></li>
+<li><p><a href="http://bit.ly/1FnQSpO">Setting up Docker RabbitMQ with predefined users/vhosts</a></p></li>
+<li><p><a href="https://brendaneich.com/2015/06/from-asm-js-to-webassembly/">Brendan Eich » Blog Archive » From ASM.JS to WebAssembly</a></p></li>
+<li><p><a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">Standard ECMA-262</a></p></li>
+<li><p><a href="http://blog.testdouble.com/posts/2014-01-25-the-failures-of-intro-to-tdd.html">Test Double | Our Thinking | The Failures of &ldquo;Intro to TDD&rdquo;</a></p></li>
+<li><p><a href="http://contests.envato.com/remix-02/index.html">Envato Remix &ndash; Remix </a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/MonolithFirst.html?utm_content=buffer50e78">MonolithFirst</a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/18285212/how-to-scale-docker-containers-in-production/18287169?utm_content=bufferdb554">How to scale Docker containers in production &ndash; Stack Overflow</a></p></li>
+<li><p><a href="https://www.mindmeister.com/389671722/docker-ecosystem?utm_content=buffer7139d">Docker Ecosystem &ndash; MindMeister Mind Map</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #23]]></title>
+    <link href="http://namshi.github.io/blog/2014/01/23/newsletter-number-23/"/>
+    <updated>2014-01-23T17:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/01/23/newsletter-number-23</id>
+    <content type="html"><![CDATA[<p>Hello, this is <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://namshi.com">#namshi</a>!</p>
+
+<br/>
+
+
+<br/>
+
+
+<!-- more -->
+
+
+<p><a href="http://www.jagregory.com/writings/converting-and-preserving-michael-abrash-graphics-programming-black-book/">Converting and Preserving Michael Abrash&rsquo;s Graphics Programming Black Book</a></p>
+
+<p><a href="http://www.socialpoint.es/blog/using-redis-to-build-your-game-leaderboard/">Using redis to build your game leaderboard</a></p>
+
+<p><a href="http://lab.hakim.se/meny/">A three dimensional and space efficient menu</a></p>
+
+<p><a href="http://graspjs.com/">Search, replace, and refactor your JavaScript code based on its structure rather than its text</a></p>
+
+<p><a href="https://github.com/rossriley/php-scalar-objects/blob/master/README.md">PHP Scalar Object Handlers</a></p>
+
+<p><a href="http://php-and-symfony.matthiasnoback.nl/2013/01/dependency-injection-smells/">Dependency Injection smells</a></p>
+
+<p><a href="http://www.rabbitmq.com/blog/2012/04/25/rabbitmq-performance-measurements-part-2/">Rabbitmq performance measurements</a></p>
+
+<p><a href="https://github.com/domnikl/DesignPatternsPHP">Sample code for several design patterns in PHP</a></p>
+
+<p><a href="http://symfony.com/blog/help-symfony-reach-3-billion-people">Help Symfony reach 3 billion people</a></p>
+
+<p><a href="http://blog.nodejs.org/2014/01/15/the-next-phase-of-node-js/index.html?utm_source=hackernewsletter&amp;utm_medium=email">The Next phase of Node.js</a></p>
+]]></content>
+  </entry>
+  
+</feed>

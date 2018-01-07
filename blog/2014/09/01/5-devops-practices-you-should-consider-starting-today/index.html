@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>5 DevOps practices you should consider starting today &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="5 DevOps practices you should consider starting today ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/09/01/5-devops-practices-you-should-consider-starting-today/">
+    
+    
+    <meta property="og:title" content="5 DevOps practices you should consider starting today "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/09/01/5-devops-practices-you-should-consider-starting-today/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-01-September" title="September 01, 2014">September 01, 2014</time>
+            </div>
+            <h1 class="title">5 DevOps practices you should consider starting today</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/geshan.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Geshan Manandhar" title="Geshan Manandhar">
+                
+                    Geshan Manandhar
+                
+                </a></strong><br>
+                <span class="muted">Senior Software Engineer</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>DevOps simply stresses on communication, collaboration and integration between software developers and information technology (IT) operations professionals a.k.a sys admins. it&rsquo;s goal is to support automation and maximize predictability, efficiency, security and maintainability of operational processes, meaning you can deploy 5 times on production on the same day with confidence that all systems will be fully operational. This post is moreover a software enginner&rsquo;s point of view on the DevOps side.</p>
+
+<!-- more -->
+
+
+<p>It goes without mentioning, to build a robust architecture you will need to follow the industry standards for example, use a distributed version control system &ndash; <a href="http://git-scm.com/">git</a> is a great one, use automated deployment tools &ndash; you should check <a href="http://capistranorb.com/">Capistrano</a>, write automated tests using framework like <a href="http://phpunit.de/">PHPUnit</a>, have some form of continuous integration &ndash; you can run automated tests with <a href="https://travis-ci.com/">Travis CI</a> on different versions of a language and have some internal documentation in place which includes basic to advanced things about the codebase and the systems used. Following similar rules, at <a href="http://www.namshi.com">Namshi</a> we use some <a href="http://en.wikipedia.org/wiki/DevOps">DevOps</a> practices which are very helpful to us, here are some main ones:</p>
+
+<h2>Virtual Development Environment -Vagrant</h2>
+
+<p><a href="http://www.vagrantup.com/">Vagrant</a> is a virtual development environment that works as controller to a virtual machine on your main machine. The virtual machine has all needed software stack installed, each software is installed as a config. It creates a reproducible and portable development machine which is shared among all the developers, that in turn eliminates &ldquo;Works on my machine&rdquo; syndrome and also help to get started with working on the codebase in a matter of hours compared to a day.</p>
+
+<p>With use of vagrant, it is very easy to install new software and update them. You just add some scripts to how the vagrant box is configured and push the changes. All the software engineers will pull it, reload the vagrant machine and done. All of them have the new software and the correct version of it. As the configs, services and even file paths are shared everyone is on the same page when discussing about the system. If you are already interested in vagrant don&rsquo;t hesitate to start reading it&rsquo;s <a href="http://docs.vagrantup.com/v2/getting-started/index.html">docs</a>.</p>
+
+<h2>Atomic Deployments</h2>
+
+<p>Some months back we used to follow a revised version of <a href="http://nvie.com/posts/a-successful-git-branching-model/">gitflow</a> and grouped multiple tickets in same deployment, basically some completed tickets (generally 4-8) where merged to the <code>develop</code> branch and then merged to the  <code>release</code> branch. A tag was created from the <code>release</code> branch say <code>1.2.3</code> and it was deployed to <code>staging</code> then <code>production</code> after tests were ok. If all goes well the tag is merged to <code>master</code>. Issues with this was, if we had a problem after the deployment pinpointing which ticket introduced this issue was difficult.</p>
+
+<p>Lets fast forward to now, currently we do <strong>atomic deployments</strong>, it means only one ticket is deployed at a time. Each ticket has it&rsquo;s sole deployment. First the ticket is deployed to <code>staging</code> tested and if everything is fine then it&rsquo;s deployed to production.</p>
+
+<p>So, you completed your ticket all the automated tests have passed and your code has been reviewed, then</p>
+
+<ol>
+<li>You deploy it on <code>staging</code> environment after making sure that your branch is rebased with latest <code>master</code>.</li>
+<li>If all tests are fine a tag is created from your ticket&rsquo;s branch say <code>1.2.3</code>.</li>
+<li>The tag <code>1.2.3</code> is deployed to production.</li>
+<li>If all goes well on production, then the tag <code>1.2.3</code> is merged to master.</li>
+</ol>
+
+
+<p>The above steps are carried out for each completed ticket. In case of <strong>atomic deployment</strong> if anything goes wrong, we know what is the cause of it as a ticket is generally a small unit of work. In both cases atomic or grouped deployment, <code>master</code> is always the stable branch deployable to production anytime.</p>
+
+<h2>Multiple staging environments</h2>
+
+<p>As we adopted <strong>atomic deployments</strong>, we needed to wait for the staging environment to be free to test our completed ticket(s). Sometimes the wait was more that a day if we had multiple tickets that had higher priority. There by, we devised a new way to make multiple staging deployments possible, how? The basic idea is:</p>
+
+<ol>
+<li>Deploy with a <code>standalone</code> deployment flag for the ticket branch let&rsquo;s say <code>cancel-email</code>. (Standalone deployment will mean it will be deployed to a folder on the <code>staging</code> server same as the branch name which is <code>cancel-email</code> in this case.)</li>
+<li>To access codebase for this deployed branch (<code>cancel-email</code>), the software engineer who deployed will create a cookie lets say <code>staging-route</code> on the browser with value of the branch name <code>cancel-email</code> and send request from the browser which has this <strong>magic</strong> cookie.</li>
+<li>Nginx will read the <code>staging-route</code> cookie if it&rsquo;s not set, it will route the request to the main staging. If the <code>staging-route</code> cookie is set Nginx will route the request to the branch name folder which will be something like <code>/path/to/codebase/cancel-email</code> and not <code>/path/to/codebase/main</code>.</li>
+</ol>
+
+
+<p>Simple yet effective solution to having a single staging problem. We are still improving it to be used in all our use cases, but the basic idea makes it possible to test multiple tickets independently and without waiting for the <strong>main</strong> <code>staging</code> environment to be free. We used <code>cookie</code> to achieve this instead of URL parameters or subdomains because we can do cookie forwarding that works for all our apps which use Nginx or NodeJs.</p>
+
+<h2>Active logging and monitoring</h2>
+
+<p>We are very keen on logging the events that take place in our system for example, if an email is sent notifying a customer about order being shipped, it is logged. As the number of logs is huge, to help ourselves from drowning in the text logs we use some log management and monitoring tools that help both the development team and the sys admins team. We currently use <a href="http://newrelic.com/">NewRelic</a>, <a href="http://graylog2.org/">Graylog2</a> and <a href="https://www.pagerduty.com/">PagerDuty</a> with a mix of some internal notification systems. These useful tools give us a real time view of what is happening on the systems as well as the health report of the systems.</p>
+
+<p>For software engineers, it is always good to know that the code you wrote is behaving properly as you expected, this is where the Reports from NewRelic and the deliberate logs in Graylog come in very handy to know how the code is working.</p>
+
+<h2>Zero Downtime Deployment</h2>
+
+<p>I remember the days around two years back, whenever we deployed to production it would have ~1 minute of downtime (maintenance page) for the files to be pulled and the database migrations to run and other tasks. Now, we see almost no downtime during deployments. It has been possible because of <a href="http://capistranorb.com/">Capistrano</a>. When deploying it performs all the tasks and if all tasks are fine then just switches the symlink to point to the new code resulting in almost zero downtime deployment. For NodeJs we use <a href="http://tech.namshi.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/">clusterjs</a>, which reloads a cluster in place of restarting it and eliminating any downtime without dropping any connection, thus we don&rsquo;t need the maintenance page any more.</p>
+
+<p>Zero Downtime Deployment in case of working system that needs feature upgrade is a shared responsibility between the development team and the sys admins team. In case it&rsquo;s related only to systems like upgrading MYSQL from 5.5 to 5.6, there will be nothing the software engineer can do while the upgrade happens, but before the upgrade the impact analysis should be done where both teams will need to collaborate. There should also be a contingency plan for rollback for each upgrade or new system deployment. Even when working for tickets that need big changes, we as software engineers implementing it should always think about backwards compatibility which can make sure least possible downtime.</p>
+
+<p>If DevOps is about more collaboration and communication between the development team and the sys admins team to achieve higher predictability, maintainability, security and efficiency we are definitely striding to the right direction. We are looking for a <a href="http://tech.namshi.io/join-us/">devOps engineer</a>, if you think we are applying best practices in devOps and you want to join a vibrant team at Namshi get in touch.</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/devops/'>DevOps</a>, <a class='category' href='/blog/categories/php/'>php</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

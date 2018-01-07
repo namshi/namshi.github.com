@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: swift | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/swift/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #107]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/10/newsletter-number-107/"/>
+    <updated>2015-09-10T15:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/10/newsletter-number-107</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again! We had a big event last week!</p>
+
+<p>Our nerdy &ldquo;managers&rdquo; went to Berlin last week to participate in the Rocket Tech Summit 2015
+<img class="team center" src="/images/berlin_rocket_team.jpg"></p>
+
+<p><img class="team center" src="/images/berlin_rocket_alex.jpg"></p>
+
+<p>He like to be that casual! It was a good talk though :)</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.facebook.com/bbcnews/videos/10153081461092217/">&ldquo;without google maps we&rsquo;d be lost&rdquo; &ndash; syrian refugee explains how he has been using apps bbc.co.uk/panorama </a></p></li>
+<li><p><a href="https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template">better commit messages with a .gitmessage template</a></p></li>
+<li><p><a href="https://stefanscherer.github.io/create-an-io-js-container-image-for-windows/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4AT8dkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">create a node.js container image for windows</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.devopsbookmarks.com/">devops bookmarks</a></p></li>
+<li><p><a href="http://www.dontfeartheinternet.com/">don’t fear the internet basico html &amp; css for non-web designers</a></p></li>
+<li><p><a href="http://www.mitchchn.me/2014/os-x-terminal">eight terminal utilities every os x command line user should know</a></p></li>
+<li><p><a href="https://medium.com/@kellan/five-years-building-a-culture-and-handing-it-off-54a38c3ab8de">five years, building a culture, and handing it off. — medium</a></p></li>
+<li><p><a href="http://blog.golang.org/go15gc?utm_content=bufferabe53">go gc: prioritizing low latency and simplicity &ndash; the go blog</a></p></li>
+<li><p><a href="https://github.com/black-screen/black-screen?utm_content=bufferea558">http://tech.namshi.io/blog/2015/09/10/newsletter-number-107/</a></p></li>
+<li><p><a href="https://github.com/jroes/par?utm_content=bufferf1d16">Run similar commands concurrently</a></p></li>
+<li><p><a href="https://google.github.io/lovefield/?utm_content=bufferf89f8">lovefield: the data access library that loves you</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/minimising-font-downloads/">minimising font downloads &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/release/v4.0.0/?utm_content=bufferb4c18">node v4.0.0 (stable) | node.js</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/announcements/foundation-elects-board/?utm_content=buffer81979">node.js foundation elects board of directors | node.js</a></p></li>
+<li><p><a href="http://onethingwell.org/post/128103218146/wordsafety">one thing well | wordsafety</a></p></li>
+<li><p><a href="http://php.net/index.php?utm_content=buffer0b04a">php 7.0.0 rc 2 released</a></p></li>
+<li><p><a href="https://groups.google.com/forum/">redis 3.0.4 and 2.8.22</a></p></li>
+<li><p><a href="http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html">stop pushing the web forward &ndash; quirksblog</a></p></li>
+<li><p><a href="http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/">swift functors, applicatives, and monads in pictures</a></p></li>
+<li><p><a href="http://virtuecenter.com/blog/the_effects_of_computer_programming_on_the_brain.html">the effects of computer programming on the brain</a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/announcing-sleepy-puppy-cross-site.html?utm_content=buffer8d3de">the netflix tech blog: announcing sleepy puppy &ndash; cross-site scripting payload management for web application security testing</a></p></li>
+<li><p><a href="http://www.itskeptic.org/content/what-devops-role">what is a devops role?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #48]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/24/newsletter-number-48/"/>
+    <updated>2014-07-24T12:03:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/24/newsletter-number-48</id>
+    <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
+
+<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
+
+<p>This week we achieved a great result: our travis builds now take just 8 minutes to run all the test suite, we are super excited about this.<br />
+We will soon talk about it in a blog post, stay tuned and keep following <a href="http://twitter.com/technamshi">@TechNamshi</a></p></blockquote>
+
+<p>Enjoy the list of super uber interesting posts on the Web!</p>
+
+<ul>
+<li><p><a href="http://buff.ly/Uf8g0e">Zalando hits €1 billion in revenue in first half of 2014</a></p></li>
+<li><p><a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">Front-end performance for web designers and front-end developers, long but useful article by @csswizardry about web performance, a really hot topic now.</a></p></li>
+<li><p><a href="https://speakerdeck.com/mathiasbynens/3-dot-14-things-i-didnt-know-about-css-at-css-day-2014">3.14 things I didn’t know about CSS &ndash; a great presentation from CSS Day 2014</a></p></li>
+<li><p><a href="https://gds.blog.gov.uk/2014/07/18/whats-the-design-process-at-gds/">What’s the design process at Governement Digital Service in UK?</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/MvNu3WXg3A">Want a sneak peek at the PHP language spec the @HipHopVM team has been working on?</a></p></li>
+<li><p><a href="http://t.co/FVocuiIbur">How LinkedIn used PoPs and RUM to make dynamic content download 25% faster</a></p></li>
+<li><p><a href="http://buff.ly/1qrKDjV">Elasticsearch in 15 minutes</a></p></li>
+<li><p><a href="http://buff.ly/1mojG8x">gulp inject is one of the best things discovered over the past 3 months&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/UfOyBn">Redesigning the perfect checkout</a></p></li>
+<li><p><a href="http://buff.ly/1qOqW1x">Schedule Load Tests for #APIs in the Cloud for Free</a></p></li>
+<li><p><a href="http://buff.ly/1rweFjF">JadoPado InstaSearch with Algolia</a></p></li>
+<li><p><a href="http://buff.ly/1yB90Mq">What happens when you search &lsquo;ugly hack&rsquo; in GitHub</a></p></li>
+<li><p><a href="http://buff.ly/1qNmlN6">Programming Is Not Math</a></p></li>
+<li><p><a href="http://buff.ly/Uf2USD">Riemann &ndash; A network monitoring system</a></p></li>
+<li><p><a href="http://buff.ly/1qLpg8V">12 killer resources for #api practitioners</a></p></li>
+<li><p><a href="http://dl.hhvm.com/resources/PHPSpec-SneakPeak.pdf">PHP specification draft from Sara Golemon</a></p></li>
+<li><p><a href="http://labs.octivi.com/handling-1-billion-requests-a-week-with-symfony2/">Handling 1 Billion requests a week with Symfony2</a></p></li>
+<li><p><a href="https://markwillcollins.silvrback.com/7-things-i-wish-i-knew-about-angularjs">8 Things I wish I knew about AngularJs</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/7/14/bitly-lessons-learned-building-a-distributed-system-that-han.html">Bitly: Lessons Learned Building A Distributed System That Handles 6 Billion Clicks A Month</a></p></li>
+<li><p><a href="https://github.com/fgrehm/vagrant-notify">Vagrant Notify &ndash; forward notify-send from vagrant host machine</a></p></li>
+<li><p><a href="http://xmpp.org/about-xmpp/technology-overview/">XMPP: The Extensible Messaging and Presence Protocol overview</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/more-responsive-single-page-applications-with-angularjs-socketio-creating-the-library--cms-21738">More Responsive Single-Page Applications With AngularJS &amp; Socket.IO: Creating the Library</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-9-analyzing-concerns--cms-21760">Refactoring Legacy Code: Part 9 &ndash; Analyzing Concerns</a></p></li>
+<li><p><a href="http://templatespicy.com/2014/15-best-php-frameworks-2014/">15 best PHP frameworks in 2014</a></p></li>
+<li><p><a href="http://visualping.io/">Get notified on visual changes of a website or website area</a></p></li>
+<li><p><a href="http://pagekit.com/blog/2014/07/21/pagekit-public-alpha-launch">Pagekit, a new, modern CMS built with Symfony components</a></p></li>
+<li><p><a href="http://vexxhost.com/blog/small-dive-into-meteor-js/">Small dive into Meteor.js</a></p></li>
+<li><p><a href="http://9to5mac.com/2014/07/11/apple-launches-blog-to-highlight-new-swift-programming-language">Apple launches blog to highlight new Swift programming language</a></p></li>
+<li><p><a href="https://blog.codecentric.de/en/2014/06/10-early-thoughts-swift-programming-language">10 Early Thoughts on the Swift Programming Language</a></p></li>
+<li><p><a href="http://www.fastcolabs.com/3031400/whats-new-and-different-about-apples-new-swift-programming-language">The New And Different About Apple&rsquo;s New Swift Programming Language</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #41]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/05/newsletter-number-41/"/>
+    <updated>2014-06-05T12:03:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/05/newsletter-number-41</id>
+    <content type="html"><![CDATA[<p>Hi fellas, it&rsquo;s #techThursday an here we are with the usual list of interesting topics and resources for the upcoming weekend!</p>
+
+<p>We publish several blog posts in the latest weeks, to be up-to-date just follow us on <a href="http://twitter.com/TechNamshi">twitter</a>.</p>
+
+<p><strong>And you know what? We are hiring</strong> : <strong><a href="http://buff.ly/1pP7x0n">we are looking for a Lead Mobile Developer!</a></strong></p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://buff.ly/1pP7x0n">Like Android &amp; iOS? Let&rsquo;s revolutionize shopping in the Middle East! We are hiring a mobile lead developer</a></p></li>
+<li><p><a href="http://buff.ly/1nfhXWK">Developers don&rsquo;t write code, they write essays</a></p></li>
+<li><p><a href="http://buff.ly/UbTMiq">How We Use Docker To Continuously Deliver Microservices</a></p></li>
+<li><p><a href="https://github.com/boot2docker/boot2docker">Boot2Docker: a lightweight Linux distribution made specifically to run Docker containers. Even on you OS X or Windows machine!</a></p></li>
+<li><p><a href="http://buff.ly/1h7heav">Meta-programming in JavaScript Using Proxies</a></p></li>
+<li><p><a href="http://buff.ly/1ktHCpK">New, Cost-Effective Memory-Optimized DB Instances for Amazon RDS</a></p></li>
+<li><p><a href="http://buff.ly/1hJJtqK">PHP 5.6.0beta3 Released</a></p></li>
+<li><p><a href="http://buff.ly/RLoUTL">Konzole, a very simple tool to create console apps for #nodejs</a></p></li>
+<li><p><a href="http://nondot.org/sabre/">A little of background to how Swift (the new programming language by Apple) development was started</a></p></li>
+<li><p><a href="https://github.com/fullstackio/FlappySwift">Swift implementation of flappy bird, on github</a></p></li>
+<li><p><a href="http://aosabook.org/en/llvm.html">The LLVM architecture</a></p></li>
+<li><p><a href="http://www.trustedreviews.com/opinions/samsung-tizen-os-features">Samsung Tizen OS: 6 Things You Need To Know</a></p></li>
+<li><p><a href="http://www.wired.com/2014/06/contiki/">Out in the open: the little-known Open Source OS that rules the Internet of things</a></p></li>
+<li><p><a href="http://http://gaudi.io/">Setup of isolated and decoupled dev environments</a></p></li>
+<li><p><a href="http://matt.aimonetti.net/posts/2013/08/27/what-technology-should-my-startup-use/">What Technology Should My Startup Use?</a></p></li>
+<li><p><a href="http://leanstack.io/categories">Categorized list of great web application/service including companies using it</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: front-end | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/front-end/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #112]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/22/newsletter-number-112/"/>
+    <updated>2015-10-22T15:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/22/newsletter-number-112</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>The week is over and a we have a new good list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.securityinnovationeurope.com/blog/40-blogs-every-software-developer-should-be-reading">40 blogs every software developer should be reading</a></p></li>
+<li><p><a href="https://youtu.be/RrX_28s70ww">chad fowler &ndash; the wunderlist 3 story</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/10/docker-acquires-tutum/">docker acquires tutum to help it teams deploy and manage production apps</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://ocramius.github.io/blog/doctrine-orm-optimization-hydration/">doctrine orm hydration performance optimization</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/economy-of-scope/1041710055861858">economy of scope</a></p></li>
+<li><p><a href="https://www.digitalocean.com/company/blog/floating-ips-start-architecting-your-applications-for-high-availability/">floating ips: start architecting your applications for high availability | digitalocean</a></p></li>
+<li><p><a href="https://www.gitbook.com/book/frontendmasters/front-end-handbook/details">front-end handbook &ndash; gitbook</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLDWZ5uzn69ezRJYeWxYNRMYebvf8DerHd">golang uk conference 2015 (videos)</a></p></li>
+<li><p><a href="https://github.com/henryr/cap-faq?utm_content=bufferd22dc">henryr/cap-faq</a></p></li>
+<li><p><a href="https://medium.com/swlh/lessons-from-five-years-in-mobile-news-apps-1-don-t-have-a-news-app-c46939195389">lessons from five years in mobile news apps: </a></p></li>
+<li><p><a href="http://zurb.com/playground/motion-ui">motion ui | playground from zurb</a></p></li>
+<li><p><a href="http://zachholman.com/posts/opt-in-transparency/?utm_content=buffer28360">opt-in transparency</a></p></li>
+<li><p><a href="https://blog.bufferapp.com/pablo-images-for-instagram-pinterest-twitter-facebook?utm_content=buffera093b">pablo 2.0: create social media images, perfect for everywhere</a></p></li>
+<li><p><a href="http://firstround.com/review/Product-Hunt-is-Everywhere-This-is-How-It-Got-There/">product hunt is everywhere &ndash; this is how it got there &ndash; first round review</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/07/react-is-an-exciting-future/">react is an exciting future &ndash; atlassian developers</a></p></li>
+<li><p><a href="https://facebook.github.io/react/blog/2015/10/19/reactiflux-is-moving-to-discord.html">reactiflux is moving to discord</a></p></li>
+<li><p><a href="https://stackfiles.io/">stackfiles.io</a></p></li>
+<li><p><a href="https://morsmachine.dk/netpoller?utm_content=buffer0cb47">the go netpoller &ndash; morsing&rsquo;s blog</a></p></li>
+<li><p><a href="https://css-tricks.com/examples/ShapesOfCSS/?utm_content=buffer6372e">the shapes of css</a></p></li>
+<li><p><a href="http://www.forbes.com/sites/ericjackson/2014/05/11/the-top-8-reasons-your-best-people-are-about-to-quit-and-how-you-can-keep-them/?utm_content=buffer4136f">the top 8 reasons your best people are about to quit &mdash; and how you can keep them &ndash; forbes</a></p></li>
+<li><p><a href="http://usersnap.com/blog/tracking-js-the-computer-vision-power-of-javascript/">tracking.js </a></p></li>
+<li><p><a href="https://medium.com/life-tips/why-i-don-t-answer-most-phone-calls-4a71e1418854">why i don’t answer most phone calls — life tips. — medium</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kevin-frei/your-os-sucks/10153643564654427">your os sucks</a></p></li>
+<li><p><a href="http://techcrunch.com/2015/10/21/an-offer-creators-cant-refuse/?ncid=rss">youtube will completely remove videos of creators who don’t sign its red subscription deal | techcrunch</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MockServer, Effortless API Mocking Library in Node Js]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/"/>
+    <updated>2014-06-13T04:22:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js</id>
+    <content type="html"><![CDATA[<p>Namshi Tech Team is happy to roll-out a new node-based library!</p>
+
+<p>We present you <a href="https://github.com/namshi/mockserver">MockServer</a>, a library that allows you to easily mock your APIs' plain HTTP responses.</p>
+
+<!-- more -->
+
+
+<p>The main benefit of this library is to allow developers to focus on what is important to them, and in this case,
+<code>mockserver</code> allows front-end developers to focus their efforts on creating awesome front-end clients without having to worry about the
+availability of a complete and running API.</p>
+
+<p>The use of this library can be appreciated by developers following a <a href="http://www.frontendfirst.com/">Front-End First</a>
+methodology where development efforts initially focus on front-end clients rather than the back-end structure and tools.
+Front-end first suggests that front-end developers have their mocked servers return expected or anticipated HTTP responses
+based on the available specification instead of making an actual call to the API.
+Another benefit is to allow development for both front-end and back-end in parallel.</p>
+
+<p>In short, this library basically removes the dependency that the front-end development requires from the backend.</p>
+
+<h2>Usage</h2>
+
+<p>Create an empty directory inside your project, <code>mkdir api</code></p>
+
+<p>To start mocking your HTTP responses, you will need to have a sub-directory were all your mocks shall reside. In order to do so,
+in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s where all plain text HTTP responses will reside.</p>
+
+<p>Inside your <code>api</code> directory, run</p>
+
+<p><code>
+npm install mockserver
+</code></p>
+
+<p>Create a new js file, say, <code>api.js</code> that has the following:</p>
+
+<p>```javascript
+var http       = require(&lsquo;http&rsquo;),</p>
+
+<pre><code>mockserver = require('mockserver');
+</code></pre>
+
+<p>http.createServer(mockserver(&lsquo;./mocks&rsquo;)).listen(&lsquo;9001&rsquo;);
+```</p>
+
+<p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
+listens to port <code>9001</code>.</p>
+
+<p>Now, you should point your front-end client to <code>http://localhost:9001</code> instead of the actual api url.</p>
+
+<h2>Mocks</h2>
+
+<p>Now, your node server is running and your client can start making requests and getting back mocked HTTP responses.</p>
+
+<p>How do you create the mocks?</p>
+
+<p>Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
+The naming of those files goes as follows: <code>path_METHOD</code>, <code>path</code> is the relative url path without any slashes, i.e, <code>/test</code>
+should be <code>test</code> and <code>METHOD</code> is the upper-cased HTTP method (<code>GET</code>). The extension for the files should be <code>.mock</code>.
+The complete file name is: <code>test_GET.mock</code>.</p>
+
+<p>The contents of the mocked file should be a valid HTTP response text, as follows:</p>
+
+<p>```
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8</p>
+
+<p><html><body>Hello World</body></html>
+```</p>
+
+<p>Now, whenever your client requests <code>http://localhost:9001/test</code>, <code>mockserver</code> will return that plain HTTP response you defined
+in <code>test_GET.mock</code>.</p>
+
+<h2>Header Variation</h2>
+
+<p>Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
+<code>mockserver-variation</code> header in your requests. The value of this header shall be appended to the mocked file name as follows: <code>path_METHOD_variation</code>.</p>
+
+<p>Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
+Simply set <code>mockserver-variation</code> to <code>500</code> and the file from our previous example should be named <code>test_GET_500.mock</code>.</p>
+
+<h2>Multi-level URLs</h2>
+
+<p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
+
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
+
+<h2>Conclusion</h2>
+
+<p>Although simple and straight forward, the idea behind <code>mockserver</code> is quite powerful. It is mostly suited for a Front-end First methodology, some of the
+benefits include parallel front-end and back-end development and the decoupling of the Front-end and back-end during the development phase.</p>
+
+<p>It would be great if you can take the time to try it out and let us know what you think!</p>
+]]></content>
+  </entry>
+  
+</feed>

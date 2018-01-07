@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: SEO | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/seo/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Symfony 2.4 Expression Language]]></title>
+    <link href="http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language/"/>
+    <updated>2014-02-21T12:57:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language</id>
+    <content type="html"><![CDATA[<p>Expression Language is a new awesome component that got released in the latest <a href="http://symfony.com/blog/symfony-2-4-0-released">Symfony2.4</a>. This component allows string expressions
+to be parsed, compiled and evaluated in PHP. It was basically extracted from the Twig library that supports writing expression logic in templates.</p>
+
+<p>As simple as:&ndash;
+<code>
+$expLang = new ExpressionLanguage();
+$x       = "1+1";
+echo $expressionLang-&gt;evaluate($x);
+</code>
+The previous code will output &ldquo;2&rdquo;!</p>
+
+<p>It seems simple enough, but the benefits that it introduces are great! Especially when we talk about a company like Namshi, where there are dedicated and specialized content and marketing teams with
+hundreds of templates and segments of information that must be delivered and shown on the website. The goal is to provide the most flexibility to other departments in creating their information
+with the least overhead in terms of code maintenance to the development team.</p>
+
+<!-- more -->
+
+
+<p>Fabien Potencier, the creator of Symfony, points out that one of the advantages of introducing this component will be the ability to overcome the limitation of the &ldquo;static configuration&rdquo;
+anywhere in the Symfony2 application such as in services and routing. Imagine that instead of having one route to point to a controller, you can give an expression that sends the request of
+the same path to different controllers DYNAMICALLY! More explanation about this is introduced <a href="http://symfony.com/blog/new-in-symfony-2-4-the-expressionlanguage-component#routing">here</a>.</p>
+
+<p>So, let&rsquo;s take a look on this component in some more detail.</p>
+
+<p>The component supports a set of pre-defined operators and functions that can be used to construct complex expressions, we list them and their PHP counterparts:&ndash;</p>
+
+<pre><code>1. binary operators and functions
+    - '**' =&gt; 'pow'
+    - '..' =&gt; 'range'
+    - 'in' =&gt; 'in_array'
+    - 'not in' =&gt; '!in_array'
+    - '&amp;&amp; || | ^ &amp; == === != !== &lt; &gt; &gt;= &lt;= + = * / %' =&gt; same in php
+    - 'A matches B' =&gt; preg_match(A,B)
+2. Unary operators
+    - '!' =&gt; '!'
+    - 'not' =&gt; '!'
+    - '+' =&gt; '+'
+    - '-' =&gt; '-'
+3. Object Attributes
+    - 'foo.one' =&gt; 'foo-&gt;one'
+4. Arrays
+    - '[foo1,foo2]' =&gt; array("foo1", "foo2")
+5. Functions
+    - 'foo(a,b,c)' =&gt; call_user_func_array(array(foo), array(a, b, c)
+6. Names:
+    - 'foo' =&gt; $foo
+</code></pre>
+
+<p>The killer feature is, as we are going to see next, is the ability to register your own functions (similar to Twig) in the component to be utilized in expressions.</p>
+
+<p>The component provides public access to methods that allows you to create your own implementations of expression functions.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;register(&amp;lsquo;functionNameToBeUseInTheStringExpression&amp;rsquo;, function(){&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//compile callback function
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}, function() {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//evaluateCallbackFunction
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;});
+</code></pre></figure></notextile></div></p>
+
+<p>As its name implies, this function registers or adds the required support to call a function within the expression string.
+This method has two callback functions, one to be called when the expression is compiled, and the other when its evaluated.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;compile(&amp;lsquo;stringExpression&amp;rsquo;);
+</code></pre></figure></notextile></div></p>
+
+<p>This method, returns the equivalent PHP expression without evaluating it, so you can evaluate it after doing some required manipulation.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+echo($expLang-&gt;compile(&amp;ldquo;&amp;lsquo;test&amp;rsquo; matches &amp;lsquo;test2&amp;rsquo;&amp;rdquo;));
+//shows preg_match(&amp;ldquo;test&amp;rdquo;, &amp;ldquo;test2&amp;rdquo;)
+</code></pre></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;evaluate(&amp;lsquo;stringExpression&amp;rsquo;, array $values);
+</code></pre></figure></notextile></div></p>
+
+<p>This function both compiles the expression to PHP and evaluates it to return the outcome. The expression is evaluated for both the built in functions and operators and the evaluate callback function
+of a registered custom function.
+It also allows to send a set of default predefined <code>$values</code> to the evaluation process to be passed to the evaluate callback.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;parse(&amp;lsquo;stringExpression&amp;rsquo;, array $names);
+</code></pre></figure></notextile></div></p>
+
+<p>This function parses a string expression from a Token Stream to a Node Tree (the component is built using the Abstract Syntax Tree algorithm) so you can have your expression
+as a tree of nodes. Not really sure how it can be benefited from (please share your ideas!).</p>
+
+<p>In a simple <code>var_dump()</code> I can show you what this method can return</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+var_dump($expLang-&gt;parse(&amp;lsquo;1 + 2&amp;rsquo;, array()));
+</code></pre></figure></notextile></div></p>
+
+<p>```
+object(Symfony\Component\ExpressionLanguage\ParsedExpression)#18 (2) {
+  [&ldquo;nodes&rdquo;:&ldquo;Symfony\Component\ExpressionLanguage\ParsedExpression&rdquo;:private]=>
+  object(Symfony\Component\ExpressionLanguage\Node\BinaryNode)#17 (2) {</p>
+
+<pre><code>["nodes"]=&gt;
+array(2) {
+  ["left"]=&gt;
+  object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#15 (2) {
+    ["nodes"]=&gt;
+    array(0) {
+    }
+    ["attributes"]=&gt;
+    array(1) {
+      ["value"]=&gt;
+      int(1)
+    }
+  }
+  ["right"]=&gt;
+  object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#16 (2) {
+    ["nodes"]=&gt;
+    array(0) {
+    }
+    ["attributes"]=&gt;
+    array(1) {
+      ["value"]=&gt;
+      int(2)
+    }
+  }
+}
+["attributes"]=&gt;
+array(1) {
+  ["operator"]=&gt;
+  string(1) "+"
+}
+</code></pre>
+
+<p>  }
+  [&ldquo;expression&rdquo;:protected]=>
+  string(5) &ldquo;1 + 2&rdquo;
+```</p>
+
+<p>It can perhaps be used to give flexibility for developers to inject and manipulate expressions coming from a non-configurable source.</p>
+
+<p>Here is a comprehensive example of all the previously described methods:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;&lt;/p&gt;
+
+&lt;p&gt;$expLang = new ExpressionLanguage();
+$expLang-&gt;register(&amp;lsquo;plus&amp;rsquo;, function(), function($args, $a, $b) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;return $a + $b;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;$expression = &amp;lsquo;plus(1,5)&amp;rsquo;;
+echo($expLang-&gt;parse($expression)) . PHP_EOL;
+echo($expLang-&gt;compile($expression)) . PHP_EOL;
+echo($expLang-&gt;evaluate($expression)) . PHP_EOL;
+</code></pre></figure></notextile></div></p>
+
+<p><code>
+plus(1,5)
+1 + 5
+6
+</code></p>
+
+<p>Since here at <a href="http://namshi.com/">Namshi</a> we are using Symfony2 as the main PHP framework for our Backend and API development efforts. We are up-to-date with latest releases
+from Symfony. The Expression Language Component allowed us to introduce more flexibility in the way other departments such as Content and Marketing tailor views and serve data
+based on some client related information.</p>
+
+<p>We were able to integrate Twig, YAML and the Expression Language Component using Redis as the mega storage unit.</p>
+
+<p>As an example, we have a set of Twig templates for the SEO guys to store the pages' meta information stored in a redis hash and indexed by the path info of the request,
+and they are json encoded:</p>
+
+<p><code>
+"/shoes/" =&gt;
+[["locale(en_AE)", {"header":"Buy shoes from Namshi in UAE right on your ", "pageTitle":"Welcome to Namshi UAE"}],
+["locale(en_SA)", {"header": "Buy shoes from Namshi in Saudi right on your , "pageTitle":"Welcome to Namshi Saudi"}]]
+</code></p>
+
+<p>And in a <code>device</code> redis hash, we have the corresponding possible values for <code>device</code> indexed by the device type</p>
+
+<p><code>
+"mobile" =&gt;
+["device":"Mobile Phone"]
+</code></p>
+
+<p>Now, we fetch the appropriate template based on the path info and select the first template that its condition evaluates to <code>true</code>, fetch the context (device) based on
+client information, render the twig template with the appropriate device value and parse it as YAML!</p>
+
+<p>Was that fast? sorry, here is a sample code:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$redis      = //the redis instance
+$path       = //get the required path from the request
+$device     = //get the device type from a service or a header
+$expLang    = //the expression language instance
+$yamlParser = //the YAML parser instance
+$orgLocale  = //get the locale value from a service or a header&lt;/p&gt;
+
+&lt;p&gt;$expLang-&gt;register(&amp;lsquo;locale&amp;rsquo;, function(), function($values, $locale) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if ($locale == $orgLocale) {
+    return true;
+}
+
+return false;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;});&lt;/p&gt;
+
+&lt;p&gt;$possibleTemplates = json_decode($redis-&gt;hget(&amp;ldquo;seo_templates&amp;rdquo;, $path), true);
+$contextValues     = json_decode($redis-&gt;hget(&amp;ldquo;seo_device&amp;rdquo;, $device), true);&lt;/p&gt;
+
+&lt;p&gt;foreach ($possibleTemplates as $possibleTemplate) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list($condition, $template) = $possibleTemplate;
+
+if ($expLang-&amp;gt;evaluate($condition)) {
+    $twig             = new \Twig_environment(new Twig_Loader_String($template));
+    $renderedTemplate = $twig-&amp;gt;render(json_encode($template), $contextValues);
+
+    return $yamlParser-&amp;gt;parse($renderedTemplate);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;//Note: this code requires lots of error checking and try, catch blocks to detect and report errors and exceptions since
+// content and SEO information, for example, are considered fragile and sensitive
+</code></pre></figure></notextile></div></p>
+
+<p>Nice, easy and simple. This approach for a CMS like system, provides the following benefits:</p>
+
+<ul>
+<li>High flexibility in creating information (content, SEO, etc..)</li>
+<li>Tailoring data according to client information (mobile, desktop, large/small screens, app, tablet, etc..)</li>
+<li>Can be based on numerous variables (path information, headers, domain, device type, etc..)</li>
+<li>Content specialization and less dependency on the tech team.</li>
+<li>Less code maintenance overhead since the expected future requirements can only be limited to registering Expression Language functions.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

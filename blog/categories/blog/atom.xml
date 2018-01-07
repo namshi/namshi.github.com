@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #106]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/03/newsletter-number-106/"/>
+    <updated>2015-09-03T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/03/newsletter-number-106</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again and our <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are flying towards Europe to attend a conference!
+Have fun guys!</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.quora.com/Front-End-Web-Development/What-is-the-most-bizarre-CSS-or-HTML-question-you-have-ever-been-asked-in-a-job-interview">what is the most bizarre css or html question you have ever been asked in a job interview? &ndash; quora</a></p></li>
+<li><p><a href="https://github.com/Coffcer/vue-chat">chat example by vue.js + webpack</a></p></li>
+<li><p><a href="https://github.com/clowwindy/Awesome-Networking">clowwindy/awesome-networking</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.hostingadvice.com/blog/comparing-node-js-vs-php-performance/">comparing node.js vs php performance &ndash; hostingadvice.com</a></p></li>
+<li><p><a href="http://www.infoq.com/articles/docker-executable-images">executable images &ndash; how to dockerize your development machine</a></p></li>
+<li><p><a href="http://gilliam.github.io/">gilliam &ndash; a micro services platform</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/08/ui-at-docker/">how ui became a thing at docker | docker blog</a></p></li>
+<li><p><a href="http://www.quora.com/Is-ReactJS-overtaking-AngularJS-as-the-most-popular-front-end-web-framework">is reactjs overtaking angularjs as the most popular front end web framework? &ndash; quora</a></p></li>
+<li><p><a href="http://robertheaton.com/2015/08/31/migrating-bajillions-of-database-records-at-stripe/">migrating bajillions of database records at stripe | robert heaton</a></p></li>
+<li><p><a href="http://googleblog.blogspot.it/2015/09/google-update.html">official google blog: google’s look, evolved</a></p></li>
+<li><p><a href="http://www.infoworld.com/article/2866712/php/php-vs-node-js-an-epic-battle-for-developer-mind-share.html">php vs. node.js: an epic battle for developer mind share | infoworld</a></p></li>
+<li><p><a href="https://engblog.nextdoor.com/2015/08/27/publishing-blog-with-github-circleci-and-google-analytics/">publishing blogs with github, circleci, and google analytics | nextdoor engineering</a></p></li>
+<li><p><a href="https://github.com/semantic-release/semantic-release">semantic release: automated package publishing</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2015/08/the-illusion-of-control.html">the illusion of control</a></p></li>
+<li><p><a href="http://dailydigest.com/technology/drone-helicopter-swarm/">this smart guy’s built an awesome personal helicopter using drone parts!&ndash; daily digest</a></p></li>
+<li><p><a href="http://www.quora.com/Why-is-it-so-hard-for-so-many-software-engineers-to-get-high-quality-work-experience">why is it so hard for so many software engineers to get high-quality work experience? &ndash; quora</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/08/ui-at-docker/">How UI Became a Thing at Docker | Docker Blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

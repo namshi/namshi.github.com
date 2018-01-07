@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rocket internet | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/rocket-internet/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #66]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/27/newsletter-number-66/"/>
+    <updated>2014-11-27T13:25:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/27/newsletter-number-66</id>
+    <content type="html"><![CDATA[<blockquote><p>Hey folks from the software engineering community!</p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p>Our comrade <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> is at <a href="http://madrid2014.symfony.com/speakers">SymfonyCon Madrid</a>
+with an awesome and super exciting talk about angular.</p>
+
+<p>Next week, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>, <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> and Alex will be at
+the super exciting Docker Eu Conference to collect some thoughts about the newest technologies.</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the week:</strong></p>
+
+<ul>
+<li><p><a href="http://www.stevesouders.com/blog/2014/11/25/serious-confusion-with-resource-timing/">SERIOUS CONFUSION with Resource Timing</a></p></li>
+<li><p><a href="http://bocoup.com/weblog/whats-in-a-function-name/">What&rsquo;s in a Function Name?</a></p></li>
+<li><p><a href="http://www.webperformancetoday.com/2014/11/12/real-cost-slow-time-vs-downtime-slides/">The Real Cost of Slow Time vs Downtime</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.infoworld.com/article/2850056/application-virtualization/microsoft-docker-cli-windows.html">Microsoft brings Docker CLI to Windows</a></p></li>
+<li><p><a href="http://techcrunch.com/2014/11/26/rocket-internet-backed-jumia-raises-150m-for-its-african-e-commerce-business/">Rocket Internet-Backed Jumia Raises $150M For Its African E-Commerce Business</a></p></li>
+<li><p><a href="https://medium.com/@ericeriksson/what-is-product-design-9709572cb3ff">What is product design?</a></p></li>
+<li><p><a href="http://browsenpm.org/package.json">An interactive guide for exploring various important properties of the package.json  for node.js apps</a></p></li>
+<li><p><a href="http://www.businessinsider.com/learning-how-to-code-imposter-syndrome-2014-11">A Programmer Describes How He Nearly Went Insane Learning To Code</a></p></li>
+<li><p><a href="http://www.codewars.com/">Codewars, improve your programming skills</a></p></li>
+<li><p><a href="https://github.com/i-like-robots/react-tube-tracker">React Tube Tracker &ndash; a simple application to check the predicted arrival times of trains at stations on the London Underground network built with React.</a></p></li>
+<li><p><a href="http://www.slideshare.net/rmsguhan/react-meetup-mailonreact">Yahoo! Mail moving to React </a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-toolbox/docker-vs-vms/">Docker vs VMs</a></p></li>
+<li><p><a href="http://blog.arungupta.me/2014/11/create-own-docker-image-techtip57/">Create your own Docker image</a></p></li>
+<li><p><a href="http://agiletesting.blogspot.co.uk/2014/11/service-discovery-with-consul-and.html">Service discovery with consul and consul-template</a></p></li>
+<li><p><a href="https://blog.twitter.com/2014/building-a-complete-tweet-index">Building a complete Tweet index</a></p></li>
+<li><p><a href="https://github.com/vclfiddle/vclfiddle">VclFiddle is an online tool for experimenting with the Varnish Cache HTTP reverse-proxy</a></p></li>
+<li><p><a href="http://www.bravenewgeek.com/sometimes-kill-9-isnt-enough/">Sometimes Kill -9 Isn&rsquo;t Enough</a></p></li>
+<li><p><a href="http://www.slideshare.net/brendangregg/performance-tuning-ec2-instances">Performance Tuning EC2 Instances</a></p></li>
+<li><p><a href="https://github.com/sosedoff/pgweb">Web-based PostgreSQL database browser</a></p></li>
+<li><p><a href="https://eager.io/blog/go-and-json/">Go and JSON</a></p></li>
+<li><p><a href="http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Aurora.html">Aurora on Amazon RDS</a></p></li>
+<li><p><a href="http://aws.amazon.com/blogs/aws/aws-ip-ranges-json/">AWS Public IP Address Ranges Now Available in JSON Form</a></p></li>
+<li><p><a href="http://blog.deimos.fr/2014/11/17/which-configuration-management-tool-should-you-use/">Which configuration management tool should you use?</a></p></li>
+<li><p><a href="https://github.com/madflojo/salt-api-reactor-formula">A Saltstack salt-api and reactor formula for integrating HTTP webhooks with Saltstack executions</a></p></li>
+<li><p><a href="https://wiki.jenkins-ci.org/display/JENKINS/saltstack-plugin">Jenkins: saltstack-plugin</a></p></li>
+<li><p><a href="http://www.informationweek.com/cloud/infrastructure-as-a-service/docker-security-flaw-found/d/d-id/1317751">Docker Security Flaw Found</a></p></li>
+<li><p><a href="http://www.rackspace.co.uk/ecommerce-hosting/page-speed-checker">Rackspace Page Load Speed checker</a></p></li>
+<li><p><a href="http://linux-audit.com/auditing-systemd-solving-failed-units-with-systemctl/">Auditing systemd: solving failed units with systemctl</a></p></li>
+<li><p><a href="http://www.slideshare.net/bigstep-infrastructure/bigstep-partners-elasticsearch-scaling-benchmarks">Best Practices For Scaling Elasticsearch In The Cloud</a></p></li>
+<li><p><a href="http://wiki.joyent.com/wiki/display/jpc2/Working+with+Elasticsearch">Working with Elasticsearch</a></p></li>
+<li><p><a href="http://www.bbc.co.uk/blogs/internet/entries/47a96d23-ae04-444e-808f-678e6809765d">How we built the new BBC Homepage</a></p></li>
+<li><p><a href="http://wallabyjs.com/">wallaby.js runs your code when you write it</a></p></li>
+<li><p><a href="https://github.com/svileng/conveyor-belt">conveyor-belt</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/node-js-foundation-io-js-unification/">How the Node Foundation will Unify Node.js with io.js</a></p></li>
+<li><p><a href="https://github.com/s-a/TRY.js">Programm a virtual robot which moves in a 3D</a></p></li>
+<li><p><a href="https://www.reddit.com/r/npm">npm subreddit</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

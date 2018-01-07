@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: confoo | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/confoo/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Design, Architecture and Code on the edge @Confoo]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/22/coding-on-the-edge-at-confoo/"/>
+    <updated>2014-09-22T09:01:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/22/coding-on-the-edge-at-confoo</id>
+    <content type="html"><![CDATA[<p>At Namshi we run a product that needs to evolve quickly and be ready to change: new features and
+technologies are integrated every week to be able to keep up to date with the market and the technology around us.
+That&rsquo;s how we started using nodejs, Angular, Docker, SPDY and much more&hellip;</p>
+
+<p><strong>Do you want to hear more?</strong></p>
+
+<!-- more -->
+
+
+<p><img class="left team" src="/images/alex.jpg">
+<a href="http://tech.namshi.io/team#Alessandro%20Nadalin">Alex</a> submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
+<a href="http://confoo.ca/en/call-for-papers/speaker/alessandro-nadalin">vote for his talks</a>.<br>
+His talks cover a wide variety of topics from Symfony, Angular, HTTP to Dockerinzing your application.</p>
+
+<p>How cool is that?<br>
+If you are looking for sharp and engaging sessions, <strong>these are definitely bound to make you sit up and notice</strong>.</p>
+
+<br>
+
+
+<br>
+
+
+<br>
+
+
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Interested in the history of NodeJS? Then let's hear it from Lucio at the ConFoo]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo/"/>
+    <updated>2014-09-20T22:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/20/interested-in-the-history-of-nodejs-then-lets-hear-it-from-lucio-at-the-confoo</id>
+    <content type="html"><![CDATA[<p>Not really hard to believe, NodeJS is a beloved one among
+the plethora of technologies that we use at <a href="https://namshi.com">Namshi</a>;
+that&rsquo;s why we got people like <a href="/team#Luciano%20Colosio">Lucio</a> on board so that we
+could expand in that direction.</p>
+
+<!-- more -->
+
+
+<p><img class="left team" src="/images/lucio.jpg" title="Luciano Colosio" ></p>
+
+<p>And you know what? Lucio loves Node so much that he&rsquo;d like
+to talk about it at a big stage, like the one the
+<a href="http://confoo.ca/">ConFoo</a> of next february.</p>
+
+<p>Then don&rsquo;t miss the chance to
+<a href="http://confoo.ca/en/call-for-papers/speaker/luciano-colosio">vote one of his proposals</a>
+as he&rsquo;d be very happy to introduce you the history of NodeJS
+(I heard part of that talk, since he already gave it internally
+for the Namshi team, and I have to admit it was freaking
+interesting), how it was born and what pushed
+<a href="http://www.quora.com/Who-is-Ryan-Dahl">Rian Dahl</a> to write
+this beautiful platform; the other talk that he has in the
+pipeline is a good introduction on how to embrace the
+non-blocking paradigm and he will explain how to make sure
+that you treat the Event Loop responsibly :)</p>
+
+<p>Definitely worth it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stop using crons, start listening to Geshan]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/20/stop-using-crons-start-listening-to-geshan/"/>
+    <updated>2014-09-20T12:15:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/20/stop-using-crons-start-listening-to-geshan</id>
+    <content type="html"><![CDATA[<p><a href="/team#Geshan%20Manandhar">Geshan</a> has decided
+he can&rsquo;t stand seeing people struggling with
+crons anymore, therefore he decided to give it a
+shot at the <a href="http://confoo.ca/en/call-for-papers/speaker/geshan-manandhar">2015 edition of the confoo</a>.</p>
+
+<!-- more -->
+
+
+<p><img class="right team" src="/images/geshan.jpg"></p>
+
+<p>If you want to hear how Symfony integrates (so) nicely
+with messaging queues and, specifically, with RabbitMQ
+don&rsquo;t waste a second and <a href="http://confoo.ca/en/call-for-papers/speaker/geshan-manandhar">vote his talk</a>
+so that he can get the chance to take the stage at the
+canadian conference.</p>
+
+<p>He will talk about our <strong>direct experience with RabbitMQ</strong>,
+including <strong>MQ best practices</strong> and an overview of the
+available tools, so that the audience will be able to
+understand the theory, see how it works in practice
+and form his own opinion.</p>
+
+<p>Well done Geshan, we hope to hear how Namshi handles
+gazilions of messages in Canada!</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: php7 | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/php7/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #121]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/14/newsletter-number-121/"/>
+    <updated>2016-01-14T16:16:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/14/newsletter-number-121</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>The week is over and we have a new list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="xhyve.org"> xhyve hypervisor: a port of bhyve to os x</a></p></li>
+<li><p><a href="https://kly.no/posts/2010_10_23__High_End_Varnish___275_thousand_requests_per_second___.html?utm_content=buffer12c8f">275 rps on varnish</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2016/1/11/a-beginners-guide-to-scaling-to-11-million-users-on-amazons.html">a beginner&rsquo;s guide to scaling to 11 million users on amazon&rsquo;s aws &ndash; high scalability &ndash;</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://blogs.windows.com/msedgedev/2016/01/13/chakracore-now-open/">chakracore github repository is now open | microsoft edge dev blog</a></p></li>
+<li><p><a href="http://www.scriptcrafty.com/configuration-mismanagement-or-why-i-hate-puppet-ansible-salt-etc/?utm_content=bufferda1fc">configuration (mis)management or why i hate puppet, ansible, salt, etc. | learning with scripting</a></p></li>
+<li><p><a href="http://blog.scottlogic.com/2015/12/16/devTools.html">developer tools for testers</a></p></li>
+<li><p><a href="http://hadolint.lukasmartinelli.ch/">dockerfile linter</a></p></li>
+<li><p><a href="https://github.com/lukasmartinelli/nigit?utm_content=buffer6e3e2">expose shell scripts as http apis</a></p></li>
+<li><p><a href="https://egghead.io/lessons/misc-flexbox-fundamentals">flexbox fundamentals &ndash; css video tutorial </a></p></li>
+<li><p><a href="https://mobile.twitter.com/MattNavarra/status/684690494841028608/photo/1?utm_content=bufferd9d8a">how do you pronounce gif?</a></p></li>
+<li><p><a href="http://engineeringblog.yelp.com/2016/01/dumb-init-an-init-for-docker.html?utm_content=buffere688c">introducing dumb-init, an init system for docker containers</a></p></li>
+<li><p><a href="http://www.ted.com/talks/james_veitch_this_is_what_happens_when_you_reply_to_spam_email">james veitch: this is what happens when you reply to spam email </a></p></li>
+<li><p><a href="http://blog.trendmicro.com/trendlabs-security-intelligence/lets-encrypt-now-being-abused-by-malvertisers/?utm_content=bufferaf68e">let&rsquo;s encrypt now being abused by malvertisers</a></p></li>
+<li><p><a href="http://www.ncameron.org/blog/my-thoughts-on-rust-in-2016/?utm_content=buffer68397">my thoughts on rust in 2016</a></p></li>
+<li><p><a href="https://shop.oculus.com/en-us/cart/">oculus rift pre-order</a></p></li>
+<li><p><a href="https://www.ibuildings.nl/blog/2016/01/programming-guidelines-php-developers-part-1-reducing-complexity">programming guidelines (for php developers) &ndash; part 1: reducing complexity | ibuildings</a></p></li>
+<li><p><a href="https://medium.com/humans-create-software/programming-is-not-important-bc0ef1a2b113">programming is not important — funfunfunction by mpjme — medium</a></p></li>
+<li><p><a href="https://medium.com/@paul_kinlan/service-discovery-and-app-interactions-on-the-web-e9473584dfcd">service discovery and app interactions on the web — medium</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2016/01/software-is-testing.html">software is testing</a></p></li>
+<li><p><a href="http://stackoverflow.com/research/developer-survey-2015?utm_content=bufferb93b8">stack overflow developer survey 2015</a></p></li>
+<li><p><a href="https://www.symfony.fi/entry/symfony-benchmarks-php-56-hhvm-and-php-7">symfony benchmarks: php 5.6, hhvm 3.11 and php 7.0.1</a></p></li>
+<li><p><a href="https://medium.com/@torgo/the-big-browser-you-haven-t-heard-of-yet-481a1b48517b">the big browser you haven’t heard of yet — medium</a></p></li>
+<li><p><a href="https://medium.com/@chrismessina/the-full-stack-employee-ed0db089f0a1">the full-stack employee — medium</a></p></li>
+<li><p><a href="http://technical.nailfashionsweden.se/web-components-that-can-be-built-purely-using-css-no-javascript/">web components that can be built purely using css, no javascript – technical news on web development</a></p></li>
+<li><p><a href="http://imgur.com/mnfQe3V">when non-technical people suddenly discover web developer tools &ndash; imgur</a></p></li>
+<li><p><a href="https://speakerdeck.com/jvns/why-i-rust?utm_content=bufferd5c71">why i ❤ rust // speaker deck</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #64]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/06/newsletter-number-64/"/>
+    <updated>2014-11-06T13:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/06/newsletter-number-64</id>
+    <content type="html"><![CDATA[<p>Hello friends from the software engineering community!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro_Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
+Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
+with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
+
+<p><img class="team right" src="/images/berlin.png"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="https://tacoapp.com/">Taco App &ndash; a unified task list, getting tasks from 40+ sources</a></p></li>
+<li><p><a href="http://bit.ly/1BdO42A">Become a Better Programmer: 5 Essential Methods at a Glance</a></p></li>
+<li><p><a href="http://bit.ly/1qEThXn">FrontEnd Vs Backend Developer Infographic</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://stackshare.io/">StackShare.io &ndash; Discover &amp; discuss software stacks</a></p></li>
+<li><p><a href="http://bit.ly/111sQEA">Technical Debt Takes Many Forms</a></p></li>
+<li><p><a href="http://buff.ly/1wUf5nO">Master Developers: Addy Osmani</a></p></li>
+<li><p><a href="http://buff.ly/1wnN5ow">Windows port of Docker Client by ahmetalpbalkan..things start moving!</a></p></li>
+<li><p><a href="http://buff.ly/1v4oVER">A Quick Introduction to CoreOS</a></p></li>
+<li><p><a href="http://buff.ly/1GNLOPV">Front-end Tooling Workflows // this is a GREAT presentation</a></p></li>
+<li><p><a href="http://buff.ly/1Es3nBj">Symfony 3.0: The roadmap</a></p></li>
+<li><p><a href="http://buff.ly/1v25Gf7">Amazon Deploys to Production Every 11.6 Seconds // I think now its around every 6s&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/1Eq1FAf">React’s diff algorithm</a></p></li>
+<li><p><a href="http://buff.ly/1Ey5GVc">VisualOps: no more heavy lifting in the cloud</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-aws-reinvent-pagerduty">SaltStack Delivers More Advanced Cloud Orchestration for Amazon Web Services and Pagerduty</a></p></li>
+<li><p><a href="http://aws.amazon.com/codedeploy/">AWS CodeDeploy</a></p></li>
+<li><p><a href="http://aws.amazon.com/rds/aurora/">Amazon RDS for Aurora</a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-scorecard/">The DevOps Scorecard</a></p></li>
+<li><p><a href="http://blog.socialcast.com/realtime-search-solr-vs-elasticsearch">Realtime Search: Solr vs Elasticsearch</a></p></li>
+<li><p><a href="http://blog.trifork.com/2013/10/24/how-to-avoid-the-split-brain-problem-in-elasticsearch/comment-page-1/">How to avoid the split-brain problem in elasticsearch</a></p></li>
+<li><p><a href="http://www.slideshare.net/kucrafal/scaling-massive-elastic-search-clusters-rafa-ku-sematext">Scaling Massive Elastic-Search Clusters</a></p></li>
+<li><p><a href="http://hhvm.h4cc.de">HHVM packages support</a></p></li>
+<li><p><a href="https://hacksummit.org/">HackSummit, a virtual conference for developers</a></p></li>
+<li><p><a href="http://keithclark.co.uk/labs/css-fps/desktop/">A 3D environment with lighting, shadows built with CSS transforms</a></p></li>
+<li><p><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive mvc and the virtual dom</a></p></li>
+<li><p><a href="https://speakerdeck.com/jmikola/async-php-with-react"> Async PHP with React</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/0B3UKOMH_4lgBUTdjUGxIZ3l1Ukk/view"> A presentation about PHP 7</a></p></li>
+<li><p><a href="https://speakerdeck.com/ezimuel/information-security-in-php-the-cia-triad-approach">Information Security in PHP: the CIA Triad Approach</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

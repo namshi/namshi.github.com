@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fusion, | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/fusion/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[VMware fusion headless]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless/"/>
+    <updated>2015-08-02T15:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/osx-vmware.jpg"></p>
+
+<p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
+OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.
+ It&rsquo;s true that there are alternatives like boot2docker, but there are some situations (more on that in a future post) where it is not enough.
+  At Namshi instead of using <code>Virtualbox</code>/boot2docker, we chose to use the more reliable and stable <code>Vmware fusion</code>. From our experience, it is actually better in terms of memory performance and sharing directories (compared to virtualbox 4, we will see if the brand new vbox 5 is better).</p>
+
+<p>Just like  <code>Virtualbox</code>, <code>Vmware Fusion</code> is able to handle a virtual machine in headless mode (with a little bit of shell fu). <code>Headless mode</code> is a way to handle (create, start, stop) a virtual machine by just interacting from the command line. So you don&rsquo;t need to interact with the UI. Everything is hidden, even the application window. It just works.
+We were looking for a way to run the virtual machine in headless mode, just because once you start and access it with ssh, you don&rsquo;t need to bother about anything else. Sometimes leaving the window open without any interaction may cause some performance issues with the vm. Also, in Headless mode, your desktop doesn&rsquo;t consume extra memory.</p>
+
+<p>Enough talking, SHOW ME THE CODE!</p>
+
+<p><code>
+vmrun power-commands &lt;path-to-vmx-file&gt; nogui
+</code></p>
+
+<!-- more -->
+
+
+<p>The command <code>vmrun</code> should be located in the <code>/Applications/VMwareFusion.app/Contents/Library</code> directory. The <code>power-commands</code> are all the actions  you can perform on the virtual machine (<code>start|stop|pause|halt</code>). You can get all possible options running with the <code>vmrun --help</code> command (or by checking the docs: <a href="http://www.vmware.com/pdf/vix162_vmrun_command.pdf">http://www.vmware.com/pdf/vix162_vmrun_command.pdf</a>).</p>
+
+<p>You also have to specify the virtual machine vmx file that you want to handle. By default, Vmware puts all the vm images in the user Document folder.</p>
+
+<p>In order to use the <code>vmrun</code> command without specifying the path, just create a symbolic link:</p>
+
+<p><code>sudo ln -s "/Applications/VMware Fusion.app/Contents/Library/vmrun" /usr/bin/vmrun</code></p>
+
+<p>If you are going to always use the same vm (as we are doing here at Namshi in order to use Docker in the best way), specifying the vm file&rsquo;s path can be annoying. To simplify that operation, just create a little script like:</p>
+
+<p>```</p>
+
+<h1>!/bin/sh</h1>
+
+<p>if [ -z &ldquo;$vmFile&rdquo; ]
+  then</p>
+
+<pre><code>echo "please set your 'vmFile' environment variable to point to your vm's .vmx file"
+exit 1
+</code></pre>
+
+<p>fi</p>
+
+<p>case &ldquo;$1&rdquo; in
+  start)</p>
+
+<pre><code>vmrun start "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  stop)</p>
+
+<pre><code>vmrun stop "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  suspend)</p>
+
+<pre><code>vmrun suspend "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  pause)</p>
+
+<pre><code>vmrun pause "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  unpause)</p>
+
+<pre><code>vmrun unpause "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  reset)</p>
+
+<pre><code>vmrun reset "$vmFile" nogui
+;;
+</code></pre>
+
+<p>  status)</p>
+
+<pre><code>vmrun list
+;;
+</code></pre>
+
+<p>  *)</p>
+
+<pre><code>echo "Usage: possible options are: start | stop | suspend | pause | unpause | reset | status"
+exit 1
+</code></pre>
+
+<p>esac
+<code>``
+Once you have this file in the path</code>/usr/local/bin/vm` (or the path you prefer) you are able to run these commands:</p>
+
+<p>```
+$ vm start
+$ vm stop
+$ vm pause
+&hellip;</p>
+
+<p>```</p>
+
+<p>As you can see from the script, you need one more thing: you have to define the <code>vmFile</code> <code>env</code> variable  (set it in your .bash_profile, or .zshrc):</p>
+
+<p><code>
+export vmFile="/Users/&lt;username&gt;/Documents/Virtual Machines.localized/Ubuntu 15.04 server64-bit.vmwarevm/Ubuntu 15.04 server64-bit.vmx"
+</code></p>
+
+<p>Ok, that&rsquo;s it. Easy peasy. Now you can handle your vmware vm from the command line. We are using this approach on OS X, but it should work on windows too (the helper script might work with <a href="https://www.cygwin.com/">cygwin</a>).</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ES6 | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/es6/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack]]></title>
+    <link href="http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack/"/>
+    <updated>2016-07-20T12:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack</id>
+    <content type="html"><![CDATA[<p>ES6 is lovely, right?</p>
+
+<p>I believe &ldquo;Yes&rdquo; it is! However, ES6 is not quite ready yet. Present JavaScript environments (NODE and Browser ) cannot run all the ES6 proposed features. Browser vendors are slowly shipping the features to their JS engines. Hence, as of today, only ES5 is guaranteed to work seamlessly in every JS environment.</p>
+
+<!-- more -->
+
+
+<p>So, how can we write ES6 ?</p>
+
+<p>Luckily, we have transpilers. They allow us to transpile ( a term for compiling from a language to the same language but a different version ) ES6 code to ES5. In this post, we&rsquo;ll see how to write a cross platform ( UMD ) module in ES6 and compile to ES5 using <code>webpack</code> and <code>babel</code>.</p>
+
+<h2>Let&rsquo;s Start</h2>
+
+<p>In a nutshell, our project includes:</p>
+
+<ol>
+<li><a href="https://webpack.github.io/">Webpack</a> is a code bundling tool and will use for building our module.</li>
+<li><a href="https://github.com/babel/babel-loader">Babel-loader</a> for transpiling ES6 code to ES5</li>
+<li>Babel plugins and presets:
+
+<ul>
+<li>babel-preset-es2015</li>
+<li>babel-preset-stage-0</li>
+<li>babel-plugin-add-module-exports</li>
+</ul>
+</li>
+<li><a href="https://github.com/avajs/ava">Ava</a> for unit testing our module</li>
+<li>NPM scripts for the build, test and  pre-publish tasks.</li>
+</ol>
+
+
+<p>Let&rsquo;s start by creating a new directory for our project. In the terminal, navigate to the directory and run <code>npm init</code>. Follow the instructions to generate a valid <code>package.json</code> file.</p>
+
+<p>Time to install the dependencies for the module. Run the following command to install the packages from npm:</p>
+
+<p><code>sh
+npm install --save-dev webpack babel-loader babel-plugin-add-module-exports babel-preset-es2015 babel-preset-stage-0 ava
+</code></p>
+
+<p>Create the following files and folder structure:</p>
+
+<ol>
+<li>index.js ( This will be our main ES6 source file )</li>
+<li>webpack.config.js ( The configurations required for webpack to build our module )</li>
+<li>.babelrc ( babel configuration file )</li>
+<li><code>dist</code> directory ( Final compiled package goes here )</li>
+</ol>
+
+
+<p>Let&rsquo;s start with the webpack configuration. Open <code>webpack.config.js</code> in your favorite editor. Copy and paste the below code:</p>
+
+<p>```js webpack.config.js</p>
+
+<pre><code>module.exports = {
+    entry: './index.js',
+    target: 'node',
+    output: {
+        path: './dist',
+        filename: 'build.js',
+        libraryTarget: 'umd'
+    },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            loader: 'babel',
+            exclude: /node_modules/
+        }]
+    }
+}
+</code></pre>
+
+<p>```</p>
+
+<p>This is a simple configuration file required by webpack. The exported configuration file will be processed by webpack. Let&rsquo;s look at each item in the exported object:</p>
+
+<ul>
+<li><code>entry</code> is the main file from where webpack will look for all other dependencies.</li>
+<li>We set <strong>target=&lsquo;node&rsquo;,</strong> so webpack knows how to mock/load the default node packages like &ldquo;fs&rdquo;, &ldquo;url&rdquo; ..etc</li>
+<li>Output section contains information about our final package and configurations related to it. We set our <code>libraryTarget</code> to <strong>UMD</strong> so that webpack will generate the final module in UMD format ( universal module definition &mdash; for commonJS, requireJS, and browser )</li>
+<li>Module is the section where we can configure different loaders for our code. Since we write the code in ES6, we need webpack to use <code>babel-loader</code> to transform the file. Module can have different other options for configuring the module, however, we just need only the loader configuration for now.</li>
+</ul>
+
+
+<p>Babel requires plugins to complete its job properly. For that, update the babel configurations in <code>.babelrc</code> file.</p>
+
+<p>```js .babelrc</p>
+
+<pre><code>{
+    "moduleId": "myModule",
+    "presets": ["es2015", "stage-0"],
+    "plugins": ["add-module-exports"]
+}
+</code></pre>
+
+<p>```</p>
+
+<p>Here we specify the moduleId to the final name of the module. We need to add the presets option to <code>["es2015", "stage-0"]</code> in order to transform the ES6 code. Find more about <code>es-2015</code> and <code>stage-0</code> features <a href="https://github.com/hemanth/es-next#stage-0">here</a></p>
+
+<p>Babel 6 does not generate a default export inside the compiled file. Instead, the default export is exported as a property called <code>default</code>. Because of this, if we try <code>require('myModule')</code>, it doesn&rsquo;t work. Babel 6 export should be required using <code>require('myModule').default</code>.</p>
+
+<p>That&rsquo;s why we use a plugin called <code>add-module-exports</code>. Its duty is to add the default export in the final babel generated output. You can find more about it <a href="https://www.npmjs.com/package/babel-plugin-add-module-exports">here</a>.</p>
+
+<p><em>Note: Make sure the <code>moduleId</code> in .babelrc is matching with your module&rsquo;s name.</em></p>
+
+<h2>Set up the tests</h2>
+
+<p>I find <code>ava</code> would be the best option for unit testing our module. Let&rsquo;s create a <code>tests</code> directory and add a new file <code>build.spec.js</code>. A basic test case is give below:</p>
+
+<p>```js build.spec.js
+var test = require(&lsquo;ava&rsquo;);
+var myModule = require(&lsquo;../dist/build&rsquo;);</p>
+
+<p>test(&lsquo;the log method&rsquo;, t => {</p>
+
+<pre><code>t.is(myModule.log('hi'), 'Logging the message : hi');
+</code></pre>
+
+<p>});
+```</p>
+
+<p>Now make the tests pass by implementing the real code in the module.</p>
+
+<p>```js index.js
+const myModule = {
+  log(message){</p>
+
+<pre><code>return `Logging the message : ${message}`;
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>export default myModule;
+```</p>
+
+<p>More about <code>ava</code> <a href="https://github.com/avajs/ava">here</a>.</p>
+
+<h2>Set up the NPM scripts to do the tasks</h2>
+
+<p>We need 5 npm tasks to make our life easier. All of them are self-explanatory; Just have look at the code in <code>package.json</code>.</p>
+
+<ol>
+<li><strong>npm start:</strong>  To run in development mode. This task will watch for any source file changes and output the build.</li>
+<li><strong>npm run build:</strong> Build the final module in production mode ( minified and with source maps ).</li>
+<li><strong>npm test:</strong> Run the <code>ava</code> tests.</li>
+<li><strong>npm run test-w:</strong> Run tests in continuous watch mode.</li>
+<li><strong>npm prepublish:</strong> Before publishing the package, this task run the <code>build</code> and <code>test</code> to make sure everything works fine.</li>
+</ol>
+
+
+<p>Final scripts will look like this:</p>
+
+<p>```js package.json
+&ldquo;scripts&rdquo;: {</p>
+
+<pre><code>"start": "webpack -w",
+"build": "webpack -p",
+"test": "ava tests/**/*.js",
+"test-w": "ava -w tests/**/*.js",
+"prepublish": "npm build &amp;&amp; npm test"
+</code></pre>
+
+<p>}
+```</p>
+
+<p>For developing in TDD fashion, run <code>npm start</code> and <code>npm run test-w</code> together.</p>
+
+<h2>Make the <code>dist/build.js</code> as the main file for the module</h2>
+
+<p>Finally, we need to tell npm about where to load the module from. Edit the <code>package.json</code> and change the &ldquo;main&rdquo; property to <code>dist/build.js</code></p>
+
+<h2>Summary</h2>
+
+<p>Developers already adopted ES6 even before it&rsquo;s available. Thanks to all these tools and the people behind them.</p>
+
+<p>Today we learnt the minimal set-up to start writing code in ES6. You can find the repo for the <a href="https://github.com/namshi/node-es6-seed">seed project here</a>. Fork, and create your next npm package in ES6.</p>
+
+<p>I hope you enjoyed reading the article. Feedbacks are welcome!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome ES6 ! JavaScript is not fancy anymore]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/"/>
+    <updated>2014-10-19T12:04:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore</id>
+    <content type="html"><![CDATA[<blockquote><p><strong>21/10/2014 UPDATE:</strong> This post was updated ( see the new examples for arrow functions and template strings ).</p>
+
+<p>Thanks for the <a href="http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread">comments</a>
+and the <a href="http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/">Reddit discussion</a>.</p></blockquote>
+
+<h2></h2>
+
+<p>For years, JavaScript was considered as a toy language. It was used for creating interactive web pages and could run only in the browser. But, things changed; JavaScript is used in both, the server and the browser these days. The simplicity of the language made it so popular that developers started using it for large and complex projects.</p>
+
+<p>However, new developers felt JavaScript was fancy at times. This was because of some of the known drawbacks in the language itself &mdash; and the workarounds put in place for fixing them. For example, a developer from a &ldquo;C&rdquo; language background is more familiar to block level scoping, but will have difficulties understanding function scoping in JavaScript. Along with lexical scoping, variable hoisting and closures might seem fancy or difficult to understand as well.</p>
+
+<!--more-->
+
+
+<p>ES6, the future version, is going to give a vast makeover to JavaScript. The <strong>TC39</strong> committee (responsible for ES6 standardization) have taken care of most of the concerns about JavaScript, and now ES6 is getting a lot of new features added, and existing bad parts fixed. If you want to know about the JavaScript good vs bad parts, check out Douglas Crockford’s book <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript, the Good Parts</a>.</p>
+
+<p>This post is <strong>not</strong> about the complete ES6 feature-set. Here, we will see some of the areas of JavaScript that look fancy, and how they are getting improved in ES6.</p>
+
+<h2>ES6, all good parts?</h2>
+
+<p>Again, I am not saying ES6 has only good parts. To be honest, I don&rsquo;t know. ES6 is not completely ready for live applications. Design patterns will automatically evolve once the language is used extensively. Design patterns can distinguish between the good and bad parts.</p>
+
+<p>As of now, most ES6 features are not supported by browsers (as they’re in draft). We use transpiler tools to compile ES6 code to ES5. While there are many tools available, Google’s <a href="https://github.com/google/traceur-compiler">traceur</a> seems to be the most popular among them.</p>
+
+<h2>8 fancy things fixed in ES6</h2>
+
+<p>Here are some interesting improvements done in ES6:</p>
+
+<h3>Object.is for better comparison</h3>
+
+<p>New developers who learn JavaScript often stumble on the usage of <code>==</code> and <code>===</code>.  The <code>===</code> is a strict comparison operator where it checks the type of the operands also. For example, in this code:</p>
+
+<p>```javascript
+“0” == 0  // true</p>
+
+<p>but</p>
+
+<p>“0” === 0 // false
+```</p>
+
+<p>It is always recommended to use the <code>===</code> operator. However, there is an excepton to this; we cannot compare <code>NaN</code> using any of these operators. We need to use the global function <code>isNaN</code> to check if any variable has a <code>NaN</code> value or not.</p>
+
+<p>```javascript
+NaN == NaN  // false
+NaN === NaN  // false</p>
+
+<p>var result = isNan(NaN) // true
+```</p>
+
+<p><code>Object.is</code> is an attempt to have a better comparison method. It is the same as the <code>===</code> operator, except it can compare <code>NaN</code> also.</p>
+
+<p><code>javascript
+Object.is(0 ,”0”) // false
+Object.is(0 ,0) // true
+Object.is(NaN, NaN) // true
+</code></p>
+
+<h3>Let for block scoping.</h3>
+
+<p>As opposed to languages like &ldquo;C&rdquo;, JavaScript doesn&rsquo;t have block scoping. All variables inside a block are hoisted to its containing function (if any) or will be part of the global scope.</p>
+
+<p><code>javascript
+if(true){
+  var a = 10;
+  console.log(a); // 10
+}
+// outside the if block
+console.log(a); // a is accessible here also and prints 10
+</code>
+Following is a popular example of this:</p>
+
+<p>Assume that we have 10 anchor tags in an html page. We need to alert the index of each anchor tag whenever it’s clicked. Now, look at the code below:</p>
+
+<p>```javascript
+var anchors = document.getElementsByTagName(“a”);
+for(var i=0,len=anchors.length; i&lt;len; i++){</p>
+
+<pre><code>anchors[i].onclick = function(){
+    alert(i);
+};
+</code></pre>
+
+<p>}
+```</p>
+
+<p>If we think the above code works, we are wrong. It is the last value of <code>i</code> that is alerted. Here we will see <strong>10</strong> getting alerted.</p>
+
+<p>We use a <strong>closure</strong> to fix this problem. Using closure, we can bind the right value of <code>i</code> to the onClick handler. See the code below:</p>
+
+<p>```javascript
+var anchors = document.getElementsByTagName(“a”);
+for(var i=0,len=anchors.length; i&lt;len; i++){</p>
+
+<pre><code>anchors[i].onclick = (function(i){
+    return function(){
+        alert(i);
+    };
+})(i);
+</code></pre>
+
+<p>}
+```
+Having a closure in the above code makes it unreadable and totally fancy to a new developer. Now we know why the word <strong>&ldquo;fancy&rdquo;</strong> is here.</p>
+
+<p>ES6 introduces block scoping in JavaScript using the keyword <code>let</code>. If we write our first example, using <code>let</code>:</p>
+
+<p><code>javascript
+if(true){
+  let a = 10;
+  console.log(a); // 10
+}
+// outside the if block
+console.log(a) // Reference error: a is not defined
+</code></p>
+
+<p><code>let</code> also binds the scope of the variable to the current block. In our second example, we can use <code>let</code> to solve the scoping problem:</p>
+
+<p>```javascript
+var anchors = document.getElementsByTagName(“a”);
+for(let i=0,len=anchors.length; i&lt;len; i++){</p>
+
+<pre><code>anchors[i].onclick = function(){
+    alert(i);
+}
+</code></pre>
+
+<p>}
+```
+Now the above code should work as expected.</p>
+
+<h3>Multi-line strings and string interpolations</h3>
+
+<p>Writing multiline strings is not so straightforward. The <code>\n</code> ( for newline ) has to be added where ever a line break is needed.</p>
+
+<p><code>javascript
+var myString = 'Lorem ipsum \ndolor sit amet,\n\n\n consectetur adipisicing\n elit.';
+</code>
+ES6 introduces <strong>template strings</strong> for creating multiline strings. In ES6, we can write the above example like this:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myString = `Lorem ipsum 
+                dolor sit amet,
+
+                consectetur adipisicing
+                elit.`;
+</code></pre>
+
+<p><code>``
+So, here, we can use "\</code>&ldquo; (backtick) to create the strings.</p>
+
+<p>Another interesting usecase of the template strings is variable interpolation. There is no native variable interpolation in ES5, but can be achieved by regular expressions or by manually appending the variable to the string. For example:</p>
+
+<p>```javascript
+// Using + operator
+var name = &lsquo;Tony&rsquo;;
+var age = 20;
+var greeting = &lsquo;Hi, I am &rsquo;+name+&lsquo; and my age is &rsquo;+age;
+console.log(greeting); // This prints &lsquo;Hi I am Tony and my age is 20&rsquo;</p>
+
+<p>// Using regular expressions
+var greeting = &lsquo;Hi, I am %name% and my age is %age%&rsquo;.replace(/%name%/g,name).replace(/%age%/g,age);
+console.log(greeting); // This prints &lsquo;Hi I am Tony and my age is 20&rsquo;
+```
+In ES6, the above code is really simplified, and can be written like this:</p>
+
+<p><code>javascript
+var name = 'Tony';
+var age = 20;
+var greeting = `Hi, I am ${name} and my age is ${age}`;
+console.log(greeting); // This prints 'Hi I am Tony and my age is 20'
+</code></p>
+
+<h3>Fat Arrow functions for binding scope</h3>
+
+<p>Most new developers struggle to understand the <code>this</code> keyword in JavaScript. <code>this</code> is nothing but the execution context for a function, and for methods, <code>this</code> points to the object holding it. If the function is executed not as a method of an object, <code>this</code> will point to the global object (usually the window object).</p>
+
+<p><code>this</code> can be confusing many times. Look at the below example:</p>
+
+<p>```javascript
+var name = &lsquo;Tom&rsquo;;
+var obj = {</p>
+
+<pre><code>name: 'Jerry',
+sayName: function(){
+    console.log(this.name);
+},
+greet: function(){
+   setTimeout(function(){
+       console.log('Hi,' + this.name );
+   },100);
+}
+</code></pre>
+
+<p>};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Tom
+```</p>
+
+<p>When the <code>sayName</code> is executed as an object method, <code>this</code> was pointing to object itself, so <code>this.name</code> will output &ldquo;Jerry&rdquo;. Inside the <code>greet</code> function, a <code>setTimeout</code> is used for delaying the function execution. <code>setTimeout</code> will invoke the function in global context, hence <code>this</code> will point to the global object.</p>
+
+<p>We usually use <code>Function.bind</code> or <code>Function.call</code> or <code>Function.apply</code> to fix these kinds of problems.</p>
+
+<p>```javascript
+var name = &lsquo;Tom&rsquo;;
+var obj = {</p>
+
+<pre><code>name: 'Jerry',
+sayName: function(){
+    console.log(this.name);
+},
+greet: function(){
+   setTimeout(function(){
+       console.log('Hi,' + this.name );
+   }.bind(this),100);
+}
+</code></pre>
+
+<p>};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry
+```</p>
+
+<p>ES6 added arrow functions to get rid of scoping issues. An arrow function will always lexically bind the <code>this</code> value to its surrounding environment. So the above code can be written in ES6 like this:</p>
+
+<p>```javascript
+var name = &lsquo;Tom&rsquo;;
+var obj = {</p>
+
+<pre><code>name: 'Jerry',
+sayName: function(){
+    console.log(this.name);
+},
+greet: function(){
+   setTimeout( ()=&gt; {
+       console.log('Hi,' + this.name );
+   },100);
+}
+</code></pre>
+
+<p>};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry
+```</p>
+
+<p>Here, inside the arrow function, <code>this</code> always points to the parent scope <code>this</code> value.</p>
+
+<p><strong>Note:</strong> <em>Since the arrow function is already bound to its execution context, we cannot apply .bind(), .call() or .apply() methods on it again.</em></p>
+
+<h3>Destructuring</h3>
+
+<p>Destructuring is the process of assigning the property values of an object to a local variable. For example, in JavaScript, we can do this:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myGlobalConfig = {
+    apiUrl: 'www.google.com/api',
+    data1: 'some value',
+    data2: 'another value',
+    methodType: 'POST'
+    // ... etc
+};
+
+// and in one of our functions
+
+function makeAjaxRequest(config){
+    var url = config.url;
+    var method = config.methodType;
+    var data = config.data2;
+    $.ajax(url, method, data );
+}
+
+// call makeAjaxRequest
+makeAjaxRequest( myGlobalConfig );
+</code></pre>
+
+<p>```</p>
+
+<p>In the above code, whenever a function requires arguments as multiple parameters, we need to extract values from our config object and pass them as parameters. This is a problem when we have a large number of values that need to be extracted.</p>
+
+<p>ES6 allows direct destructing assignments. So we can write the above example in a simple way, like this:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myGlobalConfig = {
+    apiUrl: 'www.google.com/api',
+    data1: 'some value',
+    data2: 'another value',
+    methodType: 'POST'
+    // ... etc
+};
+
+// and in one of our function
+
+function makeAjaxRequest(config){
+    var { url, methodType, data2 } = config;
+    $.ajax(url, methodType, data2 );
+}
+
+// call makeAjaxRequest
+makeAjaxRequest( myGlobalConfig );
+</code></pre>
+
+<p>```</p>
+
+<h3>Default Argument Values for Functions</h3>
+
+<p>One of the best features in ES6 is default arguments. As of now, we use the <code>||</code> to have default values for the function parameters. See the below code:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myFunction = function(a, b, c){
+    a = a || 10;
+    b = b || 5;
+    c = c || 8;
+    return a*b*c;
+};
+</code></pre>
+
+<p>```
+Here is the same code written in ES6:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myFunction = function(a=10, b=5, c=8){
+    return a*b*c;
+};
+</code></pre>
+
+<p>```</p>
+
+<h3>Object method shorthands</h3>
+
+<p>Look at the below object creation pattern. In this, all the public method/property of an object will have their own private counterparts. For example:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myObject = (function(){
+    var sayName = function(){
+        console.log('this is sayname function');
+    };
+    var greet = 'This is a greeting';
+    return {
+        greet: greet,
+        sayName: sayName
+    }
+})();
+</code></pre>
+
+<p>```
+The above pattern is called <strong>Revealing module pattern</strong>. In ES6, it is much simplified by eliminating the column part. Thus, we can write the above code like this:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myObject = (function(){
+    var sayName = function(){
+        console.log('this is sayname function');
+    };
+    var greet = 'This is a greeting';
+    return {
+        greet,
+        sayName
+    }
+})();
+</code></pre>
+
+<p>```</p>
+
+<h3>The super keyword for invoking super class methods</h3>
+
+<p>JavaScript supports object oriented programming. But, implementing inheritance is tricky in JavaScript, as it is not supported natively. JavaScript even has the <code>super</code> keyword, however, it is not functional.</p>
+
+<p>Most of the JavaScript frameworks those implement inheritance have a pattern like this:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myBaseObj = {
+    sayName: function(){
+        // .. do something
+    };
+};
+
+var mySubObj = Framework.extend(myBaseObj, {
+    sayName: function(){
+        this._super.apply(this,arguments);
+        // .. do something else
+    }
+})
+</code></pre>
+
+<p><code>``
+These frameworks use</code>_super<code>(or sometimes</code>uber<code>) to invoke the parent method. This is because,</code>super` was a reserved keyword (for the future) in JavaScript, and is not allowed for use as an identifier or method.</p>
+
+<p>Now, the &ldquo;future&rdquo; has come. JavaScript&rsquo;s <code>super</code> keyword has been implemented in ES6. Now let&rsquo;s see how inheritance can be done:</p>
+
+<p>```javascript</p>
+
+<pre><code>var myBaseObj = {
+    sayName: function(){
+        // .. do something
+    };
+};
+var mySubObj = {
+    __proto__: myBaseObj,
+    sayName: function(){
+        super.sayName();
+        // .. do something else
+    }
+})
+</code></pre>
+
+<p>```</p>
+
+<p>Again, all these are just a small part of the ES6 feature-set. There are so many interesting features like Promises, Classes, Generator, Iterators, etc.</p>
+
+<h2>Summary</h2>
+
+<p>ES6 is the most promising version of JavaScript. It has so many features; features we were waiting for for years. ES6 will definitely help writing more modular and less quirky code in JavaScript.</p>
+
+<p>Here in this article, we have seen the problems with the current version of JavaScript, and how ES6 fixes the problems and the workarounds. Now, the entire ES6 feature-set is beyond the scope of this post, for that you can check out these awesome resources.</p>
+
+<ul>
+<li><a href="https://github.com/lukehoban/es6features">https://github.com/lukehoban/es6features</a></li>
+<li><a href="https://github.com/ericdouglas/ES6-Learning">https://github.com/ericdouglas/ES6-Learning</a></li>
+<li><a href="http://espadrine.github.io/New-In-A-Spec/es6/">http://espadrine.github.io/New-In-A-Spec/es6/</a></li>
+<li><a href="http://tc39wiki.calculist.org/es6/">http://tc39wiki.calculist.org/es6/</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

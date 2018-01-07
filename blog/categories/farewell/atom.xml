@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: farewell | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/farewell/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Ciao! So long and thanks for all the shawarma]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/29/ciao-thanks-for-all-the-shawarma/"/>
+    <updated>2016-02-29T14:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/29/ciao-thanks-for-all-the-shawarma</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/cirpo-farewell.jpg"></p>
+
+<p>Today is my last day at Namshi.</p>
+
+<!-- more -->
+
+
+<p>I joined Namshi two and half years ago and it has been a terrific journey. At that time I was looking for an opportunity where I could work and focus on a product, on something that could have potential to become something big and relevant for the market. I bet on Namshi. And I was right.</p>
+
+<p>It has been a terrific journey where I learned a lot and worked with amazing colleagues.
+I still have a vivid memory of my first live deployment, just 3 hours after I joined the backend team: a reassurance that I was in the right place, it felt sooo good !
+It’s not so common to find a place where you can contribute and <a href="http://github.com/namshi">give back to opensource</a>, experiment with new technologies or move fast and focus on things that will have real and effective impact on the business, strive for simplicity, no frills and being mentored by phenomenal people.</p>
+
+<p>A big thank you to the Tech team, it was a real pleasure, <strong>you will be missed a lot!</strong></p>
+
+<p>شكراً</p>
+
+<p>آپ کا شکریہ</p>
+
+<p>धन्यवाद</p>
+
+<p>E se</p>
+
+<p>Спасибо</p>
+
+<p>Obrigado</p>
+
+<p>Danke</p>
+
+<p>Teşekkürler</p>
+
+<p>Grazie</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Goodbye Nitesh!]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/28/goodbye-nitesh/"/>
+    <updated>2015-09-28T12:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/28/goodbye-nitesh</id>
+    <content type="html"><![CDATA[<p>Today, Nitesh is leaving us to go back to his homeland, India,
+shift away from programming and focus on some other of his
+interests!</p>
+
+<p>He had a few words to share with everyone:</p>
+
+<p><blockquote><p>When I came to Namshi, they handed me this welcome package which has small memo regarding values of the company, having worked before in corporate jobs I knew what it means, formality !! so I read the first line and toss it out. after working here for a while I could say there is nothing describe Namshi tech team better than that first line of that memo:</p></p><p><p>Do more with less.</p></p><p><p>Around 15 peoples tech team, building and scaling a growing e-commerce business like Namshi, says a lot about the quality of people. What makes it even more rewarding is the diversity of team, Italian, Egyptian, Indian, Nigerian &hellip; soon enough the conditioning of your own culture start to crack ( or at-least become more visible ).
+Being nomad from heart, and contemplative in nature, this was the most pleasing aspect of Namshi for me.</p></p><p><p>There was a striking combination of depth and breadth of knowledge in Namshi. always being more of a depth guy, I enjoyed things like test driven development and refactoring until my heart content, while some of my other colleagues seems like expert in everything.
+This leads to a solid Yin and yang approach. I was amused to know that our lead appreciates both. And quite excellent in walking the middle path.</p></p><p><p>These 9 months felt like 9 weeks in Namshi and with every meditation session, I knew I want to chew life, not really sprint through it.
+So even though I am engrossed and indulged in all this, I decided to move on.</p></blockquote></p>
+
+<p><img class="center" src="/images/nitesh-bye-bye.jpg"></p>
+
+<p>Good luck Nitesh!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A Year and a Half journey with Namshi Tech]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/30/a-year-and-a-half-journey-with-namshi-tech/"/>
+    <updated>2014-10-30T09:48:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/30/a-year-and-a-half-journey-with-namshi-tech</id>
+    <content type="html"><![CDATA[<p>Today, I bade farewell to the team and the culture that introduced me to software development. A year and six months have passed since I
+landed my first job straight out of college as a Junior Software Engineer at Namshi where I had the great, the average and the bad
+days. I must admit, time has passed super fast.</p>
+
+<!--more-->
+
+
+<p>It was a very exciting journey, from completing my first assignment, changing <code>robots.txt</code> :&ndash;), to the latest extra large,
+super complicated tasks, it was a journey involving lots and lots of learning and late working hours.</p>
+
+<p>I was lucky to join Namshi Tech at a time where migration to a more sustainable, robust and scalable architecture was
+taking place. After a little bit of struggling with completing assignments on legacy software, Symfony2 kicked in and
+paved the way of my learning path and ended up to be my most valuable experience. Javascript for me was that nice
+language I used to manipulate DOM elements, I could not be more wrong! After finally understanding what a directive is supposed to be,
+I started working with AngularJs and I couldn&rsquo;t help but be amazed on what it can achieve. Fighting and watching my
+teammates fight through the craziness of Javascript, NodeJs came into the picture and my first impression was exactly
+as you might think, this javascript craziness on the server?! But the simplicity and the ultimate performance of this
+platform proved me wrong again.</p>
+
+<p>The newly employed technologies brought with them a set of valuable practices like code review, code testing and
+automated testing tools, pair programming and many more which are very important skills for a software developer to pick up.</p>
+
+<p>Attending SymfonyLive London 2014 was a great chance to meet people from the Symfony and PHP community, getting to know
+the latest trends surrounding this framework and most importantly, realizing that there are people across continents
+facing the same issues and struggling through the same parts you had hard time working on. The level of passion towards
+software is just fascinating!</p>
+
+<p>One of the most valuable lessons I learned was that paying back to the open source community is an important part of
+our job as software developers. During this period at Namshi, I had the chance to participate in <a href="https://www.npmjs.org/package/mockserver">Mockserver</a>
+and <a href="https://www.npmjs.org/package/shisha">shisha</a>.</p>
+
+<p>Finally, words of gratitude go to <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alessandro Nadalin</a> for taking a
+leap of faith in hiring a fresh graduate and going through the painful process of developing him from scratch.
+I just hope I set a right example. Of course, lots of thanks to the team and to <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Alessandro Cinelli</a>
+for sharing their knowledge and their guidance along the way.</p>
+
+<p><img class="center" src="/images/wall.jpg" title="&lsquo;On the Namshi Wall&rsquo; &lsquo;On the Namshi Wall&rsquo;" ></p>
+]]></content>
+  </entry>
+  
+</feed>

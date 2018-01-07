@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: goodbye | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/goodbye/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Goodbye Lucianino!]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/02/goodbye-lucianino/"/>
+    <updated>2014-07-02T22:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/02/goodbye-lucianino</id>
+    <content type="html"><![CDATA[<p>This week one of our teammates left the team
+to pursuit his next big challenge: we are talking
+about <a href="http://tech.namshi.io/team/#Luciano%20Amodio">Luciano</a>
+who is now in Spain, hacking, as usual, with
+JavaScript.</p>
+
+<!-- more -->
+
+
+<p><em>Lucianino</em>, as we liked to call him, has been
+instrumental in kicking off
+our whole &ldquo;frontend&rdquo; department, and we have been
+very happy to have him here, introducing us to
+the magical world of AngularJS, Grunt (even though
+we now use Gulp) and Single-Page Apps.</p>
+
+<p>While at Namshi, we&rsquo;ve seen him transitioning
+from the (traditional) world of PHP to JavaScript
+and even giving his very <a href="http://www.slideshare.net/adamquadmon/angular-js-mobile-jsday-2014-verona-14-may">first talk at a conference</a>.</p>
+
+<p>We really want to thank him for what he has done
+in the past 12 months at Namshi and wish him
+good luck for his next adventure!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Goodbye Muhammad!]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/03/goobye-muhammad/"/>
+    <updated>2014-06-03T22:46:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/03/goobye-muhammad</id>
+    <content type="html"><![CDATA[<p><img class="left team" src="/images/riaz.jpeg" title="Muhammad Riaz" ></p>
+
+<p>As much as we hate to see people leaving, I think
+it&rsquo;s a good thing to waive the nostalgic feelings
+and celebrate who has decided to move on: for better
+or for worse, each and everyone in our team has played
+a key role in evolving to what I call <em>&ldquo;The tech family&rdquo;</em>.</p>
+
+<p>I must admit that I&rsquo;m a bit late with saying goodbye to
+<a href="https://ae.linkedin.com/pub/muhammad-riaz/10/777/414">Muhammad</a>, but I eventually wanted to do this as I believe
+his mermerizing persona, the laugh, the commitment that
+he showed in his 2-year tenure are second to none.</p>
+
+<!-- more -->
+
+
+<p>Muhammad has joined us even before I got to Dubai,
+and left us after core contributions to our
+architecture: from rushing to fix as many bugs as possible
+to putting all he had in re-architecting core
+components of our stack, like our main API and
+integrations with payment providers: for example,
+he&rsquo;s been crucial in implementing 3D-secure
+authentication in our
+<a href="https://github.com/namshi/innovate">namshi/innovate</a> library.</p>
+
+<p>Last we heard is that he would have rushed to Europe
+in order to join an exciting startup.</p>
+
+<p>Bring your <a href="http://www.stylehoster.com/lpc/uploads/2014/01/Latest-Salwar-Kameez-Designs-2014-For-Pakistani-Men.gif">Kameez</a> with you man,
+and remember you still have some brothers in Dubai!</p>
+
+<p>Aye!</p>
+]]></content>
+  </entry>
+  
+</feed>

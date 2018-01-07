@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: gitignore | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/gitignore/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #71]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/31/newsletter-number-71/"/>
+    <updated>2014-12-31T15:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/31/newsletter-number-71</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello Folks!</p>
+
+<p>This is the last <a href="/blog/categories/techthursday/">#TechThursday</a> for 2014 (even if it&rsquo;s Wednesday :P ) .</p>
+
+<p>It has been an amazing year here at Namshi, our tech stack evolved a lot, new challenges, new technologies, new ppl&hellip; can&rsquo;t wait to see what will happen in 2015!</p>
+
+<p>What&rsquo;s you new year resolution? Have you ever thought to be part of our team? :)  <a href="http://tech.namshi.io/join-us/">JOIN US!</a></p>
+
+<p><em>Happy new year from the Namshi <a href="http://tech.namshi.io/team/">Tech team</a></em></p></blockquote>
+
+<p><strong>Here is usual the list with interesting links to keep you busy after you wake up from new year&rsquo;s eve:</strong></p>
+
+<ul>
+<li><p><a href="https://www.youtube.com/watch?v=GRexIOtGhBU&amp;index=16&amp;list=UUzoVCacndDCfGDf41P-z0iA">CSSconf EU 2014 | Rachel Andrew: CSS Grid Layout</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html?utm_content=buffer92124&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Microservices &ndash; Not A Free Lunch!</a></p></li>
+<li><p><a href="https://www.cloudamqp.com/blog/2014-11-14-amazon-vpc-peering.html?utm_term=Read%20more%20about%20Amazon%20VPC%20Peering%20with%20CloudAMQP&amp;utm_content=buffer14f1b&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Amazon VPC Peering with CloudAMQP</a></p></li>
+<li><p><a href="http://www.entrepreneurhandbook.co.uk/dispatches-from-anywhere-life-as-a-remote-worker/?utm_content=buffer1200c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Dispatches from Anywhere: Life as a Remote Worker</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://blog.docker.com/2014/12/dockercon-eu-the-future-of-the-docker-project-by-solomon-hykes/">The future of Docker</a></p></li>
+<li><p><a href="http://red.ht/1tzyXO9">Docker in 5 minutes</a></p></li>
+<li><p><a href="http://slidesha.re/1K0VzMl">Turbo charge your logs &ndash; Slides</a></p></li>
+<li><p><a href="http://bit.ly/13IHAt8">First Experiences with BDD &ndash; Video</a></p></li>
+<li><p><a href="https://github.com/github/gitignore">A collection of .gitignore templates</a></p></li>
+<li><p><a href="http://karlosagudo.github.io/symvirins/">Very easy to use installer with ansible / vagrant / virtual box to install Symfony with a simple single command.</a></p></li>
+<li><p><a href="http://davidwalsh.name/update-git-commit-messages">How to Batch Update Git Commit Messages</a></p></li>
+<li><p><a href="http://toddmotto.com/polyfills-suck-use-a-featurefill-instead/">Polyfills suck, use a featurefill instead</a></p></li>
+<li><p><a href="http://calendar.perfplanet.com/2014/speeding-up-https-with-session-resumption/">Speeding up HTTPS with session resumption</a></p></li>
+<li><p><a href="http://christianheilmann.com/2014/12/08/the-next-ux-challenge-on-the-web-gaining-offline-trust/">THE NEXT UX CHALLENGE ON THE WEB: GAINING OFFLINE TRUST</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/5/12/4-architecture-issues-when-scaling-web-applications-bottlene.html">4 Architecture Issues When Scaling Web Applications: Bottlenecks, Database, CPU, IO</a></p></li>
+<li><p><a href="https://github.com/sokil/php-fraud-detect">php-fraud-detect: Checker of fraud requests. </a></p></li>
+<li><p><a href="http://verraes.net/2014/12/how-much-testing-is-too-much/">How Much Testing is Too Much?</a></p></li>
+<li><p><a href="http://www.buzzfeed.com/daves4/welcome-to-the-fuetch#.qbAvjNVr1">22 Pictures That Prove That 2014 Is The Damn Future</a></p></li>
+<li><p><a href="https://medium.com/@gilbox/how-can-react-and-flux-help-us-create-better-stronger-faster-angular-applications-639247898fb">How can React and Flux help us create better Angular applications?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

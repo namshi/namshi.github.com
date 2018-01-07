@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: container | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/container/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #98]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/09/newsletter-number-98/"/>
+    <updated>2015-07-09T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/09/newsletter-number-98</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>We really enjoyed the Namshi Iftar this week :)</p>
+
+<p><img class="center" src="/images/posts/namshi-iftar.jpg"></p>
+
+<p>Hi Guys, the week is over and a we have a the usual list of links for you.</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="http://www.toptal.com/react/navigating-the-react-ecosystem?utm_source=javascriptweekly">A Guide to React.js Tools and Libraries | Toptal</a></p></li>
+<li><p><a href="http://danielwhittaker.me/2015/07/05/are-you-making-these-10-ddd-mistakes/">Are You Making These 10 DDD Mistakes?</a></p></li>
+<li><p><a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a></p></li>
+<li><p><a href="http://blog.codeship.com/dockercon-2015-container-hacks-in-docker/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcBgI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Container Hacks in Docker</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://blog.codeship.com/container-os-comparison/">Container OS comparison</a></p></li>
+<li><p><a href="http://dalekjs.com/">DalekJS &ndash; Automated cross browser testing with JavaScript</a></p></li>
+<li><p><a href="http://blog.wolksoftware.com/decorators-reflection-javascript-typescript">Decorators &amp;Metadata reflection in Typescript</a></p></li>
+<li><p><a href="https://www.docker.com/docker-news-and-press/06.22.2015_Docker-Delivers-Native-Multi-Host-Networking-to-Advance-Distributed-Application-Portability">Docker Delivers Native Multi-Host Networking to Advance Distributed Application Portability</a></p></li>
+<li><p><a href="http://jaxenter.com/domain-driven-design-and-microservices-116672.html">Domain-driven Design and microservices &ndash; JAXenter</a></p></li>
+<li><p><a href="http://jaxenter.com/domain-driven-design-and-microservices-116672.html">Domain-driven Design and microservices</a></p></li>
+<li><p><a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html">Elasticsearch: The Definitive Guide</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=xrIjfIjssLE">Erlang: the movie</a></p></li>
+<li><p><a href="http://javascript-ninja.fr/git-good-practices/">Git good practices</a></p></li>
+<li><p><a href="http://alistair.cockburn.us/Hexagonal%20architecture">Hexagonal architecture</a></p></li>
+<li><p><a href="https://medium.com/@charliedeets/how-not-to-make-your-engineer-s-life-completely-terrible-292a6d5d134c">How Not to Make Your Engineer’s Life Completely Terrible &ndash; from a designer</a></p></li>
+<li><p><a href="https://medium.com/javascript-scene/how-to-use-es6-for-isomorphic-javascript-apps-2a9c3abe5ea2">How to Use ES6 for Universal JavaScript Apps — JavaScript Scene — Medium</a></p></li>
+<li><p><a href="https://www.symfony.fi/entry/expose-your-routes-and-translations-to-your-front-end-javascript-in-symfony">How to expose your Routes and Translations to your Front End JavaScript in Symfony</a></p></li>
+<li><p><a href="http://www.slideshare.net/ziobrando/idea-stickies-green-bar-wroclaw-edition">Idea stickies green bar &ndash; Wroclaw edition</a></p></li>
+<li><p><a href="https://christianalfoni.github.io/react-webpack-cookbook/">Introduction | React Webpack cookbook</a></p></li>
+<li><p><a href="http://www.kuberneteslaunch.com/">Kubernetes 1.0 Launch</a></p></li>
+<li><p><a href="https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750">Mixins Are Dead. Long Live Composition — Medium</a></p></li>
+<li><p><a href="https://github.com/reddit/reddit-mobile/issues/247">Perf audit: Loading performance · Issue </a></p></li>
+<li><p><a href="https://medium.com/@btaylor/react-with-c-building-the-quip-mac-and-windows-apps-c63155c1531b">React with C++: Building the Quip Mac and Windows Apps</a></p></li>
+<li><p><a href="http://jaketrent.com/post/react-router-with-flux/">React-Router with Flux &ndash; Jake Trent</a></p></li>
+<li><p><a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By · React for Designers</a></p></li>
+<li><p><a href="http://www.sitepoint.com/sitepoint-smackdown-php-vs-node-js/">SitePoint Smackdown: PHP vs Node.js</a></p></li>
+<li><p><a href="http://jmfurlott.com/tutorial-setting-up-a-single-page-react-web-app-with-react-router-and-webpack/">Tutorial: Setting Up a Single Page React Web App with React-router and Webpack</a></p></li>
+<li><p><a href="http://codepen.io/32bitkid/blog/understanding-delegated-javascript-events">Understanding Delegated JavaScript Events</a></p></li>
+<li><p><a href="https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723">Why We Need WebAssembly: An Interview with Brendan Eich — JavaScript Scene — Medium</a></p></li>
+<li><p><a href="http://blog.jetbrains.com/phpstorm/tag/phpstorm-9/">phpstorm 9 | JetBrains PhpStorm Blog</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

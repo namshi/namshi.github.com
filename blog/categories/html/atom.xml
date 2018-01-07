@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: html | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/html/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #107]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/10/newsletter-number-107/"/>
+    <updated>2015-09-10T15:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/10/newsletter-number-107</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again! We had a big event last week!</p>
+
+<p>Our nerdy &ldquo;managers&rdquo; went to Berlin last week to participate in the Rocket Tech Summit 2015
+<img class="team center" src="/images/berlin_rocket_team.jpg"></p>
+
+<p><img class="team center" src="/images/berlin_rocket_alex.jpg"></p>
+
+<p>He like to be that casual! It was a good talk though :)</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.facebook.com/bbcnews/videos/10153081461092217/">&ldquo;without google maps we&rsquo;d be lost&rdquo; &ndash; syrian refugee explains how he has been using apps bbc.co.uk/panorama </a></p></li>
+<li><p><a href="https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template">better commit messages with a .gitmessage template</a></p></li>
+<li><p><a href="https://stefanscherer.github.io/create-an-io-js-container-image-for-windows/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4AT8dkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">create a node.js container image for windows</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.devopsbookmarks.com/">devops bookmarks</a></p></li>
+<li><p><a href="http://www.dontfeartheinternet.com/">don’t fear the internet basico html &amp; css for non-web designers</a></p></li>
+<li><p><a href="http://www.mitchchn.me/2014/os-x-terminal">eight terminal utilities every os x command line user should know</a></p></li>
+<li><p><a href="https://medium.com/@kellan/five-years-building-a-culture-and-handing-it-off-54a38c3ab8de">five years, building a culture, and handing it off. — medium</a></p></li>
+<li><p><a href="http://blog.golang.org/go15gc?utm_content=bufferabe53">go gc: prioritizing low latency and simplicity &ndash; the go blog</a></p></li>
+<li><p><a href="https://github.com/black-screen/black-screen?utm_content=bufferea558">http://tech.namshi.io/blog/2015/09/10/newsletter-number-107/</a></p></li>
+<li><p><a href="https://github.com/jroes/par?utm_content=bufferf1d16">Run similar commands concurrently</a></p></li>
+<li><p><a href="https://google.github.io/lovefield/?utm_content=bufferf89f8">lovefield: the data access library that loves you</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/minimising-font-downloads/">minimising font downloads &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/release/v4.0.0/?utm_content=bufferb4c18">node v4.0.0 (stable) | node.js</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/announcements/foundation-elects-board/?utm_content=buffer81979">node.js foundation elects board of directors | node.js</a></p></li>
+<li><p><a href="http://onethingwell.org/post/128103218146/wordsafety">one thing well | wordsafety</a></p></li>
+<li><p><a href="http://php.net/index.php?utm_content=buffer0b04a">php 7.0.0 rc 2 released</a></p></li>
+<li><p><a href="https://groups.google.com/forum/">redis 3.0.4 and 2.8.22</a></p></li>
+<li><p><a href="http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html">stop pushing the web forward &ndash; quirksblog</a></p></li>
+<li><p><a href="http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/">swift functors, applicatives, and monads in pictures</a></p></li>
+<li><p><a href="http://virtuecenter.com/blog/the_effects_of_computer_programming_on_the_brain.html">the effects of computer programming on the brain</a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/announcing-sleepy-puppy-cross-site.html?utm_content=buffer8d3de">the netflix tech blog: announcing sleepy puppy &ndash; cross-site scripting payload management for web application security testing</a></p></li>
+<li><p><a href="http://www.itskeptic.org/content/what-devops-role">what is a devops role?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #79]]></title>
+    <link href="http://namshi.github.io/blog/2015/02/26/newsletter-number-79/"/>
+    <updated>2015-02-26T13:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/02/26/newsletter-number-79</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there! It&rsquo;s <strong>#TechThursday</strong> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.codementor.io/reactjs/tutorial/understanding-react-js-rendering">Understanding ReactJS rendering</a></p></li>
+<li><p><a href="http://blog.andrewray.me/flux-for-stupid-people/">Flux for Stupid People</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/02/06/what-the-flux/">What the Flux? (On Flux, DDD, and CQRS)</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.timmclean.net/2015/02/25/jwt-alg-none.html">why I dont like JWT</a></p></li>
+<li><p><a href="http://buff.ly/17vdOdI">an online photo editor built using React</a></p></li>
+<li><p><a href="http://blog.kazuhooku.com/2015/02/h2o-new-http-server-goes-version-100-as.html?utm_content=bufferba8ea&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">looking for a server to play with HTTP/2? check out h2o: fast and implements all the http/2 goodies!</a></p></li>
+<li><p><a href="https://blog.cloudflare.com/end-of-the-road-for-rc4/?utm_content=buffer2dcdd&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">End of the road for RC4 on CloudFlare</a></p></li>
+<li><p><a href="https://medium.com/@designuxui/how-bad-ux-killed-jenny-ef915419879e?utm_content=bufferb11f7&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How bad UX killed jenny</a></p></li>
+<li><p><a href="http://onethingwell.org/post/111280189260/goaccess">have fun with your HTTP logs</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/ec2-container-service-ecs-update-access-private-docker-repos-mount-volumes-in-containers/?utm_content=buffer7b026&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">AWS container service update</a></p></li>
+<li><p><a href="http://angularjs.blogspot.ae/2015/02/preview-of-new-angular-router.html?utm_content=buffer74e14&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Preview of the new angular router</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/node-js-foundation-io-js-unification/?utm_content=buffer830a9&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">on the future of nodejs and io.js</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=wgdBVIX9ifA&amp;feature=youtu.be&amp;utm_content=buffer8c604&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Microservices, by Martin Fowler</a></p></li>
+<li><p><a href="http://blog.krawaller.se/posts/a-react-js-case-study-follow-up/">A React.js case study follow-up</a></p></li>
+<li><p><a href="http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome">Removing User Interface Complexity, or Why React is Awesome</a></p></li>
+<li><p><a href="http://angularjs.blogspot.co.uk/2015/02/new-angularjs-releases-140-beta5-and.html">New AngularJS Releases 1.4.0-beta.5 and 1.3.14</a></p></li>
+<li><p><a href="https://github.com/paulirish/memory-stats.js">minimal monitor for JS Heap Size via performance.memory</a></p></li>
+<li><p><a href="http://facebook.github.io/origami/">Origami: A tool for design prototyping from facebook</a></p></li>
+<li><p><a href="http://www.quora.com/When-and-how-do-you-apply-pressure-to-a-software-engineering-team">When and how do you apply pressure to a software engineering team?</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/02/vulnerable-operating-system.html">Windows? NO, Linux and Mac OS X Most Vulnerable Operating System In 2014</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/02/23/ebay-launches-pulsar-an-open-source-tool-for-quickly-taming-big-data/">EBAY into big data</a></p></li>
+<li><p><a href="https://datafloq.com/read/data-preparation-checking-analytics-software/869">Data Preparation Checking Analytics Software</a></p></li>
+<li><p><a href="http://www.technologyreview.com/view/535451/data-mining-indian-recipes-reveals-new-food-pairing-phenomenon/">Now Data Mining in Food</a></p></li>
+<li><p><a href="http://www.fastcompany.com/3042357/tableau-elastic-tinder-like-data-visualization">Tableau still growing fast</a></p></li>
+<li><p><a href="http://arstechnica.com/information-technology/2015/02/the-big-deal-about-big-data-your-guide-to-what-the-heck-it-actually-means/">Big Deal with Big Data</a></p></li>
+<li><p><a href="https://github.com/enaqx/awesome-react">Awesome React! A collection of useful resources about React</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=Tda7jCwvSzg">Photoshop &ndash; the first demo</a></p></li>
+<li><p><a href="http://sarasoueidan.com/blog/svg-picture/">Better SVG Fallback and Art Direction With The <picture> Element</a></p></li>
+<li><p><a href="http://estuts.com/">estuts</a></p></li>
+<li><p><a href="http://www.slideshare.net/clintongormley/terms-of-endearment-the-elasticsearch-query-dsl-explained">Terms of endearment &ndash; the ElasticSearch Query DSL explained</a></p></li>
+<li><p><a href="http://slidesha.re/1DZ6y83">Driving Design with PhpSpec</a></p></li>
+<li><p><a href="http://bit.ly/1wrctAs">HHVM at Etsy</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #40]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/29/newsletter-number-40/"/>
+    <updated>2014-05-29T12:45:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/29/newsletter-number-40</id>
+    <content type="html"><![CDATA[<p><strong>TA-DA! TechThursday</strong> newsletter is here!</p>
+
+<ul>
+<li><p><a href="http://www.html5rocks.com/en/tutorials/es7/observe">Object.observe will change everything you know about data binding. It&rsquo;s the future.</a></p></li>
+<li><p><a href="http://beta.slashdot.org/story/202599">PHP Next Generation</a></p></li>
+<li><p><strong>SOLID</strong>: Single Responsibility (SRP), Open/Close, Liskov&rsquo;s Substitution, Interface Segregation, and Dependency Inversion.<br />
+  Five principles that should guide you every time you write code.
+  <a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Part#1</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-2-the-openclosed-principle--net-36600">Part#2</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-3-liskov-substitution-interface-segregation-principles--net-36710">Part#3</a>,
+  <a href="http://code.tutsplus.com/tutorials/solid-part-4-the-dependency-inversion-principle--net-36872">Part#4</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.infoworld.com/slideshow/153868/20-cool-things-you-can-do-raspberry-pi-243042">20 cool things you can do with a Raspberry Pi</a></p></li>
+<li><p><a href="http://www.pcworld.com/article/2159160/mit-tackled-earths-atmosphere-to-give-the-moon-broadband.html">MIT tackled Earth&rsquo;s atmosphere to give the moon broadband</a></p></li>
+<li><p><a href="http://unix.stackexchange.com/questions/8916/when-should-i-not-kill-9-a-process">When should I not kill -9 a process?</a></p></li>
+<li><p><a href="http://blog.workhere.io/googlebots-recent-improvements-might-revolutionize-web-development/">Google Bot’s Recent improvements might revolutionize web development</a></p></li>
+<li><p><a href="https://github.com/mapmeld/gitjk#gitjk">Undo what you just did in Git</a></p></li>
+<li><p><a href="http://wildlyinaccurate.com/a-hackers-guide-to-git">A hacker’s Guide to Git</a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2631-workflow-differences-between-scope-watch-and-attributes-observe-in-angularjs.htm">Understanding the difference between $scope.$watch() and Attributes.$observe() in AngularJS</a></p></li>
+<li><p><a href="http://www.20thingsilearned.com/en-US">20 Things I learned about browser and web: An interactive book by Google</a></p></li>
+<li><p><a href="http://www.stevesouders.com/blog/2014/02/11/measuring-localstorage-performance/">Measuring the performance of local storage</a></p></li>
+<li><p><a href="http://www.snopes.com/music/artists/vanhalen.asp">Van Halen&rsquo;s smart contract clauses</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/protect-your-data-with-new-ebs-encryption">AWS introduces additional EBS encryption</a></p></li>
+<li><p><a href="http://www.polygon.com/features/2014/5/13/5542406/qatar-girnaas-giddam">Making games in Qatar</a></p></li>
+<li><p><a href="http://loopback.io">LoopBack, a new NodeJS framework</a></p></li>
+<li><p><a href="http://gizmodo.com/5903827/the-humble-origins-of-the-html-blink-tag">How was the HTML blink tag born?</a></p></li>
+<li><p><a href="https://github.com/cargomedia/vagrant-phpstorm-tunnel">Vagrant PhpStorm Tunnel, a cool vagrant plugin that it will forward all php calls to php in the Vagrant VM</a></p></li>
+<li><p><a href="https://news.ycombinator.com/item?id=7806908">The new iteration of PHP (read the comments)</a> (for more drama you can read <a href="http://grokbase.com/t/php/php-internals/1455aesx7r/phpng-%04refactored-php-engine-with-big-performance-improvement/nested/page/3">internals discussion on PHPNG</a>)</p></li>
+<li><p><a href="http://code.tutsplus.com/series/data-structures-succinctly-part-1--cms-551">Data Structures Succinctly ebook</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/the-repository-design-pattern--net-35804">The Repository Design Pattern (PHP)</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

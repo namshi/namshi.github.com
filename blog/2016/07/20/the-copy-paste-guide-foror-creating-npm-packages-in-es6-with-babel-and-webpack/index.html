@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack/">
+    
+    
+    <meta property="og:title" content="The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2016-20-July" title="July 20, 2016">July 20, 2016</time>
+            </div>
+            <h1 class="title">The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/shidhin.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Shidhin CR" title="Shidhin CR">
+                
+                    Shidhin CR
+                
+                </a></strong><br>
+                <span class="muted">Senior Frontend Engineer</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>ES6 is lovely, right?</p>
+
+<p>I believe &ldquo;Yes&rdquo; it is! However, ES6 is not quite ready yet. Present JavaScript environments (NODE and Browser ) cannot run all the ES6 proposed features. Browser vendors are slowly shipping the features to their JS engines. Hence, as of today, only ES5 is guaranteed to work seamlessly in every JS environment.</p>
+
+<!-- more -->
+
+
+<p>So, how can we write ES6 ?</p>
+
+<p>Luckily, we have transpilers. They allow us to transpile ( a term for compiling from a language to the same language but a different version ) ES6 code to ES5. In this post, we&rsquo;ll see how to write a cross platform ( UMD ) module in ES6 and compile to ES5 using <code>webpack</code> and <code>babel</code>.</p>
+
+<h2>Let&rsquo;s Start</h2>
+
+<p>In a nutshell, our project includes:</p>
+
+<ol>
+<li><a href="https://webpack.github.io/">Webpack</a> is a code bundling tool and will use for building our module.</li>
+<li><a href="https://github.com/babel/babel-loader">Babel-loader</a> for transpiling ES6 code to ES5</li>
+<li>Babel plugins and presets:
+
+<ul>
+<li>babel-preset-es2015</li>
+<li>babel-preset-stage-0</li>
+<li>babel-plugin-add-module-exports</li>
+</ul>
+</li>
+<li><a href="https://github.com/avajs/ava">Ava</a> for unit testing our module</li>
+<li>NPM scripts for the build, test and  pre-publish tasks.</li>
+</ol>
+
+
+<p>Let&rsquo;s start by creating a new directory for our project. In the terminal, navigate to the directory and run <code>npm init</code>. Follow the instructions to generate a valid <code>package.json</code> file.</p>
+
+<p>Time to install the dependencies for the module. Run the following command to install the packages from npm:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-sh'>npm install --save-dev webpack babel-loader babel-plugin-add-module-exports babel-preset-es2015 babel-preset-stage-0 ava</code></pre></figure>
+
+
+<p>Create the following files and folder structure:</p>
+
+<ol>
+<li>index.js ( This will be our main ES6 source file )</li>
+<li>webpack.config.js ( The configurations required for webpack to build our module )</li>
+<li>.babelrc ( babel configuration file )</li>
+<li><code>dist</code> directory ( Final compiled package goes here )</li>
+</ol>
+
+
+<p>Let&rsquo;s start with the webpack configuration. Open <code>webpack.config.js</code> in your favorite editor. Copy and paste the below code:</p>
+
+<figure class='code'><figcaption><span>webpack.config.js</span></figcaption><pre><code class='language-javascript'>module.exports = {
+    entry: &apos;./index.js&apos;,
+    target: &apos;node&apos;,
+    output: {
+        path: &apos;./dist&apos;,
+        filename: &apos;build.js&apos;,
+        libraryTarget: &apos;umd&apos;
+    },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            loader: &apos;babel&apos;,
+            exclude: /node_modules/
+        }]
+    }
+}</code></pre></figure>
+
+
+<p>This is a simple configuration file required by webpack. The exported configuration file will be processed by webpack. Let&rsquo;s look at each item in the exported object:</p>
+
+<ul>
+<li><code>entry</code> is the main file from where webpack will look for all other dependencies.</li>
+<li>We set <strong>target=&lsquo;node&rsquo;,</strong> so webpack knows how to mock/load the default node packages like &ldquo;fs&rdquo;, &ldquo;url&rdquo; ..etc</li>
+<li>Output section contains information about our final package and configurations related to it. We set our <code>libraryTarget</code> to <strong>UMD</strong> so that webpack will generate the final module in UMD format ( universal module definition &mdash; for commonJS, requireJS, and browser )</li>
+<li>Module is the section where we can configure different loaders for our code. Since we write the code in ES6, we need webpack to use <code>babel-loader</code> to transform the file. Module can have different other options for configuring the module, however, we just need only the loader configuration for now.</li>
+</ul>
+
+
+<p>Babel requires plugins to complete its job properly. For that, update the babel configurations in <code>.babelrc</code> file.</p>
+
+<figure class='code'><figcaption><span>.babelrc</span></figcaption><pre><code class='language-javascript'>{
+    &quot;moduleId&quot;: &quot;myModule&quot;,
+    &quot;presets&quot;: [&quot;es2015&quot;, &quot;stage-0&quot;],
+    &quot;plugins&quot;: [&quot;add-module-exports&quot;]
+}</code></pre></figure>
+
+
+<p>Here we specify the moduleId to the final name of the module. We need to add the presets option to <code>["es2015", "stage-0"]</code> in order to transform the ES6 code. Find more about <code>es-2015</code> and <code>stage-0</code> features <a href="https://github.com/hemanth/es-next#stage-0">here</a></p>
+
+<p>Babel 6 does not generate a default export inside the compiled file. Instead, the default export is exported as a property called <code>default</code>. Because of this, if we try <code>require('myModule')</code>, it doesn&rsquo;t work. Babel 6 export should be required using <code>require('myModule').default</code>.</p>
+
+<p>That&rsquo;s why we use a plugin called <code>add-module-exports</code>. Its duty is to add the default export in the final babel generated output. You can find more about it <a href="https://www.npmjs.com/package/babel-plugin-add-module-exports">here</a>.</p>
+
+<p><em>Note: Make sure the <code>moduleId</code> in .babelrc is matching with your module&rsquo;s name.</em></p>
+
+<h2>Set up the tests</h2>
+
+<p>I find <code>ava</code> would be the best option for unit testing our module. Let&rsquo;s create a <code>tests</code> directory and add a new file <code>build.spec.js</code>. A basic test case is give below:</p>
+
+<figure class='code'><figcaption><span>build.spec.js</span></figcaption><pre><code class='language-javascript'>var test = require(&apos;ava&apos;);
+var myModule = require(&apos;../dist/build&apos;);
+
+test(&apos;the log method&apos;, t =&gt; {
+    t.is(myModule.log(&apos;hi&apos;), &apos;Logging the message : hi&apos;);
+});</code></pre></figure>
+
+
+<p>Now make the tests pass by implementing the real code in the module.</p>
+
+<figure class='code'><figcaption><span>index.js</span></figcaption><pre><code class='language-javascript'>const myModule = {
+  log(message){
+    return `Logging the message : ${message}`;
+  }
+}
+
+export default myModule;</code></pre></figure>
+
+
+<p>More about <code>ava</code> <a href="https://github.com/avajs/ava">here</a>.</p>
+
+<h2>Set up the NPM scripts to do the tasks</h2>
+
+<p>We need 5 npm tasks to make our life easier. All of them are self-explanatory; Just have look at the code in <code>package.json</code>.</p>
+
+<ol>
+<li><strong>npm start:</strong>  To run in development mode. This task will watch for any source file changes and output the build.</li>
+<li><strong>npm run build:</strong> Build the final module in production mode ( minified and with source maps ).</li>
+<li><strong>npm test:</strong> Run the <code>ava</code> tests.</li>
+<li><strong>npm run test-w:</strong> Run tests in continuous watch mode.</li>
+<li><strong>npm prepublish:</strong> Before publishing the package, this task run the <code>build</code> and <code>test</code> to make sure everything works fine.</li>
+</ol>
+
+
+<p>Final scripts will look like this:</p>
+
+<figure class='code'><figcaption><span>package.json</span></figcaption><pre><code class='language-javascript'>&quot;scripts&quot;: {
+    &quot;start&quot;: &quot;webpack -w&quot;,
+    &quot;build&quot;: &quot;webpack -p&quot;,
+    &quot;test&quot;: &quot;ava tests/**/*.js&quot;,
+    &quot;test-w&quot;: &quot;ava -w tests/**/*.js&quot;,
+    &quot;prepublish&quot;: &quot;npm build &amp;&amp; npm test&quot;
+}</code></pre></figure>
+
+
+<p>For developing in TDD fashion, run <code>npm start</code> and <code>npm run test-w</code> together.</p>
+
+<h2>Make the <code>dist/build.js</code> as the main file for the module</h2>
+
+<p>Finally, we need to tell npm about where to load the module from. Edit the <code>package.json</code> and change the &ldquo;main&rdquo; property to <code>dist/build.js</code></p>
+
+<h2>Summary</h2>
+
+<p>Developers already adopted ES6 even before it&rsquo;s available. Thanks to all these tools and the people behind them.</p>
+
+<p>Today we learnt the minimal set-up to start writing code in ES6. You can find the repo for the <a href="https://github.com/namshi/node-es6-seed">seed project here</a>. Fork, and create your next npm package in ES6.</p>
+
+<p>I hope you enjoyed reading the article. Feedbacks are welcome!</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/es6/'>ES6</a>, <a class='category' href='/blog/categories/babel/'>babel</a>, <a class='category' href='/blog/categories/node-modules/'>node modules</a>, <a class='category' href='/blog/categories/npm/'>npm</a>, <a class='category' href='/blog/categories/webpack/'>webpack</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

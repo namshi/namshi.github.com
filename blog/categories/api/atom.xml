@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: API | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/api/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #68]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/11/newsletter-number-68/"/>
+    <updated>2014-12-11T10:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/11/newsletter-number-68</id>
+    <content type="html"><![CDATA[<p>Hello folks!</p>
+
+<blockquote><p>News from the tech team:
+<a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>
+are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
+The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
+
+<p><img class="center" src="/images/dockercon.jpg"></p>
+
+<blockquote><p>We have a new pet in the office, the Docker whale!
+Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
+
+<p><img class="center" src="/images/docker.jpg"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://bit.ly/1unKjhW">Meaningful commit messages</a></p></li>
+<li><p><a href="http://bit.ly/1Aj7Che">How to Use npm as a Build Tool</a></p></li>
+<li><p><a href="http://bit.ly/1sfcmFY">Symfony Docker example</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1BdOfaC">Rubook.io Solve devOps problems in your sleep with IFTTT-style mitigation of alerts</a></p></li>
+<li><p><a href="http://engineering.clever.com/2014/12/10/when-your-ip-traffic-in-aws-disappears-into-a-black-hole">When your IP traffic in AWS disappears into a black hole</a></p></li>
+<li><p><a href="http://www.yellow-bricks.com/2014/12/08/operational-efficiency/">Operational Efficiency (You&rsquo;re not Facebook/Google)</a></p></li>
+<li><p><a href="http://nginx.com/blog/using-ngnix-amazon-elastic-load-balancer-aws/">NGINX Plus and Amazon Elastic Load Balancer on AWS &ndash; NGINX</a></p></li>
+<li><p><a href="http://threatpost.com/researchers-say-poodle-attack-affects-some-tls-implementations/109764">Researchers Say POODLE Attack Affects Some TLS Implementations | Threatpost | The first stop for security news</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-delivers-more-automation-docker-lxc-application-containers">SaltStack Delivers More Automation for Docker and LXC Application Containers</a></p></li>
+<li><p><a href="https://www.serverdensity.com/cost-of-downtime/">The real cost of downtime &ndash; Server Density</a></p></li>
+<li><p><a href="http://www.slideshare.net/adamchristian/the-black-magic-of-engineering-management">The black magic of Engineering management</a></p></li>
+<li><p><a href="http://jakearchibald.com/2014/offline-cookbook/">The offline cookbook</a></p></li>
+<li><p><a href="https://jakearchibald.github.io/isserviceworkerready/">is ServiceWorker ready?</a></p></li>
+<li><p><a href="http://www.wired.com/2014/12/google-maps-ground-truth">The Huge, Unseen Operation Behind the Accuracy of Google Maps</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20140826123205-20017018-8-qualities-that-make-great-bosses-unforgettable">8 qualities that make great bosses unforgettable</a></p></li>
+<li><p><a href="http://www.quora.com/Why-did-Koding-move-away-from-containers-and-Docker-to-virtual-machines">Why did Koding switch from containers to VMs?</a></p></li>
+<li><p><a href="https://github.com/mozilla/awsbox">A featherweight PaaS on top of Amazon EC2 for deploying node apps</a></p></li>
+<li><p><a href="https://www.npmjs.com/">new website for NPM</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-6-vardumper-component">the new Symfony2 VarDumper component</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20141114143018-52594-ten-stupid-rules-that-drive-great-employees-away">10 stupid rules that drive great employees away</a></p></li>
+<li><p><a href="https://github.com/wellcaffeinated/PhysicsJS">physics engine for javascript</a></p></li>
+<li><p><a href="http://www.2ality.com/2014/12/es6-proxies.html">Meta programming with ECMAScript 6 proxies</a></p></li>
+<li><p><a href="https://github.com/arokor/barn">redis like API on top of localStorage</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Innovate Payment Gateway Library]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/02/innovate-payment-gate-way-library/"/>
+    <updated>2014-09-02T19:23:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/02/innovate-payment-gate-way-library</id>
+    <content type="html"><![CDATA[<p>In the tech <a href="https://namshi.com">Namshi</a> team, as you probably know, we fully support the open source movement,
+that&rsquo;s why we try to release open source software as soon as we can, in the full &ldquo;give back to the community&rdquo; mindset.
+You can check all our project on <a href="http://github.com/namshi">github</a></p>
+
+<p>Lots of e-commerce companies and service providers have online payments for their
+customers. So do we.</p>
+
+<p>Our weapon of choice, apart from PayPal, to carry out payments is: <a href="http://www.innovatepayments.com">Innovate.</a>
+That&rsquo;s why we developed and released the <a href="https://github.com/namshi/innovate">Innovate library</a>, written in PHP.</p>
+
+<p><a href="http://www.innovatepayments.com">Innovate</a> payment gateway accepts all types of credit card payments.</p>
+
+<!-- more -->
+
+
+<h2>Installation</h2>
+
+<p>You can easily integrate the Innovate library in your project via <a href="https://getcomposer.org">composer</a>:
+<code>
+composer install namshi/innovate
+</code></p>
+
+<p><img class="center" src="/images/posts/cards.png" title="payment cards" ></p>
+
+<h2>Usage</h2>
+
+<p>Using this library is easy, here is what you need:</p>
+
+<ul>
+<li>initialize the Innovate client</li>
+</ul>
+
+
+<p>```php
+&lt;?php</p>
+
+<p>use Namshi\Innovate\Payment\Transaction;
+use Namshi\Innovate\Payment\BillingInformation;
+use Namshi\Innovate\Payment\Browser;
+use Namshi\Innovate\Payment\Billing\Customer;
+use Namshi\Innovate\Payment\Billing\Address;
+use Namshi\Innovate\Payment\Card;
+use Namshi\Innovate\Client;</p>
+
+<p>$client      = new Client($storeId, $authenticationKey); // retrieve them from your Innovate account
+$transaction = new Transaction(&lsquo;sale&rsquo;, &lsquo;ecom&rsquo;, true, &lsquo;ORDER_NUMBER&rsquo;, &lsquo;DESCRIPTION&rsquo;, &lsquo;USD&rsquo;, 40, &lsquo;AN OPTIONAL REFERENCE TO YOUR TRANSACTION&rsquo;);
+$card        = new Card(&lsquo;1234123412341234&rsquo;, &lsquo;111&rsquo;, new \DateTime($cardExpiryDate));
+$customer    = new Customer(&lsquo;Mr&rsquo;, &lsquo;John&rsquo;, &lsquo;Doe&rsquo;);
+$address     = new Address(&lsquo;My address info 1&rsquo;, &lsquo;My address info 2&rsquo;, &lsquo;My address info 3&rsquo;, &lsquo;San Francisco&rsquo;, &lsquo;California&rsquo;, &lsquo;US&rsquo;, &lsquo;00000&rsquo;);
+$billing     = new BillingInformation($customer, $address, &ldquo;customers&rsquo;<a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x73;&#x2d;&#x65;&#109;&#97;&#x69;&#x6c;&#64;&#x67;&#109;&#97;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#x73;&#x2d;&#x65;&#x6d;&#x61;&#105;&#x6c;&#x40;&#103;&#x6d;&#97;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;</a>&rdquo;, $customerIpAddress);
+$browser     = new Browser($customUserAgent, $requestAcceptHeader);
+```</p>
+
+<p>We used OOP to cover all the data we need to send to Innovate:</p>
+
+<p><code>$client</code> is a model that contains the Innovate account info.</p>
+
+<p><code>$transaction</code> represents a detailed transaction where we pass as many arguments as Innovate needs.</p>
+
+<p><code>$card</code> represents the required card details to perform the payment.</p>
+
+<p><code>$customer</code> represents the customer details.</p>
+
+<p><code>$address</code> represents the customer address details.</p>
+
+<p><code>$billing</code> represents the customer billing address and contact details.</p>
+
+<p><code>$browser</code> represents detailed browser info, including the User-Agent.</p>
+
+<p><code>$customUserAgent</code> is the browser user agent header.</p>
+
+<p><code>$requestAcceptHeader</code> is the browser accept header.</p>
+
+<h2>How It Works</h2>
+
+<p>To perform the payment you need to create a request to <a href="http://www.innovatepayments.com">Innovate</a> and pass the previous created objects:</p>
+
+<p>```php</p>
+
+<p>&lt;?php</p>
+
+<p>$response = $client->performPayment($transaction, $card, $billing, $browser);
+```</p>
+
+<p>You will then get one of the following responses:</p>
+
+<ul>
+<li><h2>Normal transaction</h2>
+
+<p>A normal transaction follows a very simple flow: It just requires authentication through Innovate, and the library then performs the payment.</p></li>
+<li><h2>3D secure transactions</h2>
+
+<p>A <a href="http://en.wikipedia.org/wiki/3-D_Secure">3-D_Secure</a> transaction requires two requests to Innovate and one request for 3D Secure in order
+to add an additional security layer while performing the payment.
+The first request is already sent to Innovate and if it is 3D Secure transaction you will need to redirect the user to the concerned party
+(primarily, the bank) to confirm the payment.</p></li>
+</ul>
+
+
+<p>After that the process continues by sending another request to Innovate containing the extra validation values.</p>
+
+<p>You can easily distinguish between the two possible types of payments, 3D Secure and Normal, by looking at the type of Innovate response received:</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>use use Namshi\Innovate\Http\Response\Redirect;</p>
+
+<p>$response = $client->performPayment($transaction, $card, $billing, $browser);</p>
+
+<p>if ($response instanceOf Redirect) {</p>
+
+<pre><code>// 3D secure transactions
+</code></pre>
+
+<p>} else {</p>
+
+<pre><code>// Normal transactions
+</code></pre>
+
+<p>}
+```</p>
+
+<p>In case of normal Transactions, the library will perform the payment directly.
+In case of 3D Secure transactions you need to send another request
+with more details (related to the third security party) as follows:</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>use Namshi\Innovate\Http\Response\Redirect;</p>
+
+<p>if ($response instanceof Redirect) {</p>
+
+<pre><code>// build a form
+</code></pre>
+
+<p>}
+```</p>
+
+<p>The response object contains the values (&lsquo;targetUrl&rsquo;, &lsquo;session&rsquo;, &lsquo;paReq&rsquo;) which are needed to build the form:</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>$targetUrl  = $response->getTargetUrl();
+$session    = $response->getSession();
+$pareq      = $response->getPareq();
+```</p>
+
+<p>Then, the receiving the previous values will be used to build a form as hidden values.
+The form will be sent to the <code>$targetUrl</code> which is the 3D-secure service page as the following:</p>
+
+<p>```xml</p>
+
+<p><form name="acsform" action="[targetUrl from the response]" method="post"></p>
+
+<pre><code>&lt;input type="hidden" name="PaReq" value="[The pareq data from response]"&gt;
+&lt;input type="hidden" name="MD" value="[Any value can be stored here which will be sent back unchanged in the the 3d secure response e.g to preserve the session id which we can send back to complete the transaction]"&gt;
+&lt;input type="hidden" name="TermUrl" value="[return URL on your site]"&gt;
+&lt;noscript&gt;
+    &lt;input type="Submit"&gt;
+&lt;/noscript&gt;
+</code></pre>
+
+<p></form>
+```</p>
+
+<p><code>termUrl</code>: the URL that we need to direct the user to, after the user submits the form.</p>
+
+<p>See an example of an ACS (Access Control Server) Form</p>
+
+<p>We need to submit the form with Javascript:</p>
+
+<p>```javascript</p>
+
+<p>function autosub() {</p>
+
+<pre><code>document.forms['acsform'].submit();
+</code></pre>
+
+<p>}</p>
+
+<p>document.onload=autosub;
+```</p>
+
+<p>After the form is submitted, the user is redirected to a 3D Secure page which asks for extra credentials.
+Once the user submits the 3D Secure form, he/she gets redirected to the &lsquo;termUrl&rsquo; page with two hidden values
+(&lsquo;PaRes&rsquo;, &lsquo;MD&rsquo;) which are used to create the final request to Innovate:</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>$extraData = array(</p>
+
+<pre><code>'PaRes'     =&gt; 'Authentication response', // we get this value from hidden fields after redirection to termUrl
+'session'   =&gt; 'MD', // we get this value from hidden fields after redirection to termUrl
+</code></pre>
+
+<p>);</p>
+
+<p>$finalResponse = $client->send($client->createRemoteRequest(&lsquo;POST&rsquo;, Client::INNOVATE_URL, null, null, $extraData));
+```</p>
+
+<p>Then we get the final response which can be checked for payment status &ndash; success or denied:</p>
+
+<p>```php
+&lt;?php</p>
+
+<p>if (200 === $finalResponse->getStatusCode()) {</p>
+
+<pre><code>// payment done
+</code></pre>
+
+<p>} else {</p>
+
+<pre><code>// authentication failed
+</code></pre>
+
+<p>}
+```</p>
+
+<h2>Tests</h2>
+
+<p>We added two types of tests; to run them you need to install the dev dependencies using composer and then run
+the test using <a href="http://phpunit.de">PHPUnit</a></p>
+
+<ul>
+<li><h3>Functional Test:</h3>
+
+<p>These test the library functionality without sending any real request to Innovate, just hit this on your terminal:</p></li>
+</ul>
+
+
+<p><code>
+phpunit
+</code></p>
+
+<ul>
+<li><h3>integration Test</h3>
+
+<p>There are a couple of integration tests that verify that the library works flawlessly by creating
+real requests to the Innovate payment gateway. Just use valid test credentials, then create a file
+called .innovate.config in the project directory with four parameters:</p></li>
+</ul>
+
+
+<p>```php</p>
+
+<p>&lt;?php</p>
+
+<p>$configs = array(</p>
+
+<pre><code>'storeId'           =&gt; 'xxxxx', //store Id in Innovate
+'authenticationKey' =&gt; 'xxxxxxxxxxx', //authentication key
+</code></pre>
+
+<p>);</p>
+
+<p>// Card info
+$cardInfo = array(</p>
+
+<pre><code>'number'    =&gt; 'xxxxxxxxxxxx',
+'cvv'       =&gt; 'XXX',
+</code></pre>
+
+<p>);</p>
+
+<p>// The card which need redirection for 3d secured
+$redirectUrlCardInfo = array(</p>
+
+<pre><code>'number'    =&gt; 'xxxxxxxxxxxx',
+'cvv'       =&gt; 'XXX',
+</code></pre>
+
+<p>);</p>
+
+<p>// your ip, it should be in Innovate white list
+$ip = &lsquo;xxx.xxx.xxx.xxx&rsquo;;
+```</p>
+
+<p>After the setup, just run:</p>
+
+<p><code>
+phpunit tests/Namshi/Innovate/Test/Integration/ServiceTest.php
+</code></p>
+
+<p>We hope that you enjoy using Namshi&rsquo;s open source library. We&rsquo;ve been using this library for almost a year and
+it&rsquo;s working fine with no issues on our side. As always, any feedback and pull requests are welcome :)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[MockServer, Effortless API Mocking Library in Node Js]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js/"/>
+    <updated>2014-06-13T04:22:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/13/mockserver-effortless-api-mocking-library-in-node-js</id>
+    <content type="html"><![CDATA[<p>Namshi Tech Team is happy to roll-out a new node-based library!</p>
+
+<p>We present you <a href="https://github.com/namshi/mockserver">MockServer</a>, a library that allows you to easily mock your APIs' plain HTTP responses.</p>
+
+<!-- more -->
+
+
+<p>The main benefit of this library is to allow developers to focus on what is important to them, and in this case,
+<code>mockserver</code> allows front-end developers to focus their efforts on creating awesome front-end clients without having to worry about the
+availability of a complete and running API.</p>
+
+<p>The use of this library can be appreciated by developers following a <a href="http://www.frontendfirst.com/">Front-End First</a>
+methodology where development efforts initially focus on front-end clients rather than the back-end structure and tools.
+Front-end first suggests that front-end developers have their mocked servers return expected or anticipated HTTP responses
+based on the available specification instead of making an actual call to the API.
+Another benefit is to allow development for both front-end and back-end in parallel.</p>
+
+<p>In short, this library basically removes the dependency that the front-end development requires from the backend.</p>
+
+<h2>Usage</h2>
+
+<p>Create an empty directory inside your project, <code>mkdir api</code></p>
+
+<p>To start mocking your HTTP responses, you will need to have a sub-directory were all your mocks shall reside. In order to do so,
+in your <code>api</code> folder run <code>mkdir mocks</code> and that&rsquo;s where all plain text HTTP responses will reside.</p>
+
+<p>Inside your <code>api</code> directory, run</p>
+
+<p><code>
+npm install mockserver
+</code></p>
+
+<p>Create a new js file, say, <code>api.js</code> that has the following:</p>
+
+<p>```javascript
+var http       = require(&lsquo;http&rsquo;),</p>
+
+<pre><code>mockserver = require('mockserver');
+</code></pre>
+
+<p>http.createServer(mockserver(&lsquo;./mocks&rsquo;)).listen(&lsquo;9001&rsquo;);
+```</p>
+
+<p>That&rsquo;s it! Now navigate from your terminal to the <code>api</code> directory and run <code>node api.js</code>. This will create a node server that
+listens to port <code>9001</code>.</p>
+
+<p>Now, you should point your front-end client to <code>http://localhost:9001</code> instead of the actual api url.</p>
+
+<h2>Mocks</h2>
+
+<p>Now, your node server is running and your client can start making requests and getting back mocked HTTP responses.</p>
+
+<p>How do you create the mocks?</p>
+
+<p>Each request relative url path, HTTP method combination resides in a separate text file inside your mocks folder.
+The naming of those files goes as follows: <code>path_METHOD</code>, <code>path</code> is the relative url path without any slashes, i.e, <code>/test</code>
+should be <code>test</code> and <code>METHOD</code> is the upper-cased HTTP method (<code>GET</code>). The extension for the files should be <code>.mock</code>.
+The complete file name is: <code>test_GET.mock</code>.</p>
+
+<p>The contents of the mocked file should be a valid HTTP response text, as follows:</p>
+
+<p>```
+HTTP/1.1 200 OK
+Content-Type: text/html; charset=utf-8</p>
+
+<p><html><body>Hello World</body></html>
+```</p>
+
+<p>Now, whenever your client requests <code>http://localhost:9001/test</code>, <code>mockserver</code> will return that plain HTTP response you defined
+in <code>test_GET.mock</code>.</p>
+
+<h2>Header Variation</h2>
+
+<p>Mockserver also supports different responses for the the same request path, method pair. You can make use of this feature by manually setting a
+<code>mockserver-variation</code> header in your requests. The value of this header shall be appended to the mocked file name as follows: <code>path_METHOD_variation</code>.</p>
+
+<p>Here is where you are able to handle various server HTTP responses for your request (200, 400, 500, 403, etc..).
+Simply set <code>mockserver-variation</code> to <code>500</code> and the file from our previous example should be named <code>test_GET_500.mock</code>.</p>
+
+<h2>Multi-level URLs</h2>
+
+<p>If you are wondering how to mock HTTP responses for a multi-level URL like <code>http://localhost:9001/test1/test2</code> here is how to do it:</p>
+
+<ul>
+<li>Inside your <code>mocks</code> directory, run <code>mkdir test1</code></li>
+<li><code>cd test1</code> and <code>touch test2.mock</code></li>
+<li>Insert your raw HTTP response text in <code>test2.mock</code></li>
+</ul>
+
+
+<h2>Conclusion</h2>
+
+<p>Although simple and straight forward, the idea behind <code>mockserver</code> is quite powerful. It is mostly suited for a Front-end First methodology, some of the
+benefits include parallel front-end and back-end development and the decoupling of the Front-end and back-end during the development phase.</p>
+
+<p>It would be great if you can take the time to try it out and let us know what you think!</p>
+]]></content>
+  </entry>
+  
+</feed>

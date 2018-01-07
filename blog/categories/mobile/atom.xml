@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mobile | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/mobile/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rebuilding our mobile website: Express & React meet fun & profit]]></title>
+    <link href="http://namshi.github.io/blog/2017/05/02/rebuilding-our-mobile-website/"/>
+    <updated>2017-05-02T18:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2017/05/02/rebuilding-our-mobile-website</id>
+    <content type="html"><![CDATA[<p>Late last year we decided to give our mobile website a new look, coupled with a new “engine” in order to optimize our mobile experience on the web. Most of our users visit Namshi from mobile devices and we wanted to give them better usability, performance and overall smoother experience.</p>
+
+<!-- more -->
+
+
+<p>When we started approaching the mobile landscape, 4 years back, we decided to fully commit to an SPA that worked well but showed some limitations, namely the inability to perform server-side rendering, which was somewhat critical in terms of search engine optimization and first render: we solved the former by routing bots’ traffic to our desktop website (a traditional server-side app), but the latter proved hard to solve, as the client would have to download our entire app before being able to understand what page and layout it should render. In the meantime, Google decided to roll the “<em>mobile-friendly</em>” badge on their mobile SERPs, which forced us to look for alternatives.</p>
+
+<p>A year and a half down the line, facing mixed results in terms of conversion rate and usability, we decided to review our implementation and build a small isomorphic app that would be able to render both on the client and the server, but this approach had 2 major flaws: first off, we didn’t look at neither our UX nor UI to figure out if there was anything we could do to make the user’s experience better and, second, we over-engineered our stack. Back then React just started garnering attention and, unsure if <em>that</em> would be the way the community would build “frontend” apps 3/5 years later, we decided to write a very small custom-made isomorphic framework that turned way more complicated than we originally thought.</p>
+
+<p>At Namshi, we’re very big on simplicity and &ldquo;<em>back to the basics”</em> but, as you see, that’s also thanks to <strong>lessons we learned the hard way</strong>.</p>
+
+<p>Flash-forward to Q4 2016, we looked at our mobile website and our metrics combined and decided it was time to completely re-think our approach: 2 of our engineers quickly hacked together a prototype within less than a week and, after discussing it with our PM team, we decided it was worth a shot.</p>
+
+<p>The Falafel Project was born. Sounds like a joke but that’s what we actually called it :)</p>
+
+<h2>Fundamental ideas</h2>
+
+<p>The project kicked off by embracing 3 very important ideas:</p>
+
+<ul>
+<li>most of Namshi’s  traffic is served through our mobile apps (<a href="https://itunes.apple.com/us/app/namshi-online-fashion-shopping/id840127349?mt=8">iOS</a> + <a href="https://play.google.com/store/apps/details?id=com.namshi.android">Android</a>). We should probably <strong>mimic the app as much as possible</strong><strong>.</strong></li>
+<li>The journey of the user is defined by very few, key components: landing pages, product listing pages, product detail pages, cart and checkout. We want to make sure we waste no time presenting these pages to the user, and <strong>server-side rendering</strong> gives that to us</li>
+<li>If we want this webapp to look like it’s 2017, client-side interactions are unavoidable: <strong>picking React</strong>, given its rise in the frontend community and the fact that it’s a library, rather than a framework, was a no-brainer</li>
+</ul>
+
+
+<p><img class="center" src="/images/posts/web-mobile-demo.gif" title="" ></p>
+
+<h2>Re-writing the styles</h2>
+
+<p><img class="center" src="/images/posts/css-code.png" title="" ></p>
+
+<p>We trashed the old css and rewrote it from scratch following the <a href="http://getbem.com/">BEM</a> way of doing things, which allowed us to separate styles per page and also have some of them shared between pages.
+The total size of the minified styles was 18kb, now it is <strong>10kb:</strong> almost half of our css is gone!</p>
+
+<h2>RTL styles</h2>
+
+<p>It&rsquo;s always painful to handle direction in css, especially considering that things could have been much easier if <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties">logical properties</a> where introduced, but yet we still use the old techniques until we can fully dump rules overriding.</p>
+
+<p>For example:</p>
+
+<p><code>css
+/**
+ flex-start, flex-end logical properties will change according to the
+ direction: rtl : ltr;
+**/
+.element {
+ display: flex;
+ align-items: flex-start;
+ justify:-content: flex-start;
+}
+/**
+ opposite to: text-align, css-transforms, floats, margins, paddings ..etc
+ which we need to override manually.
+**/
+</code></p>
+
+<p>We kept the arabic styles in separate files, i.e <code>list.scss / list-rtl.scss</code> where the <code>*-rtls.scss</code> will only override rules in the main file.
+That worked for us really well and was a substantial increase in code maintainability.</p>
+
+<h2>Enhanced UX leveraging on mobile browsers</h2>
+
+<p>We took a decision to ditch SPAs in favor of lightning-fast server-side rendered pages.</p>
+
+<p>Despite that, we took advantage of a very interesting feature on modern mobile browsers:
+if you tap on a link, they kinda fade the newly painted page over it so if there are common visual components you won’t feel the page load.</p>
+
+<p>Strange, right? Have a look:</p>
+
+<div align="center">
+<iframe width="276" height="500" src="https://www.youtube.com/embed/WIOe1ID3ocM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<p>So how we can use it for our own good?
+We came up with idea of a “<strong>Shadow Product”:</strong>  When a user taps on a product while on the catalog listing page, we delay the tap event for 10ms and we show a fake preview of what the next product page will look like. Simple and dirty, but looks great!</p>
+
+<p>```js</p>
+
+<pre><code>on('click', 'body', '.is-shadow-product', e =&gt; {      
+ .... code that extracts content from clicked product
+ this.setState({ data: data, show: true });      
+ setTimeout(function () {        
+   window.location.href = href;      
+ }, 10);
+})
+</code></pre>
+
+<p>```</p>
+
+<p>The problem with this approach is that we need to handle the <a href="https://developer.mozilla.org/en-US/docs/Working_with_BFCache">back-forward cache</a> of some browsers:</p>
+
+<p>```js</p>
+
+<pre><code>// Prevent backforward cache in iOS devices
+if(config.get('deviceOS') === 'iOS'){
+  window.addEventListener('pagehide', function(e) {
+    let shadowProduct = document.querySelector('.is-transitional');
+    shadowProduct &amp;&amp; shadowProduct.classList.remove('is-transitional');
+  });
+}
+</code></pre>
+
+<p>```</p>
+
+<h2>NO jQuery</h2>
+
+<p>Late, but we eventually joined the party! We stripped jQuery off  80% of our pages and we replaced with some vanilla utilities like the following:</p>
+
+<ul>
+<li><strong>On</strong> :</li>
+</ul>
+
+
+<p>```js
+  export function on(eventType, parent, selector, fn){</p>
+
+<pre><code>let el = document.querySelector(parent);  
+if(!el || !eventType || !selectorParent || !selector  || !fn ) {   
+  return null;
+}
+
+el.addEventListener(eventType, function(e) {   
+ .... logic to target the child on the event bubbling.
+</code></pre>
+
+<p>   })
+  }, false);</p>
+
+<p>```</p>
+
+<ul>
+<li><strong>Scroll to, Scroll To Top and Scroll To Bottom:</strong></li>
+</ul>
+
+
+<p>```js</p>
+
+<pre><code>function animateScroll() {    
+  var step = (dest - parent.scrollTop) /  steps--;    
+  parent.scrollTop = parent.scrollTop + step;    
+  if(steps === 0 ){      
+    frame &amp;&amp;  cancelAnimationFrame &amp;&amp; cancelAnimationFrame(frame);       
+    return    
+  }     
+ frame = requestAnimationFrame &amp;&amp;    
+ requestAnimationFrame(animateScroll);   
+}
+</code></pre>
+
+<p>```</p>
+
+<hr />
+
+<ul>
+<li><strong>Image Carousel:</strong></li>
+</ul>
+
+
+<p>We crafted our own slider (<a href="https://medium.com/@MohamedAmin88/slim-slider-yet-another-javascript-slider-2f2069bb72e5">read the full story here</a>):</p>
+
+<p><img class="center" src="/images/posts/slim-slider.gif" title="" ></p>
+
+<h2>Low Fat React: Preact!</h2>
+
+<p>Though we chose SSR, we were not building a static news website. You can imagine how much client side interactions an E-commerce mobile website has. Our previous mobile website was a tailor made isomorphic app, and we had lot of lessons learned from it. Moreover, performance was a key focus area for our new website, hence we kept some design decisions for all the client-side stuff. These includes:</p>
+
+<ul>
+<li>Our website should be interactive under 5s.
+
+<ul>
+<li>Should have a great rendering performance. Animations and transitions should be ~60FPS.</li>
+<li>Total client-side scripts should be less than 100KB ( including any frameworks / library ).</li>
+<li>Build re-usable client-side components.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>By considering all the above, we wanted something lightweight and with good rendering performance.</p>
+
+<p>We initially ruled jQuery out of the list and thought of creating all client-side components in vanilla js, however, we found that managing the UI state was bit hard with that approach. Moreover, we really liked the redux architecture and keeping a single store for managing the whole UI state.</p>
+
+<p>React was the hottest choice for our expectations but, at the same time, we wanted a lightweight library. Then we came across <strong>Preact</strong>, a 3KB React alternative which offered the same API and great performance.</p>
+
+<p>We built most of our components in Preact and re-used them across pages. Although we liked the redux architecture, we didn&rsquo;t really use Redux on our website. Instead, we built a micro-redux which has a global store for managing the whole UI state and is connected to all Preact components. This helped us to manage the UI state in a single store and synchronizing updates in every part of the page.</p>
+
+<h2>Simplifying the DOM states</h2>
+
+<p>Managing state is one of the crucial parts of  &ldquo;react like&rdquo; development, especially state shared between components (Shared State) can be difficult to manage. We have good libraries that achieves this efficiently &mdash; ie. <a href="http://redux.js.org/">Redux</a> and <a href="https://mobx.js.org/">Mobx</a> that we use on some of our SPAs.</p>
+
+<p>In the new mobile website, our approach is a bit different because each page is SSR and we have very less shared state: we try to reduce client-side code to the minimum, to keep things simple and less bloated.</p>
+
+<p>We have one store which is the single source of truth. To keep things simple every component has it own actions as part of the component, and we only focus on resolving all data into the store and the store automatically updates the state of the components. Unlike most redux implementations, where reducers are used to update the current state based on the actions,  every update always produces a “next state“ without reference to the current state.</p>
+
+<h2>Webpack, Code splitting and Preloading techniques</h2>
+
+<p><img class="center" src="/images/posts/chunk-size.png" title="" ></p>
+
+<p><strong>Code splitting: eat only what you need</strong></p>
+
+<p>Code splitting was a crucial part for our website. Traditionally, we used to bundle all our JavaScript assets into one single file, and loaded it in every page. At that time it was a very performance-friendly approach, as the browser gets all the assets with a <strong>single HTTP request</strong>.</p>
+
+<p>With HTTP2, things changed — multiple round-trips are avoided by channelling multiple requests through a single connection. Knowing this, sending a large bundle (which includes code that&rsquo;s not needed in the current page) would negatively impact the page’s performance so we decided to split our code based on the routes ( different pages ).</p>
+
+<p>We chose Webpack2 for bundling and code-splitting. As we said earlier, we generate js bundles ( aka chunks in webpack terminology ) for each page. We used Webpack&rsquo;s <a href="https://webpack.js.org/plugins/commons-chunk-plugin/">CommonsChunkPlugin</a> to generate a vendor bundle and common code shared between the page level bundles. This helped us to keep smallest JavaScript payload for each page. Furthermore, the vendor chunk and common chunk will change less frequently and can be cached by the browser for most requests, enabling faster transitions between pages.</p>
+
+<p><strong>Reduce bundling and nested dependencies</strong></p>
+
+<p>Webpack2 supports <a href="https://webpack.js.org/guides/tree-shaking/">Tree-shaking</a> out of the box, which helped us reduce the bundle size by ~20% by only including the required modules.</p>
+
+<p>For example, we used some lodash utilities in our client-side code. Without Tree-shaking, the whole of lodash would have been imported into our bundles, thus the size would&rsquo;ve been much bigger. Webpack2 will instead generate the bundle only with the code that’s actually used.</p>
+
+<p><strong>Preload, Prefetch</strong></p>
+
+<p>We also took advantage of the latest browser features for attaining better page load speed. These includes the <code>dns-prefetch</code> for prefetching for resolving domain names, <code>link-preload</code> for loading the CSS and JS assets at the same time HTML is parsed. We also used <code>link-prerender</code> in our catalog listing page pagination to make the transition between pagination much faster.</p>
+
+<p>Notice the <strong>Green Line</strong> ( which indicates the first paint ):</p>
+
+<p><strong>Before</strong></p>
+
+<p><img class="center" src="/images/posts/before-preload.png" title="" ></p>
+
+<p><strong>After</strong></p>
+
+<p><img class="center" src="/images/posts/after-preload.png" title="" ></p>
+
+<h2>Goodbye good old image sprites</h2>
+
+<p>Thanks to HTTP/2, making HTTP requests is cheaper than ever: multiplexing reduces the connection overhead as multiple requests can be tunneled through the same connections, and extended header compression (<a href="https://http2.github.io/http2-spec/compression.html">HPACK</a>) makes it so that those requests are lighter than ever.</p>
+
+<p>This doesn’t mean sprites won’t give you any advantage: as always, making 10 HTTP requests instead of 1 is generally heavier, but with HTTP/2 you don’t “feel” it as much. Another argument <em>pro</em> sprites is that by combining images together we end up allowing the compression algorithm (ie. GZIP/DEFLATE) to better optimize the size of the final, combined image.</p>
+
+<p>All in all, though, we eventually decided not to worry about these and live a less complicated life because:</p>
+
+<ul>
+<li>We generally bundle all required images into one sprite, whereas each page might just need 2/3 of them: this means that instead of downloading 100% of your images on the first page load we only require 20/30% of them</li>
+<li>Maintaining sprites is no fun at all: if there’s a way to eliminate work and be <em>on par</em> with our previous implementation, then we’re definitely going to cut it short</li>
+</ul>
+
+
+<h2>Results</h2>
+
+<p>Numbers, since we went live in mid-February, have been astounding. Even though web traffic is a small chunk of our overall traffic, it’s been way better than we could ever imagine:</p>
+
+<ul>
+<li><strong>conversion rate is up ~20%</strong>, meaning that the overall shopping experience is smoother (worth to note that some of the countries we serve have spikes in conversion of +30/70%)</li>
+<li><strong>bounce rate is down 15%</strong>, which indicates that our first impression (load time, UI, etc) has definitely improved</li>
+<li>the <strong>average time on page is up 50%</strong>, and the <strong>average session duration up 37%</strong>, meaning users enjoy spending time on the site way more than before</li>
+<li>the <strong>average document load time &amp; average document interactive time are both down</strong> <strong>54%</strong> (4+ seconds vs 1.9), which means that…   …well, we really screwed it up with the previous app :)</li>
+</ul>
+
+
+<p>Take this numbers with a pinch of salt, as we mentioned in the introduction of this article, we started from a very disadvantageous point — the performance of the old mobile website was quite disappointing — and, at the same time, Namshi grows and optimizes on a daily basis, so better numbers are expected regardless.</p>
+
+<p>Last but not least, one for the server-side freaks.
+In this article, we spoke a lot about frontend optimizations and the likes, but I want to share an image to show the performance of our server-side rendering process:</p>
+
+<p><img class="center" src="/images/posts/web-mobile-results.png" title="" ></p>
+
+<p>As you see, our <strong>average response time is around 40ms</strong> — but you shouldn’t  care, as <a href="https://www.dynatrace.com/blog/why-averages-suck-and-percentiles-are-great/">averages make for a terrible KPI</a>.</p>
+
+<p>Percentiles are really what you want to look at:</p>
+
+<ul>
+<li>the <strong>median is at around 25ms</strong>, meaning half of our requests are served within that time</li>
+<li>the <strong>95th percentile is at around 120ms</strong>, which is still incredibly great, considering that the website fetches the data it displays from an internal API, and that involves an external HTTP call</li>
+</ul>
+
+
+<p>See you next time!</p>
+
+<p><em>This article is a joint effort between the 3 frontend musketeers of Namshi:
+<a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a>, <a href="http://tech.namshi.io/team/#Mohamed%20Amin">Amin</a> and <a href="http://tech.namshi.io/team/#Gabriel%20Izebhigie">Gabriel</a></em>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Currently hiring: backend and mobile engineers]]></title>
+    <link href="http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/"/>
+    <updated>2017-03-09T06:49:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai</id>
+    <content type="html"><![CDATA[<p>We&rsquo;re currently looking for some help in a couple areas of our tech team &mdash; why
+don&rsquo;t <strong>you</strong> join us?</p>
+
+<!-- more -->
+
+
+<h2>Mobile</h2>
+
+<p>Getting into the specifics, we&rsquo;ve been working with an external mobile team (3rd party)
+that wrote our apps from scratch, setup an efficient testing &amp; CI strategy and a
+very solid deployment workflow &mdash; as a matter of fact, we&rsquo;re very proud of our
+crash rate on both platforms, with android leading at 0.05%.</p>
+
+<p>We are comfortable with the quality of our apps and the pace of development but,
+in order to take them to the next level, it&rsquo;s clear to us that we need our own
+team to do that: commitment, communication and going the extra-mile are definitely
+different when you&rsquo;re part of the organization.</p>
+
+<p>On the long run the team is going to be comprised of a few engineers and a lead,
+so we&rsquo;d initially like to start with:</p>
+
+<ul>
+<li>1 <strong>lead mobile developer</strong>, who should ideally have good experience on both platforms</li>
+<li>1 <strong>senior iOS developer</strong></li>
+<li>1 <strong>senior android developer</strong></li>
+</ul>
+
+
+<p>The <strong>lead mobile engineer</strong> should ideally be a very hands-on, seasoned mobile
+engineer with experience leading / forming a team &mdash; he will need to
+help building the team, setting the right direction, overseeing development
+on both platforms and coordinating with other teams (ie. backend
+or product management) on feature development and aligning priorities. We expect
+him to spend around 50% of his time on development (this is still a <em>hands-on</em> position),
+and the other 50% on the team, teaching practices, reviewing pull requests and so on.</p>
+
+<p>We expect from <strong>senior engineers</strong> to be able to write clean, testable code that&rsquo;s
+hard to break &mdash; a few years (4+) of experience are definitely needed (say, you
+should have bumped into <code>@autoreleasepool</code> before ;&ndash;)) and you
+should be very familiar with different design patterns (Delegate, Facade, etc),
+concepts such as mock objects and various tools to support your workflow (ie. CI
+pipelines).</p>
+
+<h2>Backend</h2>
+
+<p>We could definitely use some help in our backend team :)</p>
+
+<p>Even though we&rsquo;re not in a rough spot, we would like to be able to expand
+our pipeline and be able to add even more seniority to the team: our usual &ldquo;backend problem&rdquo;
+is that we have lots of things we&rsquo;d like to work on / experiment with but not a lot
+of engineers, thus we eventually end up giving those projects up or delaying them
+too much.</p>
+
+<p>The main technologies you would be working with are:</p>
+
+<ul>
+<li>NodeJS</li>
+<li>MySQL</li>
+<li>Redis</li>
+<li>Solr</li>
+<li>Golang</li>
+<li>Symfony2</li>
+<li>a bit of frontend with either Angular or React</li>
+</ul>
+
+
+<p>all of these in the context of our microservice-based SOA: we currently employ
+50+ service in production, mostly deployed in Docker containers through Google&rsquo;s
+<a href="https://kubernetes.io/">Kubernetes</a>.</p>
+
+<p>Here we would keep in consideration candidates for both a <strong>lead</strong> and a
+<strong>senior</strong> position: the current team is working well and we haven&rsquo;t felt the
+need to hire a lead engineer over the past few months, but we&rsquo;re open to the
+idea if we find the right candidate.</p>
+
+<p>Needless to say, both position would be <strong>quite hands-on</strong> :)</p>
+
+<h2>Apply now!</h2>
+
+<p>What are you waiting for? Send your application at <code>work-in-tech@namshi.com</code> and
+let&rsquo;s have a chat!</p>
+
+<p>P.S. A few weeks back I wrote a small piece about <a href="http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
+give it a look!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #124]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/11/newsletter-number-124/"/>
+    <updated>2016-02-11T12:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/11/newsletter-number-124</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
+
+<p><img class="center" src="/images/posts/ping-pong-happy.jpg"></p>
+
+<blockquote><p>and here is your weekly quota of some interesting links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">9 things every react.js beginner should know</a></p></li>
+<li><p><a href="http://cleancoders.com/episode/clean-code-episode-1/view">clean coders videos</a></p></li>
+<li><p><a href="https://github.com/codekitchen/dinghy?utm_content=bufferf938d">codekitchen/dinghy: faster, friendlier docker on os x</a></p></li>
+<li><p><a href="https://blog.docker.com/2016/02/compose-1-6/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uovUKe/lMI/0ER3fOvrPUfGjI4DScBkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">compose 1.6: new compose file for defining networks and volumes | docker blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.paulund.co.uk/css-buttons-with-icons-but-no-images">css buttons with icons but no images</a></p></li>
+<li><p><a href="http://www.desktopneo.com/">desktop neo – rethinking the desktop interface for productivity.</a></p></li>
+<li><p><a href="http://layer0.authentise.com/docker-4-useful-tips-you-may-not-know-about.html?utm_content=bufferbb9b6">docker: 4 useful tips, you may not know about</a></p></li>
+<li><p><a href="http://verraes.net/2013/09/extract-till-you-drop/?utm_content=buffera385e">extract till you drop</a></p></li>
+<li><p><a href="http://flif.info/">flif &ndash; free lossless image format</a></p></li>
+<li><p><a href="http://blog.andrewray.me/flux-for-stupid-people/">flux for stupid people</a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/18524652/how-to-use-javascript-object-defineproperty">how to use javascript object.defineproperty &ndash; stack overflow</a></p></li>
+<li><p><a href="https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016">investigating the overhead cost of compiled es2015</a></p></li>
+<li><p><a href="http://brianchang.info/2016/02/01/issues-with-common-software-quality-metrics.html">issues with common software quality metrics</a></p></li>
+<li><p><a href="http://javascriptair.com/">javascript air &ndash; the live broadcast podcast all about javascript</a></p></li>
+<li><p><a href="http://jpnarowski.com/enterprise-react-redux-part-1/">launching an enterprise react and redux app</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://www.iron.io/microcontainers-tiny-portable-containers/">microcontainers &ndash; tiny, portable docker containers</a></p></li>
+<li><p><a href="https://blog.branch.io/mobile-app-developers-are-suffering">mobile app developers are suffering</a></p></li>
+<li><p><a href="http://www.lukew.com/ff/entry.asp?1954">mobile web vs. native apps or why you want both</a></p></li>
+<li><p><a href="https://github.com/mcollina/climem">monitor the memory consumption of your node process via cli</a></p></li>
+<li><p><a href="http://brianchang.info/2016/01/17/object-oriented-developer.html">object-oriented developer</a></p></li>
+<li><p><a href="https://github.com/unicorn-standard/starter-kit">project boilerplate using react, redux and uniloc</a></p></li>
+<li><p><a href="https://toggl.com/developer-methods-infographic">software development methods explained with cars (infographic)</a></p></li>
+<li><p><a href="http://vorpal.js.org/">vorpal &ndash; command line with js</a></p></li>
+<li><p><a href="https://www.quora.com/What-do-programmers-at-Facebook-do-all-day">what do programmers at facebook do all day? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/Facebook-1/What-would-happen-to-worlds-economy-if-Facebook-suddenly-stopped-one-day">what would happen to world&rsquo;s economy if facebook suddenly stopped one day? &ndash; quora</a></p></li>
+<li><p><a href="https://getpocket.com/a/read/1119332046">why progressive web apps are the future of web development</a></p></li>
+<li><p><a href="http://www.yes-www.org/why-use-www/">why use www? – www. is not deprecated</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #72]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/08/newsletter-number-72/"/>
+    <updated>2015-01-08T15:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/08/newsletter-number-72</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello Folks!</p>
+
+<p>Here we go with the first <a href="/blog/categories/techthursday/">#TechThursday</a> for 2015.</p>
+
+<p>Every now and then it happens that people in our team wear the same geeky T-shirt&hellip; <strong>T-shirt clash</strong>:</p>
+
+<p><img class="center" src="/images/t-shirt.jpg"></p></blockquote>
+
+<ul>
+<li><p><a href="https://github.com/bcoe/crapify">Crapify, a proxy for simulating slow, spotty, HTTP connections</a></p></li>
+<li><p><a href="https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99">Why you should not use Angular</a></p></li>
+<li><p><a href="https://codeascraft.com/2012/05/22/blameless-postmortems/">Blameless PostMortems and a Just Culture</a></p></li>
+<li><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">The indtroduction to Reactive Programming</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://slidesha.re/1xUpRNz">The DevOps Wonder</a></p></li>
+<li><p><a href="http://bit.ly/1DA8dNX">React js Vs Angular js</a></p></li>
+<li><p><a href="http://bit.ly/1AuEg3r">Scrawl &ndash; web capture crawler</a></p></li>
+<li><p><a href="http://bit.ly/1yDu0Fs">Docker &ndash; Beginner&rsquo;s tutorial</a></p></li>
+<li><p><a href="https://github.com/denderello/symfony-docker-example">Dockerized Symfony Project</a></p></li>
+<li><p><a href="https://github.com/google/novm">Novm &ndash; legacy-free, type 2 hypervisor written in Go</a></p></li>
+<li><p><a href="http://buff.ly/1xzIODe">Why you should pay developers to learn</a></p></li>
+<li><p><a href="http://buff.ly/1xvT9QC">How can React and Flux help us create better Angular applications?</a></p></li>
+<li><p><a href="http://buff.ly/1xvT3Ix">How Much Testing is Too Much?</a></p></li>
+<li><p><a href="http://buff.ly/14ony8u">Agile Won&rsquo;t Fix Your Organization</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-cross-account-access-in-the-aws-management-console/">Cross-Account Access in the AWS Management Console</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-ec2-spot-instance-termination-notices/">EC2 Spot Instance Termination Notices</a></p></li>
+<li><p><a href="http://www.slideshare.net/bingoarunprasath/docker-demo-on-php-application-deployment">Docker &ndash; Demo on PHP Application deployment</a></p></li>
+<li><p><a href="http://weavora.com/blog/2013/03/26/why-we-prefer-symfony2-over-yii-framework/">Symfony2 Over Yii</a></p></li>
+<li><p><a href="https://github.com/es-analysis/plato">JavaScript source code visualization, static analysis, and complexity tool</a></p></li>
+<li><p><a href="https://plus.google.com/app/basic/stream/z12iztbo0mzwhnkbi04chrfidpb4s1vglfg">Chrome Canary improvements to the Network panel</a></p></li>
+<li><p><a href="https://github.com/dai-shi/codeonmobile">A coding tool on mobile devices targeting GitHub/Codeship/Heroku</a></p></li>
+<li><p><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></p></li>
+<li><p><a href="http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/">Working Effectively With iTerm2</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #38]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/15/newsletter-number-38/"/>
+    <updated>2014-05-15T11:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/15/newsletter-number-38</id>
+    <content type="html"><![CDATA[<p>Hello everyone and welcome to <a href="/blog/categories/techthursday/"><strong>TechThursday</strong>!</a>!</p>
+
+<p>This week we have a collection of programming and system news and tips and general ideas for your everyday programming routine.</p>
+
+<ul>
+<li><p><a href="http://www.youtube.com/watch?v=bjWanTsG22c&amp;list=PLb0IAmt7-GS2fdbb1vVdP8Z8zx1l2L8YS">Hack Dev Day Playlist!</a></p></li>
+<li><p><a href="http://cramer.io/2014/05/03/on-pull-requests/">On Pull Requests</a></p></li>
+<li><p><a href="http://javarevisited.blogspot.ae/2014/05/10-articles-every-programmer-must-read.html">10 Articles Every Programmer Must Read</a></p></li>
+<li><p><a href="http://williamdurand.fr/2013/07/30/from-stupid-to-solid-code/">From STUPID to SOLID Code!</a></p></li>
+<li><p><a href="http://news.netcraft.com/archives/2014/05/09/keys-left-unchanged-in-many-heartbleed-replacement-certificates.html">Keys left unchanged in many Heartbleed replacement certificates!</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.rfc-editor.org/rfc/rfc7258.txt">RFC on Best Current Practice: Pervasive Monitoring is an Attack</a></p></li>
+<li><p><a href="http://packetbeat.com/">Open Source application monitoring &amp; packet tracing system</a></p></li>
+<li><p><a href="http://bowery.io/">A cloud based dev environment that can be setup in a minute!</a></p></li>
+<li><p><a href="https://mist.io/">mist.io Cloud Management in Your Pocket</a></p></li>
+<li><p><a href="http://www.sitepoint.com/php-continuous-integration-travis-ci/">Travis ci with PHP</a></p></li>
+<li><p><a href="http://www.thinkster.io/angularjs/GtaQ0oMGIl">A Better Way to Learn AngularJS</a></p></li>
+<li><p><a href="https://github.com/coreos/etcd">A highly-available key value store for shared configuration and service discovery</a></p></li>
+<li><p><a href="http://naimhamadi.wordpress.com/2014/05/13/mastering-css-selectors/">Mastering CSS selectors</a></p></li>
+<li><p><a href="https://github.com/rackerlabs/wonton">If you want to transfer any tools from Amazon S3 to Rackspace or Vice Versa</a></p></li>
+<li><p><a href="http://moduscreate.com/5-best-mobile-web-app-frameworks-ionic-angulalrjs/">5 Best Mobile Web App Frameworks: Ionic (AngularJS)</a></p></li>
+<li><p><a href="https://github.com/ekalinin/envirius">Universal Virtual Environments Manager</a></p></li>
+<li><p><a href="http://harish11g.blogspot.ae/2013/08/Load-balancing-Amazon-RDS-MySQL-read-replica-slaves-using-HAProxy.html">Load Balancing Amazon RDS Read Replica&rsquo;s using HAProxy</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

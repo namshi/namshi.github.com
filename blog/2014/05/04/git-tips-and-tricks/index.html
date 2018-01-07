@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Git and Github at Namshi: our flow and tips&tricks &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Git and Github at Namshi: our flow and tips&tricks ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/">
+    
+    
+    <meta property="og:title" content="Git and Github at Namshi: our flow and tips&tricks "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/05/04/git-tips-and-tricks/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-04-May" title="May 04, 2014">May 04, 2014</time>
+            </div>
+            <h1 class="title">Git and Github at Namshi: our flow and tips&tricks</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                
+                    Alessandro Cinelli (cirpo)
+                
+                </a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>At <a href="https://www.namshi.com">Namshi</a> for versioning and managing our large and assorted codebase we use <a href="http://git-scm.com/">GIT</a> and of course <a href="http://github.com/namshi">Github</a> (I like to call it &ldquo;Facebook for nerds&rdquo;).</p>
+
+<p>In the true spirit of &ldquo;giving back to the community&rdquo; we also publicly release some libraries that we use internally, <a href="https://github.com/namshi/NamshiUtilityBundle">feel</a> <a href="https://github.com/namshi/utils">free</a> <a href="https://github.com/namshi/notificator">to</a> <a href="https://github.com/namshi/jose">use</a> <a href="https://github.com/namshi/ng-watchers">them</a> <a href="https://github.com/namshi/emailvision">and</a> <a href="https://github.com/namshi">contribute!</a></p>
+
+<!-- more -->
+
+
+<h3>Our GIT flow</h3>
+
+<p>Git is so powerful and flexible that at the beginning you feel kinda lost: <em>&ldquo;How should I use it?&rdquo;</em>  <em>&ldquo;Should I use merge or rebase?&rdquo;</em>  <em>&ldquo;master, develop, release branches?&rdquo;</em>
+And then you try to find the answer via google and you find the solution: <a href="http://nvie.com/posts/a-successful-git-branching-model/">&ldquo;GIT FLOW!&rdquo;</a>.</p>
+
+<blockquote><p>No, no, and again <strong>NO!</strong> (please say it out loud).</p></blockquote>
+
+<p>&ldquo;Git flow&rdquo; is one of several ways to use git, but it&rsquo;s not a standard and it could not fit well in your current organisation/codebase/team flow.</p>
+
+<p>You should embrace the power of git, and find a tailor-made solution.</p>
+
+<p>At Namshi we basically have two main branches: master and develop.</p>
+
+<p>On master you have, exactly, what&rsquo;s running on production, while develop is our development branch (surprisingly).</p>
+
+<p>When we pick a task we usually create a branch from develop. Once we are done with a task we rebase our feature branch from develop, in order to be sure that the new
+code works and doesn&rsquo;t break anything before being merged in develop. Then we open a pull request (PR) on Github. Once the PR is reviewed and approved
+it gets merged in the develop branch.
+There is (still) a lot of discussion (and flames) about using the rebase command, because basically it rewrites the current commits history.
+It&rsquo;s true that potentially you can screw your codebase, but we are still safe because you can still rely on your teammates local repositories and
+gain from the integrity, stability (before merging on the develop branch you can be sure that you didn&rsquo;t break anything) and clean commits history point of view.</p>
+
+<p>Once we decide that we can ship new stuff, we create a new branch (usually a release branch), tag it, deploy on staging and then deploy on live.
+Then we merge the tag on master (with the <a href="https://www.kernel.org/pub/software/scm/git/docs/git-merge.html">&mdash;no-ff option</a> and rebase develop with master.
+Even here we use the rebase command because we end up with develop that has the same commits sequence as master plus new commits: it&rsquo;s so easy to spot the differences between the two branches.</p>
+
+<h3>Git Config</h3>
+
+<p>There are several configuration settings that you can put in your <code>~/.gitconfig</code> file and get a lot of benefits on your daily git usage.</p>
+
+<h4>colors</h4>
+
+<p>Give some love to git outputs:</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global color.ui true</code></pre></figure>
+
+
+<h4>filemode</h4>
+
+<p>Tired of having weird a <code>git status</code> output because some files has just changed file permissions?</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global core.filemode false</code></pre></figure>
+
+
+<h4>rerere</h4>
+
+<p>The git rerere functionality stands for <em>&ldquo;reuse recorded resolution&rdquo;</em> and as the name implies, it allows you to ask git to remember how you&rsquo;ve resolved a knotty conflict so that the next time you have the same conflict, git can automatically resolve it for you.</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global rerere.enabled true</code></pre></figure>
+
+
+<h4>global exclude</h4>
+
+<p>Instead of setting common files to be ignored in your local .gitignore file (i.e. your IDE config file, .DS_Store etc) everytime, you can use a global ignore file
+that will automatically apply to all your repos.</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global core.excludesfile ~/.gitignore</code></pre></figure>
+
+
+<p><strong>tip:</strong> I have a <code>my_temp</code> entry in my .gitignore global file, so that I can create a <code>my_temp</code> dir in my working copies and be free to put any experimental and temporary code/quick testing code
+in it without changing the project on my IDE and using the actual codebase.</p>
+
+<h4>pull with rebase, not merge</h4>
+
+<p>Everytime we pull from a remote repository, we do a <code>git pull --rebase</code> because we don&rsquo;t want to mess up with our local commits.
+Instead of specifying it everytime, you can make it the default beaviour when you pull:</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global branch.auto-setuprebase always</code></pre></figure>
+
+
+<h4>autocorrect</h4>
+
+<p>Git can autocorrect you:</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global help.autocorrect true</code></pre></figure>
+
+
+
+
+<figure class='code'><pre><code class='language-bash'>➜  namshi.github.com git:(source) ✗ git cmmit
+git: &apos;cmmit&apos; is not a git command. See &apos;git --help&apos;.
+
+Did you mean this?
+    commit</code></pre></figure>
+
+
+<h4>default tracking</h4>
+
+<p>Bored of setting up branch tracking by hand?</p>
+
+<figure class='code'><pre><code class='language-bash'>git config --global push.default upstream</code></pre></figure>
+
+
+<h3>Git aliases</h3>
+
+<p>Git supports aliases via the <code>git config --global alias.&lt;alias_name&gt; "&lt;git command&gt;"</code>, but here in Namshi we tend to use the shell aliases
+because you can save even more chars and git is the only revision control and source code management system we use.</p>
+
+<h4>checkout</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias ck=&apos;git checkout&apos;</code></pre></figure>
+
+
+<h4>checkout branch develop</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias dev=&apos;git checkout develop&apos;</code></pre></figure>
+
+
+<h4>checkout branch master</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias master=&apos;git checkout master&apos;</code></pre></figure>
+
+
+<h4>create a new branch</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias ckb=&apos;git checkout -b&apos;</code></pre></figure>
+
+
+<h4>push</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias push=&apos;git push&apos;</code></pre></figure>
+
+
+<h4>force push after a rebase</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias pushf=&apos;git push -f&apos;</code></pre></figure>
+
+
+<h4>pull</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias pull=&apos;git pull&apos;</code></pre></figure>
+
+
+<h4>sync main branches</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias align=&apos;git pull --rebase origin master &amp;&amp; git pull --rebase origin develop&apos;</code></pre></figure>
+
+
+<h4>fetch</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias fetch=&apos;git fetch&apos;</code></pre></figure>
+
+
+<h4>commit</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias ci=&apos;git commit&apos;</code></pre></figure>
+
+
+<h4>tag</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias tag=&apos;git tag&apos;</code></pre></figure>
+
+
+<h4>revert all changes</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias undo=&apos;git reset --hard HEAD&apos;</code></pre></figure>
+
+
+<h4>delete merged branch</h4>
+
+<p>How many times do you have so many branches in your local repo that are already merged?
+Let&rsquo;s get rid of them!</p>
+
+<figure class='code'><pre><code class='language-bash'>alias dmb=&apos;git branch --merged | xargs git branch -d&apos;</code></pre></figure>
+
+
+<h4>log</h4>
+
+<figure class='code'><pre><code class='language-bash'>alias glog=&apos;git log --oneline --decorate&apos;</code></pre></figure>
+
+
+<h4>status</h4>
+
+<p>A shorter version:</p>
+
+<figure class='code'><pre><code class='language-bash'>alias st=&apos;git status -sb&apos;</code></pre></figure>
+
+
+<h4>diff</h4>
+
+<p>This only highlights the changed words, nicely inline.</p>
+
+<figure class='code'><pre><code class='language-bash'>alias gdiff=&apos;git diff --word-diff&apos;</code></pre></figure>
+
+
+<h3>Tips</h3>
+
+<ul>
+<li>You messed up with a merge/rebase? Don&rsquo;t freak out, just use <code>git reflog</code> to check the local history command and sha1, and then <code>git reset --hard &lt;sha1&gt;</code></li>
+<li>After rebasing develop in your feature branch you end up with too many conflicts and messed up commits history? Don&rsquo;t panic, create a new feature branch from develop and
+<code>git cherry-pick</code> all the commits you need from your previous feature branch.</li>
+<li>Is my commit already on branch X? <code>git branch --contains &lt;sha1&gt;</code> is there to rescue you!</li>
+<li>You want to fetch a file from another branch without changing your current branch? <code>git checkout &lt;other_branch_name&gt; -- path/to/file</code></li>
+</ul>
+
+
+<p> Here you can find a complete list of <a href="https://gist.github.com/cirpo/86d43ef8ef87b4cfd031">aliases</a>, and <a href="https://gist.github.com/cirpo/343376f1ac7fb00204a0">here</a> the global .gitconfig we are using</p>
+
+<p> Do you have any other tips or tricks to share? Write them down in the comments :)</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/github/'>github</a>, <a class='category' href='/blog/categories/namshi/'>namshi</a>, <a class='category' href='/blog/categories/tips/'>tips</a>, <a class='category' href='/blog/categories/tricks/'>tricks</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

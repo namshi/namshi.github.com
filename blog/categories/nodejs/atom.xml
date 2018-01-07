@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Nodejs | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/nodejs/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #75]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/29/newsletter-number-75/"/>
+    <updated>2015-01-29T10:20:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/29/newsletter-number-75</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello folks!
+Here you go again with your weekly dose of #techthrusday !</p></blockquote>
+
+<ul>
+<li><p><a href="http://bit.ly/18x8NlF">Node.js Framework Comparison: Express vs. Koa vs. Hapi</a></p></li>
+<li><p><a href="http://bit.ly/1Djb25B">Monitor Docker Containers with Prometheus</a></p></li>
+<li><p><a href="http://bit.ly/1DbKvXv">PHP vs. Node.js: An epic battle for developer mind share</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1CgJzo0">The Pitfalls of Code Review (And How To Fix Them)</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html">Don&rsquo;t Shave That Yak!</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/GetterEradicator.html">Getter or not getter</a></p></li>
+<li><p><a href="https://packagist.org/packages/roave/security-advisories">Roave Security Advisories</a></p></li>
+<li><p><a href="https://ideatosdotcom.wordpress.com/2015/01/02/named-exceptions-as-usual-its-all-about-trying-to-be-explicit/">named exceptions: as usual it’s all about trying to be explicit</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/EmbeddedDocument.html">Embedded Document</a></p></li>
+<li><p><a href="https://mwop.net/blog/2015-01-08-on-http-middleware-and-psr-7.html">On HTTP, Middleware, and PSR-7</a></p></li>
+<li><p><a href="http://bonsaiden.github.io/JavaScript-Garden/">Javascript garden</a></p></li>
+<li><p><a href="https://github.com/tiimgreen/github-cheat-sheet#readme">GitHub Cheat Sheet</a></p></li>
+<li><p><a href="https://www.adayinthelifeof.nl/2014/12/31/debugging-symfony-components/">Debugging Symfony components</a></p></li>
+<li><p><a href="http://ocramius.github.io/blog/roave-security-advisories-protect-against-composer-packages-with-security-issues/">roave/security-advisories: Composer against Security Vulnerabilities</a></p></li>
+<li><p><a href="http://wordpress.tv/2015/01/27/functional-programming-whats-the-fuss-all-about/">Functional Programming: What’s The Fuss All About?</a></p></li>
+<li><p><a href="https://medium.com/the-spumko-suite/testing-hapi-services-with-lab-96ac463c490a">Testing Hapi Services with Lab</a></p></li>
+<li><p><a href="http://www.tonymarston.net/php-mysql/please-do-not-break-our-language.html">Please do not break our language</a></p></li>
+<li><p><a href="http://chimera.labs.oreilly.com/books/1234000000262/index.html">Programming JavaScript Applications &ndash; Ebook</a></p></li>
+<li><p><a href="http://abdulapopoola.com/2014/11/11/introduction-to-javascript-promises/">Introduction to JavaScript Promises</a></p></li>
+<li><p><a href="http://facebook.github.io/fixed-data-table/">Fixed Data Tables for React</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=KVZ-P-ZI6W4">React.js Conf 2015 Keynote &ndash; Introducing React Native</a></p></li>
+<li><p><a href="https://ideone.com/">Ideone, an online compiler and debugging tool</a></p></li>
+<li><p><a href="http://blog.qbox.io/migrating-from-facets-to-aggregations">Elasticsearch, Migrating from Facets to Aggregations</a></p></li>
+<li><p><a href="https://www.found.no/foundation/Sense-Elasticsearch-interface/">Sense &ndash; a Cool JSON Aware Interface to Elasticsearch</a></p></li>
+<li><p><a href="http://www.browserlondon.com/blog/2014/03/how-we-use-elasticsearch-to-enhance-our-web-products/">How we use Elasticsearch to enhance our web products</a></p></li>
+<li><p><a href="http://t.co/gfkUGVcb3p">You&rsquo;ve seen nothing until you&rsquo;ve seen a picture of a pigeon having a job interview to become a pigeon</a></p></li>
+<li><p><a href="http://buff.ly/15U8LDe">Node v0.10.36 (Stable)</a></p></li>
+<li><p><a href="http://buff.ly/1yZAIoh">CVE-2015-0235 &ndash; GHOST: glibc gethostbyname buffer overflow</a></p></li>
+<li><p><a href="http://buff.ly/1JU0egg">An introduction to containers, Kubernetes, and the trajectory of modern cloud computing</a></p></li>
+<li><p><a href="http://buff.ly/1Bg8aDP">How GitHub uses GitHub to document GitHub</a></p></li>
+<li><p><a href="http://buff.ly/1wy6P8V">Quick Pull Requests</a></p></li>
+<li><p><a href="http://buff.ly/1wy6xi9">Node.js 0.11.15 and io.js 1.0.3 &ndash; Very much the same in performance</a></p></li>
+<li><p><a href="http://buff.ly/1tho6rI">Node 0.11.15&hellip;and IoJS?</a></p></li>
+<li><p><a href="http://buff.ly/1Bg4vpH">Harder, Better, Faster, Stronger Lo-Dash v3</a></p></li>
+<li><p><a href="http://buff.ly/1B7vhQQ">Backbone Is Not Enough</a></p></li>
+<li><p><a href="http://buff.ly/1yQneK2">Docker 1.5.0-rc1: readonly filesystems, picking a specific dockerfile and more goodness!</a></p></li>
+<li><p><a href="https://github.com/elier/mantis5">Mantis5 is an intent to revamp the popular MantisBT project using Symfony and HTML5</a></p></li>
+<li><p><a href="https://github.com/orocrm/platform">The Oro Platform offers developers the exact business application platform they’ve been looking for, by combining the tools they need.</a></p></li>
+<li><p><a href="https://github.com/maryrosecook/gitlet">git in js</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/27/the-future-of-marketing-automation-depends-on-data-analytics-at-scale/">The future of Marketing Automation</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/27/facebook-releases-tools-to-help-marketers-understand-how-ads-boost-their-business/">Face book tool to ads boost</a></p></li>
+<li><p><a href="https://gigaom.com/2015/01/27/a-few-interesting-numbers-about-apache-spark/">A few interesting numbers about Apache Spark</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/22/big-data-and-mobile-analytics-ready-to-rule-2015/">Big data and mobile analytics ready to rule 2015</a></p></li>
+<li><p><a href="http://www.information-age.com/technology/information-management/123458931/traditional-big-data-strategy-ancient-history">Traditional Big Data Strategy Ancient History</a></p></li>
+<li><p><a href="http://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html">Introducing Streaming k-means in Spark</a></p></li>
+<li><p><a href="http://research.gigaom.com/2015/01/cloud-bi-competition-heats-up-apache-projects-move-up/">Cloud BI competition heats up Apache projects</a></p></li>
+<li><p><a href="http://analytics.blogspot.ae/2015/01/start-remarketing-with-google-analytics.html">Remarketing with Google analytics</a></p></li>
+<li><p><a href="http://www.jenunderwood.com/2015/01/27/free-power-bi/">Free Power BI</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

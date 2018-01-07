@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: geolocation | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/geolocation/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Browser geolocation: the good, the bad and the ugly]]></title>
+    <link href="http://namshi.github.io/blog/2016/11/13/browser-geolocation-the-good-the-bad-and-the-ugly/"/>
+    <updated>2016-11-13T18:37:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/11/13/browser-geolocation-the-good-the-bad-and-the-ugly</id>
+    <content type="html"><![CDATA[<p>We&rsquo;re a little late to the party &mdash; but we&rsquo;re here, amongst those who are
+playing around with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation">geolocation API</a>
+provided by browsers.</p>
+
+<p>Without further ado, let me get straight to our feedback on one the nicest web
+APIs that have been standardized in recent times.</p>
+
+<!-- more -->
+
+
+<h2>Background</h2>
+
+<p>We&rsquo;ve always been looking for ways to ease our checkout workflow, as a simpler
+process usually means happier customers, and the ability to automagically
+detect the device&rsquo;s location lets us take away from our customers the burden
+of having to manually fill forms:</p>
+
+<div align="center">
+  <video src="http://namshi.github.io/videos/geolocation.webm" controls autoplay loop></video>
+</div>
+
+
+<p>Now that you&rsquo;ve seen it in action let&rsquo;s dig a little bit on what we found out
+while implementing this little thing of beauty.</p>
+
+<h2>The good</h2>
+
+<p>First off, let me start by saying that, luckily, browser support is
+<a href="http://caniuse.com/#feat=geolocation">widespread</a>, as the only major browser
+that is currently lacking support is Opera Mini (not a biggie).</p>
+
+<p>Detecting the user&rsquo;s location is also quite simple:</p>
+
+<p>``` js
+var opts = {
+  enableHighAccuracy: true,
+  maximumAge        : 1000,
+  timeout           : 1000
+};</p>
+
+<p>function onSuccess(position) {
+  console.log(position.coords.latitude, position.coords.longitude)
+}</p>
+
+<p>function onError(err) {
+  console.log(err)
+}</p>
+
+<p>navigator.geolocation.getCurrentPosition(onSuccess, onError, opts);
+```</p>
+
+<p>If this is the first time you&rsquo;re trying to access the device&rsquo;s position the
+browser will show a popup to inform the user the website&rsquo;s trying to access the
+device&rsquo;s location, so that he or she can accept or decline. The rest is history :)</p>
+
+<p><strong>Takeaway</strong>: this is going to sound like a typical 80/20 story &mdash; it takes no
+time to get most done, and a proportially long time to sort the wonky details
+out. Regardless, the experience has been pretty positive.</p>
+
+<h2>The bad</h2>
+
+<p>Detecting the device&rsquo;s location turns out pretty handy on desktop devices, as
+you can safely assume they won&rsquo;t move around :) Phones and tablets, on the
+other hand, will probably be used around so there&rsquo;s a good chance that the
+customer might move away / be away from the destination.</p>
+
+<p>The problem is that on desktop you don&rsquo;t really get a very accurate position as
+the geolocation service the browser uses won&rsquo;t have any GPS triangulation
+available, so you&rsquo;re left with heuristics based on <a href="http://stackoverflow.com/questions/1668304/how-does-google-calculate-my-location-on-a-desktop">IP address mapping and previous
+information about nearby networks</a>.</p>
+
+<p><strong>Takeaway</strong>: we went mobile-first and decided to ignore desktop devices for now
+(coming soon!).</p>
+
+<p>In addition, error callbacks aren&rsquo;t as accurate as they are supposed to be: on
+android, for example, if the user doesn&rsquo;t have the GPS enabled, you might get a
+very cryptic error such as &ldquo;<em>User denied geolocation</em>&rdquo; &mdash; which isn&rsquo;t really
+what&rsquo;s happening.</p>
+
+<p><strong>Takeway</strong>: don&rsquo;t really rely on the error callbacks to distinguish between
+errors, as they&rsquo;re not 100% reliable across all platforms. Consider any error as
+a general failure, indicating that something might have gone wrong:</p>
+
+<ul>
+<li>the user didn&rsquo;t accept the geolocation request</li>
+<li>the geolocation request failed for some reason</li>
+<li>the GPS wasn&rsquo;t turned on</li>
+<li>apocalypse just happened :)</li>
+</ul>
+
+
+<p>Last but not least, we were very surprised that geolocation depended on the GPS
+being manually turned on, at least on Android. I don&rsquo;t know how
+many android users go around with their GPS turned on but I bet it&rsquo;s a pretty
+small percentage considering how it affects battery usage. We thought the
+browser could temporarily turn the GPS on on its own, but that isn&rsquo;t the case. On
+iOS, for some reason, it seems the percentage of users having <em>location services</em>
+enabled is quite higher, thus the impact isn&rsquo;t as high.</p>
+
+<p><strong>Takeaway</strong>: be prepared to help users figure out what&rsquo;s wrong &mdash; give them
+clear instructions on what steps are required to successfully geolocate them:</p>
+
+<ul>
+<li>location services / GPS must be on</li>
+<li>internet access (well&hellip;)</li>
+<li>accept the geolocation request</li>
+</ul>
+
+
+<h2>The ugly</h2>
+
+<p>Oh boy, we didn&rsquo;t see this coming.</p>
+
+<p>Follow me on this simple workflow on an android phone:</p>
+
+<ul>
+<li>trigger a geolocation request, but with the GPS off</li>
+<li>request fails for obvious reasons</li>
+<li>enable GPS</li>
+<li>trigger a new geolocation request</li>
+</ul>
+
+
+<p>What in the world would you expect to happen?</p>
+
+<p>Surprise, it doesn&rsquo;t work. And guess what, if you refresh the page an trigger
+the request again everything&rsquo;s good &mdash; so somehow chrome isn&rsquo;t really able to
+&ldquo;recover&rdquo; from a failed request until the page is refreshed. Go figure.</p>
+
+<p>Of course, triggering a full page reload on our checkout is out of question, as
+that distracts the user away and delays the checkout process, so we looked around
+for alternative solutions and thought of giving iframes a try &mdash; surprisingly,
+it worked. Go figure.</p>
+
+<p>The idea is very simple &mdash; once the user clicks on the &ldquo;<em>Detect my location</em>&rdquo;
+button we load an invisible iframe that triggers the geolocation request:</p>
+
+<p>``` js
+getCurrentPosition = function(){
+  return new Promise((resolve, reject) => {</p>
+
+<pre><code>var ifr = document.createElement('iframe');
+ifr.style.opacity = '0';
+ifr.style.pointerEvents = 'none';
+ifr.src = window.location.origin + '/geo.html';
+
+document.body.appendChild(ifr);
+
+ifr.contentWindow.addEventListener('message', function(message){
+  message = JSON.parse(message.data);
+  document.body.removeChild(ifr);
+
+  if(message.type === 'success'){
+    resolve(message.data);
+  } else {
+    reject(message.data);
+  }
+});
+</code></pre>
+
+<p>  ]})
+};
+```</p>
+
+<p>(the above code got trimmed for the sake of brevity)</p>
+
+<p>As you might have figured, we listen for a message from the iframe, which is
+responsible for getting the users' location and sending it to us:</p>
+
+<p>``` html
+&lt;!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Geolocation</title>
+</head>
+<body>
+  <script type="text/javascript"></p>
+
+<pre><code>var triggerGeolocationRequest = function(){
+  var options = {
+    enableHighAccuracy: true,
+    timeout: 1000,
+    maximumAge: 1000
+  };
+
+  var result;
+
+  window.navigator.geolocation.getCurrentPosition(function(position){
+    var result = {
+      type: 'success',
+      data: {lat: position.coords.latitude, lng: position.coords.longitude}
+    };
+
+    window.postMessage(JSON.stringify(result), window.location.origin);
+  }, null, options)
+};
+
+window.addEventListener('load', triggerGeolocationRequest);
+</code></pre>
+
+<p>  </script>
+</body>
+</html>
+```</p>
+
+<p>(the above code got trimmed for the sake of brevity)</p>
+
+<p>And that does the job: the browser sees the iframe as a brand new page, thus
+is able to overcome this wonky issue. Again, go figure.</p>
+
+<p><strong>Takeaway</strong>: iframes, rescuing lazy web developers since 1997.</p>
+
+<h2>All in all&hellip;</h2>
+
+<p>Our feedback is generally positive, as customers have started to use it from day
+1 at a good rate (~10% of our mobile checkouts is &ldquo;geolocated&rdquo;). There are a few
+quirks here and there but if you survived IE6 then this is really going to feel
+like a piece of cake.</p>
+
+<p>A big &ldquo;thanks&rdquo; goes to my partners in crime <a href="/team/#Mohamed%20Amin">Mohamed</a>, <a href="/team/#Gabriel%20Izebhigie">Gabriel</a>, <a href="/team/#Shidhin%20CR">Shidhin</a>, <a href="/team/#Razan%20Bilwani">Razan</a> and
+<a href="/team/#Yomna%20Sabry">Yomna</a>, the real masterminds behind this new feature :)</p>
+
+<p>Au revoir!</p>
+]]></content>
+  </entry>
+  
+</feed>

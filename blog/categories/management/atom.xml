@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: management | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/management/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #101]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/30/newsletter-number-101/"/>
+    <updated>2015-07-30T12:56:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/30/newsletter-number-101</id>
+    <content type="html"><![CDATA[<p>Hi guys, even after the 100th newsletter we still have something to suggest you.</p>
+
+<p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
+
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+
+<!-- more -->
+
+
+<p>Here the links, enjoy:</p>
+
+<ul>
+<li><p><a href="https://developer.salesforce.com/blogs/engineering/2015/07/365-days-cultural-kaizen.html">365 days of cultural kaisen</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/php-optimizer">a cfg optimizer for php</a></p></li>
+<li><p><a href="http://www.slideshare.net/Codemotion/orlando-mashapebuildsuccessful-apis">building successful apis overnight</a></p></li>
+<li><p><a href="https://speakerdeck.com/jnewland/chatops-at-github">chatops at github</a></p></li>
+<li><p><a href="http://addyosmani.com/first/">components should be focused, independent, reusable, small and testable (first)</a></p></li>
+<li><p><a href="https://speakerdeck.com/derekprior/cultivating-a-code-review-culture">cultivating a code review culture // speaker deck</a></p></li>
+<li><p><a href="https://github.com/p8952/bocker">docker implemented in 100 lines of bash</a></p></li>
+<li><p><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/">es6 in depth: arrow functions ✩ mozilla hacks – the web developer blog</a></p></li>
+<li><p><a href="https://www.nginx.com/blog/how-nginx-plans-to-support-http2/">how nginx plans to support http/2</a></p></li>
+<li><p><a href="https://medium.com/@jeffbski/is-react-js-fast-faster-than-framework-or-are-there-more-relevant-questions-to-be-asking-bcf40211f89b">is react.js fast? faster than {framework}? … or are there more relevant questions to be asking? — medium</a></p></li>
+<li><p><a href="http://managingbias.fb.com/">managing bias | facebook</a></p></li>
+<li><p><a href="http://mashable.com/2015/07/29/microsoft-edge-vs-google-chrome/?utm_cid=mash-com-fb-tech-link">microsoft edge vs. google chrome: which web browser is faster?</a></p></li>
+<li><p><a href="https://medium.com/@kevincennis/on-unit-testing-1cc6798f81ee">on unit testing by kevin cennis</a></p></li>
+<li><p><a href="http://www.jamiembrown.com/blog/one-in-every-600-websites-has-git-exposed/">one in every 600 websites has .git exposed</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/06/09/react-contexts-and-dependency-injection/">react contexts and dependency injection — jack hsu</a></p></li>
+<li><p><a href="https://www.firebase.com/blog/2015-07-15-reactfire-0-5-0.html">reactfire 0.5.0 &ndash; firebase</a></p></li>
+<li><p><a href="http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html">seven surprising javascript &lsquo;features&rsquo;</a></p></li>
+<li><p><a href="http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/">the hitchhiker&rsquo;s guide to modern javascript tooling</a></p></li>
+<li><p><a href="https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04">the real 10 algorithms that dominate our world — medium</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">the ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930">understanding design patterns in javascript &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/way-we-work-ef431646ab17">way we work — medium engineering</a></p></li>
+<li><p><a href="https://www.pagerduty.com/blog/what-is-chatops/">what is chatops? and how do i get started?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #68]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/11/newsletter-number-68/"/>
+    <updated>2014-12-11T10:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/11/newsletter-number-68</id>
+    <content type="html"><![CDATA[<p>Hello folks!</p>
+
+<blockquote><p>News from the tech team:
+<a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>
+are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
+The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
+
+<p><img class="center" src="/images/dockercon.jpg"></p>
+
+<blockquote><p>We have a new pet in the office, the Docker whale!
+Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
+
+<p><img class="center" src="/images/docker.jpg"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://bit.ly/1unKjhW">Meaningful commit messages</a></p></li>
+<li><p><a href="http://bit.ly/1Aj7Che">How to Use npm as a Build Tool</a></p></li>
+<li><p><a href="http://bit.ly/1sfcmFY">Symfony Docker example</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1BdOfaC">Rubook.io Solve devOps problems in your sleep with IFTTT-style mitigation of alerts</a></p></li>
+<li><p><a href="http://engineering.clever.com/2014/12/10/when-your-ip-traffic-in-aws-disappears-into-a-black-hole">When your IP traffic in AWS disappears into a black hole</a></p></li>
+<li><p><a href="http://www.yellow-bricks.com/2014/12/08/operational-efficiency/">Operational Efficiency (You&rsquo;re not Facebook/Google)</a></p></li>
+<li><p><a href="http://nginx.com/blog/using-ngnix-amazon-elastic-load-balancer-aws/">NGINX Plus and Amazon Elastic Load Balancer on AWS &ndash; NGINX</a></p></li>
+<li><p><a href="http://threatpost.com/researchers-say-poodle-attack-affects-some-tls-implementations/109764">Researchers Say POODLE Attack Affects Some TLS Implementations | Threatpost | The first stop for security news</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-delivers-more-automation-docker-lxc-application-containers">SaltStack Delivers More Automation for Docker and LXC Application Containers</a></p></li>
+<li><p><a href="https://www.serverdensity.com/cost-of-downtime/">The real cost of downtime &ndash; Server Density</a></p></li>
+<li><p><a href="http://www.slideshare.net/adamchristian/the-black-magic-of-engineering-management">The black magic of Engineering management</a></p></li>
+<li><p><a href="http://jakearchibald.com/2014/offline-cookbook/">The offline cookbook</a></p></li>
+<li><p><a href="https://jakearchibald.github.io/isserviceworkerready/">is ServiceWorker ready?</a></p></li>
+<li><p><a href="http://www.wired.com/2014/12/google-maps-ground-truth">The Huge, Unseen Operation Behind the Accuracy of Google Maps</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20140826123205-20017018-8-qualities-that-make-great-bosses-unforgettable">8 qualities that make great bosses unforgettable</a></p></li>
+<li><p><a href="http://www.quora.com/Why-did-Koding-move-away-from-containers-and-Docker-to-virtual-machines">Why did Koding switch from containers to VMs?</a></p></li>
+<li><p><a href="https://github.com/mozilla/awsbox">A featherweight PaaS on top of Amazon EC2 for deploying node apps</a></p></li>
+<li><p><a href="https://www.npmjs.com/">new website for NPM</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-6-vardumper-component">the new Symfony2 VarDumper component</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20141114143018-52594-ten-stupid-rules-that-drive-great-employees-away">10 stupid rules that drive great employees away</a></p></li>
+<li><p><a href="https://github.com/wellcaffeinated/PhysicsJS">physics engine for javascript</a></p></li>
+<li><p><a href="http://www.2ality.com/2014/12/es6-proxies.html">Meta programming with ECMAScript 6 proxies</a></p></li>
+<li><p><a href="https://github.com/arokor/barn">redis like API on top of localStorage</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

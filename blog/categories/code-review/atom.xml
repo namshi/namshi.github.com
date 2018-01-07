@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code review | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/code-review/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #64]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/06/newsletter-number-64/"/>
+    <updated>2014-11-06T13:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/06/newsletter-number-64</id>
+    <content type="html"><![CDATA[<p>Hello friends from the software engineering community!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro_Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
+Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
+with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
+
+<p><img class="team right" src="/images/berlin.png"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="https://tacoapp.com/">Taco App &ndash; a unified task list, getting tasks from 40+ sources</a></p></li>
+<li><p><a href="http://bit.ly/1BdO42A">Become a Better Programmer: 5 Essential Methods at a Glance</a></p></li>
+<li><p><a href="http://bit.ly/1qEThXn">FrontEnd Vs Backend Developer Infographic</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://stackshare.io/">StackShare.io &ndash; Discover &amp; discuss software stacks</a></p></li>
+<li><p><a href="http://bit.ly/111sQEA">Technical Debt Takes Many Forms</a></p></li>
+<li><p><a href="http://buff.ly/1wUf5nO">Master Developers: Addy Osmani</a></p></li>
+<li><p><a href="http://buff.ly/1wnN5ow">Windows port of Docker Client by ahmetalpbalkan..things start moving!</a></p></li>
+<li><p><a href="http://buff.ly/1v4oVER">A Quick Introduction to CoreOS</a></p></li>
+<li><p><a href="http://buff.ly/1GNLOPV">Front-end Tooling Workflows // this is a GREAT presentation</a></p></li>
+<li><p><a href="http://buff.ly/1Es3nBj">Symfony 3.0: The roadmap</a></p></li>
+<li><p><a href="http://buff.ly/1v25Gf7">Amazon Deploys to Production Every 11.6 Seconds // I think now its around every 6s&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/1Eq1FAf">React’s diff algorithm</a></p></li>
+<li><p><a href="http://buff.ly/1Ey5GVc">VisualOps: no more heavy lifting in the cloud</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-aws-reinvent-pagerduty">SaltStack Delivers More Advanced Cloud Orchestration for Amazon Web Services and Pagerduty</a></p></li>
+<li><p><a href="http://aws.amazon.com/codedeploy/">AWS CodeDeploy</a></p></li>
+<li><p><a href="http://aws.amazon.com/rds/aurora/">Amazon RDS for Aurora</a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-scorecard/">The DevOps Scorecard</a></p></li>
+<li><p><a href="http://blog.socialcast.com/realtime-search-solr-vs-elasticsearch">Realtime Search: Solr vs Elasticsearch</a></p></li>
+<li><p><a href="http://blog.trifork.com/2013/10/24/how-to-avoid-the-split-brain-problem-in-elasticsearch/comment-page-1/">How to avoid the split-brain problem in elasticsearch</a></p></li>
+<li><p><a href="http://www.slideshare.net/kucrafal/scaling-massive-elastic-search-clusters-rafa-ku-sematext">Scaling Massive Elastic-Search Clusters</a></p></li>
+<li><p><a href="http://hhvm.h4cc.de">HHVM packages support</a></p></li>
+<li><p><a href="https://hacksummit.org/">HackSummit, a virtual conference for developers</a></p></li>
+<li><p><a href="http://keithclark.co.uk/labs/css-fps/desktop/">A 3D environment with lighting, shadows built with CSS transforms</a></p></li>
+<li><p><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive mvc and the virtual dom</a></p></li>
+<li><p><a href="https://speakerdeck.com/jmikola/async-php-with-react"> Async PHP with React</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/0B3UKOMH_4lgBUTdjUGxIZ3l1Ukk/view"> A presentation about PHP 7</a></p></li>
+<li><p><a href="https://speakerdeck.com/ezimuel/information-security-in-php-the-cia-triad-approach">Information Security in PHP: the CIA Triad Approach</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #63]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/06/newsletter-number-63/"/>
+    <updated>2014-11-06T13:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/06/newsletter-number-63</id>
+    <content type="html"><![CDATA[<p>Hey folks!</p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<blockquote><p>News from the IT Team:</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> wrote a happy post about <a href="http://tech.namshi.io/blog/2014/11/03/one-year-in-namshi/">completing 1 year at Namshi</a>,
+we all share the same happiness :) at Namshi.</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://blog.npmjs.org/post/101775448305/npm-and-front-end-packaging">npm and front-end packaging</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/article/20141105164315-283620963-the-genius-of-wearing-the-same-outfit-every-day">The Genius of Wearing the Same Outfit Every Day</a></p></li>
+<li><p><a href="http://techcrunch.com/2014/11/04/google-launches-managed-service-for-running-docker-based-applications-on-its-cloud-platform/?ncid=txtlnkusaolp00000604">Google Launches Managed Service For Running Docker-Based Applications On Its Cloud Platform</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://duartes.org/gustavo/blog/post/tail-calls-optimization-es6/">Tail calls optimisations and ES6</a></p></li>
+<li><p><a href="https://speakerdeck.com/pedronauck/es6-using-the-new-javascript-today">Using the new javascript today</a></p></li>
+<li><p><a href="http://www.adelineyaw.com/css-architecture">CSS Architecture</a></p></li>
+<li><p><a href="https://code.facebook.com/posts/1503205539947302/introducing-proxygen-facebook-s-c-http-framework/">Introducing Proxygen, Facebook&rsquo;s C++ HTTP framework</a></p></li>
+<li><p><a href="https://philsturgeon.uk/blog/2014/11/composer-its-almost-always-about-the-lock-file">Composer: It&rsquo;s ALMOST Always About the Lock File</a></p></li>
+<li><p><a href="http://codex.caffeinated.ninja/codex/1.0">Codex &ndash; A Markdown (flat-file) documentation application built with Laravel 4.2</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=jadmmpYtKlQ">Docker Global Hack Day: Host Management by Nathan LeClaire.</a></p></li>
+<li><p><a href="http://flavio.castelli.name/2014/11/03/orchestrating-docker-containers-on-opensuse/">Orchestrating Docker Containers on openSUSE.</a></p></li>
+<li><p><a href="https://speakerdeck.com/kevinreedy/load-balancing-a-dynamic-infrastructure-with-nginx-chef-and-consul">Load Balancing a Dynamic Infrastructure with NGINX, Chef, and Consul.</a></p></li>
+<li><p><a href="http://instagram-engineering.tumblr.com/post/100758229719/migrating-from-aws-to-aws">Migrating from AWS to AWS.</a></p></li>
+<li><p><a href="http://antirez.com/news/83">Redis latency spikes and the 99th percentile.</a></p></li>
+<li><p><a href="https://github.com/mixradio/cluppet">Cluppet-Keeps AWS configuration simple and in a consistent state.</a></p></li>
+<li><p><a href="http://bit.ly/1E7I1sI">10 ways to be a faster code reviewer</a></p></li>
+<li><p><a href="http://bit.ly/1wz9qmW">Understanding Test Doubles (Mock vs Stub)</a></p></li>
+<li><p><a href="http://bit.ly/1wz9sv4">HTTP 2.0 &ndash; All the things</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

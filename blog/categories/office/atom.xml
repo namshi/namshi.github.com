@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: office | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/office/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #103]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/13/newsletter-number-103/"/>
+    <updated>2015-08-13T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/13/newsletter-number-103</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi fellas,
+in the last two weeks we started having tech lightning talks here at Namshi.</p>
+
+<p>Below you can see <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> in this (creative) shot while is showing the rest of the gang
+how <a href="http://facebook.github.io/react/">React</a> works and how he used it in our latest open-source project <a href="https://github.com/namshi/roger">Roger</a>.</p>
+
+<p><img class="team center" src="/images/posts/shidhin-react.png"></p>
+
+<p>Talking about Roger, have you checked the blog post <a href="http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/">&ldquo;How Namshi builds Docker containers through Docker containers&rdquo;</a>?</p>
+
+<p>And ofc it&rsquo;s TechThursday:</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.infoq.com/news/2015/08/netflix-universal-javascript">Netflix.com Adopts Universal JavaScript, Drops Java From Rendering Pipeline</a></p></li>
+<li><p><a href="https://github.com/h2non/toxy">Toxy: a hackable HTTP proxy to simulate server failure scenarios and unexpected network conditions</a></p></li>
+<li><p><a href="https://github.com/svenanders/universaljs">A functional reactive web library in only 4.8k</a></p></li>
+<li><p><a href="https://github.com/sjackman/makefile-example">An example of a data analysis pipeline using make</a></p></li>
+<li><p><a href="http://blog.getify.com/promises-part-1/">Best article about Promises so far</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://code.ciphertrick.com/2015/08/03/angularjs-unit-testing-tutorial-karma-jasmine/">Angularjs unit testing tutorial with karma-jasmine </a></p></li>
+<li><p><a href="https://blog.docker.com/2015/08/docker-1-8-content-trust-toolbox-registry-orchestration/">Announcing docker 1.8: content trust, toolbox, and updates to registry and orchestration | docker blog</a></p></li>
+<li><p><a href="https://reploy.io/">Build react native apps faster with reploy</a></p></li>
+<li><p><a href="https://github.com/aerofs/gockerize">Build static golang binaries and package them into minimal docker containers</a></p></li>
+<li><p><a href="http://blog.yld.io/2015/08/10/debugging-memory-leaks-in-node-js-a-walkthrough/">Debugging memory leaks in node.js &ndash; a walkthrough</a></p></li>
+<li><p><a href="https://labs.ctl.io/docker-hub-top-10">Docker hub top 10</a></p></li>
+<li><p><a href="http://www.sitepoint.com/the-es6-conundrum/">ES6 and the evolution of javascript</a></p></li>
+<li><p><a href="http://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/">Essentials of machine learning algorithms</a></p></li>
+<li><p><a href="https://blog.mozilla.org/security/2015/08/06/firefox-exploit-found-in-the-wild/">Firefox exploit found in the wild | mozilla security blog</a></p></li>
+<li><p><a href="https://medium.com/@amix3k/flux-vs-mvc-design-patterns-57b28c0f71b7">Flux vs. mvc (design patterns) — medium</a></p></li>
+<li><p><a href="http://insights.dice.com/2015/07/06/interview-qs-javascript-developers/">Interview qs for javascript developers</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/08/content-trust-docker-1-8/">Introducing docker content trust</a></p></li>
+<li><p><a href="https://medium.com/@boopathi/it-s-the-future-7a4207e028c2">It’s the future</a></p></li>
+<li><p><a href="http://blog.bitovi.com/longevity-or-lack-thereof-in-javascript-frameworks/">Longevity (or lack thereof) in javascript frameworks</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/08/monitoring-connect-applications/">Monitoring connect applications</a></p></li>
+<li><p><a href="http://kartar.net/2015/08/monitoring-survey-2015---tools/">Monitoring survey 2015 &ndash; tools – kartar.net</a></p></li>
+<li><p><a href="https://blog.cloudflare.com/middle-east-expansion/">Now serving the middle east: 4 new data centers, partnerships</a></p></li>
+<li><p><a href="http://tobyho.com/2015/06/23/polymorphism-that-just-works/">Polymorphism that just works</a></p></li>
+<li><p><a href="https://medium.com/@boopathi/promises-in-javascript-6a4a70db7b67">Promises in javascript</a></p></li>
+<li><p><a href="http://mmikowski.github.io/the_lie/">Rest, the big lie</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2015/8/7/stuff-the-internet-says-on-scalability-for-august-7th-2015.html">Stuff the internet says on scalability for august 7th, 2015 </a></p></li>
+<li><p><a href="https://github.com/substack/regex-adventure">Substack/regex-adventure</a></p></li>
+<li><p><a href="https://datafloq.com/read/challenges-opportunities-big-data-as-a-service/1389">The challenges and opportunities of big-data-as-a-service</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">The ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="https://github.com/pybee/batavia/">Tools to run python bytecode in the browser.</a></p></li>
+<li><p><a href="http://raganwald.com/2015/06/26/decorators-in-es7.html">Using es.later decorators as mixins</a></p></li>
+<li><p><a href="http://codetunes.com/2015/we-all-are-going-to-meet-in-the-elixir-world/">We all are going to meet in the elixir world</a></p></li>
+<li><p><a href="http://futurice.com/blog/why-debugging-is-all-about-understanding">Why debugging is all about understanding — futurice</a></p></li>
+<li><p><a href="http://www.quora.com/Why-do-software-engineers-tend-to-get-into-the-office-so-late">Why do software engineers tend to get into the office so late? &ndash; quora</a></p></li>
+<li><p><a href="http://www.quora.com/Why-was-Erlang-chosen-for-use-in-Facebook-chat">Why was erlang chosen for use in facebook chat?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: code-reviews | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/code-reviews/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #116]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/26/newsletter-number-116/"/>
+    <updated>2015-11-26T13:35:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/26/newsletter-number-116</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
+
+<p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
+<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="https://open.buffer.com/impostor-syndrome-8-tips-i-wish-i-had-known/?utm_content=buffer2bcc4">8 tips about overcoming impostor syndrom</a></p></li>
+<li><p><a href="https://netguru.co/blog/a-quick-guide-to-peer-code-review">a quick guide to peer code review (and why you should do it)</a></p></li>
+<li><p><a href="https://medium.com/@darrenrush/after-docker-unikernels-and-immutable-infrastructure-93d5a91c849e">after docker: unikernels and immutable infrastructure</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/chatops-at-summit2015/">chatting about chatops from atlassian summit &ndash; atlassian developers</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://ma.tt/2015/11/dance-to-calypso/">dance to calypso &ndash; wordpress -php +react/nodejs</a></p></li>
+<li><p><a href="https://philsturgeon.uk/2015/11/20/deploying-with-git-flow-tags-and-circleci/">deploying with git-flow, tags and circleci</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/swapping-array-elements-in-place/">javascript swap in-place array elements</a></p></li>
+<li><p><a href="https://github.com/magento/magento2">magento/magento2</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?list=PLqrz4nXepkz4FIkZPnyJl6hk-SC-034K1">one-click deploy for service oriented architectures &ndash; kate heddleston (software engineer) &ndash; youtube</a></p></li>
+<li><p><a href="http://www.tedunangst.com/flak/post/pinboard-tips-for-web-design">pinboard tips for web design</a></p></li>
+<li><p><a href="http://grodola.blogspot.com/2015/11/openbsd-support-for-psutil.html">random writings and thoughts about python: openbsd support for psutil</a></p></li>
+<li><p><a href="https://github.com/eanplatter/react-starter">react-starter for beginners</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/quadratic-time-sorting-algorithms/">simple o(n<sup>2</sup>) sorting algorithms in javascript</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/11/18/software-and-entrepreneurship-with-seth-godin/">software and entrepreneurship with seth godin &ndash; software engineering daily</a></p></li>
+<li><p><a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">support for older versions of internet explorer ends on january 12, 2016 </a></p></li>
+<li><p><a href="http://www.slideshare.net/jasonmesut/the-craft-of-collaboration">the craft of collaboration</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

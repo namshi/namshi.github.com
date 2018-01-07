@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: OrientDB | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/orientdb/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[OrientDB: Why Multi-Model DBMS are the Next Generation NoSQL]]></title>
+    <link href="http://namshi.github.io/blog/2015/12/06/orientdb-why-multi-model-dbms-are-the-next-generation-nosql/"/>
+    <updated>2015-12-06T10:26:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/12/06/orientdb-why-multi-model-dbms-are-the-next-generation-nosql</id>
+    <content type="html"><![CDATA[<p>We&rsquo;re thrilled to host <a href="https://www.linkedin.com/in/garulli">Luca Garulli</a>, creator of <a href="http://orientdb.com/orientdb/">OrientDB</a>,
+at the <a href="https://www.google.ae/maps/place/Gold+%26+Diamond+Park/@25.1257122,55.2068166,17z/data=!3m1!4b1!4m2!3m1!1s0x3e5f6bc672b8fc7f:0x250fe8f16e1b1804?hl=en">Namshi HQ</a> to talk a little bit about <a href="http://www.meetup.com/atthecribb/events/227245046/">NoSQL databases here in Dubai</a>.</p>
+
+<p><img class="center <a" src="href="http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png">http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png</a>"></p>
+
+<!-- more -->
+
+
+<p>The event, open to the public, will be held at our offices in Emaar Gold and Diamond Park,
+(next to the FGB metro station, building #3, 2nd floor) and we&rsquo;d gladly welcome anyone who
+is interested to join: Luca will be talking about NoSQL databases in general, what are
+multi-model DBs and will go through OrientDB, a new-generation
+<a href="http://pettergraff.blogspot.ae/2013/12/orientdb-thanks.html">graph database that&rsquo;s been in the news for quite some time</a>.</p>
+
+<p>What are you waiting for? RSVP to the <a href="http://www.meetup.com/atthecribb/events/227245046/">meetup</a> and come join us!</p>
+]]></content>
+  </entry>
+  
+</feed>

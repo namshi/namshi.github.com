@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Angular2 | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/angular2/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #87]]></title>
+    <link href="http://namshi.github.io/blog/2015/04/23/newsletter-number-87/"/>
+    <updated>2015-04-23T11:59:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/04/23/newsletter-number-87</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello folks!
+It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
+
+<p>This week our teammates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> have been busy writing about network tools and languages :)</p>
+
+<p><a href="http://tech.namshi.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/">Godo, Our First Open Source Library Written in Golang</a></p>
+
+<p><a href="http://tech.namshi.io/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way/">Sending Files in Unix: The Quick and Dirty Way</a></p></blockquote>
+
+<p><strong>And here is the list of links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/04/big-data-cloud-way.html">Big data, the cloud way</a></p></li>
+<li><p><a href="http://www.zdnet.com/article/google-and-mesospheres-work-on-docker-cluster-manager-kubernetes-pays-off/">Google and Mesosphere&rsquo;s work on Docker cluster</a></p></li>
+<li><p><a href="http://radius.com/2015/04/16/why-you-need-a-data-strategy/">Why You Need a Data Strategy</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://realpython.com/blog/python/dockerizing-flask-with-compose-and-machine-from-localhost-to-the-cloud/">Dockerizing Flask</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/04/22/mesosphere-launches-early-access-program-for-its-data-center-operating-system/">Mesosphere launches early-access program for its data center OS</a></p></li>
+<li><p><a href="http://callmecavs.github.io/layzr.js/">Small, dependency free lazy loading library </a></p></li>
+<li><p><a href="http://bevacqua.github.io/dragula/">A simple powerful drag and drop library</a></p></li>
+<li><p><a href="http://www.rq.crockford.com">Douglas Crockford attempt to  to solve Asynchronicity on server</a></p></li>
+<li><p><a href="http://commandlinepoweruser.com/">Command Line Power User</a></p></li>
+<li><p><a href="https://ideatosdotcom.wordpress.com/2015/04/18/grav-a-modern-flat-file-cms/">Grav: A Modern Flat-File CMS</a></p></li>
+<li><p><a href="http://www.daedtech.com/clean-communication">Clean Communication</a></p></li>
+<li><p><a href="http://www.darthnull.org/2015/04/21/blind-hash">Salt as a Service: Interesting approach to hashing passwords</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/04/start-contributing-to-docker-in-5-easy-steps/">Start contributing to Docker in 5 easy steps</a></p></li>
+<li><p><a href="http://buff.ly/1G2pKgY">Hexspeak</a></p></li>
+<li><p><a href="https://github.com/unixy/varnishtuner.py/blob/master/README.md?utm_content=buffer4602f&amp;utm_medium=social&amp;utm_source=linkedin.com&amp;utm_campaign=buffer">varnish tuner</a></p></li>
+<li><p><a href="http://buff.ly/1b5AH9r">Why Golang Is Not Good</a></p></li>
+<li><p><a href="http://buff.ly/1bbqJE5">Rewriting dl.google.com in golang</a></p></li>
+<li><p><a href="https://github.com/willmendesneto/angular-testing-recipes/blob/master/README.md">Angular Testing Recipes</a></p></li>
+<li><p><a href="http://blog.mgechev.com/2015/04/06/angular2-first-impressions/">Angular2 First impressions</a></p></li>
+<li><p><a href="http://thenextweb.com/insider/2015/03/23/how-i-hacked-indias-biggest-startup/">How I hacked India&rsquo;s biggest startup</a></p></li>
+<li><p><a href="http://www.smashingmagazine.com/2015/04/21/react-to-the-future-with-isomorphic-apps/">React To The Future With Isomorphic Apps</a></p></li>
+<li><p><a href="http://www.ubuntu.com/cloud/tools/lxd">LXD</a></p></li>
+<li><p><a href="http://talks.php.net/fluent15#/">Speeding up the web with PHP 7</a></p></li>
+<li><p><a href="http://dominik.honnef.co/posts/2014/12/an_incomplete_list_of_go_tools/">An incomplete list of GO tools</a></p></li>
+<li><p><a href="http://uxmag.com/articles/let-your-users-wait">Let Your Users Wait!</a></p></li>
+<li><p><a href="http://philipwalton.com/articles/how-to-unit-test-private-functions-in-javascript/">How to Unit Test Private Functions in JavaScript</a></p></li>
+<li><p><a href="http://www.businessinsider.com/google-mobilegeddon-2015-4">google mobilegeddon !!</a></p></li>
+<li><p><a href="http://www.tcpipguide.com/free/t_TCPSillyWindowSyndromeandChangesTotheSlidingWindow.htm">TCP &ldquo;Silly Window Syndrome&rdquo; and Changes To the Sliding Window System For Avoiding Small-Window Problems </a></p></li>
+<li><p><a href="http://dduan.net/post/2015/04/swift-function-fun-facts/">Swift Function Fun Facts</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

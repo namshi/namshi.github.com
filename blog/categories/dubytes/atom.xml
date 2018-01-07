@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dubytes | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/dubytes/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #80]]></title>
+    <link href="http://namshi.github.io/blog/2015/03/05/newsletter-number-80/"/>
+    <updated>2015-03-05T07:11:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/03/05/newsletter-number-80</id>
+    <content type="html"><![CDATA[<blockquote><p>Howdy people, it&rsquo;s <strong>#TechThursday</strong> at <a href="http://twitter.com/techNamshi">#namshi</a>, again! Hope you missed us ;)</p>
+
+<p>First things first:</p>
+
+<p><strong> We&rsquo;re helping to kick start a new cross-tech community here in Dubai: </strong></p>
+
+<p>DUBYTES, this is the name, met yesterday for the 1st time and <a href="https://twitter.com/whelton">James Whelton</a> gave an interesting quick introduction to <a href="http://facebook.github.io/react/">React</a>.
+We&rsquo;ll meet every 1st Wednesday of the month, and if you love technology as much as we do: drop by and join us for a nice discussion.
+Feel free to ping us on twitter to know the next venue: speech proposals are welcome too!
+More news to come on this!</p>
+
+<p><img class="center" src="/images/posts/dubytes-1st-meeting.jpg"></p></blockquote>
+
+<p><strong>And here is the traditional &ldquo;selecta&rdquo; of links our team found interesting this week around the interwebs, enjoy:</strong></p>
+
+<ul>
+<li><p><a href="http://www.2ality.com/2015/02/using-es6-today-minsk.html">A 90 minute overview of ECMAScript 6</a></p></li>
+<li><p><a href="http://builtwith.com/">Find out what websites are Built With</a></p></li>
+<li><p><a href="http://bit.ly/1M4mh70">Loupe is a little visualisation to help you understand how JavaScript&rsquo;s call stack/event loop/callback queue</a></p></li>
+<li><p><a href="http://svinfusion.com/blog/sv-in-fusion-hosts-smart-government-open-data-in-san-francisco/">open data in SF municipality with APIs</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://verraes.net/2015/02/form-command-model-validation/">Form, Command, and Model Validation</a></p></li>
+<li><p><a href="http://www.whitewashing.de/2015/02/14/phpunit_before_annotations_and_traits_for_code_reuse.html">PHPunit @before Annotations and traits for code-reuse</a></p></li>
+<li><p><a href="http://www.whitewashing.de/2015/02/10/a_case_for_weak_type_hints_only_in_php7.html">A case for weak type hints only inPHP7</a></p></li>
+<li><p><a href="http://www.whitewashing.de/2015/02/19/vagrant_nfs_and_npm.html">Vagrant, NFS and NPM</a></p></li>
+<li><p><a href="https://github.com/iojs/io.js/blob/v1.x/CHANGELOG.md">io.js starts ARM support! check out the changelog: </a></p></li>
+<li><p><a href="http://blog.thecodewhisperer.com/2015/02/15/you-have-to-know-when-to-stop/">You Have to Know When to Stop</a></p></li>
+<li><p><a href="http://litt.no/tech%20stuff/javascript_module_performance">Javascript: Module or module</a></p></li>
+<li><p><a href="http://www.forbes.com/sites/quora/2014/07/14/what-is-the-most-valuable-programming-language-to-know-for-the-future-and-why/3/">Forbers &ndash; What Is The Most Valuable Programming Language To Know For The Future And Why?</a></p></li>
+<li><p><a href="https://github.com/emberjs/ember.js/pull/10501">Emberjs &ndash; Glimmer Engine</a></p></li>
+<li><p><a href="http://buff.ly/1GkQkXu">Infrastructure as Code with Terraform</a></p></li>
+<li><p><a href="http://buff.ly/1vZzvh7">Google is bringing Chrome Remote Desktop to Chromebooks next</a></p></li>
+<li><p><a href="http://buff.ly/1DD0I6R">Inspect Elements On Android’s Internet Browser</a></p></li>
+<li><p><a href="http://buff.ly/1NbK2vg">What are the most interesting HTML/JS/DOM/CSS hacks that most web developers don&rsquo;t know about?</a></p></li>
+<li><p><a href="http://buff.ly/1EbYbWH">Wiki creator reinvents collaboration, again</a></p></li>
+<li><p><a href="http://buff.ly/1M2Eu2S">Ultra-simple wrapper around XMLHttpRequest</a></p></li>
+<li><p><a href="http://buff.ly/1vTUzWm">Why did Netflix use #NGINX and FreeBSD to build their own CDN?</a></p></li>
+<li><p><a href="http://buff.ly/1E4cU5U">The 5 Pillars of a Solid Front-End</a></p></li>
+<li><p><a href="http://www.bbc.co.uk/blogs/internet/entries/47a96d23-ae04-444e-808f-678e6809765d">How we built the new BCC homepage</a></p></li>
+<li><p><a href="http://antirez.com/news/86?utm_source=hackernewsletter">Side projects&hellip; Redis is now 6 years old</a></p></li>
+<li><p><a href="https://highlightjs.org/">highlight.js: syntax highlighting for the Web</a></p></li>
+<li><p><a href="http://bit.ly/18SdOWj">Guiding Object-Oriented Design with Tests</a></p></li>
+<li><p><a href="http://bit.ly/1EP2pTg">Effective Doctrine2: Performance Tips for Symfony2 Developers</a></p></li>
+<li><p><a href="http://bit.ly/1zZvndx">React JS Tutorial and Guide to the Gotchas</a></p></li>
+<li><p><a href="http://docs.vagrantup.com/v2/provisioning/docker.html">Docker Provisioner</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/03/socketplane-excited-to-be-joining-docker-to-collaborate-with-networking-ecosystem/">Socketplane excited to be jining docker to collaborate with networking ecosystem</a></p></li>
+<li><p><a href="http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.htm">Command-line tools can be 235x faster than your Hadoop cluster</a></p></li>
+<li><p><a href="https://speakerdeck.com/elasticsearch/query-optimization-go-more-faster-better">Elasticsearch query optimization</a></p></li>
+<li><p><a href="http://blog.qbox.io/quick-and-dirty-autocomplete-with-elasticsearch-completion-suggest">Quick and Dirty Autocomplete with Elasticsearch Completion Suggest</a></p></li>
+<li><p><a href="https://gist.github.com/wincent/598fa75e22bdfa44cf47">Unofficial Relay FAQ</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=kC0JYp79tdo">Elementor, an improved element explorer for protractor</a></p></li>
+<li><p><a href="http://ryanclark.me/getting-started-with-flux/">Introduction to Facebook&rsquo;s Flux architecture</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=uD6Okha_Yj0">An Angular2 Todo App: First look at App Development in Angular2</a></p></li>
+<li><p><a href="http://smartdatacollective.com/lbedgood/302486/how-data-service-daas-revolutionizing-marketing">How Data Service DAAS Revolutionizing Marketing</a></p></li>
+<li><p><a href="https://realpython.com/blog/python/api-integration-in-python/">API integration in Python</a></p></li>
+<li><p><a href="http://techcrunch.com/2015/03/02/paypal-paydiant/">paypal acquires paydiant</a></p></li>
+<li><p><a href="http://datascience.sqlpass.org/">SQL pass conference with data science</a></p></li>
+</ul>
+
+
+<blockquote><p>Aaaand that&rsquo;s all folks, see you next week! :)</p></blockquote>
+]]></content>
+  </entry>
+  
+</feed>

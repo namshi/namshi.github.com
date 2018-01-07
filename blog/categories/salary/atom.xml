@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Salary | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/salary/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #84]]></title>
+    <link href="http://namshi.github.io/blog/2015/04/02/newsletter-84/"/>
+    <updated>2015-04-02T12:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/04/02/newsletter-84</id>
+    <content type="html"><![CDATA[<blockquote><p><strong>#TechThursday</strong> time!</p>
+
+<p>Do you really need a desk to code ???</p>
+
+<p>&hellip; Just do it!</p>
+
+<p><a href="/team/#Luciano%20Colosio">Lucio&rsquo;s way</a></p>
+
+<p><img class="center" src="/images/posts/lucio-under-desk-min.jpg"></p></blockquote>
+
+<p><strong>Here is the usual &ldquo;selection&rdquo; of links our team found interesting this week , enjoy:</strong></p>
+
+<ul>
+<li><p><a href="http://jpauli.github.io/2015/03/24/zoom-on-php-objects.html">Zoom on PHP objects and classes</a></p></li>
+<li><p><a href="http://www.daedtech.com/salary-negotiations-win-by-losing">Salary Negotiations: Win by Losing</a></p></li>
+<li><p><a href="http://behat-page-object-extension.readthedocs.org/en/latest/">Behat &ndash; Page Object Extension</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/PageObject.html">Page object pattern</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2015/03/of-course-its-difficult.html">Of course it&rsquo;s difficult&hellip;</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/CodeAsDocumentation.html">Code As Documentation</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2015/03/active-listening.html">Active listening</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://blog.thecodewhisperer.com/2015/03/28/your-tests-are-dragging-you-down/">Your Tests Are Dragging You Down</a></p></li>
+<li><p><a href="https://pages.zend.com/TY-Infographic.html">PHP 7 Infographic &ndash; 5 things you need to know</a></p></li>
+<li><p><a href="http://www.slideshare.net/giorrrgio/import-golang-struct-microservice">Import golang; struct microservice &ndash; Codemotion Rome 2015</a></p></li>
+<li><p><a href="http://buff.ly/1bNvrYw">Stop using tail -f (mostly)</a></p></li>
+<li><p><a href="http://buff.ly/1Nt1Bo2">node-objectify: convert a list of objects into an object</a></p></li>
+<li><p><a href="http://buff.ly/1F5ZvZ9">Acceptance tests for a CDN</a></p></li>
+<li><p><a href="http://buff.ly/1bEVn8S">Why do some developers at strong companies like Google consider Agile development to be nonsense?</a></p></li>
+<li><p><a href="http://buff.ly/1I4SOXB">The StackExchange architecture and its performance</a></p></li>
+<li><p><a href="http://t.co/KxTLsZVmXf">Still one of my favourite hacks: Dublin Bus timetable boards use a Japanese あ character to denote disabled access</a></p></li>
+<li><p><a href="http://buff.ly/1M9ADq9">HTML code news sites use for tragedies like Germanwings Flight 4U 9525</a></p></li>
+<li><p><a href="https://t.co/IxLxXW6OrU">redis trivia</a></p></li>
+<li><p><a href="http://buff.ly/1D1aoMB">Redis 3.0.0 is closer</a></p></li>
+<li><p><a href="http://buff.ly/1HiuWQ3">Google rebrands and launches brand new platform</a></p></li>
+<li><p><a href="http://buff.ly/1yBxPqn">Go interfaces communicate intent</a></p></li>
+<li><p><a href="http://buff.ly/1COXm4r">Shrinking Docker Images</a></p></li>
+<li><p><a href="http://buff.ly/1BRlHTi">The Realities of Docker in Production</a></p></li>
+<li><p><a href="(http://bit.ly/1CcT16h">What Every Open Source Project Needs</a></p></li>
+<li><p><a href="http://bit.ly/1P1lVAq">Docker security: making sure you get it right</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340">A Beginner&rsquo;s Guide to HTTP and REST</a></p></li>
+<li><p><a href="https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99">Why you should not use AngularJS</a></p></li>
+<li><p><a href="https://medium.com/este-js-framework/what-i-would-recommend-instead-of-angular-js-62b057d8a9e">What I would recommend instead of Angular.js?</a></p></li>
+<li><p><a href="http://robotlolita.me/2013/12/08/a-monad-in-practicality-first-class-failures.html">A Monad in Practicality: First-Class Failures</a></p></li>
+<li><p><a href="http://www.joezimjs.com/javascript/simplifying-the-es6-workflow-with-jspm/">Simplifying the ES6 Workflow with JSPM</a></p></li>
+<li><p><a href="https://github.com/rc0x03/node-osmosis">Osmosis</a></p></li>
+<li><p><a href="http://blog.risingstack.com/functional-ui-and-components-as-higher-order-functions/">Functional UI and Components as Higher Order Functions</a></p></li>
+<li><p><a href="http://willi.am/blog/2014/07/28/test-your-api-with-supertest/">Test Your API With Supertest</a></p></li>
+<li><p><a href="http://keithclark.co.uk/articles/loading-css-without-blocking-render/">Loading CSS without blocking render</a></p></li>
+<li><p><a href="https://github.com/kriskowal/gtor">A General Theory of Reactivity</a></p></li>
+<li><p><a href="https://www.airpair.com/angularjs/posts/ng-wat-and-the-story-behind-it">ng-wat And The Story Behind It</a></p></li>
+<li><p><a href="http://blog.heavybit.com/blog/2015/3/23/dockermeetup">Docker in production</a></p></li>
+<li><p><a href="http://www.brianstorti.com/stop-using-tail">Stop using tail (mostly)</a></p></li>
+<li><p><a href="http://www.slideshare.net/giorrrgio/import-golang-struct-microservice">Golang and microservices</a></p></li>
+<li><p><a href="http://blog.comperiosearch.com/blog/2015/02/09/kibana-4-beer-analytics-engine/">Kibana 4 – the beer analytics engine</a></p></li>
+<li><p><a href="http://bouk.co/blog/elasticsearch-rce/">Insecure default in Elasticsearch enables remote code execution</a></p></li>
+<li><p><a href="http://google-opensource.blogspot.ae/2015/03/how-to-format-python-code-without.html">How to format Python code without really trying</a></p></li>
+<li><p><a href="https://databricks.com/blog/2015/04/01/spark-2-rearchitecting-spark-for-mobile.html">Rearchitecting Spark for Mobile Platforms</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

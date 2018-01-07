@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: workers | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/workers/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #68]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/11/newsletter-number-68/"/>
+    <updated>2014-12-11T10:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/11/newsletter-number-68</id>
+    <content type="html"><![CDATA[<p>Hello folks!</p>
+
+<blockquote><p>News from the tech team:
+<a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>
+are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
+The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
+
+<p><img class="center" src="/images/dockercon.jpg"></p>
+
+<blockquote><p>We have a new pet in the office, the Docker whale!
+Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
+
+<p><img class="center" src="/images/docker.jpg"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://bit.ly/1unKjhW">Meaningful commit messages</a></p></li>
+<li><p><a href="http://bit.ly/1Aj7Che">How to Use npm as a Build Tool</a></p></li>
+<li><p><a href="http://bit.ly/1sfcmFY">Symfony Docker example</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1BdOfaC">Rubook.io Solve devOps problems in your sleep with IFTTT-style mitigation of alerts</a></p></li>
+<li><p><a href="http://engineering.clever.com/2014/12/10/when-your-ip-traffic-in-aws-disappears-into-a-black-hole">When your IP traffic in AWS disappears into a black hole</a></p></li>
+<li><p><a href="http://www.yellow-bricks.com/2014/12/08/operational-efficiency/">Operational Efficiency (You&rsquo;re not Facebook/Google)</a></p></li>
+<li><p><a href="http://nginx.com/blog/using-ngnix-amazon-elastic-load-balancer-aws/">NGINX Plus and Amazon Elastic Load Balancer on AWS &ndash; NGINX</a></p></li>
+<li><p><a href="http://threatpost.com/researchers-say-poodle-attack-affects-some-tls-implementations/109764">Researchers Say POODLE Attack Affects Some TLS Implementations | Threatpost | The first stop for security news</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-delivers-more-automation-docker-lxc-application-containers">SaltStack Delivers More Automation for Docker and LXC Application Containers</a></p></li>
+<li><p><a href="https://www.serverdensity.com/cost-of-downtime/">The real cost of downtime &ndash; Server Density</a></p></li>
+<li><p><a href="http://www.slideshare.net/adamchristian/the-black-magic-of-engineering-management">The black magic of Engineering management</a></p></li>
+<li><p><a href="http://jakearchibald.com/2014/offline-cookbook/">The offline cookbook</a></p></li>
+<li><p><a href="https://jakearchibald.github.io/isserviceworkerready/">is ServiceWorker ready?</a></p></li>
+<li><p><a href="http://www.wired.com/2014/12/google-maps-ground-truth">The Huge, Unseen Operation Behind the Accuracy of Google Maps</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20140826123205-20017018-8-qualities-that-make-great-bosses-unforgettable">8 qualities that make great bosses unforgettable</a></p></li>
+<li><p><a href="http://www.quora.com/Why-did-Koding-move-away-from-containers-and-Docker-to-virtual-machines">Why did Koding switch from containers to VMs?</a></p></li>
+<li><p><a href="https://github.com/mozilla/awsbox">A featherweight PaaS on top of Amazon EC2 for deploying node apps</a></p></li>
+<li><p><a href="https://www.npmjs.com/">new website for NPM</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-6-vardumper-component">the new Symfony2 VarDumper component</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/20141114143018-52594-ten-stupid-rules-that-drive-great-employees-away">10 stupid rules that drive great employees away</a></p></li>
+<li><p><a href="https://github.com/wellcaffeinated/PhysicsJS">physics engine for javascript</a></p></li>
+<li><p><a href="http://www.2ality.com/2014/12/es6-proxies.html">Meta programming with ECMAScript 6 proxies</a></p></li>
+<li><p><a href="https://github.com/arokor/barn">redis like API on top of localStorage</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

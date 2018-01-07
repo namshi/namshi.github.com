@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: culture | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/culture/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #107]]></title>
+    <link href="http://namshi.github.io/blog/2015/09/10/newsletter-number-107/"/>
+    <updated>2015-09-10T15:10:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/09/10/newsletter-number-107</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>Tech Thursday has come again! We had a big event last week!</p>
+
+<p>Our nerdy &ldquo;managers&rdquo; went to Berlin last week to participate in the Rocket Tech Summit 2015
+<img class="team center" src="/images/berlin_rocket_team.jpg"></p>
+
+<p><img class="team center" src="/images/berlin_rocket_alex.jpg"></p>
+
+<p>He like to be that casual! It was a good talk though :)</p>
+
+<p>Links? Here they are!</p></blockquote>
+
+<ul>
+<li><p><a href="https://www.facebook.com/bbcnews/videos/10153081461092217/">&ldquo;without google maps we&rsquo;d be lost&rdquo; &ndash; syrian refugee explains how he has been using apps bbc.co.uk/panorama </a></p></li>
+<li><p><a href="https://robots.thoughtbot.com/better-commit-messages-with-a-gitmessage-template">better commit messages with a .gitmessage template</a></p></li>
+<li><p><a href="https://stefanscherer.github.io/create-an-io-js-container-image-for-windows/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4AT8dkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">create a node.js container image for windows</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.devopsbookmarks.com/">devops bookmarks</a></p></li>
+<li><p><a href="http://www.dontfeartheinternet.com/">don’t fear the internet basico html &amp; css for non-web designers</a></p></li>
+<li><p><a href="http://www.mitchchn.me/2014/os-x-terminal">eight terminal utilities every os x command line user should know</a></p></li>
+<li><p><a href="https://medium.com/@kellan/five-years-building-a-culture-and-handing-it-off-54a38c3ab8de">five years, building a culture, and handing it off. — medium</a></p></li>
+<li><p><a href="http://blog.golang.org/go15gc?utm_content=bufferabe53">go gc: prioritizing low latency and simplicity &ndash; the go blog</a></p></li>
+<li><p><a href="https://github.com/black-screen/black-screen?utm_content=bufferea558">http://tech.namshi.io/blog/2015/09/10/newsletter-number-107/</a></p></li>
+<li><p><a href="https://github.com/jroes/par?utm_content=bufferf1d16">Run similar commands concurrently</a></p></li>
+<li><p><a href="https://google.github.io/lovefield/?utm_content=bufferf89f8">lovefield: the data access library that loves you</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/minimising-font-downloads/">minimising font downloads &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/release/v4.0.0/?utm_content=bufferb4c18">node v4.0.0 (stable) | node.js</a></p></li>
+<li><p><a href="https://nodejs.org/en/blog/announcements/foundation-elects-board/?utm_content=buffer81979">node.js foundation elects board of directors | node.js</a></p></li>
+<li><p><a href="http://onethingwell.org/post/128103218146/wordsafety">one thing well | wordsafety</a></p></li>
+<li><p><a href="http://php.net/index.php?utm_content=buffer0b04a">php 7.0.0 rc 2 released</a></p></li>
+<li><p><a href="https://groups.google.com/forum/">redis 3.0.4 and 2.8.22</a></p></li>
+<li><p><a href="http://www.quirksmode.org/blog/archives/2015/07/stop_pushing_th.html">stop pushing the web forward &ndash; quirksblog</a></p></li>
+<li><p><a href="http://www.mokacoding.com/blog/functor-applicative-monads-in-pictures/">swift functors, applicatives, and monads in pictures</a></p></li>
+<li><p><a href="http://virtuecenter.com/blog/the_effects_of_computer_programming_on_the_brain.html">the effects of computer programming on the brain</a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/announcing-sleepy-puppy-cross-site.html?utm_content=buffer8d3de">the netflix tech blog: announcing sleepy puppy &ndash; cross-site scripting payload management for web application security testing</a></p></li>
+<li><p><a href="http://www.itskeptic.org/content/what-devops-role">what is a devops role?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #101]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/30/newsletter-number-101/"/>
+    <updated>2015-07-30T12:56:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/30/newsletter-number-101</id>
+    <content type="html"><![CDATA[<p>Hi guys, even after the 100th newsletter we still have something to suggest you.</p>
+
+<p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
+
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+
+<!-- more -->
+
+
+<p>Here the links, enjoy:</p>
+
+<ul>
+<li><p><a href="https://developer.salesforce.com/blogs/engineering/2015/07/365-days-cultural-kaizen.html">365 days of cultural kaisen</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/php-optimizer">a cfg optimizer for php</a></p></li>
+<li><p><a href="http://www.slideshare.net/Codemotion/orlando-mashapebuildsuccessful-apis">building successful apis overnight</a></p></li>
+<li><p><a href="https://speakerdeck.com/jnewland/chatops-at-github">chatops at github</a></p></li>
+<li><p><a href="http://addyosmani.com/first/">components should be focused, independent, reusable, small and testable (first)</a></p></li>
+<li><p><a href="https://speakerdeck.com/derekprior/cultivating-a-code-review-culture">cultivating a code review culture // speaker deck</a></p></li>
+<li><p><a href="https://github.com/p8952/bocker">docker implemented in 100 lines of bash</a></p></li>
+<li><p><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/">es6 in depth: arrow functions ✩ mozilla hacks – the web developer blog</a></p></li>
+<li><p><a href="https://www.nginx.com/blog/how-nginx-plans-to-support-http2/">how nginx plans to support http/2</a></p></li>
+<li><p><a href="https://medium.com/@jeffbski/is-react-js-fast-faster-than-framework-or-are-there-more-relevant-questions-to-be-asking-bcf40211f89b">is react.js fast? faster than {framework}? … or are there more relevant questions to be asking? — medium</a></p></li>
+<li><p><a href="http://managingbias.fb.com/">managing bias | facebook</a></p></li>
+<li><p><a href="http://mashable.com/2015/07/29/microsoft-edge-vs-google-chrome/?utm_cid=mash-com-fb-tech-link">microsoft edge vs. google chrome: which web browser is faster?</a></p></li>
+<li><p><a href="https://medium.com/@kevincennis/on-unit-testing-1cc6798f81ee">on unit testing by kevin cennis</a></p></li>
+<li><p><a href="http://www.jamiembrown.com/blog/one-in-every-600-websites-has-git-exposed/">one in every 600 websites has .git exposed</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/06/09/react-contexts-and-dependency-injection/">react contexts and dependency injection — jack hsu</a></p></li>
+<li><p><a href="https://www.firebase.com/blog/2015-07-15-reactfire-0-5-0.html">reactfire 0.5.0 &ndash; firebase</a></p></li>
+<li><p><a href="http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html">seven surprising javascript &lsquo;features&rsquo;</a></p></li>
+<li><p><a href="http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/">the hitchhiker&rsquo;s guide to modern javascript tooling</a></p></li>
+<li><p><a href="https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04">the real 10 algorithms that dominate our world — medium</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">the ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930">understanding design patterns in javascript &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/way-we-work-ef431646ab17">way we work — medium engineering</a></p></li>
+<li><p><a href="https://www.pagerduty.com/blog/what-is-chatops/">what is chatops? and how do i get started?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

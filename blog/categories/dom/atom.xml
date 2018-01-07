@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dom | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/dom/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #72]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/08/newsletter-number-72/"/>
+    <updated>2015-01-08T15:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/08/newsletter-number-72</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello Folks!</p>
+
+<p>Here we go with the first <a href="/blog/categories/techthursday/">#TechThursday</a> for 2015.</p>
+
+<p>Every now and then it happens that people in our team wear the same geeky T-shirt&hellip; <strong>T-shirt clash</strong>:</p>
+
+<p><img class="center" src="/images/t-shirt.jpg"></p></blockquote>
+
+<ul>
+<li><p><a href="https://github.com/bcoe/crapify">Crapify, a proxy for simulating slow, spotty, HTTP connections</a></p></li>
+<li><p><a href="https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99">Why you should not use Angular</a></p></li>
+<li><p><a href="https://codeascraft.com/2012/05/22/blameless-postmortems/">Blameless PostMortems and a Just Culture</a></p></li>
+<li><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">The indtroduction to Reactive Programming</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://slidesha.re/1xUpRNz">The DevOps Wonder</a></p></li>
+<li><p><a href="http://bit.ly/1DA8dNX">React js Vs Angular js</a></p></li>
+<li><p><a href="http://bit.ly/1AuEg3r">Scrawl &ndash; web capture crawler</a></p></li>
+<li><p><a href="http://bit.ly/1yDu0Fs">Docker &ndash; Beginner&rsquo;s tutorial</a></p></li>
+<li><p><a href="https://github.com/denderello/symfony-docker-example">Dockerized Symfony Project</a></p></li>
+<li><p><a href="https://github.com/google/novm">Novm &ndash; legacy-free, type 2 hypervisor written in Go</a></p></li>
+<li><p><a href="http://buff.ly/1xzIODe">Why you should pay developers to learn</a></p></li>
+<li><p><a href="http://buff.ly/1xvT9QC">How can React and Flux help us create better Angular applications?</a></p></li>
+<li><p><a href="http://buff.ly/1xvT3Ix">How Much Testing is Too Much?</a></p></li>
+<li><p><a href="http://buff.ly/14ony8u">Agile Won&rsquo;t Fix Your Organization</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-cross-account-access-in-the-aws-management-console/">Cross-Account Access in the AWS Management Console</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-ec2-spot-instance-termination-notices/">EC2 Spot Instance Termination Notices</a></p></li>
+<li><p><a href="http://www.slideshare.net/bingoarunprasath/docker-demo-on-php-application-deployment">Docker &ndash; Demo on PHP Application deployment</a></p></li>
+<li><p><a href="http://weavora.com/blog/2013/03/26/why-we-prefer-symfony2-over-yii-framework/">Symfony2 Over Yii</a></p></li>
+<li><p><a href="https://github.com/es-analysis/plato">JavaScript source code visualization, static analysis, and complexity tool</a></p></li>
+<li><p><a href="https://plus.google.com/app/basic/stream/z12iztbo0mzwhnkbi04chrfidpb4s1vglfg">Chrome Canary improvements to the Network panel</a></p></li>
+<li><p><a href="https://github.com/dai-shi/codeonmobile">A coding tool on mobile devices targeting GitHub/Codeship/Heroku</a></p></li>
+<li><p><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></p></li>
+<li><p><a href="http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/">Working Effectively With iTerm2</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #64]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/06/newsletter-number-64/"/>
+    <updated>2014-11-06T13:31:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/06/newsletter-number-64</id>
+    <content type="html"><![CDATA[<p>Hello friends from the software engineering community!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro_Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> and Manuel went to the first Rocket Internet Global Tech Summit in Berlin last week.
+Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
+with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
+
+<p><img class="team right" src="/images/berlin.png"></p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="https://tacoapp.com/">Taco App &ndash; a unified task list, getting tasks from 40+ sources</a></p></li>
+<li><p><a href="http://bit.ly/1BdO42A">Become a Better Programmer: 5 Essential Methods at a Glance</a></p></li>
+<li><p><a href="http://bit.ly/1qEThXn">FrontEnd Vs Backend Developer Infographic</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://stackshare.io/">StackShare.io &ndash; Discover &amp; discuss software stacks</a></p></li>
+<li><p><a href="http://bit.ly/111sQEA">Technical Debt Takes Many Forms</a></p></li>
+<li><p><a href="http://buff.ly/1wUf5nO">Master Developers: Addy Osmani</a></p></li>
+<li><p><a href="http://buff.ly/1wnN5ow">Windows port of Docker Client by ahmetalpbalkan..things start moving!</a></p></li>
+<li><p><a href="http://buff.ly/1v4oVER">A Quick Introduction to CoreOS</a></p></li>
+<li><p><a href="http://buff.ly/1GNLOPV">Front-end Tooling Workflows // this is a GREAT presentation</a></p></li>
+<li><p><a href="http://buff.ly/1Es3nBj">Symfony 3.0: The roadmap</a></p></li>
+<li><p><a href="http://buff.ly/1v25Gf7">Amazon Deploys to Production Every 11.6 Seconds // I think now its around every 6s&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/1Eq1FAf">React’s diff algorithm</a></p></li>
+<li><p><a href="http://buff.ly/1Ey5GVc">VisualOps: no more heavy lifting in the cloud</a></p></li>
+<li><p><a href="http://www.saltstack.com/salt-blog/saltstack-aws-reinvent-pagerduty">SaltStack Delivers More Advanced Cloud Orchestration for Amazon Web Services and Pagerduty</a></p></li>
+<li><p><a href="http://aws.amazon.com/codedeploy/">AWS CodeDeploy</a></p></li>
+<li><p><a href="http://aws.amazon.com/rds/aurora/">Amazon RDS for Aurora</a></p></li>
+<li><p><a href="http://devops.com/blogs/devops-scorecard/">The DevOps Scorecard</a></p></li>
+<li><p><a href="http://blog.socialcast.com/realtime-search-solr-vs-elasticsearch">Realtime Search: Solr vs Elasticsearch</a></p></li>
+<li><p><a href="http://blog.trifork.com/2013/10/24/how-to-avoid-the-split-brain-problem-in-elasticsearch/comment-page-1/">How to avoid the split-brain problem in elasticsearch</a></p></li>
+<li><p><a href="http://www.slideshare.net/kucrafal/scaling-massive-elastic-search-clusters-rafa-ku-sematext">Scaling Massive Elastic-Search Clusters</a></p></li>
+<li><p><a href="http://hhvm.h4cc.de">HHVM packages support</a></p></li>
+<li><p><a href="https://hacksummit.org/">HackSummit, a virtual conference for developers</a></p></li>
+<li><p><a href="http://keithclark.co.uk/labs/css-fps/desktop/">A 3D environment with lighting, shadows built with CSS transforms</a></p></li>
+<li><p><a href="http://futurice.com/blog/reactive-mvc-and-the-virtual-dom">Reactive mvc and the virtual dom</a></p></li>
+<li><p><a href="https://speakerdeck.com/jmikola/async-php-with-react"> Async PHP with React</a></p></li>
+<li><p><a href="https://drive.google.com/file/d/0B3UKOMH_4lgBUTdjUGxIZ3l1Ukk/view"> A presentation about PHP 7</a></p></li>
+<li><p><a href="https://speakerdeck.com/ezimuel/information-security-in-php-the-cia-triad-approach">Information Security in PHP: the CIA Triad Approach</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

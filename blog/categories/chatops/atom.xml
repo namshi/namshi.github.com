@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: chatops | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/chatops/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #126]]></title>
+    <link href="http://namshi.github.io/blog/2016/03/03/newsletter-number-126/"/>
+    <updated>2016-03-03T14:41:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/03/03/newsletter-number-126</id>
+    <content type="html"><![CDATA[<blockquote><h1>TechThursday is here!</h1>
+
+<p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
+a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
+<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
+
+<p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
+And here is your weekly quota of some interesting links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/">8 ways to become a better coder</a></p></li>
+<li><p><a href="http://arxiv.org/abs/1602.07168">[1602.07168] zerodb white paper</a></p></li>
+<li><p><a href="http://www.noupe.com/inspiration/tutorials-inspiration/blob-storage-how-i-used-it-to-host-my-podcast-mp3-files-92313.html">blob storage: how i used it to host my podcast mp3 files | noupe</a></p></li>
+<li><p><a href="https://medium.com/ux-immersion-interactions/design-s-fully-baked-deliverables-and-half-baked-artifacts-761106df4ca9">design’s fully-baked deliverables and half-baked artifacts — ux immersion: interactions — medium</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://mrjoy.com/2016/02/14/docker_alpine_garbage_and_you/">docker, alpine, garbage and you &ndash; mrjoy</a></p></li>
+<li><p><a href="http://nauts.io/videos/2016/02/09/dockerize-your-development-workstation/">dockerize your development workstation</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=18PNEwt18P0">don&rsquo;t let chatops become chatoops &ndash; michael ansel</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">finding memory leaks in go programs</a></p></li>
+<li><p><a href="https://nathany.com/good/">go object oriented design</a></p></li>
+<li><p><a href="http://engineeredweb.com/blog/2016/path-go-pkg-mgmt/">how to fix the go package management problem</a></p></li>
+<li><p><a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a></p></li>
+<li><p><a href="http://developer.telerik.com/featured/leveling-up-your-javascript/">leveling up your javascript &ndash; telerik developer network</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-clock-mocking-and-time-sensitive-tests">new in symfony 2.8: clock mocking and time sensitive tests (symfony blog)</a></p></li>
+<li><p><a href="http://www.columnfivemedia.com/work-items/infographic-no-cart-left-behind-why-shoppers-arent-following-through-on-online-purchases">no cart left behind</a></p></li>
+<li><p><a href="http://venturebeat.com/2016/02/28/playtime-is-over-investors-want-their-money-back/?utm_content=buffer7feb5">playtime is over: investors want their money back</a></p></li>
+<li><p><a href="https://articles.uie.com/three_hund_million_button/">the $300 million button ux articles by uie</a></p></li>
+<li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #116]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/26/newsletter-number-116/"/>
+    <updated>2015-11-26T13:35:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/26/newsletter-number-116</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
+
+<p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
+<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="https://open.buffer.com/impostor-syndrome-8-tips-i-wish-i-had-known/?utm_content=buffer2bcc4">8 tips about overcoming impostor syndrom</a></p></li>
+<li><p><a href="https://netguru.co/blog/a-quick-guide-to-peer-code-review">a quick guide to peer code review (and why you should do it)</a></p></li>
+<li><p><a href="https://medium.com/@darrenrush/after-docker-unikernels-and-immutable-infrastructure-93d5a91c849e">after docker: unikernels and immutable infrastructure</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/chatops-at-summit2015/">chatting about chatops from atlassian summit &ndash; atlassian developers</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://ma.tt/2015/11/dance-to-calypso/">dance to calypso &ndash; wordpress -php +react/nodejs</a></p></li>
+<li><p><a href="https://philsturgeon.uk/2015/11/20/deploying-with-git-flow-tags-and-circleci/">deploying with git-flow, tags and circleci</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/swapping-array-elements-in-place/">javascript swap in-place array elements</a></p></li>
+<li><p><a href="https://github.com/magento/magento2">magento/magento2</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?list=PLqrz4nXepkz4FIkZPnyJl6hk-SC-034K1">one-click deploy for service oriented architectures &ndash; kate heddleston (software engineer) &ndash; youtube</a></p></li>
+<li><p><a href="http://www.tedunangst.com/flak/post/pinboard-tips-for-web-design">pinboard tips for web design</a></p></li>
+<li><p><a href="http://grodola.blogspot.com/2015/11/openbsd-support-for-psutil.html">random writings and thoughts about python: openbsd support for psutil</a></p></li>
+<li><p><a href="https://github.com/eanplatter/react-starter">react-starter for beginners</a></p></li>
+<li><p><a href="http://nick.balestra.ch/2015/quadratic-time-sorting-algorithms/">simple o(n<sup>2</sup>) sorting algorithms in javascript</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/11/18/software-and-entrepreneurship-with-seth-godin/">software and entrepreneurship with seth godin &ndash; software engineering daily</a></p></li>
+<li><p><a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">support for older versions of internet explorer ends on january 12, 2016 </a></p></li>
+<li><p><a href="http://www.slideshare.net/jasonmesut/the-craft-of-collaboration">the craft of collaboration</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #115]]></title>
+    <link href="http://namshi.github.io/blog/2015/11/19/newsletter-number-115/"/>
+    <updated>2015-11-19T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/11/19/newsletter-number-115</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
+
+<p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
+Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
+
+<p><img class="center" src="/images/posts/oba-cirpo-docker-con-15.jpg"></p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<ul>
+<li><p><a href="http://blog.takipi.com/7-essential-slack-integrations-developers-should-know/">7 essential slack integrations developers should know | takipi blog</a></p></li>
+<li><p><a href="http://magento.com/blog/magento-news/new-era-commerce-innovation?mkt_tok=3RkMMJWWfF9wsRolvanAZKXonjHpfsX66uQtWqawlMI/0ER3fOvrPUfGjI4CRMBqI+SLDwEYGJlv6SgFSbHNMbhiwrgOUhM=">a new era of commerce innovation | magento</a></p></li>
+<li><p><a href="https://coreos.com/blog/vulnerability-analysis-for-containers/?utm_content=buffer286eb">coreos introduces clair: open source vulnerability analysis for your containers</a></p></li>
+<li><p><a href="https://egghead.io/lessons/node-js-creating-a-fake-api-with-hapi-for-your-client-side-application">creating a fake api with hapi for your client-side application &ndash; node.js video tutorial </a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://blog.docker.com/2015/11/deploy-manage-cluster-docker-swarm/?utm_content=buffer8101e">deploy and manage any cluster manager with docker swarm</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/11/dockercon-eu-2015-docker-universal-control-plane/?utm_content=buffer66692">dockercon eu 2015: docker trusted registry 1.4 with integrated content trust and universal control plane</a></p></li>
+<li><p><a href="https://speakerdeck.com/benvinegar/fsto-re-evaluating-front-end-peformance-best-practices">fsto: re-evaluating front-end peformance best practices // speaker deck</a></p></li>
+<li><p><a href="http://thehackernews.com/2015/11/anonymous-hacker-isis.html">hey isis! check out how &lsquo;idiot&rsquo; anonymous hackers can disrupt your online propaganda &ndash; the hacker news</a></p></li>
+<li><p><a href="https://github.com/jcuga/golongpoll">jcuga/golongpoll</a></p></li>
+<li><p><a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">jessie frazelle&rsquo;s blog: docker containers on the desktop</a></p></li>
+<li><p><a href="https://github.com/nature/shunter">nature/shunter</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/08/01/node-js-at-netflix-with-yunong-xiao/">node.js at netflix with yunong xiao | software engineering daily</a></p></li>
+<li><p><a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/">on currying and partial function application</a></p></li>
+<li><p><a href="http://www.slideshare.net/joshuaswarren/phpspec-behat-two-testing-tools-that-write-code-for-you-phptek-edition">phpspec &amp; behat: two testing tools that write code for you </a></p></li>
+<li><p><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">progressive web apps: escaping tabs without losing our soul – infrequently noted</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/09/17/react-at-facebook-with-ben-alpert/">react at facebook with ben alpert &ndash; software engineering daily</a></p></li>
+<li><p><a href="http://redux.js.org/">redux &ndash; predictable state container for javascript apps</a></p></li>
+<li><p><a href="https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app?utm_term=server-rendering-redux">server-side rendering with redux and react-router | codementor</a></p></li>
+<li><p><a href="http://blog.golang.org/6years">six years of go</a></p></li>
+<li><p><a href="https://medium.com/engineering-leadership/software-engineer-traits-fbf5dee9289c">software engineer traits — engineering leadership — medium</a></p></li>
+<li><p><a href="http://www.sourcecodepoetry.com/">source code poetry</a></p></li>
+<li><p><a href="https://jakearchibald.com/2014/offline-cookbook/">the offline cookbook &ndash; jakearchibald.com</a></p></li>
+<li><p><a href="https://blog.bufferapp.com/optimal-work-time-how-long-should-we-work-every-day-the-science-of-mental-strength?utm_content=buffer33b8e">the origin of the 8-hour work day and why we should rethink it</a></p></li>
+<li><p><a href="http://www.zerohedge.com/news/2015-11-10/unicorns-dropping-flies-first-dropbox-then-square-now-fidelity-cuts-snapchat-valuati">unicorns dropping like flies: first dropbox; then square; now fidelity cuts snapchat valuation by 25%</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/">what the web platform can learn from node.js &ndash; atlassian developers</a></p></li>
+<li><p><a href="http://joel.is/zero-notifications/">zero notifications</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #101]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/30/newsletter-number-101/"/>
+    <updated>2015-07-30T12:56:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/30/newsletter-number-101</id>
+    <content type="html"><![CDATA[<p>Hi guys, even after the 100th newsletter we still have something to suggest you.</p>
+
+<p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
+
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+
+<!-- more -->
+
+
+<p>Here the links, enjoy:</p>
+
+<ul>
+<li><p><a href="https://developer.salesforce.com/blogs/engineering/2015/07/365-days-cultural-kaizen.html">365 days of cultural kaisen</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/php-optimizer">a cfg optimizer for php</a></p></li>
+<li><p><a href="http://www.slideshare.net/Codemotion/orlando-mashapebuildsuccessful-apis">building successful apis overnight</a></p></li>
+<li><p><a href="https://speakerdeck.com/jnewland/chatops-at-github">chatops at github</a></p></li>
+<li><p><a href="http://addyosmani.com/first/">components should be focused, independent, reusable, small and testable (first)</a></p></li>
+<li><p><a href="https://speakerdeck.com/derekprior/cultivating-a-code-review-culture">cultivating a code review culture // speaker deck</a></p></li>
+<li><p><a href="https://github.com/p8952/bocker">docker implemented in 100 lines of bash</a></p></li>
+<li><p><a href="https://hacks.mozilla.org/2015/06/es6-in-depth-arrow-functions/">es6 in depth: arrow functions ✩ mozilla hacks – the web developer blog</a></p></li>
+<li><p><a href="https://www.nginx.com/blog/how-nginx-plans-to-support-http2/">how nginx plans to support http/2</a></p></li>
+<li><p><a href="https://medium.com/@jeffbski/is-react-js-fast-faster-than-framework-or-are-there-more-relevant-questions-to-be-asking-bcf40211f89b">is react.js fast? faster than {framework}? … or are there more relevant questions to be asking? — medium</a></p></li>
+<li><p><a href="http://managingbias.fb.com/">managing bias | facebook</a></p></li>
+<li><p><a href="http://mashable.com/2015/07/29/microsoft-edge-vs-google-chrome/?utm_cid=mash-com-fb-tech-link">microsoft edge vs. google chrome: which web browser is faster?</a></p></li>
+<li><p><a href="https://medium.com/@kevincennis/on-unit-testing-1cc6798f81ee">on unit testing by kevin cennis</a></p></li>
+<li><p><a href="http://www.jamiembrown.com/blog/one-in-every-600-websites-has-git-exposed/">one in every 600 websites has .git exposed</a></p></li>
+<li><p><a href="http://jaysoo.ca/2015/06/09/react-contexts-and-dependency-injection/">react contexts and dependency injection — jack hsu</a></p></li>
+<li><p><a href="https://www.firebase.com/blog/2015-07-15-reactfire-0-5-0.html">reactfire 0.5.0 &ndash; firebase</a></p></li>
+<li><p><a href="http://blog.scottlogic.com/2015/07/02/surprising-things-about-js.html">seven surprising javascript &lsquo;features&rsquo;</a></p></li>
+<li><p><a href="http://reactkungfu.com/2015/07/the-hitchhikers-guide-to-modern-javascript-tooling/">the hitchhiker&rsquo;s guide to modern javascript tooling</a></p></li>
+<li><p><a href="https://medium.com/@_marcos_otero/the-real-10-algorithms-that-dominate-our-world-e95fa9f16c04">the real 10 algorithms that dominate our world — medium</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">the ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930">understanding design patterns in javascript &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/way-we-work-ef431646ab17">way we work — medium engineering</a></p></li>
+<li><p><a href="https://www.pagerduty.com/blog/what-is-chatops/">what is chatops? and how do i get started?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Symfony2 | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/symfony2/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Namshi's experience with Symfony2]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2/"/>
+    <updated>2014-12-16T15:53:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2</id>
+    <content type="html"><![CDATA[<p>Folks, time for a quick one!</p>
+
+<p><a href="https://connect.sensiolabs.com/profile/javier.eguiluz">Javier</a>
+from SensioLabs was kind enough to ask whether we had some
+interesting feedbacks about using Symfony2 in an SOA, and
+that led to writing a small write-up about our experience.</p>
+
+<p>So, head over to the Symfony blog to read how things
+are panning out after <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">a year and a half of SOA with
+Symfony2</a>.</p>
+
+<p><img class="center <a" src="href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a>"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SymfonyCon Madrid 2014, the Sf2 community it's getting as stable as it can get]]></title>
+    <link href="http://namshi.github.io/blog/2014/11/29/symfonycon-madrid-2014-the-sf2-community-its-getting-as-stable-as-it-can-get/"/>
+    <updated>2014-11-29T17:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/11/29/symfonycon-madrid-2014-the-sf2-community-its-getting-as-stable-as-it-can-get</id>
+    <content type="html"><![CDATA[<p>Since I had the privilege of attending
+the SymfonyCon in Madrid, in the past couple
+of days, I thought it would be nice
+to wrap up my thoughts on the event and
+the state, from my point of view, of the
+symfony community.</p>
+
+<!-- more -->
+
+
+<h2>Broader expansion</h2>
+
+<p>From what I could see, it looks like symfony
+is trying to expand in a way so that it can
+reach out to a <strong>bigger part of the PHP community</strong>:
+both <a href="http://fabien.potencier.org/">Fabien</a> and <a href="https://twitter.com/weaverryan">Ryan</a> spent a few words on how
+we should make the process of embracing symfony
+a bit easier and the importance of the <a href="http://symfony.com/blog/making-the-symfony-experience-exceptional">DX initiative</a>
+in this direction.</p>
+
+<p>To me, this looks like a very good move as it will
+influence the community, as a whole, in a drastic way:
+if we can get PHP developers to embrace, by default,
+all the best practices that symfony endorses (decoupling,
+testing, etc.) then we&rsquo;ve got a great road ahead of us.</p>
+
+<p>When I first bumped into PHP I must admit that the
+panorama was much messier, whereas today developers
+are already used to tools like Composer, standards like
+the ones promoted by the php-fig, which shows that we&rsquo;ve
+improved <strong>a lot</strong>, but there&rsquo;s still a lot to do (and more
+legacy to fight :)).</p>
+
+<p>Fabien also pointed out how we shouldn&rsquo;t expect drastic changes
+for Symfony 3 and the <em>leit motif</em> of his first keynote was
+a focus on making the ecosystem around the framework more
+complete, stable, rather than pushing towards innovation:
+as you probably already know, Symfony2 is <a href="http://symfony.com/doc/current/contributing/code/bc.html">really stable</a>
+and the overall feeling I had is that we won&rsquo;t see anything
+technically crazy in the next couple of years but rather
+see the framework and the surroundings getting simpler
+and more &ldquo;complete&rdquo;.</p>
+
+<h2>Blackfire.io</h2>
+
+<p>I particularly appreciated one of the final presentations,
+about Sensio&rsquo;s newborn <a href="https://blackfire.io/">Blackfire</a>, which looks like
+a very promising tool in order to monitor performances and
+optimize without too much hassle.</p>
+
+<p>It is now in public beta so I invite you to try it on
+any random project you are developing, as the <a href="https://blackfire.io/getting-started">setup</a>
+literally takes 5 minutes.</p>
+
+<h2>Time to look beyond Symfony2</h2>
+
+<p>I should also be a little critical :)</p>
+
+<p>One of the things that I missed, not being in the trenches
+with symfony on a daily basis, were those in-depth contents
+&ndash; not necessarily related to Symfony &ndash; that you will bring home
+&ndash; after the conference.</p>
+
+<p>I am talking about new technologies that can be integrated with
+the framework (I tried by giving an overview about <a href="http://www.slideshare.net/odino/hey-i-just-met-angularjs-and-this-is-crazy-so-heres-my-javascript-lets-use-it-maybe">our experience with AngularJS</a>),
+generic best practices (ie. <a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">API design</a>) and so on. I actually
+left the SymfonyCon without too much (technical)
+inspiration.</p>
+
+<p>(but again, this is the <strong>Symfony</strong>Con, so maybe&hellip; :))</p>
+
+<h2>Organization</h2>
+
+<p>Well, probably the best part of the conference: I already mentioned
+<a href="http://odino.org/angularjs-almost-a-year-later/">elsewhere</a> that food and WiFi were amazing, plus Sensio did
+a great job in making the speakers feel welcome.</p>
+
+<p>It doesn&rsquo;t always happen, but when an event is <strong>facilitated
+by the venue / organization / detail-orientation of the organizer</strong>
+you can then spend your time focusing on what really matters
+(the content) rather than complaining that the WiFi is slow,
+feel hungry or tired because the venue is 2000 miles away
+from the nearest, affordable hotel.</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>Well, Symfony turns ten next year&hellip;and will celebrate its most
+important birthday back in Paris so&hellip;hope to see you there!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[A bit of Namshi at the Symfony Live this month!]]></title>
+    <link href="http://namshi.github.io/blog/2014/09/08/a-bit-of-namshi-at-the-symfony-live-this-month/"/>
+    <updated>2014-09-08T21:41:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/09/08/a-bit-of-namshi-at-the-symfony-live-this-month</id>
+    <content type="html"><![CDATA[<p>Pretty excited that we are going to be present
+at the <a href="http://london2014.live.symfony.com/">Symfony Live</a>
+which will happen at the end of this month, in London.</p>
+
+<!-- more -->
+
+
+<p><a href="/team#mohamad%20hallal">Mohamad</a>, who has been quite
+productive lately &ndash; both with <a href="http://mohdhallal.github.io/">blogging</a>
+and releasing some open source libraries (like
+<a href="https://github.com/namshi/mockserver">mockserver</a> and <a href="https://github.com/namshi/shisha">shisha</a>) &ndash;
+has decided to take advantage of one of the bonuses that
+we are offering &mdash; tickets for conferences!</p>
+
+<p>He will have the chance to get to meet the leaders in the
+PHP community in one of the most amazing conferences the
+PHP panorama can offer.</p>
+
+<p>We wish Hallal a safe trip to the United Kingdom
+and we hope he&rsquo;ll have a blast learning some new stuff
+and seeing a new place!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #32]]></title>
+    <link href="http://namshi.github.io/blog/2014/04/03/newsletter-number-32/"/>
+    <updated>2014-04-03T18:21:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/04/03/newsletter-number-32</id>
+    <content type="html"><![CDATA[<p>Welcome to <a href="/blog/categories/techthursday/"><strong>TechThursday</strong>!</a></p>
+
+<ul>
+<li><p><a href="https://github.com/mechio/takana">A Sass/CSS live-editor</a></p></li>
+<li><p><a href="https://github.com/Jahaja/psdash">A system information web dashboard for linux</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/3/17/intuitively-showing-how-to-scale-a-web-application-using-a-c.html">Showing How To Scale A Web Application Using A Coffee Shop As An Example</a></p></li>
+<li><p><a href="https://blog.logentries.com/2014/03/5-great-blogs-for-devops/">5 great blogs for Dev ops</a></p></li>
+<li><p><a href="http://code.tutsplus.com/articles/test-code-coverage-from-myth-to-reality--cms-20442">Test Code Coverage: From Myth to Reality</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://linoxide.com/guide/linux-command-shelf.html">Linux Commands In Structured Order with Detailed Reference</a></p></li>
+<li><p><a href="http://www.anton-pirker.at/delete-your-code/">Delete unused code as soon as possible. It will improve your code quality</a></p></li>
+<li><p><a href="http://blog.servergrove.com/2014/04/01/deployment-symfony2-applications-ansible/">Deploying symfony 2 apps with Ansible</a></p></li>
+<li><p><a href="http://ipython.org/ipython-doc/dev/whatsnew/version2.0.html">IPython 2.0</a></p></li>
+<li><p><a href="http://jasonbos.co/two-timestamp-columns-in-mysql/">Two Timestamp Columns in MySQL</a></p></li>
+<li><p><a href="http://www.patatap.com/">An interesting example of what you can in modern browsers these days</a></p></li>
+<li><p><a href="http://helloanselm.com/2014/web-performance-one-or-thousand-media-queries/">Finally we have an answer to this question, that every front-end developer raised at least once in his life</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Symfony 2.4 Expression Language]]></title>
+    <link href="http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language/"/>
+    <updated>2014-02-21T12:57:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language</id>
+    <content type="html"><![CDATA[<p>Expression Language is a new awesome component that got released in the latest <a href="http://symfony.com/blog/symfony-2-4-0-released">Symfony2.4</a>. This component allows string expressions
+to be parsed, compiled and evaluated in PHP. It was basically extracted from the Twig library that supports writing expression logic in templates.</p>
+
+<p>As simple as:&ndash;
+<code>
+$expLang = new ExpressionLanguage();
+$x       = "1+1";
+echo $expressionLang-&gt;evaluate($x);
+</code>
+The previous code will output &ldquo;2&rdquo;!</p>
+
+<p>It seems simple enough, but the benefits that it introduces are great! Especially when we talk about a company like Namshi, where there are dedicated and specialized content and marketing teams with
+hundreds of templates and segments of information that must be delivered and shown on the website. The goal is to provide the most flexibility to other departments in creating their information
+with the least overhead in terms of code maintenance to the development team.</p>
+
+<!-- more -->
+
+
+<p>Fabien Potencier, the creator of Symfony, points out that one of the advantages of introducing this component will be the ability to overcome the limitation of the &ldquo;static configuration&rdquo;
+anywhere in the Symfony2 application such as in services and routing. Imagine that instead of having one route to point to a controller, you can give an expression that sends the request of
+the same path to different controllers DYNAMICALLY! More explanation about this is introduced <a href="http://symfony.com/blog/new-in-symfony-2-4-the-expressionlanguage-component#routing">here</a>.</p>
+
+<p>So, let&rsquo;s take a look on this component in some more detail.</p>
+
+<p>The component supports a set of pre-defined operators and functions that can be used to construct complex expressions, we list them and their PHP counterparts:&ndash;</p>
+
+<pre><code>1. binary operators and functions
+    - '**' =&gt; 'pow'
+    - '..' =&gt; 'range'
+    - 'in' =&gt; 'in_array'
+    - 'not in' =&gt; '!in_array'
+    - '&amp;&amp; || | ^ &amp; == === != !== &lt; &gt; &gt;= &lt;= + = * / %' =&gt; same in php
+    - 'A matches B' =&gt; preg_match(A,B)
+2. Unary operators
+    - '!' =&gt; '!'
+    - 'not' =&gt; '!'
+    - '+' =&gt; '+'
+    - '-' =&gt; '-'
+3. Object Attributes
+    - 'foo.one' =&gt; 'foo-&gt;one'
+4. Arrays
+    - '[foo1,foo2]' =&gt; array("foo1", "foo2")
+5. Functions
+    - 'foo(a,b,c)' =&gt; call_user_func_array(array(foo), array(a, b, c)
+6. Names:
+    - 'foo' =&gt; $foo
+</code></pre>
+
+<p>The killer feature is, as we are going to see next, is the ability to register your own functions (similar to Twig) in the component to be utilized in expressions.</p>
+
+<p>The component provides public access to methods that allows you to create your own implementations of expression functions.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;register(&amp;lsquo;functionNameToBeUseInTheStringExpression&amp;rsquo;, function(){&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//compile callback function
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}, function() {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;//evaluateCallbackFunction
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;});
+</code></pre></figure></notextile></div></p>
+
+<p>As its name implies, this function registers or adds the required support to call a function within the expression string.
+This method has two callback functions, one to be called when the expression is compiled, and the other when its evaluated.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;compile(&amp;lsquo;stringExpression&amp;rsquo;);
+</code></pre></figure></notextile></div></p>
+
+<p>This method, returns the equivalent PHP expression without evaluating it, so you can evaluate it after doing some required manipulation.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+echo($expLang-&gt;compile(&amp;ldquo;&amp;lsquo;test&amp;rsquo; matches &amp;lsquo;test2&amp;rsquo;&amp;rdquo;));
+//shows preg_match(&amp;ldquo;test&amp;rdquo;, &amp;ldquo;test2&amp;rdquo;)
+</code></pre></figure></notextile></div></p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;evaluate(&amp;lsquo;stringExpression&amp;rsquo;, array $values);
+</code></pre></figure></notextile></div></p>
+
+<p>This function both compiles the expression to PHP and evaluates it to return the outcome. The expression is evaluated for both the built in functions and operators and the evaluate callback function
+of a registered custom function.
+It also allows to send a set of default predefined <code>$values</code> to the evaluation process to be passed to the evaluate callback.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$expLang-&gt;parse(&amp;lsquo;stringExpression&amp;rsquo;, array $names);
+</code></pre></figure></notextile></div></p>
+
+<p>This function parses a string expression from a Token Stream to a Node Tree (the component is built using the Abstract Syntax Tree algorithm) so you can have your expression
+as a tree of nodes. Not really sure how it can be benefited from (please share your ideas!).</p>
+
+<p>In a simple <code>var_dump()</code> I can show you what this method can return</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+var_dump($expLang-&gt;parse(&amp;lsquo;1 + 2&amp;rsquo;, array()));
+</code></pre></figure></notextile></div></p>
+
+<p>```
+object(Symfony\Component\ExpressionLanguage\ParsedExpression)#18 (2) {
+  [&ldquo;nodes&rdquo;:&ldquo;Symfony\Component\ExpressionLanguage\ParsedExpression&rdquo;:private]=>
+  object(Symfony\Component\ExpressionLanguage\Node\BinaryNode)#17 (2) {</p>
+
+<pre><code>["nodes"]=&gt;
+array(2) {
+  ["left"]=&gt;
+  object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#15 (2) {
+    ["nodes"]=&gt;
+    array(0) {
+    }
+    ["attributes"]=&gt;
+    array(1) {
+      ["value"]=&gt;
+      int(1)
+    }
+  }
+  ["right"]=&gt;
+  object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#16 (2) {
+    ["nodes"]=&gt;
+    array(0) {
+    }
+    ["attributes"]=&gt;
+    array(1) {
+      ["value"]=&gt;
+      int(2)
+    }
+  }
+}
+["attributes"]=&gt;
+array(1) {
+  ["operator"]=&gt;
+  string(1) "+"
+}
+</code></pre>
+
+<p>  }
+  [&ldquo;expression&rdquo;:protected]=>
+  string(5) &ldquo;1 + 2&rdquo;
+```</p>
+
+<p>It can perhaps be used to give flexibility for developers to inject and manipulate expressions coming from a non-configurable source.</p>
+
+<p>Here is a comprehensive example of all the previously described methods:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;&lt;/p&gt;
+
+&lt;p&gt;$expLang = new ExpressionLanguage();
+$expLang-&gt;register(&amp;lsquo;plus&amp;rsquo;, function(), function($args, $a, $b) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;return $a + $b;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;$expression = &amp;lsquo;plus(1,5)&amp;rsquo;;
+echo($expLang-&gt;parse($expression)) . PHP_EOL;
+echo($expLang-&gt;compile($expression)) . PHP_EOL;
+echo($expLang-&gt;evaluate($expression)) . PHP_EOL;
+</code></pre></figure></notextile></div></p>
+
+<p><code>
+plus(1,5)
+1 + 5
+6
+</code></p>
+
+<p>Since here at <a href="http://namshi.com/">Namshi</a> we are using Symfony2 as the main PHP framework for our Backend and API development efforts. We are up-to-date with latest releases
+from Symfony. The Expression Language Component allowed us to introduce more flexibility in the way other departments such as Content and Marketing tailor views and serve data
+based on some client related information.</p>
+
+<p>We were able to integrate Twig, YAML and the Expression Language Component using Redis as the mega storage unit.</p>
+
+<p>As an example, we have a set of Twig templates for the SEO guys to store the pages' meta information stored in a redis hash and indexed by the path info of the request,
+and they are json encoded:</p>
+
+<p><code>
+"/shoes/" =&gt;
+[["locale(en_AE)", {"header":"Buy shoes from Namshi in UAE right on your ", "pageTitle":"Welcome to Namshi UAE"}],
+["locale(en_SA)", {"header": "Buy shoes from Namshi in Saudi right on your , "pageTitle":"Welcome to Namshi Saudi"}]]
+</code></p>
+
+<p>And in a <code>device</code> redis hash, we have the corresponding possible values for <code>device</code> indexed by the device type</p>
+
+<p><code>
+"mobile" =&gt;
+["device":"Mobile Phone"]
+</code></p>
+
+<p>Now, we fetch the appropriate template based on the path info and select the first template that its condition evaluates to <code>true</code>, fetch the context (device) based on
+client information, render the twig template with the appropriate device value and parse it as YAML!</p>
+
+<p>Was that fast? sorry, here is a sample code:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+$redis      = //the redis instance
+$path       = //get the required path from the request
+$device     = //get the device type from a service or a header
+$expLang    = //the expression language instance
+$yamlParser = //the YAML parser instance
+$orgLocale  = //get the locale value from a service or a header&lt;/p&gt;
+
+&lt;p&gt;$expLang-&gt;register(&amp;lsquo;locale&amp;rsquo;, function(), function($values, $locale) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;if ($locale == $orgLocale) {
+    return true;
+}
+
+return false;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;});&lt;/p&gt;
+
+&lt;p&gt;$possibleTemplates = json_decode($redis-&gt;hget(&amp;ldquo;seo_templates&amp;rdquo;, $path), true);
+$contextValues     = json_decode($redis-&gt;hget(&amp;ldquo;seo_device&amp;rdquo;, $device), true);&lt;/p&gt;
+
+&lt;p&gt;foreach ($possibleTemplates as $possibleTemplate) {&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list($condition, $template) = $possibleTemplate;
+
+if ($expLang-&amp;gt;evaluate($condition)) {
+    $twig             = new \Twig_environment(new Twig_Loader_String($template));
+    $renderedTemplate = $twig-&amp;gt;render(json_encode($template), $contextValues);
+
+    return $yamlParser-&amp;gt;parse($renderedTemplate);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;}&lt;/p&gt;
+
+&lt;p&gt;//Note: this code requires lots of error checking and try, catch blocks to detect and report errors and exceptions since
+// content and SEO information, for example, are considered fragile and sensitive
+</code></pre></figure></notextile></div></p>
+
+<p>Nice, easy and simple. This approach for a CMS like system, provides the following benefits:</p>
+
+<ul>
+<li>High flexibility in creating information (content, SEO, etc..)</li>
+<li>Tailoring data according to client information (mobile, desktop, large/small screens, app, tablet, etc..)</li>
+<li>Can be based on numerous variables (path information, headers, domain, device type, etc..)</li>
+<li>Content specialization and less dependency on the tech team.</li>
+<li>Less code maintenance overhead since the expected future requirements can only be limited to registering Expression Language functions.</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

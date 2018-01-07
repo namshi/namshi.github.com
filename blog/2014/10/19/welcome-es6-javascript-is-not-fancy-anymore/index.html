@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Welcome ES6 ! JavaScript is not fancy anymore &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Welcome ES6 ! JavaScript is not fancy anymore ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/">
+    
+    
+    <meta property="og:title" content="Welcome ES6 ! JavaScript is not fancy anymore "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-19-October" title="October 19, 2014">October 19, 2014</time>
+            </div>
+            <h1 class="title">Welcome ES6 ! JavaScript is not fancy anymore</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/shidhin.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Shidhin CR" title="Shidhin CR">
+                
+                    Shidhin CR
+                
+                </a></strong><br>
+                <span class="muted">Senior Frontend Engineer</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <blockquote><p><strong>21/10/2014 UPDATE:</strong> This post was updated ( see the new examples for arrow functions and template strings ).</p>
+
+<p>Thanks for the <a href="http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread">comments</a>
+and the <a href="http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/">Reddit discussion</a>.</p></blockquote>
+
+<h2></h2>
+
+<p>For years, JavaScript was considered as a toy language. It was used for creating interactive web pages and could run only in the browser. But, things changed; JavaScript is used in both, the server and the browser these days. The simplicity of the language made it so popular that developers started using it for large and complex projects.</p>
+
+<p>However, new developers felt JavaScript was fancy at times. This was because of some of the known drawbacks in the language itself &mdash; and the workarounds put in place for fixing them. For example, a developer from a &ldquo;C&rdquo; language background is more familiar to block level scoping, but will have difficulties understanding function scoping in JavaScript. Along with lexical scoping, variable hoisting and closures might seem fancy or difficult to understand as well.</p>
+
+<!--more-->
+
+
+<p>ES6, the future version, is going to give a vast makeover to JavaScript. The <strong>TC39</strong> committee (responsible for ES6 standardization) have taken care of most of the concerns about JavaScript, and now ES6 is getting a lot of new features added, and existing bad parts fixed. If you want to know about the JavaScript good vs bad parts, check out Douglas Crockford’s book <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript, the Good Parts</a>.</p>
+
+<p>This post is <strong>not</strong> about the complete ES6 feature-set. Here, we will see some of the areas of JavaScript that look fancy, and how they are getting improved in ES6.</p>
+
+<h2>ES6, all good parts?</h2>
+
+<p>Again, I am not saying ES6 has only good parts. To be honest, I don&rsquo;t know. ES6 is not completely ready for live applications. Design patterns will automatically evolve once the language is used extensively. Design patterns can distinguish between the good and bad parts.</p>
+
+<p>As of now, most ES6 features are not supported by browsers (as they’re in draft). We use transpiler tools to compile ES6 code to ES5. While there are many tools available, Google’s <a href="https://github.com/google/traceur-compiler">traceur</a> seems to be the most popular among them.</p>
+
+<h2>8 fancy things fixed in ES6</h2>
+
+<p>Here are some interesting improvements done in ES6:</p>
+
+<h3>Object.is for better comparison</h3>
+
+<p>New developers who learn JavaScript often stumble on the usage of <code>==</code> and <code>===</code>.  The <code>===</code> is a strict comparison operator where it checks the type of the operands also. For example, in this code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>“0” == 0  // true
+
+but
+
+“0” === 0 // false</code></pre></figure>
+
+
+<p>It is always recommended to use the <code>===</code> operator. However, there is an excepton to this; we cannot compare <code>NaN</code> using any of these operators. We need to use the global function <code>isNaN</code> to check if any variable has a <code>NaN</code> value or not.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>NaN == NaN  // false
+NaN === NaN  // false
+
+var result = isNan(NaN) // true</code></pre></figure>
+
+
+<p><code>Object.is</code> is an attempt to have a better comparison method. It is the same as the <code>===</code> operator, except it can compare <code>NaN</code> also.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>Object.is(0 ,”0”) // false
+Object.is(0 ,0) // true
+Object.is(NaN, NaN) // true</code></pre></figure>
+
+
+<h3>Let for block scoping.</h3>
+
+<p>As opposed to languages like &ldquo;C&rdquo;, JavaScript doesn&rsquo;t have block scoping. All variables inside a block are hoisted to its containing function (if any) or will be part of the global scope.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>if(true){
+  var a = 10;
+  console.log(a); // 10
+}
+// outside the if block
+console.log(a); // a is accessible here also and prints 10</code></pre></figure>
+
+
+<p>Following is a popular example of this:</p>
+
+<p>Assume that we have 10 anchor tags in an html page. We need to alert the index of each anchor tag whenever it’s clicked. Now, look at the code below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var anchors = document.getElementsByTagName(“a”);
+for(var i=0,len=anchors.length; i&lt;len; i++){
+    anchors[i].onclick = function(){
+        alert(i);
+    };
+}</code></pre></figure>
+
+
+<p>If we think the above code works, we are wrong. It is the last value of <code>i</code> that is alerted. Here we will see <strong>10</strong> getting alerted.</p>
+
+<p>We use a <strong>closure</strong> to fix this problem. Using closure, we can bind the right value of <code>i</code> to the onClick handler. See the code below:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var anchors = document.getElementsByTagName(“a”);
+for(var i=0,len=anchors.length; i&lt;len; i++){
+    anchors[i].onclick = (function(i){
+        return function(){
+            alert(i);
+        };
+    })(i);
+}</code></pre></figure>
+
+
+<p>Having a closure in the above code makes it unreadable and totally fancy to a new developer. Now we know why the word <strong>&ldquo;fancy&rdquo;</strong> is here.</p>
+
+<p>ES6 introduces block scoping in JavaScript using the keyword <code>let</code>. If we write our first example, using <code>let</code>:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>if(true){
+  let a = 10;
+  console.log(a); // 10
+}
+// outside the if block
+console.log(a) // Reference error: a is not defined</code></pre></figure>
+
+
+<p><code>let</code> also binds the scope of the variable to the current block. In our second example, we can use <code>let</code> to solve the scoping problem:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var anchors = document.getElementsByTagName(“a”);
+for(let i=0,len=anchors.length; i&lt;len; i++){
+    anchors[i].onclick = function(){
+        alert(i);
+    }
+}</code></pre></figure>
+
+
+<p>Now the above code should work as expected.</p>
+
+<h3>Multi-line strings and string interpolations</h3>
+
+<p>Writing multiline strings is not so straightforward. The <code>\n</code> ( for newline ) has to be added where ever a line break is needed.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myString = &apos;Lorem ipsum \ndolor sit amet,\n\n\n consectetur adipisicing\n elit.&apos;;</code></pre></figure>
+
+
+<p>ES6 introduces <strong>template strings</strong> for creating multiline strings. In ES6, we can write the above example like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myString = `Lorem ipsum 
+                dolor sit amet,
+                
+                consectetur adipisicing
+                elit.`;</code></pre></figure>
+
+
+<p>So, here, we can use &ldquo;`&rdquo; (backtick) to create the strings.</p>
+
+<p>Another interesting usecase of the template strings is variable interpolation. There is no native variable interpolation in ES5, but can be achieved by regular expressions or by manually appending the variable to the string. For example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>// Using + operator 
+var name = &apos;Tony&apos;;
+var age = 20;
+var greeting = &apos;Hi, I am &apos;+name+&apos; and my age is &apos;+age;
+console.log(greeting); // This prints &apos;Hi I am Tony and my age is 20&apos;
+
+// Using regular expressions
+var greeting = &apos;Hi, I am %name% and my age is %age%&apos;.replace(/%name%/g,name).replace(/%age%/g,age);
+console.log(greeting); // This prints &apos;Hi I am Tony and my age is 20&apos;</code></pre></figure>
+
+
+<p>In ES6, the above code is really simplified, and can be written like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var name = &apos;Tony&apos;;
+var age = 20;
+var greeting = `Hi, I am ${name} and my age is ${age}`;
+console.log(greeting); // This prints &apos;Hi I am Tony and my age is 20&apos;</code></pre></figure>
+
+
+<h3>Fat Arrow functions for binding scope</h3>
+
+<p>Most new developers struggle to understand the <code>this</code> keyword in JavaScript. <code>this</code> is nothing but the execution context for a function, and for methods, <code>this</code> points to the object holding it. If the function is executed not as a method of an object, <code>this</code> will point to the global object (usually the window object).</p>
+
+<p><code>this</code> can be confusing many times. Look at the below example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var name = &apos;Tom&apos;;
+var obj = {
+    name: &apos;Jerry&apos;,
+    sayName: function(){
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout(function(){
+           console.log(&apos;Hi,&apos; + this.name );
+       },100);
+    }
+};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Tom</code></pre></figure>
+
+
+<p>When the <code>sayName</code> is executed as an object method, <code>this</code> was pointing to object itself, so <code>this.name</code> will output &ldquo;Jerry&rdquo;. Inside the <code>greet</code> function, a <code>setTimeout</code> is used for delaying the function execution. <code>setTimeout</code> will invoke the function in global context, hence <code>this</code> will point to the global object.</p>
+
+<p>We usually use <code>Function.bind</code> or <code>Function.call</code> or <code>Function.apply</code> to fix these kinds of problems.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var name = &apos;Tom&apos;;
+var obj = {
+    name: &apos;Jerry&apos;,
+    sayName: function(){
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout(function(){
+           console.log(&apos;Hi,&apos; + this.name );
+       }.bind(this),100);
+    }
+};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry</code></pre></figure>
+
+
+<p>ES6 added arrow functions to get rid of scoping issues. An arrow function will always lexically bind the <code>this</code> value to its surrounding environment. So the above code can be written in ES6 like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var name = &apos;Tom&apos;;
+var obj = {
+    name: &apos;Jerry&apos;,
+    sayName: function(){
+        console.log(this.name);
+    },
+    greet: function(){
+       setTimeout( ()=&gt; {
+           console.log(&apos;Hi,&apos; + this.name );
+       },100);
+    }
+};
+obj.sayName(); // logs Jerry
+obj.greet(); // logs Hi, Jerry</code></pre></figure>
+
+
+<p>Here, inside the arrow function, <code>this</code> always points to the parent scope <code>this</code> value.</p>
+
+<p><strong>Note:</strong> <em>Since the arrow function is already bound to its execution context, we cannot apply .bind(), .call() or .apply() methods on it again.</em></p>
+
+<h3>Destructuring</h3>
+
+<p>Destructuring is the process of assigning the property values of an object to a local variable. For example, in JavaScript, we can do this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myGlobalConfig = {
+    apiUrl: &apos;www.google.com/api&apos;,
+    data1: &apos;some value&apos;,
+    data2: &apos;another value&apos;,
+    methodType: &apos;POST&apos;
+    // ... etc
+};
+
+// and in one of our functions
+
+function makeAjaxRequest(config){
+    var url = config.url;
+    var method = config.methodType;
+    var data = config.data2;
+    $.ajax(url, method, data );
+}
+
+// call makeAjaxRequest
+makeAjaxRequest( myGlobalConfig );</code></pre></figure>
+
+
+<p>In the above code, whenever a function requires arguments as multiple parameters, we need to extract values from our config object and pass them as parameters. This is a problem when we have a large number of values that need to be extracted.</p>
+
+<p>ES6 allows direct destructing assignments. So we can write the above example in a simple way, like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myGlobalConfig = {
+    apiUrl: &apos;www.google.com/api&apos;,
+    data1: &apos;some value&apos;,
+    data2: &apos;another value&apos;,
+    methodType: &apos;POST&apos;
+    // ... etc
+};
+
+// and in one of our function
+
+function makeAjaxRequest(config){
+    var { url, methodType, data2 } = config;
+    $.ajax(url, methodType, data2 );
+}
+
+// call makeAjaxRequest
+makeAjaxRequest( myGlobalConfig );</code></pre></figure>
+
+
+<h3>Default Argument Values for Functions</h3>
+
+<p>One of the best features in ES6 is default arguments. As of now, we use the <code>||</code> to have default values for the function parameters. See the below code:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myFunction = function(a, b, c){
+    a = a || 10;
+    b = b || 5;
+    c = c || 8;
+    return a*b*c;
+};</code></pre></figure>
+
+
+<p>Here is the same code written in ES6:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myFunction = function(a=10, b=5, c=8){
+    return a*b*c;
+};</code></pre></figure>
+
+
+<h3>Object method shorthands</h3>
+
+<p>Look at the below object creation pattern. In this, all the public method/property of an object will have their own private counterparts. For example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myObject = (function(){
+    var sayName = function(){
+        console.log(&apos;this is sayname function&apos;);
+    };
+    var greet = &apos;This is a greeting&apos;;
+    return {
+        greet: greet,
+        sayName: sayName
+    }
+})();</code></pre></figure>
+
+
+<p>The above pattern is called <strong>Revealing module pattern</strong>. In ES6, it is much simplified by eliminating the column part. Thus, we can write the above code like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myObject = (function(){
+    var sayName = function(){
+        console.log(&apos;this is sayname function&apos;);
+    };
+    var greet = &apos;This is a greeting&apos;;
+    return {
+        greet,
+        sayName
+    }
+})();</code></pre></figure>
+
+
+<h3>The super keyword for invoking super class methods</h3>
+
+<p>JavaScript supports object oriented programming. But, implementing inheritance is tricky in JavaScript, as it is not supported natively. JavaScript even has the <code>super</code> keyword, however, it is not functional.</p>
+
+<p>Most of the JavaScript frameworks those implement inheritance have a pattern like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myBaseObj = {
+    sayName: function(){
+        // .. do something
+    };
+};
+
+var mySubObj = Framework.extend(myBaseObj, {
+    sayName: function(){
+        this._super.apply(this,arguments);
+        // .. do something else
+    }
+})</code></pre></figure>
+
+
+<p>These frameworks use <code>_super</code> (or sometimes <code>uber</code>) to invoke the parent method. This is because, <code>super</code> was a reserved keyword (for the future) in JavaScript, and is not allowed for use as an identifier or method.</p>
+
+<p>Now, the &ldquo;future&rdquo; has come. JavaScript&rsquo;s <code>super</code> keyword has been implemented in ES6. Now let&rsquo;s see how inheritance can be done:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var myBaseObj = {
+    sayName: function(){
+        // .. do something
+    };
+};
+var mySubObj = {
+    __proto__: myBaseObj,
+    sayName: function(){
+        super.sayName();
+        // .. do something else
+    }
+})</code></pre></figure>
+
+
+<p>Again, all these are just a small part of the ES6 feature-set. There are so many interesting features like Promises, Classes, Generator, Iterators, etc.</p>
+
+<h2>Summary</h2>
+
+<p>ES6 is the most promising version of JavaScript. It has so many features; features we were waiting for for years. ES6 will definitely help writing more modular and less quirky code in JavaScript.</p>
+
+<p>Here in this article, we have seen the problems with the current version of JavaScript, and how ES6 fixes the problems and the workarounds. Now, the entire ES6 feature-set is beyond the scope of this post, for that you can check out these awesome resources.</p>
+
+<ul>
+<li><a href="https://github.com/lukehoban/es6features">https://github.com/lukehoban/es6features</a></li>
+<li><a href="https://github.com/ericdouglas/ES6-Learning">https://github.com/ericdouglas/ES6-Learning</a></li>
+<li><a href="http://espadrine.github.io/New-In-A-Spec/es6/">http://espadrine.github.io/New-In-A-Spec/es6/</a></li>
+<li><a href="http://tc39wiki.calculist.org/es6/">http://tc39wiki.calculist.org/es6/</a></li>
+</ul>
+
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/es6/'>ES6</a>, <a class='category' href='/blog/categories/javascript/'>JavaScript</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

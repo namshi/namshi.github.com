@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: containers | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/containers/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Running Spot Instances in Production]]></title>
+    <link href="http://namshi.github.io/blog/2017/07/09/running-spot-instances-in-production/"/>
+    <updated>2017-07-09T10:12:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2017/07/09/running-spot-instances-in-production</id>
+    <content type="html"><![CDATA[<p>Around this time last year, we decided to try running subset of our customer-facing web traffic on spot instances.<br/>
+This decision was solely based to reduce our AWS instance bill. We&rsquo;ve heard of people running workloads on spot instances but most of the workloads are usually long-running jobs where you don&rsquo;t mind if the instance gets terminated at any time. Running customer-facing apps is a completely different challenge where we can&rsquo;t afford any downtime of any sort.</p>
+
+<!-- more -->
+
+
+<h3>Background</h3>
+
+<p>We are fully running <a href="https://kubernetes.io/">kubernetes</a> in production which makes it exciting for the challenge of how we can actually test chaos engineering in production with our microservices.<br/>
+We chose <a href="https://coreos.com/os/docs/latest/booting-on-ecs.html">CoreOS Container Linux</a> as our preferred operating system because of faster bootup time and it does only 2 things for us: docker service (for running containers) and flannel networking (for inter-pod networking).<br/>
+We use both launch configuration and autoscaling service to manage our fleet of spot instance.<br/></p>
+
+<p>Some of the questions we asked oursleves on how to setup a robust infrastructure to support any kind of termination of the spot instances</p>
+
+<ol>
+<li>How do we gracefully reschedule the pods to other nodes before the spot instance goes down?</li>
+<li>How do we handle the surge in price for one availability zone?</li>
+<li>How do we handle the surge in price for the whole region?</li>
+</ol>
+
+
+<h3>How do we gracefully reschedule the pods to other nodes before the spot instance goes down?</h3>
+
+<p>Gracefully rescheduling pods initially do seem straightforward until we started noticing some issues with image pulling from our private registry and the docker hosts. This usually happens as a result of spike requests if more than ten (10) images of around 200MB size are being pulled at the same time. There is <a href="https://kubernetes.io/docs/user-guide/kubectl/v1.6/#drain">kubectl drain</a> which works pretty well but not for us because of the issue mentioned earlier.</p>
+
+<p>Luckily, AWS introduced <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-interruptions.html">spot instance termination notice</a> which is a 2-min window to do cleanups before the spot-instance is terminated, we wrote a simple golang binary which watches the instance metadata for the termination notice and does the following within the 2-min grace:</p>
+
+<ul>
+<li>Detach the instance from the ELB (if applicable)</li>
+<li>Mark the instance as unschedulable</li>
+<li>Delete the pods with a sleep in-between of 10secs (This should take care of approximately 20pods, which is a very rare case for us)</li>
+</ul>
+
+
+<p>This binary is managed by a systemd service</p>
+
+<h2>```</h2>
+
+<p>coreos:
+  units:</p>
+
+<pre><code>- name: spot-terminate-cleaner.service
+  command: start
+  content: |
+    [Unit]
+    Description=Graceful cleanup of spot instances before termination
+    Requires=network-online.target
+    After=network-online.target
+    ConditionPathExists=/etc/spot
+
+    [Service]
+    ExecStart=/opt/bin/nm-tools spot-shutdown
+    Restart=always
+    RestartSec=10
+</code></pre>
+
+<p>```</p>
+
+<h3>How do we handle the surge in price for one availability zone?</h3>
+
+<p>It is advisable to run the spot-instances in at least two availability zones to cope with surge in price in one of the availability zones. If there is a price surge above the bidding price in one zone and the spot instances are terminated, autoscaling group service automatically launches the same number of terminated instances in the zone(s) with bidding price higher than the current spot price. With this, we achieve something close zero-downtime during the re-scaling activity.<br/></p>
+
+<p><img class="center" src="/images/spot-stage-1.png" width="500" title="price surge in one availability zone" ></p>
+
+<br/><br/>
+
+
+<p>This also poses another challenge when the spot price drops below the bidding price in the previously affected region. What happens is that two instances launched back in <code>eu-west-1b</code> while the same number of instances are terminated to balance the autoscaling desired capacity. In this activity, we are going to lose instances abruptly, but luckily AWS autocaling service has a feature called <a href="http://docs.aws.amazon.com/autoscaling/latest/userguide/lifecycle-hooks.html">lifecycle hooks</a>.<br/></p>
+
+<p>To avoid abrupty autoscaling termination, we added a lifecycle hook for <code>autoscaling:EC2_INSTANCE_TERMINATING</code> transition state with the notification target as SQS. This sends an event containing the instance to be terminated to the SQS. We now have a python script (can be converted to a lambda function) which:</p>
+
+<ul>
+<li>Consumes the SQS message</li>
+<li>Detach the instance from the ELB (if applicable)</li>
+<li>Mark the instance as unschedulable</li>
+<li>Delete the pods with a sleep in-between of 10secs (This should take care of approximately 20pods, which is a very rare case for us)</li>
+<li>Delete the SQS message once the task is completed</li>
+</ul>
+
+
+<p>All the tasks above are completed within 2-min window to match the spot-instance termination notice period.</p>
+
+<h3>How do we handle the surge in price for the whole region?</h3>
+
+<p>We use <a href="https://sensuapp.org/">Sensu</a> as part of our monitoring stack and developed a simple sensu (ruby) check which compares the current spot price from AWS API against our bidding price used in the launch configuration. We do mark the check state as <strong>warning</strong> when the spot price is within the warning and critical threshold for all the zones in the region and the check is only marked as <strong>critical</strong> if the spot price is higher than our critical threshold in all the zones in the region. When the check state is critical, there is an auto-remediation script which switches the launch configuration of the autoscaling group for the spot instances from spot to on-demand (the script clones the current launch configuration, removes the spot price and replaces the launch config in the autoscaling group). With this, we don&rsquo;t end up with no running instances.</p>
+
+<p>```
+{
+  &ldquo;checks&rdquo;: {</p>
+
+<pre><code>"lc_spot_price_check": {
+  "command": "/etc/sensu/plugins-custom/check-lc-spot-price.rb -n namshi-spot -r :::aws.region:::",
+  "subscribers": [ "aws" ],
+  "interval": 60,
+  "refresh": 14400,
+  "handlers": [ "default", "ses", "remediator" ],
+  "remediation": {
+    "lc_spot_price_check_remediation": {
+      "occurrences": [1, 2],
+      "severities": [2]
+    }
+  }
+},
+"lc_spot_price_check_remediation": {
+  "command": "sudo /usr/bin/salt-call spot_price.update_spot_asg namshi-spot ondemand=True",
+  "subscribers": [],
+  "handlers": [ "default", "ses" ],
+  "interval": 10,
+  "publish": false
+}
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>```</p>
+
+<br/><br/>
+
+
+<p>So far, this has been working well for over a year without any major issues and we have been able to save between 35% and 45% on the instance cost since then.<br/>
+Hope you can give it a try and feedbacks are appreciated.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #111]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/14/newsletter-number-111/"/>
+    <updated>2015-10-14T14:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/14/newsletter-number-111</id>
+    <content type="html"><![CDATA[<blockquote><p>Hey!</p>
+
+<p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
+
+<p><img class="center" src="/images/hug_an_engineer.jpg"></p>
+
+<p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
+
+<ul>
+<li><p><a href="http://www.alexkras.com/11-tips-to-improve-angularjs-performance/">11 tips to improve angularjs performance</a></p></li>
+<li><p><a href="https://medium.com/@orliesaurus/api-tools-for-every-occasion-10-api-tools-released-in-2015-i-can-t-live-without-d5947d9ca9c3">api tool for every occasion</a></p></li>
+<li><p><a href="https://github.com/rimusz/coreos-osx-gui">coreos-vagrant gui for mac os x</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.wired.com/2015/10/meet-walking-dead-hp-cisco-dell-emc-ibm-oracle/?utm_content=bufferff50e">dell. emc. hp. cisco. these tech giants are the walking dead | wired</a></p></li>
+<li><p><a href="http://ericjmritz.name/2015/09/29/display-random-git-tips-in-your-terminal/">display random git tips in your terminal</a></p></li>
+<li><p><a href="https://github.com/docker/swarm/pull/1292">docker swarm @1.0.0</a></p></li>
+<li><p><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></p></li>
+<li><p><a href="http://www.shortlistdubai.com/events-attractions/article/4739-dubai-to-abu-dhabi-commute-in-15-minutes?utm_content=buffer827ca">dubai to abu dhabi commute in 15 minutes? &ndash; city highlights &ndash; shortlist dubai</a></p></li>
+<li><p><a href="http://www.mfranc.com/unit-testing/good-unit-test-one-assert/">good unit test &ndash; one assert | pragmatic developer</a></p></li>
+<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/">how to write unmaintainable php code</a></p></li>
+<li><p><a href="http://shadowhand.me/immutable-data-structures-in-php/">immutable data structures in php</a></p></li>
+<li><p><a href="http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html">improving angular web app performance example. &ndash; better world by better software</a></p></li>
+<li><p><a href="http://blog.thoughtram.io//angular/2015/09/17/resolve-service-dependencies-in-angular-2.html">injecting services in services in angular 2</a></p></li>
+<li><p><a href="http://jsrocks.org/2015/09/javascript-iterables-and-iterators/">javascript iterables and iterators &ndash; js rocks</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">learn to stop using shiny new things and love mysql | pinterest engineering</a></p></li>
+<li><p><a href="http://www.lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator">new in php 7: null coalesce operator</a></p></li>
+<li><p><a href="http://nodetuts.com/series/asynchronous-programming.html">node tuts &ndash; asynchronous programming</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist | risingstack</a></p></li>
+<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist</a></p></li>
+<li><p><a href="https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e">nodejs: a quick optimization advice</a></p></li>
+<li><p><a href="http://zachholman.com/posts/opt-in-transparency/">opt-in transparency</a></p></li>
+<li><p><a href="https://esdiscuss.org/topic/performance-concern-with-let-const">performance concern with let/const</a></p></li>
+<li><p><a href="http://geek.bluemangointeractive.com/react-router-an-introduction/">react router: a comprehensive introduction &ndash; by blue mango geek</a></p></li>
+<li><p><a href="https://github.com/sebastianbergmann/phpunit/wiki/Release-Announcement-for-PHPUnit-5.0.0">release announcement for phpunit 5.0.0</a></p></li>
+<li><p><a href="http://zachholman.com/posts/remote-first/">remote-first vs. remote-friendly</a></p></li>
+<li><p><a href="http://llvm.org/">the llvm compiler infrastructure project</a></p></li>
+<li><p><a href="https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/">top elb health and performance metrics</a></p></li>
+<li><p><a href="http://matschaffer.com/2015/01/what-to-monitor/">what should i monitor?</a></p></li>
+<li><p><a href="http://xip.io/?utm_content=buffer557a8">xip.io: wildcard dns for everyone</a></p></li>
+<li><p><a href="https://www.sitepen.com/blog/2015/10/08/stronger-javascript/">stronger javascript?</a></p></li>
+<li><p><a href="https://shellvatore.us/2015/10/09/please-stop-curl-wgeting-directly-to-bash-sh/">PLEASE STOP CURL/WGET'ING DIRECTLY TO BASH/SH</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

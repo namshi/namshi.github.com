@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: PWA | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/pwa/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Progressive Web Apps Dev Summit 2016 Highlights]]></title>
+    <link href="http://namshi.github.io/blog/2016/06/30/progressive-web-apps-dev-summit-2016-highlights/"/>
+    <updated>2016-06-30T20:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/06/30/progressive-web-apps-dev-summit-2016-highlights</id>
+    <content type="html"><![CDATA[<p>The first Progressive Web App dev summit happened in Amsterdam last week. I got a chance to attend the event and meet a lot of new people. All the sessions were nice, and I was so amazed to see the different browser vendors working together to push the web forward.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="/images/posts/pwa-dev-summit-highlights.jpg"></p>
+
+<p>Today I shared the highlights of all the sessions and code labs happened at the dev summit to the team. It&rsquo;s a very high-level overview of the whole event and the future of Progressive Web Apps. You can find my slides here:</p>
+
+<iframe src="https://docs.google.com/presentation/d/1I8y_grcX78Hpe3MNzTogjHHZtakVYoAtvk9WKaLz9rY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="760" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+]]></content>
+  </entry>
+  
+</feed>

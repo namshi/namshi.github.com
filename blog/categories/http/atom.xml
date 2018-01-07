@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: http | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/http/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #117]]></title>
+    <link href="http://namshi.github.io/blog/2015/12/10/newsletter-number-117/"/>
+    <updated>2015-12-10T17:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/12/10/newsletter-number-117</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi all!</p>
+
+<p>After a couple of weeks of long weekends we are back again!! :)</p>
+
+<p>Check out the list of awesome links we have got for you!</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.infoq.com/presentations/availability-consistency">availability &amp; consistency</a></p></li>
+<li><p><a href="https://www.facebook.com/notes/kent-beck/backing-thinkwards/1060123207353876">backing thinkwards</a></p></li>
+<li><p><a href="http://racksburg.com/choosing-an-http-status-code/">choosing an http status code — stop making it hard | racksburg</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://blog.thecodewhisperer.com/2015/12/08/clearing-up-the-integrated-tests-scam/">clearing up the integrated tests scam</a></p></li>
+<li><p><a href="https://github.com/mzabriskie/rackt-cli">command line interface for automating common tasks when building react.js components</a></p></li>
+<li><p><a href="https://css-tricks.com/snippets/sass/deep-getset-maps/">deep get/set in maps | css-tricks</a></p></li>
+<li><p><a href="https://www.quora.com/Did-Facebook-save-PHP-Or-did-WordPress-save-PHP">did facebook save php? or did wordpress save php? &ndash; quora</a></p></li>
+<li><p><a href="https://blog.8thlight.com/uncle-bob/2015/10/30/futureproof.html">future proof</a></p></li>
+<li><p><a href="http://www.yegor256.com/2014/09/16/getters-and-setters-are-evil.html">getters/setters. evil. period.</a></p></li>
+<li><p><a href="http://hhvm.com/blog/10859/php-7-support">hhvm php 7 support</a></p></li>
+<li><p><a href="https://open.buffer.com/diversity-strategies/">how facebook, pinterest and google build diverse teams</a></p></li>
+<li><p><a href="https://blogs.windows.com/msedgedev/2015/12/05/open-source-chakra-core/">microsoft edge’s javascript engine to go open-source</a></p></li>
+<li><p><a href="http://www.businessinsider.com/navy-seals-explain-consequences-of-ego-2015-11">navy seals explain consequences of ego</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-symfony-as-a-microframework">new in symfony 2.8: symfony as a microframework</a></p></li>
+<li><p><a href="http://pointnorth.io/">north</a></p></li>
+<li><p><a href="http://en.arguman.org/react-is-killing-angular">react is killing angular | argument map</a></p></li>
+<li><p><a href="http://softwareengineeringdaily.com/2015/12/04/engineering-at-uber-with-matt-ranney/">scaling uber with matt ranney &ndash; software engineering daily</a></p></li>
+<li><p><a href="http://landing.adobe.com/en/na/products/creative-cloud/comet/229818-notifyme.html">user experience, prototyping and design app | adobe project comet</a></p></li>
+<li><p><a href="https://www.quora.com/What-are-the-three-most-important-things-non-programmers-should-know-about-programming/answer/Simon-Effing">what are the three most important things non-programmers should know about programming? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/What-happens-when-you-receive-over-a-million-dollars-into-your-bank-account">what happens when you receive over a million dollars into your bank account? &ndash; quora</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #75]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/29/newsletter-number-75/"/>
+    <updated>2015-01-29T10:20:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/29/newsletter-number-75</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello folks!
+Here you go again with your weekly dose of #techthrusday !</p></blockquote>
+
+<ul>
+<li><p><a href="http://bit.ly/18x8NlF">Node.js Framework Comparison: Express vs. Koa vs. Hapi</a></p></li>
+<li><p><a href="http://bit.ly/1Djb25B">Monitor Docker Containers with Prometheus</a></p></li>
+<li><p><a href="http://bit.ly/1DbKvXv">PHP vs. Node.js: An epic battle for developer mind share</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://bit.ly/1CgJzo0">The Pitfalls of Code Review (And How To Fix Them)</a></p></li>
+<li><p><a href="http://sethgodin.typepad.com/seths_blog/2005/03/dont_shave_that.html">Don&rsquo;t Shave That Yak!</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/GetterEradicator.html">Getter or not getter</a></p></li>
+<li><p><a href="https://packagist.org/packages/roave/security-advisories">Roave Security Advisories</a></p></li>
+<li><p><a href="https://ideatosdotcom.wordpress.com/2015/01/02/named-exceptions-as-usual-its-all-about-trying-to-be-explicit/">named exceptions: as usual it’s all about trying to be explicit</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/EmbeddedDocument.html">Embedded Document</a></p></li>
+<li><p><a href="https://mwop.net/blog/2015-01-08-on-http-middleware-and-psr-7.html">On HTTP, Middleware, and PSR-7</a></p></li>
+<li><p><a href="http://bonsaiden.github.io/JavaScript-Garden/">Javascript garden</a></p></li>
+<li><p><a href="https://github.com/tiimgreen/github-cheat-sheet#readme">GitHub Cheat Sheet</a></p></li>
+<li><p><a href="https://www.adayinthelifeof.nl/2014/12/31/debugging-symfony-components/">Debugging Symfony components</a></p></li>
+<li><p><a href="http://ocramius.github.io/blog/roave-security-advisories-protect-against-composer-packages-with-security-issues/">roave/security-advisories: Composer against Security Vulnerabilities</a></p></li>
+<li><p><a href="http://wordpress.tv/2015/01/27/functional-programming-whats-the-fuss-all-about/">Functional Programming: What’s The Fuss All About?</a></p></li>
+<li><p><a href="https://medium.com/the-spumko-suite/testing-hapi-services-with-lab-96ac463c490a">Testing Hapi Services with Lab</a></p></li>
+<li><p><a href="http://www.tonymarston.net/php-mysql/please-do-not-break-our-language.html">Please do not break our language</a></p></li>
+<li><p><a href="http://chimera.labs.oreilly.com/books/1234000000262/index.html">Programming JavaScript Applications &ndash; Ebook</a></p></li>
+<li><p><a href="http://abdulapopoola.com/2014/11/11/introduction-to-javascript-promises/">Introduction to JavaScript Promises</a></p></li>
+<li><p><a href="http://facebook.github.io/fixed-data-table/">Fixed Data Tables for React</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=KVZ-P-ZI6W4">React.js Conf 2015 Keynote &ndash; Introducing React Native</a></p></li>
+<li><p><a href="https://ideone.com/">Ideone, an online compiler and debugging tool</a></p></li>
+<li><p><a href="http://blog.qbox.io/migrating-from-facets-to-aggregations">Elasticsearch, Migrating from Facets to Aggregations</a></p></li>
+<li><p><a href="https://www.found.no/foundation/Sense-Elasticsearch-interface/">Sense &ndash; a Cool JSON Aware Interface to Elasticsearch</a></p></li>
+<li><p><a href="http://www.browserlondon.com/blog/2014/03/how-we-use-elasticsearch-to-enhance-our-web-products/">How we use Elasticsearch to enhance our web products</a></p></li>
+<li><p><a href="http://t.co/gfkUGVcb3p">You&rsquo;ve seen nothing until you&rsquo;ve seen a picture of a pigeon having a job interview to become a pigeon</a></p></li>
+<li><p><a href="http://buff.ly/15U8LDe">Node v0.10.36 (Stable)</a></p></li>
+<li><p><a href="http://buff.ly/1yZAIoh">CVE-2015-0235 &ndash; GHOST: glibc gethostbyname buffer overflow</a></p></li>
+<li><p><a href="http://buff.ly/1JU0egg">An introduction to containers, Kubernetes, and the trajectory of modern cloud computing</a></p></li>
+<li><p><a href="http://buff.ly/1Bg8aDP">How GitHub uses GitHub to document GitHub</a></p></li>
+<li><p><a href="http://buff.ly/1wy6P8V">Quick Pull Requests</a></p></li>
+<li><p><a href="http://buff.ly/1wy6xi9">Node.js 0.11.15 and io.js 1.0.3 &ndash; Very much the same in performance</a></p></li>
+<li><p><a href="http://buff.ly/1tho6rI">Node 0.11.15&hellip;and IoJS?</a></p></li>
+<li><p><a href="http://buff.ly/1Bg4vpH">Harder, Better, Faster, Stronger Lo-Dash v3</a></p></li>
+<li><p><a href="http://buff.ly/1B7vhQQ">Backbone Is Not Enough</a></p></li>
+<li><p><a href="http://buff.ly/1yQneK2">Docker 1.5.0-rc1: readonly filesystems, picking a specific dockerfile and more goodness!</a></p></li>
+<li><p><a href="https://github.com/elier/mantis5">Mantis5 is an intent to revamp the popular MantisBT project using Symfony and HTML5</a></p></li>
+<li><p><a href="https://github.com/orocrm/platform">The Oro Platform offers developers the exact business application platform they’ve been looking for, by combining the tools they need.</a></p></li>
+<li><p><a href="https://github.com/maryrosecook/gitlet">git in js</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/27/the-future-of-marketing-automation-depends-on-data-analytics-at-scale/">The future of Marketing Automation</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/27/facebook-releases-tools-to-help-marketers-understand-how-ads-boost-their-business/">Face book tool to ads boost</a></p></li>
+<li><p><a href="https://gigaom.com/2015/01/27/a-few-interesting-numbers-about-apache-spark/">A few interesting numbers about Apache Spark</a></p></li>
+<li><p><a href="http://venturebeat.com/2015/01/22/big-data-and-mobile-analytics-ready-to-rule-2015/">Big data and mobile analytics ready to rule 2015</a></p></li>
+<li><p><a href="http://www.information-age.com/technology/information-management/123458931/traditional-big-data-strategy-ancient-history">Traditional Big Data Strategy Ancient History</a></p></li>
+<li><p><a href="http://databricks.com/blog/2015/01/28/introducing-streaming-k-means-in-spark-1-2.html">Introducing Streaming k-means in Spark</a></p></li>
+<li><p><a href="http://research.gigaom.com/2015/01/cloud-bi-competition-heats-up-apache-projects-move-up/">Cloud BI competition heats up Apache projects</a></p></li>
+<li><p><a href="http://analytics.blogspot.ae/2015/01/start-remarketing-with-google-analytics.html">Remarketing with Google analytics</a></p></li>
+<li><p><a href="http://www.jenunderwood.com/2015/01/27/free-power-bi/">Free Power BI</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #72]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/08/newsletter-number-72/"/>
+    <updated>2015-01-08T15:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/08/newsletter-number-72</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello Folks!</p>
+
+<p>Here we go with the first <a href="/blog/categories/techthursday/">#TechThursday</a> for 2015.</p>
+
+<p>Every now and then it happens that people in our team wear the same geeky T-shirt&hellip; <strong>T-shirt clash</strong>:</p>
+
+<p><img class="center" src="/images/t-shirt.jpg"></p></blockquote>
+
+<ul>
+<li><p><a href="https://github.com/bcoe/crapify">Crapify, a proxy for simulating slow, spotty, HTTP connections</a></p></li>
+<li><p><a href="https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99">Why you should not use Angular</a></p></li>
+<li><p><a href="https://codeascraft.com/2012/05/22/blameless-postmortems/">Blameless PostMortems and a Just Culture</a></p></li>
+<li><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">The indtroduction to Reactive Programming</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://slidesha.re/1xUpRNz">The DevOps Wonder</a></p></li>
+<li><p><a href="http://bit.ly/1DA8dNX">React js Vs Angular js</a></p></li>
+<li><p><a href="http://bit.ly/1AuEg3r">Scrawl &ndash; web capture crawler</a></p></li>
+<li><p><a href="http://bit.ly/1yDu0Fs">Docker &ndash; Beginner&rsquo;s tutorial</a></p></li>
+<li><p><a href="https://github.com/denderello/symfony-docker-example">Dockerized Symfony Project</a></p></li>
+<li><p><a href="https://github.com/google/novm">Novm &ndash; legacy-free, type 2 hypervisor written in Go</a></p></li>
+<li><p><a href="http://buff.ly/1xzIODe">Why you should pay developers to learn</a></p></li>
+<li><p><a href="http://buff.ly/1xvT9QC">How can React and Flux help us create better Angular applications?</a></p></li>
+<li><p><a href="http://buff.ly/1xvT3Ix">How Much Testing is Too Much?</a></p></li>
+<li><p><a href="http://buff.ly/14ony8u">Agile Won&rsquo;t Fix Your Organization</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-cross-account-access-in-the-aws-management-console/">Cross-Account Access in the AWS Management Console</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-ec2-spot-instance-termination-notices/">EC2 Spot Instance Termination Notices</a></p></li>
+<li><p><a href="http://www.slideshare.net/bingoarunprasath/docker-demo-on-php-application-deployment">Docker &ndash; Demo on PHP Application deployment</a></p></li>
+<li><p><a href="http://weavora.com/blog/2013/03/26/why-we-prefer-symfony2-over-yii-framework/">Symfony2 Over Yii</a></p></li>
+<li><p><a href="https://github.com/es-analysis/plato">JavaScript source code visualization, static analysis, and complexity tool</a></p></li>
+<li><p><a href="https://plus.google.com/app/basic/stream/z12iztbo0mzwhnkbi04chrfidpb4s1vglfg">Chrome Canary improvements to the Network panel</a></p></li>
+<li><p><a href="https://github.com/dai-shi/codeonmobile">A coding tool on mobile devices targeting GitHub/Codeship/Heroku</a></p></li>
+<li><p><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></p></li>
+<li><p><a href="http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/">Working Effectively With iTerm2</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #61]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/23/newsletter-number-61/"/>
+    <updated>2014-10-23T12:17:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/23/newsletter-number-61</id>
+    <content type="html"><![CDATA[<p>Hey folks!</p>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<blockquote><p>Thanks to <a href="https://github.com/shidhincr">Shidhin</a>, we have a shiny new blog theme! Also, he wrote an incredible
+<a href="http://tech.namshi.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/">blog post</a> about Javascript ES6,
+you should check it out!</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://www.smashingmagazine.com/2014/10/21/providing-a-native-experience-with-web-technologies/">Hybrid Mobile Apps: Providing A Native Experience With Web Technologies</a></p></li>
+<li><p><a href="http://strongloop.com/strongblog/modular-node-js-express/">Writing Modular Node.js Projects for Express and Beyond</a></p></li>
+<li><p><a href="https://github.com/mosaicxm/vagrant-hostmaster">Vagrant plugin to manage /etc/hosts entries on both the host OS and guest VMs</a></p></li>
+<li><p><a href="https://github.com/sameersbn/docker-extras">Helper scripts for everyday docker use</a></p></li>
+<li><p><a href="http://reqr.es/">Reqres &ndash; A hosted REST-API ready to respond to your AJAX requests</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.dzone.com/links/r/4_programming_languages_with_the_potential_to_rev.html">4 Programming Languages with the Potential to Revolutionize the World of Programming</a></p></li>
+<li><p><a href="http://arstechnica.com/information-technology/2014/10/ten-years-of-ubuntu-how-linuxs-beloved-newcomer-became-its-criticized-king/">Ten years of Ubuntu: How Linux&rsquo;s beloved newcomer became its criticized king</a></p></li>
+<li><p><a href="http://www.yegor256.com/2014/09/09/restful-web-sites.html">RESTful API and a Web Site in the same URL</a></p></li>
+<li><p><a href="http://blog.npmjs.org/post/100099402720/registry-roadmap">Fixing Npm: Registry roadmap</a></p></li>
+<li><p><a href="http://www.sitepoint.com/preparing-ecmascript-6-new-number-methods/">ES6 new Numbers</a></p></li>
+<li><p><a href="https://github.com/danielstjules/jsinspect">Jsinspect: detect your duplicate code before is too late</a></p></li>
+<li><p><a href="http://scotch.io/bar-talk/the-future-of-expressjs-and-alternatives">The Future of ExpressJS and Alternatives</a></p></li>
+<li><p><a href="http://dorey.github.io/JavaScript-Equality-Table/">JavaScript Equality Table</a></p></li>
+<li><p><a href="http://www.smashingmagazine.com/2012/10/09/designing-javascript-apis-usability/">Useful Principles for Creating Simple and Flexible JavaScript APIs</a></p></li>
+<li><p><a href="http://jsdatav.is/intro.html">Data Visualization with JavaScript</a></p></li>
+<li><p><a href="http://jhusain.github.io/learnrx/">Functional Programming in JavaScript: A Collection of Hands-on Exercises</a></p></li>
+<li><p><a href="http://www.benhowell.net/guide/2014/06/20/multithreaded-javascript-using-nashorn/">Multithreaded Javascript using Nashorn</a></p></li>
+<li><p><a href="http://paasifier.herokuapp.com/">Find the best PaaS for your applications</a></p></li>
+<li><p><a href="http://symfony.com/blog/the-symfony-project-turns-9">Symfony project turns 9!</a></p></li>
+<li><p><a href="http://notebook.ideapublic.org/2014/one-less-password">One Less Password</a></p></li>
+<li><p><a href="http://swarmjs.github.io/articles/todomvc">Swarm.js+React — real-time, offline-ready Holy Grail web apps</a></p></li>
+<li><p><a href="http://mozilla.github.io/nunjucks">A rich and powerful templating language for JavaScript.</a></p></li>
+<li><p><a href="http://arqex.com/939/learning-much-javascript-one-line-cod">Learning much javascript from one line of code</a></p></li>
+<li><p><a href="http://www.theepochtimes.com/n3/1031947-5-deadly-linux-commands-you-should-never-run/">5 Deadly Linux Commands You Should Never Run</a></p></li>
+<li><p><a href="http://blog.codeship.io/2014/10/21/proper-server-naming-scheme.html">A Proper Server Naming Scheme</a></p></li>
+<li><p><a href="http://blog.iron.io/2014/10/docker-in-production-what-weve-learned.html">Docker in Production — What We’ve Learned Launching Over 300 Million Containers</a></p></li>
+<li><p><a href="https://hashicorp.com/blog/introducing-consul-template.html">Introducing Consul Template</a></p></li>
+<li><p><a href="https://github.com/romansanchez/Calaca">Search UI for Elasticsearch</a></p></li>
+<li><p><a href="http://utcc.utoronto.ca/~cks/space/blog/web/VegetaLoadTesting">Vegeta, a tool for web server stress testing</a></p></li>
+<li><p><a href="https://sslmate.com/">Buy SSL certs from the command line</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #60]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/16/newsletter-number-60/"/>
+    <updated>2014-10-16T12:52:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/16/newsletter-number-60</id>
+    <content type="html"><![CDATA[<p>Hello, It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<blockquote><p>News from the IT Team:</p>
+
+<p>As you probably know reading our newsletter we are very interested in Docker, the open platform for distributed applications, that&rsquo;s why
+<a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> will attend
+the <a href="http://europe.dockercon.com/">Docker Europe conference in December</a></p>
+
+<p>Have fun in the cold and grey Amsterdam guys :D</p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend::</strong></p>
+
+<ul>
+<li><p><a href="http://vimeo.com/105955605">Mary live-codes a JavaScript game from scratch </a></p></li>
+<li><p><a href="http://tia.mat.br/blog/html/2014/10/06/life_of_a_http_request.html">Life of a HTTP request, as seen by my toy web server</a></p></li>
+<li><p><a href="http://antirez.com/news/79">Redis cluster, no longer vaporware</a></p></li>
+<li><p><a href="http://buff.ly/1sKB2ns">Passwordless authentication: Secure, simple, and fast to deploy</a></p></li>
+<li><p><a href="http://buff.ly/1rukgDK">How POODLE Happened</a></p></li>
+<li><p><a href="http://buff.ly/1sy0Cwc">Container Computing and AWS</a></p></li>
+<li><p><a href="http://buff.ly/1xR9RYG">Google Map Tracks Your Every Move. Check Your &lsquo;Location History&rsquo; to Verify It</a></p></li>
+<li><p><a href="http://buff.ly/1sJTgXC">Developer Preview of Version 3 of AWS SDK for PHP</a></p></li>
+<li><p><a href="http://buff.ly/1sebUnL">HastyScribe, markdown to self-contained HTML pages</a></p></li>
+<li><p><a href="http://buff.ly/1sEg4b4">AngularJS 1.3.0</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://dendory.net/screenshots/abstraction_of_code.pdf">A study of code abstraction</a></p></li>
+<li><p><a href="http://blog.ircmaxell.com/2014/10/an-open-letter-to-php-fig.html">An open letter to PHP-FIG</a></p></li>
+<li><p><a href="http://kotlinlang.org/">Kotlin &ndash; Statically typed programming language targeting the JVM and JavaScript</a></p></li>
+<li><p><a href="http://nodeframework.com/">Hand-picked registry of Node.js frameworks</a></p></li>
+<li><p><a href="https://www.npmjs.org/package/restling">Restling: a promise based asynchronous http requests</a></p></li>
+<li><p><a href="http://buff.ly/1nj1bcv">Loading webfonts with high performance on responsive websites</a></p></li>
+<li><p><a href="http://buff.ly/1xGLtJe">Symfony3 upgrade guide</a></p></li>
+<li><p><a href="http://buff.ly/1nhqhbV">Meteor.js: not new but better recheck :)</a></p></li>
+<li><p><a href="http://buff.ly/1qG1b1s">Sharing micro-service authentication using Nginx, Passport and Redis Glozic</a></p></li>
+<li><p><a href="http://buff.ly/1vZdoon">5 Programming Languages Marked for Death</a></p></li>
+<li><p><a href="http://buff.ly/1sy17Xj">Amazon finally launched SSD storages for RDS</a></p></li>
+<li><p><a href="http://buff.ly/1yYI10P">What does the adoption of the Blink rendering engine by the Chromium project mean for WebKit?</a></p></li>
+<li><p><a href="http://www.sitepoint.com/javascript-beyond-web-2014/">All the places where you can use javascript</a></p></li>
+<li><p>Comparison: <a href="https://medium.com/este-js-framework/whats-wrong-with-angular-js-97b0a787f903">what&rsquo;s wrong</a> and <a href="http://www.sitepoint.com/love-angularjs/">why I love</a> AngularJs</p></li>
+<li><p><a href="https://www.datadoghq.com/2014/08/monitor-coreos-scale-datadog/">Monitor CoreOS at scale with Datadog</a></p></li>
+<li><p><a href="http://swrveengineering.wordpress.com/2014/10/14/how-we-increased-our-ec2-event-throughput-by-50-for-free/">How we increased our EC2 event throughput by 50%, for free</a></p></li>
+<li><p><a href="http://www.agileweboperations.com/supporting-millions-of-pretty-url-rewrites-in-nginx-with-lua-and-redis">Supporting Millions of Pretty URL Rewrites in Nginx with Lua and Redis</a></p></li>
+<li><p><a href="http://www.filamentgroup.com/lab/to-picturefill.html">To Picturefill, or not to Picturefill</a></p></li>
+<li><p><a href="http://www.benlesh.com/2014/09/dynamic-worker-threads-in-javascript.html">Dynamic Worker Threads In JavaScript</a></p></li>
+<li><p><a href="http://www.toptal.com/angular-js/angular-js-demystifying-directives">AngularJS: Demystifying Directives</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=8aGhZQkoFbQ">What the heck is the event loop anyway ?</a></p></li>
+<li><p><a href="http://instagram-engineering.tumblr.com/post/97740520316/betterandroid">Building a better Instagram app for Android</a></p></li>
+<li><p><a href="http://www.whitewashing.de/2014/10/14/lightweight_symfony2_controllers.html">Lightweight Symfony2 Controllers</a></p></li>
+<li><p><a href="https://www.acquia.com/blog/future-php-shared-power-tools">The Future of PHP is Shared Power Tools</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

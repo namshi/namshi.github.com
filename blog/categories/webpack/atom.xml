@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: webpack | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/webpack/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack]]></title>
+    <link href="http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack/"/>
+    <updated>2016-07-20T12:34:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack</id>
+    <content type="html"><![CDATA[<p>ES6 is lovely, right?</p>
+
+<p>I believe &ldquo;Yes&rdquo; it is! However, ES6 is not quite ready yet. Present JavaScript environments (NODE and Browser ) cannot run all the ES6 proposed features. Browser vendors are slowly shipping the features to their JS engines. Hence, as of today, only ES5 is guaranteed to work seamlessly in every JS environment.</p>
+
+<!-- more -->
+
+
+<p>So, how can we write ES6 ?</p>
+
+<p>Luckily, we have transpilers. They allow us to transpile ( a term for compiling from a language to the same language but a different version ) ES6 code to ES5. In this post, we&rsquo;ll see how to write a cross platform ( UMD ) module in ES6 and compile to ES5 using <code>webpack</code> and <code>babel</code>.</p>
+
+<h2>Let&rsquo;s Start</h2>
+
+<p>In a nutshell, our project includes:</p>
+
+<ol>
+<li><a href="https://webpack.github.io/">Webpack</a> is a code bundling tool and will use for building our module.</li>
+<li><a href="https://github.com/babel/babel-loader">Babel-loader</a> for transpiling ES6 code to ES5</li>
+<li>Babel plugins and presets:
+
+<ul>
+<li>babel-preset-es2015</li>
+<li>babel-preset-stage-0</li>
+<li>babel-plugin-add-module-exports</li>
+</ul>
+</li>
+<li><a href="https://github.com/avajs/ava">Ava</a> for unit testing our module</li>
+<li>NPM scripts for the build, test and  pre-publish tasks.</li>
+</ol>
+
+
+<p>Let&rsquo;s start by creating a new directory for our project. In the terminal, navigate to the directory and run <code>npm init</code>. Follow the instructions to generate a valid <code>package.json</code> file.</p>
+
+<p>Time to install the dependencies for the module. Run the following command to install the packages from npm:</p>
+
+<p><code>sh
+npm install --save-dev webpack babel-loader babel-plugin-add-module-exports babel-preset-es2015 babel-preset-stage-0 ava
+</code></p>
+
+<p>Create the following files and folder structure:</p>
+
+<ol>
+<li>index.js ( This will be our main ES6 source file )</li>
+<li>webpack.config.js ( The configurations required for webpack to build our module )</li>
+<li>.babelrc ( babel configuration file )</li>
+<li><code>dist</code> directory ( Final compiled package goes here )</li>
+</ol>
+
+
+<p>Let&rsquo;s start with the webpack configuration. Open <code>webpack.config.js</code> in your favorite editor. Copy and paste the below code:</p>
+
+<p>```js webpack.config.js</p>
+
+<pre><code>module.exports = {
+    entry: './index.js',
+    target: 'node',
+    output: {
+        path: './dist',
+        filename: 'build.js',
+        libraryTarget: 'umd'
+    },
+    module: {
+        loaders: [{
+            test: /\.js$/,
+            loader: 'babel',
+            exclude: /node_modules/
+        }]
+    }
+}
+</code></pre>
+
+<p>```</p>
+
+<p>This is a simple configuration file required by webpack. The exported configuration file will be processed by webpack. Let&rsquo;s look at each item in the exported object:</p>
+
+<ul>
+<li><code>entry</code> is the main file from where webpack will look for all other dependencies.</li>
+<li>We set <strong>target=&lsquo;node&rsquo;,</strong> so webpack knows how to mock/load the default node packages like &ldquo;fs&rdquo;, &ldquo;url&rdquo; ..etc</li>
+<li>Output section contains information about our final package and configurations related to it. We set our <code>libraryTarget</code> to <strong>UMD</strong> so that webpack will generate the final module in UMD format ( universal module definition &mdash; for commonJS, requireJS, and browser )</li>
+<li>Module is the section where we can configure different loaders for our code. Since we write the code in ES6, we need webpack to use <code>babel-loader</code> to transform the file. Module can have different other options for configuring the module, however, we just need only the loader configuration for now.</li>
+</ul>
+
+
+<p>Babel requires plugins to complete its job properly. For that, update the babel configurations in <code>.babelrc</code> file.</p>
+
+<p>```js .babelrc</p>
+
+<pre><code>{
+    "moduleId": "myModule",
+    "presets": ["es2015", "stage-0"],
+    "plugins": ["add-module-exports"]
+}
+</code></pre>
+
+<p>```</p>
+
+<p>Here we specify the moduleId to the final name of the module. We need to add the presets option to <code>["es2015", "stage-0"]</code> in order to transform the ES6 code. Find more about <code>es-2015</code> and <code>stage-0</code> features <a href="https://github.com/hemanth/es-next#stage-0">here</a></p>
+
+<p>Babel 6 does not generate a default export inside the compiled file. Instead, the default export is exported as a property called <code>default</code>. Because of this, if we try <code>require('myModule')</code>, it doesn&rsquo;t work. Babel 6 export should be required using <code>require('myModule').default</code>.</p>
+
+<p>That&rsquo;s why we use a plugin called <code>add-module-exports</code>. Its duty is to add the default export in the final babel generated output. You can find more about it <a href="https://www.npmjs.com/package/babel-plugin-add-module-exports">here</a>.</p>
+
+<p><em>Note: Make sure the <code>moduleId</code> in .babelrc is matching with your module&rsquo;s name.</em></p>
+
+<h2>Set up the tests</h2>
+
+<p>I find <code>ava</code> would be the best option for unit testing our module. Let&rsquo;s create a <code>tests</code> directory and add a new file <code>build.spec.js</code>. A basic test case is give below:</p>
+
+<p>```js build.spec.js
+var test = require(&lsquo;ava&rsquo;);
+var myModule = require(&lsquo;../dist/build&rsquo;);</p>
+
+<p>test(&lsquo;the log method&rsquo;, t => {</p>
+
+<pre><code>t.is(myModule.log('hi'), 'Logging the message : hi');
+</code></pre>
+
+<p>});
+```</p>
+
+<p>Now make the tests pass by implementing the real code in the module.</p>
+
+<p>```js index.js
+const myModule = {
+  log(message){</p>
+
+<pre><code>return `Logging the message : ${message}`;
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>export default myModule;
+```</p>
+
+<p>More about <code>ava</code> <a href="https://github.com/avajs/ava">here</a>.</p>
+
+<h2>Set up the NPM scripts to do the tasks</h2>
+
+<p>We need 5 npm tasks to make our life easier. All of them are self-explanatory; Just have look at the code in <code>package.json</code>.</p>
+
+<ol>
+<li><strong>npm start:</strong>  To run in development mode. This task will watch for any source file changes and output the build.</li>
+<li><strong>npm run build:</strong> Build the final module in production mode ( minified and with source maps ).</li>
+<li><strong>npm test:</strong> Run the <code>ava</code> tests.</li>
+<li><strong>npm run test-w:</strong> Run tests in continuous watch mode.</li>
+<li><strong>npm prepublish:</strong> Before publishing the package, this task run the <code>build</code> and <code>test</code> to make sure everything works fine.</li>
+</ol>
+
+
+<p>Final scripts will look like this:</p>
+
+<p>```js package.json
+&ldquo;scripts&rdquo;: {</p>
+
+<pre><code>"start": "webpack -w",
+"build": "webpack -p",
+"test": "ava tests/**/*.js",
+"test-w": "ava -w tests/**/*.js",
+"prepublish": "npm build &amp;&amp; npm test"
+</code></pre>
+
+<p>}
+```</p>
+
+<p>For developing in TDD fashion, run <code>npm start</code> and <code>npm run test-w</code> together.</p>
+
+<h2>Make the <code>dist/build.js</code> as the main file for the module</h2>
+
+<p>Finally, we need to tell npm about where to load the module from. Edit the <code>package.json</code> and change the &ldquo;main&rdquo; property to <code>dist/build.js</code></p>
+
+<h2>Summary</h2>
+
+<p>Developers already adopted ES6 even before it&rsquo;s available. Thanks to all these tools and the people behind them.</p>
+
+<p>Today we learnt the minimal set-up to start writing code in ES6. You can find the repo for the <a href="https://github.com/namshi/node-es6-seed">seed project here</a>. Fork, and create your next npm package in ES6.</p>
+
+<p>I hope you enjoyed reading the article. Feedbacks are welcome!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #120]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/07/newsletter-number-120/"/>
+    <updated>2016-01-07T15:26:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/07/newsletter-number-120</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello everyone,
+for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
+After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
+
+<p><img class="center" src="/images/posts/ping-pong-final.jpg"></p>
+
+<blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
+
+<!-- more -->
+
+
+<p><img class="center" src="/images/posts/ping-pong-tie-sheet.jpg"></p>
+
+<blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
+
+<ul>
+<li><p><a href="http://jason.pureconcepts.net/2015/08/100-days-practicing-tdd/">100 days practicing tdd</a></p></li>
+<li><p><a href="https://addyosmani.com/blog/using-npm-offline/">addyosmani.com &ndash; offline installation of npm packages</a></p></li>
+<li><p><a href="http://rmurphey.com/blog/2015/11/25/building-for-http2?utm_content=buffer6a67a">building for http/2</a></p></li>
+<li><p><a href="https://medium.com/packt-publishing/docker-has-turned-us-all-into-sysadmins-f4269c8be388">docker has turned us all into sysadmins — packt publishing — medium</a></p></li>
+<li><p><a href="http://onehungrymind.com/build-a-simple-website-with-angular-2/">get started with angular 2 by building a simple website – one hungry mind</a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/5360586/how-can-i-combine-two-non-sequential-git-commits-into-one">how can i combine two non-sequential git commits into one? &ndash; stack overflow</a></p></li>
+<li><p><a href="https://github.com/braydie/HowToBeAProgrammer">how to be a programmer</a></p></li>
+<li><p><a href="https://github.com/petehunt/react-howto">how to tackle the react ecosystem</a></p></li>
+<li><p><a href="https://glebbahmutov.com/blog/instant-web-application/">instant web application | better world by better software</a></p></li>
+<li><p><a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">internet explorer end of support</a></p></li>
+<li><p><a href="http://engineeringblog.yelp.com/2016/01/dumb-init-an-init-for-docker.html">introducing dumb-init, an init system for docker containers</a></p></li>
+<li><p><a href="http://tomdale.net/2015/11/javascript-frameworks-and-mobile-performance/">javascript frameworks and mobile performance : tom dale</a></p></li>
+<li><p><a href="http://rohannair.ca/learning-javascript">learning javascript (part 1)</a></p></li>
+<li><p><a href="https://voice.kadira.io/let-s-compose-some-react-containers-3b91b6d9b7c8">let’s compose some react containers — kadira voice — medium</a></p></li>
+<li><p><a href="http://www.slideshare.net/javier.eguiluz/new-symfony-tips-tricks-symfonycon-paris-2015">new symfony tips </a></p></li>
+<li><p><a href="https://medium.com/cool-code-pal/one-world-one-language-15be446f8809">one world, one language — css perverts </a></p></li>
+<li><p><a href="https://medium.com/@franciov/one-year-of-web-components-855490359d1b">one year of web components — medium</a></p></li>
+<li><p><a href="https://mail.python.org/pipermail/core-workflow/2016-January/000345.html?utm_content=buffer11c43">python moving to github</a></p></li>
+<li><p><a href="https://medium.com/rackt-and-roll/react-router-s-future-c026c0f2874f">react router’s future — rackt and roll — medium</a></p></li>
+<li><p><a href="https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98">react’s jsx: the other side of the coin — medium</a></p></li>
+<li><p><a href="https://medium.com/@andrewingram/recipe-oriented-documentation-1601caed8a44">recipe-oriented documentation</a></p></li>
+<li><p><a href="https://medium.com/@sebmck/2015-in-review-51ac7035e272">sebastian mckenzie: 2015 in review </a></p></li>
+<li><p><a href="http://www.yacoset.com/Home/signs-that-you-re-a-good-programmer">signs that you&rsquo;re a good programmer &ndash; software engineering tips</a></p></li>
+<li><p><a href="http://ilkka.io/blog/static-sites-with-docker/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uUsUaa3lMI/0ER3fOvrPUfGjI4DTcNkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">static sites with docker — ilkka.io</a></p></li>
+<li><p><a href="http://lakion.com/blog/tdd-your-api-with-symfony-and-phpunit">tdd your api with symfony and phpunit</a></p></li>
+<li><p><a href="http://cli.learncodethehardway.org/book/">the command line crash course</a></p></li>
+<li><p><a href="https://getcomposer.org/doc/04-schema.md">the composer.json schema &ndash; autoload dev</a></p></li>
+<li><p><a href="http://elbenshira.com/blog/the-end-of-dynamic-languages/">the end of dynamic languages</a></p></li>
+<li><p><a href="http://www.2ality.com/2015/12/bundling-modules-future.html?m=1">the future of bundling javascript modules</a></p></li>
+<li><p><a href="https://blog.andyet.com/2015/12/31/the-future-of-node-is-microsofts-fork/?utm_content=bufferc21cf">the future of node is in microsoft’s fork</a></p></li>
+<li><p><a href="http://rubyronin.com/the-truth-about-working-at-a-japanese-company/?utm_content=buffer5ef36">the truth about working at a japanese company &ndash; the ruby ronin</a></p></li>
+<li><p><a href="http://g14n.info/2015/12/tiny-npm-package/?utm_content=bufferce3fb">tiny npm package</a></p></li>
+<li><p><a href="https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225">want to learn javascript in 2015 / 2016? — medium</a></p></li>
+<li><p><a href="https://medium.com/@ryanflorence/welcome-to-future-of-web-application-delivery-9750b7564d9f">welcome to future of web application delivery — medium</a></p></li>
+<li><p><a href="http://carlosbecker.com/posts/good-code/">what good code is? – carlos alexandro becker</a></p></li>
+<li><p><a href="http://matthewkirk.com/why-did-i-write-a-machine-learning-book-in-ruby/?utm_content=buffer4f976">why did i write a machine learning book in ruby?</a></p></li>
+<li><p><a href="https://medium.com/@mikesherov/writing-clear-code-not-clever-code-d6b90353a3c5">writing clear code, not clever code</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

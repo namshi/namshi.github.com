@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: jose | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/jose/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Update your namshi/jose installations as a security vulnerability was found]]></title>
+    <link href="http://namshi.github.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/"/>
+    <updated>2015-02-19T10:44:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found</id>
+    <content type="html"><![CDATA[<p>Just a heads up on a problem we&rsquo;ve found
+thanks to <a href="http://www.timmclean.net/">Tim</a>,
+who has been reviewing some open source JWT / JWS
+implementations for fun.</p>
+
+<!-- more -->
+
+
+<p>Two days ago we rolled out a few new tags for
+the <a href="https://github.com/namshi/jose">namshi/jose</a>
+which fix a security vulnerability on the library.</p>
+
+<p>The problem was introduced in <a href="https://github.com/namshi/jose/pull/7">this PR</a>
+and would cause an attacker to be able
+to impersonate other users. <strong>If you are running
+on a vulnerable version you should upgrade
+immediately</strong>.</p>
+
+<p>As far as installations are concerned:</p>
+
+<ul>
+<li><code>1.0</code> is not affected</li>
+<li><code>1.1</code> has been patched through <code>1.1.2</code></li>
+<li><code>1.2</code> has been patched through <code>1.2.2</code></li>
+<li><code>2.0</code> has been patched through <code>2.0.3</code></li>
+<li><code>2.1</code> has been patched through <code>2.1.2</code></li>
+</ul>
+
+
+<p>Please check your <code>composer.lock</code> and <code>composer.json</code>:
+if you run a vulnerable version simply do a <code>composer update</code>
+so that you&rsquo;ll be upgraded to a patched version.</p>
+
+<p>Users of the <a href="https://github.com/lexik/LexikJWTAuthenticationBundle">LexikJwtAuthenticationBundle</a>
+can do the same as the library requires <code>namshi/jose@~1.1</code>.</p>
+
+<p>We also opened a <a href="https://github.com/FriendsOfPHP/security-advisories/pull/49">PR</a> against the database of PHP security vulnerabilities
+rrun by the FriendsOfPHP organization, so you should be able to notice the
+issue through the <a href="https://security.sensiolabs.org/check">Sensio security checker</a>
+soon!</p>
+]]></content>
+  </entry>
+  
+</feed>

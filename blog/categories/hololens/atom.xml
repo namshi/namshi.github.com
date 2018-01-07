@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: hololens | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/hololens/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #74]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/22/newsletter-number-74/"/>
+    <updated>2015-01-22T10:20:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/22/newsletter-number-74</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!
+Here you go again with your weekly dose of #techthrusday !</p>
+
+<p>Let&rsquo;s welcome Nitesh Sharma to the tech team! (and Amin to photobombing :P )</p>
+
+<p><img class="center" src="/images/nitesh.jpg"></p>
+
+<p>Thanks to <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> that published a <a href="https://github.com/namshi/docker-akeneo">container</a> to run the Akeneo PIM through docker a few days ago!</p></blockquote>
+
+<ul>
+<li><p><a href="http://buff.ly/1BAAUMG">A week of symfony 420 (12-18 January 2015)</a></p></li>
+<li><p><a href="http://buff.ly/15sEI4K">New Amazon Web Services Wind Farm (Fowler Ridge)</a></p></li>
+<li><p><a href="http://buff.ly/1yGXcu8">Auto Recovery for Amazon EC2</a></p></li>
+<li><p><a href="http://buff.ly/15tyjqG">My Year in Review: 2014 | Kapeli Blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://buff.ly/15tvl53">Troubleshooting Elasticsearch searches, for Beginners</a></p></li>
+<li><p><a href="http://buff.ly/1yLfZ60">Production Deployment With Docker</a></p></li>
+<li><p><a href="http://buff.ly/1yLgjlh">Fig is becoming docker-compose</a></p></li>
+<li><p><a href="http://buff.ly/1xSqArW">Getting Started with ES 6</a></p></li>
+<li><p><a href="http://buff.ly/1J97oNk">The coder&rsquo;s dilemma</a></p></li>
+<li><p><a href="http://buff.ly/1ACSFFH">What is it like to just quit your job, get a backpack and travel the world?</a></p></li>
+<li><p><a href="http://buff.ly/1CtkxhK">What are most software engineers going to do once they&rsquo;re over 50?</a></p></li>
+<li><p><a href="http://buff.ly/1yEnmxy">What tech talks should every software engineer watch?</a></p></li>
+<li><p><a href="http://buff.ly/1J1abrC">Oliver Samwer Says Rocket Isn&rsquo;t An Incubator</a></p></li>
+<li><p><a href="http://buff.ly/1KMzEJb">The #Docker Image v1 Spec is out docker/docker</a></p></li>
+<li><p><a href="http://manuel.bernhardt.io/2014/12/30/generation-javascript/">Generation Javascript</a></p></li>
+<li><p><a href="http://www.microsoft.com/microsoft-hololens/en-us">The era of holographic computing is here</a></p></li>
+<li><p><a href="http://jlongster.com/Presenting-The-Most-Over-Engineered-Blog-Ever">Presenting the most over engineered blog ever</a></p></li>
+<li><p><a href="http://ferd.ca/awk-in-20-minutes.html">Awk in 20 minutes</a></p></li>
+<li><p><a href="http://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html">What&rsquo;s up with monomorphism?</a></p></li>
+<li><p><a href="http://www.onebigfluke.com/2015/01/experimentally-verified-why-client-side.html">Experimentally verified: &ldquo;Why client-side templating is wrong&rdquo;</a></p></li>
+<li><p><a href="https://mgechev.github.io/javascript-algorithms/">JavaScript algorithms</a></p></li>
+<li><p><a href="https://leanpub.com/understandinges6/read/">Complete ES6 learning</a></p></li>
+<li><p><a href="http://philipwalton.com/articles/normalizing-cross-browser-flexbox-bugs/">Normalizing Cross-browser Flexbox Bugs</a></p></li>
+<li><p><a href="http://bit.ly/1uwkMdh">A Beginner&rsquo;s Guide to HTTP Cache Headers</a></p></li>
+<li><p><a href="http://bit.ly/1t0MGNA">Docker Best Practices</a></p></li>
+<li><p><a href="http://slidesha.re/1umZQzM">Lessons learnt from Docker &ndash; Slides</a></p></li>
+<li><p><a href="https://gigaom.com/2015/01/19/fashionmetric-scores-1m-seed-round-for-algorithmic-tailoring/">Fashion Metric scores $1M seed round for algorithmic tailoring</a></p></li>
+<li><p><a href="http://www.webanalyticsworld.net/2015/01/google-analytics-custom-alerts-which-you-must-always-use.html">Google Analytics Custom Alerts which you must always use</a></p></li>
+<li><p><a href="http://smartdatacollective.com/samhudgins/293326/business-intelligence-key">Business Intelligence Is the Key</a></p></li>
+<li><p><a href="http://blog.cloudera.com/blog/2015/01/new-in-cloudera-labs-google-cloud-dataflow-on-apache-spark/">New in Cloudera Labs: Google Cloud Dataflow on Apache Spark</a></p></li>
+<li><p><a href="http://databricks.com/blog/2015/01/20/spark-summit-east-2015-agenda-is-now-available.html">Spark Summit East 2015 Agenda is Now Available</a></p></li>
+<li><p><a href="http://www.ibmbigdatahub.com/podcast/using-analytics-self-service-business-intelligence">Using analytics for self-service business intelligence</a></p></li>
+<li><p><a href="http://blog.hock.in/2015/01/21/php-versions/">PHP Versions | Gary Hockin</a></p></li>
+<li><p><a href="http://paul-m-jones.com/archives/6079">MVC and ADR are User-Interface Patterns, Not Application Architectures</a></p></li>
+<li><p><a href="http://harikt.com/blog/2015/01/21/conduit-middleware-for-php/">Conduit: The Middleware for PHP</a></p></li>
+<li><p><a href="http://www.hongkiat.com/blog/built-with-css/">18 Cool Things You Won’t Believe Were Built Using CSS</a></p></li>
+<li><p><a href="http://www.oxforddictionaries.com/words/what-comes-after-primary-secondary-tertiary">What comes after primary, secondary, tertiary?</a></p></li>
+<li><p><a href="https://github.com/alex/what-happens-when">What happens when&hellip;</a></p></li>
+<li><p><a href="https://github.com/johnpapa/angularjs-styleguide">AngularJS Style Guide</a></p></li>
+<li><p><a href="http://css-tricks.com/forums/topic/html5-input-types-for-credit-card-numbers/">HTML5 Input Types for Credit Card Numbers?</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

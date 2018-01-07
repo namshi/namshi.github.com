@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: SOA | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/soa/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Namshi's experience with Symfony2]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2/"/>
+    <updated>2014-12-16T15:53:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2</id>
+    <content type="html"><![CDATA[<p>Folks, time for a quick one!</p>
+
+<p><a href="https://connect.sensiolabs.com/profile/javier.eguiluz">Javier</a>
+from SensioLabs was kind enough to ask whether we had some
+interesting feedbacks about using Symfony2 in an SOA, and
+that led to writing a small write-up about our experience.</p>
+
+<p>So, head over to the Symfony blog to read how things
+are panning out after <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">a year and a half of SOA with
+Symfony2</a>.</p>
+
+<p><img class="center <a" src="href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a>"></p>
+]]></content>
+  </entry>
+  
+</feed>

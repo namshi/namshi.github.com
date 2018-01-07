@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: phpday | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/phpday/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[jsDay and phpDay recap]]></title>
+    <link href="http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap/"/>
+    <updated>2014-05-25T19:33:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/rasmus-namshi-scaled.png" width="800" title="&lsquo;Rasmus Lerdorf &ndash; Namshi team&rsquo; &lsquo;Rasmus Lerdorf with the Namshi team&rsquo;" ></p>
+
+<p>One week ago, Luciano, Lucio, Alex and I attended the annual <a href="http://jsday.it">jsDay</a> and <a href="http://phpday.it">phpDay</a> in Verona organized by the <a href="http://grusp.it">GrUSP</a>, the Italian PHP user Group.
+It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
+The conferences were sold out, with more than 300 attendees and two tracks per day. Kudos and props to the organizers!</p>
+
+<br />
+
+
+<!-- more -->
+
+
+<p><img class="left" src="/images/posts/phpday-namshi-sponsor.jpg" width="200" title="&lsquo;Namshi phpDay sponsor&rsquo; &lsquo;Namshi phpDay sponsor&rsquo;" > Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.io/join-us">join-us</a> page?)</p>
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<br />
+
+
+<h2>jsDay</h2>
+
+<p>During the jsDay, Luciano spoke about “AngularJS and mobile applications”, giving good insight into our experience using AngularJS while developing a mobile website.</p>
+
+<p>There were other presentations worth mentioning:</p>
+
+<ul>
+<li><a href="https://speakerdeck.com/gillesruppert/angularjs-the-good-the-bad-and-the-ugly">“AngularJS: The Good, The Bad and The Ugly “</a> by Gilles Rupert.</li>
+</ul>
+
+
+<div style="width:600px">
+<script async class="speakerdeck-embed" data-id="5f461ec0bd80013111d576b6210235ec" data-ratio="1.33333333333333" src="http://namshi.github.io//speakerdeck.com/assets/embed.js"></script>
+</div>
+
+
+<ul>
+<li><p><a href="http://www.slideshare.net/DanniFriedland/nsajs">“NSA.JS”</a> by Danni Friedland who presented this cool library to track the user browse experience</p></li>
+<li><p><a href="http://www.slideshare.net/fgalassi/the-strange-world-of-javascript-and-all-its-little-asynchronous-beasts">“The strange world of Javascript and all its little asynchronous beasts”</a> by Federico Galassi</p></li>
+<li><p><a href="http://massimiliano-mantione.github.io/talks/JsDay2014/ReactiveMetaprogramming/GHP/">“Monads, Promises, and Reactive Metaprogramming”</a> by Massimiliano Mantione</p></li>
+</ul>
+
+
+<p>The complete talks list with slides are on <a href="http://joind.in/event/view/1638">joind.in</a>.</p>
+
+<br />
+
+
+<h2>phpDay</h2>
+
+<p><a href="http://talks.php.net/phpday14#/">The opening keynote</a> was addressed by Rasmus Lerdord (the PHP creator), showing us an interesting, and sometimes passionate, overview of what’s new in PHP 5.6 and the technical/design choices behind it.</p>
+
+<p>Alex and I gave a talk about “How to build <strong>durable</strong> web apis” based on our experience at Namshi while
+building our Service Oriented Architechture.</p>
+
+<iframe src="http://www.slideshare.net/slideshow/embed_code/34815904" width="597" height="486" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+
+<p> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/cirpo/dont-screw-it-up-how-to-build-durable-web-apis" title="Don&#x27;t screw it up: how to build durable web apis" target="_blank">Don&#x27;t screw it up: how to build durable web apis</a> </strong> from <strong><a href="http://www.slideshare.net/cirpo" target="_blank">alessandro cinelli</a></strong> </div></p>
+
+<p>Other very interesting presentations:</p>
+
+<ul>
+<li><p>I really enjoyed the talk <a href="http://verraes.net/2014/03/practical-event-sourcing/">“Practical Event Sourcing”</a> by Mathias Verraes.
+I also suggest <a href="https://speakerdeck.com/mathiasverraes">checking other presentations</a> from this great speaker.</p></li>
+<li><p>Another great presentation was given by Marcello Duarte, the master of <a href="http://www.phpspec.net/">PHPspec</a>, <a href="http://www.slideshare.net/marcello.duarte/emergent-design-with-phpspec">&ldquo;Emergent design with phpspec&rdquo;</a></p></li>
+<li><p>Konstantin Kudryashov, the guy behind <a href="http://behat.org/">Behat</a> with <a href="http://www.slideshare.net/everzet/moving-away-from-legacy-code-with-bdd">&ldquo;Moving Away from Legacy code with BDD&rdquo;</a></p></li>
+</ul>
+
+
+<p>The complete phpDay talk list and slides can be found on <a href="http://joind.in/event/view/1637">joind.in</a> as well.</p>
+
+<h2>Join communities!</h2>
+
+<p>Attending conferences that are community driven like jsDay and phpDay
+are always a great moment to improve yourself as a developer and they give you the possibility to be part of the community.
+You have the chance to understand what’s going on in our field, talk in person with other devs that maybe you just know because you sent a PR to their awesome opensource project on Github, getting tons of advices and inspiration and so on.
+Keep following <a href="http://twitter.com/technamshi">@TechNamshi</a> on twitter, a <strong>new community</strong> is coming in Dubai&hellip; <strong>stay tuned!</strong></p>
+
+<p>Follow <a href="http://twitter.com/jsconfit">@jsday</a> and <a href="http://twitter.com/phpday">@phpday</a> to stay updated on when they are going to release the talks videos.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: specificity | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/specificity/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[newsletter #122]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/21/newsletter-number-122/"/>
+    <updated>2016-01-21T15:40:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/21/newsletter-number-122</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>This week we had a very nice lighting talks session, we will have a post about it next week, also don&rsquo;t forget that <a href="/blog/2016/01/18/were-hiring-backend-ers/">We&rsquo;re hiring backend-ers</a>,</p>
+
+<p>and here are the weekly links,</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://github.com/thank-you-github/thank-you-github"> an open letter of gratitude to github</a></p></li>
+<li><p><a href="https://css-tricks.com/a-specificity-battle/">a specificity battle! (and other trickery) | css-tricks</a></p></li>
+<li><p><a href="http://techblog.constantcontact.com/devops/a-tale-of-three-docker-anti-patterns/">a tale of three docker anti-patterns | constant contact tech blog</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://medium.com/google-developer-experts/angular-2-introduction-to-redux-1cf18af27e6e">angular 2 — introduction to redux — google developer experts — medium</a></p></li>
+<li><p><a href="https://medium.com/@yamalight/danger-of-using-async-await-in-es7-8006e3eb7efb">danger of using async/await in es7 — medium</a></p></li>
+<li><p><a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">designing a product page layout with flexbox | css-tricks</a></p></li>
+<li><p><a href="http://www.slideshare.net/damovsky/dockerize-the-world-presentation-from-hradec-kralove">dockerize the world &ndash; presentation from hradec kralove</a></p></li>
+<li><p><a href="https://medium.com/user-experience-design-1/facebook-and-how-uis-twist-your-words-4ceedc5fd93">facebook and how uis twist your words — user experience design (ux) — medium</a></p></li>
+<li><p><a href="https://thesearemoments.com/feel-good-interfaces-9c4b9590b80d">feel-good interfaces — moments — medium</a></p></li>
+<li><p><a href="https://medium.com/@joshblack/stateless-components-in-react-0-14-f9798f8b992d">functional stateless components in react 0.14 — medium</a></p></li>
+<li><p><a href="http://rafaltomal.com/visually-effective-cta/">how to create visually effective calls-to-action &ndash; rafal tomal</a></p></li>
+<li><p><a href="https://medium.com/@tjholowaychuk/introducing-apex-800824ffaa70">introducing apex — serverless architecture with aws lambda</a></p></li>
+<li><p><a href="https://egghead.io/lessons/javascript-javascript-regular-expressions-introduction">javascript regular expressions: introduction &ndash; javascript video tutorial </a></p></li>
+<li><p><a href="http://www.bennadel.com/blog/2995-managing-locally-cached-data-with-redux-in-angularjs.htm">managing locally cached data with redux in angularjs</a></p></li>
+<li><p><a href="https://github.com/gaearon/normalizr">normalizes deeply nested json api responses according to a schema for flux and redux apps</a></p></li>
+<li><p><a href="https://medium.com/@esamatti/react-js-pure-render-performance-anti-pattern-fb88c101332f">react.js pure render performance anti-pattern — medium</a></p></li>
+<li><p><a href="http://blog.lambda-it.ch/reactive-data-flow-in-angular-2/?utm_content=buffer45642">reactive data flow in angular 2</a></p></li>
+<li><p><a href="http://gizmodo.com/the-25-most-popular-passwords-of-2015-were-all-such-id-1753591514?utm_campaign=socialflow_lifehacker_facebook">the 25 most popular passwords of 2015: we&rsquo;re all such idiots</a></p></li>
+<li><p><a href="https://medium.com/@meagle/understanding-87566abcfb7a">understanding redux middleware — medium</a></p></li>
+<li><p><a href="https://medium.com/@housecor/why-i-left-gulp-and-grunt-for-npm-scripts-3d6853dd22b8">why i left gulp and grunt for npm scripts — medium</a></p></li>
+<li><p><a href="https://medium.com/@verybadhello/wordpress-with-node-react-and-graphql-part-1-introduction-ee0fc491730e">wordpress with node, react, and graphql </a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

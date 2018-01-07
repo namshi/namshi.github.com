@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ember | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/ember/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #89]]></title>
+    <link href="http://namshi.github.io/blog/2015/05/07/newsletter-number-89/"/>
+    <updated>2015-05-07T14:49:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/05/07/newsletter-number-89</id>
+    <content type="html"><![CDATA[<h1>TechThursday is here again!</h1>
+
+<blockquote><p>Hello folks!</p>
+
+<p>Please join us in welcoming <a href="http://tech.namshi.io/blog/2015/05/03/welcome-armagan/">Armagan</a> our new DevOps Engineer!</p>
+
+<p>This week we released <a href="https://github.com/namshi/node-nmconfig">node-nmconfig</a>, a handy wrapper that combines other two
+Namshi node opensource libraries: <a href="https://github.com/namshi/reconfig">reconfig</a> and <a href="https://github.com/namshi/node-file-ensure">file-ensure</a></p></blockquote>
+
+<p><strong>here is the usual list of interesting links we found this week!</strong></p>
+
+<ul>
+<li><p><a href="https://blog.cloudflare.com/an-introduction-to-javascript-based-ddos">Javascript based ddos</a></p></li>
+<li><p><a href="https://medium.com/@koryteg/ember-js-the-ever-evolving-rock-aadf1ac2f278">Ember the ever evolving rock</a></p></li>
+<li><p><a href="http://red-badger.com/blog/2015/04/23/react-native-when-the-mobile-web-isnt-enough/">React native when the mobile web isnt enough</a></p></li>
+<li><p><a href="http://buff.ly/1EPuXen">I&rsquo;m Joel Gascoigne, and This Is the Story Behind Buffer</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://buff.ly/1JpJVsA">Creating honeypots using Docker</a></p></li>
+<li><p><a href="http://buff.ly/1KIJDy0">the Gravity of Python 2</a></p></li>
+<li><p><a href="http://buff.ly/1PkocnH">Why do people hesitate to use Python 3?</a></p></li>
+<li><p><a href="http://buff.ly/1GUDnBK">BPG: A new, superior image format that really ought to kill off JPEG</a></p></li>
+<li><p><a href="http://buff.ly/1ccZpWq">Faster than C? Parsing binary data in JavaScript</a></p></li>
+<li><p><a href="http://buff.ly/1ERnQ6k">A programmer briefly describes his journey from python to golang</a></p></li>
+<li><p><a href="http://buff.ly/1IEHgNo">jinja for golang</a></p></li>
+<li><p><a href="http://buff.ly/1JIhglI">HippyVM goes to Y Combinator and fails</a></p></li>
+<li><p><a href="http://buff.ly/1GP2kia">What&rsquo;s the most elegant way to add Redis to /etc/services?</a></p></li>
+<li><p><a href="http://buff.ly/1GP2gz1">A cache library for Golang with zero GC overhead</a></p></li>
+<li><p><a href="http://buff.ly/1zD9Ahv">How I shrunk a Docker image by 98.8%</a></p></li>
+<li><p><a href="https://launchkit.io/screenshots">Screenshot builder</a></p></li>
+<li><p><a href="http://import.io">Instantly Turn Web Pages into Data</a></p></li>
+<li><p><a href="http://geeks.everything.me/2015/05/03/adventures-with-disque/">Adventure with Disque</a></p></li>
+<li><p><a href="https://github.com/caiorss/Functional-Programming">Functional programming in Haskell by examples</a></p></li>
+<li><p><a href="https://www.paypal-engineering.com/2015/04/27/isomorphic-react-apps-with-react-engine/">Isomorphic react apps with react engine</a></p></li>
+<li><p><a href="http://vansande.org/2015/03/22/unit_testing_with_mocks_in_node_js">Unit Testing with Mocks in Node</a></p></li>
+<li><p><a href="http://blog.servergrove.com/2015/04/29/satis-building-composer-repository/">Satis: building your own Composer repository</a></p></li>
+<li><p><a href="https://strongloop.com/strongblog/introducing-strongloops-unopinionated-pubsub">Introducing StrongLoop’s Unopinionated Node.js Pub/Sub</a></p></li>
+<li><p><a href="https://code.visualstudio.com">Visual Studio Code</a></p></li>
+<li><p><a href="http://seld.be/notes/composer-hosting-improvements">Composer hosting improvements</a></p></li>
+<li><p><a href="http://matt.might.net/articles/what-cs-majors-should-know/">What every computer science major should know</a></p></li>
+<li><p><a href="https://iojs.org/en/index.html?2.0.0">io.js 2.0 is out!</a></p></li>
+<li><p><a href="http://www.saturnflyer.com/blog/jim/2012/07/06/the-gang-of-four-is-wrong-and-you-dont-understand-delegation">The Gang Of Four Is Wrong And You Don&rsquo;t Understand Delegation</a></p></li>
+<li><p><a href="http://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf">Why Functional Programming Matters</a></p></li>
+<li><p><a href="http://bit.ly/1ERyKId">Twig tips and tricks slides</a></p></li>
+<li><p><a href="http://bit.ly/1EbtfRV">ImageLayers &ndash; Docker image visualizer</a></p></li>
+<li><p><a href="http://red.ht/1PqhU5P">NY Times IT capitalizes on continuous delivery to move faster</a></p></li>
+<li><p><a href="http://www.dmiller.io/blog/2015/4/26/comparing-the-php7-and-hack-type-systems">Comparing the PHP 7 and Hack Type Systems</a></p></li>
+<li><p><a href="http://verraes.net/2015/04/context-mapping-life-expectancy/">Context Mapping: Life Expectancy</a></p></li>
+<li><p><a href="http://vorlonjs.com/">vorlon.js</a></p></li>
+<li><p><a href="https://msdn.microsoft.com/en-us/library/jj554200.aspx">CQRS Journey</a></p></li>
+<li><p><a href="http://javarevisited.blogspot.ae/2014/01/10-tips-to-improve-programming-skill-become-better-programmer.html">10 Tips to Improve Programming Skill and Become Better Programmer</a></p></li>
+<li><p><a href="http://www.onedesk.com/2014/02/writing-a-software-requirements-specification-document">Writing a Software Requirements Specification Document</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

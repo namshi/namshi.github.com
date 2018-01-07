@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: welcome | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/welcome/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Gabriel!]]></title>
+    <link href="http://namshi.github.io/blog/2016/10/31/welcome-gabriel/"/>
+    <updated>2016-10-31T12:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/10/31/welcome-gabriel</id>
+    <content type="html"><![CDATA[<p>Fresh new vibes in the tech team as we have a new joiner who likes to hack with
+JavaScript on the browser!</p>
+
+<!-- more -->
+
+
+<p><img class="left" src="/images/gabriel.jpg" width="200"></p>
+
+<p>Gabriel is a Frontend Engineer, who holds a B.Sc in Engineering from University
+of Ibadan Nigeria.</p>
+
+<p>He loves to build products that are functional, beautiful and easy to use.
+His main focus is Frontend development (a lot of Javascript, HTML, CSS, Sass…)
+and some UX to go with it (on the server NodeJS and basic PHP).</p>
+
+<p>He loves challenging myself to do more and push beyond the limits.
+His best quote is “<em>if you do it right, it would last forever – Massimo Vignelli</em>”</p>
+
+<p>Welcome amongst the Namshees!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Joe!]]></title>
+    <link href="http://namshi.github.io/blog/2016/07/10/welcome-joe/"/>
+    <updated>2016-07-10T16:36:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/07/10/welcome-joe</id>
+    <content type="html"><![CDATA[<p>Fresh new vibes in the tech team as
+Joe joined us a today!</p>
+
+<!-- more -->
+
+
+<p><img class="right" src="/images/joe.png"></p>
+
+<p>Joe, from Haiti, holds a B.S. in Computer Science from NYU Abu Dhabi.
+He loves building software that make people&rsquo;s lives easier, and is always looking
+for opportunities to improve his programming skills, whether it is by participating at a
+hackathon, working on a side project, or doing technical internships.</p>
+
+<p>His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS,
+Heroku, AWS and more &mdash; however, he is language agnostic, so he likes to use the
+right tool for the given task.</p>
+
+<p>When he is not solving technical problems, you can find him reading a personal
+development book or riding a bike.</p>
+
+<p>Welcome amongst the Namshees!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Armagan!]]></title>
+    <link href="http://namshi.github.io/blog/2015/05/03/welcome-armagan/"/>
+    <updated>2015-05-03T17:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/05/03/welcome-armagan</id>
+    <content type="html"><![CDATA[<p><img class="team left" src="/images/armagan.png"></p>
+
+<p>Time for another terrific addition to
+the team as we&rsquo;re trying to embrace
+the DevOps culture over here!</p>
+
+<p>We&rsquo;ve been trying to make some key
+hires over the past few months,
+and after beefing up the team with
+<a href="http://tech.namshi.io/blog/2015/02/05/welcome-nitesh/">talented JavaScripters</a>,
+<a href="http://tech.namshi.io/blog/2014/12/29/welcome-amin/">diligent (and very funny!) webdevelopers</a>
+and experienced <a href="http://tech.namshi.io/blog/2014/12/29/welcome-filippo/">software engineers</a>,
+we felt we needed to add someone with
+DevOps in his blood to help our whole
+team in this long, rewarding transition.</p>
+
+<p>Without further ado, we welcome <a href="https://twitter.com/armagan_kim">Armagan</a>
+from Turkey, our very first 100% turk! :)</p>
+
+<blockquote><p>Armagan graduated from Computer Science and dove
+into web development with Django, then did some
+System Administration with Fabric and regret that
+as soon as he met Saltstack :)
+He introduced Saltstack to several companies,
+either built orchestration from scratch or converted
+from other tools like puppet or chef.
+Markafoni, Put.io, Koding, Kartaca and Peakgames
+were among those companies.
+Meanwhile, he developed a video on demand Android
+applications for Turkcell as a freelancer.</p></blockquote>
+
+<p>Well, best of luck Arma! And thanks for the
+fresh <a href="http://en.wikipedia.org/wiki/Baklava">Baklava</a>!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome David!]]></title>
+    <link href="http://namshi.github.io/blog/2015/03/18/welcome-david/"/>
+    <updated>2015-03-18T16:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/03/18/welcome-david</id>
+    <content type="html"><![CDATA[<p>We are very excited to welcome David to the crazy Namshi IT team!</p>
+
+<p><img class="team right" src="/images/posts/david.png"></p>
+
+<p>David is an experienced programmer,
+with a great knowledge about Agile, managing teams, OOP,
+design patterns and best practices.</p>
+
+<p>Other than wakeboarding in his free time, he likes to contribute to the IT communities, check his<br/>
+<a href="http://www.slideshare.net/ingdavidino/presentations">presentations!</a></p>
+
+<p><strong>Again, welcome on board David!</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome Nitesh!]]></title>
+    <link href="http://namshi.github.io/blog/2015/02/05/welcome-nitesh/"/>
+    <updated>2015-02-05T00:03:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/02/05/welcome-nitesh</id>
+    <content type="html"><![CDATA[<p>Introducing new team members is
+always a good way to end a week!</p>
+
+<!-- more -->
+
+
+<p>This time it&rsquo;s Nitesh&rsquo;s turn, an
+experienced JavaScripter from India!</p>
+
+<p><img class="team right" src="/images/nitesh.png"></p>
+
+<blockquote><p>Nitesh is a quite introvert software developer who also believes has good taste in design.
+He is very interested in software design practices, TDD and stuff like meditation.
+He is in the software industries for around 5 years and mainly focused on enterprise javascript applications which allowed him to witness, from the front seat, the evolution of javascript from browser compatibilty hell to crazy stuff it does these days
+In his free time you might find him traveling, reading books or fancy about human phycology.</p></blockquote>
+
+<p>Nitesh has joined us a few days back and
+has already showed signs of his peculiar
+attention to software design and elegant
+solutions, so we&rsquo;re sure he&rsquo;s going to be
+having a lot of fun in our SOA!</p>
+]]></content>
+  </entry>
+  
+</feed>

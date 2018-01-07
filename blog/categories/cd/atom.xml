@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cd | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/cd/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #125]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/18/newsletter-number-125/"/>
+    <updated>2016-02-18T12:39:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/18/newsletter-number-125</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
+
+<p>This week went by pretty fast,  as usual we have a new list of links for you.</p></blockquote>
+
+<ul>
+<li><p><a href="http://zhen.org/blog/two-developers-walk-into-a-bar/">a modern app developer and an old-timer system developer walk into a bar </a></p></li>
+<li><p><a href="http://www.slideshare.net/gionn2/clustering-with-docker-swarm-dockerops-2016-cento-fe-italy">clustering with docker swarm &ndash; dockerops 2016 @ cento (fe) italy</a></p></li>
+<li><p><a href="https://ookami86.github.io/event-sourcing-in-practice/">event sourcing in practice</a></p></li>
+<li><p><a href="http://blog.golang.org/go1.6">go 1.6 is released !</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.proreactnative.com/How-to-Develop-iOS-Apps-on-Linux-Using-React-Native/">how to develop ios apps on linux using react native – pro react native – master your tools. build great apps.</a></p></li>
+<li><p><a href="http://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html">how to do distributed locking</a></p></li>
+<li><p><a href="http://inviqa.com/insights/how-to-tackle-legacy-systems">how to work with legacy systems — inviqa</a></p></li>
+<li><p><a href="http://www.2ality.com/2016/02/js-fatigue-fatigue.html">javascript fatigue fatigue</a></p></li>
+<li><p><a href="http://nickcraver.com/blog/2016/02/17/stack-overflow-the-architecture-2016-edition/">nick craver &ndash; stack overflow: the architecture &ndash; 2016 edition</a></p></li>
+<li><p><a href="https://rhonabwy.com/2016/01/31/six-rules-for-setting-up-continuous-integration-systems/">six rules for setting up continuous integration systems | rhonabwy</a></p></li>
+<li><p><a href="https://blog.8thlight.com/mike-knepper/2016/01/20/hidden-costs-of-leaving-a-monolith.html">the hidden costs of leaving a monolith</a></p></li>
+<li><p><a href="http://www.mindtheproduct.com/2016/02/what-the-hell-are-ci-cd-and-devops-a-cheatsheet-for-the-rest-of-us/">the product managers' guide to continuous delivery and devops &ndash; mindtheproduct</a></p></li>
+<li><p><a href="https://medium.com/@producthunt/the-rise-and-fall-of-everest-the-app-b0d2e6cb594c">the rise and fall of everest (the app) </a></p></li>
+<li><p><a href="http://12factor.net/">the twelve-factor app</a></p></li>
+<li><p><a href="https://thephp.cc/news/2016/02/typed-arrays-in-php">thephp.cc &ndash; typed arrays in php</a></p></li>
+<li><p><a href="http://programmingisterrible.com/post/139222674273/write-code-that-is-easy-to-delete-not-easy-to">write code that is easy to delete, not easy to&hellip; — programming is terrible</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

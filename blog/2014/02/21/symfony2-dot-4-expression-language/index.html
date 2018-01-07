@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Symfony 2.4 Expression Language &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Symfony 2.4 Expression Language ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language/">
+    
+    
+    <meta property="og:title" content="Symfony 2.4 Expression Language "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2014/02/21/symfony2-dot-4-expression-language/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2014-21-February" title="February 21, 2014">February 21, 2014</time>
+            </div>
+            <h1 class="title">Symfony 2.4 Expression Language</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Mohamad Hallal" title="Mohamad Hallal">
+                
+                    Mohamad Hallal
+                
+                </a></strong><br>
+                <span class="muted"></span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>Expression Language is a new awesome component that got released in the latest <a href="http://symfony.com/blog/symfony-2-4-0-released">Symfony2.4</a>. This component allows string expressions
+to be parsed, compiled and evaluated in PHP. It was basically extracted from the Twig library that supports writing expression logic in templates.</p>
+
+<p>As simple as:&ndash;</p>
+
+<figure class='code'><pre><code class='language-bash'>$expLang = new ExpressionLanguage();
+$x       = &quot;1+1&quot;;
+echo $expressionLang-&gt;evaluate($x);</code></pre></figure>
+
+
+<p>The previous code will output &ldquo;2&rdquo;!</p>
+
+<p>It seems simple enough, but the benefits that it introduces are great! Especially when we talk about a company like Namshi, where there are dedicated and specialized content and marketing teams with
+hundreds of templates and segments of information that must be delivered and shown on the website. The goal is to provide the most flexibility to other departments in creating their information
+with the least overhead in terms of code maintenance to the development team.</p>
+
+<!-- more -->
+
+
+<p>Fabien Potencier, the creator of Symfony, points out that one of the advantages of introducing this component will be the ability to overcome the limitation of the &ldquo;static configuration&rdquo;
+anywhere in the Symfony2 application such as in services and routing. Imagine that instead of having one route to point to a controller, you can give an expression that sends the request of
+the same path to different controllers DYNAMICALLY! More explanation about this is introduced <a href="http://symfony.com/blog/new-in-symfony-2-4-the-expressionlanguage-component#routing">here</a>.</p>
+
+<p>So, let&rsquo;s take a look on this component in some more detail.</p>
+
+<p>The component supports a set of pre-defined operators and functions that can be used to construct complex expressions, we list them and their PHP counterparts:&ndash;</p>
+
+<pre><code>1. binary operators and functions
+    - '**' =&gt; 'pow'
+    - '..' =&gt; 'range'
+    - 'in' =&gt; 'in_array'
+    - 'not in' =&gt; '!in_array'
+    - '&amp;&amp; || | ^ &amp; == === != !== &lt; &gt; &gt;= &lt;= + = * / %' =&gt; same in php
+    - 'A matches B' =&gt; preg_match(A,B)
+2. Unary operators
+    - '!' =&gt; '!'
+    - 'not' =&gt; '!'
+    - '+' =&gt; '+'
+    - '-' =&gt; '-'
+3. Object Attributes
+    - 'foo.one' =&gt; 'foo-&gt;one'
+4. Arrays
+    - '[foo1,foo2]' =&gt; array("foo1", "foo2")
+5. Functions
+    - 'foo(a,b,c)' =&gt; call_user_func_array(array(foo), array(a, b, c)
+6. Names:
+    - 'foo' =&gt; $foo
+</code></pre>
+
+<p>The killer feature is, as we are going to see next, is the ability to register your own functions (similar to Twig) in the component to be utilized in expressions.</p>
+
+<p>The component provides public access to methods that allows you to create your own implementations of expression functions.</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+$expLang-&gt;register(&apos;functionNameToBeUseInTheStringExpression&apos;, function(){
+    //compile callback function
+}, function() {
+    //evaluateCallbackFunction
+});
+</code></pre></figure>
+
+
+<p>As its name implies, this function registers or adds the required support to call a function within the expression string.
+This method has two callback functions, one to be called when the expression is compiled, and the other when its evaluated.</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+$expLang-&gt;compile(&apos;stringExpression&apos;);
+</code></pre></figure>
+
+
+<p>This method, returns the equivalent PHP expression without evaluating it, so you can evaluate it after doing some required manipulation.</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+echo($expLang-&gt;compile(&quot;&apos;test&apos; matches &apos;test2&apos;&quot;));
+//shows preg_match(&quot;test&quot;, &quot;test2&quot;)
+</code></pre></figure>
+
+
+
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+$expLang-&gt;evaluate(&apos;stringExpression&apos;, array $values);
+</code></pre></figure>
+
+
+<p>This function both compiles the expression to PHP and evaluates it to return the outcome. The expression is evaluated for both the built in functions and operators and the evaluate callback function
+of a registered custom function.
+It also allows to send a set of default predefined <code>$values</code> to the evaluation process to be passed to the evaluate callback.</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+$expLang-&gt;parse(&apos;stringExpression&apos;, array $names);
+</code></pre></figure>
+
+
+<p>This function parses a string expression from a Token Stream to a Node Tree (the component is built using the Abstract Syntax Tree algorithm) so you can have your expression
+as a tree of nodes. Not really sure how it can be benefited from (please share your ideas!).</p>
+
+<p>In a simple <code>var_dump()</code> I can show you what this method can return</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+var_dump($expLang-&gt;parse(&apos;1 + 2&apos;, array()));
+</code></pre></figure>
+
+
+
+
+<figure class='code'><pre><code class='language-bash'>object(Symfony\Component\ExpressionLanguage\ParsedExpression)#18 (2) {
+  [&quot;nodes&quot;:&quot;Symfony\Component\ExpressionLanguage\ParsedExpression&quot;:private]=&gt;
+  object(Symfony\Component\ExpressionLanguage\Node\BinaryNode)#17 (2) {
+    [&quot;nodes&quot;]=&gt;
+    array(2) {
+      [&quot;left&quot;]=&gt;
+      object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#15 (2) {
+        [&quot;nodes&quot;]=&gt;
+        array(0) {
+        }
+        [&quot;attributes&quot;]=&gt;
+        array(1) {
+          [&quot;value&quot;]=&gt;
+          int(1)
+        }
+      }
+      [&quot;right&quot;]=&gt;
+      object(Symfony\Component\ExpressionLanguage\Node\ConstantNode)#16 (2) {
+        [&quot;nodes&quot;]=&gt;
+        array(0) {
+        }
+        [&quot;attributes&quot;]=&gt;
+        array(1) {
+          [&quot;value&quot;]=&gt;
+          int(2)
+        }
+      }
+    }
+    [&quot;attributes&quot;]=&gt;
+    array(1) {
+      [&quot;operator&quot;]=&gt;
+      string(1) &quot;+&quot;
+    }
+  }
+  [&quot;expression&quot;:protected]=&gt;
+  string(5) &quot;1 + 2&quot;</code></pre></figure>
+
+
+<p>It can perhaps be used to give flexibility for developers to inject and manipulate expressions coming from a non-configurable source.</p>
+
+<p>Here is a comprehensive example of all the previously described methods:</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;
+
+$expLang = new ExpressionLanguage();
+$expLang-&gt;register(&apos;plus&apos;, function(), function($args, $a, $b) {
+    return $a + $b;
+}
+
+$expression = &apos;plus(1,5)&apos;;
+echo($expLang-&gt;parse($expression)) . PHP_EOL;
+echo($expLang-&gt;compile($expression)) . PHP_EOL;
+echo($expLang-&gt;evaluate($expression)) . PHP_EOL;
+</code></pre></figure>
+
+
+
+
+<figure class='code'><pre><code class='language-bash'>plus(1,5)
+1 + 5
+6</code></pre></figure>
+
+
+<p>Since here at <a href="http://namshi.com/">Namshi</a> we are using Symfony2 as the main PHP framework for our Backend and API development efforts. We are up-to-date with latest releases
+from Symfony. The Expression Language Component allowed us to introduce more flexibility in the way other departments such as Content and Marketing tailor views and serve data
+based on some client related information.</p>
+
+<p>We were able to integrate Twig, YAML and the Expression Language Component using Redis as the mega storage unit.</p>
+
+<p>As an example, we have a set of Twig templates for the SEO guys to store the pages&#8217; meta information stored in a redis hash and indexed by the path info of the request,
+and they are json encoded:</p>
+
+<figure class='code'><pre><code class='language-bash'>&quot;/shoes/&quot; =&gt;
+[[&quot;locale(en_AE)&quot;, {&quot;header&quot;:&quot;Buy shoes from Namshi in UAE right on your &quot;, &quot;pageTitle&quot;:&quot;Welcome to Namshi UAE&quot;}],
+[&quot;locale(en_SA)&quot;, {&quot;header&quot;: &quot;Buy shoes from Namshi in Saudi right on your , &quot;pageTitle&quot;:&quot;Welcome to Namshi Saudi&quot;}]]</code></pre></figure>
+
+
+<p>And in a <code>device</code> redis hash, we have the corresponding possible values for <code>device</code> indexed by the device type</p>
+
+<figure class='code'><pre><code class='language-bash'>&quot;mobile&quot; =&gt;
+[&quot;device&quot;:&quot;Mobile Phone&quot;]</code></pre></figure>
+
+
+<p>Now, we fetch the appropriate template based on the path info and select the first template that its condition evaluates to <code>true</code>, fetch the context (device) based on
+client information, render the twig template with the appropriate device value and parse it as YAML!</p>
+
+<p>Was that fast? sorry, here is a sample code:</p>
+
+<figure class='code'><figcaption><span>&#8221; </span></figcaption>
+ <pre><code class='language-php'>
+&lt;?php
+$redis      = //the redis instance
+$path       = //get the required path from the request
+$device     = //get the device type from a service or a header
+$expLang    = //the expression language instance
+$yamlParser = //the YAML parser instance
+$orgLocale  = //get the locale value from a service or a header
+
+$expLang-&gt;register(&apos;locale&apos;, function(), function($values, $locale) {
+    if ($locale == $orgLocale) {
+        return true;
+    }
+
+    return false;
+});
+
+$possibleTemplates = json_decode($redis-&gt;hget(&quot;seo_templates&quot;, $path), true);
+$contextValues     = json_decode($redis-&gt;hget(&quot;seo_device&quot;, $device), true);
+
+foreach ($possibleTemplates as $possibleTemplate) {
+    list($condition, $template) = $possibleTemplate;
+
+    if ($expLang-&gt;evaluate($condition)) {
+        $twig             = new \Twig_environment(new Twig_Loader_String($template));
+        $renderedTemplate = $twig-&gt;render(json_encode($template), $contextValues);
+
+        return $yamlParser-&gt;parse($renderedTemplate);
+    }
+}
+
+//Note: this code requires lots of error checking and try, catch blocks to detect and report errors and exceptions since
+// content and SEO information, for example, are considered fragile and sensitive
+</code></pre></figure>
+
+
+<p>Nice, easy and simple. This approach for a CMS like system, provides the following benefits:</p>
+
+<ul>
+<li>High flexibility in creating information (content, SEO, etc..)</li>
+<li>Tailoring data according to client information (mobile, desktop, large/small screens, app, tablet, etc..)</li>
+<li>Can be based on numerous variables (path information, headers, domain, device type, etc..)</li>
+<li>Content specialization and less dependency on the tech team.</li>
+<li>Less code maintenance overhead since the expected future requirements can only be limited to registering Expression Language functions.</li>
+</ul>
+
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/content/'>Content</a>, <a class='category' href='/blog/categories/expression-language/'>Expression Language</a>, <a class='category' href='/blog/categories/seo/'>SEO</a>, <a class='category' href='/blog/categories/symfony2/'>Symfony2</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

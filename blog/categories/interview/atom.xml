@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: interview | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/interview/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-01-07T11:48:42+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Get that job at Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi/"/>
+    <updated>2016-12-06T10:54:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi</id>
+    <content type="html"><![CDATA[<p>Inspired by <a href="https://hautelook.github.io/jekyll/update/2015/04/01/get-that-job-at-hautelook.html">HauteLook</a> who,
+in turn, were inspired by <a href="http://steve-yegge.blogspot.ae/2008/03/get-that-job-at-google.html">Steve Yegge</a>,
+I decided to write a small article that briefly describes what we&rsquo;re looking for
+when interviewing potential candidates.</p>
+
+<!-- more -->
+
+
+<h2>The process</h2>
+
+<p>Our recruitment process tends to be quite lean (with a few exceptions :)):</p>
+
+<ul>
+<li>a first, introductory chat with me to get to know each other (<em>45m</em>)</li>
+<li>a chat with someone from our HR department, so that the candidate gets a solid overview on our company, the culture, benefits and so on. This is also very helpful for people who are relocating, as it&rsquo;s the best time to ask anything about working in Dubai and so on (<em>1h</em>)</li>
+<li>a more technical interview with someone from our <a href="/team">tech team</a> (usually 2 of our senior engineers) (<em>1/2h</em>)</li>
+</ul>
+
+
+<p>Additionally, depending on the candidate and the position, there <strong>might</strong> be a
+few additional steps required:</p>
+
+<ul>
+<li>coding challenge (<em>no deadlines, should take up to 2 hours of your time</em>)</li>
+<li>additional technical screening with me (<em>1h</em>)</li>
+<li>chat with one of our managing directors (<em>45m</em>)</li>
+</ul>
+
+
+<p>So you can generally assume that, after 3 positive interviews (&frac34; hours in total), you
+could theoretically receive an offer letter.</p>
+
+<p>Expect the whole process to take around 3 weeks.</p>
+
+<h2>Backend</h2>
+
+<p>You should be familiar with minimalist frameworks like Express or Silex, as that&rsquo;s
+how we build 99% of our services nowadays. We&rsquo;re not big on any particular language,
+but if you worked with Node that&rsquo;s definitely a plus, as well as understanding
+async programming.</p>
+
+<p>Being familiar with a shell is kind of a must, as we want people who can poke
+around with Linux and are aware of the potential of the &ldquo;<em>do one thing and do it well</em>&rdquo;
+philosophy.</p>
+
+<p>The HTTP protocol (both 1.1 and 2) is another must as that&rsquo;s what we speak each
+and every day &mdash; you will be mainly tasked to write applications that talk to
+other services through HTTP. Knowing what changes with HTTP/2 and why that&rsquo;s
+great shows the kind of awareness we&rsquo;re looking for.</p>
+
+<p>We&rsquo;re not big on algorithms and data structures but that doesn&rsquo;t mean you
+shouldn&rsquo;t be able to understand them &mdash; having some basic knowledge of Big O
+is always appreciated, as well as understanding how to pick a data structure in
+order to make the most out of it.</p>
+
+<p>We use both relational and non-relational databases, and you should be
+comfortable with a few names here (mostly MySQL and Redis). On MySQL, questions
+about race conditions, locking and <code>ALTER TABLE</code> might come up.</p>
+
+<h2>Frontend</h2>
+
+<p>This position is all about JS &mdash; forget CSS, forget HTML: 99% of this position
+will mean JavaScript.</p>
+
+<p>Callbacks? Promises? async / await? Breakfast for you :)</p>
+
+<p>You should be familiar with technologies like Angular 1 and React, and how they
+work behind the curtain. We could ask you to write a simpler, smaller version of
+redux so you&rsquo;d better understand how these libraries work.
+For example, knowing that virtual DOM makes things faster won&rsquo;t cut it &mdash; why,
+how and thanks to what data structure will.</p>
+
+<p>We also have a keen eye on performance, and you should too: understanding what
+changes HTTP/2 brings to frontend engineering is a must, as well as knowing basic
+rules for performance optimization (<code>webpack -p</code> anyone?). We aren&rsquo;t super-fussy
+about the more advanced stuff, but if you mention tree-shaking and friends we
+won&rsquo;t mind :)</p>
+
+<p>You should be familiar with methodologies such as BEM as you will be required to
+discuss what&rsquo;s the best approach to structure our styles for the long run.
+We also like to sometimes use CSS animations, so knowing how to make them perform
+better, especially for mobile browsers, is highly appreciated.</p>
+
+<h2>DevOps</h2>
+
+<p>You should be very familiar with AWS or similar providers ie. Google Cloud, and
+have some sort of experience with containers and orchestrators &mdash;
+we use Kubernetes but if you worked with Mesos / Swarm we won&rsquo;t really mind.
+A good answer to &ldquo;<em>Why would you want to use an init system inside a container?</em>&rdquo;
+will definitely speed up the hiring process :)</p>
+
+<p>Be big on Linux, as we expect you to be a ninja there &mdash; utilities
+like <code>awk</code>, <code>sed</code> and so on should be music to your ears.</p>
+
+<p>You should be familiar with one scripting language (make it python, ruby, php, bash)
+and be open to jump into code, as you might be required to provide bugfixes on
+some of our services, or implement system-related features. In general, the more
+you can code the happier everyone is!</p>
+
+<p>A keen eye on security is a big plus &mdash; we&rsquo;re a small team and we need brilliant
+people who are going to take into account the problems that might happen when
+using (or <strong>not using</strong>) a particular technology, pattern or methodology.</p>
+
+<p>We are also big fans of automation and, in some sense, immutable infrastructures.
+Know the basics.</p>
+
+<h2>And we also generally look for&hellip;</h2>
+
+<ul>
+<li>automated testing is king here: despite the fact that we don&rsquo;t try to cover
+100% of the use-cases, we rely on automated tests a lot. Knowing how to write
+them, and what methodologies to use to make tests more maintainable is a must.</li>
+<li>it would be great to see some of your code &mdash; github is a fan-favorite here :)</li>
+<li>people who like <a href="https://en.wikipedia.org/wiki/Shawarma">shawarma</a></li>
+</ul>
+
+
+<p>What are you waiting for? Drop everything and <del>order some shawarma</del> <a href="/join-us/">apply now</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>
