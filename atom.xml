@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-01-07T11:48:42+00:00</updated>
+  <updated>2018-01-07T12:20:22+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Currently hiring: a frontend engineer]]></title>
+    <link href="http://namshi.github.io/blog/2018/01/07/currently-hiring-a-frontend-engineer/"/>
+    <updated>2018-01-07T12:07:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/01/07/currently-hiring-a-frontend-engineer</id>
+    <content type="html"><![CDATA[<p>Love React, React Native, the dom and webperf? Then we might have the right
+opening for you!</p>
+
+<!-- more -->
+
+
+<p>It is no news that we&rsquo;ve been banking on the JS ecosystem
+for a few years: from rolling out our first angular apps in 2013 to using React
+Native in our android app, we&rsquo;ve been very busy trying to push our frontends
+as far as possible.</p>
+
+<p>We run a Service-Oriented architecture where JS plays a huge part: most of our
+services are either SPAs or small NodeJS-backed APIs, and <strong>JavaScript is king</strong> at
+Namshi.</p>
+
+<p>We would like to work with someone who has a very strong background in the language,
+who&rsquo;s been battling on the frontend for a few years and is not afraid to dive into
+Node, if required.</p>
+
+<p>Some of the things our frontend team has been working over the past few months:</p>
+
+<ul>
+<li>integrating React Native on our <a href="https://play.google.com/store/apps/details?id=com.namshi.android">android app</a></li>
+<li><a href="http://namshi.github.io/blog/2017/05/02/rebuilding-our-mobile-website/">improving conversion rate on our mobile website by 20%</a></li>
+<li>releasing some interesting open-sourced <a href="https://github.com/namshi/slim-slider">frontend</a> <a href="https://github.com/namshi/dollar-dom">bits</a></li>
+</ul>
+
+
+<p>Most of our frontend apps are built with React, although some of the older apps
+still kick it in angular boots. With a fleet of 100+ microservices, we&rsquo;re
+generally very busy trying to innovate as much as possible.</p>
+
+<p>Understand the inner workings of virtual dom? Think redux is not a replacement
+for components&#8217; state? Grasp how HTTP/2 helps frontend developers?
+Then we&rsquo;re definitely a match!</p>
+
+<h2>Apply now!</h2>
+
+<p>What are you waiting for? Send your application at <code>work-in-tech@namshi.com</code> and
+let&rsquo;s have a chat!</p>
+
+<p>P.S. A few weeks back I wrote a small piece about <a href="http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
+give it a look!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Running Spot Instances in Production]]></title>
@@ -1983,46 +2034,6 @@ And here is your weekly quota of some interesting links</p>
 <li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Ciao! So long and thanks for all the shawarma]]></title>
-    <link href="http://namshi.github.io/blog/2016/02/29/ciao-thanks-for-all-the-shawarma/"/>
-    <updated>2016-02-29T14:00:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/02/29/ciao-thanks-for-all-the-shawarma</id>
-    <content type="html"><![CDATA[<p><img class="center" src="http://namshi.github.io/images/posts/cirpo-farewell.jpg"></p>
-
-<p>Today is my last day at Namshi.</p>
-
-<!-- more -->
-
-
-<p>I joined Namshi two and half years ago and it has been a terrific journey. At that time I was looking for an opportunity where I could work and focus on a product, on something that could have potential to become something big and relevant for the market. I bet on Namshi. And I was right.</p>
-
-<p>It has been a terrific journey where I learned a lot and worked with amazing colleagues.
-I still have a vivid memory of my first live deployment, just 3 hours after I joined the backend team: a reassurance that I was in the right place, it felt sooo good !
-It’s not so common to find a place where you can contribute and <a href="http://github.com/namshi">give back to opensource</a>, experiment with new technologies or move fast and focus on things that will have real and effective impact on the business, strive for simplicity, no frills and being mentored by phenomenal people.</p>
-
-<p>A big thank you to the Tech team, it was a real pleasure, <strong>you will be missed a lot!</strong></p>
-
-<p>شكراً</p>
-
-<p>آپ کا شکریہ</p>
-
-<p>धन्यवाद</p>
-
-<p>E se</p>
-
-<p>Спасибо</p>
-
-<p>Obrigado</p>
-
-<p>Danke</p>
-
-<p>Teşekkürler</p>
-
-<p>Grazie</p>
 ]]></content>
   </entry>
   
