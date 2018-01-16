@@ -118,6 +118,15 @@ footer: true
     In the mean time I've tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. I really like to debug internal system processes, this gives a better understanding of how systems works from deep inside.
     Around a year ago I  discovered a kubernetes and focused on this amazing technology. I hope I'll continue to grow professionally in this direction together with the Namshi team.
 
+*   ##<div id="Omar Al Khairat">Omar Al Khairat</div>
+    {% img left team /images/omar.png Omar Al Khairat %}
+    **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
+    With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
+
+*   ##<div id="Ming Hu">Ming Hu</div>
+    {% img left team /images/ming.png Ming Hu %}
+    **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
+    
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
