@@ -126,7 +126,12 @@ footer: true
 *   ##<div id="Ming Hu">Ming Hu</div>
     {% img left team /images/ming.png Ming Hu %}
     **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
-    
+
+*   ##<div id="Ammar Rayess">Ammar Rayess</div>
+    {% img left team /images/ammar.png Ammar Rayess %}
+    **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
+
+
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
