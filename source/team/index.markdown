@@ -24,8 +24,8 @@ footer: true
     **Noor Ul Ain Ali** is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.
 
 *   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
-    {% img left team /images/Khaled.jpg Khaled %}
-    **Khaled Alqasrawi** is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He's been working with Android since its early days in 2010. Khaled is interested in behavioral economics, neuroscience, and psychology, and if he ever decides to get a tattoo, it will be the Android mascot.
+    {% img left team /images/khaled.png Khaled %}
+    **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
