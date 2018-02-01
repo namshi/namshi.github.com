@@ -131,7 +131,9 @@ footer: true
     {% img left team /images/ammar.png Ammar Rayess %}
     **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
 
-
+*   ##<div id="Carles Iborra">Carles Iborra</div>
+    {% img left team /images/carles.png Carles Iborra %}
+    **Carles Iborra** is a seasoned software engineer and former manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
