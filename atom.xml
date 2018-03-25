@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-02-01T14:51:29+00:00</updated>
+  <updated>2018-03-25T11:24:46+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Women in Tech @ Namshi: Noor Ali]]></title>
+    <link href="http://namshi.github.io/blog/2018/03/25/women-in-tech-at-namshi-noor-ali/"/>
+    <updated>2018-03-25T10:50:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/03/25/women-in-tech-at-namshi-noor-ali</id>
+    <content type="html"><![CDATA[<p>Here at Namshi we have quite a bit of a <a href="http://namshi.github.io/team">diverse team</a> but, like many companies
+out there, struggle with the gender gap in tech.</p>
+
+<p>We, though, would like
+to share the story and advices from the women who are part of our team, with the
+hope that they&rsquo;ll inspire others to join us, or to simply give computer science, or
+programming in general, a go.</p>
+
+<!-- more -->
+
+
+<p>Without further ado, let me introduce <a href="http://namshi.github.io/team#noor">Noor</a>, who:</p>
+
+<blockquote><p>&hellip;is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.</p></blockquote>
+
+<p><strong>Can you briefly tell us a bit about yourself?</strong></p>
+
+<p><img class="center" src="http://namshi.github.io/images/noor.jpg" width="200"></p>
+
+<p><em>I am an ordinary omnivert person who is telecommunications engineer by education and software engineer by profession. I am often considered as a backstage performer. I love to write blogs and do voluntarily work whenever I get time.</em></p>
+
+<p><strong>How did you get into programming &amp; computer science?</strong></p>
+
+<p><em>My final year project in Bachelors was on MATLAB which enhanced my programming and research skills, then later got chance to work on android platform. Based on programming concepts, got job as trainee iOS developer and hence the CS journey started. Later decided to continue education in computer science and did Masters in IT with thesis on NLP.</em></p>
+
+<p><strong>What does your typical day at work look like?</strong></p>
+
+<p><em>Like this:</em></p>
+
+<p><img class="center" src="http://namshi.github.io/images/noor_at_work.jpg"></p>
+
+<p><em>Jokes apart, besides working on the assigned tasks in office, I try to learn at least one thing new everyday. I manage my own sheet to track my progress.</em></p>
+
+<p><strong>What is the most challenging project you worked on? The one that made you the proudest?</strong></p>
+
+<p><em>All projects have different challenges and I am proud of every app I&rsquo;ve worked on. The one that made me proudest was my first mac app, LightUp. Because working on mac app was different from mobile apps, there were more challenges there like changing window size, menu controls, etc.</em></p>
+
+<p><strong>What advice would you give to a woman considering a career in the tech industry? What do you wish you had known?</strong></p>
+
+<p><em>Try to think out of the box and work smart, not hard.</em></p>
+
+<p><strong>Thanks Noor &mdash; both for sharing your experience and keeping the Namshi mobile apps under
+control! :)</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Currently hiring: a frontend engineer]]></title>
@@ -1987,53 +2038,6 @@ It was a quick rundown of <a href="http://wercker.com/">Wercker</a> CI (Continuo
 We also discussed on how Continuous Delivery and Continuous Deployment are different.</p>
 
 <p>Hope you like them :), comments and suggestions are always welcome.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #126]]></title>
-    <link href="http://namshi.github.io/blog/2016/03/03/newsletter-number-126/"/>
-    <updated>2016-03-03T14:41:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/03/03/newsletter-number-126</id>
-    <content type="html"><![CDATA[<blockquote><h1>TechThursday is here!</h1>
-
-<p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
-a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
-<img class="center" src="http://namshi.github.io/images/posts/shidhin-geshan.jpg"></p>
-
-<p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
-And here is your weekly quota of some interesting links</p>
-
-<p>Enjoy!</p></blockquote>
-
-<ul>
-<li><p><a href="https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/">8 ways to become a better coder</a></p></li>
-<li><p><a href="http://arxiv.org/abs/1602.07168">[1602.07168] zerodb white paper</a></p></li>
-<li><p><a href="http://www.noupe.com/inspiration/tutorials-inspiration/blob-storage-how-i-used-it-to-host-my-podcast-mp3-files-92313.html">blob storage: how i used it to host my podcast mp3 files | noupe</a></p></li>
-<li><p><a href="https://medium.com/ux-immersion-interactions/design-s-fully-baked-deliverables-and-half-baked-artifacts-761106df4ca9">design’s fully-baked deliverables and half-baked artifacts — ux immersion: interactions — medium</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://mrjoy.com/2016/02/14/docker_alpine_garbage_and_you/">docker, alpine, garbage and you &ndash; mrjoy</a></p></li>
-<li><p><a href="http://nauts.io/videos/2016/02/09/dockerize-your-development-workstation/">dockerize your development workstation</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=18PNEwt18P0">don&rsquo;t let chatops become chatoops &ndash; michael ansel</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">finding memory leaks in go programs</a></p></li>
-<li><p><a href="https://nathany.com/good/">go object oriented design</a></p></li>
-<li><p><a href="http://engineeredweb.com/blog/2016/path-go-pkg-mgmt/">how to fix the go package management problem</a></p></li>
-<li><p><a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a></p></li>
-<li><p><a href="http://developer.telerik.com/featured/leveling-up-your-javascript/">leveling up your javascript &ndash; telerik developer network</a></p></li>
-<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-clock-mocking-and-time-sensitive-tests">new in symfony 2.8: clock mocking and time sensitive tests (symfony blog)</a></p></li>
-<li><p><a href="http://www.columnfivemedia.com/work-items/infographic-no-cart-left-behind-why-shoppers-arent-following-through-on-online-purchases">no cart left behind</a></p></li>
-<li><p><a href="http://venturebeat.com/2016/02/28/playtime-is-over-investors-want-their-money-back/?utm_content=buffer7feb5">playtime is over: investors want their money back</a></p></li>
-<li><p><a href="https://articles.uie.com/three_hund_million_button/">the $300 million button ux articles by uie</a></p></li>
-<li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
-</ul>
-
 ]]></content>
   </entry>
   
