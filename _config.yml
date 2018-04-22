@@ -183,3 +183,6 @@ team:
     'Razan Bilwani':
         bio: 'VP Product Management'
         image: 'razan.jpg'
+    'Abdul Hannan':
+        bio: 'Lead Mobile Engineer'
+        image: 'abdul-hannan.png'
