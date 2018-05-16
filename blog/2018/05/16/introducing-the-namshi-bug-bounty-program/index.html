@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Introducing the Namshi Bug Bounty Program &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Introducing the Namshi Bug Bounty Program ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/">
+    
+    
+    <meta property="og:title" content="Introducing the Namshi Bug Bounty Program "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2018-16-May" title="May 16, 2018">May 16, 2018</time>
+            </div>
+            <h1 class="title">Introducing the Namshi Bug Bounty Program</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/alex.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                
+                    Alessandro Nadalin
+                
+                </a></strong><br>
+                <span class="muted">Rusty CTO</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>Namshi believes that working with skilled security researchers across the globe
+is crucial in identifying weaknesses in any technology &mdash; with that in mind, I
+wanted to introduce our (currently private) <em>Bug Bounty Program</em> that&rsquo;s been in
+place since a couple years.</p>
+
+<!-- more -->
+
+
+<h2>A bit of history&hellip;</h2>
+
+<p>5 (long) years ago we responded to our very first vulnerability report,
+submitted by a web developer whose better half had been using our services,
+who noticed a small glitch in one of our webservices. Since then, we processed quite a
+few (and luckily <em>not-so-many</em>) submissions, handing off rewards to researchers who
+would submit valid reports.</p>
+
+<p>The process had been quite unstructured until a couple years back, when
+<a href="https://www.linkedin.com/in/borishajduk/">Boris</a> joined <a href="https://global-fashion-group.com/">GFG</a>,
+at the time our majority stakeholder, and suggested we should try <a href="https://www.hackerone.com/">hackerone</a>
+as it had been working well for other companies &mdash; needless to say, this was a
+turning point for us, as we finally found a platform that could take care of
+coordination with security researchers.</p>
+
+<p>At that point we started phasing out the historical <code>security@namshi.com</code> email
+address in favor of inviting researchers to our H1 program, which has definitely
+helped us defining better boundaries (especially in terms of timeline, rewards and
+scope of the program) between Namshi and the community of researchers out there.</p>
+
+<h2>Our current program</h2>
+
+<p>As mentioned, we run a (private) program on hackerone and, in parallel, process
+submissions to <code>security@namshi.com</code> by asking whoever reaches out to us to
+create an account on hackerone so that we can then move the conversation from
+email to a proper bug bounty platform.</p>
+
+<p>Our program defines a disclosure policy, list of exclusions and a brief legal
+appendix to guide you through the process of submitting a vulnerability report
+to Namshi. The list of exclusion also contains an associated list of behaviors / actions
+that will result in your submission being ineligible for a bounty, such as:</p>
+
+<ul>
+<li>making threats</li>
+<li>demanding payments / entry into the program in exchange for reports</li>
+</ul>
+
+
+<p>&hellip;and a few additional points. We do believe our program is fair and guarantees
+a good balance between what we demand and what we offer, but we&rsquo;re always open
+to suggestions, or questions, from your side. Feel free to reach out if
+you think we should amend some of the points in our program.</p>
+
+<p>In addition, I wanted to mention that we recognize that the only public information
+available on our websites (<a href="https://support.namshi.com/hc/en-us/articles/207782049-Security">our security FAQ</a>),
+is by no means exhaustive, and we plan on fixing it in the upcoming months:
+that&rsquo;s where the next paragraph kicks in :)</p>
+
+<h2>Future plans</h2>
+
+<p>You might be wondering: &ldquo;why are you telling us about a private bug bounty program
+that&rsquo;s been kept private and we don&rsquo;t know how to join? Is today the
+lets-share-news-people-couldnt-care-less day?&rdquo;</p>
+
+<p>We&rsquo;re sharing this because we want this to change, and we want to be more open
+about some of our processes: <strong>our goal is to be able to make our program public in
+the upcoming months</strong>, so that more and more researchers can help us making Namshi
+a safer place on the web.</p>
+
+<p>The traditional challenges with having public bug bounty programs are related to
+the &ldquo;<em>signal vs noise</em>&rdquo; ratio as well as the fact that companies think the more they
+keep in the dark, the less they&rsquo;ll expose &mdash; we don&rsquo;t share the same beliefs, and
+are currently making a step to expand our program to more researchers, with the
+ultimate goal of making it public. At the same time, our tech department is fairly small so we want
+this transition to be as smooth as possible, hence the slow rollout &mdash; consider
+this a canary release until everything is well-oiled and we&rsquo;re comfortable enough
+with making the program public.</p>
+
+<p>With this in mind, I&rsquo;d like to invite everyone who would like to take a look at
+our program to mail us at <code>security@namshi.com</code> and share the email they use on
+hackerone, so that we can invite you to the Namshi Bug Bounty program. As I
+mentioned, this is a first step towards our program turning public in the upcoming
+months.</p>
+
+<p>Considering our goal to be more open and transparent, I would also like to take
+a second to disclose some of our stats taken from hackerone:</p>
+
+<ul>
+<li>our <strong>minimum bounty is $50</strong></li>
+<li>the total number of submissions is 67</li>
+<li>we have <strong>resolved 27 reports</strong> (meaning the remaining are to be considered invalid, or part of the exclusions)</li>
+<li>our average time to <strong>first response is 1 day</strong> (last 90d)</li>
+<li>our average time to <strong>bounty is 3 days</strong> (last 90d)</li>
+<li>our <strong>average bounty range is $120 &ndash; $150</strong></li>
+<li>our <strong>top bounty range is $450 &ndash; $1000</strong></li>
+</ul>
+
+
+<p>Happy hacking!</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/security/'>security</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

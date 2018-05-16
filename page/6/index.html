@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Namshi Engineering &mdash; Tech @ Namshi.com</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Namshi Engineering">
+    <link rel="canonical" href="http://namshi.github.io/page/6/index.html">
+    
+    
+    <meta property="og:title" content="Namshi Engineering"/>
+    <meta property="og:url" content="http://namshi.github.io/page/6/index.html"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+<div class="blog-cover" style="background-image:url(/images/bg.jpg);">
+
+    <section>
+        <div class="container">
+            <h1>Namshi Engineering</h1>
+            <h3>Tech @ Namshi.com</h3>
+
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss"></i>
+            </a>
+        </div>
+    </section>
+</div>
+
+
+<article class="container">
+
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/08/13/newsletter-number-103/" rel="prefetch">Newsletter #103</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-13-August" title="August 13, 2015">August 13, 2015</time>
+            </div>
+            <div class="excerpt"><blockquote><p>Hi fellas,
+in the last two weeks we started having tech lightning talks here at Namshi.</p>
+
+<p>Below you can see <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> in this (creative) shot while is showing the rest of the gang
+how <a href="http://facebook.github.io/react/">React</a> works and how he used it in our latest open-source project <a href="https://github.com/namshi/roger">Roger</a>.</p>
+
+<p><img class="team center" src="/images/posts/shidhin-react.png"></p>
+
+<p>Talking about Roger, have you checked the blog post <a href="http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/">&ldquo;How Namshi builds Docker containers through Docker containers&rdquo;</a>?</p>
+
+<p>And ofc it&rsquo;s TechThursday:</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.infoq.com/news/2015/08/netflix-universal-javascript">Netflix.com Adopts Universal JavaScript, Drops Java From Rendering Pipeline</a></p></li>
+<li><p><a href="https://github.com/h2non/toxy">Toxy: a hackable HTTP proxy to simulate server failure scenarios and unexpected network conditions</a></p></li>
+<li><p><a href="https://github.com/svenanders/universaljs">A functional reactive web library in only 4.8k</a></p></li>
+<li><p><a href="https://github.com/sjackman/makefile-example">An example of a data analysis pipeline using make</a></p></li>
+<li><p><a href="http://blog.getify.com/promises-part-1/">Best article about Promises so far</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                        
+                            Alessandro Cinelli (cirpo)
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/" rel="prefetch">How Namshi builds Docker containers through Docker containers</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-08-August" title="August 08, 2015">August 08, 2015</time>
+            </div>
+            <div class="excerpt"><p>When we started experimenting with <a href="https://www.docker.com/">Docker</a>,
+its environment was pretty new: private registries weren&rsquo;t <em>en vogue</em>
+and the DockerHub seemed to be the only decent alternative to store
+images and build your delivery pipeline on, even though it could take
+up to 15 minutes to get a simple image pushed to S3 from the Hub.</p>
+
+<p>We wanted a cheap, reliable, fast build tool that could fit our
+delivery pipeline: we wanted our code to <strong>seamlessly</strong> go from an
+engineer&rsquo;s machine to production; we wanted to <strong>build containers
+in seconds</strong>; we wanted stability and a (almost) <strong>zero-configuration</strong>
+approach.</p>
+
+<p>At the end of it, we wrote a build system for containers that goes
+Open-Source today: in this post we are going to look at the reasons
+behind it, how it works (for us), how it can work (for you) and
+what are our plans for the future.</p>
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/alex.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                        
+                            Alessandro Nadalin
+                        
+                        </a></strong><br>
+                        <span class="muted">Rusty CTO</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/08/06/newsletter-number-102/" rel="prefetch">Newsletter #102</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-06-August" title="August 06, 2015">August 06, 2015</time>
+            </div>
+            <div class="excerpt"><blockquote><p>Guess what? It&rsquo;s TechThursday again!</p>
+
+<p>Devour this awesome list of links during the upcoming weekend folks!</p></blockquote>
+
+<ul>
+<li><p><a href="http://blog.codeship.com/testing-in-go/">Testing in GO</a></p></li>
+<li><p><a href="http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony">Designing APIs for Asynchrony</a></p></li>
+<li><p><a href="https://github.com/servant-app/JAWS">JAWS: The Javascript + AWS Stack</a></p></li>
+<li><p><a href="http://codedoodl.es/">codedoodl.es: a showcase of curated creative coding sketches</a></p></li>
+<li><p><a href="http://lgvalle.github.io/2015/08/04/flux-architecture">Flux architecture on android</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                        
+                            Alessandro Cinelli (cirpo)
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/08/02/vmware-fusion-headless/" rel="prefetch">VMware fusion headless</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-02-August" title="August 02, 2015">August 02, 2015</time>
+            </div>
+            <div class="excerpt"><p><img class="center" src="/images/posts/osx-vmware.jpg"></p>
+
+<p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
+OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.
+ It&rsquo;s true that there are alternatives like boot2docker, but there are some situations (more on that in a future post) where it is not enough.
+  At Namshi instead of using <code>Virtualbox</code>/boot2docker, we chose to use the more reliable and stable <code>Vmware fusion</code>. From our experience, it is actually better in terms of memory performance and sharing directories (compared to virtualbox 4, we will see if the brand new vbox 5 is better).</p>
+
+<p>Just like  <code>Virtualbox</code>, <code>Vmware Fusion</code> is able to handle a virtual machine in headless mode (with a little bit of shell fu). <code>Headless mode</code> is a way to handle (create, start, stop) a virtual machine by just interacting from the command line. So you don&rsquo;t need to interact with the UI. Everything is hidden, even the application window. It just works.
+We were looking for a way to run the virtual machine in headless mode, just because once you start and access it with ssh, you don&rsquo;t need to bother about anything else. Sometimes leaving the window open without any interaction may cause some performance issues with the vm. Also, in Headless mode, your desktop doesn&rsquo;t consume extra memory.</p>
+
+<p>Enough talking, SHOW ME THE CODE!</p>
+
+<figure class='code'><pre><code class='language-bash'>vmrun power-commands &lt;path-to-vmx-file&gt; nogui</code></pre></figure>
+
+
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/07/30/newsletter-number-101/" rel="prefetch">Newsletter #101</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-30-July" title="July 30, 2015">July 30, 2015</time>
+            </div>
+            <div class="excerpt"><p>Hi guys, even after the 100th newsletter we still have something to suggest you.</p>
+
+<p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
+
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/07/22/newsletter-100-dot-dot-dot-weve-come-a-long-way/" rel="prefetch">Newsletter 100&#8230;we&#8217;ve come a long way!</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-22-July" title="July 22, 2015">July 22, 2015</time>
+            </div>
+            <div class="excerpt"><p>Without even realizing it, we&rsquo;ve come quite far with our small,
+weekly newsletter: to celebrate it&rsquo;s 100th edition I&rsquo;d like to
+spend a few words on how meaningful this platform is to us.</p>
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/alex.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                        
+                            Alessandro Nadalin
+                        
+                        </a></strong><br>
+                        <span class="muted">Rusty CTO</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/07/16/newsletter-number-99/" rel="prefetch">Newsletter #99</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-16-July" title="July 16, 2015">July 16, 2015</time>
+            </div>
+            <div class="excerpt"><h2>It&rsquo;s TechThursday again!</h2>
+
+<p>And here we are with what we read this week! Enjoy!</p>
+
+<ul>
+<li><p><a href="http://www.sitepoint.com/12-little-known-css-facts-the-sequel/?utm_source=html5weekly">12 Little-Known CSS Facts (The Sequel)</a></p></li>
+<li><p><a href="http://jjuliano.github.io/markdown-ui/">A framework for creating responsive UI’s for mobile and web using Markdown Syntax</a></p></li>
+<li><p><a href="https://github.com/tuvalie/historic_events">A large data set of historic human events</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/filippo.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Filippo De Santis" title="Filippo De Santis">
+                        
+                            Filippo De Santis
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/07/09/newsletter-number-98/" rel="prefetch">Newsletter #98</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-09-July" title="July 09, 2015">July 09, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p>We really enjoyed the Namshi Iftar this week :)</p>
+
+<p><img class="center" src="/images/posts/namshi-iftar.jpg"></p>
+
+<p>Hi Guys, the week is over and a we have a the usual list of links for you.</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="http://www.toptal.com/react/navigating-the-react-ecosystem?utm_source=javascriptweekly">A Guide to React.js Tools and Libraries | Toptal</a></p></li>
+<li><p><a href="http://danielwhittaker.me/2015/07/05/are-you-making-these-10-ddd-mistakes/">Are You Making These 10 DDD Mistakes?</a></p></li>
+<li><p><a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a></p></li>
+<li><p><a href="http://blog.codeship.com/dockercon-2015-container-hacks-in-docker/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcBgI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Container Hacks in Docker</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/geshan.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Geshan Manandhar" title="Geshan Manandhar">
+                        
+                            Geshan Manandhar
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/07/02/newsletter-number-97/" rel="prefetch">Newsletter #97</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-02-July" title="July 02, 2015">July 02, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p>Always on the move: Our brand new office (WIP).</p>
+
+<p><img class="center" src="/images/posts/new_office.jpg"></p>
+
+<p>Here you can find our last list of links:</p>
+
+<ul>
+<li><p><a href="https://tideways.io/profiler/blog/5-doctrine-orm-performance-traps-you-should-avoid">5 Doctrine ORM Performance Traps You Should Avoid &ndash; Blog &ndash; Tideways</a></p></li>
+<li><p><a href="https://github.com/chjj/tng">A full-featured PNG renderer for the terminal</a></p></li>
+<li><p><a href="http://criu.org/Main_Page">CRIU &ndash; checkpoint/restore functionality for Linux in userspace</a></p></li>
+<li><p><a href="http://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/">Callbacks, synchronous and asynchronous</a></p></li>
+<li><p><a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">Container Queries: Once More Unto the Breach · An A List Apart Article</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/06/25/newsletter-number-96/" rel="prefetch">Newsletter #96</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-25-June" title="June 25, 2015">June 25, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p>We hope you are enjoying the lesser working hours because of Ramadan, here are the usual links to enjoy over the weekend.</p>
+
+<h3>and a huge list of links for you:</h3>
+
+<ul>
+<li><p><a href="http://mysqlha.blogspot.ae/2008/07/do-you-really-want-to-use-xa-with-mysql.html">Do you really want to use XA with MySQL?</a></p></li>
+<li><p><a href="http://www.agilejourneyman.com/2012/05/you-build-it-you-run-it.html">You Build It, You Run It</a></p></li>
+<li><p><a href="http://stevelosh.com/blog/2013/09/teach-dont-tell/">Teach, Don&rsquo;t Tell / Steve Losh</a></p></li>
+<li><p><a href="http://stackshare.io/posts/how-docker-was-born">How Docker Was Born</a></p></li>
+<li><p><a href="http://martinfowler.com/bliki/SacrificialArchitecture.html">Sacrificial Architecture</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+    <section class="pagination" style="text-align:center">
+      
+        
+        <a href="/page/5/" class="btn btn-outline">‹ Newer</a>
+        
+      
+      
+        <a href="/page/7/" class="btn btn-outline">Older ›</a>
+      
+    </section>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

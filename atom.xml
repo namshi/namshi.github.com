@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-03-25T11:24:46+00:00</updated>
+  <updated>2018-05-16T09:09:25+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,200 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing the Namshi Bug Bounty Program]]></title>
+    <link href="http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/"/>
+    <updated>2018-05-16T08:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program</id>
+    <content type="html"><![CDATA[<p>Namshi believes that working with skilled security researchers across the globe
+is crucial in identifying weaknesses in any technology &mdash; with that in mind, I
+wanted to introduce our (currently private) <em>Bug Bounty Program</em> that&rsquo;s been in
+place since a couple years.</p>
+
+<!-- more -->
+
+
+<h2>A bit of history&hellip;</h2>
+
+<p>5 (long) years ago we responded to our very first vulnerability report,
+submitted by a web developer whose better half had been using our services,
+who noticed a small glitch in one of our webservices. Since then, we processed quite a
+few (and luckily <em>not-so-many</em>) submissions, handing off rewards to researchers who
+would submit valid reports.</p>
+
+<p>The process had been quite unstructured until a couple years back, when
+<a href="https://www.linkedin.com/in/borishajduk/">Boris</a> joined <a href="https://global-fashion-group.com/">GFG</a>,
+at the time our majority stakeholder, and suggested we should try <a href="https://www.hackerone.com/">hackerone</a>
+as it had been working well for other companies &mdash; needless to say, this was a
+turning point for us, as we finally found a platform that could take care of
+coordination with security researchers.</p>
+
+<p>At that point we started phasing out the historical <code>security@namshi.com</code> email
+address in favor of inviting researchers to our H1 program, which has definitely
+helped us defining better boundaries (especially in terms of timeline, rewards and
+scope of the program) between Namshi and the community of researchers out there.</p>
+
+<h2>Our current program</h2>
+
+<p>As mentioned, we run a (private) program on hackerone and, in parallel, process
+submissions to <code>security@namshi.com</code> by asking whoever reaches out to us to
+create an account on hackerone so that we can then move the conversation from
+email to a proper bug bounty platform.</p>
+
+<p>Our program defines a disclosure policy, list of exclusions and a brief legal
+appendix to guide you through the process of submitting a vulnerability report
+to Namshi. The list of exclusion also contains an associated list of behaviors / actions
+that will result in your submission being ineligible for a bounty, such as:</p>
+
+<ul>
+<li>making threats</li>
+<li>demanding payments / entry into the program in exchange for reports</li>
+</ul>
+
+
+<p>&hellip;and a few additional points. We do believe our program is fair and guarantees
+a good balance between what we demand and what we offer, but we&rsquo;re always open
+to suggestions, or questions, from your side. Feel free to reach out if
+you think we should amend some of the points in our program.</p>
+
+<p>In addition, I wanted to mention that we recognize that the only public information
+available on our websites (<a href="https://support.namshi.com/hc/en-us/articles/207782049-Security">our security FAQ</a>),
+is by no means exhaustive, and we plan on fixing it in the upcoming months:
+that&rsquo;s where the next paragraph kicks in :)</p>
+
+<h2>Future plans</h2>
+
+<p>You might be wondering: &ldquo;why are you telling us about a private bug bounty program
+that&rsquo;s been kept private and we don&rsquo;t know how to join? Is today the
+lets-share-news-people-couldnt-care-less day?&rdquo;</p>
+
+<p>We&rsquo;re sharing this because we want this to change, and we want to be more open
+about some of our processes: <strong>our goal is to be able to make our program public in
+the upcoming months</strong>, so that more and more researchers can help us making Namshi
+a safer place on the web.</p>
+
+<p>The traditional challenges with having public bug bounty programs are related to
+the &ldquo;<em>signal vs noise</em>&rdquo; ratio as well as the fact that companies think the more they
+keep in the dark, the less they&rsquo;ll expose &mdash; we don&rsquo;t share the same beliefs, and
+are currently making a step to expand our program to more researchers, with the
+ultimate goal of making it public. At the same time, our tech department is fairly small so we want
+this transition to be as smooth as possible, hence the slow rollout &mdash; consider
+this a canary release until everything is well-oiled and we&rsquo;re comfortable enough
+with making the program public.</p>
+
+<p>With this in mind, I&rsquo;d like to invite everyone who would like to take a look at
+our program to mail us at <code>security@namshi.com</code> and share the email they use on
+hackerone, so that we can invite you to the Namshi Bug Bounty program. As I
+mentioned, this is a first step towards our program turning public in the upcoming
+months.</p>
+
+<p>Considering our goal to be more open and transparent, I would also like to take
+a second to disclose some of our stats taken from hackerone:</p>
+
+<ul>
+<li>our <strong>minimum bounty is $50</strong></li>
+<li>the total number of submissions is 67</li>
+<li>we have <strong>resolved 27 reports</strong> (meaning the remaining are to be considered invalid, or part of the exclusions)</li>
+<li>our average time to <strong>first response is 1 day</strong> (last 90d)</li>
+<li>our average time to <strong>bounty is 3 days</strong> (last 90d)</li>
+<li>our <strong>average bounty range is $120 &ndash; $150</strong></li>
+<li>our <strong>top bounty range is $450 &ndash; $1000</strong></li>
+</ul>
+
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source UI libraries from our iOS Mobile team]]></title>
+    <link href="http://namshi.github.io/blog/2018/04/17/open-source-ui-libraries-from-our-ios-mobile-team/"/>
+    <updated>2018-04-17T07:08:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/04/17/open-source-ui-libraries-from-our-ios-mobile-team</id>
+    <content type="html"><![CDATA[<p>Recently, the Namshi iOS app went through a UI overhaul which includes a new font, improved UX on a few screens and some attractive animations. Customers loved it, the team enjoyed working on it and, best of all, conversion rate increased.  To achieve this, we relied on a few open source libraries available through Cocoapods.</p>
+
+<p>Some of the available open source UI components are very well written and while working with these, you will get a lot of inspiration. I won’t hesitate to mention <a href="https://github.com/Skyscanner/SkyFloatingLabelTextField/">SkyFloatinglabelTextField</a> from SkyScanner and <a href="https://github.com/xmartlabs/XLPagerTabStrip">XLPagerTabStrip</a> here. Sometimes, the UI requirements are very specific and UI libraries will not support the particular use-case you have. While working on the UI improvement for Namshi iOS app, we faced the same situation where we had to modify an existing library to tweak its looks.</p>
+
+<!-- more -->
+
+
+<p>So it was a combination of inspiration and custom requirements that resulted in two awesome UI components which we recently published on Cocoapods. Let me Introduce these libraries separately below :</p>
+
+<h1>NMFloatLabelSearchField</h1>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522079824203_CocoaPodsSwift-feature.png" alt="" /> <span style="margin-left: 15px"><a href="http://cocoapods.org">www.cocoapods.org</a></span></p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522078748825_github.png" alt="" />  <span style="margin-left: 15px"><a href="https://github.com/namshi/NMFloatLabelSearchField">https://github.com/namshi/NMFloatLabelSearchField</a></span></p>
+
+<h2>Case Study :</h2>
+
+<p>We had a requirement to implement UITextFields on which hints float up when the user starts to type; the border can also be highlighted based on different delegate callbacks and on validation errors.</p>
+
+<p>We found SkyFloatingLabelTextField which does that perfectly and supports RTL languages as well.  Here comes the challenge: we had a city suggestion field in the form which dynamically displays a suggestion list as user starts to type, and this feature is not supported in SkyFloatLabelTextField. So we started our search again and found one more library, SearchTextField. We went ahead with it and used both of them.</p>
+
+<p>Soon we realized that the UX of the screen is not appealing as five fields (name, country code, city code, phone number and address) are having floating-placeholders but the city field looks like a fish out of water here. We at Namshi are always eager to make the UX smooth and appealing for our customers, so we decided to join the two third-party libraries’ functionality and combine them for our city-search-field.</p>
+
+<h2>Solution:</h2>
+
+<p>In the beginning, we extended the functionality of SearchTextField and added the code from SkyFloatingLabelTextfield to achieve FloatingLabelSearchField functionality. It worked well but we realized that we are not properly getting the textField delegate callbacks (didEndEditing never worked).
+We looked into the open issues for SkyFloatingLabelTextField but there was none related to this. Then we looked for the open issues for SearchTextField and — voila! — we found an <a href="https://github.com/apasccon/SearchTextField/issues/36">open issue</a> in the library. We changed our strategy; extended the functionality of SkyFloatingLabelTextfield and added the code for SearchTextField in the our code. We faced few bugs and me managed to fix those  and…..
+Yalla, it really worked!
+Soon our app was in store with the awesome looking “Add New Address” screen with smooth user experience.</p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522081067491_image_preview.png" alt="" /></p>
+
+<h1>NMAnimatedTabbarItem</h1>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522079824203_CocoaPodsSwift-feature.png" alt="" />  <span style="margin-left: 15px"><a href="https://cocoapods.org/pods/NMAnimatedTabBarItem">https://cocoapods.org/pods/NMAnimatedTabBarItem</a></span></p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522078748825_github.png" alt="" /><span style="margin-left: 15px"><a href="https://github.com/namshi/NMAnimatedTabbarItem">https://github.com/namshi/NMAnimatedTabbarItem</a></span></p>
+
+<h2>Case Study :</h2>
+
+<p>The tabbar used in Namshi app was pretty basic, it looked like the tabbar from Apple&rsquo;s built-in apps when iOS 7 was released. We realized that almost all the major apps are incorporating some animations on tab bar so it was the right time to spice up UITabbar used in Namshi app.</p>
+
+<p>We first started with <a href="https://github.com/Ramotion/animated-tab-bar">Ramotion</a> — this library is awesome! After playing with it for few hours, we realized that it has some deal breakers such as missing support  for RTL languages and has a problem putting tab items back into the correct position when you move to a screen which does not have a tabbar and try to come back to a screen which does. We forked the library, tried to solve the issues but gave up as, one after the other, new issues came up.</p>
+
+<h2>Solution:</h2>
+
+<p>We started by digging deep into Ramotion and we got the basic idea how they are animating Tabbar items. We used the same approach and made the whole thing much more simpler.</p>
+
+<p>We created an open class NMAnimatedTabBarItem inherits from NSObject with a public method called animateTabBarItem.</p>
+
+<p>We have to pass 3 arguments to this method, tabBar(UITabBarController.tabBar), tabIndex (Selected tabItemIndex) and finally animationType(NMAnimationtype).</p>
+
+<p>NMAnimationtype could be:</p>
+
+<ul>
+<li>Bounce</li>
+<li>Rotation</li>
+<li>Transition</li>
+<li>Frame</li>
+</ul>
+
+
+<p>For Bounce, Rotation and Transition tabbar item image required. For Frame animation we have to pass UIImage Array.</p>
+
+<p><span style="text-align: center; display: block">
+<img src="https://d2mxuefqeaa7sj.cloudfront.net/s_ED3A3F43C1A3C37015D225DDB70A39423F77B009324EF3510BD4811463D17DED_1522583517426_ezgif.com-resize.gif" alt="" />
+</span></p>
+
+<hr/>
+
+
+<h1>Some Useful Links for Creating Custom Pods</h1>
+
+<ul>
+<li><a href="https://code.tutsplus.com/tutorials/creating-your-first-cocoapod--cms-24332">https://code.tutsplus.com/tutorials/creating-your-first-cocoapod&mdash;cms-24332</a></li>
+<li><a href="https://guides.cocoapods.org/making/private-cocoapods.html">https://guides.cocoapods.org/making/private-cocoapods.html</a></li>
+<li><a href="https://guides.cocoapods.org/making/specs-and-specs-repo.html">https://guides.cocoapods.org/making/specs-and-specs-repo.html</a></li>
+<li><a href="https://medium.com/@shahabejaz/create-and-distribute-private-libraries-with-cocoapods-5b6507b57a03">https://medium.com/@shahabejaz/create-and-distribute-private-libraries-with-cocoapods-5b6507b57a03</a></li>
+<li><a href="https://www.raywenderlich.com/99386/create-cocoapod-swift">https://www.raywenderlich.com/99386/create-cocoapod-swift</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Women in Tech @ Namshi: Noor Ali]]></title>
@@ -1926,118 +2120,6 @@ development book or riding a bike.</p>
 
 <iframe src="https://docs.google.com/presentation/d/1I8y_grcX78Hpe3MNzTogjHHZtakVYoAtvk9WKaLz9rY/embed?start=false&loop=false&delayms=3000" frameborder="0" width="760" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Docker security improvement - User namespace]]></title>
-    <link href="http://namshi.github.io/blog/2016/03/09/docker-security-improvement-username-space/"/>
-    <updated>2016-03-09T10:00:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/03/09/docker-security-improvement-username-space</id>
-    <content type="html"><![CDATA[<p>With the 1.10 release, Docker added a huge list of new features. Whith this post we are going do analyze one of options: username spaces.</p>
-
-<p>Prior to version 1.10, running an alpine container mounting an external volume <code>/var/log/</code> was done as follows:</p>
-
-<!-- more -->
-
-
-<p><img class="center" src="http://namshi.github.io/images/posts/docker-share-volume.png"></p>
-
-<figure class='code'><pre><code class='language-bash'>➜  ~  docker run -it --rm -v /var/log:/var/log --name=demo alpine ls -latr /var/log/
-total 35236
-drwxr-xr-x    2 root     root          4096 Oct  5 15:57 apt
-drwxr-xr-x    2 root     root          4096 Oct 20 16:18 dist-upgrade
--rw-r-----    1 root     adm             31 Oct 21 17:28 dmesg
--rw-r--r--    1 root     root         72557 Oct 21 17:29 bootstrap.log
-drwxr-xr-x    2 root     root          4096 Nov  5 08:19 fsck
-drwxr-xr-x    3 root     root          4096 Nov  5 08:49 installer
--rw-r-----    1 root     adm           6378 Dec 15 12:18 apport.log.1
-drwxr-x---    2 root     adm           4096 Dec 17 06:04 unattended-upgrades
--rw-r-----    1 104      adm        1351288 Dec 19 05:56 syslog.2.gz
--rw-r-----    1 104      adm         402127 Dec 25 06:17 auth.log.1
--rw-r-----    1 104      adm        8667895 Dec 25 06:17 kern.log.1
--rw-r-----    1 104      adm         932806 Dec 25 06:21 syslog.1</code></pre></figure>
-
-
-<p>Notice that the docker deamon is running with no additional options.</p>
-
-<figure class='code'><pre><code class='language-bash'>➜  ~  ps -ef | grep -i daemon
-root      21636      1  2 15:04 ?        00:00:00 /usr/bin/docker daemon -H fd://</code></pre></figure>
-
-
-<p>The ownership of the files in the container is exactly same as the host. The user inside the container as full rights to the files. With this access, the user can even delete the files which will delete the files in the host as well. This is the problem!</p>
-
-<p>Running the same code with Docker 1.10, adding the new option <code>--userns-remap=default</code> to the deamon, this results to:</p>
-
-<figure class='code'><pre><code class='language-bash'>➜  ~  ps -ef | grep -i daemon
-root      21636      1  2 15:04 ?        00:00:00 /usr/bin/docker daemon -H fd:// --userns-remap=default</code></pre></figure>
-
-
-<p>As seen below, the deamon is running with an additional option <code>--userns-remap=default</code>.</p>
-
-<figure class='code'><pre><code class='language-bash'>➜  ~  docker run -it --rm -v /var/log:/var/log --name=demo alpine ls -latr /var/log/
-total 35260
-drwxr-xr-x    2 nobody   nobody        4096 Oct  5 15:57 apt
-drwxr-xr-x    2 nobody   nobody        4096 Oct 20 16:18 dist-upgrade
--rw-r-----    1 nobody   nobody          31 Oct 21 17:28 dmesg
--rw-r--r--    1 nobody   nobody       72557 Oct 21 17:29 bootstrap.log
-drwxr-xr-x    2 nobody   nobody        4096 Nov  5 08:19 fsck
-drwxr-xr-x    3 nobody   nobody        4096 Nov  5 08:49 installer
--rw-r-----    1 nobody   nobody        6378 Dec 15 12:18 apport.log.1
-drwxr-x---    2 nobody   nobody        4096 Dec 17 06:04 unattended-upgrades
--rw-r-----    1 nobody   nobody     1351288 Dec 19 05:56 syslog.2.gz
--rw-r-----    1 nobody   nobody      402127 Dec 25 06:17 auth.log.1
--rw-r-----    1 nobody   nobody     8667895 Dec 25 06:17 kern.log.1
--rw-r-----    1 nobody   nobody      932806 Dec 25 06:21 syslog.1</code></pre></figure>
-
-
-<p>The result is, owner is <code>nobody</code> now. Even the  root user of the container cannot change the files. This is a great security upgrade that everybody was waiting for.</p>
-
-<blockquote><p>This feature saved us from working for a custom solution to tackle this problem.</p></blockquote>
-
-<ul>
-<li>image source: <a href="https://medium.com/on-docker/what-s-montague-docker-user-problems-and-patterns-79750c504aa1#.pmer584z9">Jeff Nickoloff &ndash; on-docker Blog</a></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The best CI/CD service Wercker CI is free (till now), use it]]></title>
-    <link href="http://namshi.github.io/blog/2016/03/08/the-best-ci-slash-cd-service-is-free-till-now/"/>
-    <updated>2016-03-08T09:02:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/03/08/the-best-ci-slash-cd-service-is-free-till-now</id>
-    <content type="html"><![CDATA[<p>Yesterday I did a short talk titled &ldquo;The best CI/CD service is free (till now), lets use it&rdquo;.
-It was a quick rundown of <a href="http://wercker.com/">Wercker</a> CI (Continuous Integration) features and how it works.</p>
-
-<p><img class="center" src="http://namshi.github.io/images/posts/geshan-wercker-talk.jpg"></p>
-
-<!-- more -->
-
-
-<p>We are currently using <a href="https://travis-ci.com/">Travis CI</a> for running our tests and our own open source
-<a href="https://github.com/namshi/roger">Roger</a> app to build docker images. The main objectives of the talk were:</p>
-
-<ul>
-<li><p>Suggest using Wercker CI to combine running our tests and building our containers in a sequence. This will prevent us from deploying broken builds</p></li>
-<li><p>Inform about a free service that can run 2 concurrent workers to build and deploy containers. It supports closed source projects too.</p></li>
-</ul>
-
-
-<p>Here are the slides:</p>
-
-<center>
-<script async class="speakerdeck-embed" data-id="48dcb61db6eb4a50b03bfea1320bfeb4" data-ratio="1.77777777777778" src="http://namshi.github.io//speakerdeck.com/assets/embed.js"></script> 
-</center>
-
-
-<br/>
-
-
-<p>We discussed how it&rsquo;s still in beta, which might cause issues in the future.
-We also discussed on how Continuous Delivery and Continuous Deployment are different.</p>
-
-<p>Hope you like them :), comments and suggestions are always welcome.</p>
 ]]></content>
   </entry>
   

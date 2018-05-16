@@ -4,7 +4,7 @@
   <title><![CDATA[Category: security | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-03-25T11:24:46+00:00</updated>
+  <updated>2018-05-16T09:09:25+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,111 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing the Namshi Bug Bounty Program]]></title>
+    <link href="http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/"/>
+    <updated>2018-05-16T08:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/05/16/introducing-the-namshi-bug-bounty-program</id>
+    <content type="html"><![CDATA[<p>Namshi believes that working with skilled security researchers across the globe
+is crucial in identifying weaknesses in any technology &mdash; with that in mind, I
+wanted to introduce our (currently private) <em>Bug Bounty Program</em> that&rsquo;s been in
+place since a couple years.</p>
+
+<!-- more -->
+
+
+<h2>A bit of history&hellip;</h2>
+
+<p>5 (long) years ago we responded to our very first vulnerability report,
+submitted by a web developer whose better half had been using our services,
+who noticed a small glitch in one of our webservices. Since then, we processed quite a
+few (and luckily <em>not-so-many</em>) submissions, handing off rewards to researchers who
+would submit valid reports.</p>
+
+<p>The process had been quite unstructured until a couple years back, when
+<a href="https://www.linkedin.com/in/borishajduk/">Boris</a> joined <a href="https://global-fashion-group.com/">GFG</a>,
+at the time our majority stakeholder, and suggested we should try <a href="https://www.hackerone.com/">hackerone</a>
+as it had been working well for other companies &mdash; needless to say, this was a
+turning point for us, as we finally found a platform that could take care of
+coordination with security researchers.</p>
+
+<p>At that point we started phasing out the historical <code>security@namshi.com</code> email
+address in favor of inviting researchers to our H1 program, which has definitely
+helped us defining better boundaries (especially in terms of timeline, rewards and
+scope of the program) between Namshi and the community of researchers out there.</p>
+
+<h2>Our current program</h2>
+
+<p>As mentioned, we run a (private) program on hackerone and, in parallel, process
+submissions to <code>security@namshi.com</code> by asking whoever reaches out to us to
+create an account on hackerone so that we can then move the conversation from
+email to a proper bug bounty platform.</p>
+
+<p>Our program defines a disclosure policy, list of exclusions and a brief legal
+appendix to guide you through the process of submitting a vulnerability report
+to Namshi. The list of exclusion also contains an associated list of behaviors / actions
+that will result in your submission being ineligible for a bounty, such as:</p>
+
+<ul>
+<li>making threats</li>
+<li>demanding payments / entry into the program in exchange for reports</li>
+</ul>
+
+
+<p>&hellip;and a few additional points. We do believe our program is fair and guarantees
+a good balance between what we demand and what we offer, but we&rsquo;re always open
+to suggestions, or questions, from your side. Feel free to reach out if
+you think we should amend some of the points in our program.</p>
+
+<p>In addition, I wanted to mention that we recognize that the only public information
+available on our websites (<a href="https://support.namshi.com/hc/en-us/articles/207782049-Security">our security FAQ</a>),
+is by no means exhaustive, and we plan on fixing it in the upcoming months:
+that&rsquo;s where the next paragraph kicks in :)</p>
+
+<h2>Future plans</h2>
+
+<p>You might be wondering: &ldquo;why are you telling us about a private bug bounty program
+that&rsquo;s been kept private and we don&rsquo;t know how to join? Is today the
+lets-share-news-people-couldnt-care-less day?&rdquo;</p>
+
+<p>We&rsquo;re sharing this because we want this to change, and we want to be more open
+about some of our processes: <strong>our goal is to be able to make our program public in
+the upcoming months</strong>, so that more and more researchers can help us making Namshi
+a safer place on the web.</p>
+
+<p>The traditional challenges with having public bug bounty programs are related to
+the &ldquo;<em>signal vs noise</em>&rdquo; ratio as well as the fact that companies think the more they
+keep in the dark, the less they&rsquo;ll expose &mdash; we don&rsquo;t share the same beliefs, and
+are currently making a step to expand our program to more researchers, with the
+ultimate goal of making it public. At the same time, our tech department is fairly small so we want
+this transition to be as smooth as possible, hence the slow rollout &mdash; consider
+this a canary release until everything is well-oiled and we&rsquo;re comfortable enough
+with making the program public.</p>
+
+<p>With this in mind, I&rsquo;d like to invite everyone who would like to take a look at
+our program to mail us at <code>security@namshi.com</code> and share the email they use on
+hackerone, so that we can invite you to the Namshi Bug Bounty program. As I
+mentioned, this is a first step towards our program turning public in the upcoming
+months.</p>
+
+<p>Considering our goal to be more open and transparent, I would also like to take
+a second to disclose some of our stats taken from hackerone:</p>
+
+<ul>
+<li>our <strong>minimum bounty is $50</strong></li>
+<li>the total number of submissions is 67</li>
+<li>we have <strong>resolved 27 reports</strong> (meaning the remaining are to be considered invalid, or part of the exclusions)</li>
+<li>our average time to <strong>first response is 1 day</strong> (last 90d)</li>
+<li>our average time to <strong>bounty is 3 days</strong> (last 90d)</li>
+<li>our <strong>average bounty range is $120 &ndash; $150</strong></li>
+<li>our <strong>top bounty range is $450 &ndash; $1000</strong></li>
+</ul>
+
+
+<p>Happy hacking!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Newsletter #111]]></title>
@@ -228,66 +333,6 @@ how <a href="http://facebook.github.io/react/">React</a> works and how he used i
 <li><p><a href="https://medium.com/@jbae/how-to-make-a-prototype-in-3-days-5cbb5a573ada?ref=webdesignernews.com">How to Make a Prototype in 3 Days — Medium</a></p></li>
 <li><p><a href="http://heydesigner.com/material-design-is-design-science/">Material Design is design science | HeyDesigner</a></p></li>
 <li><p><a href="http://www.quora.com/Are-good-gaming-laptops-good-for-programming">Are good gaming laptops good for programming?</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #92]]></title>
-    <link href="http://namshi.github.io/blog/2015/05/28/newsletter-number-92/"/>
-    <updated>2015-05-28T13:48:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/05/28/newsletter-number-92</id>
-    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
-
-<p><strong>And here you have THE list :) Reading is the first step to growth!</strong></p>
-
-<ul>
-<li><a href="http://buff.ly/1FYVmKm">Strong Mode Proposal for javascript</a></li>
-<li><a href="http://buff.ly/1dxT5cI">Schedule Recurring AWS Lambda Invocations With The Unreliable Town Clock (UTC)</a></li>
-<li><a href="http://buff.ly/1FDj7Vb">Rearchitecting GitHub Pages</a></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><a href="http://buff.ly/1J5uJTc">The State of Go</a></li>
-<li><a href="http://buff.ly/1Bpbduz">Over 30% of Official Images in Docker Hub Contain High Priority Security Vulnerabilities</a></li>
-<li><a href="http://buff.ly/1LHZZXu">angularjs 1.4</a></li>
-<li><a href="http://buff.ly/1Av9RTP">What it takes to run StackOverflow</a></li>
-<li><a href="http://buff.ly/1Erpx5L">The GitHub Engineering Blog</a></li>
-<li><a href="http://buff.ly/1IXgUpG">Node.js and io.js leaders are building an open, neutral Node.js Foundation to support the future of the platform</a></li>
-<li><a href="http://buff.ly/1Ero67g">&ldquo;Elasticsearch’s transaction log doesnt put data safety first. It puts it anywhere from zero to five seconds later&rdquo;</a></li>
-<li><a href="http://buff.ly/1HE6fyy">Run Docker Apps Locally Using the Elastic Beanstalk (EB) CLI</a></li>
-<li><a href="http://buff.ly/1KsLQ3j">VPC Endpoint for #Amazon S3</a></li>
-<li><a href="http://buff.ly/1F8UNb2">Moving Codecademy to ECMAScript 6, Webpack, and React</a></li>
-<li><a href="http://buff.ly/1F8Se8Z">Svbtle&rsquo;s magic signup form</a></li>
-<li><a href="http://bit.ly/1KqL83o">The responsibility we have as software engineers</a></li>
-<li><a href="http://bit.ly/1J7HQ6m">Agile in a nutshell</a></li>
-<li><a href="http://bit.ly/1Fc4yUZ">Application logging with logstash</a></li>
-<li><a href="http://bit.ly/1Fc4Xac">Design pattern specification</a></li>
-<li><a href="http://bit.ly/1HxCb56">Lorry &ndash; a docker-compose.yml validator and composer</a></li>
-<li><a href="http://sethgodin.typepad.com/seths_blog/2015/05/are-you-certain-that-youre-trapped.html">Are you certain that you&rsquo;re trapped?</a></li>
-<li><a href="http://martinfowler.com/bliki/MicroservicePremium.html">Microservice Premium</a></li>
-<li><a href="https://devedge.wordpress.com/2015/05/16/a-few-thoughts-about-composer-and-how-people-use-it/">A few thoughts about composer and how people use it</a></li>
-<li><a href="http://boz.com/articles/be-kind.html">Be Kind</a></li>
-<li><a href="https://blog.docker.com/2015/05/web-development-with-docker-docker-machine-docker-compose-tmux-tmuxinator-and-watchdog/">Web Development with Docker, Docker-Machine, Docker-Compose, Tmux, Tmuxinator, and Watchdog</a></li>
-<li><a href="https://blog.docker.com/2015/05/online-meetup-recap-a-new-model-for-image-distribution/">Online meetup recap: A new model for image distribution</a></li>
-<li><a href="https://github.com/nelhage/reptyr">Reparent a Running Process, Reptyr</a></li>
-<li><a href="https://github.com/xemul/p.haul">Live Migration for Containers and Processes, CRIU</a></li>
-<li><a href="http://www.sitepoint.com/7-mobile-ux-mistakes/">7 Mobile UX Mistakes You’re Probably Making Right Now</a></li>
-<li><a href="http://www.sitepoint.com/creating-mobile-app-famo-us-manifold-js/">Creating a Mobile App with Famo.us and manifold.js</a></li>
-<li><a href="http://talks.golang.org/2015/gogo.slide">GO in GO</a></li>
-<li><a href="https://medium.com/@matryer/the-http-handlerfunc-wrapper-technique-in-golang-c60bf76e6124">The http handler function technique in GO</a></li>
-<li><a href="http://rayli.net/blog/data/top-10-data-mining-algorithms-in-plain-english">Top 10 data mining algorithms in plain english</a></li>
-<li><a href="http://brendaneich.github.io/ModernWeb.tw-2015/?utm_source=hackernewsletter&amp;utm_medium=email&amp;utm_term=fav#1">Brendan Eich: Javascript at 20</a></li>
-<li><a href="http://www.quirksmode.org/blog/archives/2015/05/web_vs_native_l.html">Web vs. native: let’s concede defeat</a></li>
-<li><a href="https://blog.colepeters.com/on-writing-real-css-again/">On writing real CSS (again)</a></li>
-<li><a href="http://victorsavkin.com/post/119943127151/angular-2-template-syntax">Angular 2 Template Syntax</a></li>
-<li><a href="http://davidwalsh.name/preventing-sideeffects-javascript">Preventing Side Effects in JavaScript</a></li>
-<li><a href="https://medium.com/javascript-scene/jsx-looks-like-an-abomination-1c1ec351a918">JSX Looks Like An Abomination</a></li>
 </ul>
 
 ]]></content>

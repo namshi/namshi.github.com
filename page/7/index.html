@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Namshi Engineering &mdash; Tech @ Namshi.com</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Namshi Engineering">
+    <link rel="canonical" href="http://namshi.github.io/page/7/index.html">
+    
+    
+    <meta property="og:title" content="Namshi Engineering"/>
+    <meta property="og:url" content="http://namshi.github.io/page/7/index.html"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+<div class="blog-cover" style="background-image:url(/images/bg.jpg);">
+
+    <section>
+        <div class="container">
+            <h1>Namshi Engineering</h1>
+            <h3>Tech @ Namshi.com</h3>
+
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss"></i>
+            </a>
+        </div>
+    </section>
+</div>
+
+
+<article class="container">
+
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/06/18/newsletter-number-95/" rel="prefetch">Newsletter #95</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-18-June" title="June 18, 2015">June 18, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p>&hellip; Hi Guys, the week is over and a we have a new good list of links for
+you. Ramadan Kareem!!</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="https://github.com/jlevy/the-art-of-command-line">The Art of the command line</a></p></li>
+<li><p><a href="https://github.com/blog/2024-read-only-deploy-keys">GitHub: Read-only deploy keys</a></p></li>
+<li><p><a href="http://engineering.remind.com/introducing-empire/">Introducing Empire: A self-hosted PaaS built on Docker </a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/06/16/jose-fix/" rel="prefetch">Important &#8216;namshi/jose&#8217; JWS library fix</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-16-June" title="June 16, 2015">June 16, 2015</time>
+            </div>
+            <div class="excerpt"><blockquote><p>We just released a very important security fix on <strong>namshi/jose</strong>, our opensource lightweight implementation of the JWS (JSON Web Signature) in PHP.</p></blockquote>
+
+<p>The issue is related to the fact that any jws token was valid if the algorithm specified in the header was &lsquo;none&rsquo; (first &lsquo;n&rsquo; lower case).
+Here you can find the <a href="https://github.com/namshi/jose/commit/be2db86f5224cc7d34ef98f9a315c6b45bc4fc4e#diff-afc7aff66a8cf751ea15e11dedf56b9bR113">fix</a></p>
+
+<p>There are three main relases:</p>
+
+<ul>
+<li><strong>2.x</strong></li>
+<li><strong>3.x</strong> (It introduces the support to PHPSecLib to the already existing OpenSSL implementation)</li>
+<li><strong>4.x</strong> (Added the ability to set custom properties in the header)</li>
+<li><strong>5.x</strong> (Fixed HMAC signature in order to be checked by other HMAC compliant library)</li>
+</ul>
+
+
+<p><strong>We strongly suggest to update to the latest major release (2.2.2, 3.0.1, 4.0.1, 5.0.1)</strong>.</p>
+
+<p>On a side note thanks to everyone who contributed to this library, especially:</p>
+
+<ul>
+<li><a href="https://github.com/smaxwellstewart">Simon Maxwell-Stewart</a></li>
+<li><a href="https://github.com/mikesir87">Michael Irwin</a>, <a href="https://twitter.com/mikesir87">twitter</a></li>
+<li><a href="https://github.com/Spomky">Florent Morselli</a>, <a href="https://twitter.com/florentmorselli">twitter</a></li>
+<li><a href="https://github.com/greg0ire">Grégoire Paris</a>, <a href="https://twitter.com/ggreg0ire">twitter</a></li>
+<li><a href="https://github.com/brianjmiller">Brian J. Miller</a></li>
+<li><a href="https://github.com/n-s-f">n-s-f</a></li>
+<li><a href="https://github.com/tymondesigns">Sean Tymon</a>, <a href="https://twitter.com/tymondesigns">twitter</a></li>
+<li><a href="https://github.com/callumacrae">Callum Macrae</a>, <a href="https://twitter.com/callumacrae">twitter</a></li>
+</ul>
+
+
+<p>&lt;3 opensource, &lt;3 github</p>
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                        
+                            Alessandro Cinelli (cirpo)
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/06/11/newsletter-94/" rel="prefetch">newsletter #94</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-11-June" title="June 11, 2015">June 11, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p>This week Lucio, Filippo and David worked at the warehouse:
+as you can see, Lucio was pretty sad because he couldn&rsquo;t use the package slide</p>
+
+<p><img class="center" src="/images/posts/teamQcWork.jpg"></p>
+
+<h3>enjoy with our links:</h3>
+
+<ul>
+<li><p><a href="http://blog.trello.com/the-five-uncommon-habits-of-highly-productive-people/">The Five Uncommon Habits Of Highly Productive People</a></p></li>
+<li><p><a href="http://phpdatamapper.com/">Spot ORM</a></p></li>
+<li><p><a href="http://blog.iancackett.com/2015/06/07/software-engineering/">Why Software Engineering Isn’t Engineering, and the Implication for Deadlines</a></p></li>
+<li><p><a href="http://autopsy.io/">Autopsy &ndash; Lessons from Failed Startups</a></p></li>
+<li><p><a href="https://github.com/rakyll/go2xcode">Convert a Go package into an Xcode project</a></p></li>
+<li><p><a href="https://mesosphere.com/product/">Infrastructure Orchestration and Automation at Datacenter Scale</a></p></li>
+<li><p><a href="http://bit.ly/1II6qfG">Introducing scrum &ndash; slides</a></p></li>
+<li><p><a href="http://bit.ly/1HVTf56">10 pillars of modern PHP development</a></p></li>
+<li><p><a href="http://bit.ly/1TcNKI4">Software engineers are lazy bastards</a></p></li>
+<li><p><a href="http://bit.ly/1TcNVTz">Tips for building a dev-env with docker</a></p></li>
+<li><p><a href="http://oliverguenther.de/2015/05/docker-host-volume-synchronization/">Sharing Host Volumes with Docker Containers</a></p></li>
+<li><p><a href="http://www.slideshare.net/jpetazzo/implementing-separation-of-concerns-with-docker-and-containers">Sepatation of Concerns with Docker and Containers</a></p></li>
+<li><p><a href="https://blog.docker.com/2015/05/web-development-with-docker-docker-machine-docker-compose-tmux-tmuxinator-and-watchdog/">Web Development with Docker, Docker-machine, Docker-compose, Tmux, Tmuxinator and wathdog</a></p></li>
+<li><p><a href="http://nathanleclaire.com/blog/2015/06/02/docker-machine-0.3.0-sneak-preview-transmogrify-existing-servers-to-be-docker-ready-and-much-much-more/">Special sneak preview of the docker machine 0.3.0</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/06/minecraft-server-docker-1/">Setting up a Minecraft server with Docker</a></p></li>
+<li><p><a href="http://mattbriggs.net/blog/2015/06/01/the-role-of-a-senior-developer/">The role of a Senior Developer</a></p></li>
+<li><p><a href="http://elijahmanor.com/javascript-smells/?utm_source=javascriptweekly&amp;utm_medium=email">Javascript code smells</a></p></li>
+<li><p><a href="http://raganwald.com/2015/05/30/de-stijl.html">How necessary are var, let, and const?</a></p></li>
+</ul>
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/06/04/newsletter-number-93/" rel="prefetch">Newsletter #93</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-04-June" title="June 04, 2015">June 04, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p><strong>Yet another post of our weekly newsletter to make your weekend more enjoyable :)</strong></p>
+
+<h3>Team updates:</h3>
+
+<p>Team congratulates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Odino</a> for his wedding that will be held today :)</p>
+
+<h3>and here the links:</h3>
+
+<ul>
+<li><p><a href="http://blogs.windows.com/bloggingwindows/2015/06/01/hello-world-windows-10-available-on-july-29/">Hello World: Windows 10 Available on July 29</a></p></li>
+<li><p><a href="http://blog.500tech.com/is-reactjs-fast/">Is ReactJS really fast?</a></p></li>
+<li><p><a href="https://steveedson.co.uk/javascript/es6/">Using the future of JavaScript, today</a></p></li>
+<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/hossam.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Hossam Fares" title="Hossam Fares">
+                        
+                            Hossam Fares
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/05/28/newsletter-number-92/" rel="prefetch">Newsletter #92</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-28-May" title="May 28, 2015">May 28, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here!</h2>
+
+<p><strong>And here you have THE list :) Reading is the first step to growth!</strong></p>
+
+<ul>
+<li><a href="http://buff.ly/1FYVmKm">Strong Mode Proposal for javascript</a></li>
+<li><a href="http://buff.ly/1dxT5cI">Schedule Recurring AWS Lambda Invocations With The Unreliable Town Clock (UTC)</a></li>
+<li><a href="http://buff.ly/1FDj7Vb">Rearchitecting GitHub Pages</a></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/filippo.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Filippo De Santis" title="Filippo De Santis">
+                        
+                            Filippo De Santis
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/05/21/newsletter-number-91/" rel="prefetch">Newsletter #91</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-21-May" title="May 21, 2015">May 21, 2015</time>
+            </div>
+            <div class="excerpt"><h2>TechThursday is here again!</h2>
+
+<blockquote><p>Hey! Laser focus more.</p>
+
+<p><img class="center" src="/images/posts/hoodiemania.jpg"></p></blockquote>
+
+<p><strong>And here you have the usual list with awesome links to keep you busy during the weekend</strong></p>
+
+<ul>
+<li><a href="https://www.npmjs.com/package/tar-stream">Nodejs tar-stream</a></li>
+<li><a href="https://www.npmjs.com/package/yauzl">Unzip library for node</a></li>
+<li><a href="http://blog.golang.org/examples">Testable Examples in Go</a></li>
+<li><a href="http://sahandsaba.com/nine-anti-patterns-every-programmer-should-be-aware-of-with-examples.html">9 Anti-Patterns Every Programmer Should Be Aware Of</a></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/geshan.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Geshan Manandhar" title="Geshan Manandhar">
+                        
+                            Geshan Manandhar
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/05/14/newsletter-number-90/" rel="prefetch">Newsletter #90</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-14-May" title="May 14, 2015">May 14, 2015</time>
+            </div>
+            <div class="excerpt"><h1>TechThursday #90 is here!</h1>
+
+<blockquote><p>Hello folks!</p>
+
+<p>Today <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> will speak at <a href="http://2015.jsday.it/">#jsday</a>!
+If you are there don&rsquo;t miss his talk <a href="http://2015.jsday.it/talk/back-to-the-future-isomorphic-javascript-applications/">&ldquo;Back to the future: Isomorphic javascript applications&rdquo;</a>!</p>
+
+<p>And after his talk give a look at the usual awesome links of this newsletter!</p></blockquote>
+
+<ul>
+<li><p><a href="http://buff.ly/1EDjeMB">mount a http file as if it was a local file using fuse</a></p></li>
+<li><p><a href="http://buff.ly/1EDj4ot">The Penetration Testers Framework (PTF) is a way for modular support for up-to-date tools</a></p></li>
+<li><p><a href="http://buff.ly/1ATCIfm">DDOS and attack resilient HAProxy configuration</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/filippo.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Filippo De Santis" title="Filippo De Santis">
+                        
+                            Filippo De Santis
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/05/07/newsletter-number-89/" rel="prefetch">Newsletter #89</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-07-May" title="May 07, 2015">May 07, 2015</time>
+            </div>
+            <div class="excerpt"><h1>TechThursday is here again!</h1>
+
+<blockquote><p>Hello folks!</p>
+
+<p>Please join us in welcoming <a href="http://tech.namshi.io/blog/2015/05/03/welcome-armagan/">Armagan</a> our new DevOps Engineer!</p>
+
+<p>This week we released <a href="https://github.com/namshi/node-nmconfig">node-nmconfig</a>, a handy wrapper that combines other two
+Namshi node opensource libraries: <a href="https://github.com/namshi/reconfig">reconfig</a> and <a href="https://github.com/namshi/node-file-ensure">file-ensure</a></p></blockquote>
+
+<p><strong>here is the usual list of interesting links we found this week!</strong></p>
+
+<ul>
+<li><p><a href="https://blog.cloudflare.com/an-introduction-to-javascript-based-ddos">Javascript based ddos</a></p></li>
+<li><p><a href="https://medium.com/@koryteg/ember-js-the-ever-evolving-rock-aadf1ac2f278">Ember the ever evolving rock</a></p></li>
+<li><p><a href="http://red-badger.com/blog/2015/04/23/react-native-when-the-mobile-web-isnt-enough/">React native when the mobile web isnt enough</a></p></li>
+<li><p><a href="http://buff.ly/1EPuXen">I&rsquo;m Joel Gascoigne, and This Is the Story Behind Buffer</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                        
+                            Alessandro Cinelli (cirpo)
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/05/03/welcome-armagan/" rel="prefetch">Welcome Armagan!</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-03-May" title="May 03, 2015">May 03, 2015</time>
+            </div>
+            <div class="excerpt"><p><img class="team left" src="/images/armagan.png"></p>
+
+<p>Time for another terrific addition to
+the team as we&rsquo;re trying to embrace
+the DevOps culture over here!</p>
+
+<p>We&rsquo;ve been trying to make some key
+hires over the past few months,
+and after beefing up the team with
+<a href="http://tech.namshi.io/blog/2015/02/05/welcome-nitesh/">talented JavaScripters</a>,
+<a href="http://tech.namshi.io/blog/2014/12/29/welcome-amin/">diligent (and very funny!) webdevelopers</a>
+and experienced <a href="http://tech.namshi.io/blog/2014/12/29/welcome-filippo/">software engineers</a>,
+we felt we needed to add someone with
+DevOps in his blood to help our whole
+team in this long, rewarding transition.</p>
+
+<p>Without further ado, we welcome <a href="https://twitter.com/armagan_kim">Armagan</a>
+from Turkey, our very first 100% turk! :)</p>
+
+<blockquote><p>Armagan graduated from Computer Science and dove
+into web development with Django, then did some
+System Administration with Fabric and regret that
+as soon as he met Saltstack :)
+He introduced Saltstack to several companies,
+either built orchestration from scratch or converted
+from other tools like puppet or chef.
+Markafoni, Put.io, Koding, Kartaca and Peakgames
+were among those companies.
+Meanwhile, he developed a video on demand Android
+applications for Turkcell as a freelancer.</p></blockquote>
+
+<p>Well, best of luck Arma! And thanks for the
+fresh <a href="http://en.wikipedia.org/wiki/Baklava">Baklava</a>!</p>
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#" title="">
+                        
+                            Namshi
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
+            <h2 class="title"><a href="/blog/2015/04/30/newsletter-number-88/" rel="prefetch">Newsletter #88</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-30-April" title="April 30, 2015">April 30, 2015</time>
+            </div>
+            <div class="excerpt"><blockquote><p>Hello folks!
+It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
+
+<p>This week we held our first <a href="http://tech.namshi.io/blog/2015/04/26/lighting-talks-1/">&ldquo;lighting talks&rdquo; session</a> with a lot of new and useful insight on tools and libraries!</p>
+
+<p>We also realease another oss library for nodejs <a href="https://www.npmjs.com/package/mysql2-promise">mysql2-promise</a> that is based on <a href="https://github.com/sidorares/node-mysql2">node-mysql2</a> and let you take advantage of client-side query prepare/escape, connection pooling and <a href="https://github.com/sidorares/node-mysql2#documentation">other features</a> that are not in the <a href="https://github.com/felixge/node-mysql">node-mysql</a> library. Thanks to <a href="http://tech.namshi.io/team/#Hossam%20Faris">Hossam</a> for this!</p></blockquote>
+
+<p><strong>And here is the list of awesome links we found this week!</strong></p>
+
+<ul>
+<li><p><a href="http://facebook.github.io/jest/">Jest: painless javascript unit testing</a></p></li>
+<li><p><a href="https://medium.com/i-m-h-o/the-new-retirement-age-is-thirty-547114ab60ef">The New Retirement Age Is Thirty</a></p></li>
+<li><p><a href="http://arstechnica.com/tech-policy/2015/04/15/meet-the-e-voting-machine-so-easy-to-hack-it-will-take-your-breath-away/">Meet the e-voting machine so easy to hack, it will take your breath away</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/filippo.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Filippo De Santis" title="Filippo De Santis">
+                        
+                            Filippo De Santis
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+    <section class="pagination" style="text-align:center">
+      
+        
+        <a href="/page/6/" class="btn btn-outline">‹ Newer</a>
+        
+      
+      
+        <a href="/page/8/" class="btn btn-outline">Older ›</a>
+      
+    </section>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>
