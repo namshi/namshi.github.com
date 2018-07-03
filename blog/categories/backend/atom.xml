@@ -4,7 +4,7 @@
   <title><![CDATA[Category: backend | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/backend/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-05-16T09:09:25+00:00</updated>
+  <updated>2018-07-03T12:12:56+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Currently hiring: sr. backend engineers]]></title>
+    <link href="http://namshi.github.io/blog/2018/07/03/currently-hiring-sr-backend-engineers/"/>
+    <updated>2018-07-03T08:52:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/07/03/currently-hiring-sr-backend-engineers</id>
+    <content type="html"><![CDATA[<p>Love microservices, NodeJS and distributed systems? Then we might have the right
+opening for you!</p>
+
+<!-- more -->
+
+
+<p>Here at Namshi we&rsquo;re constantly trying to renovate our stack by using the best
+from the open source ecosystem: from <a href="https://nodejs.org/en/">NodeJS</a> to <a href="https://kubernetes.io/">Kubernetes</a>, our stack bleeds with
+interesting tools to work with.</p>
+
+<p>As a Sr. Backend Engineer, you&rsquo;ll be tasked to work on a spectrum of services
+ranging from our customer-facing APIs to tools that power our logistics infrastructure.
+We are a very pragmatic and experienced team, so from time to time you will see
+engineers busy TDDing on a feature, whereas other times we&rsquo;re <em>straight to live</em>.
+We pride of being a heterogeneous team that&rsquo;s experienced to know how and when to
+abstract.</p>
+
+<p>We run a Service-Oriented architecture with 100+ microservices where JS plays a
+huge part: <a href="https://stackshare.io/namshi">our stack is comprised of many different tools</a>
+and we&rsquo;re always up to experimenting in light of new, harder challenges.</p>
+
+<p>Some of the things our backend team has been working over the past few months:</p>
+
+<ul>
+<li><a href="/blog/2017/05/28/rewriting-the-catalog-api/">rewriting one of our most sensitive APIs</a>, bringing the median response time down to 30ms</li>
+<li>moving <a href="/blog/2017/02/06/towards-high-availability-and-beyond/">wonky pieces of our infrastructure</a> towards high-availability</li>
+<li>releasing some interesting open-source <a href="https://github.com/namshi/stackdriver-pushgateway">backend bits</a></li>
+</ul>
+
+
+<p>Most of our backend apps are built with NodeJS, although some of the apps
+still kick it in Symfony2 or pythonic boots. With a fleet of 100+ microservices, we&rsquo;re
+generally very busy trying to innovate as much as possible &mdash; and refactoring when
+we need to pay our technical debt back.</p>
+
+<p>Understand the HTTP protocol? Like deploying microservices on kubernetes? Async
+programming doesn&rsquo;t scare you? Then we&rsquo;re definitely a match!</p>
+
+<h2>Apply now!</h2>
+
+<p>What are you waiting for? Send your application to <code>work-in-tech@namshi.com</code> and
+let&rsquo;s have a chat!</p>
+
+<p>P.S. A few months back I wrote a small piece about <a href="/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
+give it a look!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Currently hiring: backend and mobile engineers]]></title>

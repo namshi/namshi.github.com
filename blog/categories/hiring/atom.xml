@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hiring | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hiring/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-05-16T09:09:25+00:00</updated>
+  <updated>2018-07-03T12:12:56+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Currently hiring: sr. backend engineers]]></title>
+    <link href="http://namshi.github.io/blog/2018/07/03/currently-hiring-sr-backend-engineers/"/>
+    <updated>2018-07-03T08:52:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/07/03/currently-hiring-sr-backend-engineers</id>
+    <content type="html"><![CDATA[<p>Love microservices, NodeJS and distributed systems? Then we might have the right
+opening for you!</p>
+
+<!-- more -->
+
+
+<p>Here at Namshi we&rsquo;re constantly trying to renovate our stack by using the best
+from the open source ecosystem: from <a href="https://nodejs.org/en/">NodeJS</a> to <a href="https://kubernetes.io/">Kubernetes</a>, our stack bleeds with
+interesting tools to work with.</p>
+
+<p>As a Sr. Backend Engineer, you&rsquo;ll be tasked to work on a spectrum of services
+ranging from our customer-facing APIs to tools that power our logistics infrastructure.
+We are a very pragmatic and experienced team, so from time to time you will see
+engineers busy TDDing on a feature, whereas other times we&rsquo;re <em>straight to live</em>.
+We pride of being a heterogeneous team that&rsquo;s experienced to know how and when to
+abstract.</p>
+
+<p>We run a Service-Oriented architecture with 100+ microservices where JS plays a
+huge part: <a href="https://stackshare.io/namshi">our stack is comprised of many different tools</a>
+and we&rsquo;re always up to experimenting in light of new, harder challenges.</p>
+
+<p>Some of the things our backend team has been working over the past few months:</p>
+
+<ul>
+<li><a href="/blog/2017/05/28/rewriting-the-catalog-api/">rewriting one of our most sensitive APIs</a>, bringing the median response time down to 30ms</li>
+<li>moving <a href="/blog/2017/02/06/towards-high-availability-and-beyond/">wonky pieces of our infrastructure</a> towards high-availability</li>
+<li>releasing some interesting open-source <a href="https://github.com/namshi/stackdriver-pushgateway">backend bits</a></li>
+</ul>
+
+
+<p>Most of our backend apps are built with NodeJS, although some of the apps
+still kick it in Symfony2 or pythonic boots. With a fleet of 100+ microservices, we&rsquo;re
+generally very busy trying to innovate as much as possible &mdash; and refactoring when
+we need to pay our technical debt back.</p>
+
+<p>Understand the HTTP protocol? Like deploying microservices on kubernetes? Async
+programming doesn&rsquo;t scare you? Then we&rsquo;re definitely a match!</p>
+
+<h2>Apply now!</h2>
+
+<p>What are you waiting for? Send your application to <code>work-in-tech@namshi.com</code> and
+let&rsquo;s have a chat!</p>
+
+<p>P.S. A few months back I wrote a small piece about <a href="/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
+give it a look!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Currently hiring: a frontend engineer]]></title>
@@ -306,127 +359,6 @@ scraping our <a href="http://tech.namshi.io">tech blog</a>.</p>
 
 <p>If you think you could <a href="http://tech.namshi.io/join-us/">fit into the team</a>, drop us a line
 at <em>work-in-tech@namshi.com</em> and let&rsquo;s make it happen!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[We're hiring...actually, we're hiring MOAR!]]></title>
-    <link href="http://namshi.github.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar/"/>
-    <updated>2014-08-13T12:14:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/08/13/were-hiring-dot-dot-dot-actually-were-hiring-moar</id>
-    <content type="html"><![CDATA[<p>Just an heads up that we are looking for talented
-engineers for our tech team, and our guys are very
-sad they don&rsquo;t have too many new friends!</p>
-
-<!-- more -->
-
-
-<p>Besides looking for a Lead Mobile developer, as we
-<a href="/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/">announced a few weeks back</a>,
-we are looking for some other key figures in our team.</p>
-
-<h2>No HTML/CSS love&hellip;</h2>
-
-<p>Our frontend team, usually happy to write AngularJS
-directives or a bunch of frontend-ish NodeJS apps,
-is devastated as they feel they are missing a third
-element who can help them achieve greatness.</p>
-
-<p><img class="center" src="/images/frontend-sad.png"></p>
-
-<p>To make Lucio and Shidhin happy, we want to add a new
-member in our team, a <strong>Frontend Developer</strong>, someone who
-is skilled on HTML5 and CSS3 and knows the basics of
-JavaScript but wants to expand his knowledge in that
-direction.</p>
-
-<p>You will work on a whole lot of new internal applications
-as well as help streamlining our frontend processes, together
-with the rest of the team: which frameworks shall we use? Bootstrap or
-Foundation? How can we use Yeoman&rsquo;s generator to speed up
-most of our code generation? How can we make our web apps
-faster <a href="https://github.com/addyosmani/critical">extracting critical styles</a>
-and so on? These are just a few questions you will need to
-ask yourself once you come here.</p>
-
-<p>You will come here knowing how to design a frontend (mastering
-the presentation layer, so HTML, CSS, jQuery) but will leave Namshi
-knowing how to build the presentation and logic behind a full
-frontend application (AngularJS, Node or something more spicy
-like <a href="http://www.polymer-project.org/">polymer</a>).</p>
-
-<blockquote><p>Drop us an email at <a href="&#109;&#x61;&#x69;&#108;&#116;&#x6f;&#58;&#119;&#111;&#x72;&#107;&#45;&#x69;&#x6e;&#45;&#116;&#101;&#x63;&#104;&#64;&#x6e;&#97;&#x6d;&#x73;&#x68;&#105;&#46;&#x63;&#x6f;&#x6d;">&#119;&#x6f;&#x72;&#x6b;&#x2d;&#x69;&#110;&#x2d;&#x74;&#101;&#99;&#x68;&#x40;&#110;&#97;&#x6d;&#115;&#x68;&#105;&#46;&#x63;&#111;&#x6d;</a> to apply or simply
-get more informations about this job opening!</p></blockquote>
-
-<h2>Sitting on an empty (sysadmin) chair&hellip;</h2>
-
-<p>Look at the systeam, so sad: they really
-need some new buddy for their games.</p>
-
-<p><img class="center" src="/images/sys-sad.png"></p>
-
-<p>The chair is empty, and that makes me so sad! If only
-we could find someone who would like to come and join
-the hottest SOA of the Middle East&hellip;</p>
-
-<p>So yeah, we&rsquo;re also looking for a <strong>System Administrator</strong>,
-someone who knows how configuration management works,
-who has relevant experience on cloud infrastructures as
-AWS and wants to use some of the latest technologies, like
-Docker or Deis, to help us automate and scale the hell out
-of our architecture; we are trying to switch towards a more
-devops oriented organization, and need someone with that
-mindset to improve the current state of the team: as an example,
-we use <a href="http://serverspec.org/">serverspec</a> to test some of
-our configurations, and would like someone who can get his/her
-hands dirty with both programming and system administration
-to help the team.</p>
-
-<blockquote><p>Drop us an email at <a href="&#109;&#x61;&#105;&#x6c;&#x74;&#x6f;&#58;&#x77;&#111;&#x72;&#107;&#x2d;&#105;&#x6e;&#45;&#x74;&#101;&#99;&#x68;&#x40;&#x6e;&#x61;&#x6d;&#x73;&#x68;&#105;&#x2e;&#99;&#111;&#x6d;">&#x77;&#111;&#114;&#x6b;&#x2d;&#105;&#110;&#x2d;&#x74;&#101;&#99;&#x68;&#64;&#110;&#97;&#109;&#x73;&#104;&#105;&#x2e;&#x63;&#111;&#109;</a> to apply or simply
-get more informations about this job opening!</p></blockquote>
-
-<h2>I don&rsquo;t know if he&rsquo;s crying because of loneliness or because of NodeJS&hellip;</h2>
-
-<p>Look at how sad Cirpo, our lead API engineer, was
-today:</p>
-
-<p><img class="center" src="/images/cirpo-sad.png"></p>
-
-<p>It&rsquo;s true that he might be sad because we decided
-to use a lot of NodeJS instead of PHP, but I
-think his struggles also come from the fact that he feels
-we need a good <strong>Senior Software engineer</strong>, specialized in
-NodeJS, who can help the team getting more skilled with
-this &ldquo;new&rdquo; platform.</p>
-
-<p>The ideal candidate would have a few years of experience
-on production-ready Node systems, and it would be a great
-plus if we can get someone who has a broader experience
-with different programming paradigms, as we feel the most
-important part of this job is the brain, and it would be great
-if we get someone that has been in a few different battlefields :)</p>
-
-<p>We need someone who first solves the problem, then writes the
-code (or, even better: first solves the problem, then writes the
-test, then the code :-D).</p>
-
-<blockquote><p>Drop us an email at <a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#x3a;&#119;&#x6f;&#x72;&#107;&#45;&#x69;&#110;&#45;&#116;&#x65;&#x63;&#x68;&#64;&#x6e;&#x61;&#109;&#x73;&#x68;&#105;&#x2e;&#99;&#x6f;&#x6d;">&#119;&#111;&#114;&#107;&#x2d;&#x69;&#110;&#45;&#x74;&#x65;&#x63;&#x68;&#x40;&#110;&#97;&#109;&#x73;&#x68;&#x69;&#46;&#99;&#111;&#x6d;</a> to apply or simply
-get more informations about this job opening!</p></blockquote>
-
-<h2>About Namshi</h2>
-
-<p>We have a <a href="/join-us">JOIN US</a> page where we listed some of the key
-benefits in working with us, but to recap the most important ones:</p>
-
-<ul>
-<li>the environment is great, young and people are passionate</li>
-<li>the office is 1 minute away from the metro station</li>
-<li>we offer competitive salaries</li>
-<li>flexible working hours</li>
-<li>being paid to write <a href="https://github.com/namshi">Open Source code</a></li>
-<li>cakes! cakes! cakes!</li>
-</ul>
-
 ]]></content>
   </entry>
   
