@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gateway | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/gateway/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-03T12:12:56+00:00</updated>
+  <updated>2018-07-04T07:33:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -67,7 +67,7 @@ $transaction = new Transaction(&lsquo;sale&rsquo;, &lsquo;ecom&rsquo;, true, &ls
 $card        = new Card(&lsquo;1234123412341234&rsquo;, &lsquo;111&rsquo;, new \DateTime($cardExpiryDate));
 $customer    = new Customer(&lsquo;Mr&rsquo;, &lsquo;John&rsquo;, &lsquo;Doe&rsquo;);
 $address     = new Address(&lsquo;My address info 1&rsquo;, &lsquo;My address info 2&rsquo;, &lsquo;My address info 3&rsquo;, &lsquo;San Francisco&rsquo;, &lsquo;California&rsquo;, &lsquo;US&rsquo;, &lsquo;00000&rsquo;);
-$billing     = new BillingInformation($customer, $address, &ldquo;customers&rsquo;<a href="&#109;&#x61;&#105;&#x6c;&#116;&#111;&#58;&#115;&#45;&#101;&#109;&#x61;&#x69;&#108;&#x40;&#103;&#x6d;&#x61;&#x69;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#x73;&#45;&#101;&#109;&#97;&#105;&#x6c;&#64;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#99;&#111;&#x6d;</a>&rdquo;, $customerIpAddress);
+$billing     = new BillingInformation($customer, $address, &ldquo;customers&rsquo;<a href="&#x6d;&#x61;&#x69;&#x6c;&#116;&#111;&#58;&#x73;&#45;&#x65;&#x6d;&#97;&#105;&#x6c;&#64;&#103;&#x6d;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#x6d;">&#115;&#45;&#x65;&#x6d;&#x61;&#105;&#108;&#64;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#x63;&#111;&#109;</a>&rdquo;, $customerIpAddress);
 $browser     = new Browser($customUserAgent, $requestAcceptHeader);
 ```</p>
 

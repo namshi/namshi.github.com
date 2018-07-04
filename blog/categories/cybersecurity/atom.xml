@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: cybersecurity | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/cybersecurity/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-07-04T07:33:49+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Currently hiring: a CyberSecurity engineer]]></title>
+    <link href="http://namshi.github.io/blog/2018/07/04/currently-hiring-a-cybersecurity-engineer/"/>
+    <updated>2018-07-04T06:28:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/07/04/currently-hiring-a-cybersecurity-engineer</id>
+    <content type="html"><![CDATA[<p>Love penetration testing, DefCon, bug bounty programs and scrapping through lines
+of code to find vulnerabilities? The we might have the right opening for you!</p>
+
+<!-- more -->
+
+
+<p>Here at Namshi we&rsquo;re committed to continuously improve our security posture, by
+either <a href="/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/">collaborating with security researchers across the globe</a> or with in-house expertise.</p>
+
+<p>With this in mind, we would like to hire a security researcher that can help
+us from this perspective: we see security as being a topic that will only gain additional
+importance as time goes by, and we&rsquo;re committed to dedicate the right amount of time,
+and money, to the cause :)</p>
+
+<p>As a <strong>Security Engineer</strong>, you&rsquo;ll be tasked with running internal assessments, ranging
+from <em>pentesting</em> our cloud infrastructure to social engineering around the office,
+review our security policies and define the best strategy to improve our posture.
+In addition to that, you will be actively collaborating with external researchers
+through our HackerOne program, which is going to be directly under your responsibility.
+On top of this, as the months will go by, you will probably spend time training
+both our technical and non-technical staff to raise awareness and make sure we
+got the basics covered.</p>
+
+<p>Been into it since Kali was Backtrack? Spend time going through public bounty programs
+to hack your way to a reward? Want to take on the responsibility of shaping Namshi&rsquo;s
+defense? Then we’re definitely a match!</p>
+
+<h2>Apply now!</h2>
+
+<p>What are you waiting for? Send your application to <code>work-in-tech@namshi.com</code> and
+let&rsquo;s have a chat!</p>
+
+<p>P.S. A few months back I wrote a small piece about <a href="/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
+give it a look!</p>
+]]></content>
+  </entry>
+  
+</feed>
