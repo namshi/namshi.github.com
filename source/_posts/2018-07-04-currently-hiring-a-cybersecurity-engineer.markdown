@@ -8,7 +8,7 @@ author: Alessandro Nadalin
 ---
 
 Love penetration testing, DefCon, bug bounty programs and scrapping through lines
-of code to find vulnerabilities? The we might have the right opening for you!
+of code to find vulnerabilities? Then we might have the right opening for you!
 
 <!-- more -->
 
@@ -17,7 +17,7 @@ either [collaborating with security researchers across the globe](/blog/2018/05/
 
 With this in mind, we would like to hire a security researcher that can help
 us from this perspective: we see security as being a topic that will only gain additional
-importance as time goes by, and we're committed to dedicate the right amount of time,
+importance as time goes by, and we're committed to dedicating the right amount of time,
 and money, to the cause :)
 
 As a **Security Engineer**, you'll be tasked with running internal assessments, ranging
