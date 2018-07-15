@@ -4,7 +4,7 @@
   <title><![CDATA[Category: testing | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/testing/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
 a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
-<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
+{% img center /images/posts/shidhin-geshan.jpg %}</p>
 
 <p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
 And here is your weekly quota of some interesting links</p>
@@ -107,14 +107,14 @@ And here is your weekly quota of some interesting links</p>
 for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
 After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
 
-<p><img class="center" src="/images/posts/ping-pong-final.jpg"></p>
+<p>{% img center /images/posts/ping-pong-final.jpg %}</p>
 
 <blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
 
 <!-- more -->
 
 
-<p><img class="center" src="/images/posts/ping-pong-tie-sheet.jpg"></p>
+<p>{% img center /images/posts/ping-pong-tie-sheet.jpg %}</p>
 
 <blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
 
@@ -171,7 +171,7 @@ After an intense final match between <a href="http://tech.namshi.io/team/#David%
 <p>This week we got a new ping pong table woo hoo!
 The guys were happy to try their ping pong skills.</p></blockquote>
 
-<p><img class="center" src="/images/ping-pong.jpg"></p>
+<p>{% img center /images/ping-pong.jpg %}</p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -225,7 +225,7 @@ The guys were happy to try their ping pong skills.</p></blockquote>
 
 <p>To prove that we are not joking around we are porting microservices (sometimes not that micro) to the basketball playground! :P</p></blockquote>
 
-<p><img class="team center" src="/images/posts/basketball.jpg"></p>
+<p>{% img team center /images/posts/basketball.jpg %}</p>
 
 <blockquote><p>This is a picture of our team mates after a 3 vs 3 session!</p>
 

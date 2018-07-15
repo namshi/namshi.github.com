@@ -4,7 +4,7 @@
   <title><![CDATA[Category: freshshell | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/freshshell/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016/"/>
     <updated>2016-01-25T12:08:00+00:00</updated>
     <id>http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/lighting-talks-2.png"></p>
+    <content type="html"><![CDATA[<p>{% img center /images/posts/lighting-talks-2.png %}</p>
 
 <blockquote><p>At Namshi, as you probably know, we do several activities in parallel, like &ndash; small presentations about new technologies,
 showcases of the latest projects, watching interesting conference talks, etc.

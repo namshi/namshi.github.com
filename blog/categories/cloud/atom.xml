@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Cloud | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: cloud | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/cloud/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,25 +14,23 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #81]]></title>
-    <link href="http://namshi.github.io/blog/2015/03/12/newsletter-number-81/"/>
-    <updated>2015-03-12T12:52:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/03/12/newsletter-number-81</id>
-    <content type="html"><![CDATA[<blockquote><p>It&rsquo;s <strong>#TechThursday</strong> again!</p>
+    <title type="html"><![CDATA[Newsletter #113]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/29/newsletter-number-113/"/>
+    <updated>2015-10-29T16:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/29/newsletter-number-113</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!
+Today is the 92nd anniversary of the Turkish Republic!</p>
 
-<p> It&rsquo;s true that we are nerds but it&rsquo;s also true that we are working for a fashion company.</p>
+<p>Together with our Turkish pal Armagan  we wish Happy Republic Day, Turkey!</p>
 
-<p>This is one of our attempts to get more fashionable:</p>
+<p>{% img center /images/posts/arma.jpg %}</p></blockquote>
 
-<p><img class="center" src="/images/posts/lucio-with-network-cables.jpg"></p></blockquote>
-
-<p><strong>Here is the traditional &ldquo;selection&rdquo; of links our team found interesting this week , enjoy:</strong></p>
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
 <ul>
-<li><p><a href="https://css-tricks.com/using-the-html5-history-api/">Using the HTML5 History API</a></p></li>
-<li><p><a href="http://www.uxbooth.com/articles/what-ux-can-learn-from-print/">What UX Can Learn from Print</a></p></li>
-<li><p><a href="http://0xax.gitbooks.io/linux-insides/">Linux insides ebook</a></p></li>
-<li><p><a href="https://developers.google.com/v8/experiments">V8 &ndash; Experimental new directions for Javascript</a></p></li>
+<li><p><a href="http://blog.phil-opp.com/rust-os/multiboot-kernel.html">a minimal x86 kernel using rust</a></p></li>
+<li><p><a href="https://qafoo.com/blog/076_quality_analyzer.html">analyze the quality of your php code</a></p></li>
+<li><p><a href="https://github.com/crosbymichael/dockerui">dockerui &ndash; a web interface for docker.</a></p></li>
 </ul>
 
 
@@ -40,21 +38,87 @@
 
 
 <ul>
-<li><p><a href="https://github.com/thephpleague/booboo">Booboo: error handler for PHP </a></p></li>
-<li><p><a href="http://blog.jetbrains.com/phpstorm/2015/03/debugging-with-phpstorm/">Debugging with PhpStorm</a></p></li>
-<li><p><a href="https://redpen.io/">RedPen: an awesome visual feedback tool</a></p></li>
-<li><p><a href="http://macleodsawyer.com/2015/03/06/nine-truths-computer-programmers-know-that-most-people-dont/">9 truths that computer programmers know that most people don&rsquo;t</a></p></li>
-<li><p><a href="http://mashable.com/2015/03/10/googles-cfo-retires-memo/?utm_content=buffer3bc8c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Google CFO retires with a candid memo about work/life balance</a></p></li>
-<li><p><a href="https://medium.com/node-js-javascript/numbers-everyone-should-know-37a93d4e0013?utm_content=buffer246df&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Numbers everyone should know</a></p></li>
-<li><p><a href="https://www.mnot.net/blog/2014/05/05/how_many_package_managers_should_i_support?utm_content=bufferb7354&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How many package managers should I support?</a></p></li>
-<li><p><a href="http://wiredcraft.com/blog/multi-host-docker-network/?utm_content=bufferfa991&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Multi-host docker network</a></p></li>
-<li><p><a href="http://blogmaverick.com/2015/03/04/why-this-tech-bubble-is-worse-than-the-tech-bubble-of-2000/?utm_content=buffer83721&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Why this tech bubble is worse than the one in 2000</a></p></li>
-<li><p><a href="http://superuser.com/questions/297550/how-can-i-simulate-a-slow-machine-in-a-vm?utm_content=buffera730c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How can I simulate a slow machine in a VM?</a></p></li>
-<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/03/introducing-Google-Cloud-Storage-Nearline-near-online-data-at-an-offline-price.html">Introducing Google Cloud Storage Nearline: (near)online data at an offline price</a></p></li>
+<li><p><a href="https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture">domain driven design for services architecture</a></p></li>
+<li><p><a href="https://ponyfoo.com/articles/es6">es6 overview in 350 bullet points</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/fetching-and-serving-billions-urls-aragog">fetching and serving billions of urls with aragog | pinterest engineering</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-propertyinfo-component">new in symfony 2.8: propertyinfo component</a></p></li>
+<li><p><a href="https://github.com/nodejs/node/pull/3466">nodejs &mdash; release proposal: v5.0.0</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/open-sourcing-pinterest-mysql-management-tools">open-sourcing pinterest mysql management tools | pinterest engineering</a></p></li>
+<li><p><a href="https://speakerdeck.com/saro0h/overriding-symfony">overriding symfony // speaker deck</a></p></li>
+<li><p><a href="http://symfony.com/blog/paving-the-way-for-symfony-3-with-the-deprecation-detector-tool">paving the way for symfony 3 with the &ldquo;deprecation detector&rdquo; tool</a></p></li>
+<li><p><a href="http://radar.oreilly.com/2015/07/set-up-kubernetes-with-a-docker-compose-one-liner.html">set up kubernetes with a docker compose one-liner &ndash; o'reilly radar</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/10/cool-features-git-2.x/">six cool features of the git 2.x series &ndash; atlassian developers</a></p></li>
+<li><p><a href="https://remysharp.com/2015/10/14/the-art-of-debugging">the art of debugging</a></p></li>
+<li><p><a href="http://glenmaddern.com/articles/css-modules">the css modules</a></p></li>
+<li><p><a href="https://speakerdeck.com/saro0h/zendcon-2015-the-future-of-symfony-symfony3">the future of symfony : symfony3</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/the-stack-that-helped-medium-drive-2-6-millennia-of-reading-time-e56801f7c492">the stack that helped medium drive 2.6 millennia of reading time — medium engineering — medium</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/the-stack-that-helped-medium-drive-2-6-millennia-of-reading-time-e56801f7c492">the stack that helped medium drive 2.6 millennia of reading time</a></p></li>
+<li><p><a href="http://time.com/4055718/self-control-danger/?utm_content=buffercb709">the surprising danger of being good at your job | time</a></p></li>
+<li><p><a href="https://medium.com/@Heydon/things-to-avoid-when-writing-css-1a222c43c28f">things to avoid when writing css — medium</a></p></li>
+<li><p><a href="http://merrigrove.blogspot.co.uk/2015/10/visualizing-docker-containers-and-images.html">visualizing docker containers and images</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/why-contenteditable-is-terrible-122d8a40e480">why contenteditable is terrible — medium engineering — medium</a></p></li>
+<li><p><a href="https://medium.com/swlh/you-might-not-need-gulp-js-89a0220487dd">you might not need gulp.js — startups, wanderlust, and life hacking — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #47]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/17/newsletter-number-47/"/>
+    <updated>2014-07-17T12:03:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/17/newsletter-number-47</id>
+    <content type="html"><![CDATA[<p>TechThursday is here!</p>
+
+<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
+
+<p>This week our teammate <a href="http://tech.namshi.io/team/#Nikita%20Nefedov">nikita</a> got the time to work a bit on <a href="https://github.com/namshi/jose">namshi/jose</a>, and we ended up releasing version 1.1.1!<br />
+<strong>Jose</strong> is a PHP library that provides a lightweight implementation of <strong>JWS</strong> (<a href="http://tools.ietf.org/html/draft-jones-json-web-signature-04">JSON Web Signature</a>) specification.</p>
+
+<p>At the same time we are thrilled about the first <a href="http://symfony.com/blog/symfonylive-new-york-here-we-come-october-9-10">SymfonyLive New York</a>, we sent a bunch of cfps&hellip; let&rsquo;s cross our fingers!</p></blockquote>
+
+<p>Below the usual list of interesting resources we found out this week, enjoy!</p>
+
+<ul>
+<li><p><a href="http://buff.ly/1jQCIdf">Security releases (CVE-2014-4931): #Symfony 2.3.18, 2.4.8, and 2.5.2 released</a></p></li>
+<li><p><a href="http://buff.ly/1mh5zBN">httpbin: #HTTP Client Testing Service</a></p></li>
+<li><p><a href="http://buff.ly/1rfPkgd">&ldquo;I Do Not Know One Person Who Is Happy at Amazon&rdquo;</a></p></li>
+<li><p><a href="http://buff.ly/1mdnKYY">Digging into #Angular’s “Controller as” syntax</a></p></li>
+<li><p><a href="http://buff.ly/1oTCIIf">Write your #git hooks in #PHP and keep them under git control</a></p></li>
+<li><p><a href="http://buff.ly/1tAEK55">Why I’m staying with NodeJS</a></p></li>
 </ul>
 
 
-<blockquote><p>that&rsquo;s all folks, see you next week! :)</p></blockquote>
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/ip61zsw87v">Guy writes a page explaining X11 for mortals <em>and embeds an X11 server in the page</em>. That’s it, everybody out.</a></p></li>
+<li><p><a href="http://buff.ly/1nh6IJW">Zero-downtime database migrations</a></p></li>
+<li><p><a href="http://buff.ly/1qqGUyy">Amazon Zocalo &ndash; Document Storage and Sharing for the Enterprise</a></p></li>
+<li><p><a href="http://buff.ly/1jhYrdw">Breach: a #browser for the #HTML5 era. Entirely written in #Javascript. Free. Modular. Hackable.</a></p></li>
+<li><p><a href="https://helloreverb.com/developers/swagger">Swagger: A simple, open standard for describing REST APIs with JSON | Reverb for Developers http://t.co/WZXF4VnAH3</a></p></li>
+<li><p><a href="http://www.infoq.com/presentations/8-lines-code-refactoring">8 Lines of Code: Greg Young discusses eight lines of very common code finding in them massive numbers of dependencies and difficulties, looking for ways to get rid of them.</a></p></li>
+<li><p><a href="http://msdn.microsoft.com/en-us/library/dn568099.aspx#_The_Sample_Applications">Cloud Design Patterns: Prescriptive Architecture Guidance for Cloud Applications</a></p></li>
+<li><p><a href="http://www.zdnet.com/developers-and-apple-open-up-on-new-swift-programming-language-7000031536">Developers and Apple open up on new Swift programming language</a></p></li>
+<li><p><a href="http://williamdurand.fr/2014/07/02/resting-with-symfony-sos/">RESTing with Symfony: SOS</a></p></li>
+<li><p><a href="https://github.com/jakubroztocil/httpie">HTTPie is a user-friendly cURL replacement</a></p></li>
+<li><p><a href="https://zapier.com/engineering/when-rest-gets-messy/">When REST Gets Messy</a></p></li>
+<li><p><a href="http://zsuraski.blogspot.co.il/2014/07/benchmarking-phpng.html?m=1">PHP-next-gen benchmark</a></p></li>
+<li><p><a href="https://github.com/cjbarber/ToolsOfTheTrade">HN Tools of the Trade, 2014 edition</a></p></li>
+<li><p><a href="https://medium.com/@manicho/how-a-password-changed-my-life-7af5d5f28038">How a Password changed my life</a></p></li>
+<li><p><a href="http://trackjs.com/">JavaScript Error Tracking</a></p></li>
+<li><p><a href="https://formcrafts.com/">Create amazing forms</a></p></li>
+<li><p><a href="http://nakedsecurity.sophos.com/2014/07/16/germany-considers-replacing-email-with-typewriters-to-evade-spying">Germany considers replacing email with typewriters to evade spying</a></p></li>
+<li><p><a href="https://github.com/sausheong/polyglot">A distributed web framework that allows programmers to create web applications in multiple programming languages</a></p></li>
+<li><p><a href="http://vimeo.com/92087878">Zach Holman: If Only I Knew This In College!</a></p></li>
+<li><p><a href="http://programmingisterrible.com/">Programming is terrible &ndash; lessons learned from a life wasted</a></p></li>
+<li><p><a href="http://brikis98.blogspot.ae/2014/03/the-ultimate-guide-to-getting-started.html">The Ultimate Guide to Getting Started with the Play Framework</a></p></li>
+<li><p><a href="http://www.andrisreinman.com/nodemailer-v1-0/">Nodemailer v1.0 released</a></p></li>
+<li><p><a href="http://blog.newrelic.com/2014/07/15/geekspeak-data/">10 Things Non-Developers Love To Say To Developers</a></p></li>
+<li><p><a href="http://realm.io/news/introducing-realm">Introducing Realm &ndash; a mobile-first database</a></p></li>
+</ul>
+
 ]]></content>
   </entry>
   

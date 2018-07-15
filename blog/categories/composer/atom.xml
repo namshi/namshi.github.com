@@ -4,7 +4,7 @@
   <title><![CDATA[Category: composer | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/composer/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,14 +22,14 @@
 for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
 After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
 
-<p><img class="center" src="/images/posts/ping-pong-final.jpg"></p>
+<p>{% img center /images/posts/ping-pong-final.jpg %}</p>
 
 <blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
 
 <!-- more -->
 
 
-<p><img class="center" src="/images/posts/ping-pong-tie-sheet.jpg"></p>
+<p>{% img center /images/posts/ping-pong-tie-sheet.jpg %}</p>
 
 <blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
 
@@ -88,12 +88,12 @@ After an intense final match between <a href="http://tech.namshi.io/team/#David%
 are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
 The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
 
-<p><img class="center" src="/images/dockercon.jpg"></p>
+<p>{% img center /images/dockercon.jpg %}</p>
 
 <blockquote><p>We have a new pet in the office, the Docker whale!
 Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
 
-<p><img class="center" src="/images/docker.jpg"></p>
+<p>{% img center /images/docker.jpg %}</p>
 
 <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
 
@@ -140,7 +140,7 @@ Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the 
     <link href="http://namshi.github.io/blog/2014/12/04/newsletter-number-67/"/>
     <updated>2014-12-04T10:10:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/12/04/newsletter-number-67</id>
-    <content type="html"><![CDATA[<p><img class="team center" src="/images/docker-con-amsterdam2014.jpg"></p>
+    <content type="html"><![CDATA[<p>{% img team center /images/docker-con-amsterdam2014.jpg %}</p>
 
 <p>Hello folks!</p>
 

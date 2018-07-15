@@ -4,7 +4,7 @@
   <title><![CDATA[Category: architecture | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/architecture/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:40:19+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -137,7 +137,20 @@ as you need consistency over elegance; in general I would
 try to stick to the rule but sometimes there are <strong>problems
 HTTP isn&rsquo;t prone to solve</strong>, like transactionality.</p>
 
-<p>Surround your pullquote like this {" text to be quoted "}</p>
+<p>{% pullquote %}
+Additionally, sticking to the rule would create dependencies
+between the 2 services rather than between a service and
+a DB (which is usually much more robust and tested than our own services),
+which means you really need to be good at microservices
+before tangled in so many dependencies. What if an HTTP call
+fails? What if service B is down?</p>
+
+<p>The answer isn&rsquo;t simple but can be summarized in: {&ldquo; rely 100%
+on microservices when you&rsquo;re 100% confident on microservices &rdquo;};
+if you don&rsquo;t have much experience / great monitoring tools /
+high availability you might want to slow down and make a
+wise choice over an elegant one.
+{% endpullquote %}</p>
 
 <p>What is interesting is that it seems that, with the advent of
 tools like Docker (and its own tooling like <a href="https://github.com/docker/swarm/">Swarm</a>, <a href="https://github.com/docker/machine">Machine</a> and <a href="https://github.com/docker/compose">Compose</a>)

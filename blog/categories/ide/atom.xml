@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ide | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/ide/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>We really enjoyed the Namshi Iftar this week :)</p>
 
-<p><img class="center" src="/images/posts/namshi-iftar.jpg"></p>
+<p>{% img center /images/posts/namshi-iftar.jpg %}</p>
 
 <p>Hi Guys, the week is over and a we have a the usual list of links for you.</p>
 

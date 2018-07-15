@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Facebook | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: facebook | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/facebook/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,25 +14,25 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #81]]></title>
-    <link href="http://namshi.github.io/blog/2015/03/12/newsletter-number-81/"/>
-    <updated>2015-03-12T12:52:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/03/12/newsletter-number-81</id>
-    <content type="html"><![CDATA[<blockquote><p>It&rsquo;s <strong>#TechThursday</strong> again!</p>
+    <title type="html"><![CDATA[Newsletter #124]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/11/newsletter-number-124/"/>
+    <updated>2016-02-11T12:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/11/newsletter-number-124</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
 
-<p> It&rsquo;s true that we are nerds but it&rsquo;s also true that we are working for a fashion company.</p>
+<p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
 
-<p>This is one of our attempts to get more fashionable:</p>
+<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
 
-<p><img class="center" src="/images/posts/lucio-with-network-cables.jpg"></p></blockquote>
+<blockquote><p>and here is your weekly quota of some interesting links</p>
 
-<p><strong>Here is the traditional &ldquo;selection&rdquo; of links our team found interesting this week , enjoy:</strong></p>
+<p>Enjoy!</p></blockquote>
 
 <ul>
-<li><p><a href="https://css-tricks.com/using-the-html5-history-api/">Using the HTML5 History API</a></p></li>
-<li><p><a href="http://www.uxbooth.com/articles/what-ux-can-learn-from-print/">What UX Can Learn from Print</a></p></li>
-<li><p><a href="http://0xax.gitbooks.io/linux-insides/">Linux insides ebook</a></p></li>
-<li><p><a href="https://developers.google.com/v8/experiments">V8 &ndash; Experimental new directions for Javascript</a></p></li>
+<li><p><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">9 things every react.js beginner should know</a></p></li>
+<li><p><a href="http://cleancoders.com/episode/clean-code-episode-1/view">clean coders videos</a></p></li>
+<li><p><a href="https://github.com/codekitchen/dinghy?utm_content=bufferf938d">codekitchen/dinghy: faster, friendlier docker on os x</a></p></li>
+<li><p><a href="https://blog.docker.com/2016/02/compose-1-6/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uovUKe/lMI/0ER3fOvrPUfGjI4DScBkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">compose 1.6: new compose file for defining networks and volumes | docker blog</a></p></li>
 </ul>
 
 
@@ -40,21 +40,169 @@
 
 
 <ul>
-<li><p><a href="https://github.com/thephpleague/booboo">Booboo: error handler for PHP </a></p></li>
-<li><p><a href="http://blog.jetbrains.com/phpstorm/2015/03/debugging-with-phpstorm/">Debugging with PhpStorm</a></p></li>
-<li><p><a href="https://redpen.io/">RedPen: an awesome visual feedback tool</a></p></li>
-<li><p><a href="http://macleodsawyer.com/2015/03/06/nine-truths-computer-programmers-know-that-most-people-dont/">9 truths that computer programmers know that most people don&rsquo;t</a></p></li>
-<li><p><a href="http://mashable.com/2015/03/10/googles-cfo-retires-memo/?utm_content=buffer3bc8c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Google CFO retires with a candid memo about work/life balance</a></p></li>
-<li><p><a href="https://medium.com/node-js-javascript/numbers-everyone-should-know-37a93d4e0013?utm_content=buffer246df&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Numbers everyone should know</a></p></li>
-<li><p><a href="https://www.mnot.net/blog/2014/05/05/how_many_package_managers_should_i_support?utm_content=bufferb7354&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How many package managers should I support?</a></p></li>
-<li><p><a href="http://wiredcraft.com/blog/multi-host-docker-network/?utm_content=bufferfa991&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Multi-host docker network</a></p></li>
-<li><p><a href="http://blogmaverick.com/2015/03/04/why-this-tech-bubble-is-worse-than-the-tech-bubble-of-2000/?utm_content=buffer83721&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Why this tech bubble is worse than the one in 2000</a></p></li>
-<li><p><a href="http://superuser.com/questions/297550/how-can-i-simulate-a-slow-machine-in-a-vm?utm_content=buffera730c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How can I simulate a slow machine in a VM?</a></p></li>
-<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/03/introducing-Google-Cloud-Storage-Nearline-near-online-data-at-an-offline-price.html">Introducing Google Cloud Storage Nearline: (near)online data at an offline price</a></p></li>
+<li><p><a href="http://www.paulund.co.uk/css-buttons-with-icons-but-no-images">css buttons with icons but no images</a></p></li>
+<li><p><a href="http://www.desktopneo.com/">desktop neo – rethinking the desktop interface for productivity.</a></p></li>
+<li><p><a href="http://layer0.authentise.com/docker-4-useful-tips-you-may-not-know-about.html?utm_content=bufferbb9b6">docker: 4 useful tips, you may not know about</a></p></li>
+<li><p><a href="http://verraes.net/2013/09/extract-till-you-drop/?utm_content=buffera385e">extract till you drop</a></p></li>
+<li><p><a href="http://flif.info/">flif &ndash; free lossless image format</a></p></li>
+<li><p><a href="http://blog.andrewray.me/flux-for-stupid-people/">flux for stupid people</a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/18524652/how-to-use-javascript-object-defineproperty">how to use javascript object.defineproperty &ndash; stack overflow</a></p></li>
+<li><p><a href="https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016">investigating the overhead cost of compiled es2015</a></p></li>
+<li><p><a href="http://brianchang.info/2016/02/01/issues-with-common-software-quality-metrics.html">issues with common software quality metrics</a></p></li>
+<li><p><a href="http://javascriptair.com/">javascript air &ndash; the live broadcast podcast all about javascript</a></p></li>
+<li><p><a href="http://jpnarowski.com/enterprise-react-redux-part-1/">launching an enterprise react and redux app</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://www.iron.io/microcontainers-tiny-portable-containers/">microcontainers &ndash; tiny, portable docker containers</a></p></li>
+<li><p><a href="https://blog.branch.io/mobile-app-developers-are-suffering">mobile app developers are suffering</a></p></li>
+<li><p><a href="http://www.lukew.com/ff/entry.asp?1954">mobile web vs. native apps or why you want both</a></p></li>
+<li><p><a href="https://github.com/mcollina/climem">monitor the memory consumption of your node process via cli</a></p></li>
+<li><p><a href="http://brianchang.info/2016/01/17/object-oriented-developer.html">object-oriented developer</a></p></li>
+<li><p><a href="https://github.com/unicorn-standard/starter-kit">project boilerplate using react, redux and uniloc</a></p></li>
+<li><p><a href="https://toggl.com/developer-methods-infographic">software development methods explained with cars (infographic)</a></p></li>
+<li><p><a href="http://vorpal.js.org/">vorpal &ndash; command line with js</a></p></li>
+<li><p><a href="https://www.quora.com/What-do-programmers-at-Facebook-do-all-day">what do programmers at facebook do all day? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/Facebook-1/What-would-happen-to-worlds-economy-if-Facebook-suddenly-stopped-one-day">what would happen to world&rsquo;s economy if facebook suddenly stopped one day? &ndash; quora</a></p></li>
+<li><p><a href="https://getpocket.com/a/read/1119332046">why progressive web apps are the future of web development</a></p></li>
+<li><p><a href="http://www.yes-www.org/why-use-www/">why use www? – www. is not deprecated</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #109]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/01/newsletter-number-109/"/>
+    <updated>2015-10-01T15:55:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/01/newsletter-number-109</id>
+    <content type="html"><![CDATA[<blockquote><p>Yo folks!</p>
+
+<p>This week we bid farewell to one of our team member <a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a>, he posted an <a href="http://tech.namshi.io/blog/2015/09/28/goodbye-nitesh/">interesting summary</a> of his delightful journey at Namshi, we wish him best of luck.</p></blockquote>
+
+<p>{% img center /images/nitesh-bye-bye.jpg %}</p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.quora.com/Is-it-realistic-to-go-from-0-coding-experience-to-freelance-developer-in-6-months-of-full-time-study">is it realistic to go from 0 coding experience to freelance developer in 6 months of full time study? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/What-frustrates-beginner-programmers-the-most">what frustrates beginner programmers the most? &ndash; quora</a></p></li>
+<li><p><a href="https://medium.com/@linclark/a-cartoon-guide-to-flux-6157355ab207">a cartoon guide to flux — medium</a></p></li>
+<li><p><a href="http://bropages.org/">bro: just get to the point!</a></p></li>
+<li><p><a href="https://www.interviewbit.com/">coding interview preparation made easy</a></p></li>
+<li><p><a href="http://prog21.dadgum.com/210.html">computer science courses that don&rsquo;t exist, but should</a></p></li>
+<li><p><a href="https://github.com/gilesp/docker/tree/master/react_native?utm_content=buffer67abd">docker container for react native android development</a></p></li>
+<li><p><a href="http://blog.wercker.com/2015/07/28/Dockerfiles-considered-harmful.html">dockerfiles considered harmful</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=X0VH78ye4yY">f8 2015 &ndash; big code: developer infrastructure at facebook&rsquo;s scale &ndash; youtube</a></p></li>
+<li><p><a href="http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html">full-stack redux tutorial</a></p></li>
+<li><p><a href="https://github.com/getify/You-Dont-Know-JS">getify/you-dont-know-js</a></p></li>
+<li><p><a href="https://www.packtpub.com/books/content/getting-started-bem-little-help-sass/">getting started with bem (with a little help from sass) </a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=zBV9TkTXxg0">hacker way: facebook&rsquo;s high performance server infrastructure &ndash; youtube</a></p></li>
+<li><p><a href="https://hoist.io/">hoist is how you integrate &ndash; meet the microservices platform that talks to apis</a></p></li>
+<li><p><a href="https://medium.com/meedan-updates/how-docker-helped-me-love-writing-css-again-b1339c2e77ff">how docker helped me love writing css again — meedan updates — medium</a></p></li>
+<li><p><a href="https://medium.com/salesforce-ux/how-we-designed-the-new-salesforce-at-scale-6d3607fd92e5">how we designed the new salesforce at scale</a></p></li>
+<li><p><a href="https://github.com/statianzo/hubot-newrelic2">hubot newrelic</a></p></li>
+<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
+<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things?utm_content=buffer551b5">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
+<li><p><a href="https://vimeo.com/140275020">kerning 2015 &ndash; oliver reichenstein &ndash; architecting information on vimeo</a></p></li>
+<li><p><a href="http://blog.jenkster.com/">kris jenkins' blog (javascript, elm, clojure, vim)</a></p></li>
+<li><p><a href="https://blog.growth.supply/launching-a-product-in-just-3652-days-4d4e74e2dcd5">launching a product, in just 3652 days</a></p></li>
+<li><p><a href="https://google.github.io/lovefield">lovefield is a relational database for web apps.</a></p></li>
+<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code · evan todd</a></p></li>
+<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code</a></p></li>
+<li><p><a href="http://blog.cloud66.com/pulling-git-into-a-docker-image-without-leaving-ssh-keys-behind/">pulling git into a docker image without leaving ssh keys behind</a></p></li>
+<li><p><a href="http://wl3.me/2015/05/01/react-in-your-react-native-webview-so-you-can-react-while-you-react.html?utm_content=buffer6555a">putting react in your react native webview so you can react while you react</a></p></li>
+<li><p><a href="http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/">react.js and dynamic children &ndash; why the keys are important &ndash; arkency blog</a></p></li>
+<li><p><a href="http://code.flickr.net/2015/06/25/real-time-resizing-of-flickr-images-using-gpus/">real-time resizing of flickr images using gpus</a></p></li>
+<li><p><a href="http://rackt.github.io/redux/">redux for reactr</a></p></li>
+<li><p><a href="http://mmikowski.github.io/the_lie/">restful apis, the big lie</a></p></li>
+<li><p><a href="http://www.brianstorti.com/stop-using-tail/">stop using tail -f (mostly)</a></p></li>
+<li><p><a href="http://www.independent.ie/business/technology/news/tech-overkill-destroyed-the-loveliest-liveliest-city-on-the-west-coast-31541735.html?utm_content=buffer6e254">tech overkill destroyed the loveliest, liveliest city on the west coast</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?t=6&amp;v=W71BTkUbdqE">the motivation for a monolithic codebase </a></p></li>
+<li><p><a href="http://techblog.netflix.com/2015/08/making-netflixcom-faster.html">the netflix tech blog: making netflix.com faster</a></p></li>
+<li><p><a href="https://webmozart.io/blog/2015/09/09/value-objects-in-symfony-forms/">value objects in symfony forms &ndash; webmozart.io</a></p></li>
+<li><p><a href="https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225">want to learn javascript in 2015?</a></p></li>
+<li><p><a href="https://anvaka.github.io/pm/#/">welcome to the code galaxies, commander</a></p></li>
+<li><p><a href="https://www.quora.com/What-feature-of-C-is-used-very-often-by-experienced-programmers-but-not-so-much-by-a-newbie">what feature of c is used very often by experienced programmers but not so much by a newbie? &ndash; quora</a></p></li>
+<li><p><a href="https://speakerdeck.com/addyosmani/whats-new-in-chrome-devtools">what&rsquo;s new in chrome devtools?</a></p></li>
+<li><p><a href="https://open.bufferapp.com/sharing-bad-news/">why i don&rsquo;t shield my team from bad news</a></p></li>
+<li><p><a href="http://www.bothsidesofthetable.com/2015/09/27/why-i-fucking-hate-unicorns-and-the-culture-they-breed/">why i f#!@ing hate unicorns and the culture they breed</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #76]]></title>
+    <link href="http://namshi.github.io/blog/2015/02/05/newsletter-number-76/"/>
+    <updated>2015-02-05T11:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/02/05/newsletter-number-76</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello folks!
+It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
+
+<p>We&rsquo;re super excited to have <a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a> in the Front end team. You can read more about him <a href="http://tech.namshi.io/blog/2015/02/05/welcome-nitesh/">here</a></p></blockquote>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://buff.ly/1CYCbfV">Google SoundScript: faster OOP for JavaScript</a></p></li>
+<li><p><a href="http://buff.ly/1HZojXj">A Pluggable Container for Isomorphic Flux Applications</a></p></li>
+<li><p><a href="http://buff.ly/1zPSzA9">Julia Reda: I raised €1 million to demonstrate security and freedom aren’t
+opposites</a></p></li>
+<li><p><a href="http://buff.ly/1DoZCwM">Raspberry Pi 2</a></p></li>
 </ul>
 
 
-<blockquote><p>that&rsquo;s all folks, see you next week! :)</p></blockquote>
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://buff.ly/16avTfW">Facebook just taught us all how to build websites</a></p></li>
+<li><p><a href="http://%0Abuff.ly/160xYvh">What REALLY happens when you hit enter on a browser address bar?</a></p></li>
+<li><p><a href="http://buff.ly/1DtM7wa">Find GHOSTs in your Docker images</a></p></li>
+<li><p><a href="http://buff.ly/1zs81Pu">Facebook Outage Deep Dive</a></p></li>
+<li><p><a href="http://buff.%0Aly/1CmNGij">Difference between Multi-Threading and Parallel Programming</a></p></li>
+<li><p><a href="http://buff.ly/1EWbK9S">Get control of your terminal with javascript</a></p></li>
+<li><p><a href="http://buff.ly/1A3Fl2h">Most Desirable Jobs In America</a></p></li>
+<li><p><a href="http://buff.ly/1zad2c3">DockerCon US 2015 Tickets Now Available! Grab yours!</a></p></li>
+<li><p><a href="http://buff.ly/18OqcGF">Atlassian Stash Dockerized and On Docker Hub</a></p></li>
+<li><p><a href="http://buff.ly/16i0RTq">An infographic on docker</a></p></li>
+<li><p><a href="http://buff.ly/1zBbH1u">Hardening Docker Containers: Disable SUID Programs</a></p></li>
+<li><p><a href="http://bit.ly/16jD8Cy">Test Your API With Supertest</a></p></li>
+<li><p><a href="http://bit.ly/1C2ucwO">How to make your code self-documenting?</a></p></li>
+<li><p><a href="http://bit.ly/1LOJFWU">Someone set us up the Docker!</a></p></li>
+<li><p><a href="http://bit.ly/1v0ujUE">The God login</a></p></li>
+<li><p><a href="http://fluxible.io/">Fluxible from Yahoo for ReactJS</a></p></li>
+<li><p><a href="https://medium.com/@abrodo/an-exploration-in-material-design-by-feedly-8c1a1cbdfdcd">An exploration in Material Design</a></p></li>
+<li><p><a href="http://ilikekillnerds.com/2015/01/aurelia-vs-angularjs-round-one-fight/">Aurelia vs AngularJS – Round One: FIGHT!</a></p></li>
+<li><p><a href="https://mathiasbynens.be/notes/touch-icons">Everything you always wanted to know about touch icons</a></p></li>
+<li><p><a href="http://moduscreate.com/dynamic-memory-and-v8-with-javascript/">Dynamic Memory and V8 with JavaScript</a></p></li>
+<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/01/in-coming-weeks-we-will-be-publishing.html">An introduction to containers, Kubernetes, and the trajectory of modern cloud computing</a></p></li>
+<li><p><a href="http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide">How to Use Docker on OS X: The Missing Guide</a></p></li>
+<li><p><a href="https://open.bufferapp.com/science-taking-breaks-at-work/">The Science of Breaks at Work : Change Your Thinking About Downtime</a></p></li>
+<li><p><a href="https://github.com/dotnet/coreclr">.NET Core is on Github!</a></p></li>
+<li><p><a href="http://arstechnica.com/information-technology/2014/11/how-google-inbox-shares-70-of-its-code-across-android-ios-and-the-web/">How Google Inbox shares 70% of its code across Android, iOS, and the Web</a></p></li>
+<li><p><a href="https://www.google.com/patents/US20140282625">Patent US20140282625 &ndash; Asynchronous programming model for concurrent workflow scenarios [Looks like someone wants to patent promises!]</a></p></li>
+<li><p><a href="http://maryrosecook.com/blog/post/a-practical-introduction-to-functional-programming">A practical introduction to functional programming</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=KVZ-P-ZI6W4">Introducing React native</a></p></li>
+<li><p><a href="https://github.com/cujojs/most">Monadic streams for reactive programming</a></p></li>
+<li><p><a href="http://css-tricks.com/gooey-effect/">The Gooey Effect</a></p></li>
+<li><p><a href="http://rmurphey.com/blog/2015/01/26/writing-conference-proposals/">Writing Conference Proposals</a></p></li>
+<li><p><a href="https://github.com/pgte/nock">nock &ndash; HTTP mocking and expectations library</a></p></li>
+<li><p><a href="https://github.com/substack/stream-handbook">How to write node programs with streams</a></p></li>
+<li><p><a href="https://github.com/alexfernandez/loadtest">Load test</a></p></li>
+<li><p><a href="https://github.com/domenic/chai-as-promised/">Testing promises with chai</a></p></li>
+<li><p><a href="https://github.com/thlorenz/proxyquire">Proxies nodejs require in order to allow overriding dependencies during testing</a></p></li>
+<li><p><a href="http://www.enterpriseappstoday.com/data-management/5-alternatives-to-the-traditional-relational-database.html">Move on from RDBMS</a></p></li>
+<li><p><a href="http://sqlmag.com/sql-server-2014/essential-guide-sql-server-2014-series-memory-oltp">SQL-OLTP in memory</a></p></li>
+<li><p><a href="http://blog.echen.me/2014/10/07/moving-beyond-ctr-better-recommendations-through-human-evaluation/">move beyond CTR</a></p></li>
+<li><p><a href="http://www.webanalyticsworld.net/2015/02/mobile-analytics-guide-for-mobile-websites.html">Mobile Analytics Guide</a></p></li>
+<li><p><a href="http://smartdatacollective.com/ricksherman/295376/bi-analytic-trends-business-value">BI Analytic Trends</a></p></li>
+<li><p><a href="http://databricks.com/blog/2015/02/02/an-introduction-to-json-support-in-spark-sql.html">JSON Support in Spark-SQL</a></p></li>
+<li><p><a href="http://www.john-foreman.com/blog/surviving-data-science-at-the-speed-of-hype">Surviving Data Science &ldquo;at the Speed of Hype&rdquo;</a></p></li>
+</ul>
+
 ]]></content>
   </entry>
   

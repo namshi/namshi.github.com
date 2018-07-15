@@ -4,7 +4,7 @@
   <title><![CDATA[Category: edge | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/edge/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
 
-<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+<p>{% img center /images/posts/alex-cirpo-david-wh.jpg %}</p>
 
 <!-- more -->
 

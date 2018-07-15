@@ -4,7 +4,7 @@
   <title><![CDATA[Category: bash | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/bash/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -65,7 +65,7 @@ Here is a recap of what they spoke about, and we hope you will find it interesti
     <content type="html"><![CDATA[<blockquote><p>Hi everyone,
 we are back after the Christmas break!</p></blockquote>
 
-<p><img class="center" src="/images/posts/christmas_team.png"></p>
+<p>{% img center /images/posts/christmas_team.png %}</p>
 
 <blockquote><p>2015 is almost over and it was a great tech year here at Namshi, can&rsquo;t wait for 2016!</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Symfony2 | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/symfony2/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ that led to writing a small write-up about our experience.</p>
 are panning out after <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">a year and a half of SOA with
 Symfony2</a>.</p>
 
-<p><img class="center <a" src="href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a>"></p>
+<p>{% img center <a href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a> %}</p>
 ]]></content>
   </entry>
   
@@ -247,65 +247,59 @@ the same path to different controllers DYNAMICALLY! More explanation about this 
 
 <p>The component provides public access to methods that allows you to create your own implementations of expression functions.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
-$expLang-&gt;register(&amp;lsquo;functionNameToBeUseInTheStringExpression&amp;rsquo;, function(){&lt;/p&gt;
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
+$expLang->register(&lsquo;functionNameToBeUseInTheStringExpression&rsquo;, function(){</p>
 
-&lt;pre&gt;&lt;code&gt;//compile callback function
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code>//compile callback function
+</code></pre>
 
-&lt;p&gt;}, function() {&lt;/p&gt;
+<p>}, function() {</p>
 
-&lt;pre&gt;&lt;code&gt;//evaluateCallbackFunction
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code>//evaluateCallbackFunction
+</code></pre>
 
-&lt;p&gt;});
-</code></pre></figure></notextile></div></p>
+<p>});
+{% endcodeblock %}</p>
 
 <p>As its name implies, this function registers or adds the required support to call a function within the expression string.
 This method has two callback functions, one to be called when the expression is compiled, and the other when its evaluated.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
-$expLang-&gt;compile(&amp;lsquo;stringExpression&amp;rsquo;);
-</code></pre></figure></notextile></div></p>
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
+$expLang->compile(&lsquo;stringExpression&rsquo;);
+{% endcodeblock %}</p>
 
 <p>This method, returns the equivalent PHP expression without evaluating it, so you can evaluate it after doing some required manipulation.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
-echo($expLang-&gt;compile(&amp;ldquo;&amp;lsquo;test&amp;rsquo; matches &amp;lsquo;test2&amp;rsquo;&amp;rdquo;));
-//shows preg_match(&amp;ldquo;test&amp;rdquo;, &amp;ldquo;test2&amp;rdquo;)
-</code></pre></figure></notextile></div></p>
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
+echo($expLang->compile(&ldquo;&lsquo;test&rsquo; matches &lsquo;test2&rsquo;&rdquo;));
+//shows preg_match(&ldquo;test&rdquo;, &ldquo;test2&rdquo;)
+{% endcodeblock %}</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
-$expLang-&gt;evaluate(&amp;lsquo;stringExpression&amp;rsquo;, array $values);
-</code></pre></figure></notextile></div></p>
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
+$expLang->evaluate(&lsquo;stringExpression&rsquo;, array $values);
+{% endcodeblock %}</p>
 
 <p>This function both compiles the expression to PHP and evaluates it to return the outcome. The expression is evaluated for both the built in functions and operators and the evaluate callback function
 of a registered custom function.
 It also allows to send a set of default predefined <code>$values</code> to the evaluation process to be passed to the evaluate callback.</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
-$expLang-&gt;parse(&amp;lsquo;stringExpression&amp;rsquo;, array $names);
-</code></pre></figure></notextile></div></p>
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
+$expLang->parse(&lsquo;stringExpression&rsquo;, array $names);
+{% endcodeblock %}</p>
 
 <p>This function parses a string expression from a Token Stream to a Node Tree (the component is built using the Abstract Syntax Tree algorithm) so you can have your expression
 as a tree of nodes. Not really sure how it can be benefited from (please share your ideas!).</p>
 
 <p>In a simple <code>var_dump()</code> I can show you what this method can return</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-var_dump($expLang-&gt;parse(&amp;lsquo;1 + 2&amp;rsquo;, array()));
-</code></pre></figure></notextile></div></p>
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+var_dump($expLang->parse(&lsquo;1 + 2&rsquo;, array()));
+{% endcodeblock %}</p>
 
 <p>```
 object(Symfony\Component\ExpressionLanguage\ParsedExpression)#18 (2) {
@@ -353,23 +347,22 @@ array(1) {
 
 <p>Here is a comprehensive example of all the previously described methods:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-use Symfony\Component\ExpressionLanguage\ExpressionLanguage;&lt;/p&gt;
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+use Symfony\Component\ExpressionLanguage\ExpressionLanguage;</p>
 
-&lt;p&gt;$expLang = new ExpressionLanguage();
-$expLang-&gt;register(&amp;lsquo;plus&amp;rsquo;, function(), function($args, $a, $b) {&lt;/p&gt;
+<p>$expLang = new ExpressionLanguage();
+$expLang->register(&lsquo;plus&rsquo;, function(), function($args, $a, $b) {</p>
 
-&lt;pre&gt;&lt;code&gt;return $a + $b;
-&lt;/code&gt;&lt;/pre&gt;
+<pre><code>return $a + $b;
+</code></pre>
 
-&lt;p&gt;}&lt;/p&gt;
+<p>}</p>
 
-&lt;p&gt;$expression = &amp;lsquo;plus(1,5)&amp;rsquo;;
-echo($expLang-&gt;parse($expression)) . PHP_EOL;
-echo($expLang-&gt;compile($expression)) . PHP_EOL;
-echo($expLang-&gt;evaluate($expression)) . PHP_EOL;
-</code></pre></figure></notextile></div></p>
+<p>$expression = &lsquo;plus(1,5)&rsquo;;
+echo($expLang->parse($expression)) . PHP_EOL;
+echo($expLang->compile($expression)) . PHP_EOL;
+echo($expLang->evaluate($expression)) . PHP_EOL;
+{% endcodeblock %}</p>
 
 <p><code>
 plus(1,5)
@@ -388,8 +381,8 @@ and they are json encoded:</p>
 
 <p><code>
 "/shoes/" =&gt;
-[["locale(en_AE)", {"header":"Buy shoes from Namshi in UAE right on your ", "pageTitle":"Welcome to Namshi UAE"}],
-["locale(en_SA)", {"header": "Buy shoes from Namshi in Saudi right on your , "pageTitle":"Welcome to Namshi Saudi"}]]
+[["locale(en_AE)", {"header":"Buy shoes from Namshi in UAE right on your {{ device }}", "pageTitle":"Welcome to Namshi UAE"}],
+["locale(en_SA)", {"header": "Buy shoes from Namshi in Saudi right on your {{ device }}, "pageTitle":"Welcome to Namshi Saudi"}]]
 </code></p>
 
 <p>And in a <code>device</code> redis hash, we have the corresponding possible values for <code>device</code> indexed by the device type</p>
@@ -404,47 +397,46 @@ client information, render the twig template with the appropriate device value a
 
 <p>Was that fast? sorry, here is a sample code:</p>
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>&lsquo;&rsquo; </span></figcaption>
- <pre><code class='language-php'>
-&amp;lt;?php
+<p>{% codeblock &lsquo;&rsquo; lang:php %}
+&lt;?php
 $redis      = //the redis instance
 $path       = //get the required path from the request
 $device     = //get the device type from a service or a header
 $expLang    = //the expression language instance
 $yamlParser = //the YAML parser instance
-$orgLocale  = //get the locale value from a service or a header&lt;/p&gt;
+$orgLocale  = //get the locale value from a service or a header</p>
 
-&lt;p&gt;$expLang-&gt;register(&amp;lsquo;locale&amp;rsquo;, function(), function($values, $locale) {&lt;/p&gt;
+<p>$expLang->register(&lsquo;locale&rsquo;, function(), function($values, $locale) {</p>
 
-&lt;pre&gt;&lt;code&gt;if ($locale == $orgLocale) {
+<pre><code>if ($locale == $orgLocale) {
     return true;
 }
 
 return false;
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;});&lt;/p&gt;
+<p>});</p>
 
-&lt;p&gt;$possibleTemplates = json_decode($redis-&gt;hget(&amp;ldquo;seo_templates&amp;rdquo;, $path), true);
-$contextValues     = json_decode($redis-&gt;hget(&amp;ldquo;seo_device&amp;rdquo;, $device), true);&lt;/p&gt;
+<p>$possibleTemplates = json_decode($redis->hget(&ldquo;seo_templates&rdquo;, $path), true);
+$contextValues     = json_decode($redis->hget(&ldquo;seo_device&rdquo;, $device), true);</p>
 
-&lt;p&gt;foreach ($possibleTemplates as $possibleTemplate) {&lt;/p&gt;
+<p>foreach ($possibleTemplates as $possibleTemplate) {</p>
 
-&lt;pre&gt;&lt;code&gt;list($condition, $template) = $possibleTemplate;
+<pre><code>list($condition, $template) = $possibleTemplate;
 
-if ($expLang-&amp;gt;evaluate($condition)) {
+if ($expLang-&gt;evaluate($condition)) {
     $twig             = new \Twig_environment(new Twig_Loader_String($template));
-    $renderedTemplate = $twig-&amp;gt;render(json_encode($template), $contextValues);
+    $renderedTemplate = $twig-&gt;render(json_encode($template), $contextValues);
 
-    return $yamlParser-&amp;gt;parse($renderedTemplate);
+    return $yamlParser-&gt;parse($renderedTemplate);
 }
-&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
 
-&lt;p&gt;}&lt;/p&gt;
+<p>}</p>
 
-&lt;p&gt;//Note: this code requires lots of error checking and try, catch blocks to detect and report errors and exceptions since
+<p>//Note: this code requires lots of error checking and try, catch blocks to detect and report errors and exceptions since
 // content and SEO information, for example, are considered fragile and sensitive
-</code></pre></figure></notextile></div></p>
+{% endcodeblock %}</p>
 
 <p>Nice, easy and simple. This approach for a CMS like system, provides the following benefits:</p>
 

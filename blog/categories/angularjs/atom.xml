@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: AngularJS | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: Angularjs | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/angularjs/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,24 +14,23 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #86]]></title>
-    <link href="http://namshi.github.io/blog/2015/04/16/newsletter-number-86/"/>
-    <updated>2015-04-16T11:59:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/04/16/newsletter-number-86</id>
-    <content type="html"><![CDATA[<blockquote><p>Hello folks!
-It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
+    <title type="html"><![CDATA[newsletter #72]]></title>
+    <link href="http://namshi.github.io/blog/2015/01/08/newsletter-number-72/"/>
+    <updated>2015-01-08T15:00:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/01/08/newsletter-number-72</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello Folks!</p>
 
-<p>Yay! Cirpo 2.0 got released. The new version is soo much lighter than the old one.. :)</p>
+<p>Here we go with the first <a href="/blog/categories/techthursday/">#TechThursday</a> for 2015.</p>
 
-<p><img src="http://namshi.github.io/images/cirpo_new.jpg" width=400 /></p></blockquote>
+<p>Every now and then it happens that people in our team wear the same geeky T-shirt&hellip; <strong>T-shirt clash</strong>:</p>
 
-<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+<p>{% img center /images/t-shirt.jpg %}</p></blockquote>
 
 <ul>
-<li><p><a href="http://bit.ly/1CNwezu">Top Tips to refine your backlog</a></p></li>
-<li><p><a href="http://bit.ly/1FVDGvG">First, Understand the Problem</a></p></li>
-<li><p><a href="http://genius.it/ejohn.org/files/jquery-original.html">The Original jQuery Source Code, Annotated by John Resig</a></p></li>
-<li><p><a href="http://js1k.com/2015-hypetrain/demo/2306">Winner of js1k 2015</a></p></li>
+<li><p><a href="https://github.com/bcoe/crapify">Crapify, a proxy for simulating slow, spotty, HTTP connections</a></p></li>
+<li><p><a href="https://medium.com/@mnemon1ck/why-you-should-not-use-angularjs-1df5ddf6fc99">Why you should not use Angular</a></p></li>
+<li><p><a href="https://codeascraft.com/2012/05/22/blameless-postmortems/">Blameless PostMortems and a Just Culture</a></p></li>
+<li><p><a href="https://gist.github.com/staltz/868e7e9bc2a7b8c1f754">The indtroduction to Reactive Programming</a></p></li>
 </ul>
 
 
@@ -39,42 +38,25 @@ It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechTh
 
 
 <ul>
-<li><p><a href="http://blog.mgechev.com/2015/04/06/angular2-first-impressions/">AngularJs2.0 first impression</a></p></li>
-<li><p><a href="https://code.mixpanel.com/2015/04/08/straightening-our-backbone-a-lesson-in-event-driven-ui-development/">A lesson from event driven UI developement</a></p></li>
-<li><p><a href="https://css-tricks.com/bem-101/">BEM 101</a></p></li>
-<li><p><a href="https://github.com/agis-/git-style-guide">Git style guides</a></p></li>
-<li><p><a href="http://blog.thoughtram.io/angular/2015/04/09/developing-a-tabs-component-in-angular-2.html">Developing a tabs component in AngularJs 2</a></p></li>
-<li><p><a href="https://www.igvita.com/2015/04/10/fixing-the-blank-text-problem/">Fixing the blank text problem</a></p></li>
-<li><p><a href="http://www.rq.crockford.com/">RQ is a small JavaScript library for managing asynchronicity in server applications.</a></p></li>
-<li><p><a href="https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8">Auto-formatting JavaScript Code Style</a></p></li>
-<li><p><a href="http://blog.algorithmia.com/post/116365814879/how-machines-see-the-web-exploring-the-web">How Machines See the Web: Exploring the Web Algorithmically</a></p></li>
-<li><p><a href="http://www.daedtech.com/what-story-does-your-code-tell">What Story Does Your Code Tell?</a></p></li>
-<li><p><a href="https://github.com/qandidate-labs/broadway">Broadway: Infrastructure and testing helpers for creating CQRS and event sourced applications.</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-7-twig-profiler">New in Symfony 2.7: Twig Profiler</a></p></li>
-<li><p><a href="http://buff.ly/1DEX2Wn">The complete guide to rebasing in git</a></p></li>
-<li><p><a href="http://buff.ly/1DXdCTn">When is Dependency Injection evil?</a></p></li>
-<li><p><a href="http://buff.ly/1FNxcz2">Query your local network for Chromecasts and have them play media</a></p></li>
-<li><p><a href="http://buff.ly/1FE2ZFb">A curated list of helpful material to get started with the second version of #AngularJS</a></p></li>
-<li><p><a href="http://buff.ly/1aluLIB">I am powering a bank&rsquo;s website using #WordPress. What security measures should I take?</a></p></li>
-<li><p><a href="http://buff.ly/1FBdt8i">China&rsquo;s Great Cannon</a></p></li>
-<li><p><a href="http://buff.ly/1aBOunM">What&rsquo;s the hardest bug you&rsquo;ve debugged? One of the programmers behind Crash Bandicoot gives his take</a></p></li>
-<li><p><a href="http://buff.ly/1D7l76T">What is the full cost of your commute?</a></p></li>
-<li><p><a href="http://buff.ly/1aO2Ths">The Next Generation of Dense-storage Instances for EC2</a></p></li>
-<li><p><a href="http://buff.ly/1E9SXKj">What is the reason for performing a double fork when creating a daemon?</a></p></li>
-<li><p><a href="http://buff.ly/1yXNO2a">Baseimage-docker, fat containers and &ldquo;treating containers as VMs&rdquo;</a></p></li>
-<li><p><a href="http://web.mit.edu/jemorris/humor/500-miles">The 500-mile email</a></p></li>
-<li><p><a href="http://oboejs.com/">Streaming JSON loading for Node and browsers</a></p></li>
-<li><p><a href="http://webglfundamentals.org/">WebGL fundamentals</a></p></li>
-<li><p><a href="https://prezi.com/50wflpdvscbo/advanced-elasticsearch-meteor">Advanced ElasticSearch + Meteor</a></p></li>
-<li><p><a href="http://www.infoworld.com/article/2866712/php/php-vs-node-js-an-epic-battle-for-developer-mind-share.html">PHP vs. Node.js: An epic battle for developer mind share</a></p></li>
-<li><p><a href="http://imgur.com/gallery/d9cU904">The lord of the rings analogy to programming languages</a></p></li>
-<li><p><a href="https://strongloop.com/strongblog/node-js-process-manager-production-docker/">New StrongLoop Process Manager Features for Running Node.js in Production Including Docker Support</a></p></li>
-<li><p><a href="http://mashable.com/2015/04/13/math-is-hard/">A math problem for 14-year-olds is stumping the world</a></p></li>
-<li><p><a href="https://aws.amazon.com/about-aws/whats-new/2015/04/amazon-ec2-container-service-is-now-generally-available/">Amazon EC2 Container Service is Now Generally Available</a></p></li>
-<li><p><a href="https://codeascraft.com/2015/04/06/experimenting-with-hhvm-at-etsy/">Experimenting with HHVM at Etsy</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/new-cross-region-replication-for-amazon-s3/">New – Cross-Region Replication for Amazon S3</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/amazon-elastic-file-system-shared-file-storage-for-amazon-ec2/">Amazon Elastic File System – Shared File Storage for Amazon EC2</a></p></li>
-<li><p><a href="https://github.com/zestia/hubrelease/blob/master/README.md">Generate release notes from closed issues and merged pull requests</a></p></li>
+<li><p><a href="http://slidesha.re/1xUpRNz">The DevOps Wonder</a></p></li>
+<li><p><a href="http://bit.ly/1DA8dNX">React js Vs Angular js</a></p></li>
+<li><p><a href="http://bit.ly/1AuEg3r">Scrawl &ndash; web capture crawler</a></p></li>
+<li><p><a href="http://bit.ly/1yDu0Fs">Docker &ndash; Beginner&rsquo;s tutorial</a></p></li>
+<li><p><a href="https://github.com/denderello/symfony-docker-example">Dockerized Symfony Project</a></p></li>
+<li><p><a href="https://github.com/google/novm">Novm &ndash; legacy-free, type 2 hypervisor written in Go</a></p></li>
+<li><p><a href="http://buff.ly/1xzIODe">Why you should pay developers to learn</a></p></li>
+<li><p><a href="http://buff.ly/1xvT9QC">How can React and Flux help us create better Angular applications?</a></p></li>
+<li><p><a href="http://buff.ly/1xvT3Ix">How Much Testing is Too Much?</a></p></li>
+<li><p><a href="http://buff.ly/14ony8u">Agile Won&rsquo;t Fix Your Organization</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-cross-account-access-in-the-aws-management-console/">Cross-Account Access in the AWS Management Console</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/new-ec2-spot-instance-termination-notices/">EC2 Spot Instance Termination Notices</a></p></li>
+<li><p><a href="http://www.slideshare.net/bingoarunprasath/docker-demo-on-php-application-deployment">Docker &ndash; Demo on PHP Application deployment</a></p></li>
+<li><p><a href="http://weavora.com/blog/2013/03/26/why-we-prefer-symfony2-over-yii-framework/">Symfony2 Over Yii</a></p></li>
+<li><p><a href="https://github.com/es-analysis/plato">JavaScript source code visualization, static analysis, and complexity tool</a></p></li>
+<li><p><a href="https://plus.google.com/app/basic/stream/z12iztbo0mzwhnkbi04chrfidpb4s1vglfg">Chrome Canary improvements to the Network panel</a></p></li>
+<li><p><a href="https://github.com/dai-shi/codeonmobile">A coding tool on mobile devices targeting GitHub/Codeship/Heroku</a></p></li>
+<li><p><a href="http://glazkov.com/2011/01/14/what-the-heck-is-shadow-dom/">What the Heck is Shadow DOM?</a></p></li>
+<li><p><a href="http://teohm.com/blog/2012/03/22/working-effectively-with-iterm2/">Working Effectively With iTerm2</a></p></li>
 </ul>
 
 ]]></content>

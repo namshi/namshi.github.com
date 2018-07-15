@@ -4,7 +4,7 @@
   <title><![CDATA[Category: node | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/node/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -67,7 +67,7 @@
     <content type="html"><![CDATA[<blockquote><p>Hi everyone,
 we are back after the Christmas break!</p></blockquote>
 
-<p><img class="center" src="/images/posts/christmas_team.png"></p>
+<p>{% img center /images/posts/christmas_team.png %}</p>
 
 <blockquote><p>2015 is almost over and it was a great tech year here at Namshi, can&rsquo;t wait for 2016!</p>
 
@@ -116,10 +116,10 @@ we are back after the Christmas break!</p></blockquote>
     <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
 
 <p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
-<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
+{% img center /images/posts/alex-cirpo-oba-docker-con-15.jpg %}</p>
 
 <p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
-<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
+{% img center /images/posts/lucio-prabeesh-bd.jpg %}</p></blockquote>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -162,7 +162,7 @@ we are back after the Christmas break!</p></blockquote>
 <p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
 Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
 
-<p><img class="center" src="/images/posts/oba-cirpo-docker-con-15.jpg"></p>
+<p>{% img center /images/posts/oba-cirpo-docker-con-15.jpg %}</p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 

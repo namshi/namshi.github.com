@@ -4,7 +4,7 @@
   <title><![CDATA[Category: security | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/security/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -19,7 +19,7 @@
     <updated>2018-07-04T06:28:00+00:00</updated>
     <id>http://namshi.github.io/blog/2018/07/04/currently-hiring-a-cybersecurity-engineer</id>
     <content type="html"><![CDATA[<p>Love penetration testing, DefCon, bug bounty programs and scrapping through lines
-of code to find vulnerabilities? The we might have the right opening for you!</p>
+of code to find vulnerabilities? Then we might have the right opening for you!</p>
 
 <!-- more -->
 
@@ -29,7 +29,7 @@ either <a href="/blog/2018/05/16/introducing-the-namshi-bug-bounty-program/">col
 
 <p>With this in mind, we would like to hire a security researcher that can help
 us from this perspective: we see security as being a topic that will only gain additional
-importance as time goes by, and we&rsquo;re committed to dedicate the right amount of time,
+importance as time goes by, and we&rsquo;re committed to dedicating the right amount of time,
 and money, to the cause :)</p>
 
 <p>As a <strong>Security Engineer</strong>, you&rsquo;ll be tasked with running internal assessments, ranging
@@ -169,7 +169,7 @@ a second to disclose some of our stats taken from hackerone:</p>
 
 <p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
 
-<p><img class="center" src="/images/hug_an_engineer.jpg"></p>
+<p>{% img center /images/hug_an_engineer.jpg %}</p>
 
 <p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
 
@@ -228,7 +228,7 @@ in the last two weeks we started having tech lightning talks here at Namshi.</p>
 <p>Below you can see <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> in this (creative) shot while is showing the rest of the gang
 how <a href="http://facebook.github.io/react/">React</a> works and how he used it in our latest open-source project <a href="https://github.com/namshi/roger">Roger</a>.</p>
 
-<p><img class="team center" src="/images/posts/shidhin-react.png"></p>
+<p>{% img team center /images/posts/shidhin-react.png %}</p>
 
 <p>Talking about Roger, have you checked the blog post <a href="http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/">&ldquo;How Namshi builds Docker containers through Docker containers&rdquo;</a>?</p>
 
@@ -291,7 +291,7 @@ how <a href="http://facebook.github.io/react/">React</a> works and how he used i
 
 <p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
 
-<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
+<p>{% img center /images/posts/alex-cirpo-david-wh.jpg %}</p>
 
 <!-- more -->
 

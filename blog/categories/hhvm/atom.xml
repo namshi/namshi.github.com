@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hhvm | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hhvm/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -248,7 +248,7 @@ the super exciting Docker Eu Conference to collect some thoughts about the newes
 Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
 with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
 
-<p><img class="team right" src="/images/berlin.png"></p>
+<p>{% img team right /images/berlin.png %}</p>
 
 <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
 

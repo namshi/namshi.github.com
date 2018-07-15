@@ -4,7 +4,7 @@
   <title><![CDATA[Category: OrientDB | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/orientdb/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>We&rsquo;re thrilled to host <a href="https://www.linkedin.com/in/garulli">Luca Garulli</a>, creator of <a href="http://orientdb.com/orientdb/">OrientDB</a>,
 at the <a href="https://www.google.ae/maps/place/Gold+%26+Diamond+Park/@25.1257122,55.2068166,17z/data=!3m1!4b1!4m2!3m1!1s0x3e5f6bc672b8fc7f:0x250fe8f16e1b1804?hl=en">Namshi HQ</a> to talk a little bit about <a href="http://www.meetup.com/atthecribb/events/227245046/">NoSQL databases here in Dubai</a>.</p>
 
-<p><img class="center <a" src="href="http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png">http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png</a>"></p>
+<p>{% img center <a href="http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png">http://orientdb.com/wp-content/uploads/2014/09/orientdb_logo_2x11.png</a> %}</p>
 
 <!-- more -->
 

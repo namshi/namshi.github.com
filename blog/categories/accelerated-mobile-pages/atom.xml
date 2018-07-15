@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Accelerated Mobile Pages | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/accelerated-mobile-pages/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:40:19+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -113,7 +113,7 @@ As of now, AMP analytics component supports multiple vendor configurations. The 
 
 <p>To support a better user experience for AMP in search results, Google provided an early preview demo page. This is actually useful for developers to test their AMP pages before Google go live with AMP search result. So far, we have most of our catalog pages indexed, and the early AMP search results preview looks amazing.</p>
 
-<p><img class="center" src="/images/posts/namshi-amp-demo.gif" title="&lsquo;Namshi AMP Demo&rsquo; &lsquo;Namshi AMP Demo&rsquo;" ></p>
+<p>{% img center /images/posts/namshi-amp-demo.gif &lsquo;Namshi AMP Demo&rsquo; &lsquo;Namshi AMP Demo&rsquo; %}</p>
 
 <p>This is the kind of page loading experience we wanted to provide to our customers, and AMP was the right choice for us. We’re pretty happy with the outcome and very much excited to see the actual results once Google rollout AMP search.</p>
 

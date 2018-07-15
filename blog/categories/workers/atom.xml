@@ -4,7 +4,7 @@
   <title><![CDATA[Category: workers | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/workers/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:40:19+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -25,12 +25,12 @@
 are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
 The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
 
-<p><img class="center" src="/images/dockercon.jpg"></p>
+<p>{% img center /images/dockercon.jpg %}</p>
 
 <blockquote><p>We have a new pet in the office, the Docker whale!
 Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
 
-<p><img class="center" src="/images/docker.jpg"></p>
+<p>{% img center /images/docker.jpg %}</p>
 
 <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: awk | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/awk/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ We&rsquo;ll meet every 1st Wednesday of the month, and if you love technology as
 Feel free to ping us on twitter to know the next venue: speech proposals are welcome too!
 More news to come on this!</p>
 
-<p><img class="center" src="/images/posts/dubytes-1st-meeting.jpg"></p></blockquote>
+<p>{% img center /images/posts/dubytes-1st-meeting.jpg %}</p></blockquote>
 
 <p><strong>And here is the traditional &ldquo;selecta&rdquo; of links our team found interesting this week around the interwebs, enjoy:</strong></p>
 
@@ -98,7 +98,7 @@ Here you go again with your weekly dose of #techthrusday !</p>
 
 <p>Let&rsquo;s welcome Nitesh Sharma to the tech team! (and Amin to photobombing :P )</p>
 
-<p><img class="center" src="/images/nitesh.jpg"></p>
+<p>{% img center /images/nitesh.jpg %}</p>
 
 <p>Thanks to <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> that published a <a href="https://github.com/namshi/docker-akeneo">container</a> to run the Akeneo PIM through docker a few days ago!</p></blockquote>
 

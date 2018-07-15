@@ -4,7 +4,7 @@
   <title><![CDATA[Category: smoke-testing, | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/smoke-testing/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -53,7 +53,7 @@ http://example.org/not-there 404
 
 <p>Here is a video illustration:</p>
 
-<p><video width='640' height='640' preload='none' controls poster=''><source src='http://tech.namshi.io/videos/example.mp4">http://tech.namshi.io/videos/example.mp4</a>' ></video></p>
+<p>{% video <a href="http://tech.namshi.io/videos/example.mp4">http://tech.namshi.io/videos/example.mp4</a> 640 640 %}</p>
 
 <h1>Features</h1>
 
@@ -79,15 +79,15 @@ shisha --domain example.org --protocol http
 
 <p>so your text file would look something like this</p>
 
-<p>
+<p>{% raw %}
 <code>
 {{ protocol }}://{{ domain }}/path 200
 </code>
-</p>
+{% endraw %}</p>
 
 <p>Here is how locals work:</p>
 
-<p><video width='640' height='640' preload='none' controls poster=''><source src='http://tech.namshi.io/videos/locals.mp4">http://tech.namshi.io/videos/locals.mp4</a>' ></video></p>
+<p>{% video <a href="http://tech.namshi.io/videos/locals.mp4">http://tech.namshi.io/videos/locals.mp4</a> 640 640 %}</p>
 
 <ul>
 <li>Easily extend shisha in your code as follows:</li>

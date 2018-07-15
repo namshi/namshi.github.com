@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: ES6 | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: es6 | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/es6/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,622 +14,273 @@
 
   
   <entry>
-    <title type="html"><![CDATA[The Copy Paste Guide for Creating NPM packages in ES6 with Babel and Webpack]]></title>
-    <link href="http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack/"/>
-    <updated>2016-07-20T12:34:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/07/20/the-copy-paste-guide-foror-creating-npm-packages-in-es6-with-babel-and-webpack</id>
-    <content type="html"><![CDATA[<p>ES6 is lovely, right?</p>
+    <title type="html"><![CDATA[Newsletter #124]]></title>
+    <link href="http://namshi.github.io/blog/2016/02/11/newsletter-number-124/"/>
+    <updated>2016-02-11T12:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/02/11/newsletter-number-124</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi there!</p>
 
-<p>I believe &ldquo;Yes&rdquo; it is! However, ES6 is not quite ready yet. Present JavaScript environments (NODE and Browser ) cannot run all the ES6 proposed features. Browser vendors are slowly shipping the features to their JS engines. Hence, as of today, only ES5 is guaranteed to work seamlessly in every JS environment.</p>
+<p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
+
+<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
+
+<blockquote><p>and here is your weekly quota of some interesting links</p>
+
+<p>Enjoy!</p></blockquote>
+
+<ul>
+<li><p><a href="https://camjackson.net/post/9-things-every-reactjs-beginner-should-know">9 things every react.js beginner should know</a></p></li>
+<li><p><a href="http://cleancoders.com/episode/clean-code-episode-1/view">clean coders videos</a></p></li>
+<li><p><a href="https://github.com/codekitchen/dinghy?utm_content=bufferf938d">codekitchen/dinghy: faster, friendlier docker on os x</a></p></li>
+<li><p><a href="https://blog.docker.com/2016/02/compose-1-6/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uovUKe/lMI/0ER3fOvrPUfGjI4DScBkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">compose 1.6: new compose file for defining networks and volumes | docker blog</a></p></li>
+</ul>
+
 
 <!-- more -->
 
 
-<p>So, how can we write ES6 ?</p>
-
-<p>Luckily, we have transpilers. They allow us to transpile ( a term for compiling from a language to the same language but a different version ) ES6 code to ES5. In this post, we&rsquo;ll see how to write a cross platform ( UMD ) module in ES6 and compile to ES5 using <code>webpack</code> and <code>babel</code>.</p>
-
-<h2>Let&rsquo;s Start</h2>
-
-<p>In a nutshell, our project includes:</p>
-
-<ol>
-<li><a href="https://webpack.github.io/">Webpack</a> is a code bundling tool and will use for building our module.</li>
-<li><a href="https://github.com/babel/babel-loader">Babel-loader</a> for transpiling ES6 code to ES5</li>
-<li>Babel plugins and presets:
-
 <ul>
-<li>babel-preset-es2015</li>
-<li>babel-preset-stage-0</li>
-<li>babel-plugin-add-module-exports</li>
-</ul>
-</li>
-<li><a href="https://github.com/avajs/ava">Ava</a> for unit testing our module</li>
-<li>NPM scripts for the build, test and  pre-publish tasks.</li>
-</ol>
-
-
-<p>Let&rsquo;s start by creating a new directory for our project. In the terminal, navigate to the directory and run <code>npm init</code>. Follow the instructions to generate a valid <code>package.json</code> file.</p>
-
-<p>Time to install the dependencies for the module. Run the following command to install the packages from npm:</p>
-
-<p><code>sh
-npm install --save-dev webpack babel-loader babel-plugin-add-module-exports babel-preset-es2015 babel-preset-stage-0 ava
-</code></p>
-
-<p>Create the following files and folder structure:</p>
-
-<ol>
-<li>index.js ( This will be our main ES6 source file )</li>
-<li>webpack.config.js ( The configurations required for webpack to build our module )</li>
-<li>.babelrc ( babel configuration file )</li>
-<li><code>dist</code> directory ( Final compiled package goes here )</li>
-</ol>
-
-
-<p>Let&rsquo;s start with the webpack configuration. Open <code>webpack.config.js</code> in your favorite editor. Copy and paste the below code:</p>
-
-<p>```js webpack.config.js</p>
-
-<pre><code>module.exports = {
-    entry: './index.js',
-    target: 'node',
-    output: {
-        path: './dist',
-        filename: 'build.js',
-        libraryTarget: 'umd'
-    },
-    module: {
-        loaders: [{
-            test: /\.js$/,
-            loader: 'babel',
-            exclude: /node_modules/
-        }]
-    }
-}
-</code></pre>
-
-<p>```</p>
-
-<p>This is a simple configuration file required by webpack. The exported configuration file will be processed by webpack. Let&rsquo;s look at each item in the exported object:</p>
-
-<ul>
-<li><code>entry</code> is the main file from where webpack will look for all other dependencies.</li>
-<li>We set <strong>target=&lsquo;node&rsquo;,</strong> so webpack knows how to mock/load the default node packages like &ldquo;fs&rdquo;, &ldquo;url&rdquo; ..etc</li>
-<li>Output section contains information about our final package and configurations related to it. We set our <code>libraryTarget</code> to <strong>UMD</strong> so that webpack will generate the final module in UMD format ( universal module definition &mdash; for commonJS, requireJS, and browser )</li>
-<li>Module is the section where we can configure different loaders for our code. Since we write the code in ES6, we need webpack to use <code>babel-loader</code> to transform the file. Module can have different other options for configuring the module, however, we just need only the loader configuration for now.</li>
+<li><p><a href="http://www.paulund.co.uk/css-buttons-with-icons-but-no-images">css buttons with icons but no images</a></p></li>
+<li><p><a href="http://www.desktopneo.com/">desktop neo – rethinking the desktop interface for productivity.</a></p></li>
+<li><p><a href="http://layer0.authentise.com/docker-4-useful-tips-you-may-not-know-about.html?utm_content=bufferbb9b6">docker: 4 useful tips, you may not know about</a></p></li>
+<li><p><a href="http://verraes.net/2013/09/extract-till-you-drop/?utm_content=buffera385e">extract till you drop</a></p></li>
+<li><p><a href="http://flif.info/">flif &ndash; free lossless image format</a></p></li>
+<li><p><a href="http://blog.andrewray.me/flux-for-stupid-people/">flux for stupid people</a></p></li>
+<li><p><a href="http://stackoverflow.com/questions/18524652/how-to-use-javascript-object-defineproperty">how to use javascript object.defineproperty &ndash; stack overflow</a></p></li>
+<li><p><a href="https://github.com/samccone/The-cost-of-transpiling-es2015-in-2016">investigating the overhead cost of compiled es2015</a></p></li>
+<li><p><a href="http://brianchang.info/2016/02/01/issues-with-common-software-quality-metrics.html">issues with common software quality metrics</a></p></li>
+<li><p><a href="http://javascriptair.com/">javascript air &ndash; the live broadcast podcast all about javascript</a></p></li>
+<li><p><a href="http://jpnarowski.com/enterprise-react-redux-part-1/">launching an enterprise react and redux app</a></p></li>
+<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
+<li><p><a href="http://www.iron.io/microcontainers-tiny-portable-containers/">microcontainers &ndash; tiny, portable docker containers</a></p></li>
+<li><p><a href="https://blog.branch.io/mobile-app-developers-are-suffering">mobile app developers are suffering</a></p></li>
+<li><p><a href="http://www.lukew.com/ff/entry.asp?1954">mobile web vs. native apps or why you want both</a></p></li>
+<li><p><a href="https://github.com/mcollina/climem">monitor the memory consumption of your node process via cli</a></p></li>
+<li><p><a href="http://brianchang.info/2016/01/17/object-oriented-developer.html">object-oriented developer</a></p></li>
+<li><p><a href="https://github.com/unicorn-standard/starter-kit">project boilerplate using react, redux and uniloc</a></p></li>
+<li><p><a href="https://toggl.com/developer-methods-infographic">software development methods explained with cars (infographic)</a></p></li>
+<li><p><a href="http://vorpal.js.org/">vorpal &ndash; command line with js</a></p></li>
+<li><p><a href="https://www.quora.com/What-do-programmers-at-Facebook-do-all-day">what do programmers at facebook do all day? &ndash; quora</a></p></li>
+<li><p><a href="https://www.quora.com/Facebook-1/What-would-happen-to-worlds-economy-if-Facebook-suddenly-stopped-one-day">what would happen to world&rsquo;s economy if facebook suddenly stopped one day? &ndash; quora</a></p></li>
+<li><p><a href="https://getpocket.com/a/read/1119332046">why progressive web apps are the future of web development</a></p></li>
+<li><p><a href="http://www.yes-www.org/why-use-www/">why use www? – www. is not deprecated</a></p></li>
 </ul>
 
-
-<p>Babel requires plugins to complete its job properly. For that, update the babel configurations in <code>.babelrc</code> file.</p>
-
-<p>```js .babelrc</p>
-
-<pre><code>{
-    "moduleId": "myModule",
-    "presets": ["es2015", "stage-0"],
-    "plugins": ["add-module-exports"]
-}
-</code></pre>
-
-<p>```</p>
-
-<p>Here we specify the moduleId to the final name of the module. We need to add the presets option to <code>["es2015", "stage-0"]</code> in order to transform the ES6 code. Find more about <code>es-2015</code> and <code>stage-0</code> features <a href="https://github.com/hemanth/es-next#stage-0">here</a></p>
-
-<p>Babel 6 does not generate a default export inside the compiled file. Instead, the default export is exported as a property called <code>default</code>. Because of this, if we try <code>require('myModule')</code>, it doesn&rsquo;t work. Babel 6 export should be required using <code>require('myModule').default</code>.</p>
-
-<p>That&rsquo;s why we use a plugin called <code>add-module-exports</code>. Its duty is to add the default export in the final babel generated output. You can find more about it <a href="https://www.npmjs.com/package/babel-plugin-add-module-exports">here</a>.</p>
-
-<p><em>Note: Make sure the <code>moduleId</code> in .babelrc is matching with your module&rsquo;s name.</em></p>
-
-<h2>Set up the tests</h2>
-
-<p>I find <code>ava</code> would be the best option for unit testing our module. Let&rsquo;s create a <code>tests</code> directory and add a new file <code>build.spec.js</code>. A basic test case is give below:</p>
-
-<p>```js build.spec.js
-var test = require(&lsquo;ava&rsquo;);
-var myModule = require(&lsquo;../dist/build&rsquo;);</p>
-
-<p>test(&lsquo;the log method&rsquo;, t => {</p>
-
-<pre><code>t.is(myModule.log('hi'), 'Logging the message : hi');
-</code></pre>
-
-<p>});
-```</p>
-
-<p>Now make the tests pass by implementing the real code in the module.</p>
-
-<p>```js index.js
-const myModule = {
-  log(message){</p>
-
-<pre><code>return `Logging the message : ${message}`;
-</code></pre>
-
-<p>  }
-}</p>
-
-<p>export default myModule;
-```</p>
-
-<p>More about <code>ava</code> <a href="https://github.com/avajs/ava">here</a>.</p>
-
-<h2>Set up the NPM scripts to do the tasks</h2>
-
-<p>We need 5 npm tasks to make our life easier. All of them are self-explanatory; Just have look at the code in <code>package.json</code>.</p>
-
-<ol>
-<li><strong>npm start:</strong>  To run in development mode. This task will watch for any source file changes and output the build.</li>
-<li><strong>npm run build:</strong> Build the final module in production mode ( minified and with source maps ).</li>
-<li><strong>npm test:</strong> Run the <code>ava</code> tests.</li>
-<li><strong>npm run test-w:</strong> Run tests in continuous watch mode.</li>
-<li><strong>npm prepublish:</strong> Before publishing the package, this task run the <code>build</code> and <code>test</code> to make sure everything works fine.</li>
-</ol>
-
-
-<p>Final scripts will look like this:</p>
-
-<p>```js package.json
-&ldquo;scripts&rdquo;: {</p>
-
-<pre><code>"start": "webpack -w",
-"build": "webpack -p",
-"test": "ava tests/**/*.js",
-"test-w": "ava -w tests/**/*.js",
-"prepublish": "npm build &amp;&amp; npm test"
-</code></pre>
-
-<p>}
-```</p>
-
-<p>For developing in TDD fashion, run <code>npm start</code> and <code>npm run test-w</code> together.</p>
-
-<h2>Make the <code>dist/build.js</code> as the main file for the module</h2>
-
-<p>Finally, we need to tell npm about where to load the module from. Edit the <code>package.json</code> and change the &ldquo;main&rdquo; property to <code>dist/build.js</code></p>
-
-<h2>Summary</h2>
-
-<p>Developers already adopted ES6 even before it&rsquo;s available. Thanks to all these tools and the people behind them.</p>
-
-<p>Today we learnt the minimal set-up to start writing code in ES6. You can find the repo for the <a href="https://github.com/namshi/node-es6-seed">seed project here</a>. Fork, and create your next npm package in ES6.</p>
-
-<p>I hope you enjoyed reading the article. Feedbacks are welcome!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Welcome ES6 ! JavaScript is not fancy anymore]]></title>
-    <link href="http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/"/>
-    <updated>2014-10-19T12:04:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore</id>
-    <content type="html"><![CDATA[<blockquote><p><strong>21/10/2014 UPDATE:</strong> This post was updated ( see the new examples for arrow functions and template strings ).</p>
+    <title type="html"><![CDATA[Newsletter #113]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/29/newsletter-number-113/"/>
+    <updated>2015-10-29T16:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/29/newsletter-number-113</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi folks!
+Today is the 92nd anniversary of the Turkish Republic!</p>
 
-<p>Thanks for the <a href="http://localhost:4000/blog/2014/10/19/welcome-es6-javascript-is-not-fancy-anymore/#disqus_thread">comments</a>
-and the <a href="http://www.reddit.com/r/javascript/comments/2jr72y/welcome_es6_javascript_is_not_fancy_anymore/">Reddit discussion</a>.</p></blockquote>
+<p>Together with our Turkish pal Armagan  we wish Happy Republic Day, Turkey!</p>
 
-<h2></h2>
+<p>{% img center /images/posts/arma.jpg %}</p></blockquote>
 
-<p>For years, JavaScript was considered as a toy language. It was used for creating interactive web pages and could run only in the browser. But, things changed; JavaScript is used in both, the server and the browser these days. The simplicity of the language made it so popular that developers started using it for large and complex projects.</p>
-
-<p>However, new developers felt JavaScript was fancy at times. This was because of some of the known drawbacks in the language itself &mdash; and the workarounds put in place for fixing them. For example, a developer from a &ldquo;C&rdquo; language background is more familiar to block level scoping, but will have difficulties understanding function scoping in JavaScript. Along with lexical scoping, variable hoisting and closures might seem fancy or difficult to understand as well.</p>
-
-<!--more-->
-
-
-<p>ES6, the future version, is going to give a vast makeover to JavaScript. The <strong>TC39</strong> committee (responsible for ES6 standardization) have taken care of most of the concerns about JavaScript, and now ES6 is getting a lot of new features added, and existing bad parts fixed. If you want to know about the JavaScript good vs bad parts, check out Douglas Crockford’s book <a href="http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742">JavaScript, the Good Parts</a>.</p>
-
-<p>This post is <strong>not</strong> about the complete ES6 feature-set. Here, we will see some of the areas of JavaScript that look fancy, and how they are getting improved in ES6.</p>
-
-<h2>ES6, all good parts?</h2>
-
-<p>Again, I am not saying ES6 has only good parts. To be honest, I don&rsquo;t know. ES6 is not completely ready for live applications. Design patterns will automatically evolve once the language is used extensively. Design patterns can distinguish between the good and bad parts.</p>
-
-<p>As of now, most ES6 features are not supported by browsers (as they’re in draft). We use transpiler tools to compile ES6 code to ES5. While there are many tools available, Google’s <a href="https://github.com/google/traceur-compiler">traceur</a> seems to be the most popular among them.</p>
-
-<h2>8 fancy things fixed in ES6</h2>
-
-<p>Here are some interesting improvements done in ES6:</p>
-
-<h3>Object.is for better comparison</h3>
-
-<p>New developers who learn JavaScript often stumble on the usage of <code>==</code> and <code>===</code>.  The <code>===</code> is a strict comparison operator where it checks the type of the operands also. For example, in this code:</p>
-
-<p>```javascript
-“0” == 0  // true</p>
-
-<p>but</p>
-
-<p>“0” === 0 // false
-```</p>
-
-<p>It is always recommended to use the <code>===</code> operator. However, there is an excepton to this; we cannot compare <code>NaN</code> using any of these operators. We need to use the global function <code>isNaN</code> to check if any variable has a <code>NaN</code> value or not.</p>
-
-<p>```javascript
-NaN == NaN  // false
-NaN === NaN  // false</p>
-
-<p>var result = isNan(NaN) // true
-```</p>
-
-<p><code>Object.is</code> is an attempt to have a better comparison method. It is the same as the <code>===</code> operator, except it can compare <code>NaN</code> also.</p>
-
-<p><code>javascript
-Object.is(0 ,”0”) // false
-Object.is(0 ,0) // true
-Object.is(NaN, NaN) // true
-</code></p>
-
-<h3>Let for block scoping.</h3>
-
-<p>As opposed to languages like &ldquo;C&rdquo;, JavaScript doesn&rsquo;t have block scoping. All variables inside a block are hoisted to its containing function (if any) or will be part of the global scope.</p>
-
-<p><code>javascript
-if(true){
-  var a = 10;
-  console.log(a); // 10
-}
-// outside the if block
-console.log(a); // a is accessible here also and prints 10
-</code>
-Following is a popular example of this:</p>
-
-<p>Assume that we have 10 anchor tags in an html page. We need to alert the index of each anchor tag whenever it’s clicked. Now, look at the code below:</p>
-
-<p>```javascript
-var anchors = document.getElementsByTagName(“a”);
-for(var i=0,len=anchors.length; i&lt;len; i++){</p>
-
-<pre><code>anchors[i].onclick = function(){
-    alert(i);
-};
-</code></pre>
-
-<p>}
-```</p>
-
-<p>If we think the above code works, we are wrong. It is the last value of <code>i</code> that is alerted. Here we will see <strong>10</strong> getting alerted.</p>
-
-<p>We use a <strong>closure</strong> to fix this problem. Using closure, we can bind the right value of <code>i</code> to the onClick handler. See the code below:</p>
-
-<p>```javascript
-var anchors = document.getElementsByTagName(“a”);
-for(var i=0,len=anchors.length; i&lt;len; i++){</p>
-
-<pre><code>anchors[i].onclick = (function(i){
-    return function(){
-        alert(i);
-    };
-})(i);
-</code></pre>
-
-<p>}
-```
-Having a closure in the above code makes it unreadable and totally fancy to a new developer. Now we know why the word <strong>&ldquo;fancy&rdquo;</strong> is here.</p>
-
-<p>ES6 introduces block scoping in JavaScript using the keyword <code>let</code>. If we write our first example, using <code>let</code>:</p>
-
-<p><code>javascript
-if(true){
-  let a = 10;
-  console.log(a); // 10
-}
-// outside the if block
-console.log(a) // Reference error: a is not defined
-</code></p>
-
-<p><code>let</code> also binds the scope of the variable to the current block. In our second example, we can use <code>let</code> to solve the scoping problem:</p>
-
-<p>```javascript
-var anchors = document.getElementsByTagName(“a”);
-for(let i=0,len=anchors.length; i&lt;len; i++){</p>
-
-<pre><code>anchors[i].onclick = function(){
-    alert(i);
-}
-</code></pre>
-
-<p>}
-```
-Now the above code should work as expected.</p>
-
-<h3>Multi-line strings and string interpolations</h3>
-
-<p>Writing multiline strings is not so straightforward. The <code>\n</code> ( for newline ) has to be added where ever a line break is needed.</p>
-
-<p><code>javascript
-var myString = 'Lorem ipsum \ndolor sit amet,\n\n\n consectetur adipisicing\n elit.';
-</code>
-ES6 introduces <strong>template strings</strong> for creating multiline strings. In ES6, we can write the above example like this:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myString = `Lorem ipsum 
-                dolor sit amet,
-
-                consectetur adipisicing
-                elit.`;
-</code></pre>
-
-<p><code>``
-So, here, we can use "\</code>&ldquo; (backtick) to create the strings.</p>
-
-<p>Another interesting usecase of the template strings is variable interpolation. There is no native variable interpolation in ES5, but can be achieved by regular expressions or by manually appending the variable to the string. For example:</p>
-
-<p>```javascript
-// Using + operator
-var name = &lsquo;Tony&rsquo;;
-var age = 20;
-var greeting = &lsquo;Hi, I am &rsquo;+name+&lsquo; and my age is &rsquo;+age;
-console.log(greeting); // This prints &lsquo;Hi I am Tony and my age is 20&rsquo;</p>
-
-<p>// Using regular expressions
-var greeting = &lsquo;Hi, I am %name% and my age is %age%&rsquo;.replace(/%name%/g,name).replace(/%age%/g,age);
-console.log(greeting); // This prints &lsquo;Hi I am Tony and my age is 20&rsquo;
-```
-In ES6, the above code is really simplified, and can be written like this:</p>
-
-<p><code>javascript
-var name = 'Tony';
-var age = 20;
-var greeting = `Hi, I am ${name} and my age is ${age}`;
-console.log(greeting); // This prints 'Hi I am Tony and my age is 20'
-</code></p>
-
-<h3>Fat Arrow functions for binding scope</h3>
-
-<p>Most new developers struggle to understand the <code>this</code> keyword in JavaScript. <code>this</code> is nothing but the execution context for a function, and for methods, <code>this</code> points to the object holding it. If the function is executed not as a method of an object, <code>this</code> will point to the global object (usually the window object).</p>
-
-<p><code>this</code> can be confusing many times. Look at the below example:</p>
-
-<p>```javascript
-var name = &lsquo;Tom&rsquo;;
-var obj = {</p>
-
-<pre><code>name: 'Jerry',
-sayName: function(){
-    console.log(this.name);
-},
-greet: function(){
-   setTimeout(function(){
-       console.log('Hi,' + this.name );
-   },100);
-}
-</code></pre>
-
-<p>};
-obj.sayName(); // logs Jerry
-obj.greet(); // logs Hi, Tom
-```</p>
-
-<p>When the <code>sayName</code> is executed as an object method, <code>this</code> was pointing to object itself, so <code>this.name</code> will output &ldquo;Jerry&rdquo;. Inside the <code>greet</code> function, a <code>setTimeout</code> is used for delaying the function execution. <code>setTimeout</code> will invoke the function in global context, hence <code>this</code> will point to the global object.</p>
-
-<p>We usually use <code>Function.bind</code> or <code>Function.call</code> or <code>Function.apply</code> to fix these kinds of problems.</p>
-
-<p>```javascript
-var name = &lsquo;Tom&rsquo;;
-var obj = {</p>
-
-<pre><code>name: 'Jerry',
-sayName: function(){
-    console.log(this.name);
-},
-greet: function(){
-   setTimeout(function(){
-       console.log('Hi,' + this.name );
-   }.bind(this),100);
-}
-</code></pre>
-
-<p>};
-obj.sayName(); // logs Jerry
-obj.greet(); // logs Hi, Jerry
-```</p>
-
-<p>ES6 added arrow functions to get rid of scoping issues. An arrow function will always lexically bind the <code>this</code> value to its surrounding environment. So the above code can be written in ES6 like this:</p>
-
-<p>```javascript
-var name = &lsquo;Tom&rsquo;;
-var obj = {</p>
-
-<pre><code>name: 'Jerry',
-sayName: function(){
-    console.log(this.name);
-},
-greet: function(){
-   setTimeout( ()=&gt; {
-       console.log('Hi,' + this.name );
-   },100);
-}
-</code></pre>
-
-<p>};
-obj.sayName(); // logs Jerry
-obj.greet(); // logs Hi, Jerry
-```</p>
-
-<p>Here, inside the arrow function, <code>this</code> always points to the parent scope <code>this</code> value.</p>
-
-<p><strong>Note:</strong> <em>Since the arrow function is already bound to its execution context, we cannot apply .bind(), .call() or .apply() methods on it again.</em></p>
-
-<h3>Destructuring</h3>
-
-<p>Destructuring is the process of assigning the property values of an object to a local variable. For example, in JavaScript, we can do this:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myGlobalConfig = {
-    apiUrl: 'www.google.com/api',
-    data1: 'some value',
-    data2: 'another value',
-    methodType: 'POST'
-    // ... etc
-};
-
-// and in one of our functions
-
-function makeAjaxRequest(config){
-    var url = config.url;
-    var method = config.methodType;
-    var data = config.data2;
-    $.ajax(url, method, data );
-}
-
-// call makeAjaxRequest
-makeAjaxRequest( myGlobalConfig );
-</code></pre>
-
-<p>```</p>
-
-<p>In the above code, whenever a function requires arguments as multiple parameters, we need to extract values from our config object and pass them as parameters. This is a problem when we have a large number of values that need to be extracted.</p>
-
-<p>ES6 allows direct destructing assignments. So we can write the above example in a simple way, like this:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myGlobalConfig = {
-    apiUrl: 'www.google.com/api',
-    data1: 'some value',
-    data2: 'another value',
-    methodType: 'POST'
-    // ... etc
-};
-
-// and in one of our function
-
-function makeAjaxRequest(config){
-    var { url, methodType, data2 } = config;
-    $.ajax(url, methodType, data2 );
-}
-
-// call makeAjaxRequest
-makeAjaxRequest( myGlobalConfig );
-</code></pre>
-
-<p>```</p>
-
-<h3>Default Argument Values for Functions</h3>
-
-<p>One of the best features in ES6 is default arguments. As of now, we use the <code>||</code> to have default values for the function parameters. See the below code:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myFunction = function(a, b, c){
-    a = a || 10;
-    b = b || 5;
-    c = c || 8;
-    return a*b*c;
-};
-</code></pre>
-
-<p>```
-Here is the same code written in ES6:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myFunction = function(a=10, b=5, c=8){
-    return a*b*c;
-};
-</code></pre>
-
-<p>```</p>
-
-<h3>Object method shorthands</h3>
-
-<p>Look at the below object creation pattern. In this, all the public method/property of an object will have their own private counterparts. For example:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myObject = (function(){
-    var sayName = function(){
-        console.log('this is sayname function');
-    };
-    var greet = 'This is a greeting';
-    return {
-        greet: greet,
-        sayName: sayName
-    }
-})();
-</code></pre>
-
-<p>```
-The above pattern is called <strong>Revealing module pattern</strong>. In ES6, it is much simplified by eliminating the column part. Thus, we can write the above code like this:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myObject = (function(){
-    var sayName = function(){
-        console.log('this is sayname function');
-    };
-    var greet = 'This is a greeting';
-    return {
-        greet,
-        sayName
-    }
-})();
-</code></pre>
-
-<p>```</p>
-
-<h3>The super keyword for invoking super class methods</h3>
-
-<p>JavaScript supports object oriented programming. But, implementing inheritance is tricky in JavaScript, as it is not supported natively. JavaScript even has the <code>super</code> keyword, however, it is not functional.</p>
-
-<p>Most of the JavaScript frameworks those implement inheritance have a pattern like this:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myBaseObj = {
-    sayName: function(){
-        // .. do something
-    };
-};
-
-var mySubObj = Framework.extend(myBaseObj, {
-    sayName: function(){
-        this._super.apply(this,arguments);
-        // .. do something else
-    }
-})
-</code></pre>
-
-<p><code>``
-These frameworks use</code>_super<code>(or sometimes</code>uber<code>) to invoke the parent method. This is because,</code>super` was a reserved keyword (for the future) in JavaScript, and is not allowed for use as an identifier or method.</p>
-
-<p>Now, the &ldquo;future&rdquo; has come. JavaScript&rsquo;s <code>super</code> keyword has been implemented in ES6. Now let&rsquo;s see how inheritance can be done:</p>
-
-<p>```javascript</p>
-
-<pre><code>var myBaseObj = {
-    sayName: function(){
-        // .. do something
-    };
-};
-var mySubObj = {
-    __proto__: myBaseObj,
-    sayName: function(){
-        super.sayName();
-        // .. do something else
-    }
-})
-</code></pre>
-
-<p>```</p>
-
-<p>Again, all these are just a small part of the ES6 feature-set. There are so many interesting features like Promises, Classes, Generator, Iterators, etc.</p>
-
-<h2>Summary</h2>
-
-<p>ES6 is the most promising version of JavaScript. It has so many features; features we were waiting for for years. ES6 will definitely help writing more modular and less quirky code in JavaScript.</p>
-
-<p>Here in this article, we have seen the problems with the current version of JavaScript, and how ES6 fixes the problems and the workarounds. Now, the entire ES6 feature-set is beyond the scope of this post, for that you can check out these awesome resources.</p>
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
 <ul>
-<li><a href="https://github.com/lukehoban/es6features">https://github.com/lukehoban/es6features</a></li>
-<li><a href="https://github.com/ericdouglas/ES6-Learning">https://github.com/ericdouglas/ES6-Learning</a></li>
-<li><a href="http://espadrine.github.io/New-In-A-Spec/es6/">http://espadrine.github.io/New-In-A-Spec/es6/</a></li>
-<li><a href="http://tc39wiki.calculist.org/es6/">http://tc39wiki.calculist.org/es6/</a></li>
+<li><p><a href="http://blog.phil-opp.com/rust-os/multiboot-kernel.html">a minimal x86 kernel using rust</a></p></li>
+<li><p><a href="https://qafoo.com/blog/076_quality_analyzer.html">analyze the quality of your php code</a></p></li>
+<li><p><a href="https://github.com/crosbymichael/dockerui">dockerui &ndash; a web interface for docker.</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://www.thoughtworks.com/insights/blog/domain-driven-design-services-architecture">domain driven design for services architecture</a></p></li>
+<li><p><a href="https://ponyfoo.com/articles/es6">es6 overview in 350 bullet points</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/fetching-and-serving-billions-urls-aragog">fetching and serving billions of urls with aragog | pinterest engineering</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-propertyinfo-component">new in symfony 2.8: propertyinfo component</a></p></li>
+<li><p><a href="https://github.com/nodejs/node/pull/3466">nodejs &mdash; release proposal: v5.0.0</a></p></li>
+<li><p><a href="https://engineering.pinterest.com/blog/open-sourcing-pinterest-mysql-management-tools">open-sourcing pinterest mysql management tools | pinterest engineering</a></p></li>
+<li><p><a href="https://speakerdeck.com/saro0h/overriding-symfony">overriding symfony // speaker deck</a></p></li>
+<li><p><a href="http://symfony.com/blog/paving-the-way-for-symfony-3-with-the-deprecation-detector-tool">paving the way for symfony 3 with the &ldquo;deprecation detector&rdquo; tool</a></p></li>
+<li><p><a href="http://radar.oreilly.com/2015/07/set-up-kubernetes-with-a-docker-compose-one-liner.html">set up kubernetes with a docker compose one-liner &ndash; o'reilly radar</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/10/cool-features-git-2.x/">six cool features of the git 2.x series &ndash; atlassian developers</a></p></li>
+<li><p><a href="https://remysharp.com/2015/10/14/the-art-of-debugging">the art of debugging</a></p></li>
+<li><p><a href="http://glenmaddern.com/articles/css-modules">the css modules</a></p></li>
+<li><p><a href="https://speakerdeck.com/saro0h/zendcon-2015-the-future-of-symfony-symfony3">the future of symfony : symfony3</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/the-stack-that-helped-medium-drive-2-6-millennia-of-reading-time-e56801f7c492">the stack that helped medium drive 2.6 millennia of reading time — medium engineering — medium</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/the-stack-that-helped-medium-drive-2-6-millennia-of-reading-time-e56801f7c492">the stack that helped medium drive 2.6 millennia of reading time</a></p></li>
+<li><p><a href="http://time.com/4055718/self-control-danger/?utm_content=buffercb709">the surprising danger of being good at your job | time</a></p></li>
+<li><p><a href="https://medium.com/@Heydon/things-to-avoid-when-writing-css-1a222c43c28f">things to avoid when writing css — medium</a></p></li>
+<li><p><a href="http://merrigrove.blogspot.co.uk/2015/10/visualizing-docker-containers-and-images.html">visualizing docker containers and images</a></p></li>
+<li><p><a href="https://medium.com/medium-eng/why-contenteditable-is-terrible-122d8a40e480">why contenteditable is terrible — medium engineering — medium</a></p></li>
+<li><p><a href="https://medium.com/swlh/you-might-not-need-gulp-js-89a0220487dd">you might not need gulp.js — startups, wanderlust, and life hacking — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #110]]></title>
+    <link href="http://namshi.github.io/blog/2015/10/08/newsletter-number-110/"/>
+    <updated>2015-10-08T12:57:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/10/08/newsletter-number-110</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi There!</p>
+
+<p>This week we got a new ping pong table woo hoo!
+The guys were happy to try their ping pong skills.</p></blockquote>
+
+<p>{% img center /images/ping-pong.jpg %}</p>
+
+<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="https://speakerdeck.com/dshafik/sydphp-http2-and-asynchronous-apis">[sydphp] http2 and asynchronous apis // speaker deck</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/amazon-inspector-automated-security-assessment-service/?utm_content=buffer45fb0">amazon inspector – automated security assessment service | aws official blog</a></p></li>
+<li><p><a href="https://aws.amazon.com/blogs/aws/amazon-rds-update-mariadb-is-now-available/?utm_content=buffer7fd8e">amazon rds update – mariadb is now available | aws official blog</a></p></li>
+<li><p><a href="http://www.wsj.com/articles/amazon-web-services-to-add-analytics-1443989402?utm_content=buffer2ead9">amazon web services to add analytics &ndash; wsj</a></p></li>
+<li><p><a href="https://www.percona.com/blog/2015/09/21/containing-logical-backups-mydumper-docker/">containing your logical backups: mydumper in docker</a></p></li>
+<li><p><a href="https://gridstylesheets.org/">css polyfills from the future</a></p></li>
+<li><p><a href="http://engineering.ifttt.com/oss/2015/10/06/developing-with-docker/">developing with docker at ifttt</a></p></li>
+<li><p><a href="http://askubuntu.com/questions/119534/easiest-way-to-setup-ubuntu-as-a-vpn-server">easiest way to setup ubuntu as a vpn server &ndash; ask ubuntu</a></p></li>
+<li><p><a href="http://www.wired.com/2014/10/cheating-video-poker/">finding a video poker bug made these guys rich—then vegas made them pay</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/getting-started-with-raygun-insights-and-crash-reporting-for-app-developers--cms-24852">getting started with raygun: insights and crash reporting for app developers &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/how-to-monitor-docker-based-applications-using-new-relic--cms-24891">how to monitor docker-based applications using new relic &ndash; tuts code tutorial</a></p></li>
+<li><p><a href="http://www.slideshare.net/pirhilton/how-to-name-things-the-hardest-problem-in-programming">how to name things: the hardest problem in programming</a></p></li>
+<li><p><a href="http://pascalprecht.github.io/2014/10/25/integrating-web-components-with-angularjs/">integrating web components with angularjs · pascal precht</a></p></li>
+<li><p><a href="https://github.com/json-schema-faker/json-schema-faker">json-schema faker</a></p></li>
+<li><p><a href="http://www.networkworld.com/article/2988850/opensource-subnet/linux-kernel-dev-sarah-sharp-quits-citing-brutal-communications-style.html?utm_content=buffer415e4">linux kernel dev sarah sharp quits, citing ‘brutal’ communications style | network world</a></p></li>
+<li><p><a href="http://jeff-barr.com/2014/08/19/my-first-12-years-at-amazon-dot-com/?utm_content=buffer8ed9d">my first 12 years at amazon.com &ndash; jeff barr&rsquo;s blog</a></p></li>
+<li><p><a href="http://www.wired.com/2015/10/no-comments-allowed-reddits-new-news-site-upvoted/?utm_content=bufferd8d54">no comments allowed on reddit&rsquo;s new news site &lsquo;upvoted&rsquo; | wired</a></p></li>
+<li><p><a href="https://github.com/joshburgess/not-awesome-es6-classes">not awesome: es6 classes</a></p></li>
+<li><p><a href="https://code.facebook.com/posts/1480969635539475/optimizing-android-bytecode-with-redex/?utm_content=buffere20b1">optimizing android bytecode with redex | engineering blog | facebook code</a></p></li>
+<li><p><a href="http://deirdre.net/programming-sucks-why-i-quit/?utm_content=buffer399b5">programming sucks </a></p></li>
+<li><p><a href="http://talks.php.net/tokyo15">rasmus lerdorf &ndash; speeding up the web with php 7</a></p></li>
+<li><p><a href="https://speakerdeck.com/iroy2000/react-plus-reflux-and-how-to-boost-your-development-workflow">react reflux and how to boost your development workflow // speaker deck</a></p></li>
+<li><p><a href="http://blog.fogcreek.com/refactoring-to-a-happier-development-team-interview-with-coraline-ada-ehmke/">refactoring to a happier development team – interview with coraline ada ehmke &ndash; fog creek blog</a></p></li>
+<li><p><a href="http://zachholman.com/posts/remote-first/?utm_content=bufferfad3c">remote-first vs. remote-friendly</a></p></li>
+<li><p><a href="http://www.reuters.com/article/2015/09/30/rocket-internet-results-idUSL5N1200Q720150930?utm_content=buffer8d337">rocket internet expects start-ups to break even soon | reuters</a></p></li>
+<li><p><a href="http://githubengineering.com/runnable-documentation/?utm_content=buffer9d7a8">runnable documentation: code for humans &ndash; github engineering</a></p></li>
+<li><p><a href="https://sysdig.com/announcing-microservice-level-monitoring-for-amazons-ecs/?utm_content=buffer6c052">sysdig cloud | announcing microservice-level monitoring for ecs</a></p></li>
+<li><p><a href="http://engineering.linkedin.com/network-performance/tcp-over-ip-anycast-pipe-dream-or-reality?utm_content=buffer3cd66">tcp over ip anycast &ndash; pipe dream or reality? | linkedin engineering</a></p></li>
+<li><p><a href="http://multithreaded.stitchfix.com/blog/2015/10/06/testing-is-required/">testing required, tdd optional | stitch fix technology – multithreaded</a></p></li>
+<li><p><a href="https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/">the debate around &ldquo;do we even need css anymore?&rdquo; | css-tricks</a></p></li>
+<li><p><a href="https://css-tricks.com/the-debate-around-do-we-even-need-css-anymore/?utm_content=bufferbbbe5">the debate around &ldquo;do we even need css anymore?&rdquo; | css-tricks</a></p></li>
+<li><p><a href="https://medium.com/@dte/understanding-css-selector-specificity-a02238a02a59">understanding css: selector specificity — medium</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #104]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/20/newsletter-number-104/"/>
+    <updated>2015-08-20T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/20/newsletter-number-104</id>
+    <content type="html"><![CDATA[<blockquote><p>Hello geeks,</p>
+
+<p>You know what they say &ndash; work hard, play hard! So, at Namshi, we started playing basketball, no PS4 involved! <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alessandro Nadalin</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Alessandro Cinelli (cirpo)</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David Funaro</a>, <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Luciano Colosio</a> , <a href="http://tech.namshi.io/team/#Armagan%20Kimonoglu">Armagan Kimonoglu</a>, <a href="http://tech.namshi.io/team/#Mohamed%20Amin">Mohamed Amin</a> , and <a href="http://tech.namshi.io/team/#Hossam%20Fares">Hossam Fares</a> joined in. Let&rsquo;s see if it got the team in shape :)</p>
+
+<p>And here is your weekly dose of TechThursday:</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.crn.com/slide-shows/data-center/300077566/10-big-data-business-intelligence-emerging-vendors-you-need-to-know-about.htm">10 big data/business intelligence emerging vendors you need to know about</a></p></li>
+<li><p><a href="https://github.com/unlucio/promiseKit">a collection of small and useful enhancements to es6 native promises without reinventing the wheel</a></p></li>
+<li><p><a href="http://daveyshafik.com/archives/69237-an-exceptional-change-in-php-7-0.html">an exceptional change in php 7.0</a></p></li>
+<li><p><a href="http://engineering.linkedin.com/security/open-source-tool-improve-android-application-security?utm_content=bufferbec32">an open source tool to improve android application security | linkedin engineering</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://www.forbes.com/sites/lisabrownlee/2015/08/19/ashley-madison-affairs-site-alleged-data-dump-how-to-find-it/">ashley madison affairs site alleged data dump and how to find it &ndash; forbes</a></p></li>
+<li><p><a href="http://glenmaddern.com/articles/css-modules">css modules &ndash; welcome to the future</a></p></li>
+<li><p><a href="http://blog.devopsguys.com/2015/07/31/devops-and-automating-the-repayment-of-technical-debt/">devops and automating the repayment of technical debt</a></p></li>
+<li><p><a href="https://www.igvita.com/2015/08/17/eliminating-roundtrips-with-preconnect/?utm_content=buffera2f0d">eliminating roundtrips with preconnect &ndash; igvita.com</a></p></li>
+<li><p><a href="https://blog.golang.org/go1.5?utm_content=bufferc3f93">go 1.5 is released &ndash; the go blog</a></p></li>
+<li><p><a href="http://blog.golang.org/go1.5">go 1.5 is released</a></p></li>
+<li><p><a href="http://www.dataversity.net/google-cloud-makes-data-analysis-products-dataflow-and-pubsub-generally-available/">google cloud makes data analysis products, dataflow and pub/sub, generally available</a></p></li>
+<li><p><a href="http://www.bloomberg.com/news/features/2015-07-28/how-goldman-sachs-became-a-tech-investing-powerhouse">how goldman sachs became a tech-investing powerhouse</a></p></li>
+<li><p><a href="http://www.dataversity.net/how-it-can-and-should-get-involved-in-data-analytics/">how it can and should get involved in data analytics</a></p></li>
+<li><p><a href="https://github.com/blog/2047-language-trends-on-github">language trends on github</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?t=20">making architecture matter &ndash; martin fowler keynote</a></p></li>
+<li><p><a href="http://seld.be/notes/mysql-s-group-concat-limitations-and-cascading-bad-luck">mysql&rsquo;s group_concat limitations and cascading bad luck</a></p></li>
+<li><p><a href="http://www.techrepublic.com/article/real-time-data-science-how-to-embrace-this-new-reality/">real-time data science: how to embrace this new reality</a></p></li>
+<li><p><a href="https://github.com/yudai/gotty">share your terminal as a web application</a></p></li>
+<li><p><a href="http://regex.info/blog/2006-09-15/247">source of the famous “now you have two problems” quote</a></p></li>
+<li><p><a href="http://symfony.com/blog/symfony-achieves-100-php7-compatibility">symfony achieves 100% php7 compatibility</a></p></li>
+<li><p><a href="https://tonicdev.com/">the async-friendl/time traveling/data visualizing repl for node</a></p></li>
+<li><p><a href="http://scottberkun.com/2015/mistakes-of-company-culture/">the mistakes of writing about company culture</a></p></li>
+<li><p><a href="http://www.dataversity.net/whats-the-difference-between-predictive-analytics-and-data-science/">what’s the difference between predictive analytics and data science? &ndash; dataversity</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #103]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/13/newsletter-number-103/"/>
+    <updated>2015-08-13T15:13:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/13/newsletter-number-103</id>
+    <content type="html"><![CDATA[<blockquote><p>Hi fellas,
+in the last two weeks we started having tech lightning talks here at Namshi.</p>
+
+<p>Below you can see <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> in this (creative) shot while is showing the rest of the gang
+how <a href="http://facebook.github.io/react/">React</a> works and how he used it in our latest open-source project <a href="https://github.com/namshi/roger">Roger</a>.</p>
+
+<p>{% img team center /images/posts/shidhin-react.png %}</p>
+
+<p>Talking about Roger, have you checked the blog post <a href="http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/">&ldquo;How Namshi builds Docker containers through Docker containers&rdquo;</a>?</p>
+
+<p>And ofc it&rsquo;s TechThursday:</p></blockquote>
+
+<ul>
+<li><p><a href="http://www.infoq.com/news/2015/08/netflix-universal-javascript">Netflix.com Adopts Universal JavaScript, Drops Java From Rendering Pipeline</a></p></li>
+<li><p><a href="https://github.com/h2non/toxy">Toxy: a hackable HTTP proxy to simulate server failure scenarios and unexpected network conditions</a></p></li>
+<li><p><a href="https://github.com/svenanders/universaljs">A functional reactive web library in only 4.8k</a></p></li>
+<li><p><a href="https://github.com/sjackman/makefile-example">An example of a data analysis pipeline using make</a></p></li>
+<li><p><a href="http://blog.getify.com/promises-part-1/">Best article about Promises so far</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://code.ciphertrick.com/2015/08/03/angularjs-unit-testing-tutorial-karma-jasmine/">Angularjs unit testing tutorial with karma-jasmine </a></p></li>
+<li><p><a href="https://blog.docker.com/2015/08/docker-1-8-content-trust-toolbox-registry-orchestration/">Announcing docker 1.8: content trust, toolbox, and updates to registry and orchestration | docker blog</a></p></li>
+<li><p><a href="https://reploy.io/">Build react native apps faster with reploy</a></p></li>
+<li><p><a href="https://github.com/aerofs/gockerize">Build static golang binaries and package them into minimal docker containers</a></p></li>
+<li><p><a href="http://blog.yld.io/2015/08/10/debugging-memory-leaks-in-node-js-a-walkthrough/">Debugging memory leaks in node.js &ndash; a walkthrough</a></p></li>
+<li><p><a href="https://labs.ctl.io/docker-hub-top-10">Docker hub top 10</a></p></li>
+<li><p><a href="http://www.sitepoint.com/the-es6-conundrum/">ES6 and the evolution of javascript</a></p></li>
+<li><p><a href="http://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/">Essentials of machine learning algorithms</a></p></li>
+<li><p><a href="https://blog.mozilla.org/security/2015/08/06/firefox-exploit-found-in-the-wild/">Firefox exploit found in the wild | mozilla security blog</a></p></li>
+<li><p><a href="https://medium.com/@amix3k/flux-vs-mvc-design-patterns-57b28c0f71b7">Flux vs. mvc (design patterns) — medium</a></p></li>
+<li><p><a href="http://insights.dice.com/2015/07/06/interview-qs-javascript-developers/">Interview qs for javascript developers</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/08/content-trust-docker-1-8/">Introducing docker content trust</a></p></li>
+<li><p><a href="https://medium.com/@boopathi/it-s-the-future-7a4207e028c2">It’s the future</a></p></li>
+<li><p><a href="http://blog.bitovi.com/longevity-or-lack-thereof-in-javascript-frameworks/">Longevity (or lack thereof) in javascript frameworks</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/08/monitoring-connect-applications/">Monitoring connect applications</a></p></li>
+<li><p><a href="http://kartar.net/2015/08/monitoring-survey-2015---tools/">Monitoring survey 2015 &ndash; tools – kartar.net</a></p></li>
+<li><p><a href="https://blog.cloudflare.com/middle-east-expansion/">Now serving the middle east: 4 new data centers, partnerships</a></p></li>
+<li><p><a href="http://tobyho.com/2015/06/23/polymorphism-that-just-works/">Polymorphism that just works</a></p></li>
+<li><p><a href="https://medium.com/@boopathi/promises-in-javascript-6a4a70db7b67">Promises in javascript</a></p></li>
+<li><p><a href="http://mmikowski.github.io/the_lie/">Rest, the big lie</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2015/8/7/stuff-the-internet-says-on-scalability-for-august-7th-2015.html">Stuff the internet says on scalability for august 7th, 2015 </a></p></li>
+<li><p><a href="https://github.com/substack/regex-adventure">Substack/regex-adventure</a></p></li>
+<li><p><a href="https://datafloq.com/read/challenges-opportunities-big-data-as-a-service/1389">The challenges and opportunities of big-data-as-a-service</a></p></li>
+<li><p><a href="http://blog.ng-book.com/the-ultimate-guide-to-forms-in-angular-2/">The ultimate guide to forms in angular 2 « ng-book.com – blog</a></p></li>
+<li><p><a href="https://github.com/pybee/batavia/">Tools to run python bytecode in the browser.</a></p></li>
+<li><p><a href="http://raganwald.com/2015/06/26/decorators-in-es7.html">Using es.later decorators as mixins</a></p></li>
+<li><p><a href="http://codetunes.com/2015/we-all-are-going-to-meet-in-the-elixir-world/">We all are going to meet in the elixir world</a></p></li>
+<li><p><a href="http://futurice.com/blog/why-debugging-is-all-about-understanding">Why debugging is all about understanding — futurice</a></p></li>
+<li><p><a href="http://www.quora.com/Why-do-software-engineers-tend-to-get-into-the-office-so-late">Why do software engineers tend to get into the office so late? &ndash; quora</a></p></li>
+<li><p><a href="http://www.quora.com/Why-was-Erlang-chosen-for-use-in-Facebook-chat">Why was erlang chosen for use in facebook chat?</a></p></li>
 </ul>
 
 ]]></content>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: programming | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-04T07:33:49+00:00</updated>
+  <updated>2018-07-15T10:41:02+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,14 +22,14 @@
 for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
 After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
 
-<p><img class="center" src="/images/posts/ping-pong-final.jpg"></p>
+<p>{% img center /images/posts/ping-pong-final.jpg %}</p>
 
 <blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
 
 <!-- more -->
 
 
-<p><img class="center" src="/images/posts/ping-pong-tie-sheet.jpg"></p>
+<p>{% img center /images/posts/ping-pong-tie-sheet.jpg %}</p>
 
 <blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
 
