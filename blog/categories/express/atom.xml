@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Express | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/express/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -20,7 +20,7 @@
     <id>http://namshi.github.io/blog/2017/05/28/rewriting-the-catalog-api</id>
     <content type="html"><![CDATA[<p>At the beginning of 2017, we decided to revamp our catalog API which is one of the main parts of our infrastructure, as it’s the API that serves 60 to 70% of our overall traffic.</p>
 
-<p>{% img center /images/posts/catalog_api_main.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_main.png"></p>
 
 <!-- more -->
 
@@ -73,7 +73,7 @@
 
 <p><strong>Architecture</strong></p>
 
-<p>{% img center /images/posts/catalog_api_architecture.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_architecture.png"></p>
 
 <p>The architecture consists of a cluster of Node.js applications running within docker containers each of which are capped to 1 GB of RAM and 50% of 1 CPU core. We use Kubernetes to handle auto-scaling of our application. We have a Kubernetes configuration that handles automatically scaling our application once the CPU usage reaches 40% of 1 CPU core. We also have a Redis cluster (in <a href="https://aws.amazon.com/elasticache">ElastiCache</a>) alongside a <a href="http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/">highly available S</a><a href="http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/">olr cluster</a>.</p>
 
@@ -110,7 +110,7 @@ For example, we preload some data which doesn’t change frequently, then save i
 
 <p>NewRelic was instrumental during this phase, as we were able to see if we were hitting other layers too many times:</p>
 
-<p>{% img center /images/posts/catalog_api_newrelic.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_newrelic.png"></p>
 
 <p>Why is Redis taking 10 milliseconds? Are we hitting it multiple times? Can we batch requests together and instead of sending 3 <code>HGET</code> we simply issue 1 <code>HMGET</code>? Those were the kind of things we were looking at the time. By doing so, we optimized chunks of our code and were ready to take it to the next level.</p>
 
@@ -142,31 +142,31 @@ Yeah, it’s boring.</p>
 
 <p>Now comes the time to show what we were able to achieve in terms of performance improvement. In the old application, our average response time was around 82 milliseconds.</p>
 
-<p>{% img center /images/posts/catalog_api_results_1.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_1.png"></p>
 
 <p>In the new application we managed to achieve an average response time of around 27 milliseconds — that is a 67% performance improvement:</p>
 
-<p>{% img center /images/posts/catalog_api_results_2.png  %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_2.png" title="" ></p>
 
 <p>Since averages can be misleading let’s look at the percentile graph of the new application’s response time data.</p>
 
-<p>{% img center /images/posts/catalog_api_results_3.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_3.png"></p>
 
 <p>What the graph above tells us is that 50% (red line) of our requests are served under 20 milliseconds and 95% (yellow line) of them are served below 100 milliseconds.</p>
 
 <p>Using an histogram we also see the same pattern.</p>
 
-<p>{% img center /images/posts/catalog_api_results_4.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_4.png"></p>
 
 <p>Basically, according to the histogram above, 20% of our requests are served within less than 10 milliseconds, and 53% of them are served within 20 milliseconds.</p>
 
 <p>Now let’s look at the improvements in terms of resources utilization: as indicated in the graph below, our old PHP application used to consume about 25% of 2 CPU cores and 4 GB of memory. We went live with the new application on April 12, hence the considerable drop in resource consumption that you see in the graph.</p>
 
-<p>{% img center /images/posts/catalog_api_results_5.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_5.png"></p>
 
 <p>The new application however as you can see in the graph uses way less resources. The graph below is for one of our host, which serves around 1000 rpm (requests per minute), and uses half a CPU (<a href="https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/">capped by k8s</a>) with a memory limit of 1 GB. You would agree  that’s a huge improvement on the old application!</p>
 
-<p>{% img center /images/posts/catalog_api_results_6.png %}</p>
+<p><img class="center" src="/images/posts/catalog_api_results_6.png"></p>
 
 <h2>What’s Next?</h2>
 
@@ -210,11 +210,11 @@ catalog API between February and April 2017: <a href="http://tech.namshi.io/team
 </ul>
 
 
-<p>{% img center /images/posts/web-mobile-demo.gif  %}</p>
+<p><img class="center" src="/images/posts/web-mobile-demo.gif" title="" ></p>
 
 <h2>Re-writing the styles</h2>
 
-<p>{% img center /images/posts/css-code.png  %}</p>
+<p><img class="center" src="/images/posts/css-code.png" title="" ></p>
 
 <p>We trashed the old css and rewrote it from scratch following the <a href="http://getbem.com/">BEM</a> way of doing things, which allowed us to separate styles per page and also have some of them shared between pages.
 The total size of the minified styles was 18kb, now it is <strong>10kb:</strong> almost half of our css is gone!</p>
@@ -345,7 +345,7 @@ el.addEventListener(eventType, function(e) {
 
 <p>We crafted our own slider (<a href="https://medium.com/@MohamedAmin88/slim-slider-yet-another-javascript-slider-2f2069bb72e5">read the full story here</a>):</p>
 
-<p>{% img center /images/posts/slim-slider.gif  %}</p>
+<p><img class="center" src="/images/posts/slim-slider.gif" title="" ></p>
 
 <h2>Low Fat React: Preact!</h2>
 
@@ -381,7 +381,7 @@ el.addEventListener(eventType, function(e) {
 
 <h2>Webpack, Code splitting and Preloading techniques</h2>
 
-<p>{% img center /images/posts/chunk-size.png  %}</p>
+<p><img class="center" src="/images/posts/chunk-size.png" title="" ></p>
 
 <p><strong>Code splitting: eat only what you need</strong></p>
 
@@ -405,11 +405,11 @@ el.addEventListener(eventType, function(e) {
 
 <p><strong>Before</strong></p>
 
-<p>{% img center /images/posts/before-preload.png  %}</p>
+<p><img class="center" src="/images/posts/before-preload.png" title="" ></p>
 
 <p><strong>After</strong></p>
 
-<p>{% img center /images/posts/after-preload.png  %}</p>
+<p><img class="center" src="/images/posts/after-preload.png" title="" ></p>
 
 <h2>Goodbye good old image sprites</h2>
 
@@ -442,7 +442,7 @@ el.addEventListener(eventType, function(e) {
 <p>Last but not least, one for the server-side freaks.
 In this article, we spoke a lot about frontend optimizations and the likes, but I want to share an image to show the performance of our server-side rendering process:</p>
 
-<p>{% img center /images/posts/web-mobile-results.png  %}</p>
+<p><img class="center" src="/images/posts/web-mobile-results.png" title="" ></p>
 
 <p>As you see, our <strong>average response time is around 40ms</strong> — but you shouldn’t  care, as <a href="https://www.dynatrace.com/blog/why-averages-suck-and-percentiles-are-great/">averages make for a terrible KPI</a>.</p>
 

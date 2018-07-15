@@ -4,7 +4,7 @@
   <title><![CDATA[Category: swarm | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/swarm/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
 
-<p>{% img center /images/hug_an_engineer.jpg %}</p>
+<p><img class="center" src="/images/hug_an_engineer.jpg"></p>
 
 <p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
 

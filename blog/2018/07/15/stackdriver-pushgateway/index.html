@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
+    <title>Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway &mdash; Namshi Engineering</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css"> -->
+
+    <link rel="stylesheet" type="text/css" href="/stylesheets/prism.css">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/images/namshi-logo.png"/>
+    <link href="/atom.xml" rel="alternate" type="application/rss+xml" title="Namshi Engineering" />
+    <meta name="title" content="Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway ">
+    <link rel="canonical" href="http://namshi.github.io/blog/2018/07/15/stackdriver-pushgateway/">
+    
+    
+    <meta property="og:title" content="Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway "/>
+    <meta property="og:url" content="http://namshi.github.io/blog/2018/07/15/stackdriver-pushgateway/"/>
+    
+    
+    <meta property="og:site_name" content="Namshi Engineering">
+</head>
+<body>
+
+<section class="site-nav">
+    <header>
+        <a class="brand" href="/">
+          <img src="/images/namshi-logo.png" alt="Inc">
+        </a>
+        <a href="#" class="burger-icon"></a>
+        <nav id="navigation">
+            <a href="/" class="home">Blog</a>
+            <a href="/team">Team</a>
+            <a href="https://github.com/namshi">Github</a>
+            <a href="/archives">Archives</a>
+            <a class="join-us-link" href="/join-us/">HACK WITH US</a>
+        </nav>
+        <nav class="tagline">
+            <!--<span>HACK WITH US</span>-->
+            <a href="/join-us/" class="btn btn-outline">HACK WITH US</a>
+        </nav>
+    </header>
+</section>
+
+
+<article>
+
+    <div class="container">
+        <header>
+            <div class="meta">
+                <time pubdate datetime="2018-15-July" title="July 15, 2018">July 15, 2018</time>
+            </div>
+            <h1 class="title">Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway</h1>
+            
+        </header>
+        <footer>
+            <address>
+               
+                <div class="author-pic">
+                  <img src="/images/tedj.jpg">
+                </div>
+               
+                <p>Written by <strong><a rel="author" href="/team/#Tedj Meabiou" title="Tedj Meabiou">
+                
+                    Tedj Meabiou
+                
+                </a></strong><br>
+                <span class="muted">Senior Software Engineer</span>
+                </p>
+            </address>
+
+        </footer>
+        <section>
+            <p>When running a business, being able to compare metrics to other time period helps to understand which way things are moving and take actions based on that. For example, a sudden decrease in conversion rate is something you would definitely want to monitor, and take action based on.</p>
+
+<!-- more -->
+
+
+<p>At Namshi, we are saving a bunch of &ldquo;business&rdquo; metrics and storing them in prometheus, with alerts based on conditions over those metrics (for example, <code>if hourly_visits &lt; X: trigger an alert</code>).</p>
+
+<p><img class="center" src="/images/posts/sd-metrics.png"></p>
+
+<p>We have hundreds of applications and cronjobs, periodically sending metrics to prometheus using the pushgateway, which collects metrics and makes them available to prometheus.</p>
+
+<p><img class="center" src="/images/posts/prometheus-metrics.png"></p>
+
+<p>In order to send metrics from our crons etc we can simply curl to the pushgateway:</p>
+
+<figure class='code'><pre><code class='language-bash'>echo &quot;my_metric 99&quot; | curl --data-binary @- http://PROMETHEUS_GATEWAY_ENDPOINT/metrics/job/my_job</code></pre></figure>
+
+
+<p>The alerts are defined with <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/configmap">k8s configmaps</a>, such as:</p>
+
+<figure class='code'><pre><code class='language-bash'>kind: ConfigMap
+apiVersion: v1
+metadata:
+  namespace: kube-system
+  name: foo-alert
+  labels:
+    role: alert
+data:
+  foo.rules.yaml: |
+    groups:
+    - name: foo
+      rules:
+      - alert: Foo cronjob is not running
+        expr: (last_run{job=&quot;foo&quot;} - unix_ts) &gt; 86400
+        for: 1h
+        labels:
+          some: thing
+        annotations:
+          summary: Foo cronjob not running
+          description: Foo cronjob is not running, this will affect xyz, you can fix by doing a,b,c
+          alertname: Foo cronjob not running</code></pre></figure>
+
+
+<p>Everything has been running fine until we started facing some issues related to managing the infrastructure around prometheus, which is not funny: instead of spending time managing prometheus, we could shift our efforts towards our core business.</p>
+
+<p>Google came up with <a href="https://cloud.google.com/monitoring/docs/">StackDriver</a>, which seems to fit our bill: SD has a monitoring service as well as and alerting service which allow us to send metrics and create alerts based on those metrics.
+<img class="center" src="/images/posts/sd-notifications.png"></p>
+
+<p>To send business metrics to StackDriver, we would have needed to do the following for every single app in our cluster:</p>
+
+<ul>
+<li>mount google credentials</li>
+<li>install StackDriver dependencies</li>
+<li>structure the metrics as time series as mentioned here and send them back to SD.
+For more details, <a href="https://cloud.google.com/monitoring/custom-metrics/creating-metrics">have a look at the documentation</a></li>
+</ul>
+
+
+<p>(if we were running on <a href="https://cloud.google.com/kubernetes-engine/">GKE</a> we could have avoided step #1, as Google auto-mounts credentials on its own instances)</p>
+
+<p>At Namshi we have hundreds of services, and doing that for every service would have been painful: the solution we came up with was to create something similar to the prometheus pushgateway,
+where we could just send the metrics to a gateway, and the gateway will then send those metrics back to StackDriver.
+We built a &ldquo;StackDriver pushgateway&rdquo;, and the effort that took us to migrate all services to StackDriver was as simple as changing the endpoint of the gateway.</p>
+
+<p>Interested by sending business metrics to StackDriver? Good news, as we open sourced the <a href="https://github.com/namshi/stackdriver-pushgateway">Stackdriver pushgateway</a>!</p>
+
+<p>To start sending business metrics to StackDriver, here are the 3 simple steps:</p>
+
+<ul>
+<li>get credentials from google cloud console</li>
+<li><a href="https://github.com/namshi/stackdriver-pushgateway/blob/master/index.js#L13">define your project id with an environment variable</a></li>
+<li>deploy it and start sending metrics using simple http requests:</li>
+</ul>
+
+
+<figure class='code'><pre><code class='language-bash'>echo &quot;some_metric 99&quot; | curl --data-binary @- http://STACKDRIVER_GATEWAY_ENDPOINT/metrics/label1/value1/label2/value2</code></pre></figure>
+
+
+<p>Have fun monitoring on StackDriver :)</p>
+
+            
+            <footer>
+                <span class="categories">Posted in <a class='category' href='/blog/categories/gcp/'>gcp</a>, <a class='category' href='/blog/categories/monitoring/'>monitoring</a>, <a class='category' href='/blog/categories/prometheus/'>prometheus</a>, <a class='category' href='/blog/categories/stackdriver/'>stackdriver</a></span>
+            </footer>
+            
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox"></div>
+        </section>
+
+        
+        <section>
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'namshitechblog'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+        </section>
+        
+    </div>
+</article>
+
+
+<footer class="site-footer">
+    <div class="container">
+        &copy; 2018 <a href="https://tech.namshi.io">Namshi</a> &middot;
+        
+        <nav>
+            <a href="/">Blog</a> &middot;
+            <a href="/team">Team</a> &middot; 
+            <a href="https://github.com/namshi">Github</a> &middot; 
+            <a href="/join-us/">Careers</a> 
+        </nav>
+
+        <nav class="social">
+            
+            <a href="https://twitter.com/technamshi" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter black"></i></a>
+            
+            
+            <a href="http://facebook.com/NamshiFans" title="Follow on Facebook" target="_blank"><i class="icon icon-facebook black"></i></a>
+            
+            <a href="/atom.xml" title="RSS Feed">
+                <i class="icon icon-rss black"></i>
+            </a>
+        </nav>
+    </div>
+</footer>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/main.js"></script>
+<script type="text/javascript" src="/javascripts/prism.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57bdfe0617e09a06"></script>
+
+  <!--google analytics tracking code here-->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27338864-10', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+
+
+
+</body>
+</html>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hadoop | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hadoop/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ We&rsquo;ll meet every 1st Wednesday of the month, and if you love technology as
 Feel free to ping us on twitter to know the next venue: speech proposals are welcome too!
 More news to come on this!</p>
 
-<p>{% img center /images/posts/dubytes-1st-meeting.jpg %}</p></blockquote>
+<p><img class="center" src="/images/posts/dubytes-1st-meeting.jpg"></p></blockquote>
 
 <p><strong>And here is the traditional &ldquo;selecta&rdquo; of links our team found interesting this week around the interwebs, enjoy:</strong></p>
 
@@ -97,7 +97,7 @@ More news to come on this!</p>
 
 <p>Well, we have one more <strong>T-shirt clash</strong>, as usual (Daniel and Ayham):</p>
 
-<p>{% img center /images/posts/t-shirt-daniel-ayham.jpg %}</p></blockquote>
+<p><img class="center" src="/images/posts/t-shirt-daniel-ayham.jpg"></p></blockquote>
 
 <p><strong>Important notice</strong>: There is a vulnerability in the <a href="https://github.com/namshi/jose">namshi/jose</a> library which you should worry about. For more
 information on that and how to fix it, read <a href="http://tech.namshi.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/">http://tech.namshi.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/</a></p>
@@ -161,7 +161,7 @@ information on that and how to fix it, read <a href="http://tech.namshi.io/blog/
 
 <p><strong>T-shirt clash</strong> of the week (waiting for a triple clash&hellip;) :</p>
 
-<p>{% img center /images/posts/t-shirt-lucio-oba.jpg %}</p></blockquote>
+<p><img class="center" src="/images/posts/t-shirt-lucio-oba.jpg"></p></blockquote>
 
 <p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
 

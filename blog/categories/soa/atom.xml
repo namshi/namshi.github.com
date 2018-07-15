@@ -4,7 +4,7 @@
   <title><![CDATA[Category: SOA | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/soa/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ that led to writing a small write-up about our experience.</p>
 are panning out after <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">a year and a half of SOA with
 Symfony2</a>.</p>
 
-<p>{% img center <a href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a> %}</p>
+<p><img class="center <a" src="href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a>"></p>
 ]]></content>
   </entry>
   

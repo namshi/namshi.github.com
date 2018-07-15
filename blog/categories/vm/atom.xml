@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: vm | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: VM | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/vm/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,143 +14,25 @@
 
   
   <entry>
-    <title type="html"><![CDATA[VMware fusion headless]]></title>
-    <link href="http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless/"/>
-    <updated>2015-08-02T15:30:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless</id>
-    <content type="html"><![CDATA[<p>{% img center /images/posts/osx-vmware.jpg %}</p>
+    <title type="html"><![CDATA[Newsletter #81]]></title>
+    <link href="http://namshi.github.io/blog/2015/03/12/newsletter-number-81/"/>
+    <updated>2015-03-12T12:52:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/03/12/newsletter-number-81</id>
+    <content type="html"><![CDATA[<blockquote><p>It&rsquo;s <strong>#TechThursday</strong> again!</p>
 
-<p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
-OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.
- It&rsquo;s true that there are alternatives like boot2docker, but there are some situations (more on that in a future post) where it is not enough.
-  At Namshi instead of using <code>Virtualbox</code>/boot2docker, we chose to use the more reliable and stable <code>Vmware fusion</code>. From our experience, it is actually better in terms of memory performance and sharing directories (compared to virtualbox 4, we will see if the brand new vbox 5 is better).</p>
+<p> It&rsquo;s true that we are nerds but it&rsquo;s also true that we are working for a fashion company.</p>
 
-<p>Just like  <code>Virtualbox</code>, <code>Vmware Fusion</code> is able to handle a virtual machine in headless mode (with a little bit of shell fu). <code>Headless mode</code> is a way to handle (create, start, stop) a virtual machine by just interacting from the command line. So you don&rsquo;t need to interact with the UI. Everything is hidden, even the application window. It just works.
-We were looking for a way to run the virtual machine in headless mode, just because once you start and access it with ssh, you don&rsquo;t need to bother about anything else. Sometimes leaving the window open without any interaction may cause some performance issues with the vm. Also, in Headless mode, your desktop doesn&rsquo;t consume extra memory.</p>
+<p>This is one of our attempts to get more fashionable:</p>
 
-<p>Enough talking, SHOW ME THE CODE!</p>
+<p><img class="center" src="/images/posts/lucio-with-network-cables.jpg"></p></blockquote>
 
-<p><code>
-vmrun power-commands &lt;path-to-vmx-file&gt; nogui
-</code></p>
-
-<!-- more -->
-
-
-<p>The command <code>vmrun</code> should be located in the <code>/Applications/VMwareFusion.app/Contents/Library</code> directory. The <code>power-commands</code> are all the actions  you can perform on the virtual machine (<code>start|stop|pause|halt</code>). You can get all possible options running with the <code>vmrun --help</code> command (or by checking the docs: <a href="http://www.vmware.com/pdf/vix162_vmrun_command.pdf">http://www.vmware.com/pdf/vix162_vmrun_command.pdf</a>).</p>
-
-<p>You also have to specify the virtual machine vmx file that you want to handle. By default, Vmware puts all the vm images in the user Document folder.</p>
-
-<p>In order to use the <code>vmrun</code> command without specifying the path, just create a symbolic link:</p>
-
-<p><code>sudo ln -s "/Applications/VMware Fusion.app/Contents/Library/vmrun" /usr/bin/vmrun</code></p>
-
-<p>If you are going to always use the same vm (as we are doing here at Namshi in order to use Docker in the best way), specifying the vm file&rsquo;s path can be annoying. To simplify that operation, just create a little script like:</p>
-
-<p>```</p>
-
-<h1>!/bin/sh</h1>
-
-<p>if [ -z &ldquo;$vmFile&rdquo; ]
-  then</p>
-
-<pre><code>echo "please set your 'vmFile' environment variable to point to your vm's .vmx file"
-exit 1
-</code></pre>
-
-<p>fi</p>
-
-<p>case &ldquo;$1&rdquo; in
-  start)</p>
-
-<pre><code>vmrun start "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  stop)</p>
-
-<pre><code>vmrun stop "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  suspend)</p>
-
-<pre><code>vmrun suspend "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  pause)</p>
-
-<pre><code>vmrun pause "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  unpause)</p>
-
-<pre><code>vmrun unpause "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  reset)</p>
-
-<pre><code>vmrun reset "$vmFile" nogui
-;;
-</code></pre>
-
-<p>  status)</p>
-
-<pre><code>vmrun list
-;;
-</code></pre>
-
-<p>  *)</p>
-
-<pre><code>echo "Usage: possible options are: start | stop | suspend | pause | unpause | reset | status"
-exit 1
-</code></pre>
-
-<p>esac
-<code>``
-Once you have this file in the path</code>/usr/local/bin/vm` (or the path you prefer) you are able to run these commands:</p>
-
-<p>```
-$ vm start
-$ vm stop
-$ vm pause
-&hellip;</p>
-
-<p>```</p>
-
-<p>As you can see from the script, you need one more thing: you have to define the <code>vmFile</code> <code>env</code> variable  (set it in your .bash_profile, or .zshrc):</p>
-
-<p><code>
-export vmFile="/Users/&lt;username&gt;/Documents/Virtual Machines.localized/Ubuntu 15.04 server64-bit.vmwarevm/Ubuntu 15.04 server64-bit.vmx"
-</code></p>
-
-<p>Ok, that&rsquo;s it. Easy peasy. Now you can handle your vmware vm from the command line. We are using this approach on OS X, but it should work on windows too (the helper script might work with <a href="https://www.cygwin.com/">cygwin</a>).</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #98]]></title>
-    <link href="http://namshi.github.io/blog/2015/07/09/newsletter-number-98/"/>
-    <updated>2015-07-09T14:06:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/07/09/newsletter-number-98</id>
-    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
-
-<p>We really enjoyed the Namshi Iftar this week :)</p>
-
-<p>{% img center /images/posts/namshi-iftar.jpg %}</p>
-
-<p>Hi Guys, the week is over and a we have a the usual list of links for you.</p>
-
-<h3>and here the links:</h3>
+<p><strong>Here is the traditional &ldquo;selection&rdquo; of links our team found interesting this week , enjoy:</strong></p>
 
 <ul>
-<li><p><a href="http://www.toptal.com/react/navigating-the-react-ecosystem?utm_source=javascriptweekly">A Guide to React.js Tools and Libraries | Toptal</a></p></li>
-<li><p><a href="http://danielwhittaker.me/2015/07/05/are-you-making-these-10-ddd-mistakes/">Are You Making These 10 DDD Mistakes?</a></p></li>
-<li><p><a href="http://mitchellh.com/comparing-filesystem-performance-in-virtual-machines">Comparing Filesystem Performance in Virtual Machines</a></p></li>
-<li><p><a href="http://blog.codeship.com/dockercon-2015-container-hacks-in-docker/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcBgI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Container Hacks in Docker</a></p></li>
+<li><p><a href="https://css-tricks.com/using-the-html5-history-api/">Using the HTML5 History API</a></p></li>
+<li><p><a href="http://www.uxbooth.com/articles/what-ux-can-learn-from-print/">What UX Can Learn from Print</a></p></li>
+<li><p><a href="http://0xax.gitbooks.io/linux-insides/">Linux insides ebook</a></p></li>
+<li><p><a href="https://developers.google.com/v8/experiments">V8 &ndash; Experimental new directions for Javascript</a></p></li>
 </ul>
 
 
@@ -158,34 +40,21 @@ export vmFile="/Users/&lt;username&gt;/Documents/Virtual Machines.localized/Ubun
 
 
 <ul>
-<li><p><a href="http://blog.codeship.com/container-os-comparison/">Container OS comparison</a></p></li>
-<li><p><a href="http://dalekjs.com/">DalekJS &ndash; Automated cross browser testing with JavaScript</a></p></li>
-<li><p><a href="http://blog.wolksoftware.com/decorators-reflection-javascript-typescript">Decorators &amp;Metadata reflection in Typescript</a></p></li>
-<li><p><a href="https://www.docker.com/docker-news-and-press/06.22.2015_Docker-Delivers-Native-Multi-Host-Networking-to-Advance-Distributed-Application-Portability">Docker Delivers Native Multi-Host Networking to Advance Distributed Application Portability</a></p></li>
-<li><p><a href="http://jaxenter.com/domain-driven-design-and-microservices-116672.html">Domain-driven Design and microservices &ndash; JAXenter</a></p></li>
-<li><p><a href="http://jaxenter.com/domain-driven-design-and-microservices-116672.html">Domain-driven Design and microservices</a></p></li>
-<li><p><a href="https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html">Elasticsearch: The Definitive Guide</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=xrIjfIjssLE">Erlang: the movie</a></p></li>
-<li><p><a href="http://javascript-ninja.fr/git-good-practices/">Git good practices</a></p></li>
-<li><p><a href="http://alistair.cockburn.us/Hexagonal%20architecture">Hexagonal architecture</a></p></li>
-<li><p><a href="https://medium.com/@charliedeets/how-not-to-make-your-engineer-s-life-completely-terrible-292a6d5d134c">How Not to Make Your Engineer’s Life Completely Terrible &ndash; from a designer</a></p></li>
-<li><p><a href="https://medium.com/javascript-scene/how-to-use-es6-for-isomorphic-javascript-apps-2a9c3abe5ea2">How to Use ES6 for Universal JavaScript Apps — JavaScript Scene — Medium</a></p></li>
-<li><p><a href="https://www.symfony.fi/entry/expose-your-routes-and-translations-to-your-front-end-javascript-in-symfony">How to expose your Routes and Translations to your Front End JavaScript in Symfony</a></p></li>
-<li><p><a href="http://www.slideshare.net/ziobrando/idea-stickies-green-bar-wroclaw-edition">Idea stickies green bar &ndash; Wroclaw edition</a></p></li>
-<li><p><a href="https://christianalfoni.github.io/react-webpack-cookbook/">Introduction | React Webpack cookbook</a></p></li>
-<li><p><a href="http://www.kuberneteslaunch.com/">Kubernetes 1.0 Launch</a></p></li>
-<li><p><a href="https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750">Mixins Are Dead. Long Live Composition — Medium</a></p></li>
-<li><p><a href="https://github.com/reddit/reddit-mobile/issues/247">Perf audit: Loading performance · Issue </a></p></li>
-<li><p><a href="https://medium.com/@btaylor/react-with-c-building-the-quip-mac-and-windows-apps-c63155c1531b">React with C++: Building the Quip Mac and Windows Apps</a></p></li>
-<li><p><a href="http://jaketrent.com/post/react-router-with-flux/">React-Router with Flux &ndash; Jake Trent</a></p></li>
-<li><p><a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By · React for Designers</a></p></li>
-<li><p><a href="http://www.sitepoint.com/sitepoint-smackdown-php-vs-node-js/">SitePoint Smackdown: PHP vs Node.js</a></p></li>
-<li><p><a href="http://jmfurlott.com/tutorial-setting-up-a-single-page-react-web-app-with-react-router-and-webpack/">Tutorial: Setting Up a Single Page React Web App with React-router and Webpack</a></p></li>
-<li><p><a href="http://codepen.io/32bitkid/blog/understanding-delegated-javascript-events">Understanding Delegated JavaScript Events</a></p></li>
-<li><p><a href="https://medium.com/javascript-scene/why-we-need-webassembly-an-interview-with-brendan-eich-7fb2a60b0723">Why We Need WebAssembly: An Interview with Brendan Eich — JavaScript Scene — Medium</a></p></li>
-<li><p><a href="http://blog.jetbrains.com/phpstorm/tag/phpstorm-9/">phpstorm 9 | JetBrains PhpStorm Blog</a></p></li>
+<li><p><a href="https://github.com/thephpleague/booboo">Booboo: error handler for PHP </a></p></li>
+<li><p><a href="http://blog.jetbrains.com/phpstorm/2015/03/debugging-with-phpstorm/">Debugging with PhpStorm</a></p></li>
+<li><p><a href="https://redpen.io/">RedPen: an awesome visual feedback tool</a></p></li>
+<li><p><a href="http://macleodsawyer.com/2015/03/06/nine-truths-computer-programmers-know-that-most-people-dont/">9 truths that computer programmers know that most people don&rsquo;t</a></p></li>
+<li><p><a href="http://mashable.com/2015/03/10/googles-cfo-retires-memo/?utm_content=buffer3bc8c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Google CFO retires with a candid memo about work/life balance</a></p></li>
+<li><p><a href="https://medium.com/node-js-javascript/numbers-everyone-should-know-37a93d4e0013?utm_content=buffer246df&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Numbers everyone should know</a></p></li>
+<li><p><a href="https://www.mnot.net/blog/2014/05/05/how_many_package_managers_should_i_support?utm_content=bufferb7354&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How many package managers should I support?</a></p></li>
+<li><p><a href="http://wiredcraft.com/blog/multi-host-docker-network/?utm_content=bufferfa991&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Multi-host docker network</a></p></li>
+<li><p><a href="http://blogmaverick.com/2015/03/04/why-this-tech-bubble-is-worse-than-the-tech-bubble-of-2000/?utm_content=buffer83721&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">Why this tech bubble is worse than the one in 2000</a></p></li>
+<li><p><a href="http://superuser.com/questions/297550/how-can-i-simulate-a-slow-machine-in-a-vm?utm_content=buffera730c&amp;utm_medium=social&amp;utm_source=facebook.com&amp;utm_campaign=buffer">How can I simulate a slow machine in a VM?</a></p></li>
+<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/03/introducing-Google-Cloud-Storage-Nearline-near-online-data-at-an-offline-price.html">Introducing Google Cloud Storage Nearline: (near)online data at an offline price</a></p></li>
 </ul>
 
+
+<blockquote><p>that&rsquo;s all folks, see you next week! :)</p></blockquote>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: refactor | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/refactor/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:40:19+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<blockquote><p>Hi everyone,
 we are back after the Christmas break!</p></blockquote>
 
-<p>{% img center /images/posts/christmas_team.png %}</p>
+<p><img class="center" src="/images/posts/christmas_team.png"></p>
 
 <blockquote><p>2015 is almost over and it was a great tech year here at Namshi, can&rsquo;t wait for 2016!</p>
 

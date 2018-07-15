@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fusion, | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/fusion/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless/"/>
     <updated>2015-08-02T15:30:00+00:00</updated>
     <id>http://namshi.github.io/blog/2015/08/02/vmware-fusion-headless</id>
-    <content type="html"><![CDATA[<p>{% img center /images/posts/osx-vmware.jpg %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/osx-vmware.jpg"></p>
 
 <p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
 OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.

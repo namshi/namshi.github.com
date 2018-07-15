@@ -4,7 +4,7 @@
   <title><![CDATA[Category: refactoring | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/refactoring/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -132,7 +132,7 @@ If you are there and wanna have a chat with them, just go and say &ldquo;hi!&rdq
 <p>This week we got a new ping pong table woo hoo!
 The guys were happy to try their ping pong skills.</p></blockquote>
 
-<p>{% img center /images/ping-pong.jpg %}</p>
+<p><img class="center" src="/images/ping-pong.jpg"></p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 

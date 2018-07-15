@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: prometheus | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/prometheus/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-07-15T10:41:49+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway]]></title>
+    <link href="http://namshi.github.io/blog/2018/07/15/stackdriver-pushgateway/"/>
+    <updated>2018-07-15T14:38:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/07/15/stackdriver-pushgateway</id>
+    <content type="html"><![CDATA[<p>When running a business, being able to compare metrics to other time period helps to understand which way things are moving and take actions based on that. For example, a sudden decrease in conversion rate is something you would definitely want to monitor, and take action based on.</p>
+
+<!-- more -->
+
+
+<p>At Namshi, we are saving a bunch of &ldquo;business&rdquo; metrics and storing them in prometheus, with alerts based on conditions over those metrics (for example, <code>if hourly_visits &lt; X: trigger an alert</code>).</p>
+
+<p><img class="center" src="/images/posts/sd-metrics.png"></p>
+
+<p>We have hundreds of applications and cronjobs, periodically sending metrics to prometheus using the pushgateway, which collects metrics and makes them available to prometheus.</p>
+
+<p><img class="center" src="/images/posts/prometheus-metrics.png"></p>
+
+<p>In order to send metrics from our crons etc we can simply curl to the pushgateway:
+<code>
+echo "my_metric 99" | curl --data-binary @- http://PROMETHEUS_GATEWAY_ENDPOINT/metrics/job/my_job
+</code></p>
+
+<p>The alerts are defined with <a href="https://cloud.google.com/kubernetes-engine/docs/concepts/configmap">k8s configmaps</a>, such as:</p>
+
+<p>```
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  namespace: kube-system
+  name: foo-alert
+  labels:</p>
+
+<pre><code>role: alert
+</code></pre>
+
+<p>data:
+  foo.rules.yaml: |</p>
+
+<pre><code>groups:
+- name: foo
+  rules:
+  - alert: Foo cronjob is not running
+    expr: (last_run{job="foo"} - unix_ts) &gt; 86400
+    for: 1h
+    labels:
+      some: thing
+    annotations:
+      summary: Foo cronjob not running
+      description: Foo cronjob is not running, this will affect xyz, you can fix by doing a,b,c
+      alertname: Foo cronjob not running
+</code></pre>
+
+<p>```</p>
+
+<p>Everything has been running fine until we started facing some issues related to managing the infrastructure around prometheus, which is not funny: instead of spending time managing prometheus, we could shift our efforts towards our core business.</p>
+
+<p>Google came up with <a href="https://cloud.google.com/monitoring/docs/">StackDriver</a>, which seems to fit our bill: SD has a monitoring service as well as and alerting service which allow us to send metrics and create alerts based on those metrics.
+<img class="center" src="/images/posts/sd-notifications.png"></p>
+
+<p>To send business metrics to StackDriver, we would have needed to do the following for every single app in our cluster:</p>
+
+<ul>
+<li>mount google credentials</li>
+<li>install StackDriver dependencies</li>
+<li>structure the metrics as time series as mentioned here and send them back to SD.
+For more details, <a href="https://cloud.google.com/monitoring/custom-metrics/creating-metrics">have a look at the documentation</a></li>
+</ul>
+
+
+<p>(if we were running on <a href="https://cloud.google.com/kubernetes-engine/">GKE</a> we could have avoided step #1, as Google auto-mounts credentials on its own instances)</p>
+
+<p>At Namshi we have hundreds of services, and doing that for every service would have been painful: the solution we came up with was to create something similar to the prometheus pushgateway,
+where we could just send the metrics to a gateway, and the gateway will then send those metrics back to StackDriver.
+We built a &ldquo;StackDriver pushgateway&rdquo;, and the effort that took us to migrate all services to StackDriver was as simple as changing the endpoint of the gateway.</p>
+
+<p>Interested by sending business metrics to StackDriver? Good news, as we open sourced the <a href="https://github.com/namshi/stackdriver-pushgateway">Stackdriver pushgateway</a>!</p>
+
+<p>To start sending business metrics to StackDriver, here are the 3 simple steps:</p>
+
+<ul>
+<li>get credentials from google cloud console</li>
+<li><a href="https://github.com/namshi/stackdriver-pushgateway/blob/master/index.js#L13">define your project id with an environment variable</a></li>
+<li>deploy it and start sending metrics using simple http requests:</li>
+</ul>
+
+
+<p><code>
+echo "some_metric 99" | curl --data-binary @- http://STACKDRIVER_GATEWAY_ENDPOINT/metrics/label1/value1/label2/value2
+</code></p>
+
+<p>Have fun monitoring on StackDriver :)</p>
+]]></content>
+  </entry>
+  
+</feed>

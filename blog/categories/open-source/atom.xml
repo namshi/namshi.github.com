@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: open source | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: Open Source | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/open-source/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,379 +14,105 @@
 
   
   <entry>
-    <title type="html"><![CDATA[godo, our first open source library written in golang]]></title>
-    <link href="http://namshi.github.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/"/>
-    <updated>2015-04-18T19:34:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang</id>
-    <content type="html"><![CDATA[<p>Time for some more OS goodness in these days at
-<a href="https://www.namshi.com">Namshi</a>: this time we&rsquo;ve
-been experimenting with <a href="http://golang.org/">Go</a>
-and decided to release a small project we&rsquo;ve built
-in the last couple of days.</p>
+    <title type="html"><![CDATA[node-file-ensure, a small filesystem utility to make sure a file is there]]></title>
+    <link href="http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there/"/>
+    <updated>2014-08-22T19:42:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/08/22/node-file-ensure-a-small-filesystem-utility-to-make-sure-a-file-is-there</id>
+    <content type="html"><![CDATA[<p>This weekend we&rsquo;ve come up with a small utility
+that will make our life easier, and hopefully <strong>yours</strong>
+as well!</p>
 
 <!-- more -->
 
 
-<p>The library, called <a href="https://github.com/namshi/godo">godo</a>
-(which literally means <em>go and do</em>) is trying to
-solve the problem of always doing repetitive tasks
-on remote servers (remote execution) without having
-to use more advanced tools like Fabric / Salt / etc.</p>
-
-<p>Tired of &ldquo;<em>let me check what&rsquo;s up Varnish on our frontend servers</em>&rdquo;? Enter godo.</p>
-
-<p>With godo, you define a configuration file, put it in your
-home (on your local machine) and you can start invoking
-remote commands.</p>
-
-<p>This is how your configuration file would look like:</p>
-
-<p>``` yaml ~/godo.yml
-servers:
-  web1:</p>
-
-<pre><code>address: "xxx.xxx.xx.xxx:22"
-user:    "me"
-</code></pre>
-
-<p>  web2:</p>
-
-<pre><code>address: "xxx.xxx.xx.xxx:22"
-user:    "me"
-</code></pre>
-
-<p>  db:</p>
-
-<pre><code>address: "xxx.xxx.xx.xxx:22"
-tunnel:  "tunnel.yourcompany.com:22"
-user:    "me"
-</code></pre>
-
-<p>groups:
-  web: [web1, web2]
-commands:
-  uptime:</p>
-
-<pre><code>target:       all
-exec:         "uptime"  
-description:  "Retrieves uptime info for all machines"  
-</code></pre>
-
-<p>  slow-queries:</p>
-
-<pre><code>target: db
-exec: "mysql-log -n 10"
-</code></pre>
-
-<p>  nginx-logs:</p>
-
-<pre><code>target: web
-exec: "sudo tail -10f /var/log/nginx/access.log"
-</code></pre>
-
-<p>hostfile: &ldquo;/home/YOU/.ssh/known_hosts&rdquo;
-timeout: 2
-```</p>
-
-<p>and here&rsquo;s a little GIF that is pretty self-explatory:</p>
-
-<p>{% img <a href="https://raw.githubusercontent.com/namshi/godo/master/images/gif-example.gif">https://raw.githubusercontent.com/namshi/godo/master/images/gif-example.gif</a> %}</p>
-
-<p>For more infos, please refer to the <a href="https://github.com/namshi/godo#usage">usage</a> section of the <a href="https://github.com/namshi/godo">readme</a>.</p>
-
-<h2>A bit of background&hellip;</h2>
-
-<p>We&rsquo;ve been starting to play around with Go since we believe it
-is a solid language for DevOps-ish things and is overall interesting
-and simple enough when you have to deal with stuff that needs
-to be running on different platforms &mdash; in fact, before godo
-we started hacking on go to write some small programs that run
-at our warehouse in Dubai, and run on windows :)</p>
-
-<p>Of course, Go is very different from other players in our stack
-(ie. JavaScript and the good old PHP) and serves very different
-purposes, but seems like we will be experimenting much more in the
-next months.</p>
-
-<p>Though, don&rsquo;t worry, we &lt;3 JavaScript and aren&rsquo;t planning to
-leave it anytime soon ;&ndash;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Update your namshi/jose installations as a security vulnerability was found]]></title>
-    <link href="http://namshi.github.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found/"/>
-    <updated>2015-02-19T10:44:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/02/19/update-your-namshi-slash-jose-installations-as-a-security-vulnerability-was-found</id>
-    <content type="html"><![CDATA[<p>Just a heads up on a problem we&rsquo;ve found
-thanks to <a href="http://www.timmclean.net/">Tim</a>,
-who has been reviewing some open source JWT / JWS
-implementations for fun.</p>
-
-<!-- more -->
-
-
-<p>Two days ago we rolled out a few new tags for
-the <a href="https://github.com/namshi/jose">namshi/jose</a>
-which fix a security vulnerability on the library.</p>
-
-<p>The problem was introduced in <a href="https://github.com/namshi/jose/pull/7">this PR</a>
-and would cause an attacker to be able
-to impersonate other users. <strong>If you are running
-on a vulnerable version you should upgrade
-immediately</strong>.</p>
-
-<p>As far as installations are concerned:</p>
+<p>We use cascading mechanisms for our configurations, so, for
+example, we define the config in a few different files:</p>
 
 <ul>
-<li><code>1.0</code> is not affected</li>
-<li><code>1.1</code> has been patched through <code>1.1.2</code></li>
-<li><code>1.2</code> has been patched through <code>1.2.2</code></li>
-<li><code>2.0</code> has been patched through <code>2.0.3</code></li>
-<li><code>2.1</code> has been patched through <code>2.1.2</code></li>
+<li><code>base.yml</code>, that has all the common configurations</li>
+<li><code>dev.yml</code>, which is for local environments</li>
+<li><code>staging.yml</code>, which is for our staging environment</li>
+<li><code>live.yml</code>, well&hellip;you guessed it!</li>
 </ul>
 
 
-<p>Please check your <code>composer.lock</code> and <code>composer.json</code>:
-if you run a vulnerable version simply do a <code>composer update</code>
-so that you&rsquo;ll be upgraded to a patched version.</p>
+<p>So, for example, a <code>live.yml</code> might look like:</p>
 
-<p>Users of the <a href="https://github.com/lexik/LexikJWTAuthenticationBundle">LexikJwtAuthenticationBundle</a>
-can do the same as the library requires <code>namshi/jose@~1.1</code>.</p>
-
-<p>We also opened a <a href="https://github.com/FriendsOfPHP/security-advisories/pull/49">PR</a> against the database of PHP security vulnerabilities
-rrun by the FriendsOfPHP organization, so you should be able to notice the
-issue through the <a href="https://security.sensiolabs.org/check">Sensio security checker</a>
-soon!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[winston-graylog2: a new life under Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi/"/>
-    <updated>2014-10-27T10:32:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi</id>
-    <content type="html"><![CDATA[<p>As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
-Having already in out tool belt a <a href="http://www.graylog2.org/">graylog2</a> facility in place, looking for a way to leverage it was the most natural thing to do.</p>
-
-<p>Because of its nice modular <code>transports feature</code> our node-logging weapon of choice is <a href="https://github.com/flatiron/winston">winston</a>, the <code>graylog2</code> transport library looked a bit alone though and in need of a maintainer.
-I our usual <strong>give back</strong> spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)</p>
-
-<p>As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the <a href="https://github.com/Wizcorp/node-graylog2">node-graylog2</a> library:
-they&rsquo;ll most likely do a better job than us on the protocol side, and we&rsquo;ll be able to focus more on the winston integration.
-We also started introducing some basic tests: definitely some better work can be done on this side ;)</p>
-
-<p>So here it is: <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>
-and here&rsquo;s briefly how you use it:</p>
-
-<p>the usual
-<code>bash
-npm install winston-graylog2
-</code>
-and then</p>
-
-<p>```javascript
-  var winston = require(&lsquo;winston&rsquo;);
-  winston.add(require(&lsquo;winston-graylog2&rsquo;), options);</p>
-
-<p>```</p>
-
-<p>or</p>
-
-<p>```javascript
-var WinstonGraylog2 = require(&lsquo;winston-graylog2&rsquo;);
-var logger = new(winston.Logger)({</p>
-
-<pre><code>    exitOnError: false,
-    transports: [new(WinstonGraylog2)(options)]
-  });
-</code></pre>
-
-<p>```</p>
-
-<p>Enjoy! :)</p>
-
-<p>Publishing something new is always a great feeling, and it&rsquo;s even more fulfilling when it involves not letting a project die :)<br> So let us know if you like it and share the love with some RP!!!! ;)</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[ClusterJS, clusterify your NodeJS applications and achieve zero-downtime deployments]]></title>
-    <link href="http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/"/>
-    <updated>2014-06-27T00:45:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments</id>
-    <content type="html"><![CDATA[<p>NodeJS has a very nice built-in support for clusters
-through its native <a href="http://nodejs.org/api/cluster.html">cluster module</a>:
-by using it and realizing we wanted to achieve zero-downtime
-deployments (ZDD) on our node apps we decided to kick in.</p>
-
-<!-- more -->
-
-
-<p>This afternoon <a href="/team#Luciano%20Colosio">Lucio</a> came up to me
-and asked me a simple question:</p>
-
-<blockquote><p>Let&rsquo;s do some NodeJS today?</p></blockquote>
-
-<p>and my answer was clear and simple: we need a robust solution
-for ZDD, let&rsquo;s do this.</p>
-
-<p>Before jumping with our usual <code>git init</code> and <code>npm init</code>
-we searched a bit and found a few alternatives, which
-weren&rsquo;t exactly fitting our scenarios:</p>
-
-<ul>
-<li><a href="http://learnboost.github.io/cluster/">learnboost/cluster</a>, which is
-quite old, discontinued and hasn&rsquo;t been updated in a couple of years</li>
-<li><a href="https://github.com/isaacs/cluster-master">isaacs/cluster-master</a>, which
-seems to have a whole lot of great things but we wanted to have
-the startup script as a global command rather than having to write
-a script on our own (but we might wrap it, as it
-has a lot of cool features, like resizing your cluster)</li>
-</ul>
-
-
-<p>At the end we decided to go for a simple solution after reading
-<a href="http://jaxbot.me/articles/zero_downtime_nodejs_reloads_with_clusters_7_5_2013">this post from Jax</a>
-that explains how to achieve ZDD on NodeJS.</p>
-
-<p>In a few, very productive hours, Lucio was able to write
-<a href="https://www.npmjs.org/package/clusterjs">ClusterJS</a> and
-we decided to release it to the public, as it might
-be interesting out there (and because we really like
-to receive feedbacks!).</p>
-
-<p>Suppose you have a typical <a href="http://expressjs.com/">ExpressJS</a>
-app that runs through an <code>app.js</code> script, in order to run it through
-ClusterJS you simply have to:</p>
-
-<p>```
-npm install -g clusterjs</p>
-
-<p>clusterjs path/to/app.js
-```</p>
-
-<p>At this point you should be able to see something like this:</p>
-
-<p>```
-~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js</p>
-
-<p>Booting a cluster of ./test/testApp/app.js
-We are gonna be launching 4 workers
-The cluster will reload on: SIGUSR2
-&mdash;&ndash; test app loaded as pid: 21543
-&mdash;&ndash; test app loaded as pid: 21544
-&mdash;&ndash; test app loaded as pid: 21546
-&mdash;&ndash; test app loaded as pid: 21547
-Worker 1 running!
-Worker 2 running!
-Worker 3 running!
-Worker 4 running!
-```</p>
-
-<p>Cool! You have just put your app in a cluster with four workers!</p>
-
-<p>By default, ClusterJS will boot as many workers as CPUs
-in your system; if you wanna change it, simply:</p>
-
-<p>```
-~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 10</p>
-
-<p>Booting a cluster of ./test/testApp/app.js
-We are gonna be launching 10 workers
-The cluster will reload on: SIGUSR2
-&mdash;&ndash; test app loaded as pid: 21636
-&mdash;&ndash; test app loaded as pid: 21635
-Worker 2 running!
-Worker 1 running!
-&mdash;&ndash; test app loaded as pid: 21650
-&mdash;&ndash; test app loaded as pid: 21640
-Worker 9 running!
-&mdash;&ndash; test app loaded as pid: 21639
-&mdash;&ndash; test app loaded as pid: 21641
-Worker 4 running!
-&mdash;&ndash; test app loaded as pid: 21644
-Worker 5 running!
-Worker 3 running!
-Worker 6 running!
-&mdash;&ndash; test app loaded as pid: 21648
-&mdash;&ndash; test app loaded as pid: 21646
-Worker 8 running!
-&mdash;&ndash; test app loaded as pid: 21652
-Worker 7 running!
-Worker 10 running!
-```</p>
-
-<p>How to achieve ZDD? Simply issue a SIGUSR2 command
-to your master process, after updating the files
-in your app:</p>
-
-<p>```
-~/projects/clusterjs (master ✔) ᐅ clusterjs test/testApp/app.js &mdash;workers 2
-Booting a cluster of ./test/testApp/app.js
-We are gonna be launching 2 workers
-The cluster will reload on: SIGUSR2
-&mdash;&ndash; test app loaded as pid: 22007
-&mdash;&ndash; test app loaded as pid: 22008
-Worker 1 running!
-Worker 2 running!</p>
-
-<p>SIGUSR2 received, reloading the app
-<strong><em> reloading workers!
-restarting worker: 1
-Shutdown complete for worker 1
-Worker 1 died :(
-&mdash;&ndash; test app loaded as pid: 22018
-&mdash;&ndash; test app loaded as pid: 22021
-Worker 3 running!
-Worker 4 running!
-Replacement worker online.
-</em></strong> reloading workers!
-restarting worker: 2
-Shutdown complete for worker 2
-Worker 2 died :(
-&mdash;&ndash; test app loaded as pid: 22055
-&mdash;&ndash; test app loaded as pid: 22056
-Worker 5 running!
-Worker 6 running!
-Replacement worker online.
-```</p>
-
-<p>If you want to change the signal used to reload the cluster,
-you can do it with a simple option:</p>
-
-<p><code>
-clusterjs test/testApp/app.js --workers 2 --reloadon SIGUSR1
+<p><code>yaml
+domain:   'namshi.com'
 </code></p>
 
-<p>That&rsquo;s (basically) it! Kudos to Lucio for his work and&hellip;</p>
+<p>whereas the base one has many more values:</p>
 
-<p>&hellip;if you wanna play with ClusterJS or suggest any improvement,
-feel free to have a look around, as
-<a href="https://github.com/namshi/clusterjs">ClusterJS is on GitHub</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Where in the world is Carmen San Diego?]]></title>
-    <link href="http://namshi.github.io/blog/2014/06/24/where-in-the-world-is-carmen-san-diego/"/>
-    <updated>2014-06-24T23:20:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/06/24/where-in-the-world-is-carmen-san-diego</id>
-    <content type="html"><![CDATA[<p>The team at Namshi is always on the go with some new open source project
-that lights up our weekends or solves some of the small dilemmas we daily
-face at work.</p>
+<p>
+<code>yaml
+apis:
+  version:   'v1'
+  domain:    'api.{{ domain }}'
+  baseUrl:   'https://{{ apis.domain }}'
+</code>
+</p>
 
-<!-- more -->
+<p>There&rsquo;s a problem with this approach: if one of the developers
+wants to change a value in his <code>dev.js</code> git will tell him that
+the file has changed, which is quite annoying!</p>
 
+<p>To overcome this we always put it in the <code>.gitignore</code>:</p>
 
-<p>In the past days <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a>
-has been working on one of his side projects and released
-<a href="https://github.com/unlucio/carmensandiego">CarmenSandiego</a> on Github:
-it lets you visualize your 4Square checkins on a map
-<a href="https://github.com/unlucio/carmensandiego#so-heres-how-you-do-it">in a matter of a few steps</a>,
-and it has been written in his beloved NodeJS.</p>
+<p><code>
+dev.yml
+</code></p>
 
-<p>Kudos to Lucio for releasing his work and&hellip;   &hellip;more to come!</p>
+<p>and instead commit a <code>dev.yml.example</code> file that has the
+skeleton of the file, asking everyone, when booting the application
+for the first time, to copy that file to a <code>dev.js</code>.</p>
+
+<p>Things work flawlessly until you need to do this 10 times
+(I mean, in 10 projects, like we do) or when you forget this step
+during the installation and waste a lot of time trying to debug why
+the application is not running correctly.</p>
+
+<p>To overcome this annoying issue we decided to develop a small utility,
+<a href="https://github.com/namshi/node-file-ensure">node-file-ensure</a>, that
+does all of this for you:</p>
+
+<p>``` javascript
+var ensure = require(&lsquo;file-ensure&rsquo;);</p>
+
+<p>ensure(&lsquo;./config/dev.yml&rsquo;, {from: &lsquo;./config/dev.yml.example&rsquo;});
+```</p>
+
+<p>Simple as that!</p>
+
+<p><code>ensure</code> will make sure to create an empty file if it doesnt find
+the one you specified:</p>
+
+<p><code>javascript
+ensure('./config/dev.yml');
+</code></p>
+
+<p>and is able to copy the contents from another file,
+like in the first example above:</p>
+
+<p><code>javascript
+ensure('./config/dev.yml', {from: './config/dev.yml.example'});
+</code></p>
+
+<p>If you need to run any check after <code>ensure</code> has run,
+you can provide a callback:</p>
+
+<p><code>javascript
+ensure('path/to/config/dev.yml', {src: 'path/to/config/dev.yml.example'}, function(err){
+  console.log(fs.readFileSync('path/to/config/dev.yml').toString() === fs.readFileSync('path/to/config/dev.yml.example').toString());
+});
+</code></p>
+
+<p>That&rsquo;s it! Tests run through mocha and we&rsquo;ve set them up
+on <a href="https://travis-ci.org/namshi/node-file-ensure">travis</a>,
+to be on the safe side :)</p>
+
+<p>If you have patches, suggestions or rants&hellip;feel free to open
+an <a href="https://github.com/namshi/node-file-ensure/issues">issue on GitHub</a>!</p>
 ]]></content>
   </entry>
   

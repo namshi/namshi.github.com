@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: phpunit | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: Phpunit | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/phpunit/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,137 +14,113 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #126]]></title>
-    <link href="http://namshi.github.io/blog/2016/03/03/newsletter-number-126/"/>
-    <updated>2016-03-03T14:41:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/03/03/newsletter-number-126</id>
-    <content type="html"><![CDATA[<blockquote><h1>TechThursday is here!</h1>
-
-<p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
-a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
-{% img center /images/posts/shidhin-geshan.jpg %}</p>
-
-<p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
-And here is your weekly quota of some interesting links</p>
-
-<p>Enjoy!</p></blockquote>
-
-<ul>
-<li><p><a href="https://blog.newrelic.com/2016/02/22/8-ways-become-a-better-coder/">8 ways to become a better coder</a></p></li>
-<li><p><a href="http://arxiv.org/abs/1602.07168">[1602.07168] zerodb white paper</a></p></li>
-<li><p><a href="http://www.noupe.com/inspiration/tutorials-inspiration/blob-storage-how-i-used-it-to-host-my-podcast-mp3-files-92313.html">blob storage: how i used it to host my podcast mp3 files | noupe</a></p></li>
-<li><p><a href="https://medium.com/ux-immersion-interactions/design-s-fully-baked-deliverables-and-half-baked-artifacts-761106df4ca9">design’s fully-baked deliverables and half-baked artifacts — ux immersion: interactions — medium</a></p></li>
-</ul>
-
+    <title type="html"><![CDATA[Frameworks And Tests in Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2013/09/23/frameworks/"/>
+    <updated>2013-09-23T15:44:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2013/09/23/frameworks</id>
+    <content type="html"><![CDATA[<p>As Namshi developers we spend our time doing tickets and coding tasks every day to enhance the
+website. However these changes are not stable all the time, sometimes some of these new changes
+end up breaking other working parts of our applications without a prior alert until after we deploy it on
+our website. As a result we end up having some bugs and hot fixes either immediately after testing the
+new deployment or later on when people spot the bugs. Therefore Intensive QA is important because the
+manual test only is not enough, even though if we were careful sometimes we’ll probably forget to test
+all the affected parts by our changes. And after any deployment we need to test everything and if something
+was broken we would need to fix is ASAP.</p>
 
 <!-- more -->
 
 
-<ul>
-<li><p><a href="http://mrjoy.com/2016/02/14/docker_alpine_garbage_and_you/">docker, alpine, garbage and you &ndash; mrjoy</a></p></li>
-<li><p><a href="http://nauts.io/videos/2016/02/09/dockerize-your-development-workstation/">dockerize your development workstation</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=18PNEwt18P0">don&rsquo;t let chatops become chatoops &ndash; michael ansel</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=ydWFpcoYraU">finding memory leaks in go programs</a></p></li>
-<li><p><a href="https://nathany.com/good/">go object oriented design</a></p></li>
-<li><p><a href="http://engineeredweb.com/blog/2016/path-go-pkg-mgmt/">how to fix the go package management problem</a></p></li>
-<li><p><a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a></p></li>
-<li><p><a href="http://developer.telerik.com/featured/leveling-up-your-javascript/">leveling up your javascript &ndash; telerik developer network</a></p></li>
-<li><p><a href="http://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html">logging v. instrumentation</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-clock-mocking-and-time-sensitive-tests">new in symfony 2.8: clock mocking and time sensitive tests (symfony blog)</a></p></li>
-<li><p><a href="http://www.columnfivemedia.com/work-items/infographic-no-cart-left-behind-why-shoppers-arent-following-through-on-online-purchases">no cart left behind</a></p></li>
-<li><p><a href="http://venturebeat.com/2016/02/28/playtime-is-over-investors-want-their-money-back/?utm_content=buffer7feb5">playtime is over: investors want their money back</a></p></li>
-<li><p><a href="https://articles.uie.com/three_hund_million_button/">the $300 million button ux articles by uie</a></p></li>
-<li><p><a href="https://medium.com/@pierreda/understanding-git-for-real-by-exploring-the-git-directory-1e079c15b807">understanding git for real by exploring the .git directory — medium</a></p></li>
-</ul>
+<p>We were working with <a href="http://framework.zend.com/">Zend Framework</a> which is considered as a good
+framework for MVC projects, but we decided to move to <a href="http://symfony.com/">Symfony2</a> as it is more
+user-friendly to enhance the structure of our projects and make it more organized, service based applications
+and most importantly to build automated unit tests. Automated tests are mainly important for testing our tickets
+and changes before/after they are deployed for quality assurance purposes. Moreover, such tests need to be
+integrated at early stages because it’s very hard to add them after the development of your application.
+Therefore, such tests need to be implemented in parallel with your application to make sure you cover
+all units and aspects of your application.</p>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #111]]></title>
-    <link href="http://namshi.github.io/blog/2015/10/14/newsletter-number-111/"/>
-    <updated>2015-10-14T14:34:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/10/14/newsletter-number-111</id>
-    <content type="html"><![CDATA[<blockquote><p>Hey!</p>
+<h4>Testing our project using phpunit</h4>
 
-<p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
-
-<p>{% img center /images/hug_an_engineer.jpg %}</p>
-
-<p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
+<p>Quality assurance is one of the most important aspects in application development, there are several tests
+that can be used for web applications like:</p>
 
 <ul>
-<li><p><a href="http://www.alexkras.com/11-tips-to-improve-angularjs-performance/">11 tips to improve angularjs performance</a></p></li>
-<li><p><a href="https://medium.com/@orliesaurus/api-tools-for-every-occasion-10-api-tools-released-in-2015-i-can-t-live-without-d5947d9ca9c3">api tool for every occasion</a></p></li>
-<li><p><a href="https://github.com/rimusz/coreos-osx-gui">coreos-vagrant gui for mac os x</a></p></li>
+<li><h5>Unit Test</h5></li>
 </ul>
 
 
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://www.wired.com/2015/10/meet-walking-dead-hp-cisco-dell-emc-ibm-oracle/?utm_content=bufferff50e">dell. emc. hp. cisco. these tech giants are the walking dead | wired</a></p></li>
-<li><p><a href="http://ericjmritz.name/2015/09/29/display-random-git-tips-in-your-terminal/">display random git tips in your terminal</a></p></li>
-<li><p><a href="https://github.com/docker/swarm/pull/1292">docker swarm @1.0.0</a></p></li>
-<li><p><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></p></li>
-<li><p><a href="http://www.shortlistdubai.com/events-attractions/article/4739-dubai-to-abu-dhabi-commute-in-15-minutes?utm_content=buffer827ca">dubai to abu dhabi commute in 15 minutes? &ndash; city highlights &ndash; shortlist dubai</a></p></li>
-<li><p><a href="http://www.mfranc.com/unit-testing/good-unit-test-one-assert/">good unit test &ndash; one assert | pragmatic developer</a></p></li>
-<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/">how to write unmaintainable php code</a></p></li>
-<li><p><a href="http://shadowhand.me/immutable-data-structures-in-php/">immutable data structures in php</a></p></li>
-<li><p><a href="http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html">improving angular web app performance example. &ndash; better world by better software</a></p></li>
-<li><p><a href="http://blog.thoughtram.io//angular/2015/09/17/resolve-service-dependencies-in-angular-2.html">injecting services in services in angular 2</a></p></li>
-<li><p><a href="http://jsrocks.org/2015/09/javascript-iterables-and-iterators/">javascript iterables and iterators &ndash; js rocks</a></p></li>
-<li><p><a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">learn to stop using shiny new things and love mysql | pinterest engineering</a></p></li>
-<li><p><a href="http://www.lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator">new in php 7: null coalesce operator</a></p></li>
-<li><p><a href="http://nodetuts.com/series/asynchronous-programming.html">node tuts &ndash; asynchronous programming</a></p></li>
-<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist | risingstack</a></p></li>
-<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist</a></p></li>
-<li><p><a href="https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e">nodejs: a quick optimization advice</a></p></li>
-<li><p><a href="http://zachholman.com/posts/opt-in-transparency/">opt-in transparency</a></p></li>
-<li><p><a href="https://esdiscuss.org/topic/performance-concern-with-let-const">performance concern with let/const</a></p></li>
-<li><p><a href="http://geek.bluemangointeractive.com/react-router-an-introduction/">react router: a comprehensive introduction &ndash; by blue mango geek</a></p></li>
-<li><p><a href="https://github.com/sebastianbergmann/phpunit/wiki/Release-Announcement-for-PHPUnit-5.0.0">release announcement for phpunit 5.0.0</a></p></li>
-<li><p><a href="http://zachholman.com/posts/remote-first/">remote-first vs. remote-friendly</a></p></li>
-<li><p><a href="http://llvm.org/">the llvm compiler infrastructure project</a></p></li>
-<li><p><a href="https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/">top elb health and performance metrics</a></p></li>
-<li><p><a href="http://matschaffer.com/2015/01/what-to-monitor/">what should i monitor?</a></p></li>
-<li><p><a href="http://xip.io/?utm_content=buffer557a8">xip.io: wildcard dns for everyone</a></p></li>
-<li><p><a href="https://www.sitepen.com/blog/2015/10/08/stronger-javascript/">stronger javascript?</a></p></li>
-<li><p><a href="https://shellvatore.us/2015/10/09/please-stop-curl-wgeting-directly-to-bash-sh/">PLEASE STOP CURL/WGET'ING DIRECTLY TO BASH/SH</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #37]]></title>
-    <link href="http://namshi.github.io/blog/2014/05/08/newsletter-number-37/"/>
-    <updated>2014-05-08T16:47:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/05/08/newsletter-number-37</id>
-    <content type="html"><![CDATA[<p>It&rsquo;s <strong>TechThursday</strong> again: here&rsquo;s what we&rsquo;ve been excited about over the past week!</p>
+<p>Unit Tests are usually conducted to test classes and functions within the application itself. It tests how
+some functions interact with others and if the desired output and behavior are obtained.</p>
 
 <ul>
-<li><p><a href="http://code.tutsplus.com/tutorials/key-value-observing-with-facebooks-kvocontroller--cms-20352">Key-Value Observing with Facebook&rsquo;s KVOController</a></p></li>
-<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-3-complex-conditionals--cms-20944">Refactoring Legacy Code: Part 3 &ndash; Complex Conditionals</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=MSH9yB9y4ZA">Introducing Synth &ndash; A new Node.js web framework designed just for AngularJs</a></p></li>
+<li><h5>Functional Test</h5></li>
 </ul>
 
 
-<!-- more -->
+<p>Functional test is mainly used test the integration between our application [Namshi] and other services
+and layers.</p>
 
+<p>This test is useful for checking how our application functions and interacts with internal and external services.</p>
 
-<ul>
-<li><p><a href="https://github.com/visionmedia/n">Simple flavour of node binary management, no subshells, no profile setup, no convoluted api, just simple</a></p></li>
-<li><p><a href="http://blog.codeship.io/2014/05/07/nodejs-beginners-guide.html">The Absolute Beginner’s Guide to Node.js</a></p></li>
-<li><p><a href="https://econsultancy.com/blog/64794-20-fantastically-helpful-ifttt-recipes">20 fantastically helpful IFTTT recipes &ndash; use IFTTT</a></p></li>
-<li><p><a href="http://scotch.io/tutorials/javascript/angular-routing-using-ui-router">AngularJS Routing Using UI-Router with states</a></p></li>
-<li><p><a href="https://github.com/johnkary/phpunit-speedtrap">Reports on slow-running tests in your PHPUnit test suite</a></p></li>
-<li><p><a href="http://designprinciplesftw.com/">Design principles</a></p></li>
-<li><p><a href="https://github.com/marmelab/gremlins.js/">Gremlins.js, Monkey testing library for web apps and Node.js</a></p></li>
-<li><p><a href="http://tech.namshi.io/blog/2014/05/04/git-tips-and-tricks/">Git tips and tricks</a></p></li>
-</ul>
+<h4>Why do we waste time on implementing automated tests</h4>
 
+<p>If we develop our applications without writing automated tests to save time, we will end up spending more
+time in fixing issues after each deployment. therefore adding automated tests will save our time,
+ensure the quality of our application and help us gaining the trust of our customers.</p>
+
+<h4>How to implement automated test</h4>
+
+<p>With the help of symfony2 implementing automated tests is much easier and feasible. First of all you will
+need to install <a href="http://phpunit.de/manual/current/en/index.html">phpunit</a> and then develop the test and
+ implement it in your application.</p>
+
+<h4>Would automated test modify the application&rsquo;s data</h4>
+
+<p>Automated tests should not affect/modify any data in our application. Therefore we create new databases
+for the testing environment, then we use data fixtures
+<a href="http://symfony.com/doc/current/bundles/DoctrineFixturesBundle/index.html">DoctrineFixturesBundle</a>
+to insert dummy data into the testing databases, and finally we add/delete required data before/after each test.</p>
+
+<h4>Testing <a href="http://namshi.com/">Namshi</a></h4>
+
+<p>We are implementing our tests for our application and all the services that interact with it.
+ Our purpose is to cover all aspects of <a href="http://namshi.com/">Namshi</a> with automated test (functional test or unit test)
+ to ensure the quality of our application and optimize it.</p>
+
+<p>for now we implemented around 200 test cases
+<img class="center" src="/images/posts/test-result-success.png" title="test result" ></p>
+
+<p>These tests won&rsquo;t pass if we have any bugs of the application
+<img class="center" src="/images/posts/test-result-failure.png" title="test result" ></p>
+
+<h4>How we assert test results?</h4>
+
+<p>we can assert test results in different ways depending on the response that we are expecting:
+<code>
+$this-&gt;assertEquals(400, $response-&gt;getStatusCode());
+$this-&gt;assertContains("Expected text", $crawler-&gt;filter('*')-&gt;text());
+</code></p>
+
+<p>we can also use <a href="http://php.net/manual/en/class.domxpath.php">DOMXPath</a> to filter html result
+<code>
+$xpath  = new DOMXPath($doc);
+$this-&gt;assertContains('expected value', $xpath-&gt;query("//td[@class='html tag class']")-&gt;item(0)-&gt;nodeValue);
+</code></p>
+
+<p>or we can expect exceptions
+```
+/<em>*
+ * @expectedException \Namshi\EntityBundle\Exception\InvalidPaymentMethod
+ </em>/
+ public function testServiceWithInvalidPaymentMethod()
+ {</p>
+
+<pre><code>$data   = initial data
+$result = $service-&gt;execute($data);
+</code></pre>
+
+<p> }
+```</p>
 ]]></content>
   </entry>
   

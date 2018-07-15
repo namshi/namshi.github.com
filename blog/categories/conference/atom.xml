@@ -4,7 +4,7 @@
   <title><![CDATA[Category: conference | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/conference/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -122,7 +122,7 @@ important birthday back in Paris so&hellip;hope to see you there!</p>
 Oba and Alex gave two talks about our internal technology and stack. It was a great opportunity to meet and discuss
 with other tech leads from all the Rocket Internet ventures from all around the world.</p></blockquote>
 
-<p>{% img team right /images/berlin.png %}</p>
+<p><img class="team right" src="/images/berlin.png"></p>
 
 <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
 
@@ -173,7 +173,7 @@ with other tech leads from all the Rocket Internet ventures from all around the 
     <link href="http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich/"/>
     <updated>2014-10-30T06:51:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich</id>
-    <content type="html"><![CDATA[<p>{% img left /images/posts/webtech14-ipc14.png 320 320 &lsquo;WebTechCon&rsquo; &lsquo;WebTechCon&rsquo; %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/webtech14-ipc14.png" width="320" height="320" title="&lsquo;WebTechCon&rsquo; &lsquo;WebTechCon&rsquo;" ></p>
 
 <p>I had the opportunity to attend the <a href="http://webtechcon.de/2014/">WebTechCon</a> and the <a href="https://phpconference.com/2014">International PHPConference 2014</a> as speaker in Munich, Germany.
 The location was very nice, and beeing a foodie, the food was great :).</p>
@@ -214,7 +214,7 @@ It&rsquo;s a great opportunity to understand what&rsquo;s going on in our field 
     <link href="http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london/"/>
     <updated>2014-10-02T12:26:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london</id>
-    <content type="html"><![CDATA[<p>{% img center /images/symfonylive.png 640 640 &lsquo;SymfonyLive&rsquo; &lsquo;SymfonyLive&rsquo; %}
+    <content type="html"><![CDATA[<p><img class="center" src="/images/symfonylive.png" width="640" height="640" title="&lsquo;SymfonyLive&rsquo; &lsquo;SymfonyLive&rsquo;" >
 SymfonyLive London 2014 concluded with top-notch presentations from Symfony and industry gurus. It was an exceptional
 opportunity being able to attend this conference and meet those people.</p>
 
@@ -338,7 +338,7 @@ That&rsquo;s how we started using nodejs, Angular, Docker, SPDY and much more&he
 <!-- more -->
 
 
-<p>{% img left team /images/alex.jpg %}
+<p><img class="left team" src="/images/alex.jpg">
 <a href="http://tech.namshi.io/team#Alessandro%20Nadalin">Alex</a> submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
 <a href="http://confoo.ca/en/call-for-papers/speaker/alessandro-nadalin">vote for his talks</a>.<br>
 His talks cover a wide variety of topics from Symfony, Angular, HTTP to Dockerinzing your application.</p>

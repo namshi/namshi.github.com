@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: performance | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: Performance | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/performance/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,405 +14,120 @@
 
   
   <entry>
-    <title type="html"><![CDATA[70% faster: rewriting the API that serves most of our traffic]]></title>
-    <link href="http://namshi.github.io/blog/2017/05/28/rewriting-the-catalog-api/"/>
-    <updated>2017-05-28T18:37:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2017/05/28/rewriting-the-catalog-api</id>
-    <content type="html"><![CDATA[<p>At the beginning of 2017, we decided to revamp our catalog API which is one of the main parts of our infrastructure, as it’s the API that serves 60 to 70% of our overall traffic.</p>
+    <title type="html"><![CDATA[Embracing Accelerated Mobile Pages (AMP) for Speed and Profit]]></title>
+    <link href="http://namshi.github.io/blog/2016/09/20/embracing-amp-for-the-speed-and-profit/"/>
+    <updated>2016-09-20T11:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/09/20/embracing-amp-for-the-speed-and-profit</id>
+    <content type="html"><![CDATA[<p>Over the past years, we have seen the rise of smartphones. Mobile phones and mobile browsers became more powerful as they have the hardware and processors in par with  desktops. Subsequently, this lead to a rapid growth mobile browsers usage over desktop browsers.</p>
 
-<p>{% img center /images/posts/catalog_api_main.png %}</p>
+<p>On the other hand, mobile browsers has a hidden cost &mdash; called Performance.In terms of performance, they were always been compared with Native apps. The native apps had better performance because of the underlying OS level support. They could cache big chunks of data offline, hence wouldn’t suffer from network latencies. Mobile browsers/websites didn’t have this luxury and they have to bear the performance problems, always.</p>
 
 <!-- more -->
 
 
-<p>The catalog API provides a way to access our product offering. Broadly, it serves three categories of data:</p>
+<p>UI frameworks and libraries could use the latest technologies ( CSS Animations, VirtualDom and WebComponents ..etc ) to fight with native apps in terms of rendering performance. However, page loading performance remained as the biggest issue for mobile websites. Although, the HTTP2 protocol would be able to solve some of these issues, the web needs alternate solutions.</p>
+
+<h2>Meet AMP</h2>
+
+<p>AMP &mdash; Accelerated Mobile Pages &mdash; is an open source initiative from Google to fix the slowness of mobile websites. AMP initially targeted only the publishing platforms, but sooner grown into all kind of websites. The AMP team in Google is actively working for enabling more support for E-commerce websites. You can find about that more <a href="https://amphtml.wordpress.com/2016/08/22/getting-started-with-amp-for-e-commerce/">here</a></p>
+
+<p><a href="https://www.ampproject.org/">AMP Project</a> is a collection of components and guidelines from Google on building high performing websites. These components were developed for achieving better rendering and loading performance. Google also built tools for validating the AMP pages to make sure they meet the standards.</p>
+
+<p>Once an AMP page meets the AMP html requirements, and passes the validations, Google can cache them and serve from their CDN. These caches are highly optimized for the fastest loading experience. Moreover, websites can forget about performance problems, as it&rsquo;s on Google&rsquo;s shoulder now.. :)</p>
+
+<p>Though the AMP project was started for the publishing platforms initially, it is grown from there. As of now, the AMP website has enough components to build a web page for an e-commerce website. Ebay was the first website to use AMP html in their website and now they have built more than 2 million AMP pages. You can read more about their stuff <a href="www.ebaytechblog.com/2016/06/30/browse-ebay-with-style-and-speed/">here</a></p>
+
+<h2>AMP in Namshi</h2>
+
+<p>We’re one of the top e-commerce website in MENA region. Similar to Ebay, we have seen the potential of AMP pages in e-commerce websites. AMP pages can play a vital role in the organic search results. No one would love to open a slow website even if it’s the first one in Google search results. Sooner, people will look for the AMP tag in Google results, than clicking on the first one.</p>
+
+<p>As said, giving an ultrafast loading experience to the users was our main goal. We knew that AMP would be the right choice for this ( considering the traffic from organic search results ). At this time, AMP had all the ingredients for our requirements, and more importantly, we didn’t have to make many changes to the existing website.</p>
+
+<p>We found out that the catalog pages are the best candidate for us to start with. First, because they are the most linked from organic search results. Second, AMP website had all the components required to build our catalog pages. We didn’t write a single JavaScript line of code to make it work!</p>
+
+<h2>How we started</h2>
+
+<p>As explained earlier, we chose the catalog pages for AMP. Now, let’s recap the AMP requirements:</p>
+
+<ol>
+<li>No custom JavaScript on the page</li>
+<li>All CSS has to be AMP compliant ( you cannot use specific styles, no !important ..etc ) and should be inlined in the <head> tag.</li>
+<li>Wherever applicable, AMP component should be used. For example, amp-image, amp-iframe &hellip;etc</li>
+</ol>
+
+
+<p>All these were possible in catalog pages. We started by creating an amp version of the catalog page template and linked it with the non-AMP page by providing these meta tags.</p>
+
+<p><code>html AMP-html
+&lt;meta href=”canonicalUrl” rel=“canonical” /&gt;
+</code></p>
+
+<p><code>html Original-html
+&lt;meta href=”ampUrl” rel=“amphtml” /&gt;
+</code></p>
+
+<p>Generating and serving the AMP html was straightforward in our mobile website. The only change was to add a new route prefixed with “/_amp/” to serve the catalog AMP html.</p>
+
+<p>Now, we took the basic AMP template from <a href="https://www.ampproject.org/docs/get_started/create.html">here</a> and started the validation process. AMP validation in development is really simple; Just add the ”#development=1” in the url, and AMP will show all the errors and warning in the browser developer console.</p>
+
+<p>This was the starting point. Now all we had to do is to add new markup/components and keep validating. By the end of the day, we built the complete catalog page structure with available AMP components.</p>
+
+<p>The next big thing was the styling. As per the AMP requirements, we had to inline the whole CSS required for the catalog pages. These are the two tools came in handy for us:</p>
 
 <ul>
-<li>static pages (<a href="https://en-ae.namshi.com/women/">https://en-ae.namshi.com/women/</a>)</li>
-<li>product details (<a href="https://en-ae.namshi.com/buy-anaya-patchwork-detail-kaftan-for-women-kaftans-263349.html">https://en-ae.namshi.com/buy-anaya-patchwork-detail-kaftan-for-women-kaftans-263349.html</a>)</li>
-<li>product listing with search and suggestions (<a href="https://en-ae.namshi.com/women-clothing-arabian_clothing/">https://en-ae.namshi.com/women-clothing-arabian_clothing/</a>)</li>
+<li><a href="https://github.com/purifycss/purifycss">Purify CSS</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/css-used/cdopjfddjlonogibjahpnmjpoangjfff">Chrome browser extension for extracting used CSS</a></li>
 </ul>
 
 
-<p>Static pages, which are HTML files prepared by our content team, are stored on the file system. The product details are a set of product-specific information; the bulk of that information is stored in Redis so that we only have to go to the database to fetch stock availability for a particular product (as we want that to be real-time and extremely accurate). Product search and suggestions are powered by Solr, using keys based on product category, brand and so on.</p>
+<p>Once we had the required CSS generated, the final step was to integrate it with the build process. It was not a big deal, as we had to add a new gulp task to generate the AMP html and inline the CSS with it.</p>
 
-<p>We had two main goals for the rewrite: better performance and more ease of extensibility. In this post, we talk about how we managed to achieve those goals and our overall journey moving the products catalog API from our legacy PHP application to a Node.js microservice.</p>
+<p>Last but not least, building the structured data for each catalog pages. AMP required structured data for validation &mdash; but dropped later ( <a href="https://support.google.com/webmasters/answer/6211453?hl=en">see this</a> ) &mdash; and this was pretty much an easy step. The structured data is processed and included at runtime based on the catalog page content.</p>
 
-<h2>Why did we decide to rewrite it?</h2>
+<h2>Main Challenges</h2>
 
-<p>Our catalog API was built on top of our initial, chubby <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">API layer powered by Symfony2</a> — a single repository hosting a few other functionalities of our architecture, like checkouts and customer profiles, all deployed as a single building block.</p>
-
-<p>As the months went by, we decided to shift towards microservices and go for a rewrite because:</p>
+<p>Here are the main challenges faced during the development.</p>
 
 <ul>
-<li>a new, clean implementation is free from other dependencies, not tied to our shared API layer.</li>
-<li>we could move away from PHP: as much as the language and platform have evolved since we started using it (we started with PHP 5.3, the PSR-0…those times!), we feel that other platforms provide a <a href="https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">“nicer” development experience</a><a href="https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/">.</a></li>
-<li>we’re very bullish on <a href="http://www.grpc.io/">gRPC</a> as the next-gen standard for communicating among microservices, and that wasn’t easy to support with our legacy implementation. Furthermore, even though that’s bound to change, you cannot build gRPC servers in PHP as only the client-side part is implemented.</li>
+<li><p><strong>No support for custom JavaScript:</strong>
+AMP components are optimized for rendering performance. That’s why they restricted the usage of any other JavaScript code on the page. This wouldn’t be a problem if we were building everything from scratch, but it can be challenging when trying to build an AMP version of an existing page.</p></li>
+<li><p><strong>Some components are still missing:</strong>
+Initially AMP was more focused on content publishing platforms, hence most of the components are built for that. However, the project is growing and they have enough components for building a catalog page. However, while developing the AMP pages for our catalog pages, we wanted to use the TABS component, but it was not available. Therefore, we couldn’t build the same UI of our normal catalog page in AMP.</p></li>
+<li><p><strong>Optimizing existing CSS for AMP requirements:</strong>
+AMP has some restrictions on the CSS that should be used on the page. This can be tricky when converting an existing page to AMP, as you might have to manually remove style rules to make the validation pass. To know more, see the AMP styling <a href="https://www.ampproject.org/docs/guides/responsive/style_pages.html">requirements</a></p></li>
+<li><p><strong>Analytics:</strong>
+This was the biggest problem for us. We were using GTM ( Google Tag Manager ) for our website, but, AMP does not have any support for GTM scripts. Because of this, we couldn’t use our existing GTM script for tracking the AMP pages.
+As of now, AMP analytics component supports multiple vendor configurations. The whole list can be found <a href="https://github.com/ampproject/amphtml/blob/master/extensions/amp-analytics/0.1/vendors.js">here</a>.For the time being, we use only the Google analytics component in our AMP pages.</p></li>
 </ul>
 
 
-<p>We could go on and mention a whole bunch of other reasons but, fundamentally, it all boils down to the fact that we needed to <strong>move away from our shared API layer</strong>. It served its purpose very well, allowing us to do <a href="https://en.wikipedia.org/wiki/Rapid_application_development">RAD</a> with very little overhead, unified deployments and shared dependencies. As the number of services grew larger and larger we decided to shift the complexity from the code (imagine maintaining an app with many responsibilities) to the architecture (imagine maintaining X apps with 1 responsibility): time to extract the beast!</p>
+<h2>The RESULT was amazing</h2>
 
-<p><em>(if you are interested in why we didn’t start with microservices to begin with, we’d recommend having a look at</em> <em><em><a href="http://highscalability.com/blog/2014/4/8/microservices-not-a-free-lunch.html"><em>Microservices: not a free lunch</em></a> </em>on High Scalability and</em> <a href="https://martinfowler.com/articles/microservice-trade-offs.html"><em>Microservice tradeoffs</em></a> <em>by Martin Fowler)</em></p>
+<p>Less than 6 months ago, Google started showing AMP page in the “Top stories” news carousel. The news carousel was a special section on top of the search results, and shows only the AMP pages for articles and news.</p>
 
-<h2>Why NodeJs?</h2>
+<p>Last month, Google announced the AMP support for all the other type of web pages. This means, Google will start indexing all type of AMP pages, and will display them with an AMP tag ( <img src="/images/posts/AMP_logo.png" alt="amp-fast-logo" /> ) in search results. The lighting fast symbol implies that the page is actually cached in Google CDN and served as fast as possible.</p>
 
-<p>We’ve banked on JavaScript for quite some time, as we realized it’s the <em>lingua franca</em> that everyone’s able to speak. Software engineers get comfortable fairly quickly with it, and with ES6 and async/await (which we use through <code>node --harmony-async-await</code>), the language looks less of a weirdo 😃</p>
+<p>As per Google,</p>
 
-<p>Another reason to pick it was the fact that NodeJS is quite fast, especially for I/O heavy applications because it naturally handles I/O in a non-blocking manner, giving us a high throughput.</p>
+<blockquote><p>we’ve seen incredible global adoption of AMP that has gone beyond the news industry to include e-commerce, entertainment, travel, recipe sites and so on. To date we have more than 150 million AMP docs in our index, with over 4 million new ones being added every week. As a result, today we’re sharing an early preview of our expanded AMP support across the entire search results page &mdash;not just the “Top stories” section.</p></blockquote>
 
-<p>How fast? Well, <strong>fast enough</strong>.</p>
+<p>To support a better user experience for AMP in search results, Google provided an early preview demo page. This is actually useful for developers to test their AMP pages before Google go live with AMP search result. So far, we have most of our catalog pages indexed, and the early AMP search results preview looks amazing.</p>
 
-<p>We look at milliseconds, not microseconds, when we want to optimize the performance of our services, so having a platform that lets us efficiently schedule work <a href="https://bytearcher.com/articles/parallel-vs-concurrent/">concurrently</a> is all we need. The fact that we’re running in a “VM” (as opposed to the request-response-death model of traditional PHP deployments) lets us do some performance optimizations with objects we need to re-use across requests — and we will explain those in detail later in this post. Let’s just say that we want a platform that can serve a sizable chunk of our HTTP requests <strong>within 20ms or less</strong>, and NodeJS does it very well.</p>
+<p><img class="center" src="/images/posts/namshi-amp-demo.gif" title="&lsquo;Namshi AMP Demo&rsquo; &lsquo;Namshi AMP Demo&rsquo;" ></p>
 
-<p>What we think JS sucks at is that <strong>large codebases tend to become unmaintainable</strong>, so we’ve made it our goal to <strong>never end up with a large JavaScript codebase</strong>. Most of our applications are microservices deployed on Docker containers, and re-writing good chunks of them won’t require more than a few weeks: we believe this leads to manageable JS applications, without needing Typescript, 100% test coverage &amp; the likes.</p>
+<p>This is the kind of page loading experience we wanted to provide to our customers, and AMP was the right choice for us. We’re pretty happy with the outcome and very much excited to see the actual results once Google rollout AMP search.</p>
 
-<p>Our answer to how to grow a JS codebase? <strong>Don’t grow it, split it</strong>!</p>
+<p>If you want to see the AMP preview, go to <strong><a href="https://g.co/ampdemo">g.co/ampdemo</a></strong> (in a mobile browser) and try the search query “namshi lacoste shoes”. We want your feedbacks!</p>
 
-<h2>Design</h2>
+<h2>Future Work</h2>
 
-<p><strong>Architecture</strong></p>
+<p>Currently we have only the catalog pages AMP-fied. We would like to try it out on more pages &mdash; once more components are available.</p>
 
-<p>{% img center /images/posts/catalog_api_architecture.png %}</p>
+<p>Moreover, we need to make the transition from AMP pages to the regular pages as smooth as possible. The best plan would be to use a service worker to cache all the assets from the website. The service worker can be installed either using a <a href="https://ampbyexample.com/components/amp-install-serviceworker/">amp-service-worker component</a>  or <a href="https://philna.sh/blog/2016/08/17/install-a-service-worker-declaratively/">declaratively</a> with a link tag. More importantly, this will open doors to more cool experiments like push notifications, app-shell caching ..etc. The AMP+SW combo seems to work well, and if you want to see a working example, checkout the <a href="https://www.ampproject.org/">AMP website</a>.</p>
 
-<p>The architecture consists of a cluster of Node.js applications running within docker containers each of which are capped to 1 GB of RAM and 50% of 1 CPU core. We use Kubernetes to handle auto-scaling of our application. We have a Kubernetes configuration that handles automatically scaling our application once the CPU usage reaches 40% of 1 CPU core. We also have a Redis cluster (in <a href="https://aws.amazon.com/elasticache">ElastiCache</a>) alongside a <a href="http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/">highly available S</a><a href="http://tech.namshi.io/blog/2017/02/06/towards-high-availability-and-beyond/">olr cluster</a>.</p>
+<p>We also want to add HTTP2 and Server push to our mix and experiment with them. These are all the features we’re planning to add to the current setup.</p>
 
-<p>Sidecar is a container running beside each instance of our catalog API, responsible for downloading the static HTML files from Amazon’s S3 when we want to update our static pages. It first downloads them to a shared volume and then notifies the catalog API by creating an update lock file: the application is always checking for the existence of this lock file and, once it finds it, it will clear the internally cached static files.  You can checkout our open source <a href="https://github.com/namshi/s3-sidecar">s3-sidecar</a>.</p>
-
-<h2>The tools we use</h2>
-
-<h3>Memoization</h3>
-
-<p>A lot of our requests generate high number of cache misses, primarily because of small differences between requests, and we used to have a reverse proxy layer, powered by Varnish, that would serve cached results to around 20/25% of the requests. In order to simplify our architecture we decided to remove this layer (all in all, we didn’t have a high hit-rate) and use application level cache (through <a href="https://github.com/medikoo/memoizee">memoizee</a>) extensively, caching data used to service the request rather than caching the response itself.
-For example, we preload some data which doesn’t change frequently, then save it in memory and update it at intervals — this reduces the number of times we need to call external systems such as Redis, and speeds up the response time. Worth to note that we also use <code>memoizee</code> to cache our Solr request and, as much as we thought of putting Varnish in front of Solr, we eventually realized we didn’t need such complexity.</p>
-
-<h3>Redis Pooling</h3>
-
-<p>Instead of creating a new connection to Redis every time we need data, we created a connection pool to manage and reuse connection to Redis: the pool will keep a minimum number of open connections, and make sure we don’t exceed the maximum number of connections set in our configuration. This way we can keep less connections open, and scale them up fairly quickly when the app gets hammered by more traffic.</p>
-
-<p>(<em>We used the</em> <a href="https://github.com/coopernurse/node-pool"><em>generic-pool</em></a> <em>module to avoid re-inventing the wheel 😃 )</em></p>
-
-<h3>Redis Client Proxy</h3>
-
-<p>In order to centralize error, timeout and response handling when we interact with Redis, we added a proxy layer on top of the widely used <a href="https://github.com/NodeRedis/node_redis">redis module</a>, so that acquiring a connection, executing an operation and releasing the connection are abstracted away, with a promise-based interface: we released this as an open source <a href="https://github.com/namshi/node-redis-wrapper">redis wrapper</a> that contains both pooling connections and the proxying calls to redis.</p>
-
-<h2>Going live</h2>
-
-<p>You know how live deployment should be? <strong>Boring as hell</strong>, and we’ve embraced this philosophy when rolling out this new API: the adrenaline of clicking the red button and rolling out the service at once is tempting, but the software engineer in you knows that it’s best to go live incrementally, fully prepared, aware of all the risks and ready to yawn as everything goes as expected.</p>
-
-<p>Before going live, we decided to take a dual approach at benchmarking: first we would make sure that responses were “fast enough”, then that they were “scalable enough”.</p>
-
-<h3>Being “fast enough”</h3>
-
-<p>It’s generally easy to think of the operations a piece of code is doing and say “hey, this shouldn’t take more than 5 milliseconds”, and that’s what we exactly did: we simply rolled out to staging fairly early on and started doing some load testing with <a href="https://github.com/tsenart/vegeta">vegeta</a>.</p>
-
-<p>After looking at the results coming from vegeta, we would then analyze them and figure out if they seemed reasonable to us: does <code>GET /some-content</code> involve calling Redis a couple times? Then it shouldn’t take more than 5 milliseconds. Does <code>GET /product1.html</code> need to fetch stock data from a slower DB? Then we should definitely be within 20/30 milliseconds. Is node taking more than 15 milliseconds on a particular route? Then we probably need to look at the way our code is organized, search for unneeded loops, and optimize.</p>
-
-<p>NewRelic was instrumental during this phase, as we were able to see if we were hitting other layers too many times:</p>
-
-<p>{% img center /images/posts/catalog_api_newrelic.png %}</p>
-
-<p>Why is Redis taking 10 milliseconds? Are we hitting it multiple times? Can we batch requests together and instead of sending 3 <code>HGET</code> we simply issue 1 <code>HMGET</code>? Those were the kind of things we were looking at the time. By doing so, we optimized chunks of our code and were ready to take it to the next level.</p>
-
-<blockquote><p><strong>A note on the computational cost of abstractions</strong></p>
-
-<p>Lodash is a very popular JavaScript library that provides generic abstractions to solve various problems. One of them is the “<a href="https://lodash.com/docs/4.17.4#pick">pick</a>” function which is used to pick a property from an object.</p>
-
-<p>It turns out that this convenient abstraction comes at a cost.</p>
-
-<p>Normally getting a property value from an object in JavaScript cost O(1) on the average case, but lodash’s pick’s implementation costs a O(n) on all cases where n is the length of properties within the object; in our case,
-we were looping over hundreds of products and the delay in performance was not acceptable, so we opted to lose the abstraction provided by lodash in this regard.</p></blockquote>
-
-<h3>Being “scalable enough”</h3>
-
-<p>Now, we’re no fools (or at least we like to believe so!), so we were sure that doing a bunch of “static” benchmarks with vegeta wouldn’t really tell us how the application would behave in production, where the amount of traffic and the variety of requests are very different.</p>
-
-<p>We started testing the “elasticity” of the app: take down all instances but one and start bombing it with incremental traffic, so we can observe how it reacts to an increase in traffic. We did so with a <a href="https://github.com/odino/quick-load-incremental">silly bash script</a> that would send X requests for a few minutes, give the service a break, then send 2X requests, 3X etc. This showed that the app could easily adapt to different levels of traffic, and we could focus on the next step.</p>
-
-<p>Even though we now realized the app could take on a higher load without suffering too much, our tests were still too unrealistic: we were probing a few, known URLs, whereas live traffic would be spread across many different URLs — products with 1 size, multiple sizes, products with many different related products, categories with very few products, categories with a plethora of products and so on. <strong>Replaying live traffic was a must</strong>.</p>
-
-<p>Luckily, we discovered <a href="https://goreplay.org/">goreplay</a> a couple years back and fell in love with it. It lets you replay TCP traffic from one host to another one, without much overhead (it doesn’t act as a proxy, it just analyzes network packets and replays them, kind of a <a href="https://github.com/buger/goreplay/wiki/Capturing-and-replaying-traffic">tcpdump on steroids</a>). We then scaled up our staging cluster and replayed most of our live traffic to staging, observed the metric and let the replay run for hours and eventually days, until we were comfortable that the new app could sustain the live traffic very well.</p>
-
-<p>We finally decided to deploy the application to production, but did not switch everything to the new API in one go as that could have brought down our entire website in case there were any issues that we hadn’t caught in the previous stages. So we went for the <strong>boring partial deployments</strong> approach: we kept the old app running and we started progressively switching traffic to the new app.</p>
-
-<p>First, we picked the country with the least amount of traffic, then monitored the app, fixed the small bugs that would occur and repeated that same process for each one of the countries we serve until all the traffic was switched to the new app — the whole process took about two weeks.
-Yeah, it’s boring.</p>
-
-<h2>Results</h2>
-
-<p>Now comes the time to show what we were able to achieve in terms of performance improvement. In the old application, our average response time was around 82 milliseconds.</p>
-
-<p>{% img center /images/posts/catalog_api_results_1.png %}</p>
-
-<p>In the new application we managed to achieve an average response time of around 27 milliseconds — that is a 67% performance improvement:</p>
-
-<p>{% img center /images/posts/catalog_api_results_2.png  %}</p>
-
-<p>Since averages can be misleading let’s look at the percentile graph of the new application’s response time data.</p>
-
-<p>{% img center /images/posts/catalog_api_results_3.png %}</p>
-
-<p>What the graph above tells us is that 50% (red line) of our requests are served under 20 milliseconds and 95% (yellow line) of them are served below 100 milliseconds.</p>
-
-<p>Using an histogram we also see the same pattern.</p>
-
-<p>{% img center /images/posts/catalog_api_results_4.png %}</p>
-
-<p>Basically, according to the histogram above, 20% of our requests are served within less than 10 milliseconds, and 53% of them are served within 20 milliseconds.</p>
-
-<p>Now let’s look at the improvements in terms of resources utilization: as indicated in the graph below, our old PHP application used to consume about 25% of 2 CPU cores and 4 GB of memory. We went live with the new application on April 12, hence the considerable drop in resource consumption that you see in the graph.</p>
-
-<p>{% img center /images/posts/catalog_api_results_5.png %}</p>
-
-<p>The new application however as you can see in the graph uses way less resources. The graph below is for one of our host, which serves around 1000 rpm (requests per minute), and uses half a CPU (<a href="https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/">capped by k8s</a>) with a memory limit of 1 GB. You would agree  that’s a huge improvement on the old application!</p>
-
-<p>{% img center /images/posts/catalog_api_results_6.png %}</p>
-
-<h2>What’s Next?</h2>
-
-<p>We are really happy with what we have achieved so far with the rewrite of the catalog&rsquo;s API. As we move forward, we would like to keep improving it — as we do for all of our codebase — by introducing appropriate tools and technologies. For example we would like to upgrade to node 8 so that we can take advantages of some nice features such as <code>async</code>  and <code>await</code> (without relying on harmony flags). We are also exploring the idea of using gRPC in order to improve how we do distributed systems overall.</p>
-
-<p>If what you read here sounds interesting to you and you would like to build cool stuff with us, <a href="http://tech.namshi.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/">please come join us</a>.</p>
-
-<p><em>This article has been a joint effort between the backenders that revamped our
-catalog API between February and April 2017: <a href="http://tech.namshi.io/team/#Ayham%20Alzoubi">Ayham</a> and <a href="http://tech.namshi.io/team/#Joe%20Jean">Joe</a>.</em></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #120]]></title>
-    <link href="http://namshi.github.io/blog/2016/01/07/newsletter-number-120/"/>
-    <updated>2016-01-07T15:26:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/01/07/newsletter-number-120</id>
-    <content type="html"><![CDATA[<blockquote><p>Hello everyone,
-for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
-After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
-
-<p>{% img center /images/posts/ping-pong-final.jpg %}</p>
-
-<blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
-
-<!-- more -->
-
-
-<p>{% img center /images/posts/ping-pong-tie-sheet.jpg %}</p>
-
-<blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
-
-<ul>
-<li><p><a href="http://jason.pureconcepts.net/2015/08/100-days-practicing-tdd/">100 days practicing tdd</a></p></li>
-<li><p><a href="https://addyosmani.com/blog/using-npm-offline/">addyosmani.com &ndash; offline installation of npm packages</a></p></li>
-<li><p><a href="http://rmurphey.com/blog/2015/11/25/building-for-http2?utm_content=buffer6a67a">building for http/2</a></p></li>
-<li><p><a href="https://medium.com/packt-publishing/docker-has-turned-us-all-into-sysadmins-f4269c8be388">docker has turned us all into sysadmins — packt publishing — medium</a></p></li>
-<li><p><a href="http://onehungrymind.com/build-a-simple-website-with-angular-2/">get started with angular 2 by building a simple website – one hungry mind</a></p></li>
-<li><p><a href="http://stackoverflow.com/questions/5360586/how-can-i-combine-two-non-sequential-git-commits-into-one">how can i combine two non-sequential git commits into one? &ndash; stack overflow</a></p></li>
-<li><p><a href="https://github.com/braydie/HowToBeAProgrammer">how to be a programmer</a></p></li>
-<li><p><a href="https://github.com/petehunt/react-howto">how to tackle the react ecosystem</a></p></li>
-<li><p><a href="https://glebbahmutov.com/blog/instant-web-application/">instant web application | better world by better software</a></p></li>
-<li><p><a href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support">internet explorer end of support</a></p></li>
-<li><p><a href="http://engineeringblog.yelp.com/2016/01/dumb-init-an-init-for-docker.html">introducing dumb-init, an init system for docker containers</a></p></li>
-<li><p><a href="http://tomdale.net/2015/11/javascript-frameworks-and-mobile-performance/">javascript frameworks and mobile performance : tom dale</a></p></li>
-<li><p><a href="http://rohannair.ca/learning-javascript">learning javascript (part 1)</a></p></li>
-<li><p><a href="https://voice.kadira.io/let-s-compose-some-react-containers-3b91b6d9b7c8">let’s compose some react containers — kadira voice — medium</a></p></li>
-<li><p><a href="http://www.slideshare.net/javier.eguiluz/new-symfony-tips-tricks-symfonycon-paris-2015">new symfony tips </a></p></li>
-<li><p><a href="https://medium.com/cool-code-pal/one-world-one-language-15be446f8809">one world, one language — css perverts </a></p></li>
-<li><p><a href="https://medium.com/@franciov/one-year-of-web-components-855490359d1b">one year of web components — medium</a></p></li>
-<li><p><a href="https://mail.python.org/pipermail/core-workflow/2016-January/000345.html?utm_content=buffer11c43">python moving to github</a></p></li>
-<li><p><a href="https://medium.com/rackt-and-roll/react-router-s-future-c026c0f2874f">react router’s future — rackt and roll — medium</a></p></li>
-<li><p><a href="https://medium.com/@housecor/react-s-jsx-the-other-side-of-the-coin-2ace7ab62b98">react’s jsx: the other side of the coin — medium</a></p></li>
-<li><p><a href="https://medium.com/@andrewingram/recipe-oriented-documentation-1601caed8a44">recipe-oriented documentation</a></p></li>
-<li><p><a href="https://medium.com/@sebmck/2015-in-review-51ac7035e272">sebastian mckenzie: 2015 in review </a></p></li>
-<li><p><a href="http://www.yacoset.com/Home/signs-that-you-re-a-good-programmer">signs that you&rsquo;re a good programmer &ndash; software engineering tips</a></p></li>
-<li><p><a href="http://ilkka.io/blog/static-sites-with-docker/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57uUsUaa3lMI/0ER3fOvrPUfGjI4DTcNkI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">static sites with docker — ilkka.io</a></p></li>
-<li><p><a href="http://lakion.com/blog/tdd-your-api-with-symfony-and-phpunit">tdd your api with symfony and phpunit</a></p></li>
-<li><p><a href="http://cli.learncodethehardway.org/book/">the command line crash course</a></p></li>
-<li><p><a href="https://getcomposer.org/doc/04-schema.md">the composer.json schema &ndash; autoload dev</a></p></li>
-<li><p><a href="http://elbenshira.com/blog/the-end-of-dynamic-languages/">the end of dynamic languages</a></p></li>
-<li><p><a href="http://www.2ality.com/2015/12/bundling-modules-future.html?m=1">the future of bundling javascript modules</a></p></li>
-<li><p><a href="https://blog.andyet.com/2015/12/31/the-future-of-node-is-microsofts-fork/?utm_content=bufferc21cf">the future of node is in microsoft’s fork</a></p></li>
-<li><p><a href="http://rubyronin.com/the-truth-about-working-at-a-japanese-company/?utm_content=buffer5ef36">the truth about working at a japanese company &ndash; the ruby ronin</a></p></li>
-<li><p><a href="http://g14n.info/2015/12/tiny-npm-package/?utm_content=bufferce3fb">tiny npm package</a></p></li>
-<li><p><a href="https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225">want to learn javascript in 2015 / 2016? — medium</a></p></li>
-<li><p><a href="https://medium.com/@ryanflorence/welcome-to-future-of-web-application-delivery-9750b7564d9f">welcome to future of web application delivery — medium</a></p></li>
-<li><p><a href="http://carlosbecker.com/posts/good-code/">what good code is? – carlos alexandro becker</a></p></li>
-<li><p><a href="http://matthewkirk.com/why-did-i-write-a-machine-learning-book-in-ruby/?utm_content=buffer4f976">why did i write a machine learning book in ruby?</a></p></li>
-<li><p><a href="https://medium.com/@mikesherov/writing-clear-code-not-clever-code-d6b90353a3c5">writing clear code, not clever code</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #115]]></title>
-    <link href="http://namshi.github.io/blog/2015/11/19/newsletter-number-115/"/>
-    <updated>2015-11-19T14:06:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/11/19/newsletter-number-115</id>
-    <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
-
-<p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
-Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
-
-<p>{% img center /images/posts/oba-cirpo-docker-con-15.jpg %}</p>
-
-<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
-
-<ul>
-<li><p><a href="http://blog.takipi.com/7-essential-slack-integrations-developers-should-know/">7 essential slack integrations developers should know | takipi blog</a></p></li>
-<li><p><a href="http://magento.com/blog/magento-news/new-era-commerce-innovation?mkt_tok=3RkMMJWWfF9wsRolvanAZKXonjHpfsX66uQtWqawlMI/0ER3fOvrPUfGjI4CRMBqI+SLDwEYGJlv6SgFSbHNMbhiwrgOUhM=">a new era of commerce innovation | magento</a></p></li>
-<li><p><a href="https://coreos.com/blog/vulnerability-analysis-for-containers/?utm_content=buffer286eb">coreos introduces clair: open source vulnerability analysis for your containers</a></p></li>
-<li><p><a href="https://egghead.io/lessons/node-js-creating-a-fake-api-with-hapi-for-your-client-side-application">creating a fake api with hapi for your client-side application &ndash; node.js video tutorial </a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://blog.docker.com/2015/11/deploy-manage-cluster-docker-swarm/?utm_content=buffer8101e">deploy and manage any cluster manager with docker swarm</a></p></li>
-<li><p><a href="https://blog.docker.com/2015/11/dockercon-eu-2015-docker-universal-control-plane/?utm_content=buffer66692">dockercon eu 2015: docker trusted registry 1.4 with integrated content trust and universal control plane</a></p></li>
-<li><p><a href="https://speakerdeck.com/benvinegar/fsto-re-evaluating-front-end-peformance-best-practices">fsto: re-evaluating front-end peformance best practices // speaker deck</a></p></li>
-<li><p><a href="http://thehackernews.com/2015/11/anonymous-hacker-isis.html">hey isis! check out how &lsquo;idiot&rsquo; anonymous hackers can disrupt your online propaganda &ndash; the hacker news</a></p></li>
-<li><p><a href="https://github.com/jcuga/golongpoll">jcuga/golongpoll</a></p></li>
-<li><p><a href="https://blog.jessfraz.com/post/docker-containers-on-the-desktop/">jessie frazelle&rsquo;s blog: docker containers on the desktop</a></p></li>
-<li><p><a href="https://github.com/nature/shunter">nature/shunter</a></p></li>
-<li><p><a href="http://softwareengineeringdaily.com/2015/08/01/node-js-at-netflix-with-yunong-xiao/">node.js at netflix with yunong xiao | software engineering daily</a></p></li>
-<li><p><a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/">on currying and partial function application</a></p></li>
-<li><p><a href="http://www.slideshare.net/joshuaswarren/phpspec-behat-two-testing-tools-that-write-code-for-you-phptek-edition">phpspec &amp; behat: two testing tools that write code for you </a></p></li>
-<li><p><a href="https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/">progressive web apps: escaping tabs without losing our soul – infrequently noted</a></p></li>
-<li><p><a href="http://softwareengineeringdaily.com/2015/09/17/react-at-facebook-with-ben-alpert/">react at facebook with ben alpert &ndash; software engineering daily</a></p></li>
-<li><p><a href="http://redux.js.org/">redux &ndash; predictable state container for javascript apps</a></p></li>
-<li><p><a href="https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app?utm_term=server-rendering-redux">server-side rendering with redux and react-router | codementor</a></p></li>
-<li><p><a href="http://blog.golang.org/6years">six years of go</a></p></li>
-<li><p><a href="https://medium.com/engineering-leadership/software-engineer-traits-fbf5dee9289c">software engineer traits — engineering leadership — medium</a></p></li>
-<li><p><a href="http://www.sourcecodepoetry.com/">source code poetry</a></p></li>
-<li><p><a href="https://jakearchibald.com/2014/offline-cookbook/">the offline cookbook &ndash; jakearchibald.com</a></p></li>
-<li><p><a href="https://blog.bufferapp.com/optimal-work-time-how-long-should-we-work-every-day-the-science-of-mental-strength?utm_content=buffer33b8e">the origin of the 8-hour work day and why we should rethink it</a></p></li>
-<li><p><a href="http://www.zerohedge.com/news/2015-11-10/unicorns-dropping-flies-first-dropbox-then-square-now-fidelity-cuts-snapchat-valuati">unicorns dropping like flies: first dropbox; then square; now fidelity cuts snapchat valuation by 25%</a></p></li>
-<li><p><a href="https://developer.atlassian.com/blog/2015/11/what-the-web-platform-can-learn-from-nodejs/">what the web platform can learn from node.js &ndash; atlassian developers</a></p></li>
-<li><p><a href="http://joel.is/zero-notifications/">zero notifications</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #111]]></title>
-    <link href="http://namshi.github.io/blog/2015/10/14/newsletter-number-111/"/>
-    <updated>2015-10-14T14:34:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/10/14/newsletter-number-111</id>
-    <content type="html"><![CDATA[<blockquote><p>Hey!</p>
-
-<p>Did you know it&rsquo;s the &ldquo;hug an engineer&rdquo; week?</p></blockquote>
-
-<p>{% img center /images/hug_an_engineer.jpg %}</p>
-
-<p><strong>And with a big hug to all the engineers, we leave you with some likes for the weekend!</strong></p>
-
-<ul>
-<li><p><a href="http://www.alexkras.com/11-tips-to-improve-angularjs-performance/">11 tips to improve angularjs performance</a></p></li>
-<li><p><a href="https://medium.com/@orliesaurus/api-tools-for-every-occasion-10-api-tools-released-in-2015-i-can-t-live-without-d5947d9ca9c3">api tool for every occasion</a></p></li>
-<li><p><a href="https://github.com/rimusz/coreos-osx-gui">coreos-vagrant gui for mac os x</a></p></li>
-</ul>
-
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="http://www.wired.com/2015/10/meet-walking-dead-hp-cisco-dell-emc-ibm-oracle/?utm_content=bufferff50e">dell. emc. hp. cisco. these tech giants are the walking dead | wired</a></p></li>
-<li><p><a href="http://ericjmritz.name/2015/09/29/display-random-git-tips-in-your-terminal/">display random git tips in your terminal</a></p></li>
-<li><p><a href="https://github.com/docker/swarm/pull/1292">docker swarm @1.0.0</a></p></li>
-<li><p><a href="https://github.com/donnemartin/awesome-aws">donnemartin/awesome-aws</a></p></li>
-<li><p><a href="http://www.shortlistdubai.com/events-attractions/article/4739-dubai-to-abu-dhabi-commute-in-15-minutes?utm_content=buffer827ca">dubai to abu dhabi commute in 15 minutes? &ndash; city highlights &ndash; shortlist dubai</a></p></li>
-<li><p><a href="http://www.mfranc.com/unit-testing/good-unit-test-one-assert/">good unit test &ndash; one assert | pragmatic developer</a></p></li>
-<li><p><a href="http://www.phpied.com/how-to-write-unmaintainable-php-code-2009/">how to write unmaintainable php code</a></p></li>
-<li><p><a href="http://shadowhand.me/immutable-data-structures-in-php/">immutable data structures in php</a></p></li>
-<li><p><a href="http://bahmutov.calepin.co/improving-angular-web-app-performance-example.html">improving angular web app performance example. &ndash; better world by better software</a></p></li>
-<li><p><a href="http://blog.thoughtram.io//angular/2015/09/17/resolve-service-dependencies-in-angular-2.html">injecting services in services in angular 2</a></p></li>
-<li><p><a href="http://jsrocks.org/2015/09/javascript-iterables-and-iterators/">javascript iterables and iterators &ndash; js rocks</a></p></li>
-<li><p><a href="https://engineering.pinterest.com/blog/learn-stop-using-shiny-new-things-and-love-mysql">learn to stop using shiny new things and love mysql | pinterest engineering</a></p></li>
-<li><p><a href="http://www.lornajane.net/posts/2015/new-in-php-7-null-coalesce-operator">new in php 7: null coalesce operator</a></p></li>
-<li><p><a href="http://nodetuts.com/series/asynchronous-programming.html">node tuts &ndash; asynchronous programming</a></p></li>
-<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist | risingstack</a></p></li>
-<li><p><a href="https://blog.risingstack.com/node-js-security-checklist/">node.js security checklist</a></p></li>
-<li><p><a href="https://medium.com/@c2c/nodejs-a-quick-optimization-advice-7353b820c92e">nodejs: a quick optimization advice</a></p></li>
-<li><p><a href="http://zachholman.com/posts/opt-in-transparency/">opt-in transparency</a></p></li>
-<li><p><a href="https://esdiscuss.org/topic/performance-concern-with-let-const">performance concern with let/const</a></p></li>
-<li><p><a href="http://geek.bluemangointeractive.com/react-router-an-introduction/">react router: a comprehensive introduction &ndash; by blue mango geek</a></p></li>
-<li><p><a href="https://github.com/sebastianbergmann/phpunit/wiki/Release-Announcement-for-PHPUnit-5.0.0">release announcement for phpunit 5.0.0</a></p></li>
-<li><p><a href="http://zachholman.com/posts/remote-first/">remote-first vs. remote-friendly</a></p></li>
-<li><p><a href="http://llvm.org/">the llvm compiler infrastructure project</a></p></li>
-<li><p><a href="https://www.datadoghq.com/blog/top-elb-health-and-performance-metrics/">top elb health and performance metrics</a></p></li>
-<li><p><a href="http://matschaffer.com/2015/01/what-to-monitor/">what should i monitor?</a></p></li>
-<li><p><a href="http://xip.io/?utm_content=buffer557a8">xip.io: wildcard dns for everyone</a></p></li>
-<li><p><a href="https://www.sitepen.com/blog/2015/10/08/stronger-javascript/">stronger javascript?</a></p></li>
-<li><p><a href="https://shellvatore.us/2015/10/09/please-stop-curl-wgeting-directly-to-bash-sh/">PLEASE STOP CURL/WGET'ING DIRECTLY TO BASH/SH</a></p></li>
-</ul>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Newsletter #109]]></title>
-    <link href="http://namshi.github.io/blog/2015/10/01/newsletter-number-109/"/>
-    <updated>2015-10-01T15:55:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/10/01/newsletter-number-109</id>
-    <content type="html"><![CDATA[<blockquote><p>Yo folks!</p>
-
-<p>This week we bid farewell to one of our team member <a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a>, he posted an <a href="http://tech.namshi.io/blog/2015/09/28/goodbye-nitesh/">interesting summary</a> of his delightful journey at Namshi, we wish him best of luck.</p></blockquote>
-
-<p>{% img center /images/nitesh-bye-bye.jpg %}</p>
-
-<p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><a href="https://www.quora.com/Is-it-realistic-to-go-from-0-coding-experience-to-freelance-developer-in-6-months-of-full-time-study">is it realistic to go from 0 coding experience to freelance developer in 6 months of full time study? &ndash; quora</a></p></li>
-<li><p><a href="https://www.quora.com/What-frustrates-beginner-programmers-the-most">what frustrates beginner programmers the most? &ndash; quora</a></p></li>
-<li><p><a href="https://medium.com/@linclark/a-cartoon-guide-to-flux-6157355ab207">a cartoon guide to flux — medium</a></p></li>
-<li><p><a href="http://bropages.org/">bro: just get to the point!</a></p></li>
-<li><p><a href="https://www.interviewbit.com/">coding interview preparation made easy</a></p></li>
-<li><p><a href="http://prog21.dadgum.com/210.html">computer science courses that don&rsquo;t exist, but should</a></p></li>
-<li><p><a href="https://github.com/gilesp/docker/tree/master/react_native?utm_content=buffer67abd">docker container for react native android development</a></p></li>
-<li><p><a href="http://blog.wercker.com/2015/07/28/Dockerfiles-considered-harmful.html">dockerfiles considered harmful</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=X0VH78ye4yY">f8 2015 &ndash; big code: developer infrastructure at facebook&rsquo;s scale &ndash; youtube</a></p></li>
-<li><p><a href="http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html">full-stack redux tutorial</a></p></li>
-<li><p><a href="https://github.com/getify/You-Dont-Know-JS">getify/you-dont-know-js</a></p></li>
-<li><p><a href="https://www.packtpub.com/books/content/getting-started-bem-little-help-sass/">getting started with bem (with a little help from sass) </a></p></li>
-<li><p><a href="https://www.youtube.com/watch?v=zBV9TkTXxg0">hacker way: facebook&rsquo;s high performance server infrastructure &ndash; youtube</a></p></li>
-<li><p><a href="https://hoist.io/">hoist is how you integrate &ndash; meet the microservices platform that talks to apis</a></p></li>
-<li><p><a href="https://medium.com/meedan-updates/how-docker-helped-me-love-writing-css-again-b1339c2e77ff">how docker helped me love writing css again — meedan updates — medium</a></p></li>
-<li><p><a href="https://medium.com/salesforce-ux/how-we-designed-the-new-salesforce-at-scale-6d3607fd92e5">how we designed the new salesforce at scale</a></p></li>
-<li><p><a href="https://github.com/statianzo/hubot-newrelic2">hubot newrelic</a></p></li>
-<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
-<li><p><a href="https://www.quora.com/Is-it-possible-for-a-computer-to-run-code-that-could-absolutely-destroy-the-components-inside-cooking-the-CPU-etc-Or-does-the-hardware-protect-itself-from-these-things?utm_content=buffer551b5">is it possible for a computer to run code that could absolutely destroy the components inside (cooking the cpu, etc.)?</a></p></li>
-<li><p><a href="https://vimeo.com/140275020">kerning 2015 &ndash; oliver reichenstein &ndash; architecting information on vimeo</a></p></li>
-<li><p><a href="http://blog.jenkster.com/">kris jenkins' blog (javascript, elm, clojure, vim)</a></p></li>
-<li><p><a href="https://blog.growth.supply/launching-a-product-in-just-3652-days-4d4e74e2dcd5">launching a product, in just 3652 days</a></p></li>
-<li><p><a href="https://google.github.io/lovefield">lovefield is a relational database for web apps.</a></p></li>
-<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code · evan todd</a></p></li>
-<li><p><a href="http://etodd.io/2015/09/28/one-weird-trick-better-code/">one weird trick to write better code</a></p></li>
-<li><p><a href="http://blog.cloud66.com/pulling-git-into-a-docker-image-without-leaving-ssh-keys-behind/">pulling git into a docker image without leaving ssh keys behind</a></p></li>
-<li><p><a href="http://wl3.me/2015/05/01/react-in-your-react-native-webview-so-you-can-react-while-you-react.html?utm_content=buffer6555a">putting react in your react native webview so you can react while you react</a></p></li>
-<li><p><a href="http://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/">react.js and dynamic children &ndash; why the keys are important &ndash; arkency blog</a></p></li>
-<li><p><a href="http://code.flickr.net/2015/06/25/real-time-resizing-of-flickr-images-using-gpus/">real-time resizing of flickr images using gpus</a></p></li>
-<li><p><a href="http://rackt.github.io/redux/">redux for reactr</a></p></li>
-<li><p><a href="http://mmikowski.github.io/the_lie/">restful apis, the big lie</a></p></li>
-<li><p><a href="http://www.brianstorti.com/stop-using-tail/">stop using tail -f (mostly)</a></p></li>
-<li><p><a href="http://www.independent.ie/business/technology/news/tech-overkill-destroyed-the-loveliest-liveliest-city-on-the-west-coast-31541735.html?utm_content=buffer6e254">tech overkill destroyed the loveliest, liveliest city on the west coast</a></p></li>
-<li><p><a href="https://www.youtube.com/watch?t=6&amp;v=W71BTkUbdqE">the motivation for a monolithic codebase </a></p></li>
-<li><p><a href="http://techblog.netflix.com/2015/08/making-netflixcom-faster.html">the netflix tech blog: making netflix.com faster</a></p></li>
-<li><p><a href="https://webmozart.io/blog/2015/09/09/value-objects-in-symfony-forms/">value objects in symfony forms &ndash; webmozart.io</a></p></li>
-<li><p><a href="https://medium.com/@_cmdv_/i-want-to-learn-javascript-in-2015-e96cd85ad225">want to learn javascript in 2015?</a></p></li>
-<li><p><a href="https://anvaka.github.io/pm/#/">welcome to the code galaxies, commander</a></p></li>
-<li><p><a href="https://www.quora.com/What-feature-of-C-is-used-very-often-by-experienced-programmers-but-not-so-much-by-a-newbie">what feature of c is used very often by experienced programmers but not so much by a newbie? &ndash; quora</a></p></li>
-<li><p><a href="https://speakerdeck.com/addyosmani/whats-new-in-chrome-devtools">what&rsquo;s new in chrome devtools?</a></p></li>
-<li><p><a href="https://open.bufferapp.com/sharing-bad-news/">why i don&rsquo;t shield my team from bad news</a></p></li>
-<li><p><a href="http://www.bothsidesofthetable.com/2015/09/27/why-i-fucking-hate-unicorns-and-the-culture-they-breed/">why i f#!@ing hate unicorns and the culture they breed</a></p></li>
-</ul>
-
+<p>Finally, Thanks to all the people who make the web awesome !</p>
 ]]></content>
   </entry>
   

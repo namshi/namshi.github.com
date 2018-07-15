@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -61,9 +61,9 @@
 <p>Tech Thursday has come again! We had a big event last week!</p>
 
 <p>Our nerdy &ldquo;managers&rdquo; went to Berlin last week to participate in the Rocket Tech Summit 2015
-{% img team center /images/berlin_rocket_team.jpg %}</p>
+<img class="team center" src="/images/berlin_rocket_team.jpg"></p>
 
-<p>{% img team center /images/berlin_rocket_alex.jpg %}</p>
+<p><img class="team center" src="/images/berlin_rocket_alex.jpg"></p>
 
 <p>He like to be that casual! It was a good talk though :)</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: logging | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/logging/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:02+00:00</updated>
+  <updated>2018-07-15T10:41:49+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
 a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
-{% img center /images/posts/shidhin-geshan.jpg %}</p>
+<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
 
 <p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
 And here is your weekly quota of some interesting links</p>
@@ -69,7 +69,7 @@ And here is your weekly quota of some interesting links</p>
 
 <p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
 
-<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
+<p><img class="center" src="/images/posts/ping-pong-happy.jpg"></p>
 
 <blockquote><p>and here is your weekly quota of some interesting links</p>
 
