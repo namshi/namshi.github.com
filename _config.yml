@@ -186,3 +186,6 @@ team:
     'Abdul Hannan':
         bio: 'Lead Mobile Engineer'
         image: 'abdul-hannan.png'
+    'Tedj Meabiou':
+        bio: 'Senior Software Engineer'
+        image: 'tedj.jpg'
