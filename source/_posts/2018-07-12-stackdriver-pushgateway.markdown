@@ -13,11 +13,12 @@ author:  Alessandro Nadalin, Tedj Meabiou
     
     At Namshi, we are saving a bunch of "business" metrics and storing them in prometheus, with alerts based on conditions over those metrics (for example, `if hourly_orders < X: trigger an alert`).
     
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_A65B006351D4EB1EDE1C2C9A701DFF17CB8B3C9747EEF618743061D90508A30A_1531394524675_image.png)
+{% img center /images/posts/sd-metrics.png %}
+
 
     We have hundreds of applications and cronjobs, periodically sending metrics to prometheus using the pushgateway, which collects metrics and makes them available to prometheus.
     
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_A65B006351D4EB1EDE1C2C9A701DFF17CB8B3C9747EEF618743061D90508A30A_1531639269110_image.png)
+{% img center /images/posts/prometheus-metrics.png %}
 
     In order to send metrics from our crons etc we can simply curl to the pushgateway:
     ```
@@ -52,7 +53,7 @@ author:  Alessandro Nadalin, Tedj Meabiou
     
     Everything has been running fine until we started facing some issues related to managing the infrastructure around prometheus, which is not funny: instead of spending time managing prometheus, we could shift our efforts towards our core business.
     Google came up with StackDriver, which seems to fit our bill: SD has a monitoring service as well as and alerting service which allow us to send metrics and create alerts based on those metrics.
-![](https://lh6.googleusercontent.com/4U12X_TYH59r1zIqlBuKzinxJjh5x-6v2RE_Z9BzeHJW9he3bZozkzxaQWY0oqZzmYM4jAJdR5LxEei1s-MHUKWf3TC15U96p8n9gF6XpCB7HQyigsghc19punKnDU6UoGZNYMjGPkw)
+{% img center /images/posts/sd-notifications.png %}
 
     To send business metrics to StackDriver, we would have needed to do the following for every single app in our cluster:
     * mount google credentials
