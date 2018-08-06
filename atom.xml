@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-07-15T10:41:49+00:00</updated>
+  <updated>2018-08-06T12:46:24+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,74 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Delivery promises in the wild]]></title>
+    <link href="http://namshi.github.io/blog/2018/08/06/delivery-promises-in-the-wild/"/>
+    <updated>2018-08-06T11:57:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/08/06/delivery-promises-in-the-wild</id>
+    <content type="html"><![CDATA[<p>We recently launched a new feature which we internally call <strong>“delivery promises”</strong>. This feature informs our users the expected delivery lead time of individual products, based on their location. Users select their location from a drop down list and a timer counts down to the next available delivery dispatch time. This allows users to know how much time they have to place an order to receive their item at the next earliest possible delivery date.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/dp.png"></p>
+
+<!-- more -->
+
+
+<p>E-commerce has made great technological strides in the last decade. There’s no doubt in anyone&rsquo;s mind that the paradigm shift of what the experience of  a “purchase” is has already taken place. E-commerce will only get larger, while brick &amp; mortar will continue to dwindle. Yet all of this innovation still fails to recreate the sensations of instant gratification most shoppers feel at the checkout aisle. This gap in the process can be taken advantage off. By giving users a determined and relatively quick delivery date such as same day or next day delivery, we can bridge the gap just enough to provide semi-instant gratification. This semi-instant gratification, is enough to pass off as a reward to entice users into completing the purchase within a certain time frame to remain eligible for it.</p>
+
+<p>Yet, this feature is a double edged sword. On the one hand, you can increase conversion rates and customer satisfaction when everything works well. On the other, users are much more irate when delivery is not made at the expected times.</p>
+
+<p>In order to test the success and impact of this project we had to benchmark it against a few <strong>KPI’s</strong>.</p>
+
+<p>We decided the best would be to track how our:</p>
+
+<ol>
+<li>Products-added-to-cart % changed</li>
+<li>The change in average session duration for users that checked out products</li>
+<li>The overall conversion rate</li>
+<li>The % of orders that got delivered within the promised date</li>
+<li>The change in delivery related inquiries our customer service team received.</li>
+</ol>
+
+
+<p>We decided to roll out slowly, segmenting by platform and geographical region. We started first on our web mobile platform and then slowly rolled it out to our apps all within certain geographical regions where we could ensure a higher minimum delivery <strong>SLA</strong>.</p>
+
+<p>Our goal for the UI was to make the expected delivery information instantly accessible and visible, without compromising on more important information like product image, description, price and available sizes. Keeping the natural flow of the page is critical.</p>
+
+<p>To achieve this goal, we added the feature section right after the product image/details section; where we show 3 pieces of information:</p>
+
+<ol>
+<li>Live countdown timer that counts down to the next available delivery dispatch for that location.</li>
+<li>City selection dropdown field for users to select their location.</li>
+<li>Estimated delivery time as per the selected city</li>
+</ol>
+
+
+<p><img class="center" src="http://namshi.github.io/images/dp1.png"></p>
+
+<p>We also added this information in our cart view popup to keep users engaged and informed about the expected delivery dates for their orders.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/dp2.png"></p>
+
+<p>Initially, we wanted to add the feature to our checkout page too. However, we found that it won’t be possible because we currently take user delivery addresses in open input text fields. Users can enter any text to describe their locations including cities, hence, we could not query the expected delivery service without a properly formatted input which would be in the form of a predefined set of cities. Goes to show that something as simple as a field type could be a blocker for a feature to work!</p>
+
+<p>One of the challenges we faced was to find a way to display the most accurate delivery information as fast as possible and also customizable on the product level.</p>
+
+<p>Collaboration with the ops team and understanding their delivery challenges was critical in the development of this feature. Despite this only being a forecast, our users would view this as a promised commitment. If a customer reads and believes that his order will arrive the same day, receiving it late may result in a tremendous loss of good-will.</p>
+
+<p>Due to this risk, we created an internal tool for our warehouse and operations team. This tool allows our teams to change the delivery lead time for different locations on the fly. It also allows for the changes in delivery cut-off times. At any point if we receive an overwhelming amount of orders they would be able to change the lead times and/or cut off times within seconds.</p>
+
+<p>One important issue that we faced was with time zones. In order to provide an accurate delivery promise we need to know where the customer is located and where we have the product stored. Each one can be in different time zones which makes the logic harder. Imagine that you send a product from GMT+4 to your customer but they’re living in GMT+3, you know that the delivery will take 1 hour and you send it at 8 a.m. so you tell to your customer that he will receive it at 9 a.m. but actually he will receive it at 8 a.m. As your 9 a.m. is their 8 a.m.
+One way to solve this is to tell the customer how long it will take instead of specifying the delivery date, for example: “in 1 hour and 15 minutes”, but for longer periods of time this becomes less useful. Another way is to yield this responsibility to the frontend as they know the actual timezone of the customer. So only sending the amount of time it will take for us to deliver, will allow for the front end to specify the delivery date perfectly to the user.</p>
+
+<p>Another critical point for this feature is that it’s present in all parts of our customers critical path, so in addition to deciding how to implement it we had to rack our minds to decide where we needed to show it. Implementing this in our catalog proved challenging in terms of maintaining performance. In order to reduce the footprint we had to think carefully as to how we implemented and managed the cache. We did load testing to see how performance was affected. Our results showed that we increased the response time by between 1 to 5 milliseconds. This was not ideal, but still acceptable.</p>
+
+<p><strong>We hope this feature helps you, and you get your packages on time!</strong></p>
+
+<p><em>This post is a joint effort between the brains behind this feature: <a href="http://namshi.github.io/team#Carles%20Iborra">Carles Iborra Sanchez</a>,
+<a href="http://namshi.github.io/team#Ammar%20Rayess">Ammar Rayess</a> and Razek Amir.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Moving from Prometheus to StackDriver…  …and introducing the StackDriver Pushgateway]]></title>
@@ -2050,45 +2118,6 @@ a chat.</p>
 
 <p>What are you waiting for? Drop a line at <code>work-in-tech@namshi.com</code> and let&rsquo;s
 start this journey together!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[My First Two Weeks At Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2016/07/28/my-first-two-weeks-at-namshi/"/>
-    <updated>2016-07-28T09:19:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/07/28/my-first-two-weeks-at-namshi</id>
-    <content type="html"><![CDATA[<p>On July 10th, I joined <a href="https://namshi.com/">Namshi</a> as a Junior Software Engineer. I was really excited to start my first full time job writing software. Though, I have to confess that I was also a bit afraid and nervous. Fortunately, after just two days working with the team the fear and nervousness went away. In this post, I will share with you some of the things I have learned so far as well as what I love about working in this awesome team.</p>
-
-<!-- more -->
-
-
-<h3>Everyone is super nice</h3>
-
-<p>From the first day I joined the team, everyone has been going out of their way to help me and make me feel welcome. In order to better understand the business as a whole, HR arranged for me to meet people from many other teams such as warehouse, business intelligence, and project management. All of those people were really nice and did a great job explaining to me how their department works.
-In the tech team, I have interrupted some of my colleagues countless times to ask questions and they have always done their best to give me answers or point me to someone else who knows the answer. The VP of technology, Alex, who is also my manager has urged me to not be afraid to ask questions and discuss things with our senior engineers. In my opinion, this ability to ask questions without feeling like you are being annoying to your peers is crucial for a smooth integration of a new member, especially a junior like me, onto a team.</p>
-
-<h3>Code quality is taken seriously</h3>
-
-<p>On my second day, I was assigned my first task. It consisted in building a tool that could read a csv file containing a list of products and download the the image for each product from a website. This tool was for the PR department and it would reduce the amount of time it usually takes them to send new products images out to the press. Since the end users only have windows machines, the final product was supposed to be a windows executable. Because of that requirement, Alex suggested that we use the Go programming language; a language I hadn&rsquo;t used before. Ayham, one of the senior engineers on the team who was also new to Go buddied up with me to work on the project.
-We started by brainstorming ideas and drawing a workflow diagram. Then, we moved to the coding part which was really fun. We managed to get something working by the next day. At one point, after making a few improvements to the code, I looked at it and thought to myself “ok, this looks great, we are done here”. But to Alex and Ayham, there was a lot of rooms for improvement. Therefore, the code went through multiple rounds of review. Each round, we were trying to make it better and better. I remember Ayham always asking &ldquo;can we do this in a better way?&rdquo; This experience taught me that even though code will never be perfect, it is still possible to attain good quality code if we care enough.</p>
-
-<h3>Learning happens everyday</h3>
-
-<p>Everyday, for the past two weeks, I was able to learn something new. I have learned about proper debugging techniques, Golang, how to be more productive by using keyboard shortcuts and how to break down the solution to a problem into steps before diving into coding etc&hellip; Not a day has passed without learning something new either from my manager&mdash;who is by the way an excellent teacher&mdash; or from my other colleagues.</p>
-
-<h3>Work-life balance is encouraged</h3>
-
-<p>We work from 9:00 am to 6:00 pm including one hour for lunch break. I often hear people say at one does not leave the office before one’s boss. But here at Namshi, that is not the case. After 6 pm anyone is allowed to go home even though our manager is still around. In fact, I have noticed that if our manager wants to discuss something with a team member after 6pm, he will always asks something along the lines of “do you have 5 minutes or are you leaving now?”. And to top it all off, on Thursdays (the last day of the week in the UAE) everyone is allowed to leave the office by 3 pm to go and start enjoying their weekend.</p>
-
-<h3>I have one of the best managers in the world</h3>
-
-<p>My manager, Alex, is really awesome! I’m sharing this because apparently <a href="https://hbr.org/2014/03/why-good-managers-are-so-rare/">great managers are rare</a>. The first time I interacted with him was during my first interview. I was really impressed by how he took the time to explain to me the answers to a few questions I could not answer. Then after joining, I have seen him teach, discuss ideas with, and help members  of the team &mdash;especially myself&mdash; on a daily basis.
-For the past two weeks, at the end of each work day, we spend about 5 minutes talking about how my day went,  asking me for feedback for the team and giving me constructive feedback for myself. In addition to that he checks on me throughout the day to get updates on my progress in whatever task I’m working on.</p>
-
-<p>All in all, I feel really blessed to be part of this team of talented and friendly people. I’m really excited for the long and fun road ahead.</p>
-
-<p>If this blog post got you excited about the prospect of joining our team, please do send in an application as we are currently hiring :)</p>
 ]]></content>
   </entry>
   
