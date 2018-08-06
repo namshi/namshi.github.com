@@ -120,5 +120,5 @@ With at the doorstep exchanges, we went even further.  Not only did we further b
 We’ve only been able to roll out doorstep within the UAE using our in-house carrier Last Mile. This is primarily because we had the capacity to train our courier agents on the swap process. Scaling this feature internationally would entail working with and training our courier partners to be able to conduct these swaps for us. This limitation prevents us from rolling this feature out internationally, but we would love to be able to work with our external courier partners to be able to do so!
 
 
-*This article has been a joint effort between the Software Engineers and Product Managers who planned and changed the process: [Ala](http://tech.namshi.io/team/#Ala%20Hawash), our product manager Sakina Sagrwala,
-[Ayham](http://tech.namshi.io/team/#Ayham%20Alzoubi), and our CTO [Alex](http://tech.namshi.io/team/#Alessandro%20Nadalin).*
+*This article has been a joint effort between the Software Engineers and Product Managers who planned and changed the process: [Ala](/team/#Ala%20Hawash), Sakina Sagarwala and
+[Ayham](/team/#Ayham%20Alzoubi).*
