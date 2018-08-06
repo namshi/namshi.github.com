@@ -27,13 +27,6 @@ footer: true
     {% img left team /images/khaled.png Khaled %}
     **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
 
-*   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
-    {% img left team /images/geshan.jpg Geshan Manandhar %}
-    **Geshan Manandhar** Quality and Maintenance Lead (QM Lead), is a seasoned software engineer, with more than 6 years of
-    professional web development experience. He is focused on enterprise application architecture and methodologies.
-    With a keen interest on REST architecture and Service Oriented Architecture (SOA), Microservices.
-    He believes in agile methods for software engineering. Blogging is also something he likes to do in his free time.
-
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
     **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
@@ -140,6 +133,13 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
+    {% img left team /images/geshan.jpg Geshan Manandhar %}
+    **Geshan Manandhar** Quality and Maintenance Lead (QM Lead), is a seasoned software engineer, with more than 6 years of
+    professional web development experience. He is focused on enterprise application architecture and methodologies.
+    With a keen interest on REST architecture and Service Oriented Architecture (SOA), Microservices.
+    He believes in agile methods for software engineering. Blogging is also something he likes to do in his free time.
 
 *   ##<div id="Oluwaseun Obajobi">Oluwaseun Obajobi</div>
     {% img left team /images/oba.jpeg Oluwaseun Obajobi %}

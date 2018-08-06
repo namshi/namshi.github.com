@@ -189,3 +189,6 @@ team:
     'Tedj Meabiou':
         bio: 'Senior Software Engineer'
         image: 'tedj.jpg'
+    'Carles Iborra':
+        bio: 'Senior Software Engineer'
+        image: 'carles.png'
