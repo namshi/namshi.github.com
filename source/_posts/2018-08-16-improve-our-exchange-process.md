@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Improving our return process"
-date: 2018-08-06
+date: 2018-08-16
 comments: true
 categories: [return, exchange, process]
 author: Ayham Alzoubi
@@ -9,23 +9,27 @@ author: Ayham Alzoubi
 
 One of the biggest challenges for e-commerce portals is to be able to deliver the same, or even a better, kind of experience physical retailers offer in terms of size exchanges. When you want to return a jacket at the Zara store next door, you simply walk to the store, ask for a larger size, and swap your return with the new, larger jacket — in case that size is out of stock you will immediately be refunded. In any case, it’s [instant gratification](https://en.wikipedia.org/wiki/Gratification#Instant_and_delayed_gratification).
 
-Usually, in an e-com transaction, a 3rd party courier is involved in the delivery of the goods, and the same applies when customers wants to return, or exchange an item they purchased.
+<!-- more -->
+
+Usually, in an e-com transaction, a 3rd party courier is involved in the delivery of the goods, and the same applies when customers want to return, or exchange an item they purchased.
 
 This leads to an interesting dichotomy, as e-commerce should, in theory, ease the process: but by waiting for the courier to collect the original item and deliver it back to the store; let the store confirm the return is in good condition, hand the new item to the courier and wait for the courier to deliver it to you…the **customer experience suffers**. This process can take weeks, and can be definitely improved.
 
 At the beginning of this year, we focused our attention towards our exchange process (when you bought an M but want to replace it with an L), in order to make it seamless for customers to exchange items they purchased at [Namshi](https://www.namshi.com). We believe we’ve made strides in this process and wanted to share with you the changes we’ve implemented, our rollout strategy and the challenges we’ve faced along the way.
 
-The new process we rolled out allows customers to request a new size **without having to place a new order**, **without having to worry about the new size going out of stock**, and have it delivered to their doorstep, in some cases, **less than a day**.
+The new process we rolled out allows customers to request a new size **without having to place a new order**, **without having to worry about the new size going out of stock**, and have it delivered to their doorstep, in some cases, **in less than a day**.
 
 Let’s get to it.
 
-******Our original exchange process:**
+##Our original exchange process:
 
-Our original exchange process had pretty basic flow.  A customer would place an order with some items, and if they decided to return any item(s), a return would have to be initiated via the account section. Our driver would then head over to collect the items that needed to be returned. Once those items reached our warehouse, we would then refund the amount owed back either as [Namshi](https://www.namshi.com) credit or as a credit / debit card refund. At this point, the customer could place a new order for the new size.
+Our original exchange process had a pretty basic flow.  A customer would place an order with some items, and if they decided to return any item(s), a return would have to be initiated via the account section. Our driver would then head over to collect the items that needed to be returned. Once those items reached our warehouse, we would then refund the amount owed back either as [Namshi](https://www.namshi.com) credit or as a credit / debit card refund. At this point, the customer could place a new order for the new size.
 
-This approach seemed pretty dated as our customers suffered because of the extended time frame of the whole process, during which the size they wanted instead could have run out, but also because during this time, the price of the product may have fluctuated. This would result in them having to pay this new price.
+{% img center /images/posts/exchange-size.JPG %}
 
-**So… We added exchanges!**
+This approach seemed pretty dated as our customers suffered because of the extended time frame of the whole process, during which the size they wanted instead could have ran out, but also because during this time, the price of the product may have fluctuated. This might result in them having to pay a higher price.
+
+##So… We added exchanges!
 
 At first, It wasn’t clear how we were going to implement exchanges. We knew we had all the components for creating an exchange in place, so it was a matter of connecting the dots to produce a single process that makes it easy for the customer to create an exchange with just a few clicks.
 
@@ -33,22 +37,24 @@ Therefore, we had to make sure of a few things:
 
 
 1. We have the relevant replacement items in stock.
-2. The returned item always reached our warehouse before we released the new shipment.
+2. The returned item always reaches our warehouse before we release the new shipment.
 3. The customer won’t have to pay anything extra, even if the exchange item’s price increased.
 4. The customer’s wallet balance should never become negative.
 
 
-We created a new API that could handle both normal returns and exchanges. This API proxies all normal return requests to the returns service, while handling exchange requests also. In the case of exchanges, the API first creates the exchange order, this guarantees the stock to be reserved. Then a return request is created which is associated with the newly created exchange order. The customer just has to wait for the courier to come and pick up the original item. Once the item is picked and returned to the warehouse, we confirm the exchange order and export it for shipment.
+We created a new API that could handle both normal returns and exchanges. This API proxies all normal return requests to the returns service, while handling exchange requests also. In the case of exchanges, the API first creates the exchange order, this guarantees the stock to be reserved. Then a return request is created which is associated with the newly created exchange order. The customer just has to wait for the courier to come and pick up the original item. Once the item is picked and returned to the warehouse, we ship the exchange order.
 
 For exchanges, we handled the payment of the exchange order via our customer wallet. Normally we charge the customer wallet as soon as an order is placed. However in this case, we hold on to charging the wallet until the returned item is refunded back to the wallet. This ensures that we only use the refunded money to pay for the exchanged item. This also prevents a customer’s wallet balance from becoming negative since we refund first then charge the wallet. These actions are clearly reflected in the customer’s credit section.
 
+
+
 We also had to account for unhappy flows; For instance a customer may cancel the return, so there would be no item to be picked up. In this case we cancel the exchange item as well, because there may be no funds available in the customer’s wallet to cover for the new item. Also we can fairly assume that since the customer canceled the return, they probably changed their mind about the exchange.
 
-Additionally we created a cron job that was responsible for canceling any exchange orders if we didn’t receive the original item (for whatever reason) after 2 weeks, of creating the exchange request. We did this so that we don’t block our stock for an extended period of time.
+Additionally, we created a cron job that is responsible for canceling any exchange orders if we don't receive the original item (for whatever reason) within 2 weeks of creating the exchange request.
 
-Once we implemented exchanges across our markets, we then decided to roll out doorstep exchanges to further improve our the exchange process.
+We've rolled out exchanges to our markets, sent out surveys and our customers were very satisfied with the new process. It was clearly a success story, but we wanted to do more! We thought to ourselves, so instead of waiting for the item to reach the warehouse to release the new item, why don't we do it at the customer's **doorstep**.
 
-**How did we roll out doorstep exchanges?**
+##How did we roll out doorstep exchanges?
 
 At the doorstep exchanges entailed our courier agent going to a customer’s delivery address, picking up the original item and handing over the new product in one go!
 
@@ -58,7 +64,7 @@ Since at the door exchanges was a novel concept in the region, we conducted an e
 
 Once we were confident that our in-house courier agents could handle doorstep exchanges, we began rolling it out incrementally to customers across UAE. We began with Sharjah, followed by Fujairah, Ajman, Ras al Khaimah, Al-Ain, Abu Dhabi and finally Dubai. We rolled out doorstep exchanges successfully across the UAE within the course of just 5 weeks!
 
-**Feedback! Feedback! Feedback!**
+##Feedback! Feedback! Feedback!
 
 The end goal is always customer satisfaction!
 
@@ -66,22 +72,20 @@ For this purpose, we ran 3 surveys to gauge how our customers felt about our ori
 
 We wanted to learn whether customers were satisfied with these services and also if there was anything we could do to improve these further.
 
-**Returns:**
+##Returns:
 
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_BDC44FD999A9BF03CF62C61FC72DBA66D7B2A7053E24A6DFAF36A892D63BA5D8_1531224354306_Returns+results.PNG)
-
+{% img center /images/posts/returns-chart.png %}
 
 We found out that our customers were pretty satisfied with the original returns process with a combined satisfaction rate of very satisfied and satisfied customers at 75%.
 
 For those customers who expressed that they were dissatisfied with our service and if they gave us feedback as to why they were unhappy, we analyzed their responses to see if we could further improve the returns process and factor those suggestions in.
 
-**Exchanges:**
+##Exchanges:
 
 Given that we just launched exchanges across all our markets, we were pretty excited to hear back from customers about how they felt about this new venture.
 
-
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_BDC44FD999A9BF03CF62C61FC72DBA66D7B2A7053E24A6DFAF36A892D63BA5D8_1531226124692_exchange+results.PNG)
+{% img center /images/posts/exchanges-chart.png %}
 
 
 and voila!
@@ -94,7 +98,7 @@ We received some feedback from customers regarding our process seeming too long.
 
 This feedback tied in neatly with our next initiative… At the door exchanges!!!
 
-**At the door exchanges**
+##At the door exchanges
 
 We wanted to make sure that our customers received the best possible service from our end. So, given the feedback from our customers and our capacity, we decided to launch at the doorstep exchanges.
 
@@ -102,15 +106,14 @@ These entailed our in-house couriers heading to a customer’s delivery address,
 
 Once we launched this service, we ran another survey to see what our customers thought:
 
-
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_BDC44FD999A9BF03CF62C61FC72DBA66D7B2A7053E24A6DFAF36A892D63BA5D8_1531234467580_Swap+results.PNG)
+{% img center /images/posts/swaps-chart.png %}
 
 
 We reached a 92% satisfaction rate with at the doorstep exchanges.
 
 Both regular exchanges and at the doorstep exchanges were a success with our customers!
 
-**What we wanted to achieve:**
+##What we wanted to achieve:
 
 By enabling exchanges across Saudi Arabia, Kuwait, Oman and Bahrain, we succeeded in accomplishing a significant KPI we set for ourselves: boosting our customer satisfaction rate. While international exchanges did not improve our delivery time, we managed to make our customers happy by reserving products they liked and purchased in the sizes they wanted, ensured they continued to benefit from any deal or discount they purchased it with and if the price for that product went up, our customers weren’t obliged to pay the difference!
 
