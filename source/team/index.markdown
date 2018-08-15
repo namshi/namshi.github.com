@@ -72,7 +72,7 @@ footer: true
     someday.
 
 *   ##<div id="Abdelrahman Shiddo">Abdelrahman Shiddo</div>
-    {% img left team /images/abz.jpg Abdelrahman Shiddo %}
+    {% img left team /images/abz.png Abdelrahman Shiddo %}
     **Abdelrahman Shiddo** is a DevOps Engineer from Ireland, who holds a BEng in Mechatronics Engineering from University of Nottingham Malaysia Campus.
     He loves automating, building reliable, highly available platforms that make it easier for developers to deploy more frequently and is always looking for ways to improve the performance of platforms by using the appropriate tools for the job required.
     His main focus is implementing automation and infrastructure-as-code with technical skills that include Python, Terraform, Docker, Bash, AWS and more.
