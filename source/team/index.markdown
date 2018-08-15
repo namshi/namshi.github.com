@@ -99,12 +99,6 @@ footer: true
     by night. There are 3 things he takes very seriously:
     work, the Oxford comma, and Biryani.
 
-*   ##<div id="Yomna Sabry">Yomna Sabry</div>
-    {% img left team /images/yomna.png Yomna Sabry %}
-    **Yomna Sabry** is a Product Management Analyst at Namshi. She joined Namshi eager to learn more about the E-commerce industry because of its growing potential and its importance in people’s lives nowadays.
-    Prior to joining Namshi, she was a Product Owner at Adabisc in Qatar where she spent a year focusing on the development of products in Entertainment Technology. Her work there made her realize that product management is what she wants to specialize in;  she very much likes being part of and foreseeing every aspect of product development.
-    Before that, Yomna worked in research and software development in Carnegie Mellon University in Qatar for 2 years. She holds a B.Sc. in Computer Engineering from the American University in Cairo. She also wants to tour the world: 18 done and 188 more to go!
-
 *   ##<div id="Andrey Komarov">Andrey Komarov</div>
     {% img left team /images/andrey.jpg Andrey Komarov %}
     I always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
@@ -133,6 +127,12 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Yomna Sabry">Yomna Sabry</div>
+    {% img left team /images/yomna.png Yomna Sabry %}
+    **Yomna Sabry** is a Product Management Analyst at Namshi. She joined Namshi eager to learn more about the E-commerce industry because of its growing potential and its importance in people’s lives nowadays.
+    Prior to joining Namshi, she was a Product Owner at Adabisc in Qatar where she spent a year focusing on the development of products in Entertainment Technology. Her work there made her realize that product management is what she wants to specialize in;  she very much likes being part of and foreseeing every aspect of product development.
+    Before that, Yomna worked in research and software development in Carnegie Mellon University in Qatar for 2 years. She holds a B.Sc. in Computer Engineering from the American University in Cairo. She also wants to tour the world: 18 done and 188 more to go!
 
 *   ##<div id="Geshan Manandhar">Geshan Manandhar</div>
     {% img left team /images/geshan.jpg Geshan Manandhar %}
