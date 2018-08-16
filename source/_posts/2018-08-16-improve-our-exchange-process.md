@@ -3,7 +3,7 @@ layout: post
 title: "Improving our return process"
 date: 2018-08-16
 comments: true
-categories: [return, exchange, process]
+categories: [return, exchange, process, customer experience]
 author: Ayham Alzoubi
 ---
 
