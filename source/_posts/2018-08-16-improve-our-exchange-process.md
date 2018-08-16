@@ -27,7 +27,7 @@ Our original exchange process had a pretty basic flow.  A customer would place a
 
 {% img center /images/posts/exchange-size.JPG %}
 
-This approach seemed pretty dated as our customers suffered because of the extended time frame of the whole process, during which the size they wanted instead could have ran out, but also because during this time, the price of the product may have fluctuated. This might result in them having to pay a higher price.
+This approach seemed pretty dated as our customers suffered because of the extended time frame of the whole process, during which the size they wanted instead could have ran out of stock, but also because during this time, the price of the product may have fluctuated. This might result in them having to pay a higher price.
 
 ##So… We added exchanges!
 
@@ -100,11 +100,7 @@ This feedback tied in neatly with our next initiative… At the door exchanges!!
 
 ##At the door exchanges
 
-We wanted to make sure that our customers received the best possible service from our end. So, given the feedback from our customers and our capacity, we decided to launch at the doorstep exchanges.
-
-These entailed our in-house couriers heading to a customer’s delivery address, collecting the original item and handing over the exchange item in one go!
-
-Once we launched this service, we ran another survey to see what our customers thought:
+Once we launched doorstep exchanges, we ran another survey to see what our customers thought:
 
 {% img center /images/posts/swaps-chart.png %}
 
