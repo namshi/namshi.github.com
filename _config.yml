@@ -157,13 +157,13 @@ team:
         bio: 'Senior Frontend Engineer'
         image: 'amin.jpg'
     'Joe Jean':
-        bio: 'Software Engineer'
+        bio: 'Senior Software Engineer'
         image: 'joe.png'
     'Geshan Manandhar':
         bio: 'Senior Software Engineer'
         image: 'geshan.jpg'
     'Ayham Alzoubi':
-        bio: 'Senior Software Engineer'
+        bio: 'Software Engineering Lead'
         image: 'ayham.jpg'
     'Hossam Fares':
         bio: 'Senior Software Engineer'
@@ -190,5 +190,5 @@ team:
         bio: 'Senior Software Engineer'
         image: 'tedj.jpg'
     'Carles Iborra':
-        bio: 'Senior Software Engineer'
+        bio: 'Engineering Manager'
         image: 'carles.png'

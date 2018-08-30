@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Improving our return process"
+title: "How we improved our return process and increased customer satisfaction by 22%"
 date: 2018-08-16
 comments: true
 categories: [return, exchange, process, customer experience]
