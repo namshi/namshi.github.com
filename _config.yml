@@ -192,3 +192,6 @@ team:
     'Carles Iborra':
         bio: 'Engineering Manager'
         image: 'carles.png'
+    'Akshay Jayakumar':
+        bio: 'Sr. Android Engineer'
+        image: 'akshay.png'

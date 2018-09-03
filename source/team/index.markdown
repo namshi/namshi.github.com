@@ -120,7 +120,11 @@ footer: true
 
 *   ##<div id="Carles Iborra">Carles Iborra</div>
     {% img left team /images/carles.png Carles Iborra %}
-    **Carles Iborra** is a seasoned software engineer and former manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
+    **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
+
+*   ##<div id="Carles Iborra">Akshay Jayakumar</div>
+    {% img left team /images/akshay.png Akshay Jayakumar %}
+    Akshay Jayakumar started his career as a Mainframe Program Analyst in 2010, soon after completing his Bachelors in Information Technology. A year later, he joined the Amrita Research Labs in India, pioneering in Educational technologies providing personalized learning, m-learning, and e-learning to rural India. Akshay is now a Senior Android Engineer at Namshi, passionate about Web, Hybrid, Native apps development, IoT, and Hardware interactions. Over the span of 8 years, Akshay has worked as both Front-end and Back-end engineer.  His skills include Android, Java, Groovy on Grails, PHP, Python Flash, Angular, HTML5-CSS3, RESTful etc. He has also published multiple papers in IEEE, Springer, and ACM under the tracks on Literacy, Education, Pedagogy, Virtual simulations & Modeling and Speech recognition. Akshay loves working with Arduino boards, Raspberry Pi, BLE, and Leap Motion.
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
