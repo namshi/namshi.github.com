@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-08-30T07:26:34+00:00</updated>
+  <updated>2018-09-03T07:33:55+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,201 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[A new way to navigate around the Namshi android app]]></title>
+    <link href="http://namshi.github.io/blog/2018/09/03/a-new-way-to-navigate-around-the-namshi-android-app/"/>
+    <updated>2018-09-03T06:25:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/09/03/a-new-way-to-navigate-around-the-namshi-android-app</id>
+    <content type="html"><![CDATA[<p>From a UX standpoint, it is really important to strike a good balance between usability and how information is organized within the application. Too much information might be overwhelming to the user, and an improper flow of the information will become a discouraging experience. Having a proper navigation pattern is vital as this helps the users to navigate between various hierarchies of structured or organized information.  One of the biggest challenges within the mobile application purview is in providing a proper navigation, especially due to the smaller size of mobile screens. Several navigational patterns have been designed but each has its own strengths and weaknesses.</p>
+
+<!-- more -->
+
+
+<p>Android Navigation Drawer (a.k.a Burger Menu or Side Menu) has been ruling Android apps UX for almost 5 years now. Google has made it so easy to implement that it became the primary choice of every app developer when it comes to app navigation. Almost all the apps developed by Google migrated to Navigation Drawer after it was released, so did the Namshi one.</p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_07C9FE3356B59E821BA4395C1035CE40A82CC8DB34E1180E780172D6BED63FC6_1535430699961_NAMSHI-Android-Navigation-Drawer-small.gif" alt="Navigation pattern in NAMSHI Android App." /></p>
+
+<p>As per good UX principles :
+&ldquo;<strong>It is extremely important to present your users with the most important destinations within the app.</strong>&rdquo;</p>
+
+<p>While Navigation drawer completely fulfills the above statement, There exist some fundamental problems with this navigation pattern.  Some of these problems are :</p>
+
+<ol>
+<li>Lower Discoverability</li>
+<li>Less Efficient</li>
+<li>Clash with Platform Navigation Patterns</li>
+<li>Not Glanceable</li>
+</ol>
+
+
+<p>These problems are described in detail <a href="https://lmjabreu.com/post/why-and-how-to-avoid-hamburger-menus/">here</a></p>
+
+<p>Side menu or a Navigation Drawer can hold relatively large amounts of heterogeneous contents. Apart from having a regular list of navigational items, it can also accommodate secondary information such as user profile details, or actions that are less frequently used but relevant under certain scenarios. One of the major advantages of having a Side menu or a Navigation Drawer is in its ability to save the screen real estate by taking the navigation away from the main screen, thereby making less overwhelming to the users but also can generally result in having poor visibility.</p>
+
+<p>Another major downside of having a Side menu or a Navigation Drawer is that users tend to lose the context quickly as in which page/ destination they are currently in. This cannot be identified easily, as the navigation is hidden beyond the edges of the screen and always require a click of a button or a swipe. Such a limitation in providing a quick visual communication is considered non-desirable.</p>
+
+<p>For an app like ours, with fewer top-level destinations, having a Navigation Drawer is kind of an overkill because there isn’t any secondary information displayed to the user other than the navigation. A fair amount of the screen remains, unused.</p>
+
+<h2>Welcoming Bottom NavBar</h2>
+
+<p>A good percentage of the users prefer to have a single-hand interaction with their mobile devices/ apps. Pressing on the Burger menu icon in the action bar or swiping a finger from the edge of the screen reveals the hidden Navigation Drawer. Most of the cases, using Navigation Drawer will require the use of your second hand.  Though this is a typical UX pattern followed in many play store apps, it is not really the best nor is necessary depending on the context of your app. It is imperative to have a consistent navigation and the flow within the app making sense to your users.</p>
+
+<p>Bottom navigation is one of the best suitable navigation patterns, arguably due to its ergonomic placement on the screen. It provides quick and easy access to the various top-level destinations. As mentioned in the Google Material Design guidelines, it is recommended to use the new Bottom navigation when there are <strong>three</strong> to <strong>five</strong> top-level destinations thus making it ideal for the Namshi app, as it has five top-level destination pages (Home, Search, Wishlist, Shopping bag, and My Namshi).</p>
+
+<h2>A little about the Namshi app Configuration</h2>
+
+<p>Our app is highly configuration-driven. A set of configuration settings from our server, dictates the app on its various aspects such as the language of the displayed content, the home screen layout, content modules like images, gifs, videos, sliders, expandable/ scrolling lists, target for the user actions, showing quick alerts, arrangement of our products catalog, details in our checkout page, payment methods, our brand new delivery promises (<a href="http://tech.namshi.io/blog/2018/08/06/delivery-promises-in-the-wild/">read more</a>), region-specific business rules. Pretty much everything in the app… you name it, it’s configuration driven! Navigation too is no exception and will follow suit! A specific property in the app configuration decides how our users will navigate within the app. This makes the implementation of the new Bottom navigation much challenging as any new changes should not break the existing Navigation Drawer functionality.</p>
+
+<h2>Implementing Bottom Navigation View</h2>
+
+<p>Bottom Navigation View is available as part of the Android Design Support library and the corresponding dependency should be added in the app <code>build.gradle</code> file.</p>
+
+<pre><code>dependencies {
+  ...
+  compile 'com.android.support:design:&lt;relevant.sdk.version&gt;'
+  // This was added in version 26.1.0. Visit the android doc for more info.
+}
+</code></pre>
+
+<p>Once this dependency is added, next would be to include the BottomNavigationView in your app layout. Add the BottomNavigationView to the root layout of your app.</p>
+
+<pre><code>&lt;android.support.design.widget.BottomNavigationView
+       android:id="@+id/namshi_bottom_navigation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom" /&gt;
+</code></pre>
+
+<blockquote><p>Having a CoordinatorLayout as the root will enable us to use <strong>bottom navigation behavior</strong>. This behavior will make the BottomNavigationView scroll aware by hiding/ showing it when users scroll through a list thereby giving more space for displaying contents.</p></blockquote>
+
+<p><strong>Other Supported Attributes</strong>
+Below are some of the supported attributes.</p>
+
+<ul>
+<li><strong>elevation</strong> &ndash; Controls the elevation of this view.</li>
+<li><strong>itemIconTint</strong> &ndash; Single color or even a color selector &ndash;  Sets the color of the menu item icon depending on their states.</li>
+<li><strong>itemTextColor</strong> &ndash; This attribute can be used to change the title text color of the menu item. Supports a single color or a color selector.</li>
+</ul>
+
+
+<p><strong>Setting Bottom navigation Menu Items</strong>
+Adding menu items to a BottomNavigationView is similar to that of adding menu items to a NavigationView in a Navigation Drawer layout. Menu items can be defined in an xml menu resource file or can be added dynamically. Being configuration-driven, it makes more sense to dynamically add the menu items depending on the configuration, rather than to have it populated from a static menu resource file.</p>
+
+<blockquote><p>BottomNavigationView supports up to five menu items and anything more than that will result in a Runtime exception, crashing the app. This is a typical scenario that can occur upon activity re-creation when menu items are added dynamically.</p></blockquote>
+
+<p>See to it that a proper check is in place, so as to not exceed the limit of menu items in the BottomNavigationView. An alternative to this is to clear any existing menu items prior to populating it.</p>
+
+<pre><code>fun addBottomNavigationMenuItems() {
+  bottomNavigationView?.let { bnv -&gt;
+      bnv.menu?.let { menu -&gt;
+          menu.clear()
+          // Add menu items to bnv here
+      }
+  }
+}
+</code></pre>
+
+<p>BottomNavigationView has a lot of limitations compared to many 3rd party Bottom navigation libraries. One such main limitation is the lack of support for Action Views in menu items. Android provides custom view support for menu items by the means of Action Views. Unfortunately, BottomNavigationView tends to ignore the Action Views, making it hard to customize individual menu items. Setting an Action View on the BottomNavigationView menu items seems to have no effect by which it is drawn in the layout. Below code snippet illustrates adding a Search menu item dynamically to the BottomNavigationView.</p>
+
+<pre><code>val menuSearch =
+    bottomNavigationView.menu.add(
+      Menu.NONE, R.id.bottom_nav_item_search, Menu.NONE, R.string.search)
+
+menuSearch
+  .setIcon(R.drawable.bnv_search_selector)
+  .setActionView(View(context))
+  .actionView.tag = arrayOf(FRAGMENT_PRODUCTS_SEARCH)
+</code></pre>
+
+<p>Even though BottomNavigationView ignores the Action Views, this can still be leveraged to make our new navigation aware of the destination pages. Every menu item has an Action View set to it, so that, the respective Action Views can hold a list of fragment tags that it represents. More about this is in the <strong>Fragment Awareness</strong> section, below.</p>
+
+<h2>Event listeners</h2>
+
+<p>Just like any other views, BottomNavigationView also has got a set of events and associated listeners to it. The one we are interested now is <strong>OnNavigationItemSelectedListener</strong>. Selecting any menu items will trigger the <strong>onNavigationItemSelected()</strong> event of this particular listener. This event will also pass along with it the selected menu item based on which, appropriate logic for the navigation is performed.</p>
+
+<pre><code>override fun onNavigationItemSelected(item: MenuItem): Boolean {
+  when (itemId) {
+      ...
+      R.id.bottom_nav_item_search -&gt; appMenuListener.displaySearchFragment()
+      ...      
+  }
+}
+</code></pre>
+
+<h2>Fragment awareness and support for Deep links</h2>
+
+<p>The Namshi android app follows a Single Activity and Multiple Fragments pattern and its architecture are highly decoupled. A helper class is responsible for performing all fragment transactions and this is in turn used by the AppMenuListener (a dagger2 dependency) which encapsulates the necessary logic for performing navigation to the appropriate destination page. When a user selects any particular navigation menu item, the corresponding event is triggered that invokes a specific action defined in the AppMenuListener.</p>
+
+<p>Apart from this, users can still navigate to any destinations within the app by external means such as a Push Notification or even by Deep-links. In the Namshi android app, deep-links are resolved by a DeepLinkListener (yet another dagger2 dependency) which will perform the relevant routing, making use of the actions defined in the AppMenuListener. Implementing a consistent navigation across the app and to maintain the proper menu item states without changing this underlying implementation becomes challenging because, in such scenarios, navigation is not through but outside the bottom navigation.</p>
+
+<p>In order to overcome this, our BottomNavigationView controller has implemented OnBackStackChangedListener of the FragmentManager class, which will trigger an event whenever a fragment is changed in the back stack. This will try to match the tag of the topmost fragment in the back stack to that stored in the navigation menu items.</p>
+
+<pre><code>override fun onBackStackChanged() {
+  clearMenuItemState()
+  // NPE Check - if not detached from the activity
+  val topFragment = FragmentHelper.getTopFragment(activity)
+  topFragment?.let { fragment -&gt;
+    changeMenuItemState(fragment.tag)
+  }  
+}
+
+fun changeMenuItemState(fragmentTag : String ?) {
+    ... // Clear previous menu states if required
+    menu?.let {
+      for (i in 0 until it.size()) {
+          val menuItem = it.getItem(i)
+          menuItem?.let { item -&gt;
+              val tags = item.actionView?.tag as? Array&lt;String&gt; ?: null
+              val index = tags?.indexOf(fragmentTag) ?: -1
+              if (index &gt;= 0)
+                ... // Change the menu item state and return
+          }
+      }
+    }
+}
+</code></pre>
+
+<p>Let’s see the new Bottom navigation in action!</p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_07C9FE3356B59E821BA4395C1035CE40A82CC8DB34E1180E780172D6BED63FC6_1535456216606_ezgif.com-resize+2.gif" alt="" /></p>
+
+<h2>Notification Bubble</h2>
+
+<p>One of the most sought-after features for the Bottom navigation is to have a notification bubble with a notification count which is not supported by the BottomNavigationView out of the box. Using Action Views would have been the ideal approach for such use cases, but that is not an option here! Having that said, it is also not an impossible task either, to implement a simple Notification bubble to the menu items in the BottomNavigationView. Just a tiny tweak in the BottomNavigationView layout hierarchy can help us reach our goal! Every menu item in the BottomNavigationView is essentially a <strong>BottomNavigationItemView</strong> extending the android <strong>FrameLayout</strong>. There are no APIs available to interact with this directly. Below is a sample snippet for adding a notification bubble/ badge to any specific menu item in the BottomNavigationView.</p>
+
+<pre><code>fun addNotificationBadge() {
+  bottomNavigationView?.let {
+      ... // Get the Menu View from the parent BottomNavigationView
+      menuView?.let { mView -&gt;
+        ... // Get the corresponding menu item index
+        val menuItemView = mView.getChildAt(/*index*/) as? BottomNavigationItemView
+        val bubbleView = LayoutInflater.from(context)
+                        .inflate(R.layout.bottom_nav_bubble_layout, null)
+        ... // Find the corresponding view to update the count
+        menuItemView.addView(bubbleView)
+      }
+  }
+}
+</code></pre>
+
+<p>Voila! Make sure to add the notification bubble during the initial setup of the BottomNavigationView but after the initialization of the menu items.</p>
+
+<p><img src="https://d2mxuefqeaa7sj.cloudfront.net/s_07C9FE3356B59E821BA4395C1035CE40A82CC8DB34E1180E780172D6BED63FC6_1535456573986_ezgif.com-gif-maker.gif" alt="Notification bubble in action" /></p>
+
+<blockquote><p>It will be good to consider making the notification bubble layout as simple as possible so as to reduce the layout over-draws. Adhere to good practices, use flat rather than nested or intricate layouts!</p></blockquote>
+
+<h2>Future enhancements</h2>
+
+<p>During I/O 2018, Google introduced the new <strong>Navigation-components</strong> to the Android Architecture which will greatly simplify the way navigation is done within the app. This will help in implementing a consistent navigation between various destinations within your app in a disentangled way. Each destination can be a fragment, an activity, a navigation graph or a subgraph. Custom destinations are also supported. Navigation-components also support actions, type-safe arguments, deep-links and will also go well with the BottomNavigationView. Many of the problems and user requirements mentioned above can be addressed with this. One such important issue that this will solve, is building the stack of destination pages when a user navigates through a deep-link, which otherwise would have happened during manual navigation. Our app, being mostly a “Single Activity and Multiple Fragments app” can be easily migrated to the new Navigation Architecture with less effort. This promising new addition to the Android Architecture enforces conformance to the Architecture guidelines thereby facilitating a consistent and predictable navigation by decoupling the routing logic that otherwise is contained in the view layer, which can become quite tedious to maintain and modify in larger applications.
+Another great feature to have with Bottom navigation is to introduce the <strong>Bottom Navigation Behavior</strong> which will show and hide the Bottom Navigation View when a user scrolls through a huge list just like our Products catalog page, giving more space for displaying the list contents.</p>
+
+<h2>To wrap-up!</h2>
+
+<p>Android BottomNavigationView has got several limitations and there are many 3rd party implementations overcoming them. Nevertheless, none of that has stopped us from using it in the Namshi android app. We at Namshi embrace new challenges that help us get better in delivering the best experience for our users. Apart from this fixed navigation pattern, the deep-links support provides quick access to any specific destinations within the app rather than to go through multiple levels, manually. Fragment awareness comes in handy, as this will make the Navigation menu items to be on the right state when the destination page is loaded. By using Bottom Navigation, the content of the app of becomes readily discoverable and it gets easy to do single-handed navigation.
+Go ahead and download <a href="https://play.google.com/store/apps/details?id=com.namshi.android&amp;hl=en">Namshi App</a> from Google Play and let us know how the new navigation feels like!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How we improved our return process and increased customer satisfaction by 22%]]></title>
@@ -1977,175 +2172,6 @@ As of now, AMP analytics component supports multiple vendor configurations. The 
 <p>We also want to add HTTP2 and Server push to our mix and experiment with them. These are all the features we’re planning to add to the current setup.</p>
 
 <p>Finally, Thanks to all the people who make the web awesome !</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Breakpoint On Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi/"/>
-    <updated>2016-08-17T09:13:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi</id>
-    <content type="html"><![CDATA[<p><img class="left" src="http://namshi.github.io/images/posts/rainy-duabi.jpeg"></p>
-
-<p><span class="figcaption_hack">Rainy days in Dubai are rare! same as good places to work.</span></p>
-
-<p>Almost 2 years ago, I landed at the Dubai Airport on a flight that took off from
-Egypt and for several reasons, a flight that won’t have a return ticket back to
-Egypt (at least anytime soon, I hope).</p>
-
-<!-- more -->
-
-
-<p>At the Airport I faced one issue with my Visa, and I was about to get denied
-entry: Only thanks to a polite Emirate police officer I was able to get through;
-a thing, I’ve been told later on, it was unprecedented, unheard of.</p>
-
-<h3>The Oblivion</h3>
-
-<p>Initially, when I was hired by Namshi, I was a designer comfortable around
-Photoshop and Css and, eventually, I had to learn a lot more in such a short
-period of time.</p>
-
-<p>My first weeks went by with me sitting around people who were talking about
-stuff I didn’t understand, they were just doing their job normally, though,
-everything sounded mythical to me.</p>
-
-<p>My first task involved creating an application that helps the Customer Care
-agents to speed up the lookup of customer details while they’re receiving a
-call.</p>
-
-<p>Imagine what I had to learn, to start building an angular application while,
-back then, I barely heard of Javascript as a programming language: the best I knew was to search StackOverflow to get something that would work … in jQuery!</p>
-
-<blockquote><p>It worked, … I don’t know how, but it did!</p></blockquote>
-
-<p>“It worked, … I don’t know how, but it did!” I said to my team mates and manager hundreds of times!</p>
-
-<p>You might think that life isn’t easy to grasp, <strong>but Javascript is much harder</strong> from a point of view of a designer who wants to code.<br>
-I kept fighting every day to get through with an output that would make me feel quite
-accomplished and I want to say that, honestly, it wasn’t an easy quest (and, by
-the way, wasn’t always successful either).</p>
-
-<p><img class="left" src="http://namshi.github.io/images/posts/gb-amino.jpeg">
-<span class="figcaption_hack">Don’t leave your computer Unlocked, seriously, Don’t! A hard-learned lesson :D</span></p>
-
-<p><strong>Bottom line: </strong> those days, I always felt overwhelmed, not knowing what I
-should do most of the time; it was fun and exciting to learn but, make no
-mistake, nothing is harder on a productive former-designer than seeing his
-output not matching the one by his peers by any criteria.</p>
-
-<p>The only thing I knew was that I had to push through…</p>
-
-<h3>Light at the end of tunnel</h3>
-
-<p>Things started to make sense: now I don’t ask “what is that?” on every term that
-falls on my ears, I don’t struggle each time I want to use Promises or create a
-helper function, I started to see some patterns and cling to them.</p>
-
-<p>It was the light at the end of the tunnel, things started to make sense, I
-started to have an edge doing stuff and started to believe that I only lacked a
-much needed experience to be like my peers or even better, and this is something
-that I’m going to compensate by an over-dose of self-learning as I did before.</p>
-
-<br>
-
-
-
-
-<br>
-
-
-<p><img class="left" src="http://namshi.github.io/images/posts/arabic_quote.jpeg"></p>
-
-<p>Anis Mansoor</p>
-
-
-<blockquote><p>If he knows well , he would know that he doesn’t.</p></blockquote>
-
-<p>That is a translated quote from an arabic wisdom saying, which describes the
-situation pretty well. I just got into the surface and I thought I already
-reached the nirvana!</p>
-
-<p>I came to realize the true light at the end of the tunnel, it was something said
-in one of several performance reviews that we hold on a monthly basis: ”Now, I
-know what I want to know, previously I had no idea how deep it was”.</p>
-
-<p><img class="left" src="http://namshi.github.io/images/posts/tech-trivia.jpeg">
-<span class="figcaption_hack">One of the Code and Tech Trivias that took place recently, My team lost :S</span></p>
-
-<h3>Fast Forward</h3>
-
-<p>Now, I reached somewhere where I feel comfortable to talk about the previous
-events of these very condensed months.</p>
-
-<p>I would be happy to let you know that, finally, I did it, I prevailed, I became
-a super ninja full stack developer who knows about DB, Docker and knows a bunch
-of modern shiny tools and frameworks, can write Javascript while sleeping as
-well …</p>
-
-<p>But that isn’t true! (except the part of sleeping :)</p>
-
-<p>But the real accomplishment is that my mindset has changed! This is the true
-victory, I like to believe that now I think, plan and decide better! <strong>That</strong> is
-the real breakthrough for me!</p>
-
-<p>Technology doesn’t matter, it is always the matter of how you think your way out
-of a problem: I feel more competent with such a mindset rather than a handful of
-a skill-sets that aren’t properly utilized.</p>
-
-<h3>Takeaways</h3>
-
-<p>I didn’t want to sound self-promoting, I tried to be honest as much as I could,
-but the TL;DR for my last 2 years is:</p>
-
-<ol>
-<li>I kept saying “I don’t know how to do this”, and there was <strong>always</strong> someone
-willing to spend time to make sure that I got it</li>
-<li>I would had never got anywhere without a team, who doesn’t <strong>patronize</strong> me for
-not knowing things, they would gladly baby walk me to the point instead</li>
-<li>The right people and the right challenges are things that I have a little
-control over, but I always make sure I’m grateful to have.</li>
-<li>I’m not the smartest person in the room, which always put me under pressure.
-What made the difference, for me, is that I was <strong>self-conscious</strong> of my
-<strong>shortcomings</strong>. and most of time I had a plan to overcome this.</li>
-<li>I spent the first six month reading and watching courses heavily, it reminded me
-of 8 years ago when I was trying to kick off my graphic design career. Let’s be
-fair, nowadays, it is much easier to find the <a href="https://medium.com/@MohamedAmin88/web-designer-guide-to-front-end-stack-a8f72a2cd157#.clmhzr7rw">perfect learningmaterial</a> and this is something not to be taken lightly.</li>
-<li>On my first weeks, I was cheered for my first push to live fix, which was a
-really minor thing, but it greatly boosted my <strong>confidence</strong> and <strong>willingness</strong>
-to contribute more. Now, on a daily basis, I tackle bugs , add features then
-test them on the staging environment and single handedly deploy them live (which
-I am now privileged to do!) with just an approval from a peer developer on the
-Pull Request.</li>
-<li>…which takes us to The PR aka Pull Request challenge: arguably, I can say that
-30% of what I learnt was because of PRs; it was (and still is) not an easy job
-to get approval on you PR from your peers or even worse (if your doomed :D )
-from our VP of technology .</li>
-</ol>
-
-
-<br>
-
-
-<p><img src="http://odino.org/images/meme-odino.jpg" alt="" /></p>
-
-<ol>
-<li><p>It is one of the most common syndromes,  I-don’t-think-it-is-good-enough
-syndrome  , I have been pushed by teammates to contribute to open source and
-get over the shyness! this one of the things that I should have done really
-earlier and, as a note to self, I should do more often :)</p></li>
-<li><p><strong>Pair programming for the win; </strong> one of the nice perks that was a super
-catalyst for improving my programming skills. Nothing is better than to think
-with another mind and code together, I gained a lot by watching how someone more
-experienced tackles problems and breaks features down more than I learned from
-courses, reading or blog posts.</p></li>
-</ol>
-
-
-<p>At the end, this was a retrospective on my work/life at Namshi, to have a look
-at my current pace and give myself a bit of perspective on both past and
-foreseeable future.<br> My hope is that, the next time I look back, I see that I
-had more mistakes, more revelations and lessons-learned.</p>
 ]]></content>
   </entry>
   
