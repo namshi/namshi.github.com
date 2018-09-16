@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hiring | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hiring/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-09-03T07:42:25+00:00</updated>
+  <updated>2018-09-16T15:21:32+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,82 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Namshi is hiring: come and hack with us!]]></title>
+    <link href="http://namshi.github.io/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us/"/>
+    <updated>2018-09-16T13:27:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us</id>
+    <content type="html"><![CDATA[<p>Looking for a fresh new start in 2019? We might have
+the right opening for you!</p>
+
+<!-- more -->
+
+
+<p>In order to support the growth of our business, we&rsquo;re currently
+beefing up our entire tech department, with the intention of
+developing even <a href="/blog/2017/05/28/rewriting-the-catalog-api/">faster services</a>
+and delivering an even more <a href="http://tech.namshi.io/blog/2018/08/16/improve-our-exchange-process/">amazing customer experience</a>:
+the end goal is to re-organize the structure of our team
+(which has always been split by skillset, as in &ldquo;mobile&rdquo;, &ldquo;backend&rdquo;, etc)
+and mimic the <a href="https://labs.spotify.com/2014/03/27/spotify-engineering-culture-part-1/">squad framework</a>, where technical teams are split
+by &ldquo;business function&rdquo;.
+We&rsquo;re never going to employ thousands
+of engineers but, as we feel the need to build a bigger tech
+pipeline and consequently hire additional software engineers,
+we think the squad framework provides a good structure for
+a bigger organization.</p>
+
+<p>So, lots of hiring coming up here at Namshi: mobile, SRE, frontend, backend&hellip;   &hellip;you name it, we&rsquo;re probably hiring :)</p>
+
+<p>Our mobile team, lead by <a href="https://www.linkedin.com/in/hannancs112/">Abdul</a>, is playing around with React Native
+and works on a daily basis with Swift and the standard
+Android toolkit (even though they&rsquo;ve been flirting with
+Kotlin every now and then): their mission is to make
+our mobile apps blazing fast, smooth and as crash-free as possible.</p>
+
+<p>On the frontend side of things, our team
+develops <a href="https://www.thinkwithgoogle.com/intl/en-145/which-brands-have-most-user-friendly-mobile-sites-united-arab-emirates-and-saudi-arabia/">amazing web UXes</a>
+and internal tools used within the company: our frontenders
+eat React for breakfast and are spearheaded by <a href="https://www.linkedin.com/in/shidhincr">Shidhin</a>, our
+most senior frontend engineer.</p>
+
+<p>On the backend, <a href="https://www.linkedin.com/in/carlesi">Carles</a>
+and <a href="https://www.linkedin.com/in/ayham-alzoubi-06516a52/">Ayham</a>
+lead a tight-knit team that focuses on delivering HTTP APIs for
+our clients to consume: the team deals with scalability
+and performance issues and solve problems that span across the
+whole domain, mostly with NodeJS, Python and Go.</p>
+
+<p>Last but not least, our SREs
+build infrastructures for more than 100 services, all
+deployed through Docker containers orchestrated by
+Kubernetes. It is almost unbelievable to see what they
+allow others teams to do, especially considering
+the team is extremely small, as <a href="/team/#Abdelrahman%20Shiddo">Abdelrahman</a> and
+<a href="/team/#Andrey%20Komarov">Andrey</a> are our only SREs.</p>
+
+<p>Sounds interesting enough? Then drop us a line at <em>work-in-tech@namshi.com</em>
+and let&rsquo;s have a chat!</p>
+
+<p>Oh, I almost forgot &mdash; a couple more things before leaving:</p>
+
+<ul>
+<li>most of our engineers are quite senior, so we&rsquo;d like
+to &ldquo;diversify&rdquo; and hire less experienced candidates:
+juniors and intermediates are our ideal candidates as
+of now. If you consider yourself a senior and would like
+to apply, feel free to reach out, as we might be able to
+work something out :)</li>
+<li>I wrote about our hiring process a while ago but most
+of it still stands, so I&rsquo;d recommend you to have a look at
+our post &ldquo;<a href="/blog/2016/12/06/get-that-job-at-namshi/">Get that job at Namshi</a>&rdquo;</li>
+</ul>
+
+
+<p>Adios!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Currently hiring: a CyberSecurity engineer]]></title>
@@ -248,95 +324,6 @@ let&rsquo;s have a chat!</p>
 
 <p>P.S. A few weeks back I wrote a small piece about <a href="http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
 give it a look!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Currently hiring: a DevOps engineer and a JS hacker here in Dubai]]></title>
-    <link href="http://namshi.github.io/blog/2016/08/07/currently-hiring-a-devops-engineer-and-a-js-hacker-here-in-dubai/"/>
-    <updated>2016-08-07T11:29:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/08/07/currently-hiring-a-devops-engineer-and-a-js-hacker-here-in-dubai</id>
-    <content type="html"><![CDATA[<p>Hey folks, here at <a href="https://www.namshi.com">Namshi</a> we&rsquo;re currently looking
-to beef our team up &mdash; without further ado, let me quickly go through both
-of them!</p>
-
-<!-- more -->
-
-
-<ul>
-<li><p><strong>Sr. DevOps engineer</strong>: we run our entire stack on AWS, and 99% of our
-services run in Docker containers orchestrated via <a href="http://kubernetes.io/">Kubernetes</a>:
-a big chunk of our infrastructure is provisioned through <a href="https://saltstack.com/">SaltStack</a>
-and we like to keep things simple, reliable and robust &mdash; inspired by
-<a href="https://www.infoq.com/news/2013/05/dystopia-as-a-service">Netflix&rsquo;s dystopian architecture</a>.
-We believe in fault-tolerant, reactive architectures that don&rsquo;t care about a
-server going down, as others will be able to take on the load, or automated checks
-will make sure new HW comes online &mdash; and that&rsquo;s how we setup our live infrastructure,
-where a sizable chunk of our services runs through spot instances, with confidence :)
-We are now looking for someone who can help us lifting the team a step further, playing
-with tools like:</p>
-
-<ul>
-<li>golang / python / bash</li>
-<li>Docker</li>
-<li>Kubernets / Swarm / Mesos</li>
-<li>AWS</li>
-<li>SaltStack / Ansible / Chef</li>
-</ul>
-</li>
-</ul>
-
-
-<p>In the past 18 months we&rsquo;ve worked on a few interesting challenges such as:</p>
-
-<ul>
-<li>implementing ChatOps</li>
-<li>utilizing containers on our live infrastructure</li>
-<li>integrating Terraform to automate tasks / provisioning</li>
-<li>reduced our AWS bill, while growing as a company, by writing more efficient
-applications and introducing spot instances in our fleet</li>
-</ul>
-
-
-<p>This gives you an overview of the kind of stuff we would love you to work on:
-we think of DevOps engineers as a mix between software developers
-and system administrators, so we&rsquo;d like you to know a bit of both :)</p>
-
-<ul>
-<li><p><strong>(Sr.) JS engineer</strong>: it is no news that we&rsquo;ve been exploring the JS ecosystem
-for a few years now: from rolling out our first angular apps in 2013 to testing
-React Native in the past months, we&rsquo;ve been very busy trying to push our frontends
-as far as possible.
-We run a Service-Oriented architecture where JS plays a huge part: most of our
-services are either SPAs or small NodeJS-backed APIs, and JavaScript is king at
-Namshi.
-We would like to work with someone who has a very strong background in the language,
-who&rsquo;s been battling on the frontend for a few years and is not afraid to dive into
-Node, if required.
-Some of the things our frontend team has been working over the past few weeks:</p>
-
-<ul>
-<li>React Native</li>
-<li>Redux</li>
-<li>MobX</li>
-<li>isomorphic JavaScript</li>
-<li>AMP</li>
-</ul>
-</li>
-</ul>
-
-
-<p>Most of our frontend apps are built with Angular, although we&rsquo;re heavily experimenting
-with React, even for our internal tools. With a fleet of 50+ microservices, we&rsquo;re
-generally very busy trying to innovate as much as possible.</p>
-
-<p>We&rsquo;re open to very promising, junior candidates even though we&rsquo;re currently hoping
-to find someone with a few years of experience on his / her back &mdash; if you feel you
-do not have the experience but have the right attitude, then let&rsquo;s definitely have
-a chat.</p>
-
-<p>What are you waiting for? Drop a line at <code>work-in-tech@namshi.com</code> and let&rsquo;s
-start this journey together!</p>
 ]]></content>
   </entry>
   

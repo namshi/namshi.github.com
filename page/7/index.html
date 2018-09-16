@@ -70,6 +70,51 @@
     <section class="index">
         <!-- -->
         <div>
+            <h2 class="title"><a href="/blog/2015/08/02/vmware-fusion-headless/" rel="prefetch">VMware fusion headless</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-02-August" title="August 02, 2015">August 02, 2015</time>
+            </div>
+            <div class="excerpt"><p><img class="center" src="/images/posts/osx-vmware.jpg"></p>
+
+<p>Using OS X for development, or any other os apart from Linux, sometimes means that you have to find a workaround to make things work smoothly. This happens also with Docker.
+OS X can&rsquo;t natively run Docker containers, so you might want to use a virtual machine.
+ It&rsquo;s true that there are alternatives like boot2docker, but there are some situations (more on that in a future post) where it is not enough.
+  At Namshi instead of using <code>Virtualbox</code>/boot2docker, we chose to use the more reliable and stable <code>Vmware fusion</code>. From our experience, it is actually better in terms of memory performance and sharing directories (compared to virtualbox 4, we will see if the brand new vbox 5 is better).</p>
+
+<p>Just like  <code>Virtualbox</code>, <code>Vmware Fusion</code> is able to handle a virtual machine in headless mode (with a little bit of shell fu). <code>Headless mode</code> is a way to handle (create, start, stop) a virtual machine by just interacting from the command line. So you don&rsquo;t need to interact with the UI. Everything is hidden, even the application window. It just works.
+We were looking for a way to run the virtual machine in headless mode, just because once you start and access it with ssh, you don&rsquo;t need to bother about anything else. Sometimes leaving the window open without any interaction may cause some performance issues with the vm. Also, in Headless mode, your desktop doesn&rsquo;t consume extra memory.</p>
+
+<p>Enough talking, SHOW ME THE CODE!</p>
+
+<figure class='code'><pre><code class='language-bash'>vmrun power-commands &lt;path-to-vmx-file&gt; nogui</code></pre></figure>
+
+
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
+                        
+                            David Funaro
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
             <h2 class="title"><a href="/blog/2015/07/30/newsletter-number-101/" rel="prefetch">Newsletter #101</a></h2>
             <div class="meta">
                 <time pubdate datetime="2015-30-July" title="July 30, 2015">July 30, 2015</time>
@@ -468,56 +513,6 @@ as you can see, Lucio was pretty sad because he couldn&rsquo;t use the package s
                         
                         </a></strong><br>
                         <span class="muted"></span>
-                        </p>
-                    </address>
-                </footer>
-            </div>
-        </div>
-        <hr>
-    </section>
-    
-    
-  
-    <section class="index">
-        <!-- -->
-        <div>
-            <h2 class="title"><a href="/blog/2015/06/04/newsletter-number-93/" rel="prefetch">Newsletter #93</a></h2>
-            <div class="meta">
-                <time pubdate datetime="2015-04-June" title="June 04, 2015">June 04, 2015</time>
-            </div>
-            <div class="excerpt"><h2>TechThursday is here!</h2>
-
-<p><strong>Yet another post of our weekly newsletter to make your weekend more enjoyable :)</strong></p>
-
-<h3>Team updates:</h3>
-
-<p>Team congratulates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Odino</a> for his wedding that will be held today :)</p>
-
-<h3>and here the links:</h3>
-
-<ul>
-<li><p><a href="http://blogs.windows.com/bloggingwindows/2015/06/01/hello-world-windows-10-available-on-july-29/">Hello World: Windows 10 Available on July 29</a></p></li>
-<li><p><a href="http://blog.500tech.com/is-reactjs-fast/">Is ReactJS really fast?</a></p></li>
-<li><p><a href="https://steveedson.co.uk/javascript/es6/">Using the future of JavaScript, today</a></p></li>
-<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
-</ul>
-
-
-</div>
-            <div class="meta">
-                <footer>
-                    <address>
-                        
-                          <div class="author-pic">
-                            <img src="/images/hossam.jpg">
-                          </div>
-                        
-                        <p>Written by <strong><a rel="author" href="/team/#Hossam Fares" title="Hossam Fares">
-                        
-                            Hossam Fares
-                        
-                        </a></strong><br>
-                        <span class="muted">Senior Software Engineer</span>
                         </p>
                     </address>
                 </footer>
