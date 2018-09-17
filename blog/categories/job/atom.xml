@@ -4,7 +4,7 @@
   <title><![CDATA[Category: job | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/job/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-09-16T15:21:32+00:00</updated>
+  <updated>2018-09-17T11:52:50+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -101,7 +101,26 @@ discuss what&rsquo;s the best approach to structure our styles for the long run.
 We also like to sometimes use CSS animations, so knowing how to make them perform
 better, especially for mobile browsers, is highly appreciated.</p>
 
-<h2>DevOps</h2>
+<h2>Mobile</h2>
+
+<p>As a Mobile Engineer, we expect that you have full proficiency in developing apps
+for Android and/or iOS i.e. from creating a new project in
+Xcode / Android studio to publishing of app in Google Play and App Store.</p>
+
+<p>We expect that you have  good knowledge about Java (Android)
+or Objective C / Swift (iOS). If you know all of these
+languages, most likely you are the rockstar we want to hire :)
+We recently  introduced Kotlin and React-Native in our apps:
+if you have hands-on experience on these it&rsquo;s surely a bonus!</p>
+
+<p>And last but not the least: the Namshi apps are known for their blazing fast
+responsive UI, stability and the features that every online shopper
+wish to have. To take it to the next level, we use lot of CI tools,
+automated builds, Build Optimization for stores, Automatic Distribution to testers.
+Analytics, Crash Reporting etc etc. We expect that you are familiar
+with the tools and techniques to support our workflow.</p>
+
+<h2>SRE</h2>
 
 <p>You should be very familiar with AWS or similar providers ie. Google Cloud, and
 have some sort of experience with containers and orchestrators &mdash;
