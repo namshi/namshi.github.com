@@ -83,6 +83,25 @@ discuss what's the best approach to structure our styles for the long run.
 We also like to sometimes use CSS animations, so knowing how to make them perform
 better, especially for mobile browsers, is highly appreciated.
 
+## Mobile
+
+As a Mobile Engineer, we expect that you have full proficiency in developing apps 
+for Android and/or iOS platform i.e from creating a new project in 
+Xcode / Android studio to the publishing of app in Google Play and App Store.
+
+We expect that you have  good knowledge about Java (If you have Android experience) 
+or Objective C / Swift (If you have iOS experience). If you know all of these 
+languages, most likely you are the rockstar we want to hire :) . We recently 
+introduced Kotlin and React-Native in our apps, if you have hands-on 
+experience on these, its surely a good bonus !!
+
+And last but not the least.  Namshi apps are known for their blazing fast 
+responsive UI, stability and the features that every online shopper 
+wish to have. To take it to the next level, we use lot of C.I tools, 
+automated builds, Build Optimization for stores, Automatic Distribution to testers. 
+Analytics, Crash Reporting etc etc.  We expect that you are familiar 
+with the tools and techniques to support these things.
+
 ## DevOps
 
 You should be very familiar with AWS or similar providers ie. Google Cloud, and
