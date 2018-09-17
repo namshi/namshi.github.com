@@ -102,7 +102,7 @@ automated builds, Build Optimization for stores, Automatic Distribution to teste
 Analytics, Crash Reporting etc etc.  We expect that you are familiar 
 with the tools and techniques to support these things.
 
-## DevOps
+## SRE
 
 You should be very familiar with AWS or similar providers ie. Google Cloud, and
 have some sort of experience with containers and orchestrators --
