@@ -8,57 +8,16 @@ footer: true
 ---
 
 <h2 class="department">Tech</h2>
-*   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
-    {% img left team /images/alex.jpeg Alessandro Nadalin %}
-    **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
-    He heavily focused his attention to agile practices, patterns of enterprise application architecture and leading mid/big-sized development teams.
-    Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
-    Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
+*   ##<div id="Abdelrahman Shiddo">Abdelrahman Shiddo</div>
+    {% img left team /images/abz.png Abdelrahman Shiddo %}
+    **Abdelrahman Shiddo** is a DevOps Engineer from Ireland, who holds a BEng in Mechatronics Engineering from University of Nottingham Malaysia Campus.
+    He loves automating, building reliable, highly available platforms that make it easier for developers to deploy more frequently and is always looking for ways to improve the performance of platforms by using the appropriate tools for the job required.
+    His main focus is implementing automation and infrastructure-as-code with technical skills that include Python, Terraform, Docker, Bash, AWS and more.
+    He's always up for a challenge and loves to get out of his comfort zone to learn more.
 
 *   ##<div id="Abdul Hannan">Abdul Hannan</div>
     {% img left team /images/abdul-hannan.png Abdul Hannan %}
     **Abdul Hannan** is Namshi’s Mobile Ninja who is married to iOS but was also dating Android in the past. He has been doing mobile apps development since 2011 and was working on apps for Banking Industry and Dubai Government prior to joining Namshi. He holds Computer Engineering degree from Karachi Pakistan. He loves to spend time with his family along with learning new things in mobility domain.
-
-*   ##<div id="noor">Noor Ul Ain Ali</div>
-    {% img left team /images/noor.jpg Noor %}
-    **Noor Ul Ain Ali** is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.
-
-*   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
-    {% img left team /images/khaled.png Khaled %}
-    **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
-
-*   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
-    {% img left team /images/ayham.jpg Ayham Alzoubi %}
-    **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
-    Ayham holds a Bachelor's Degree in Information technology Engineering from Damascus University in Syria.
-    He is working in Web Development and he was involved in different projects at Namshi.
-    Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
-
-*   ##<div id="Hossam Fares">Hossam Fares</div>
-    {% img left team /images/hossam.jpg Hossam Fares %}
-    **Hossam Fares** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
-    he hopes to be empowered and empowering others in this field.
-
-*   ##<div id="Joe Jean">Joe Jean</div>
-    {% img left team /images/joe.png Joe Jean %}
-    **Joe Jean** holds a B.S. in Computer Science from NYU Abu Dhabi. He loves building software that make people's lives easier. He is always looking for opportunities to improve his programming skills. And he has never missed such opportunities, whether it is participating at a hackathon, working on a side project, or doing technical internships.
-    His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
-    When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
-
-
-*   ##<div id="Ruba Noureldin">Ruba Noureldin</div>
-    {% img left team /images/ruba.jpg Ruba Noureldin %}
-    **Ruba Noureldin** is a senior software engineer with 6 years of experience. She has a B.Sc. in Communications and Electronics Engineering, but she found her passion in software. Since then, she worked in different industries including banking, automotive and mobile VAS. She is polyglot who has worked with Java, Python, C and currently JavaScript. She is never afraid of jumping into a new challenge. Ruba is also a big movie enthusiast.
-
-*   ##<div id="Tedj Meabiou">Tedj Meabiou</div>
-    {% img left team /images/tedj.jpg Tedj Meabiou %}
-    **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
-
-*   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
-    {% img left team /images/gurjeet.jpg Gurjeet Singh %}
-    **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
-    He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
-    He has around 8 years of experience in Telecom , Network and Linux Technologies.
 
 *   ##<div id="Adedamola Disu">Adedamola Disu</div>
     {% img left team /images/disu.png Adedamola Disu %}
@@ -71,19 +30,66 @@ footer: true
     He sees the Tech team as a motivation and hopes to be a coding geek
     someday.
 
-*   ##<div id="Abdelrahman Shiddo">Abdelrahman Shiddo</div>
-    {% img left team /images/abz.png Abdelrahman Shiddo %}
-    **Abdelrahman Shiddo** is a DevOps Engineer from Ireland, who holds a BEng in Mechatronics Engineering from University of Nottingham Malaysia Campus.
-    He loves automating, building reliable, highly available platforms that make it easier for developers to deploy more frequently and is always looking for ways to improve the performance of platforms by using the appropriate tools for the job required.
-    His main focus is implementing automation and infrastructure-as-code with technical skills that include Python, Terraform, Docker, Bash, AWS and more.
-    He's always up for a challenge and loves to get out of his comfort zone to learn more.
+*   ##<div id="Akshay Jayakumar">Akshay Jayakumar</div>
+    {% img left team /images/akshay.png Akshay Jayakumar %}
+    **Akshay Jayakumar** started his career as a Mainframe Program Analyst in 2010, soon after completing his Bachelors in Information Technology. A year later, he joined the Amrita Research Labs in India, pioneering in Educational technologies providing personalized learning, m-learning, and e-learning to rural India. Akshay is now a Senior Android Engineer at Namshi, passionate about Web, Hybrid, Native apps development, IoT, and Hardware interactions. Over the span of 8 years, Akshay has worked as both Front-end and Back-end engineer.  His skills include Android, Java, Groovy on Grails, PHP, Python Flash, Angular, HTML5-CSS3, RESTful etc. He has also published multiple papers in IEEE, Springer, and ACM under the tracks on Literacy, Education, Pedagogy, Virtual simulations & Modeling and Speech recognition. Akshay loves working with Arduino boards, Raspberry Pi, BLE, and Leap Motion.
 
-*   ##<div id="Shidhin CR">Shidhin CR</div>
-    {% img left team /images/shidhin.jpg Shidhin CR %}
-    **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
-    best practices and front end technologies.
-    He comes with over 6 years of experience in front end development, and core JavaScript expertise.
-    In free time, he can be found updating his blog or checking out some open source stuff.
+*   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
+    {% img left team /images/alex.jpeg Alessandro Nadalin %}
+    **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
+    He heavily focused his attention to agile practices, patterns of enterprise application architecture and leading mid/big-sized development teams.
+    Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
+    Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
+
+*   ##<div id="Ammar Rayess">Ammar Rayess</div>
+    {% img left team /images/ammar.png Ammar Rayess %}
+    **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
+
+*   ##<div id="Andrey Komarov">Andrey Komarov</div>
+    {% img left team /images/andrey.jpg Andrey Komarov %}
+    **Andrey Komarov** always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
+    In the mean time, he tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. He really likes to debug internal system processes, this gives him better understanding of how systems works from deep inside.
+    In 2017 he discovered kubernetes and focused on this amazing technology. He hopes to continue to grow professionally in this direction together with the Namshi team.
+
+*   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
+    {% img left team /images/ayham.jpg Ayham Alzoubi %}
+    **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
+    Ayham holds a Bachelor's Degree in Information technology Engineering from Damascus University in Syria.
+    He is working in Web Development and he was involved in different projects at Namshi.
+    Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
+
+*   ##<div id="Carles Iborra">Carles Iborra</div>
+    {% img left team /images/carles.png Carles Iborra %}
+    **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
+
+*   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
+    {% img left team /images/gurjeet.jpg Gurjeet Singh %}
+    **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
+    He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
+    He has around 8 years of experience in Telecom , Network and Linux Technologies.
+
+*   ##<div id="Joe Jean">Joe Jean</div>
+    {% img left team /images/joe.png Joe Jean %}
+    **Joe Jean** holds a B.S. in Computer Science from NYU Abu Dhabi. He loves building software that make people's lives easier. He is always looking for opportunities to improve his programming skills. And he has never missed such opportunities, whether it is participating at a hackathon, working on a side project, or doing technical internships.
+    His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
+    When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
+
+*   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
+    {% img left team /images/khaled.png Khaled %}
+    **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
+
+*   ##<div id="Ming Hu">Ming Hu</div>
+    {% img left team /images/ming.png Ming Hu %}
+    **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
+
+*   ##<div id="noor">Noor Ul Ain Ali</div>
+    {% img left team /images/noor.jpg Noor %}
+    **Noor Ul Ain Ali** is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.
+
+*   ##<div id="Omar Al Khairat">Omar Al Khairat</div>
+    {% img left team /images/omar.png Omar Al Khairat %}
+    **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
+    With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
@@ -99,38 +105,31 @@ footer: true
     by night. There are 3 things he takes very seriously:
     work, the Oxford comma, and Biryani.
 
-*   ##<div id="Andrey Komarov">Andrey Komarov</div>
-    {% img left team /images/andrey.jpg Andrey Komarov %}
-    I always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
-    In the mean time I've tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. I really like to debug internal system processes, this gives a better understanding of how systems works from deep inside.
-    Around a year ago I  discovered a kubernetes and focused on this amazing technology. I hope I'll continue to grow professionally in this direction together with the Namshi team.
+*   ##<div id="Shidhin CR">Shidhin CR</div>
+    {% img left team /images/shidhin.jpg Shidhin CR %}
+    **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
+    best practices and front end technologies.
+    He comes with over 6 years of experience in front end development, and core JavaScript expertise.
+    In free time, he can be found updating his blog or checking out some open source stuff.
 
-*   ##<div id="Omar Al Khairat">Omar Al Khairat</div>
-    {% img left team /images/omar.png Omar Al Khairat %}
-    **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
-    With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
-
-*   ##<div id="Ming Hu">Ming Hu</div>
-    {% img left team /images/ming.png Ming Hu %}
-    **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
-
-*   ##<div id="Ammar Rayess">Ammar Rayess</div>
-    {% img left team /images/ammar.png Ammar Rayess %}
-    **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
-
-*   ##<div id="Carles Iborra">Carles Iborra</div>
-    {% img left team /images/carles.png Carles Iborra %}
-    **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
-
-*   ##<div id="Akshay Jayakumar">Akshay Jayakumar</div>
-    {% img left team /images/akshay.png Akshay Jayakumar %}
-    Akshay Jayakumar started his career as a Mainframe Program Analyst in 2010, soon after completing his Bachelors in Information Technology. A year later, he joined the Amrita Research Labs in India, pioneering in Educational technologies providing personalized learning, m-learning, and e-learning to rural India. Akshay is now a Senior Android Engineer at Namshi, passionate about Web, Hybrid, Native apps development, IoT, and Hardware interactions. Over the span of 8 years, Akshay has worked as both Front-end and Back-end engineer.  His skills include Android, Java, Groovy on Grails, PHP, Python Flash, Angular, HTML5-CSS3, RESTful etc. He has also published multiple papers in IEEE, Springer, and ACM under the tracks on Literacy, Education, Pedagogy, Virtual simulations & Modeling and Speech recognition. Akshay loves working with Arduino boards, Raspberry Pi, BLE, and Leap Motion.
+*   ##<div id="Tedj Meabiou">Tedj Meabiou</div>
+    {% img left team /images/tedj.jpg Tedj Meabiou %}
+    **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Ruba Noureldin">Ruba Noureldin</div>
+    {% img left team /images/ruba.jpg Ruba Noureldin %}
+    **Ruba Noureldin** is a senior software engineer with 6 years of experience. She has a B.Sc. in Communications and Electronics Engineering, but she found her passion in software. Since then, she worked in different industries including banking, automotive and mobile VAS. She is polyglot who has worked with Java, Python, C and currently JavaScript. She is never afraid of jumping into a new challenge. Ruba is also a big movie enthusiast.
+
+*   ##<div id="Hossam Fares">Hossam Fares</div>
+    {% img left team /images/hossam.jpg Hossam Fares %}
+    **Hossam Fares** likes developing with open source components, he is working as a software engineer since 2008 because code is fun,
+    he hopes to be empowered and empowering others in this field.
 
 *   ##<div id="Yomna Sabry">Yomna Sabry</div>
     {% img left team /images/yomna.png Yomna Sabry %}
