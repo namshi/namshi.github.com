@@ -68,6 +68,10 @@ footer: true
     He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
     He has around 8 years of experience in Telecom , Network and Linux Technologies.
 
+*   ##<div id="Farzan Uddin">Farzan Uddin</div>
+    {% img left team /images/farzan.png Farzan Uddin %}
+    **Farzan Uddin** is a business graduate from the University of Wollongong, but his passion for tech led him to pursue a new challenge. He joined Namshi in 2018 to learn from all the experienced people around and use their wisdom to possibly find a direction for himself. He has an eye for design and wants to be able to transform his ideas to a functional form for the users and enhance their experience. In his spare time, Farzan loves to draw, criticize underlying themes in movies and play competitive video games.
+
 *   ##<div id="Joe Jean">Joe Jean</div>
     {% img left team /images/joe.png Joe Jean %}
     **Joe Jean** holds a B.S. in Computer Science from NYU Abu Dhabi. He loves building software that make people's lives easier. He is always looking for opportunities to improve his programming skills. And he has never missed such opportunities, whether it is participating at a hackathon, working on a side project, or doing technical internships.
@@ -115,6 +119,12 @@ footer: true
 *   ##<div id="Tedj Meabiou">Tedj Meabiou</div>
     {% img left team /images/tedj.jpg Tedj Meabiou %}
     **Tedj Meabiou** is a software engineer and entrepreneur who loves building products that make people's life easier. He joined the backend team, contributing on its distributed microservices architecture. Before joining Namshi, he was leading a team building a scalable uber-like product in Algeria. He co-founded ioGrow, an international startup, where he was leading a technical team building a social selling platform serving thousands of users from around the world.
+
+*   ##<div id="Yash Soni">Yash Soni</div>
+    {% img left team /images/yash.png Yash Soni %}
+    **Yash Soni** works in Product team @ Namshi. Starting his career in software development since 2010, he has a good experience on how tech / product development works. He been a part of the core teams of many e-commerce companies like Bookmyshow.com, Musafir.com & McDonalds India.
+    He is very Customer obsessed - Be it Analytics, to designing products, rolling out features - he's always up to something.
+    Basically - he has a Zero-tolerance policy when it comes CUSTOMER EXPERIENCE. On weekends, you will find him on outings with friends & family.
 
 <h2 class="department">Alumni: rockers who have been with us!</h2>
 
