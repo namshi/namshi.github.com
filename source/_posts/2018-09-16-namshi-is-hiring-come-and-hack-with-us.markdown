@@ -28,7 +28,7 @@ a bigger organization.
 
 So, lots of hiring coming up here at Namshi: mobile, SRE, frontend, backend...   ...you name it, we're probably hiring :)
 
-Our mobile team, lead by [Abdul](https://www.linkedin.com/in/hannancs112/), is playing around with React Native
+Our mobile team, led by [Abdul](https://www.linkedin.com/in/hannancs112/), is playing around with React Native
 and works on a daily basis with Swift and the standard
 Android toolkit (even though they've been flirting with
 Kotlin every now and then): their mission is to make
