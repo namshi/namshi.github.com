@@ -78,6 +78,12 @@ footer: true
     His technical skills include Python, JavaScript, C, Flask, Django, HTML, CSS, Heroku, AWS and more. However, he is language agnostic, so he likes to use the right tool for the given task.
     When he is not solving technical problems, you can find him reading a personal development book or riding a bike.
 
+*   ##<div id="Ilya Mametyev">Ilya Mametyev</div>
+    {% img left team /images/ilya.png Ilya Mametyev %}
+    **Ilya Mametyev** joined Namshi in 2014 in ordert to work with Data and Business intelligence. He is an adept of academical approach in any business initiative, which makes it reliable, optimized, clear for understanding and, thus, conveniently re-utilized again and again.
+    He graduated from the State Saint-Petersburg University, school of Cybernetics and worked as per his specialization for a number of worldwide industries and companies before eventually coming to Dubai, where data has become a new oil.
+    Travelling across the World and Studying as well as communicating with the interesting people, conservative arts and culture are the things he does, when free.
+
 *   ##<div id="Khaled Alqasrawi">Khaled Alqasrawi</div>
     {% img left team /images/khaled.png Khaled %}
     **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
