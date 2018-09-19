@@ -82,6 +82,10 @@ footer: true
     {% img left team /images/khaled.png Khaled %}
     **Khaled Alqasrawi** Is an upstarting, self-taught Android guru with an electronics engineering background and who has a penchant for binging on TED talks. He’s been working with Android since its early days. Khaled is passionate about Kotlin, React native, TDD and clean code, and if he ever decides to get a tattoo, it will be the Android mascot.
 
+*   ##<div id="Kiran Kumar Koppuravuri">Kiran Kumar Koppuravuri</div>
+    {% img left team /images/kiran.png Kiran %}
+    **Kiran Kumar Koppuravuri** holds a Bachelors degree in Industrial Engineering & Management from IIT Kharagpur, he has been in the Data Analytics stream for around 5 years. He always loves to work for B2C organization where every part of work revolves around as a consumer-centric, which brings new understanding of consumer choices over time. Currently working as a Business Analyst with Namshi,Prior to Namshi he worked with companies such as OLA and Voonik with similar work experience.In his free time/weekends you can find him in either learning new stuff in finance or watching movies.
+
 *   ##<div id="Ming Hu">Ming Hu</div>
     {% img left team /images/ming.png Ming Hu %}
     **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
