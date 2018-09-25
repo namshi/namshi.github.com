@@ -70,6 +70,59 @@
     <section class="index">
         <!-- -->
         <div>
+            <h2 class="title"><a href="/blog/2014/12/04/newsletter-number-67/" rel="prefetch">Newsletter #67</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2014-04-December" title="December 04, 2014">December 04, 2014</time>
+            </div>
+            <div class="excerpt"><p><img class="team center" src="/images/docker-con-amsterdam2014.jpg"></p>
+
+<p>Hello folks!</p>
+
+<blockquote><p>News from the tech team:</p>
+
+<p>Hurray! Namshi turned 3 and we are having a party :). <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a>, <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a>, <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are off to Amsterdam for the <a href="http://europe.dockercon.com/">dockercon</a>.
+We hope they are enjoying and get the latest insights about docker.
+If you are at the dockercon, don&rsquo;t miss the opportunity to talk to our fellows there, as you know we are <a href="http://tech.namshi.io/join-us/">hiring</a>.</p></blockquote>
+
+<p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
+
+<p><strong>Here is the list with awesome links to keep you busy during the weekend:</strong></p>
+
+<ul>
+<li><p><a href="http://slidesha.re/1zThb6j">Symfony2 specification by examples</a></p></li>
+<li><p><a href="http://bit.ly/1rYSukK">BDD &ndash; its about value</a></p></li>
+<li><p><a href="http://bit.ly/12oq4JX">Code Quality By The Numbers &ndash; Slides</a></p></li>
+</ul>
+
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/geshan.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Geshan Manandhar" title="Geshan Manandhar">
+                        
+                            Geshan Manandhar
+                        
+                        </a></strong><br>
+                        <span class="muted">Senior Software Engineer</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
             <h2 class="title"><a href="/blog/2014/11/29/symfonycon-madrid-2014-the-sf2-community-its-getting-as-stable-as-it-can-get/" rel="prefetch">SymfonyCon Madrid 2014, the Sf2 community it&#8217;s getting as stable as it can get</a></h2>
             <div class="meta">
                 <time pubdate datetime="2014-29-November" title="November 29, 2014">November 29, 2014</time>
@@ -458,71 +511,6 @@ It&rsquo;s a great opportunity to understand what&rsquo;s going on in our field 
                         <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
                         
                             Alessandro Cinelli (cirpo)
-                        
-                        </a></strong><br>
-                        <span class="muted"></span>
-                        </p>
-                    </address>
-                </footer>
-            </div>
-        </div>
-        <hr>
-    </section>
-    
-    
-  
-    <section class="index">
-        <!-- -->
-        <div>
-            <h2 class="title"><a href="/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi/" rel="prefetch">winston-graylog2: a new life under Namshi</a></h2>
-            <div class="meta">
-                <time pubdate datetime="2014-27-October" title="October 27, 2014">October 27, 2014</time>
-            </div>
-            <div class="excerpt"><p>As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
-Having already in out tool belt a <a href="http://www.graylog2.org/">graylog2</a> facility in place, looking for a way to leverage it was the most natural thing to do.</p>
-
-<p>Because of its nice modular <code>transports feature</code> our node-logging weapon of choice is <a href="https://github.com/flatiron/winston">winston</a>, the <code>graylog2</code> transport library looked a bit alone though and in need of a maintainer.
-I our usual <strong>give back</strong> spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)</p>
-
-<p>As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the <a href="https://github.com/Wizcorp/node-graylog2">node-graylog2</a> library:
-they&rsquo;ll most likely do a better job than us on the protocol side, and we&rsquo;ll be able to focus more on the winston integration.
-We also started introducing some basic tests: definitely some better work can be done on this side ;)</p>
-
-<p>So here it is: <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>
-and here&rsquo;s briefly how you use it:</p>
-
-<p>the usual</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-bash'>npm install winston-graylog2</code></pre></figure>
-
-
-<p>and then</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>  var winston = require(&apos;winston&apos;);
-  winston.add(require(&apos;winston-graylog2&apos;), options);
-</code></pre></figure>
-
-
-<p>or</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var WinstonGraylog2 = require(&apos;winston-graylog2&apos;);
-var logger = new(winston.Logger)({
-        exitOnError: false,
-        transports: [new(WinstonGraylog2)(options)]
-      });</code></pre></figure>
-
-
-<p>Enjoy! :)</p>
-
-<p>Publishing something new is always a great feeling, and it&rsquo;s even more fulfilling when it involves not letting a project die :)<br> So let us know if you like it and share the love with some RP!!!! ;)</p>
-</div>
-            <div class="meta">
-                <footer>
-                    <address>
-                        
-                        <p>Written by <strong><a rel="author" href="/team/#Luciano Colosio" title="Luciano Colosio">
-                        
-                            Luciano Colosio
                         
                         </a></strong><br>
                         <span class="muted"></span>

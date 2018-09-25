@@ -70,6 +70,71 @@
     <section class="index">
         <!-- -->
         <div>
+            <h2 class="title"><a href="/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi/" rel="prefetch">winston-graylog2: a new life under Namshi</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2014-27-October" title="October 27, 2014">October 27, 2014</time>
+            </div>
+            <div class="excerpt"><p>As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
+Having already in out tool belt a <a href="http://www.graylog2.org/">graylog2</a> facility in place, looking for a way to leverage it was the most natural thing to do.</p>
+
+<p>Because of its nice modular <code>transports feature</code> our node-logging weapon of choice is <a href="https://github.com/flatiron/winston">winston</a>, the <code>graylog2</code> transport library looked a bit alone though and in need of a maintainer.
+I our usual <strong>give back</strong> spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)</p>
+
+<p>As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the <a href="https://github.com/Wizcorp/node-graylog2">node-graylog2</a> library:
+they&rsquo;ll most likely do a better job than us on the protocol side, and we&rsquo;ll be able to focus more on the winston integration.
+We also started introducing some basic tests: definitely some better work can be done on this side ;)</p>
+
+<p>So here it is: <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>
+and here&rsquo;s briefly how you use it:</p>
+
+<p>the usual</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-bash'>npm install winston-graylog2</code></pre></figure>
+
+
+<p>and then</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>  var winston = require(&apos;winston&apos;);
+  winston.add(require(&apos;winston-graylog2&apos;), options);
+</code></pre></figure>
+
+
+<p>or</p>
+
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var WinstonGraylog2 = require(&apos;winston-graylog2&apos;);
+var logger = new(winston.Logger)({
+        exitOnError: false,
+        transports: [new(WinstonGraylog2)(options)]
+      });</code></pre></figure>
+
+
+<p>Enjoy! :)</p>
+
+<p>Publishing something new is always a great feeling, and it&rsquo;s even more fulfilling when it involves not letting a project die :)<br> So let us know if you like it and share the love with some RP!!!! ;)</p>
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Luciano Colosio" title="Luciano Colosio">
+                        
+                            Luciano Colosio
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
             <h2 class="title"><a href="/blog/2014/10/23/newsletter-number-61/" rel="prefetch">Newsletter #61</a></h2>
             <div class="meta">
                 <time pubdate datetime="2014-23-October" title="October 23, 2014">October 23, 2014</time>
@@ -444,43 +509,6 @@ That&rsquo;s how we started using nodejs, Angular, Docker, SPDY and much more&he
 the plethora of technologies that we use at <a href="https://namshi.com">Namshi</a>;
 that&rsquo;s why we got people like <a href="/team#Luciano%20Colosio">Lucio</a> on board so that we
 could expand in that direction.</p>
-
-</div>
-            <div class="meta">
-                <footer>
-                    <address>
-                        
-                          <div class="author-pic">
-                            <img src="/images/alex.jpg">
-                          </div>
-                        
-                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
-                        
-                            Alessandro Nadalin
-                        
-                        </a></strong><br>
-                        <span class="muted">Rusty CTO</span>
-                        </p>
-                    </address>
-                </footer>
-            </div>
-        </div>
-        <hr>
-    </section>
-    
-    
-  
-    <section class="index">
-        <!-- -->
-        <div>
-            <h2 class="title"><a href="/blog/2014/09/20/stop-using-crons-start-listening-to-geshan/" rel="prefetch">Stop using crons, start listening to Geshan</a></h2>
-            <div class="meta">
-                <time pubdate datetime="2014-20-September" title="September 20, 2014">September 20, 2014</time>
-            </div>
-            <div class="excerpt"><p><a href="/team#Geshan%20Manandhar">Geshan</a> has decided
-he can&rsquo;t stand seeing people struggling with
-crons anymore, therefore he decided to give it a
-shot at the <a href="http://confoo.ca/en/call-for-papers/speaker/geshan-manandhar">2015 edition of the confoo</a>.</p>
 
 </div>
             <div class="meta">
