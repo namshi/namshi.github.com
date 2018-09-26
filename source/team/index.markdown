@@ -119,6 +119,10 @@ footer: true
     by night. There are 3 things he takes very seriously:
     work, the Oxford comma, and Biryani.
 
+*   ##<div id="Sakina Sagarwala">Sakina Sagarwala</div>
+    {% img left team /images/sakina.png Sakina Sagarwala %}
+    **Sakina Sagarwala** is a Junior Product Management Analyst who joined Namshi eager to learn about Product Management as a field and E commerce as an industry.  Prior to joining Namshi, she managed a scholarship and grant program at Habib University, Pakistan’s first liberal Arts and Sciences University and worked in Monitoring and Evaluation in International Development. She holds an MSc in Development Management from the London School of Economics and Political Science and spends her spare time enjoying food and movies.
+
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
     **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
