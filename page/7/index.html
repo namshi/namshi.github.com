@@ -70,6 +70,55 @@
     <section class="index">
         <!-- -->
         <div>
+            <h2 class="title"><a href="/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/" rel="prefetch">How Namshi builds Docker containers through Docker containers</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-08-August" title="August 08, 2015">August 08, 2015</time>
+            </div>
+            <div class="excerpt"><p>When we started experimenting with <a href="https://www.docker.com/">Docker</a>,
+its environment was pretty new: private registries weren&rsquo;t <em>en vogue</em>
+and the DockerHub seemed to be the only decent alternative to store
+images and build your delivery pipeline on, even though it could take
+up to 15 minutes to get a simple image pushed to S3 from the Hub.</p>
+
+<p>We wanted a cheap, reliable, fast build tool that could fit our
+delivery pipeline: we wanted our code to <strong>seamlessly</strong> go from an
+engineer&rsquo;s machine to production; we wanted to <strong>build containers
+in seconds</strong>; we wanted stability and a (almost) <strong>zero-configuration</strong>
+approach.</p>
+
+<p>At the end of it, we wrote a build system for containers that goes
+Open-Source today: in this post we are going to look at the reasons
+behind it, how it works (for us), how it can work (for you) and
+what are our plans for the future.</p>
+
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                          <div class="author-pic">
+                            <img src="/images/alex.jpg">
+                          </div>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Nadalin" title="Alessandro Nadalin">
+                        
+                            Alessandro Nadalin
+                        
+                        </a></strong><br>
+                        <span class="muted">Rusty CTO</span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
             <h2 class="title"><a href="/blog/2015/08/06/newsletter-number-102/" rel="prefetch">Newsletter #102</a></h2>
             <div class="meta">
                 <time pubdate datetime="2015-06-August" title="August 06, 2015">August 06, 2015</time>
@@ -433,66 +482,6 @@ you. Ramadan Kareem!!</p>
                         <p>Written by <strong><a rel="author" href="/team/#David Funaro" title="David Funaro">
                         
                             David Funaro
-                        
-                        </a></strong><br>
-                        <span class="muted"></span>
-                        </p>
-                    </address>
-                </footer>
-            </div>
-        </div>
-        <hr>
-    </section>
-    
-    
-  
-    <section class="index">
-        <!-- -->
-        <div>
-            <h2 class="title"><a href="/blog/2015/06/16/jose-fix/" rel="prefetch">Important &#8216;namshi/jose&#8217; JWS library fix</a></h2>
-            <div class="meta">
-                <time pubdate datetime="2015-16-June" title="June 16, 2015">June 16, 2015</time>
-            </div>
-            <div class="excerpt"><blockquote><p>We just released a very important security fix on <strong>namshi/jose</strong>, our opensource lightweight implementation of the JWS (JSON Web Signature) in PHP.</p></blockquote>
-
-<p>The issue is related to the fact that any jws token was valid if the algorithm specified in the header was &lsquo;none&rsquo; (first &lsquo;n&rsquo; lower case).
-Here you can find the <a href="https://github.com/namshi/jose/commit/be2db86f5224cc7d34ef98f9a315c6b45bc4fc4e#diff-afc7aff66a8cf751ea15e11dedf56b9bR113">fix</a></p>
-
-<p>There are three main relases:</p>
-
-<ul>
-<li><strong>2.x</strong></li>
-<li><strong>3.x</strong> (It introduces the support to PHPSecLib to the already existing OpenSSL implementation)</li>
-<li><strong>4.x</strong> (Added the ability to set custom properties in the header)</li>
-<li><strong>5.x</strong> (Fixed HMAC signature in order to be checked by other HMAC compliant library)</li>
-</ul>
-
-
-<p><strong>We strongly suggest to update to the latest major release (2.2.2, 3.0.1, 4.0.1, 5.0.1)</strong>.</p>
-
-<p>On a side note thanks to everyone who contributed to this library, especially:</p>
-
-<ul>
-<li><a href="https://github.com/smaxwellstewart">Simon Maxwell-Stewart</a></li>
-<li><a href="https://github.com/mikesir87">Michael Irwin</a>, <a href="https://twitter.com/mikesir87">twitter</a></li>
-<li><a href="https://github.com/Spomky">Florent Morselli</a>, <a href="https://twitter.com/florentmorselli">twitter</a></li>
-<li><a href="https://github.com/greg0ire">Grégoire Paris</a>, <a href="https://twitter.com/ggreg0ire">twitter</a></li>
-<li><a href="https://github.com/brianjmiller">Brian J. Miller</a></li>
-<li><a href="https://github.com/n-s-f">n-s-f</a></li>
-<li><a href="https://github.com/tymondesigns">Sean Tymon</a>, <a href="https://twitter.com/tymondesigns">twitter</a></li>
-<li><a href="https://github.com/callumacrae">Callum Macrae</a>, <a href="https://twitter.com/callumacrae">twitter</a></li>
-</ul>
-
-
-<p>&lt;3 opensource, &lt;3 github</p>
-</div>
-            <div class="meta">
-                <footer>
-                    <address>
-                        
-                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
-                        
-                            Alessandro Cinelli (cirpo)
                         
                         </a></strong><br>
                         <span class="muted"></span>

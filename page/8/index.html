@@ -70,6 +70,66 @@
     <section class="index">
         <!-- -->
         <div>
+            <h2 class="title"><a href="/blog/2015/06/16/jose-fix/" rel="prefetch">Important &#8216;namshi/jose&#8217; JWS library fix</a></h2>
+            <div class="meta">
+                <time pubdate datetime="2015-16-June" title="June 16, 2015">June 16, 2015</time>
+            </div>
+            <div class="excerpt"><blockquote><p>We just released a very important security fix on <strong>namshi/jose</strong>, our opensource lightweight implementation of the JWS (JSON Web Signature) in PHP.</p></blockquote>
+
+<p>The issue is related to the fact that any jws token was valid if the algorithm specified in the header was &lsquo;none&rsquo; (first &lsquo;n&rsquo; lower case).
+Here you can find the <a href="https://github.com/namshi/jose/commit/be2db86f5224cc7d34ef98f9a315c6b45bc4fc4e#diff-afc7aff66a8cf751ea15e11dedf56b9bR113">fix</a></p>
+
+<p>There are three main relases:</p>
+
+<ul>
+<li><strong>2.x</strong></li>
+<li><strong>3.x</strong> (It introduces the support to PHPSecLib to the already existing OpenSSL implementation)</li>
+<li><strong>4.x</strong> (Added the ability to set custom properties in the header)</li>
+<li><strong>5.x</strong> (Fixed HMAC signature in order to be checked by other HMAC compliant library)</li>
+</ul>
+
+
+<p><strong>We strongly suggest to update to the latest major release (2.2.2, 3.0.1, 4.0.1, 5.0.1)</strong>.</p>
+
+<p>On a side note thanks to everyone who contributed to this library, especially:</p>
+
+<ul>
+<li><a href="https://github.com/smaxwellstewart">Simon Maxwell-Stewart</a></li>
+<li><a href="https://github.com/mikesir87">Michael Irwin</a>, <a href="https://twitter.com/mikesir87">twitter</a></li>
+<li><a href="https://github.com/Spomky">Florent Morselli</a>, <a href="https://twitter.com/florentmorselli">twitter</a></li>
+<li><a href="https://github.com/greg0ire">Grégoire Paris</a>, <a href="https://twitter.com/ggreg0ire">twitter</a></li>
+<li><a href="https://github.com/brianjmiller">Brian J. Miller</a></li>
+<li><a href="https://github.com/n-s-f">n-s-f</a></li>
+<li><a href="https://github.com/tymondesigns">Sean Tymon</a>, <a href="https://twitter.com/tymondesigns">twitter</a></li>
+<li><a href="https://github.com/callumacrae">Callum Macrae</a>, <a href="https://twitter.com/callumacrae">twitter</a></li>
+</ul>
+
+
+<p>&lt;3 opensource, &lt;3 github</p>
+</div>
+            <div class="meta">
+                <footer>
+                    <address>
+                        
+                        <p>Written by <strong><a rel="author" href="/team/#Alessandro Cinelli (cirpo)" title="Alessandro Cinelli (cirpo)">
+                        
+                            Alessandro Cinelli (cirpo)
+                        
+                        </a></strong><br>
+                        <span class="muted"></span>
+                        </p>
+                    </address>
+                </footer>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    
+  
+    <section class="index">
+        <!-- -->
+        <div>
             <h2 class="title"><a href="/blog/2015/06/11/newsletter-94/" rel="prefetch">newsletter #94</a></h2>
             <div class="meta">
                 <time pubdate datetime="2015-11-June" title="June 11, 2015">June 11, 2015</time>
@@ -501,56 +561,6 @@ the team is showing an interesting library/tool.</p>
                         
                         </a></strong><br>
                         <span class="muted">Software Engineering Lead</span>
-                        </p>
-                    </address>
-                </footer>
-            </div>
-        </div>
-        <hr>
-    </section>
-    
-    
-  
-    <section class="index">
-        <!-- -->
-        <div>
-            <h2 class="title"><a href="/blog/2015/04/23/newsletter-number-87/" rel="prefetch">Newsletter #87</a></h2>
-            <div class="meta">
-                <time pubdate datetime="2015-23-April" title="April 23, 2015">April 23, 2015</time>
-            </div>
-            <div class="excerpt"><blockquote><p>Hello folks!
-It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
-
-<p>This week our teammates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a> have been busy writing about network tools and languages :)</p>
-
-<p><a href="http://tech.namshi.io/blog/2015/04/18/godo-our-first-open-source-library-written-in-golang/">Godo, Our First Open Source Library Written in Golang</a></p>
-
-<p><a href="http://tech.namshi.io/blog/2015/04/19/seding-files-in-unix-the-quick-and-dirty-way/">Sending Files in Unix: The Quick and Dirty Way</a></p></blockquote>
-
-<p><strong>And here is the list of links to keep you busy during the weekend:</strong></p>
-
-<ul>
-<li><p><a href="http://googlecloudplatform.blogspot.ae/2015/04/big-data-cloud-way.html">Big data, the cloud way</a></p></li>
-<li><p><a href="http://www.zdnet.com/article/google-and-mesospheres-work-on-docker-cluster-manager-kubernetes-pays-off/">Google and Mesosphere&rsquo;s work on Docker cluster</a></p></li>
-<li><p><a href="http://radius.com/2015/04/16/why-you-need-a-data-strategy/">Why You Need a Data Strategy</a></p></li>
-</ul>
-
-
-</div>
-            <div class="meta">
-                <footer>
-                    <address>
-                        
-                          <div class="author-pic">
-                            <img src="/images/filippo.jpg">
-                          </div>
-                        
-                        <p>Written by <strong><a rel="author" href="/team/#Filippo De Santis" title="Filippo De Santis">
-                        
-                            Filippo De Santis
-                        
-                        </a></strong><br>
-                        <span class="muted">Senior Software Engineer</span>
                         </p>
                     </address>
                 </footer>

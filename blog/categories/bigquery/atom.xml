@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: BigQuery | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/bigquery/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-10-10T14:37:31+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Syncing millions of records a day to BigQuery: our experience moving from GAE to GKE]]></title>
+    <link href="http://namshi.github.io/blog/2018/09/25/syncing-millions-of-records-a-day-to-bigquery-our-experience-moving-from-gae-to-gke/"/>
+    <updated>2018-09-25T20:59:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/09/25/syncing-millions-of-records-a-day-to-bigquery-our-experience-moving-from-gae-to-gke</id>
+    <content type="html"><![CDATA[<p>This week we moved one of our analytics workloads from
+<a href="https://cloud.google.com/appengine/">Google App Engine</a> (GAE) to the <a href="https://cloud.google.com/kubernetes-engine/">Google Kubernetes Engine</a>
+(GKE), and wanted to share our experience in simplifying
+a setup that syncs millions of records to BigQuery each
+and every day.</p>
+
+<!-- more -->
+
+
+<h2>Prelude</h2>
+
+<p>At Namshi, we run all kinds of workloads, from internal apps
+used by some of our departments to customer-facing APIs.</p>
+
+<p>Recently, we&rsquo;ve come up with a particular challenge: we
+wanted to track a high volume of events that happen on our
+mobile applications, and our go-to choice was to rely on
+<a href="https://tagmanager.google.com">Google Tag Manager</a> to send these events to <a href="https://analytics.google.com">Google Analytics</a>.</p>
+
+<p>Long story short, the events we&rsquo;re trying to track
+aren&rsquo;t your usual pageview, or click on a product
+page, but a more casual action users do while browsing
+our apps &mdash; around 30M of them on a slow day. As soon
+as we started sending this additional traffic over,
+GA started rate-limiting us and it became clear
+we wouldn&rsquo;t be able to piggy-back on
+Google&rsquo;s analytics offering for this kind of tracking.</p>
+
+<p>The next natural solution was to build our own event
+collector, something that proved to be extremely
+interesting: even though we&rsquo;re not going to dig deep
+into our code (it&rsquo;s really not that crazy!) we believe
+the experience taught us a lot.</p>
+
+<h2>Architecture</h2>
+
+<p>As soon as we decided to build our own collector,
+we were faced with 2 simple questions: <strong>where</strong> to
+store this data and <strong>what platform</strong> to use?</p>
+
+<p>To begin with, we benchmarked <a href="https://bigquery.cloud.google.com/">BigQuery</a>&rsquo;s <a href="https://cloud.google.com/bigquery/streaming-data-into-bigquery">streaming
+protocol</a> and found it could easily sustain the
+amount of data we wanted to transfer so,
+considering we&rsquo;re pretty well versed with BigQuery as
+we use it for a plethora of other projects,
+this was a quick and easy decision.</p>
+
+<p>Then it came the time to decide on which
+platform we would build the app itself,
+and this was, again, a fairly easy decision:
+what we were looking for was a fast, pragmatic
+platform that would allows us to build
+high-performance webservers and integrate
+with BQ seamlessly. Our choice was Golang,
+as it allows to build incredibly efficient
+servers and has a very well-built
+<a href="https://godoc.org/cloud.google.com/go/bigquery">package to interface directly with BigQuery</a>.</p>
+
+<p>As I mentioned, our code was fairly simple:
+a request comes in, we pull parameters from
+the URL and sync it into BigQuery.</p>
+
+<p>``` go
+// Code is simplified as our full codebase
+// does things you don&rsquo;t really need to get into&hellip; ;)
+type Event struct {</p>
+
+<pre><code>Data string
+Ts   time.Time
+</code></pre>
+
+<p>}</p>
+
+<p>http.HandleFunc(&ldquo;/track-me&rdquo;, func(w http.ResponseWriter, req *http.Request) {</p>
+
+<pre><code>client, err := bigquery.NewClient(ctx, PROJECT_ID)
+if err != nil {
+    // ...handle error...
+}
+u := client.Dataset(DATASET).Table(TABLE).Uploader()
+
+events := []*Event{
+    {Data: req.URL.Query(), Ts: time.Now()},
+}
+if err := u.Put(ctx, events); err != nil {
+    log.Printf("error: %s", err)
+}
+
+io.WriteString(w, "ok")
+</code></pre>
+
+<p>})
+```</p>
+
+<p>Now, the app is definitely not optimized, as it tries
+to sync to BigQuery at every request &mdash; which is a
+(fairly) expensive operation: we had a reason for keeping
+it this way, a reason called Google App Engine.</p>
+
+<h2>On GAE</h2>
+
+<p>Since we were worried about the scalability of our
+hosting platform, we decided
+to deploy this application on Google App Engine,
+an infinitely scalable platform ran by Google.</p>
+
+<p>The tricky bit of GAE is that it &ldquo;forces&rdquo;
+you to run all of your application logic <a href="https://stackoverflow.com/questions/149307/background-tasks-on-app-engine">within
+a single request/response</a>:
+everything you want to do needs to be completed
+before you return a response to the client.
+This is definitely an acceptable trade-off in
+a lot of use-cases, as it guarantees that Google
+can spin instances up and down at will, but didn&rsquo;t
+work too great for us as it really added an expensive
+operation in our route (syncing to BigQuery).</p>
+
+<p>Ideally, we would have liked to be able to execute the
+sync in background, but App Engine has a fairly <a href="https://cloud.google.com/appengine/docs/standard/python/taskqueue/">complex
+implementation of background jobs</a> that we didn&rsquo;t like
+as much, as we wanted to keep the setup as simple
+as possible.</p>
+
+<p>We went live with a working app within a day,
+but we immediately noticed a problem, as latency was
+much higher than we expected:</p>
+
+<p><img class="center" src="/images/gae-latency.png"></p>
+
+<p>A median of 300ms for an app that simply receives a request
+and syncs it to BigQuery seemed way higher than
+we expected: we eventually didn&rsquo;t bother as much
+as what we needed wasn&rsquo;t high-performance, but rather
+high-scalability, and GAE fit the bill perfectly.</p>
+
+<p>After a couple weeks, though, we noticed another
+interesting problem: since the app wasn&rsquo;t as
+efficient as we thought, lots of GAE instances
+were being used to keep up with the amount of traffic
+we were receiving, something that reflected on
+our GCP bill right away:</p>
+
+<p><img class="center" src="/images/gae-price.png"></p>
+
+<p>This little tracking app was costing us around
+$150 a day ($4500 per month), way more than we initially budgeted:
+time to review the setup and come up with
+a more efficient way to use Google&rsquo;s servers,
+at a fraction of the cost.</p>
+
+<h2>GKE</h2>
+
+<p>We are very big on Kubernetes, so the very next step
+was to try to move our application to the GKE,
+Google&rsquo;s hosted Kubernetes service.</p>
+
+<p>The idea was very simple: let&rsquo;s rewrite the app
+so that it batches requests to BigQuery, let&rsquo;s setup
+a small k8s cluster with node autoscaling and let&rsquo;s
+set the right scaling policies (<a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/">HPA</a>)
+for our pods.</p>
+
+<p>Rewriting the app was very easy: instead of syncing
+to BigQuery at each request, we simply created a channel
+that buffers up to X events, and syncs them in batch once
+the buffer&rsquo;s filled up:</p>
+
+<p>``` go
+var (</p>
+
+<pre><code>MaxWorkers     = 10
+MaxQueue       = 10000
+BatchSize      = 100
+</code></pre>
+
+<p>)</p>
+
+<p>type Event struct {</p>
+
+<pre><code>Data string
+Ts   time.Time
+</code></pre>
+
+<p>}</p>
+
+<p>func main() {</p>
+
+<pre><code>jobs := make(chan Event, MaxQueue)
+for w := 1; w &lt;= MaxWorkers; w++ {
+    go worker(jobs)
+}
+
+http.HandleFunc("/track-me", func(w http.ResponseWriter, req *http.Request) {
+    jobs &lt;- Event{Data: req.URL.Query(), Ts: time.Now()}
+    io.WriteString(w, "ok")
+})
+
+log.Printf("Server listening on port %s", os.Getenv("PORT"))
+log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), nil))
+</code></pre>
+
+<p>}</p>
+
+<p>func worker(events &lt;-chan Event) {</p>
+
+<pre><code>ctx := context.Background()
+client, err := bigquery.NewClient(ctx, PROJECT_ID)
+if err != nil {
+    panic(err) // YOLO!
+}
+buffer := []*Event{}
+
+for e := range events {
+    u := client.Dataset(DATASET).Table(TABLE).Uploader()
+    buffer = append(buffer, &amp;e)
+    if len(buffer) == BatchSize {
+        log.Printf("Flushing %d events to BQ", BatchSize)
+        if err := u.Put(ctx, buffer); err != nil {
+            log.Printf("%s", err)
+        }
+        log.Printf("work done")
+        buffer = []*Event{}
+    }
+}
+</code></pre>
+
+<p>}
+```</p>
+
+<p>Next in line was to create the k8s cluster, which was
+an extremely simple operation from GKE&rsquo;s interface:
+we deployed our pods, setup an ingress and&hellip; &hellip;boom,
+the app was live under a different URL!</p>
+
+<p>Last but not least, we wanted to make sure that spikes
+in traffic were taken care of, both from a memory and cpu
+standpoint:</p>
+
+<p>``` yaml
+apiVersion: autoscaling/v1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: tracking-app-cpu
+spec:
+  scaleTargetRef:</p>
+
+<pre><code>apiVersion: apps/v1
+kind: Deployment
+name: tracking-app
+</code></pre>
+
+<p>  minReplicas: 4
+  maxReplicas: 100</p>
+
+<h2>  targetCPUUtilizationPercentage: 20</h2>
+
+<p>apiVersion: autoscaling/v2beta1
+kind: HorizontalPodAutoscaler
+metadata:
+  name: tracking-app-memory
+spec:
+  scaleTargetRef:</p>
+
+<pre><code>apiVersion: apps/v1beta1
+kind: Deployment
+name: tracking-app
+</code></pre>
+
+<p>  minReplicas: 4
+  maxReplicas: 100
+  metrics:
+  &ndash; type: Resource</p>
+
+<pre><code>resource:
+  name: memory
+  targetAverageUtilization: 30
+</code></pre>
+
+<p>```</p>
+
+<p>Once the HPAs were ready, we switched our tracking URLs and&hellip;</p>
+
+<h2>Results</h2>
+
+<p>Where do we start? Well, since we&rsquo;re all computer geeks
+at the end of the day, let&rsquo;s look at our response times,
+now monitored through NewRelic:</p>
+
+<p><img class="center" src="/images/tracking-nr.png"></p>
+
+<p>Our 99th percentile is at <strong>less than 0.2 milliseconds</strong>
+which is definitely more like what we initially planned
+&mdash; we finally nailed it!</p>
+
+<p>As far as cost is concerned, this new cluster (which, again,
+manages more than 30M events a day) costs us between
+$300 to $400, a ~90% price reduction compared to the cost
+of running the same application on GAE.</p>
+
+<p>If we look at the pricing report from the GCP project in question you can clearly
+see the cost reduction as soon as we deployed the
+application on the GKE:</p>
+
+<p><img class="center" src="/images/price2-gcp.png"></p>
+
+<p>We also take advantage of a simplified setup where
+we can manage the cluster through the good old <code>kubectl</code>,
+and deployments are much simpler than GAE (if you ever
+used GAE you know what I&rsquo;m talking about&hellip;).</p>
+
+<h2>Conclusion</h2>
+
+<p>The goal of this post is not to say that GAE is terrible,
+or that GKE is the best hosting platform out there: it merely
+is a report based on our own experience building a
+scalable event tracking system that we moved from one platform
+to the other. GAE is surely quicker to setup and includes
+additional abstractions that the GKE forces you to take care
+of (load balancing and SSL, just to name a couple of them), so
+we recommend to think about your use case and make a reasonated
+choice.</p>
+
+<p>We truly hope you enjoyed this post! By the way, <a href="/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us/">we&rsquo;re hiring</a>!</p>
+]]></content>
+  </entry>
+  
+</feed>
