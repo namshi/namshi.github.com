@@ -195,3 +195,6 @@ team:
     'Akshay Jayakumar':
         bio: 'Sr. Android Engineer'
         image: 'akshay.png'
+    'Ming Hu':
+        bio: 'Junior Software Engineer'
+        image: 'ming.png'
