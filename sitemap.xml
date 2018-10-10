@@ -876,21 +876,19 @@
     </url>
     <url>
         <loc>http://namshi.github.io/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us/</loc>
-        <lastmod>2018-09-25T20:58:15+00:00</lastmod>
+        <lastmod>2018-10-10T14:30:48+00:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://namshi.github.io/blog/2018/09/25/syncing-millions-of-records-a-day-to-bigquery-our-experience-moving-from-gae-to-gke/
-        </loc>
-        <lastmod>2018-09-25T22:58:04+00:00</lastmod>
+        <loc>http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang/</loc>
+        <lastmod>2018-10-10T14:32:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/archives/</loc>
-        <lastmod>2018-09-25T22:58:04+00:00</lastmod>
+        <lastmod>2018-10-10T14:32:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/</loc>
-        <lastmod>2018-09-25T22:58:04+00:00</lastmod>
+        <lastmod>2018-10-10T14:32:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/nl-bookmark/</loc>
@@ -898,11 +896,11 @@
     </url>
     <url>
         <loc>http://namshi.github.io/blog/archives/</loc>
-        <lastmod>2018-09-25T22:58:04+00:00</lastmod>
+        <lastmod>2018-10-10T14:32:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/blog/</loc>
-        <lastmod>2018-09-25T22:58:04+00:00</lastmod>
+        <lastmod>2018-10-10T14:32:21+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/blog/categories/</loc>
@@ -914,7 +912,7 @@
     </url>
     <url>
         <loc>http://namshi.github.io/team/</loc>
-        <lastmod>2018-09-26T10:19:28+00:00</lastmod>
+        <lastmod>2018-10-10T14:30:48+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/robots.txt</loc>

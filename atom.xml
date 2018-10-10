@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-09-26T10:20:45+00:00</updated>
+  <updated>2018-10-10T14:33:16+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,302 +14,65 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Syncing millions of records a day to BigQuery: our experience moving from GAE to GKE]]></title>
-    <link href="http://namshi.github.io/blog/2018/09/25/syncing-millions-of-records-a-day-to-bigquery-our-experience-moving-from-gae-to-gke/"/>
-    <updated>2018-09-25T20:59:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2018/09/25/syncing-millions-of-records-a-day-to-bigquery-our-experience-moving-from-gae-to-gke</id>
-    <content type="html"><![CDATA[<p>This week we moved one of our analytics workloads from
-<a href="https://cloud.google.com/appengine/">Google App Engine</a> (GAE) to the <a href="https://cloud.google.com/kubernetes-engine/">Google Kubernetes Engine</a>
-(GKE), and wanted to share our experience in simplifying
-a setup that syncs millions of records to BigQuery each
-and every day.</p>
+    <title type="html"><![CDATA[Rewriting an MS SQL gateway with Golang]]></title>
+    <link href="http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang/"/>
+    <updated>2018-10-10T05:51:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang</id>
+    <content type="html"><![CDATA[<p>Innovation happens at an increasing rate today, which means code that is only one
+or two years old might become outdated and hard to maintain.
+In Namshi, we also face issues caused by legacy code. When an app starts to lag or break,
+the team gathers and discusses a best approach to fix issues. Sometimes we do an incremental
+refactor and other times we go for a complete rewrite.
+This month we rewrote an app from scratch, and here is how we did it.</p>
 
 <!-- more -->
 
 
-<h2>Prelude</h2>
+<h3>Why?</h3>
 
-<p>At Namshi, we run all kinds of workloads, from internal apps
-used by some of our departments to customer-facing APIs.</p>
+<p>Namshi runs an app that acts as a gateway in front of an MS SQL server. We recently moved our MS SQL server to a different cloud provider, and our MS SQL gateway started to get stuck (taking more than 10 seconds to respond), causing slow operations in the apps relying on the gateway. We received daily (and nightly) calls due to slow response and needed to restart the app quite often. The limited amount of logging also made it hard for us to pinpoint the bottleneck. The app was also written in C#, a less used language in our team, and requires more attention.</p>
 
-<p>Recently, we&rsquo;ve come up with a particular challenge: we
-wanted to track a high volume of events that happen on our
-mobile applications, and our go-to choice was to rely on
-<a href="https://tagmanager.google.com">Google Tag Manager</a> to send these events to <a href="https://analytics.google.com">Google Analytics</a>.</p>
+<p>Refactoring the code gives us the ease of not needing to go through a full development and testing cycle. However, the app might still get stuck and take huge effort to debug and maintain. On the other hand, a complete rewrite will improve stability, the logging system as well as easier performance management.</p>
 
-<p>Long story short, the events we&rsquo;re trying to track
-aren&rsquo;t your usual pageview, or click on a product
-page, but a more casual action users do while browsing
-our apps &mdash; around 30M of them on a slow day. As soon
-as we started sending this additional traffic over,
-GA started rate-limiting us and it became clear
-we wouldn&rsquo;t be able to piggy-back on
-Google&rsquo;s analytics offering for this kind of tracking.</p>
+<p>Considering the benefits of each approach, we decided to give it a complete rewrite.</p>
 
-<p>The next natural solution was to build our own event
-collector, something that proved to be extremely
-interesting: even though we&rsquo;re not going to dig deep
-into our code (it&rsquo;s really not that crazy!) we believe
-the experience taught us a lot.</p>
+<h3>How?</h3>
 
-<h2>Architecture</h2>
+<p>First we went out scouting for a driver. The driver we started with was the <a href="https://www.npmjs.com/package/mssql">Node.JS driver</a>. It was easy to use. However, it requires to specify SQL variable type when we create prepared statement. Our existing queries do not specify the SQL type for parameters, so it&rsquo;s painful to add all the fields. So, we decided to opt for a second choice, the <a href="https://github.com/denisenkom/go-mssqldb">Golang driver</a>. Golang has been popular in the backend team. We love it for its simplicity, performance, concurrency as well as its rapid development and growing community. Check out below the difference of creating prepared statement with NodeJS and Golang drivers:</p>
 
-<p>As soon as we decided to build our own collector,
-we were faced with 2 simple questions: <strong>where</strong> to
-store this data and <strong>what platform</strong> to use?</p>
-
-<p>To begin with, we benchmarked <a href="https://bigquery.cloud.google.com/">BigQuery</a>&rsquo;s <a href="https://cloud.google.com/bigquery/streaming-data-into-bigquery">streaming
-protocol</a> and found it could easily sustain the
-amount of data we wanted to transfer so,
-considering we&rsquo;re pretty well versed with BigQuery as
-we use it for a plethora of other projects,
-this was a quick and easy decision.</p>
-
-<p>Then it came the time to decide on which
-platform we would build the app itself,
-and this was, again, a fairly easy decision:
-what we were looking for was a fast, pragmatic
-platform that would allows us to build
-high-performance webservers and integrate
-with BQ seamlessly. Our choice was Golang,
-as it allows to build incredibly efficient
-servers and has a very well-built
-<a href="https://godoc.org/cloud.google.com/go/bigquery">package to interface directly with BigQuery</a>.</p>
-
-<p>As I mentioned, our code was fairly simple:
-a request comes in, we pull parameters from
-the URL and sync it into BigQuery.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-go'>// Code is simplified as our full codebase
-// does things you don&apos;t really need to get into... ;)
-type Event struct {
-    Data string
-    Ts   time.Time
-}
-
-http.HandleFunc(&quot;/track-me&quot;, func(w http.ResponseWriter, req *http.Request) {
-    client, err := bigquery.NewClient(ctx, PROJECT_ID)
-    if err != nil {
-        // ...handle error...
-    }
-    u := client.Dataset(DATASET).Table(TABLE).Uploader()
-
-    events := []*Event{
-        {Data: req.URL.Query(), Ts: time.Now()},
-    }
-    if err := u.Put(ctx, events); err != nil {
-        log.Printf(&quot;error: %s&quot;, err)
-    }
-
-    io.WriteString(w, &quot;ok&quot;)
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>/* Node driver: create prepared statements */
+const ps = new sql.PreparedStatement(/* [pool] */)
+/* We need to specify the SQL type of parameters */
+ps.input(&apos;param&apos;, sql.Int)
+ps.prepare(&apos;select @param as value&apos;, err =&gt; {
+    // ... error checks
+    ps.execute({param: 12345}, (err, result) =&gt; {
+        // ... error checks
+        ps.unprepare(err =&gt; {
+            // ... error checks
+        })
+    })
 })</code></pre></figure>
 
 
-<p>Now, the app is definitely not optimized, as it tries
-to sync to BigQuery at every request &mdash; which is a
-(fairly) expensive operation: we had a reason for keeping
-it this way, a reason called Google App Engine.</p>
-
-<h2>On GAE</h2>
-
-<p>Since we were worried about the scalability of our
-hosting platform, we decided
-to deploy this application on Google App Engine,
-an infinitely scalable platform ran by Google.</p>
-
-<p>The tricky bit of GAE is that it &ldquo;forces&rdquo;
-you to run all of your application logic <a href="https://stackoverflow.com/questions/149307/background-tasks-on-app-engine">within
-a single request/response</a>:
-everything you want to do needs to be completed
-before you return a response to the client.
-This is definitely an acceptable trade-off in
-a lot of use-cases, as it guarantees that Google
-can spin instances up and down at will, but didn&rsquo;t
-work too great for us as it really added an expensive
-operation in our route (syncing to BigQuery).</p>
-
-<p>Ideally, we would have liked to be able to execute the
-sync in background, but App Engine has a fairly <a href="https://cloud.google.com/appengine/docs/standard/python/taskqueue/">complex
-implementation of background jobs</a> that we didn&rsquo;t like
-as much, as we wanted to keep the setup as simple
-as possible.</p>
-
-<p>We went live with a working app within a day,
-but we immediately noticed a problem, as latency was
-much higher than we expected:</p>
-
-<p><img class="center" src="http://namshi.github.io/images/gae-latency.png"></p>
-
-<p>A median of 300ms for an app that simply receives a request
-and syncs it to BigQuery seemed way higher than
-we expected: we eventually didn&rsquo;t bother as much
-as what we needed wasn&rsquo;t high-performance, but rather
-high-scalability, and GAE fit the bill perfectly.</p>
-
-<p>After a couple weeks, though, we noticed another
-interesting problem: since the app wasn&rsquo;t as
-efficient as we thought, lots of GAE instances
-were being used to keep up with the amount of traffic
-we were receiving, something that reflected on
-our GCP bill right away:</p>
-
-<p><img class="center" src="http://namshi.github.io/images/gae-price.png"></p>
-
-<p>This little tracking app was costing us around
-$150 a day ($4500 per month), way more than we initially budgeted:
-time to review the setup and come up with
-a more efficient way to use Google&rsquo;s servers,
-at a fraction of the cost.</p>
-
-<h2>GKE</h2>
-
-<p>We are very big on Kubernetes, so the very next step
-was to try to move our application to the GKE,
-Google&rsquo;s hosted Kubernetes service.</p>
-
-<p>The idea was very simple: let&rsquo;s rewrite the app
-so that it batches requests to BigQuery, let&rsquo;s setup
-a small k8s cluster with node autoscaling and let&rsquo;s
-set the right scaling policies (<a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/">HPA</a>)
-for our pods.</p>
-
-<p>Rewriting the app was very easy: instead of syncing
-to BigQuery at each request, we simply created a channel
-that buffers up to X events, and syncs them in batch once
-the buffer&rsquo;s filled up:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-go'>var (
-    MaxWorkers     = 10
-    MaxQueue       = 10000
-    BatchSize      = 100
-)
-
-type Event struct {
-    Data string
-    Ts   time.Time
-}
-
-func main() {
-    jobs := make(chan Event, MaxQueue)
-    for w := 1; w &lt;= MaxWorkers; w++ {
-        go worker(jobs)
-    }
-
-    http.HandleFunc(&quot;/track-me&quot;, func(w http.ResponseWriter, req *http.Request) {
-        jobs &lt;- Event{Data: req.URL.Query(), Ts: time.Now()}
-        io.WriteString(w, &quot;ok&quot;)
-    })
-
-    log.Printf(&quot;Server listening on port %s&quot;, os.Getenv(&quot;PORT&quot;))
-    log.Fatal(http.ListenAndServe(&quot;:&quot;+os.Getenv(&quot;PORT&quot;), nil))
-}
-
-func worker(events &lt;-chan Event) {
-    ctx := context.Background()
-    client, err := bigquery.NewClient(ctx, PROJECT_ID)
-    if err != nil {
-        panic(err) // YOLO!
-    }
-    buffer := []*Event{}
-
-    for e := range events {
-        u := client.Dataset(DATASET).Table(TABLE).Uploader()
-        buffer = append(buffer, &amp;e)
-        if len(buffer) == BatchSize {
-            log.Printf(&quot;Flushing %d events to BQ&quot;, BatchSize)
-            if err := u.Put(ctx, buffer); err != nil {
-                log.Printf(&quot;%s&quot;, err)
-            }
-            log.Printf(&quot;work done&quot;)
-            buffer = []*Event{}
-        }
-    }
-}</code></pre></figure>
 
 
-<p>Next in line was to create the k8s cluster, which was
-an extremely simple operation from GKE&rsquo;s interface:
-we deployed our pods, setup an ingress and&hellip; &hellip;boom,
-the app was live under a different URL!</p>
-
-<p>Last but not least, we wanted to make sure that spikes
-in traffic were taken care of, both from a memory and cpu
-standpoint:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-yaml'>apiVersion: autoscaling/v1
-kind: HorizontalPodAutoscaler
-metadata:
-  name: tracking-app-cpu
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: tracking-app
-  minReplicas: 4
-  maxReplicas: 100
-  targetCPUUtilizationPercentage: 20
----
-apiVersion: autoscaling/v2beta1
-kind: HorizontalPodAutoscaler
-metadata:
-  name: tracking-app-memory
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1beta1
-    kind: Deployment
-    name: tracking-app
-  minReplicas: 4
-  maxReplicas: 100
-  metrics:
-  - type: Resource
-    resource:
-      name: memory
-      targetAverageUtilization: 30</code></pre></figure>
+<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-go'>// Golang driver: create prepared statements
+// We don&apos;t need to specify the SQL type of parameters
+db.QueryContext(ctx, `select * from t where ID = @ID and Name = @p2;`, sql.Named(&quot;ID&quot;, 6), &quot;Bob&quot;)</code></pre></figure>
 
 
-<p>Once the HPAs were ready, we switched our tracking URLs and&hellip;</p>
+<p>To run an MS SQL Server locally, we used this [Docker Image] (<a href="https://hub.docker.com/r/microsoft/mssql-server-linux/">https://hub.docker.com/r/microsoft/mssql-server-linux/</a>) and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.</p>
 
-<h2>Results</h2>
+<p>From there, we started implementing the app as per the old <code>README</code>. We had to battle with taking care of data types (e.g, casting DECIMAL to float, or formatting dates correctly for MSSQL), use transactions in write queries and use connection pooling to enhance performance. For logging, we add logs for the time each query takes and the specific parameters each query uses. It becomes much easier for future troubleshooting and debugging.</p>
 
-<p>Where do we start? Well, since we&rsquo;re all computer geeks
-at the end of the day, let&rsquo;s look at our response times,
-now monitored through NewRelic:</p>
+<h3>Rollout</h3>
 
-<p><img class="center" src="http://namshi.github.io/images/tracking-nr.png"></p>
+<p>Rolling out a critical app requires careful planning. To start with, we rolled out the apps on staging and ran test queries to make sure everything worked fine. Then we switched a few live apps on a separate service and kept them running for a period of time. After couple days, we rolled out more live apps and fixed bugs as they came. A week later, we switched all live apps and checked logs closely to make sure all went well.</p>
 
-<p>Our 99th percentile is at <strong>less than 0.2 milliseconds</strong>
-which is definitely more like what we initially planned
-&mdash; we finally nailed it!</p>
+<h3>Outcome</h3>
 
-<p>As far as cost is concerned, this new cluster (which, again,
-manages more than 30M events a day) costs us between
-$300 to $400, a ~90% price reduction compared to the cost
-of running the same application on GAE.</p>
-
-<p>If we look at the pricing report from the GCP project in question you can clearly
-see the cost reduction as soon as we deployed the
-application on the GKE:</p>
-
-<p><img class="center" src="http://namshi.github.io/images/price2-gcp.png"></p>
-
-<p>We also take advantage of a simplified setup where
-we can manage the cluster through the good old <code>kubectl</code>,
-and deployments are much simpler than GAE (if you ever
-used GAE you know what I&rsquo;m talking about&hellip;).</p>
-
-<h2>Conclusion</h2>
-
-<p>The goal of this post is not to say that GAE is terrible,
-or that GKE is the best hosting platform out there: it merely
-is a report based on our own experience building a
-scalable event tracking system that we moved from one platform
-to the other. GAE is surely quicker to setup and includes
-additional abstractions that the GKE forces you to take care
-of (load balancing and SSL, just to name a couple of them), so
-we recommend to think about your use case and make a reasonated
-choice.</p>
-
-<p>We truly hope you enjoyed this post! By the way, <a href="http://namshi.github.io/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us/">we&rsquo;re hiring</a>!</p>
+<p>With this rewrite we achieved much better performance! The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more! :)</p>
 ]]></content>
   </entry>
   
@@ -340,7 +103,7 @@ a bigger organization.</p>
 
 <p>So, lots of hiring coming up here at Namshi: mobile, SRE, frontend, backend&hellip;   &hellip;you name it, we&rsquo;re probably hiring :)</p>
 
-<p>Our mobile team, led by <a href="https://www.linkedin.com/in/hannancs112/">Abdul</a>, is playing around with React Native
+<p>Our mobile team, lead by <a href="https://www.linkedin.com/in/hannancs112/">Abdul</a>, is playing around with React Native
 and works on a daily basis with Swift and the standard
 Android toolkit (even though they&rsquo;ve been flirting with
 Kotlin every now and then): their mission is to make

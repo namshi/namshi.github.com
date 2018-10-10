@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: mssql | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/mssql/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2018-10-10T14:33:16+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rewriting an MS SQL gateway with Golang]]></title>
+    <link href="http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang/"/>
+    <updated>2018-10-10T05:51:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang</id>
+    <content type="html"><![CDATA[<p>Innovation happens at an increasing rate today, which means code that is only one
+or two years old might become outdated and hard to maintain.
+In Namshi, we also face issues caused by legacy code. When an app starts to lag or break,
+the team gathers and discusses a best approach to fix issues. Sometimes we do an incremental
+refactor and other times we go for a complete rewrite.
+This month we rewrote an app from scratch, and here is how we did it.</p>
+
+<!-- more -->
+
+
+<h3>Why?</h3>
+
+<p>Namshi runs an app that acts as a gateway in front of an MS SQL server. We recently moved our MS SQL server to a different cloud provider, and our MS SQL gateway started to get stuck (taking more than 10 seconds to respond), causing slow operations in the apps relying on the gateway. We received daily (and nightly) calls due to slow response and needed to restart the app quite often. The limited amount of logging also made it hard for us to pinpoint the bottleneck. The app was also written in C#, a less used language in our team, and requires more attention.</p>
+
+<p>Refactoring the code gives us the ease of not needing to go through a full development and testing cycle. However, the app might still get stuck and take huge effort to debug and maintain. On the other hand, a complete rewrite will improve stability, the logging system as well as easier performance management.</p>
+
+<p>Considering the benefits of each approach, we decided to give it a complete rewrite.</p>
+
+<h3>How?</h3>
+
+<p>First we went out scouting for a driver. The driver we started with was the <a href="https://www.npmjs.com/package/mssql">Node.JS driver</a>. It was easy to use. However, it requires to specify SQL variable type when we create prepared statement. Our existing queries do not specify the SQL type for parameters, so it&rsquo;s painful to add all the fields. So, we decided to opt for a second choice, the <a href="https://github.com/denisenkom/go-mssqldb">Golang driver</a>. Golang has been popular in the backend team. We love it for its simplicity, performance, concurrency as well as its rapid development and growing community. Check out below the difference of creating prepared statement with NodeJS and Golang drivers:</p>
+
+<p>```javascript
+/<em> Node driver: create prepared statements </em>/
+const ps = new sql.PreparedStatement(/<em> [pool] </em>/)
+/<em> We need to specify the SQL type of parameters </em>/
+ps.input(&lsquo;param&rsquo;, sql.Int)
+ps.prepare(&lsquo;select @param as value&rsquo;, err => {</p>
+
+<pre><code>// ... error checks
+ps.execute({param: 12345}, (err, result) =&gt; {
+    // ... error checks
+    ps.unprepare(err =&gt; {
+        // ... error checks
+    })
+})
+</code></pre>
+
+<p>})
+```</p>
+
+<p><code>go
+// Golang driver: create prepared statements
+// We don't need to specify the SQL type of parameters
+db.QueryContext(ctx, `select * from t where ID = @ID and Name = @p2;`, sql.Named("ID", 6), "Bob")
+</code></p>
+
+<p>To run an MS SQL Server locally, we used this [Docker Image] (<a href="https://hub.docker.com/r/microsoft/mssql-server-linux/">https://hub.docker.com/r/microsoft/mssql-server-linux/</a>) and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.</p>
+
+<p>From there, we started implementing the app as per the old <code>README</code>. We had to battle with taking care of data types (e.g, casting DECIMAL to float, or formatting dates correctly for MSSQL), use transactions in write queries and use connection pooling to enhance performance. For logging, we add logs for the time each query takes and the specific parameters each query uses. It becomes much easier for future troubleshooting and debugging.</p>
+
+<h3>Rollout</h3>
+
+<p>Rolling out a critical app requires careful planning. To start with, we rolled out the apps on staging and ran test queries to make sure everything worked fine. Then we switched a few live apps on a separate service and kept them running for a period of time. After couple days, we rolled out more live apps and fixed bugs as they came. A week later, we switched all live apps and checked logs closely to make sure all went well.</p>
+
+<h3>Outcome</h3>
+
+<p>With this rewrite we achieved much better performance! The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more! :)</p>
+]]></content>
+  </entry>
+  
+</feed>
