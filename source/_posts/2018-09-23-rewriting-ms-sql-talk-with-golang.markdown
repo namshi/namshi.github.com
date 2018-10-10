@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rewriting an MS SQL gateway with Golang"
-date: 2018-09-23 05:51
+date: 2018-10-10 05:51
 comments: true
 categories: [mssql]
 author: Ming Hu
@@ -13,6 +13,8 @@ In Namshi, we also face issues caused by legacy code. When an app starts to lag 
 the team gathers and discusses a best approach to fix issues. Sometimes we do an incremental
 refactor and other times we go for a complete rewrite.
 This month we rewrote an app from scratch, and here is how we did it.
+
+<!-- more -->
 
 ### Why?
 
