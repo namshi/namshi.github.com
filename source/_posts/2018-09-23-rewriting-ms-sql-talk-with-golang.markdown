@@ -9,8 +9,8 @@ author: Ming Hu
 
 Innovation happens at an increasing rate today, which means code that is only one
 or two years old might become outdated and hard to maintain.
-In Namshi, we also face issues caused by legacy code. When an app starts to lag or break,
-the team gathers and discusses a best approach to fix issues. Sometimes we do an incremental
+In Namshi's Backend Team, we also discuss the best approach to fix issues
+when we face problems caused by legacy code. Sometimes we do an incremental
 refactor and other times we go for a complete rewrite.
 This month we rewrote an app from scratch, and here is how we did it.
 
@@ -50,7 +50,7 @@ ps.prepare('select @param as value', err => {
 db.QueryContext(ctx, `select * from t where ID = @ID and Name = @p2;`, sql.Named("ID", 6), "Bob")
 ```
 
-To run an MS SQL Server locally, we used this [Docker Image] (https://hub.docker.com/r/microsoft/mssql-server-linux/) and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.
+To run an MS SQL Server locally, we used this [Docker Image](https://hub.docker.com/r/microsoft/mssql-server-linux/) and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.
 
 From there, we started implementing the app as per the old `README`. We had to battle with taking care of data types (e.g, casting DECIMAL to float, or formatting dates correctly for MSSQL), use transactions in write queries and use connection pooling to enhance performance. For logging, we add logs for the time each query takes and the specific parameters each query uses. It becomes much easier for future troubleshooting and debugging.
 
@@ -60,4 +60,4 @@ Rolling out a critical app requires careful planning. To start with, we rolled o
 
 ### Outcome
 
-With this rewrite we achieved much better performance! The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more! :)
+With this rewrite we achieved much better performance. The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more :).
