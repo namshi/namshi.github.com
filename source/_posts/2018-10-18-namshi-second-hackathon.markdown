@@ -17,7 +17,7 @@ We had a lot of fun!
 
 <!-- more -->
 
-{% img center /images/hack-2018.jpg %}
+{% img center /images/posts/hack-2018.jpg %}
 
 ### Theme and Challenge
 
@@ -47,7 +47,7 @@ but the selected few ideas also go live in our app.
 This year Namshi encouraged ideas not only limited to e-commerce. With the freedom
 to brainstorm and work on whatever they want, hackers have proposed some unique ideas.
 
-{% img center /images/hack-2018-brainstorm.jpg %}
+{% img center /images/posts/hack-2018-brainstorm.jpg %}
 
 ### Brainstorming and Hacking
 
