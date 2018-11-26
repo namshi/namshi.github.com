@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-10-10T14:37:31+00:00</updated>
+  <updated>2018-11-26T08:11:57+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,14 +14,144 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Namshi's Second Hackathon 2018]]></title>
+    <link href="http://namshi.github.io/blog/2018/10/18/namshi-second-hackathon/"/>
+    <updated>2018-10-18T05:51:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/10/18/namshi-second-hackathon</id>
+    <content type="html"><![CDATA[<p>A recap from 2 days of hacking at Namshi&rsquo;s Headquarter in Dubai with
+an incredible bunch of hackers. The best weekend of the year!</p>
+
+<p>During the first weekend of October, Namshi hosted the second internal
+Hackathon at our lovely TECH team office. It was time for our software engineers to celebrate
+the spirit of innovation and entrepreneurship through cross-team collaboration and rapid prototyping &ndash;
+We had a lot of fun!</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://namshi.github.io/images/posts/hack-2018.jpg"></p>
+
+<h3>Theme and Challenge</h3>
+
+<p>Back in January 2018, Namshi&rsquo;s senior backend engineer <a href="http://namshi.github.io/team#Joe%20Jean">Joe Jean</a>
+founded and organized Namshi’s first hackathon. Although our team was smaller,
+the first hackathon concluded with success and saw the potential
+of thinking outside the box and sparks for business innovation.
+We felt strongly that the hackathon needed a sequel and so came back
+with bigger teams, crazier ideas and more excitement.
+We looked to invite product managers and data scientists to join
+for an interdisciplinary experience.</p>
+
+<p>Our theme this year is <em>Dream it, Build it, Ship it</em>. It sees
+hackers come up with new solutions or features that are implemented within two days.
+At the end of the two days, each team presents their progress with slides and a demo to a team of four judges who evaluate based on three criteria:</p>
+
+<p>1) How crazy is the idea?</p>
+
+<p>2) How much value does it provide?</p>
+
+<p>3) How well executed is the idea?</p>
+
+<p>Based on assessment against these metrics judges decide on the winning teams.  Not only do the winning teams get rewarded with some amazing prizes,
+but the selected few ideas also go live in our app.</p>
+
+<p>This year Namshi encouraged ideas not only limited to e-commerce. With the freedom
+to brainstorm and work on whatever they want, hackers have proposed some unique ideas.</p>
+
+<p><img class="center" src="http://namshi.github.io/images/posts/hack-2018-brainstorm.jpg"></p>
+
+<h3>Brainstorming and Hacking</h3>
+
+<p>Brainstorm! The outburst of ideas before hacking begins. This year, one of the most sought after ideas
+was to use the power of social.</p>
+
+<p>One team makes use of social networks to drive sales. The idea is that customers
+will share products they buy on Namshi and get rewarded with Namshi credits
+if their friends buy the same products using their link.</p>
+
+<p>Another team increases conversions with the psychological phenomenon
+of <a href="https://en.wikipedia.org/wiki/Social_proof">social proof</a> to ease the minds of worried customers. Similar
+to Bookings.com and Airbnb, the idea was to display a badge such as
+&ldquo;5 other people are currently viewing&rdquo; or &ldquo;Only 3 items left&rdquo; to
+give users social insights as well as a sense of urgency of the popularity of the products they are viewing.</p>
+
+<p>Besides updates on social, hackers also came up with ideas such as integrating
+Augmented Reality to display products; or recommending personalized products
+based on customers&#8217; viewing history; or introducing a monthly subscription mystery
+box with a customer’s preferences, etc.</p>
+
+<p>With the hack underway, free food and drinks were provided ;)</p>
+
+<h3>An overview of the 7 presented projects:</h3>
+
+<ul>
+<li><p><strong>Shop Connect</strong> &ndash; helps you connect with your social media circle so
+that you can take informed buying decisions when shopping online</p></li>
+<li><p><strong>Personalized Shopping</strong> &ndash; provides you a personalized shopping experience
+by recommending products based on your viewing history and activities</p></li>
+<li><p><strong>Make Your Style</strong> &ndash; involves you in creating new styles and designs as
+well as reward you for your creations</p></li>
+<li><p><strong>Share and Earn</strong> &ndash; allows you to share products you order from
+Namshi on your Facebook, Twitter and other social media timeline,
+and reward you Namshi credits for successful referrals</p></li>
+<li><p><strong>Surprise Box</strong> &ndash; introduces you a subscription based product that allows
+you to receive curated fashion accessories that follow certain
+themes or trends</p></li>
+<li><p><strong>Express Checkout &amp; Direct Payment Links</strong> &ndash; simplifies checkout
+process to one screen, with possibility of delayed payment so you can
+pay for your friends or pay for your orders later</p></li>
+<li><p><strong>Social Proof</strong> &ndash; provides you more information on the social interest
+scarcity and satisfaction on Namshi products to help you make
+buying decisions</p></li>
+</ul>
+
+
+<h3>And the winners are&hellip;</h3>
+
+<p>Four judges made up of the management team selected two winning teams. Whilst all ideas were
+met with enthusiasm, it came down to the value add and how well executed it was in the end.</p>
+
+<p>🥇 <strong>Social Proof</strong> 🥇</p>
+
+<p>This team builds on the idea of social proof to increase
+conversions and revenue. It&rsquo;s a simple idea with a huge impact.
+We saw their great work as a product of teamwork: <a href="http://namshi.github.io/team#Carles%20Iborra">Carles</a>
+and <a href="https://www.linkedin.com/in/ala-hawash-6b291641/">Ala</a> from the backend team, <a href="http://namshi.github.io/team#Noor%20Ul%20Ain%20Ali">Noor</a> from the mobile team
+and <a href="https://www.linkedin.com/in/areusova/">Anastasia</a> from data science. With the combined skills and enthusiasm of each member,
+they were able to implement the social proof feature to its full extent and
+presented its unlimited potential to us.</p>
+
+<p>This feature will be live soon so won’t disclose
+too many details. Wait for our next post to find out!</p>
+
+<p>🥈 <strong>Express Checkout</strong> 🥈</p>
+
+<p>Namshi uses a three-step checkout on all platforms as it was proven
+to be our customer&rsquo;s preferred model couple years ago. As time has changed, we
+redesigned the UI for a simpler checkout process and also added a feature to allow others to pay
+for your order! Stay tuned for our next blog for more details :)</p>
+
+<h3>See you next time!</h3>
+
+<p>We were excited to see participants from five departments working together
+and building innovative solutions across the disciplines of tech,
+design, marketing, and business.
+It was a fun weekend and we definitely want to have another one in a couple of months!</p>
+
+<p>If you like our hackathon and are interested in joining us, check out our <a href="http://namshi.github.io/blog/2018/09/16/namshi-is-hiring-come-and-hack-with-us">hiring blog</a>
+now!</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Rewriting an MS SQL gateway with Golang]]></title>
     <link href="http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang/"/>
     <updated>2018-10-10T05:51:00+00:00</updated>
     <id>http://namshi.github.io/blog/2018/10/10/rewriting-ms-sql-talk-with-golang</id>
     <content type="html"><![CDATA[<p>Innovation happens at an increasing rate today, which means code that is only one
 or two years old might become outdated and hard to maintain.
-In Namshi, we also face issues caused by legacy code. When an app starts to lag or break,
-the team gathers and discusses a best approach to fix issues. Sometimes we do an incremental
+In Namshi&rsquo;s Backend Team, we also discuss the best approach to fix issues
+when we face problems caused by legacy code. Sometimes we do an incremental
 refactor and other times we go for a complete rewrite.
 This month we rewrote an app from scratch, and here is how we did it.</p>
 
@@ -62,7 +192,7 @@ ps.prepare(&apos;select @param as value&apos;, err =&gt; {
 db.QueryContext(ctx, `select * from t where ID = @ID and Name = @p2;`, sql.Named(&quot;ID&quot;, 6), &quot;Bob&quot;)</code></pre></figure>
 
 
-<p>To run an MS SQL Server locally, we used this [Docker Image] (<a href="https://hub.docker.com/r/microsoft/mssql-server-linux/">https://hub.docker.com/r/microsoft/mssql-server-linux/</a>) and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.</p>
+<p>To run an MS SQL Server locally, we used this <a href="https://hub.docker.com/r/microsoft/mssql-server-linux/">Docker Image</a> and created a test database for rapid prototyping. Our first snippet of code only had a single function to execute a dummy query against the database.</p>
 
 <p>From there, we started implementing the app as per the old <code>README</code>. We had to battle with taking care of data types (e.g, casting DECIMAL to float, or formatting dates correctly for MSSQL), use transactions in write queries and use connection pooling to enhance performance. For logging, we add logs for the time each query takes and the specific parameters each query uses. It becomes much easier for future troubleshooting and debugging.</p>
 
@@ -72,7 +202,7 @@ db.QueryContext(ctx, `select * from t where ID = @ID and Name = @p2;`, sql.Named
 
 <h3>Outcome</h3>
 
-<p>With this rewrite we achieved much better performance! The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more! :)</p>
+<p>With this rewrite we achieved much better performance. The integration with New Relic lets us check app performance in real time and figure out what is causing performance issue. Detailed logging allows us to debug and improve code rapidly. More importantly, this new app is well understood by the team and has been very stable since we switched. We are not receiving daily or nightly calls any more :).</p>
 ]]></content>
   </entry>
   
@@ -2218,229 +2348,6 @@ them, and what methodologies to use to make tests more maintainable is a must.</
 
 
 <p>What are you waiting for? Drop everything and <del>order some shawarma</del> <a href="http://namshi.github.io/join-us/">apply now</a>!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Browser geolocation: the good, the bad and the ugly]]></title>
-    <link href="http://namshi.github.io/blog/2016/11/13/browser-geolocation-the-good-the-bad-and-the-ugly/"/>
-    <updated>2016-11-13T18:37:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/11/13/browser-geolocation-the-good-the-bad-and-the-ugly</id>
-    <content type="html"><![CDATA[<p>We&rsquo;re a little late to the party &mdash; but we&rsquo;re here, amongst those who are
-playing around with the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/Using_geolocation">geolocation API</a>
-provided by browsers.</p>
-
-<p>Without further ado, let me get straight to our feedback on one the nicest web
-APIs that have been standardized in recent times.</p>
-
-<!-- more -->
-
-
-<h2>Background</h2>
-
-<p>We&rsquo;ve always been looking for ways to ease our checkout workflow, as a simpler
-process usually means happier customers, and the ability to automagically
-detect the device&rsquo;s location lets us take away from our customers the burden
-of having to manually fill forms:</p>
-
-<div align="center">
-  <video src="http://namshi.github.io/videos/geolocation.webm" controls autoplay loop></video>
-</div>
-
-
-<p>Now that you&rsquo;ve seen it in action let&rsquo;s dig a little bit on what we found out
-while implementing this little thing of beauty.</p>
-
-<h2>The good</h2>
-
-<p>First off, let me start by saying that, luckily, browser support is
-<a href="http://caniuse.com/#feat=geolocation">widespread</a>, as the only major browser
-that is currently lacking support is Opera Mini (not a biggie).</p>
-
-<p>Detecting the user&rsquo;s location is also quite simple:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>var opts = {
-  enableHighAccuracy: true,
-  maximumAge        : 1000,
-  timeout           : 1000
-};
-
-function onSuccess(position) {
-  console.log(position.coords.latitude, position.coords.longitude)
-}
-
-function onError(err) {
-  console.log(err)
-}
-
-navigator.geolocation.getCurrentPosition(onSuccess, onError, opts);</code></pre></figure>
-
-
-<p>If this is the first time you&rsquo;re trying to access the device&rsquo;s position the
-browser will show a popup to inform the user the website&rsquo;s trying to access the
-device&rsquo;s location, so that he or she can accept or decline. The rest is history :)</p>
-
-<p><strong>Takeaway</strong>: this is going to sound like a typical 80/20 story &mdash; it takes no
-time to get most done, and a proportially long time to sort the wonky details
-out. Regardless, the experience has been pretty positive.</p>
-
-<h2>The bad</h2>
-
-<p>Detecting the device&rsquo;s location turns out pretty handy on desktop devices, as
-you can safely assume they won&rsquo;t move around :) Phones and tablets, on the
-other hand, will probably be used around so there&rsquo;s a good chance that the
-customer might move away / be away from the destination.</p>
-
-<p>The problem is that on desktop you don&rsquo;t really get a very accurate position as
-the geolocation service the browser uses won&rsquo;t have any GPS triangulation
-available, so you&rsquo;re left with heuristics based on <a href="http://stackoverflow.com/questions/1668304/how-does-google-calculate-my-location-on-a-desktop">IP address mapping and previous
-information about nearby networks</a>.</p>
-
-<p><strong>Takeaway</strong>: we went mobile-first and decided to ignore desktop devices for now
-(coming soon!).</p>
-
-<p>In addition, error callbacks aren&rsquo;t as accurate as they are supposed to be: on
-android, for example, if the user doesn&rsquo;t have the GPS enabled, you might get a
-very cryptic error such as &ldquo;<em>User denied geolocation</em>&rdquo; &mdash; which isn&rsquo;t really
-what&rsquo;s happening.</p>
-
-<p><strong>Takeway</strong>: don&rsquo;t really rely on the error callbacks to distinguish between
-errors, as they&rsquo;re not 100% reliable across all platforms. Consider any error as
-a general failure, indicating that something might have gone wrong:</p>
-
-<ul>
-<li>the user didn&rsquo;t accept the geolocation request</li>
-<li>the geolocation request failed for some reason</li>
-<li>the GPS wasn&rsquo;t turned on</li>
-<li>apocalypse just happened :)</li>
-</ul>
-
-
-<p>Last but not least, we were very surprised that geolocation depended on the GPS
-being manually turned on, at least on Android. I don&rsquo;t know how
-many android users go around with their GPS turned on but I bet it&rsquo;s a pretty
-small percentage considering how it affects battery usage. We thought the
-browser could temporarily turn the GPS on on its own, but that isn&rsquo;t the case. On
-iOS, for some reason, it seems the percentage of users having <em>location services</em>
-enabled is quite higher, thus the impact isn&rsquo;t as high.</p>
-
-<p><strong>Takeaway</strong>: be prepared to help users figure out what&rsquo;s wrong &mdash; give them
-clear instructions on what steps are required to successfully geolocate them:</p>
-
-<ul>
-<li>location services / GPS must be on</li>
-<li>internet access (well&hellip;)</li>
-<li>accept the geolocation request</li>
-</ul>
-
-
-<h2>The ugly</h2>
-
-<p>Oh boy, we didn&rsquo;t see this coming.</p>
-
-<p>Follow me on this simple workflow on an android phone:</p>
-
-<ul>
-<li>trigger a geolocation request, but with the GPS off</li>
-<li>request fails for obvious reasons</li>
-<li>enable GPS</li>
-<li>trigger a new geolocation request</li>
-</ul>
-
-
-<p>What in the world would you expect to happen?</p>
-
-<p>Surprise, it doesn&rsquo;t work. And guess what, if you refresh the page an trigger
-the request again everything&rsquo;s good &mdash; so somehow chrome isn&rsquo;t really able to
-&ldquo;recover&rdquo; from a failed request until the page is refreshed. Go figure.</p>
-
-<p>Of course, triggering a full page reload on our checkout is out of question, as
-that distracts the user away and delays the checkout process, so we looked around
-for alternative solutions and thought of giving iframes a try &mdash; surprisingly,
-it worked. Go figure.</p>
-
-<p>The idea is very simple &mdash; once the user clicks on the &ldquo;<em>Detect my location</em>&rdquo;
-button we load an invisible iframe that triggers the geolocation request:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>getCurrentPosition = function(){
-  return new Promise((resolve, reject) =&gt; {
-    var ifr = document.createElement(&apos;iframe&apos;);
-    ifr.style.opacity = &apos;0&apos;;
-    ifr.style.pointerEvents = &apos;none&apos;;
-    ifr.src = window.location.origin + &apos;/geo.html&apos;;
-
-    document.body.appendChild(ifr);
-
-    ifr.contentWindow.addEventListener(&apos;message&apos;, function(message){
-      message = JSON.parse(message.data);
-      document.body.removeChild(ifr);
-
-      if(message.type === &apos;success&apos;){
-        resolve(message.data);
-      } else {
-        reject(message.data);
-      }
-    });
-  ]})
-};</code></pre></figure>
-
-
-<p>(the above code got trimmed for the sake of brevity)</p>
-
-<p>As you might have figured, we listen for a message from the iframe, which is
-responsible for getting the users&#8217; location and sending it to us:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-html'>&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-  &lt;meta charset=&quot;UTF-8&quot;&gt;
-  &lt;title&gt;Geolocation&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    var triggerGeolocationRequest = function(){
-      var options = {
-        enableHighAccuracy: true,
-        timeout: 1000,
-        maximumAge: 1000
-      };
-
-      var result;
-
-      window.navigator.geolocation.getCurrentPosition(function(position){
-        var result = {
-          type: &apos;success&apos;,
-          data: {lat: position.coords.latitude, lng: position.coords.longitude}
-        };
-
-        window.postMessage(JSON.stringify(result), window.location.origin);
-      }, null, options)
-    };
-
-    window.addEventListener(&apos;load&apos;, triggerGeolocationRequest);
-  &lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre></figure>
-
-
-<p>(the above code got trimmed for the sake of brevity)</p>
-
-<p>And that does the job: the browser sees the iframe as a brand new page, thus
-is able to overcome this wonky issue. Again, go figure.</p>
-
-<p><strong>Takeaway</strong>: iframes, rescuing lazy web developers since 1997.</p>
-
-<h2>All in all&hellip;</h2>
-
-<p>Our feedback is generally positive, as customers have started to use it from day
-1 at a good rate (~10% of our mobile checkouts is &ldquo;geolocated&rdquo;). There are a few
-quirks here and there but if you survived IE6 then this is really going to feel
-like a piece of cake.</p>
-
-<p>A big &ldquo;thanks&rdquo; goes to my partners in crime <a href="http://namshi.github.io/team/#Mohamed%20Amin">Mohamed</a>, <a href="http://namshi.github.io/team/#Gabriel%20Izebhigie">Gabriel</a>, <a href="http://namshi.github.io/team/#Shidhin%20CR">Shidhin</a>, <a href="http://namshi.github.io/team/#Razan%20Bilwani">Razan</a> and
-<a href="http://namshi.github.io/team/#Yomna%20Sabry">Yomna</a>, the real masterminds behind this new feature :)</p>
-
-<p>Au revoir!</p>
 ]]></content>
   </entry>
   
