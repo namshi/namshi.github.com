@@ -70,7 +70,7 @@ footer: true
 
 *   ##<div id="Farzan Uddin">Farzan Uddin</div>
     {% img left team /images/farzan.png Farzan Uddin %}
-    **Farzan Uddin** is a business graduate from the University of Wollongong, but his passion for tech led him to pursue a new challenge. He joined Namshi in 2018 to learn from all the experienced people around and use their wisdom to possibly find a direction for himself. He has an eye for design and wants to be able to transform his ideas to a functional form for the users and enhance their experience. In his spare time, Farzan loves to draw, criticize underlying themes in movies and play competitive video games.
+    **Farzan Uddin** is Junior Frontend Engineer at Namshi. A business graduate from the University of Wollongong, but his passion for tech led him to pursue a new challenge. He joined Namshi in 2018 to learn from all the experienced people around and use their wisdom to possibly find a direction for himself. He has an eye for design and wants to be able to transform his ideas to a functional form for the users and enhance their experience. In his spare time, Farzan loves to draw, criticize underlying themes in movies and play competitive video games.
 
 *   ##<div id="Joe Jean">Joe Jean</div>
     {% img left team /images/joe.png Joe Jean %}
