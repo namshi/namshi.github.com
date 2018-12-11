@@ -45,6 +45,10 @@ footer: true
     {% img left team /images/ammar.png Ammar Rayess %}
     **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
 
+*   ##<div id="Anastasia Reusova">Anastasia Reusova</div>
+    {% img left team /images/ana.png Anastasia Reusova %}
+    Hello, business school graduate here! I graduated from the Graduate School of Management, Saint Petersburg State University with a dream of being a management consultant, and accidentally (no jokes) landed a BI internship in foodpanda, Thailand, in 2016. I went from having to google what BI stood for the moment I got the offer to being totally in love with the data field. I find immense satisfaction in being concentrated on a task to get an "aha!" moment and getting to the point where numbers make sense. I love learning and bringing fresh ideas to the workplace. When I'm off my desk, I'm most probably working on a side project or jumping in a trampoline class.
+
 *   ##<div id="Andrey Komarov">Andrey Komarov</div>
     {% img left team /images/andrey.jpg Andrey Komarov %}
     **Andrey Komarov** always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
