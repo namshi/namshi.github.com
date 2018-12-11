@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-12-11T07:36:49+00:00</updated>
+  <updated>2018-12-11T11:42:14+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Women in Tech @ Namshi: Ming Hu]]></title>
+    <link href="http://namshi.github.io/blog/2018/12/11/women-in-tech-at-namshi-ming-hu/"/>
+    <updated>2018-12-11T11:28:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/12/11/women-in-tech-at-namshi-ming-hu</id>
+    <content type="html"><![CDATA[<p>Here at Namshi we have quite a bit of a <a href="http://namshi.github.io/team">diverse team</a> but, like many companies
+out there, struggle with the gender gap in tech.</p>
+
+<p>We, though, would like
+to share the story and advices from the women who are part of our team, with the
+hope that they&rsquo;ll inspire others to join us, or to simply give computer science, or
+programming in general, a go.</p>
+
+<!-- more -->
+
+
+<p>Without further ado, let me introduce <a href="http://namshi.github.io/team#Ming%20Hu">Ming</a>, who:</p>
+
+<blockquote><p>&hellip;holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi&rsquo;s back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In her free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.</p></blockquote>
+
+<p><strong>Can you briefly tell us a bit about yourself?</strong></p>
+
+<p><img class="center" src="http://namshi.github.io/images/ming.png" width="200"></p>
+
+<p><em>After realizing that I will not make it to the Victoria Secret’s Fashion Show (I wasn’t close), I spent years studying at a college in Abu Dhabi until I discovered my interest: working on tech solutions. So it is no surprise that I joined Namshi recently as a junior software engineer, building infrastructure tools as well as customer-facing apps. I have been a perfectionist coder and I always want my work to be impeccable. Outside work, I enjoy traveling the world, playing Nintendo Switch and eating my way through the places I visit.</em></p>
+
+<p><strong>How did you get into programming &amp; computer science?</strong></p>
+
+<p><em>I went to a few programming workshops out of curiosity when I was in high school in China. Back then not many people were into programming, so there were usually just three or four of us sitting in the workshops. It was probably around 2012, and I remembered learning about queues, stacks, Pascal’s triangles and some idiosyncratic algorithms. Everything was just really fascinating to me. So I started writing tiny pieces of code in Pascal (yep Pascal), but the coding activity didn’t really continue.</em></p>
+
+<p><em>Later I entered college and I wanted to be a civil engineer and build bridges for the people. Yet it turned out I absolutely hated the mundane and complicated courses. So after a week in college, I dropped all my engineering courses and went for computer science instead. I loved it so much more, and that’s how it all started.</em></p>
+
+<p><strong>What does your typical day at work look like?</strong></p>
+
+<p><em>My work at Namshi is very exciting every day! I go to office around 10 AM and start by prioritizing my tasks of the day on Jira or Trello board. I always talk to my teammates at the start of the day to ask for their feedback or opinions on my tasks and solutions. I like working closely with the senior members (usually with <a href="http://namshi.github.io/team#Joe%20Jean">Joe</a> or Ala), and learning new knowledge and skills from them every day. I also like singling out some big chunks of time to write code without distraction by myself. When I’m not coding, I can be find reading HackerNoon, waiting for a latte in the pantry, or just checking out what the other teams are working on.</em></p>
+
+<p><strong>What is the most challenging project you worked on? The one that made you the proudest?</strong></p>
+
+<p><em>The most challenging project at Namshi so far is the Apple Pay Integration on web. To be honest, I didn’t expect it to take so much time and effort for this payment integration. When I started working on it, I realized that Apple has really horrible documentation and every piece of information needs some effort to gather. I’m really proud we made it to work in the end.</em></p>
+
+<p><em>Outside Namshi, I also worked on a human digital chatbot in college. You can check out my project video <a href="https://vimeo.com/301181868">here</a>. It was published in <a href="http://aclweb.org/anthology/W18-5027">ACL</a>, presented in Abu Dhabi National Exhibition Center and selected for SIGDIAL conference in Australia. I was really proud of it.</em></p>
+
+<p><strong>What advice would you give to a woman considering a career in the tech industry? What do you wish you had known?</strong></p>
+
+<p><em>I love a quote by Nelson Mandela: It always seems impossible until it’s done. I think the advice from me would be to be brave, try new things and believe in the impossibilities. Coding is a very intellectual activity and I believe everyone can learn to do it, no matter male or female, old or young.</em></p>
+
+<p><em>If I could start over, I wish I was more engaged with finding or building a developer community in the UAE. It is always fun to work with people on projects that have real-life impacts.</em></p>
+
+<p><strong>Thanks Ming &mdash; both for sharing your experience and keeping the Namshi backends under control! :)</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Namshi's Second Hackathon 2018]]></title>
@@ -2203,151 +2255,6 @@ When we pushed updates for all countries in parallel, the solr CPU usage spiked 
 <p>Just like most of our services, we <strong><a href="https://www.docker.com/">dockerize it</a></strong>. We have a monitoring script that checks the container status and another one that checks the app status e.g zookeeper replication status and solr ping, if any check fails we get an alert and apply the necessary fix.</p>
 
 <p><img src="http://img.photobucket.com/albums/v418/bawanaal/MissionAccomplished.gif" alt="Mission Accomplished" /></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Get that job at Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi/"/>
-    <updated>2016-12-06T10:54:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/12/06/get-that-job-at-namshi</id>
-    <content type="html"><![CDATA[<p>Inspired by <a href="https://hautelook.github.io/jekyll/update/2015/04/01/get-that-job-at-hautelook.html">HauteLook</a> who,
-in turn, were inspired by <a href="http://steve-yegge.blogspot.ae/2008/03/get-that-job-at-google.html">Steve Yegge</a>,
-I decided to write a small article that briefly describes what we&rsquo;re looking for
-when interviewing potential candidates.</p>
-
-<!-- more -->
-
-
-<h2>The process</h2>
-
-<p>Our recruitment process tends to be quite lean (with a few exceptions :)):</p>
-
-<ul>
-<li>a first, introductory chat with me to get to know each other (<em>45m</em>)</li>
-<li>a chat with someone from our HR department, so that the candidate gets a solid overview on our company, the culture, benefits and so on. This is also very helpful for people who are relocating, as it&rsquo;s the best time to ask anything about working in Dubai and so on (<em>1h</em>)</li>
-<li>a more technical interview with someone from our <a href="http://namshi.github.io/team">tech team</a> (usually 2 of our senior engineers) (<em>1/2h</em>)</li>
-</ul>
-
-
-<p>Additionally, depending on the candidate and the position, there <strong>might</strong> be a
-few additional steps required:</p>
-
-<ul>
-<li>coding challenge (<em>no deadlines, should take up to 2 hours of your time</em>)</li>
-<li>additional technical screening with me (<em>1h</em>)</li>
-<li>chat with one of our managing directors (<em>45m</em>)</li>
-</ul>
-
-
-<p>So you can generally assume that, after 3 positive interviews (&frac34; hours in total), you
-could theoretically receive an offer letter.</p>
-
-<p>Expect the whole process to take around 3 weeks.</p>
-
-<h2>Backend</h2>
-
-<p>You should be familiar with minimalist frameworks like Express or Silex, as that&rsquo;s
-how we build 99% of our services nowadays. We&rsquo;re not big on any particular language,
-but if you worked with Node that&rsquo;s definitely a plus, as well as understanding
-async programming.</p>
-
-<p>Being familiar with a shell is kind of a must, as we want people who can poke
-around with Linux and are aware of the potential of the &ldquo;<em>do one thing and do it well</em>&rdquo;
-philosophy.</p>
-
-<p>The HTTP protocol (both 1.1 and 2) is another must as that&rsquo;s what we speak each
-and every day &mdash; you will be mainly tasked to write applications that talk to
-other services through HTTP. Knowing what changes with HTTP/2 and why that&rsquo;s
-great shows the kind of awareness we&rsquo;re looking for.</p>
-
-<p>We&rsquo;re not big on algorithms and data structures but that doesn&rsquo;t mean you
-shouldn&rsquo;t be able to understand them &mdash; having some basic knowledge of Big O
-is always appreciated, as well as understanding how to pick a data structure in
-order to make the most out of it.</p>
-
-<p>We use both relational and non-relational databases, and you should be
-comfortable with a few names here (mostly MySQL and Redis). On MySQL, questions
-about race conditions, locking and <code>ALTER TABLE</code> might come up.</p>
-
-<h2>Frontend</h2>
-
-<p>This position is all about JS &mdash; forget CSS, forget HTML: 99% of this position
-will mean JavaScript.</p>
-
-<p>Callbacks? Promises? async / await? Breakfast for you :)</p>
-
-<p>You should be familiar with technologies like Angular 1 and React, and how they
-work behind the curtain. We could ask you to write a simpler, smaller version of
-redux so you&rsquo;d better understand how these libraries work.
-For example, knowing that virtual DOM makes things faster won&rsquo;t cut it &mdash; why,
-how and thanks to what data structure will.</p>
-
-<p>We also have a keen eye on performance, and you should too: understanding what
-changes HTTP/2 brings to frontend engineering is a must, as well as knowing basic
-rules for performance optimization (<code>webpack -p</code> anyone?). We aren&rsquo;t super-fussy
-about the more advanced stuff, but if you mention tree-shaking and friends we
-won&rsquo;t mind :)</p>
-
-<p>You should be familiar with methodologies such as BEM as you will be required to
-discuss what&rsquo;s the best approach to structure our styles for the long run.
-We also like to sometimes use CSS animations, so knowing how to make them perform
-better, especially for mobile browsers, is highly appreciated.</p>
-
-<h2>Mobile</h2>
-
-<p>As a Mobile Engineer, we expect that you have full proficiency in developing apps
-for Android and/or iOS i.e. from creating a new project in
-Xcode / Android studio to publishing of app in Google Play and App Store.</p>
-
-<p>We expect that you have  good knowledge about Java (Android)
-or Objective C / Swift (iOS). If you know all of these
-languages, most likely you are the rockstar we want to hire :)
-We recently  introduced Kotlin and React-Native in our apps:
-if you have hands-on experience on these it&rsquo;s surely a bonus!</p>
-
-<p>And last but not the least: the Namshi apps are known for their blazing fast
-responsive UI, stability and the features that every online shopper
-wish to have. To take it to the next level, we use lot of CI tools,
-automated builds, Build Optimization for stores, Automatic Distribution to testers.
-Analytics, Crash Reporting etc etc. We expect that you are familiar
-with the tools and techniques to support our workflow.</p>
-
-<h2>SRE</h2>
-
-<p>You should be very familiar with AWS or similar providers ie. Google Cloud, and
-have some sort of experience with containers and orchestrators &mdash;
-we use Kubernetes but if you worked with Mesos / Swarm we won&rsquo;t really mind.
-A good answer to &ldquo;<em>Why would you want to use an init system inside a container?</em>&rdquo;
-will definitely speed up the hiring process :)</p>
-
-<p>Be big on Linux, as we expect you to be a ninja there &mdash; utilities
-like <code>awk</code>, <code>sed</code> and so on should be music to your ears.</p>
-
-<p>You should be familiar with one scripting language (make it python, ruby, php, bash)
-and be open to jump into code, as you might be required to provide bugfixes on
-some of our services, or implement system-related features. In general, the more
-you can code the happier everyone is!</p>
-
-<p>A keen eye on security is a big plus &mdash; we&rsquo;re a small team and we need brilliant
-people who are going to take into account the problems that might happen when
-using (or <strong>not using</strong>) a particular technology, pattern or methodology.</p>
-
-<p>We are also big fans of automation and, in some sense, immutable infrastructures.
-Know the basics.</p>
-
-<h2>And we also generally look for&hellip;</h2>
-
-<ul>
-<li>automated testing is king here: despite the fact that we don&rsquo;t try to cover
-100% of the use-cases, we rely on automated tests a lot. Knowing how to write
-them, and what methodologies to use to make tests more maintainable is a must.</li>
-<li>it would be great to see some of your code &mdash; github is a fan-favorite here :)</li>
-<li>people who like <a href="https://en.wikipedia.org/wiki/Shawarma">shawarma</a></li>
-</ul>
-
-
-<p>What are you waiting for? Drop everything and <del>order some shawarma</del> <a href="http://namshi.github.io/join-us/">apply now</a>!</p>
 ]]></content>
   </entry>
   

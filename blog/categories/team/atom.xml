@@ -4,7 +4,7 @@
   <title><![CDATA[Category: team | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/team/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-12-11T07:36:49+00:00</updated>
+  <updated>2018-12-11T11:42:14+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Women in Tech @ Namshi: Ming Hu]]></title>
+    <link href="http://namshi.github.io/blog/2018/12/11/women-in-tech-at-namshi-ming-hu/"/>
+    <updated>2018-12-11T11:28:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/12/11/women-in-tech-at-namshi-ming-hu</id>
+    <content type="html"><![CDATA[<p>Here at Namshi we have quite a bit of a <a href="/team">diverse team</a> but, like many companies
+out there, struggle with the gender gap in tech.</p>
+
+<p>We, though, would like
+to share the story and advices from the women who are part of our team, with the
+hope that they&rsquo;ll inspire others to join us, or to simply give computer science, or
+programming in general, a go.</p>
+
+<!-- more -->
+
+
+<p>Without further ado, let me introduce <a href="/team#Ming%20Hu">Ming</a>, who:</p>
+
+<blockquote><p>&hellip;holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi&rsquo;s back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In her free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.</p></blockquote>
+
+<p><strong>Can you briefly tell us a bit about yourself?</strong></p>
+
+<p><img class="center" src="/images/ming.png" width="200"></p>
+
+<p><em>After realizing that I will not make it to the Victoria Secret’s Fashion Show (I wasn’t close), I spent years studying at a college in Abu Dhabi until I discovered my interest: working on tech solutions. So it is no surprise that I joined Namshi recently as a junior software engineer, building infrastructure tools as well as customer-facing apps. I have been a perfectionist coder and I always want my work to be impeccable. Outside work, I enjoy traveling the world, playing Nintendo Switch and eating my way through the places I visit.</em></p>
+
+<p><strong>How did you get into programming &amp; computer science?</strong></p>
+
+<p><em>I went to a few programming workshops out of curiosity when I was in high school in China. Back then not many people were into programming, so there were usually just three or four of us sitting in the workshops. It was probably around 2012, and I remembered learning about queues, stacks, Pascal’s triangles and some idiosyncratic algorithms. Everything was just really fascinating to me. So I started writing tiny pieces of code in Pascal (yep Pascal), but the coding activity didn’t really continue.</em></p>
+
+<p><em>Later I entered college and I wanted to be a civil engineer and build bridges for the people. Yet it turned out I absolutely hated the mundane and complicated courses. So after a week in college, I dropped all my engineering courses and went for computer science instead. I loved it so much more, and that’s how it all started.</em></p>
+
+<p><strong>What does your typical day at work look like?</strong></p>
+
+<p><em>My work at Namshi is very exciting every day! I go to office around 10 AM and start by prioritizing my tasks of the day on Jira or Trello board. I always talk to my teammates at the start of the day to ask for their feedback or opinions on my tasks and solutions. I like working closely with the senior members (usually with <a href="/team#Joe%20Jean">Joe</a> or Ala), and learning new knowledge and skills from them every day. I also like singling out some big chunks of time to write code without distraction by myself. When I’m not coding, I can be find reading HackerNoon, waiting for a latte in the pantry, or just checking out what the other teams are working on.</em></p>
+
+<p><strong>What is the most challenging project you worked on? The one that made you the proudest?</strong></p>
+
+<p><em>The most challenging project at Namshi so far is the Apple Pay Integration on web. To be honest, I didn’t expect it to take so much time and effort for this payment integration. When I started working on it, I realized that Apple has really horrible documentation and every piece of information needs some effort to gather. I’m really proud we made it to work in the end.</em></p>
+
+<p><em>Outside Namshi, I also worked on a human digital chatbot in college. You can check out my project video <a href="https://vimeo.com/301181868">here</a>. It was published in <a href="http://aclweb.org/anthology/W18-5027">ACL</a>, presented in Abu Dhabi National Exhibition Center and selected for SIGDIAL conference in Australia. I was really proud of it.</em></p>
+
+<p><strong>What advice would you give to a woman considering a career in the tech industry? What do you wish you had known?</strong></p>
+
+<p><em>I love a quote by Nelson Mandela: It always seems impossible until it’s done. I think the advice from me would be to be brave, try new things and believe in the impossibilities. Coding is a very intellectual activity and I believe everyone can learn to do it, no matter male or female, old or young.</em></p>
+
+<p><em>If I could start over, I wish I was more engaged with finding or building a developer community in the UAE. It is always fun to work with people on projects that have real-life impacts.</em></p>
+
+<p><strong>Thanks Ming &mdash; both for sharing your experience and keeping the Namshi backends under control! :)</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Currently hiring: a CyberSecurity engineer]]></title>
@@ -206,98 +258,6 @@ Then we&rsquo;re definitely a match!</p>
 let&rsquo;s have a chat!</p>
 
 <p>P.S. A few weeks back I wrote a small piece about <a href="/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
-give it a look!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Currently hiring: backend and mobile engineers]]></title>
-    <link href="http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/"/>
-    <updated>2017-03-09T06:49:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai</id>
-    <content type="html"><![CDATA[<p>We&rsquo;re currently looking for some help in a couple areas of our tech team &mdash; why
-don&rsquo;t <strong>you</strong> join us?</p>
-
-<!-- more -->
-
-
-<h2>Mobile</h2>
-
-<p>Getting into the specifics, we&rsquo;ve been working with an external mobile team (3rd party)
-that wrote our apps from scratch, setup an efficient testing &amp; CI strategy and a
-very solid deployment workflow &mdash; as a matter of fact, we&rsquo;re very proud of our
-crash rate on both platforms, with android leading at 0.05%.</p>
-
-<p>We are comfortable with the quality of our apps and the pace of development but,
-in order to take them to the next level, it&rsquo;s clear to us that we need our own
-team to do that: commitment, communication and going the extra-mile are definitely
-different when you&rsquo;re part of the organization.</p>
-
-<p>On the long run the team is going to be comprised of a few engineers and a lead,
-so we&rsquo;d initially like to start with:</p>
-
-<ul>
-<li>1 <strong>lead mobile developer</strong>, who should ideally have good experience on both platforms</li>
-<li>1 <strong>senior iOS developer</strong></li>
-<li>1 <strong>senior android developer</strong></li>
-</ul>
-
-
-<p>The <strong>lead mobile engineer</strong> should ideally be a very hands-on, seasoned mobile
-engineer with experience leading / forming a team &mdash; he will need to
-help building the team, setting the right direction, overseeing development
-on both platforms and coordinating with other teams (ie. backend
-or product management) on feature development and aligning priorities. We expect
-him to spend around 50% of his time on development (this is still a <em>hands-on</em> position),
-and the other 50% on the team, teaching practices, reviewing pull requests and so on.</p>
-
-<p>We expect from <strong>senior engineers</strong> to be able to write clean, testable code that&rsquo;s
-hard to break &mdash; a few years (4+) of experience are definitely needed (say, you
-should have bumped into <code>@autoreleasepool</code> before ;&ndash;)) and you
-should be very familiar with different design patterns (Delegate, Facade, etc),
-concepts such as mock objects and various tools to support your workflow (ie. CI
-pipelines).</p>
-
-<h2>Backend</h2>
-
-<p>We could definitely use some help in our backend team :)</p>
-
-<p>Even though we&rsquo;re not in a rough spot, we would like to be able to expand
-our pipeline and be able to add even more seniority to the team: our usual &ldquo;backend problem&rdquo;
-is that we have lots of things we&rsquo;d like to work on / experiment with but not a lot
-of engineers, thus we eventually end up giving those projects up or delaying them
-too much.</p>
-
-<p>The main technologies you would be working with are:</p>
-
-<ul>
-<li>NodeJS</li>
-<li>MySQL</li>
-<li>Redis</li>
-<li>Solr</li>
-<li>Golang</li>
-<li>Symfony2</li>
-<li>a bit of frontend with either Angular or React</li>
-</ul>
-
-
-<p>all of these in the context of our microservice-based SOA: we currently employ
-50+ service in production, mostly deployed in Docker containers through Google&rsquo;s
-<a href="https://kubernetes.io/">Kubernetes</a>.</p>
-
-<p>Here we would keep in consideration candidates for both a <strong>lead</strong> and a
-<strong>senior</strong> position: the current team is working well and we haven&rsquo;t felt the
-need to hire a lead engineer over the past few months, but we&rsquo;re open to the
-idea if we find the right candidate.</p>
-
-<p>Needless to say, both position would be <strong>quite hands-on</strong> :)</p>
-
-<h2>Apply now!</h2>
-
-<p>What are you waiting for? Send your application at <code>work-in-tech@namshi.com</code> and
-let&rsquo;s have a chat!</p>
-
-<p>P.S. A few weeks back I wrote a small piece about <a href="http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
 give it a look!</p>
 ]]></content>
   </entry>
