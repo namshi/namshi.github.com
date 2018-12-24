@@ -34,13 +34,13 @@ Without further ado, let me introduce [Ming](/team#Ming Hu), who:
 
 **What does your typical day at work look like?**
 
-*My work at Namshi is very exciting every day! I go to office around 10 AM and start by prioritizing my tasks of the day on Jira or Trello board. I always talk to my teammates at the start of the day to ask for their feedback or opinions on my tasks and solutions. I like working closely with the senior members (usually with [Joe](/team#Joe Jean) or Ala), and learning new knowledge and skills from them every day. I also like singling out some big chunks of time to write code without distraction by myself. When I’m not coding, I can be find reading HackerNoon, waiting for a latte in the pantry, or just checking out what the other teams are working on.*
+*My work at Namshi is very exciting every day! I go to office around 10 AM and start by prioritizing my tasks of the day on Jira or Trello board. I always talk to my teammates at the start of the day to ask for their feedback or opinions on my tasks and solutions. I like working closely with the senior members (usually with [Joe](/team#Joe Jean) or Ala), and learning new knowledge and skills from them every day. I also like singling out some big chunks of time to write code without distraction by myself. When I’m not coding, I can be found reading [HackerNoon](https://hackernoon.com/), waiting for a latte in the pantry, or just checking out what the other teams are working on.*
 
 **What is the most challenging project you worked on? The one that made you the proudest?**
 
 *The most challenging project at Namshi so far is the Apple Pay Integration on web. To be honest, I didn’t expect it to take so much time and effort for this payment integration. When I started working on it, I realized that Apple has really horrible documentation and every piece of information needs some effort to gather. I’m really proud we made it to work in the end.*
 
-*Outside Namshi, I also worked on a human digital chatbot in college. You can check out my project video [here](https://vimeo.com/301181868). It was published in [ACL](http://aclweb.org/anthology/W18-5027), presented in Abu Dhabi National Exhibition Center and selected for SIGDIAL conference in Australia. I was really proud of it.*
+*Outside Namshi, I also worked on a human digital chatbot in college. You can check out my project [video](https://vimeo.com/301181868). It was published in [ACL](http://aclweb.org/anthology/W18-5027), presented in Abu Dhabi National Exhibition Center and selected for SIGDIAL conference in Australia. I was really proud of it.*
 
 **What advice would you give to a woman considering a career in the tech industry? What do you wish you had known?**
 
