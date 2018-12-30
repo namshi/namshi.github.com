@@ -12,9 +12,9 @@ to take advantage of a new policy that aims to improve our
 (already positive) relationship with the [Open Source](https://en.wikipedia.org/wiki/Open-source_software) world:
 let me tell you a bit more about what's cooking!
 
-{% img center https://cdn-images-1.medium.com/max/1600/1*PW6lORfJV-kEJ8T8Z5OjIQ.png %}
-
 <!-- more -->
+
+{% img center https://cdn-images-1.medium.com/max/1600/1*PW6lORfJV-kEJ8T8Z5OjIQ.png %}
 
 ## Namshi ❤ Open Source
 
