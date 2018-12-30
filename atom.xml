@@ -4,7 +4,7 @@
   <title><![CDATA[Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-12-11T11:42:14+00:00</updated>
+  <updated>2018-12-30T11:28:55+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,79 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[OSS days @ Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2018/12/30/oss-days-at-namshi/"/>
+    <updated>2018-12-30T08:53:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2018/12/30/oss-days-at-namshi</id>
+    <content type="html"><![CDATA[<p>As of the 1st of January 2019, Namshi&rsquo;s techies will be able
+to take advantage of a new policy that aims to improve our
+(already positive) relationship with the <a href="https://en.wikipedia.org/wiki/Open-source_software">Open Source</a> world:
+let me tell you a bit more about what&rsquo;s cooking!</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="https://cdn-images-1.medium.com/max/1600/1*PW6lORfJV-kEJ8T8Z5OjIQ.png"></p>
+
+<h2>Namshi ❤ Open Source</h2>
+
+<p>We&rsquo;ve pionereed the Open Source culture in the region, at a time
+when companies did not fully understand the potential of sharing
+their work with a broader community. Years ago, it wasn&rsquo;t easy to find
+a Dubai-based company sharing their tech out there, and we&rsquo;re
+proud to see how that has changed.</p>
+
+<p>It&rsquo;s not just Namshi, as nowadays
+you will find companies like <a href="https://medium.com/tech-tajawal">Tajawal talking about their
+stack on Medium</a>, or <a href="https://github.com/altayer-digital">Al Tayer Digital releasing software on GitHub</a>.
+We feel partly responsible for that and are happy to see the
+community growing!</p>
+
+<p>Back to us for a second: since 2012, Namshi has released <a href="https://github.com/namshi?utf8=%E2%9C%93&amp;q=&amp;type=public&amp;language=">80 OS libraries</a>,
+ranging from <a href="https://github.com/namshi/cuzzle">debugging utilities</a>
+to <a href="https://github.com/namshi/NMLocalizedPhoneCountryView">iOS views</a>
+and <a href="https://github.com/namshi/docker-smtp">Docker images</a>.
+We did not invent the &ldquo;library of the century&rdquo; but we&rsquo;re happy that
+others have found our work useful: <a href="https://www.npmjs.com/package/mockserver">mockserver</a> and
+<a href="https://www.npmjs.com/package/winston-graylog2">winston-graylog2</a>, for example,
+get downloaded thousands of times a week &mdash; and we definitely
+<em>feel good</em> about lending a hand to the community.</p>
+
+<p>The truth is that Namshi could not have ever been if it wasn&rsquo;t
+for OS technologies: we understand that, and want to be able to
+give back to the community as much as possible.</p>
+
+<p>With that in mind, we decided to introduce an initiative called
+&ldquo;OSS day&rdquo; to promote the OSS culture within our team.</p>
+
+<h2>OSS day @ Namshi</h2>
+
+<p>Starting from the 1st of January 2019, engineers within our
+Tech team will be free to dedicate one day a month on Open Source:
+no matter whether that&rsquo;s by working on their own project,
+collaborate with others in the team, sending a PR to an
+existing OS project or writing documentation for a random
+GitHub repo, they will be able to spend some of their
+&ldquo;Namshi-time&rdquo; to help and improve the OS world.</p>
+
+<p>We hope great things will come out of this and, if not,
+we think this initiative will at least help our team
+members get acquainted with the Open Source world,
+so that they can better understand this mysterious
+pillar of our industry &mdash; because, trust me, without OSS
+we&rsquo;d be at least 10 years behind.</p>
+
+<p>We do not have a specific &ldquo;OS budget&rdquo; (a budget we can
+spend to support someone else&rsquo;s OS project), but that
+is something we&rsquo;ll be discussing down the line, as it feels
+the natural next step for a company that cares about the OS
+world.</p>
+
+<p>Well, that&rsquo;s about it for today! Happy new year in advance, folks!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Women in Tech @ Namshi: Ming Hu]]></title>
@@ -2136,125 +2209,6 @@ let&rsquo;s have a chat!</p>
 
 <p>P.S. A few weeks back I wrote a small piece about <a href="http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
 give it a look!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Upgrading our search server towards high availability and beyond]]></title>
-    <link href="http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond/"/>
-    <updated>2017-02-06T12:00:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond</id>
-    <content type="html"><![CDATA[<p>In this post, we are going to highlight how and why we did a solr upgrade from solr v3 to solr-cloud v6 with no downtime.</p>
-
-<!-- more -->
-
-
-<p>We have adopted solr v3 as our search server since the beginning because solr has a nice schema and a very responsive search indexer.
-The old indexer was running on one solr server and whenever we needed to change the schema or trigger a full import we had to follow these steps:</p>
-
-<ol>
-<li>Unload the core<code>[SOLR_URL]/admin/cores?action=UNLOAD&amp;core=[CORE_NAME]</code></li>
-<li>Recreate the core with new schema changes, if any: <code>[SOLR_URL]/admin/cores?action=CREATE&amp;name=[CORE_NAME]&amp;config=[solrconfig.xml]&amp;schema=[schema.xml]</code></li>
-<li>Delete and then then re-import all documents</li>
-<li>Commit the updates <code>[SOLR_URL]/update?commit=true</code> to see it effective</li>
-</ol>
-
-
-<p>The major drawback with this approach is that if the solr machine down it takes time to boot up another machine and re-import all the products again.</p>
-
-<h2>How do we handle our solr updates?</h2>
-
-<h3>Partial imports:</h3>
-
-<p>Happens periodically: get the latest updates from DB and then update/delete only the changed documents in the given time frame.</p>
-
-<h3>Full imports:</h3>
-
-<p>Happens on request or on schema update: clear the indexer completely then insert all available documents.</p>
-
-<p><img src="http://www.employeescreen.com/wp-content/uploads/2015/06/Upgrade-e1434047810231.jpg" alt="time to upgrade" /></p>
-
-<p><a href="http://lucene.apache.org/solr/features.html">Solr has lots of improvements</a> and by using Solr-cloud in case of any solr instance failure we are not screwed.
-The new structure is a solr cluster, and contains 3 zookeeper nodes with 2 solr cloud nodes.
-<img src="http://namshi.github.io/images/solr-cluster.png" alt="Solr cluster!" /></p>
-
-<h2>How do we handle the solr clients app during transition with confidence and no downtime on live environment?</h2>
-
-<ul>
-<li>We built a nodeJS service to handle periodic solr imports. The <a href="https://www.npmjs.com/package/zindex">Zindex library</a> is used to import data from mySQL (backend source) to solr.</li>
-<li>We kept the old solr server running side by side with the new solr on live environment.</li>
-<li>We made a change in our product catalog API that allowed us to return a response using the new or old solr, by simply using a special parameter. This allowed us to compare results coming from the old and new solr.</li>
-<li>Finally, we switched catalog requests to use the new solr one locale at a time till all supported locales were served with the new solr.</li>
-</ul>
-
-
-<h2>During the upgrade we faced some challenges &ndash; we are listing them below and how we dealt with them:</h2>
-
-<h3>How to revert unwanted updates?</h3>
-
-<p>After a full import we tried to run some validations to accept or reject the import, since <a href="https://wiki.apache.org/solr/UpdateXmlMessages#A.22rollback.22">solr supports rollbacks!</a>
-But we were disappointed because <a href="https://issues.apache.org/jira/browse/SOLR-4896">solr cloud mode doesn&rsquo;t support rollbacks</a>
-We solved this issue by <strong>saving the import in temporary files, running validations on these files, then commit</strong></p>
-
-<h3>How to swap collections?</h3>
-
-<p>Another issue we faced was that during the full imports the product count in our catalog API decreased significantly, then increased slowly till the import finished.
-The reason behind this is that we were deleting all products during the full import, then re-adding the products so solr  would show updates as fast as possible.
-To solve this issue we were thinking about <a href="https://wiki.apache.org/solr/CoreAdmin#SWAP">swapping</a> but this, again, was not supported in solr cloud
-So instead we used collections alias &ndash; every time we need to do a full import we <strong>create a new collection and after the updates and validations are done, we change the alias and delete the old collection</strong>.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-sh'>## Get the current collection OM-1
-
-curl [SOLR_HOST]/solr/admin/collections?action=LIST
-
-#
-#{
-#  &quot;responseHeader&quot;: {
-#    &quot;status&quot;: 0,
-#    &quot;QTime&quot;: 0
-#  },
-# &quot;collections&quot;: [
-#    &quot;OM-1&quot;
-#  ]
-#}
-
-## Create the new collection OM-2
-curl [SOLR_HOST]//solr/admin/collections?Action=CREATE&amp;name:OM-2
-
-## Create the new data file and post it to the new collection
-curl -XPOST -d @updates.json [SOLR_HOST]/solr/OM-2/update
-
-##  Override the alias to point to the new collection OM-2
-curl [SOLR_HOST]/solr/admin/collections?action=CREATEALIAS&amp;collections=OM-2&amp;name=OM
-
-## Delete the old collection
-curl [SOLR_HOST]/solr/admin/collections?action=DELETE&amp;name=OM-1&amp;wt=json</code></pre></figure>
-
-
-<h3>How to do a full import for all collections without causing high CPU usage?</h3>
-
-<p>In our architecture we have a collection for each country and since all countries share similar documents with small variations, like price, we use one mysql source and fork the backend to import updates for each country <a href="https://www.npmjs.com/package/zindex">(see Zindex)</a>
-When we pushed updates for all countries in parallel, the solr CPU usage spiked and in order to solve this, we had to <strong>do the update synchronously with <a href="https://github.com/tj/co">co</a></strong></p>
-
-<figure class='code'><figcaption><span></span></figcaption><pre><code class='language-javascript'>  return prepareSolr(availableCountries, options).then(() =&gt; {
-    return co(function* () {
-      for(var i = 0; i &lt; availableCountries.length; i++) {
-        var country = availableCountries[i];
-        var result = yield importProducts(country, options);
-        logger.info(`Solr Import has been finished for country ${country} with result`, result);
-      }
-    }).then(()=&gt;{
-        logger.info(`All solr countries finished!`);
-    })</code></pre></figure>
-
-
-<p><img src="http://namshi.github.io/images/solr-cpu-usage-spike.png" alt="CPU usage went down!" /></p>
-
-<h3>How to maintain solr cluster well?</h3>
-
-<p>Just like most of our services, we <strong><a href="https://www.docker.com/">dockerize it</a></strong>. We have a monitoring script that checks the container status and another one that checks the app status e.g zookeeper replication status and solr ping, if any check fails we get an alert and apply the necessary fix.</p>
-
-<p><img src="http://img.photobucket.com/albums/v418/bawanaal/MissionAccomplished.gif" alt="Mission Accomplished" /></p>
 ]]></content>
   </entry>
   
