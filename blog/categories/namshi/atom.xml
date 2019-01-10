@@ -4,7 +4,7 @@
   <title><![CDATA[Category: namshi | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/namshi/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2018-12-30T11:28:55+00:00</updated>
+  <updated>2019-01-10T12:03:59+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[7 (long) years later: how long it took to rewrite Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi/"/>
+    <updated>2019-01-10T11:44:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi</id>
+    <content type="html"><![CDATA[<p>I joined Namshi of the 1st of April (<em>what a joke!</em>) of 2012.
+Fast forward to around 7 years later&hellip;</p>
+
+<p>A couple weeks ago, I tried to login into one of our legacy
+internal services here at Namshi: to my surprise, I was
+redirected to a brand new, flashy app that seemed to have
+replaced that good old monolith.</p>
+
+<p>What does that mean?</p>
+
+<!-- more -->
+
+
+<p>It means multiple things: first and foremost, our team
+rocks! They completely replaced one of our oldest services
+without people (granted, <em>people like me</em>) noticing.</p>
+
+<p>But the most important thing I realized was that was
+the last (and oldest) service which was in use at the
+time I joined Namshi, around 7 years ago.</p>
+
+<p>That&rsquo;s it: our team managed to rewrite the whole of Namshi
+over the past 7 years, a feat that reminds me of the <a href="http://highscalability.com/blog/2014/2/17/how-the-aolcom-architecture-evolved-to-99999-availability-8.html">words
+of Dave Hagler, systems engineer at AOL</a>:</p>
+
+<p><blockquote><p>The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.</p></blockquote></p>
+
+<p>We didn&rsquo;t really start our &ldquo;SOA&rdquo; mission until 2013, when
+it became clear that our 2 monoliths (frontend &amp; backend)
+wouldn&rsquo;t be able to help as much while we were trying to
+scale in a lean way: we first started building APIs for our
+catalog, checkout, order processing&hellip;   &hellip;until late
+December 2018, when the last service (codename <code>bob</code>)
+was decommissioned.</p>
+
+<p>We&rsquo;ve come a long way, I must admit it. What we achieved
+over almost a decade here makes me proud of being one of
+the earliest Namshees.</p>
+
+<p>I want to thank Ala and <a href="/team/#Sakina%20Sagarwala">Sakina</a> for rewriting <code>bob</code>, now
+only a memory, as well as <a href="/team/#Razan%20Bilwani">Razan</a> and <a href="/team/#Ayham%20Alzoubi">Ayham</a> who are the
+only other members of our tech team I had the pleasure
+to work together with since the start of my adventure here.</p>
+
+<p>What a ride, folks!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Upgrading our search server towards high availability and beyond]]></title>
@@ -429,51 +482,6 @@ This year I went to the US, for the first time, and Germany as a speaker: it was
 <p>So what more can I say? <strong>Thank you Namshi!</strong></p>
 
 <p><img class="center" src="/images/posts/one-year-wanna-deployment.png" width="320" height="320" title="&lsquo;Wanna deployment&rsquo; &lsquo;Wanna deployment&rsquo;" ></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[A Year and a Half journey with Namshi Tech]]></title>
-    <link href="http://namshi.github.io/blog/2014/10/30/a-year-and-a-half-journey-with-namshi-tech/"/>
-    <updated>2014-10-30T09:48:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/10/30/a-year-and-a-half-journey-with-namshi-tech</id>
-    <content type="html"><![CDATA[<p>Today, I bade farewell to the team and the culture that introduced me to software development. A year and six months have passed since I
-landed my first job straight out of college as a Junior Software Engineer at Namshi where I had the great, the average and the bad
-days. I must admit, time has passed super fast.</p>
-
-<!--more-->
-
-
-<p>It was a very exciting journey, from completing my first assignment, changing <code>robots.txt</code> :&ndash;), to the latest extra large,
-super complicated tasks, it was a journey involving lots and lots of learning and late working hours.</p>
-
-<p>I was lucky to join Namshi Tech at a time where migration to a more sustainable, robust and scalable architecture was
-taking place. After a little bit of struggling with completing assignments on legacy software, Symfony2 kicked in and
-paved the way of my learning path and ended up to be my most valuable experience. Javascript for me was that nice
-language I used to manipulate DOM elements, I could not be more wrong! After finally understanding what a directive is supposed to be,
-I started working with AngularJs and I couldn&rsquo;t help but be amazed on what it can achieve. Fighting and watching my
-teammates fight through the craziness of Javascript, NodeJs came into the picture and my first impression was exactly
-as you might think, this javascript craziness on the server?! But the simplicity and the ultimate performance of this
-platform proved me wrong again.</p>
-
-<p>The newly employed technologies brought with them a set of valuable practices like code review, code testing and
-automated testing tools, pair programming and many more which are very important skills for a software developer to pick up.</p>
-
-<p>Attending SymfonyLive London 2014 was a great chance to meet people from the Symfony and PHP community, getting to know
-the latest trends surrounding this framework and most importantly, realizing that there are people across continents
-facing the same issues and struggling through the same parts you had hard time working on. The level of passion towards
-software is just fascinating!</p>
-
-<p>One of the most valuable lessons I learned was that paying back to the open source community is an important part of
-our job as software developers. During this period at Namshi, I had the chance to participate in <a href="https://www.npmjs.org/package/mockserver">Mockserver</a>
-and <a href="https://www.npmjs.org/package/shisha">shisha</a>.</p>
-
-<p>Finally, words of gratitude go to <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alessandro Nadalin</a> for taking a
-leap of faith in hiring a fresh graduate and going through the painful process of developing him from scratch.
-I just hope I set a right example. Of course, lots of thanks to the team and to <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Alessandro Cinelli</a>
-for sharing their knowledge and their guidance along the way.</p>
-
-<p><img class="center" src="/images/wall.jpg" title="&lsquo;On the Namshi Wall&rsquo; &lsquo;On the Namshi Wall&rsquo;" ></p>
 ]]></content>
   </entry>
   

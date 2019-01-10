@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: general | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/general/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2019-01-10T12:03:59+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[7 (long) years later: how long it took to rewrite Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi/"/>
+    <updated>2019-01-10T11:44:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi</id>
+    <content type="html"><![CDATA[<p>I joined Namshi of the 1st of April (<em>what a joke!</em>) of 2012.
+Fast forward to around 7 years later&hellip;</p>
+
+<p>A couple weeks ago, I tried to login into one of our legacy
+internal services here at Namshi: to my surprise, I was
+redirected to a brand new, flashy app that seemed to have
+replaced that good old monolith.</p>
+
+<p>What does that mean?</p>
+
+<!-- more -->
+
+
+<p>It means multiple things: first and foremost, our team
+rocks! They completely replaced one of our oldest services
+without people (granted, <em>people like me</em>) noticing.</p>
+
+<p>But the most important thing I realized was that was
+the last (and oldest) service which was in use at the
+time I joined Namshi, around 7 years ago.</p>
+
+<p>That&rsquo;s it: our team managed to rewrite the whole of Namshi
+over the past 7 years, a feat that reminds me of the <a href="http://highscalability.com/blog/2014/2/17/how-the-aolcom-architecture-evolved-to-99999-availability-8.html">words
+of Dave Hagler, systems engineer at AOL</a>:</p>
+
+<p><blockquote><p>The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.</p></blockquote></p>
+
+<p>We didn&rsquo;t really start our &ldquo;SOA&rdquo; mission until 2013, when
+it became clear that our 2 monoliths (frontend &amp; backend)
+wouldn&rsquo;t be able to help as much while we were trying to
+scale in a lean way: we first started building APIs for our
+catalog, checkout, order processing&hellip;   &hellip;until late
+December 2018, when the last service (codename <code>bob</code>)
+was decommissioned.</p>
+
+<p>We&rsquo;ve come a long way, I must admit it. What we achieved
+over almost a decade here makes me proud of being one of
+the earliest Namshees.</p>
+
+<p>I want to thank Ala and <a href="/team/#Sakina%20Sagarwala">Sakina</a> for rewriting <code>bob</code>, now
+only a memory, as well as <a href="/team/#Razan%20Bilwani">Razan</a> and <a href="/team/#Ayham%20Alzoubi">Ayham</a> who are the
+only other members of our tech team I had the pleasure
+to work together with since the start of my adventure here.</p>
+
+<p>What a ride, folks!</p>
+]]></content>
+  </entry>
+  
+</feed>
