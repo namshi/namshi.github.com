@@ -34,6 +34,10 @@ footer: true
     {% img left team /images/akshay.png Akshay Jayakumar %}
     **Akshay Jayakumar** started his career as a Mainframe Program Analyst in 2010, soon after completing his Bachelors in Information Technology. A year later, he joined the Amrita Research Labs in India, pioneering in Educational technologies providing personalized learning, m-learning, and e-learning to rural India. Akshay is now a Senior Android Engineer at Namshi, passionate about Web, Hybrid, Native apps development, IoT, and Hardware interactions. Over the span of 8 years, Akshay has worked as both Front-end and Back-end engineer.  His skills include Android, Java, Groovy on Grails, PHP, Python Flash, Angular, HTML5-CSS3, RESTful etc. He has also published multiple papers in IEEE, Springer, and ACM under the tracks on Literacy, Education, Pedagogy, Virtual simulations & Modeling and Speech recognition. Akshay loves working with Arduino boards, Raspberry Pi, BLE, and Leap Motion.
 
+*   ##<div id="Ala Hawash">Ala Hawash</div>
+    {% img left team /images/ala.png Ala Hawash %}
+    **Ala Hawash** is a Senior Software Engineer who joined Namshi Tech Team in September 2017. Ala has a Computer Engineering Bachelor degree from the University of Birzeit in Palestine.  Throughout 8 years of his professional career, he has acquired a broad spectrum of technical and problem solving skills and have worked in several sectors ranging from payments solutions to advertising and healthcare, before landing into e-commerce at Namshi. He has always been keen on understanding how things work, and likes to explain stuff to other people. On his free time you can find him reading latest news in tech blogs or fighting with random people on the internet in a casual game of DOTA.
+
 *   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
     {% img left team /images/alex.jpeg Alessandro Nadalin %}
     **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
@@ -99,6 +103,10 @@ footer: true
 *   ##<div id="Ming Hu">Ming Hu</div>
     {% img left team /images/ming.png Ming Hu %}
     **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
+
+*   ##<div id="naqeeb naseer">Naqeeb Naseer</div>
+    {% img left team /images/naqeeb.png Naqeeb Naseer %}
+    **Naqeeb Naseer** is a Junior Back-end Engineer who joined Namshi in 2019. He received his Bachelor's degree in Computer Systems from Heriot-Watt University. His current technical interest area is JavaScript programming, primarily Node.js. He aims to build maintainable and efficient back-end systems. He is keen on learning key concepts and best practices as well as work on interesting projects to gain new knowledge which could be applied to develop optimal solutions to problems. In his free time, Naqeeb enjoys playing League of Legends and taking pictures to improve his photography/editing skills as well as build a portfolio.
 
 *   ##<div id="noor">Noor Ul Ain Ali</div>
     {% img left team /images/noor.jpg Noor %}
