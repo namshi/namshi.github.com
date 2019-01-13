@@ -104,7 +104,7 @@ footer: true
     {% img left team /images/ming.png Ming Hu %}
     **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
 
-*   ##<div id="naqeeb naseer">Naqeeb Naseer</div>
+*   ##<div id="Naqeeb Naseer">Naqeeb Naseer</div>
     {% img left team /images/naqeeb.png Naqeeb Naseer %}
     **Naqeeb Naseer** is a Junior Back-end Engineer who joined Namshi in 2019. He received his Bachelor's degree in Computer Systems from Heriot-Watt University. His current technical interest area is JavaScript programming, primarily Node.js. He aims to build maintainable and efficient back-end systems. He is keen on learning key concepts and best practices as well as work on interesting projects to gain new knowledge which could be applied to develop optimal solutions to problems. In his free time, Naqeeb enjoys playing League of Legends and taking pictures to improve his photography/editing skills as well as build a portfolio.
 
