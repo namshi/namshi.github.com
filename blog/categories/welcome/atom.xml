@@ -4,7 +4,7 @@
   <title><![CDATA[Category: welcome | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/welcome/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -24,7 +24,7 @@ JavaScript on the browser!</p>
 <!-- more -->
 
 
-<p><img class="left" src="/images/gabriel.jpg" width="200"></p>
+<p>{% img left /images/gabriel.jpg 200 %}</p>
 
 <p>Gabriel is a Frontend Engineer, who holds a B.Sc in Engineering from University
 of Ibadan Nigeria.</p>
@@ -51,7 +51,7 @@ Joe joined us a today!</p>
 <!-- more -->
 
 
-<p><img class="right" src="/images/joe.png"></p>
+<p>{% img right /images/joe.png %}</p>
 
 <p>Joe, from Haiti, holds a B.S. in Computer Science from NYU Abu Dhabi.
 He loves building software that make people&rsquo;s lives easier, and is always looking
@@ -74,7 +74,7 @@ development book or riding a bike.</p>
     <link href="http://namshi.github.io/blog/2015/05/03/welcome-armagan/"/>
     <updated>2015-05-03T17:38:00+00:00</updated>
     <id>http://namshi.github.io/blog/2015/05/03/welcome-armagan</id>
-    <content type="html"><![CDATA[<p><img class="team left" src="/images/armagan.png"></p>
+    <content type="html"><![CDATA[<p>{% img team left /images/armagan.png %}</p>
 
 <p>Time for another terrific addition to
 the team as we&rsquo;re trying to embrace
@@ -117,7 +117,7 @@ fresh <a href="http://en.wikipedia.org/wiki/Baklava">Baklava</a>!</p>
     <id>http://namshi.github.io/blog/2015/03/18/welcome-david</id>
     <content type="html"><![CDATA[<p>We are very excited to welcome David to the crazy Namshi IT team!</p>
 
-<p><img class="team right" src="/images/posts/david.png"></p>
+<p>{% img team right /images/posts/david.png %}</p>
 
 <p>David is an experienced programmer,
 with a great knowledge about Agile, managing teams, OOP,
@@ -144,7 +144,7 @@ always a good way to end a week!</p>
 <p>This time it&rsquo;s Nitesh&rsquo;s turn, an
 experienced JavaScripter from India!</p>
 
-<p><img class="team right" src="/images/nitesh.png"></p>
+<p>{% img team right /images/nitesh.png %}</p>
 
 <blockquote><p>Nitesh is a quite introvert software developer who also believes has good taste in design.
 He is very interested in software design practices, TDD and stuff like meditation.

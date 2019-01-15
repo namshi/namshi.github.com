@@ -4,7 +4,7 @@
   <title><![CDATA[Category: presentation | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/presentation/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap/"/>
     <updated>2014-05-25T19:33:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/05/25/jsday-phpday-recap</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/rasmus-namshi-scaled.png" width="800" title="&lsquo;Rasmus Lerdorf &ndash; Namshi team&rsquo; &lsquo;Rasmus Lerdorf with the Namshi team&rsquo;" ></p>
+    <content type="html"><![CDATA[<p>{% img center /images/posts/rasmus-namshi-scaled.png 800 &lsquo;Rasmus Lerdorf &ndash; Namshi team&rsquo; &lsquo;Rasmus Lerdorf with the Namshi team&rsquo; %}</p>
 
 <p>One week ago, Luciano, Lucio, Alex and I attended the annual <a href="http://jsday.it">jsDay</a> and <a href="http://phpday.it">phpDay</a> in Verona organized by the <a href="http://grusp.it">GrUSP</a>, the Italian PHP user Group.
 It was a nice experience in the beautiful city of Verona, and an opportunity to meet interesting people from international communities while attending the talks during those 4 days.<br />
@@ -30,7 +30,7 @@ The conferences were sold out, with more than 300 attendees and two tracks per d
 <!-- more -->
 
 
-<p><img class="left" src="/images/posts/phpday-namshi-sponsor.jpg" width="200" title="&lsquo;Namshi phpDay sponsor&rsquo; &lsquo;Namshi phpDay sponsor&rsquo;" > Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.io/join-us">join-us</a> page?)</p>
+<p>{% img left /images/posts/phpday-namshi-sponsor.jpg 200 &lsquo;Namshi phpDay sponsor&rsquo; &lsquo;Namshi phpDay sponsor&rsquo; %} Namshi was sponsoring the event, and we tried to do some recruitmement (did you check the <a href="http://tech.namshi.io/join-us">join-us</a> page?)</p>
 
 <br />
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: code-metrics | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/code-metrics/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
 
-<p><img class="center" src="/images/posts/ping-pong-happy.jpg"></p>
+<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
 
 <blockquote><p>and here is your weekly quota of some interesting links</p>
 

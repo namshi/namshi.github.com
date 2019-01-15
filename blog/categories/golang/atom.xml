@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Golang | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/golang/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -145,7 +145,7 @@ as possible.</p>
 but we immediately noticed a problem, as latency was
 much higher than we expected:</p>
 
-<p><img class="center" src="/images/gae-latency.png"></p>
+<p>{% img center /images/gae-latency.png %}</p>
 
 <p>A median of 300ms for an app that simply receives a request
 and syncs it to BigQuery seemed way higher than
@@ -160,7 +160,7 @@ were being used to keep up with the amount of traffic
 we were receiving, something that reflected on
 our GCP bill right away:</p>
 
-<p><img class="center" src="/images/gae-price.png"></p>
+<p>{% img center /images/gae-price.png %}</p>
 
 <p>This little tracking app was costing us around
 $150 a day ($4500 per month), way more than we initially budgeted:
@@ -306,7 +306,7 @@ name: tracking-app
 at the end of the day, let&rsquo;s look at our response times,
 now monitored through NewRelic:</p>
 
-<p><img class="center" src="/images/tracking-nr.png"></p>
+<p>{% img center /images/tracking-nr.png %}</p>
 
 <p>Our 99th percentile is at <strong>less than 0.2 milliseconds</strong>
 which is definitely more like what we initially planned
@@ -321,7 +321,7 @@ of running the same application on GAE.</p>
 see the cost reduction as soon as we deployed the
 application on the GKE:</p>
 
-<p><img class="center" src="/images/price2-gcp.png"></p>
+<p>{% img center /images/price2-gcp.png %}</p>
 
 <p>We also take advantage of a simplified setup where
 we can manage the cluster through the good old <code>kubectl</code>,

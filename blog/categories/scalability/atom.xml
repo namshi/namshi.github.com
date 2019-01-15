@@ -4,7 +4,7 @@
   <title><![CDATA[Category: scalability | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/scalability/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -72,7 +72,7 @@ in the last two weeks we started having tech lightning talks here at Namshi.</p>
 <p>Below you can see <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> in this (creative) shot while is showing the rest of the gang
 how <a href="http://facebook.github.io/react/">React</a> works and how he used it in our latest open-source project <a href="https://github.com/namshi/roger">Roger</a>.</p>
 
-<p><img class="team center" src="/images/posts/shidhin-react.png"></p>
+<p>{% img team center /images/posts/shidhin-react.png %}</p>
 
 <p>Talking about Roger, have you checked the blog post <a href="http://tech.namshi.io/blog/2015/08/08/how-namshi-builds-docker-containers-through-docker-containers/">&ldquo;How Namshi builds Docker containers through Docker containers&rdquo;</a>?</p>
 

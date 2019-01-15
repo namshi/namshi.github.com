@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tech | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/tech/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -54,7 +54,7 @@ leap of faith in hiring a fresh graduate and going through the painful process o
 I just hope I set a right example. Of course, lots of thanks to the team and to <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Alessandro Cinelli</a>
 for sharing their knowledge and their guidance along the way.</p>
 
-<p><img class="center" src="/images/wall.jpg" title="&lsquo;On the Namshi Wall&rsquo; &lsquo;On the Namshi Wall&rsquo;" ></p>
+<p>{% img center /images/wall.jpg &lsquo;On the Namshi Wall&rsquo; &lsquo;On the Namshi Wall&rsquo; %}</p>
 ]]></content>
   </entry>
   

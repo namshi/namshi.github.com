@@ -4,7 +4,7 @@
   <title><![CDATA[Category: cfp | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/cfp/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -26,7 +26,7 @@ could expand in that direction.</p>
 <!-- more -->
 
 
-<p><img class="left team" src="/images/lucio.jpg" title="Luciano Colosio" ></p>
+<p>{% img left team /images/lucio.jpg Luciano Colosio %}</p>
 
 <p>And you know what? Lucio loves Node so much that he&rsquo;d like
 to talk about it at a big stage, like the one the

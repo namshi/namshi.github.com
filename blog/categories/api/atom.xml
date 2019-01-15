@@ -4,7 +4,7 @@
   <title><![CDATA[Category: API | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/api/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -25,12 +25,12 @@
 are back from the <a href="http://europe.dockercon.com/">dockercon</a> that took place in the cold Amsterdam.
 The conference was a blast, and it was great to see how far Docker became the next big thing in only 21 months.</p></blockquote>
 
-<p><img class="center" src="/images/dockercon.jpg"></p>
+<p>{% img center /images/dockercon.jpg %}</p>
 
 <blockquote><p>We have a new pet in the office, the Docker whale!
 Thanks  <a href="http://tech.namshi.io/team/#Luciano_Colosio">Lucio</a> for the gift!</p></blockquote>
 
-<p><img class="center" src="/images/docker.jpg"></p>
+<p>{% img center /images/docker.jpg %}</p>
 
 <p>It&rsquo;s <a href="/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a>!</p>
 
@@ -99,7 +99,7 @@ That&rsquo;s why we developed and released the <a href="https://github.com/namsh
 composer install namshi/innovate
 </code></p>
 
-<p><img class="center" src="/images/posts/cards.png" title="payment cards" ></p>
+<p>{% img center /images/posts/cards.png payment cards %}</p>
 
 <h2>Usage</h2>
 
@@ -126,7 +126,7 @@ $transaction = new Transaction(&lsquo;sale&rsquo;, &lsquo;ecom&rsquo;, true, &ls
 $card        = new Card(&lsquo;1234123412341234&rsquo;, &lsquo;111&rsquo;, new \DateTime($cardExpiryDate));
 $customer    = new Customer(&lsquo;Mr&rsquo;, &lsquo;John&rsquo;, &lsquo;Doe&rsquo;);
 $address     = new Address(&lsquo;My address info 1&rsquo;, &lsquo;My address info 2&rsquo;, &lsquo;My address info 3&rsquo;, &lsquo;San Francisco&rsquo;, &lsquo;California&rsquo;, &lsquo;US&rsquo;, &lsquo;00000&rsquo;);
-$billing     = new BillingInformation($customer, $address, &ldquo;customers&rsquo;<a href="&#109;&#x61;&#x69;&#108;&#x74;&#111;&#58;&#115;&#x2d;&#x65;&#109;&#x61;&#x69;&#x6c;&#64;&#103;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#111;&#109;">&#115;&#45;&#x65;&#x6d;&#x61;&#105;&#108;&#x40;&#x67;&#x6d;&#x61;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;</a>&rdquo;, $customerIpAddress);
+$billing     = new BillingInformation($customer, $address, &ldquo;customers&rsquo;<a href="&#x6d;&#97;&#x69;&#108;&#116;&#x6f;&#x3a;&#x73;&#x2d;&#x65;&#109;&#97;&#105;&#108;&#x40;&#x67;&#109;&#x61;&#x69;&#108;&#46;&#99;&#111;&#109;">&#115;&#45;&#101;&#x6d;&#97;&#x69;&#x6c;&#64;&#103;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#x6d;</a>&rdquo;, $customerIpAddress);
 $browser     = new Browser($customUserAgent, $requestAcceptHeader);
 ```</p>
 

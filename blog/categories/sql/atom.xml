@@ -4,7 +4,7 @@
   <title><![CDATA[Category: sql | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/sql/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -74,7 +74,7 @@ We&rsquo;ll meet every 1st Wednesday of the month, and if you love technology as
 Feel free to ping us on twitter to know the next venue: speech proposals are welcome too!
 More news to come on this!</p>
 
-<p><img class="center" src="/images/posts/dubytes-1st-meeting.jpg"></p></blockquote>
+<p>{% img center /images/posts/dubytes-1st-meeting.jpg %}</p></blockquote>
 
 <p><strong>And here is the traditional &ldquo;selecta&rdquo; of links our team found interesting this week around the interwebs, enjoy:</strong></p>
 

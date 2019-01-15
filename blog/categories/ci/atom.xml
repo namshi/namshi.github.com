@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ci | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/ci/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -92,7 +92,9 @@ was to simply rely on the <a href="https://hub.docker.com">hub</a>,
 which turned out to be quite frustrating; we can summarize
 our experience with the hub with these words:</p>
 
-<p><blockquote><p>Docker Hub also has an automated build system which detects new commits in your repository and triggers a container build. It is also completely useless for many reasons. Build configuration is restrictive with little to no ability for customisation, missing even the basics of pre/post script hooks. It enforces a specific project structure, expecting a single Dockerfile in the project root, which breaks our previously mentioned build workarounds, and build times were horribly slow.</p><footer><strong>Cal Leeming <a href="http://iops.io/blog/docker-hype/">http://iops.io/blog/docker-hype/</a></strong></footer></blockquote></p>
+<p>{% blockquote Cal Leeming <a href="http://iops.io/blog/docker-hype/">http://iops.io/blog/docker-hype/</a> %}
+Docker Hub also has an automated build system which detects new commits in your repository and triggers a container build. It is also completely useless for many reasons. Build configuration is restrictive with little to no ability for customisation, missing even the basics of pre/post script hooks. It enforces a specific project structure, expecting a single Dockerfile in the project root, which breaks our previously mentioned build workarounds, and build times were horribly slow.
+{% endblockquote %}</p>
 
 <p>As much as we love the guys behind Docker (and the hub as well!),
 we tend to agree with the words of the above post: the hub is slow
@@ -122,7 +124,7 @@ builder pushes) and never looked back.</p>
 
 <h2>Welcome Roger!</h2>
 
-<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png</a>"></p>
+<p>{% img center <a href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/frontend.png</a> %}</p>
 
 <p><a href="https://github.com/namshi/roger">Roger</a> is a
 JavaScript app (the server is built with Node,
@@ -178,11 +180,11 @@ localhost: time to trigger our first build!</p>
 to schedule your first build, you should see
 a simple confirmation message:</p>
 
-<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png</a>"></p>
+<p>{% img center <a href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-scheduled.png</a> %}</p>
 
 <p>and, on the web interface at <code>localhost:6600</code>:</p>
 
-<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png</a>"></p>
+<p>{% img center <a href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/build-frontend.png</a> %}</p>
 
 <p>Eureka!</p>
 
@@ -201,7 +203,7 @@ someone pushes to your repo.</p>
 <p>You can do that by setting up a github hook,
 in your repo, that will hit Roger:</p>
 
-<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png</a>"></p>
+<p>{% img center <a href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/webhook.png</a> %}</p>
 
 <p>That simple: now, everytime you push or create
 a new tag in your repo, Roger will create a new
@@ -314,7 +316,7 @@ redis-client:
 
 <p>Which results in something like this:</p>
 
-<p><img class="center <a" src="href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png</a>"></p>
+<p>{% img center <a href="https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png">https://raw.githubusercontent.com/namshi/roger/master/bin/images/notification-github.png</a> %}</p>
 
 <p>For a more detailed overview, check the
 <a href="https://github.com/namshi/roger#configuration-reference">configuration reference</a>:

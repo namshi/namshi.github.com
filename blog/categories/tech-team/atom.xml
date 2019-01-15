@@ -4,7 +4,7 @@
   <title><![CDATA[Category: tech team | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/tech-team/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -155,7 +155,7 @@ When we pushed updates for all countries in parallel, the solr CPU usage spiked 
     <link href="http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi/"/>
     <updated>2016-08-17T09:13:00+00:00</updated>
     <id>http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/rainy-duabi.jpeg"></p>
+    <content type="html"><![CDATA[<p>{% img left /images/posts/rainy-duabi.jpeg %}</p>
 
 <p><span class="figcaption_hack">Rainy days in Dubai are rare! same as good places to work.</span></p>
 
@@ -196,7 +196,7 @@ I kept fighting every day to get through with an output that would make me feel 
 accomplished and I want to say that, honestly, it wasn’t an easy quest (and, by
 the way, wasn’t always successful either).</p>
 
-<p><img class="left" src="/images/posts/gb-amino.jpeg">
+<p>{% img left /images/posts/gb-amino.jpeg %}
 <span class="figcaption_hack">Don’t leave your computer Unlocked, seriously, Don’t! A hard-learned lesson :D</span></p>
 
 <p><strong>Bottom line: </strong> those days, I always felt overwhelmed, not knowing what I
@@ -225,7 +225,7 @@ that I’m going to compensate by an over-dose of self-learning as I did before.
 <br>
 
 
-<p><img class="left" src="/images/posts/arabic_quote.jpeg"></p>
+<p>{% img left /images/posts/arabic_quote.jpeg %}</p>
 
 <p>Anis Mansoor</p>
 
@@ -240,7 +240,7 @@ reached the nirvana!</p>
 in one of several performance reviews that we hold on a monthly basis: ”Now, I
 know what I want to know, previously I had no idea how deep it was”.</p>
 
-<p><img class="left" src="/images/posts/tech-trivia.jpeg">
+<p>{% img left /images/posts/tech-trivia.jpeg %}
 <span class="figcaption_hack">One of the Code and Tech Trivias that took place recently, My team lost :S</span></p>
 
 <h3>Fast Forward</h3>

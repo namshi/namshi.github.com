@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Newsletter | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/newsletter/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -209,7 +209,7 @@ has an handy command (dock) that plugs on top of your usual docker commands addi
 That&rsquo;s why on Tuesday evening we did an internal hackathon, we bootstrapped four open source projects that we are going to release soon, <br /> stay tuned!<br />
 <a href="http://tech.namshi.io/team/#Luciano%20Colosio">Lucio</a>, our Nodejs maniac, introduced the team to node&rsquo;s history:</p></blockquote>
 
-<p><img class="center" src="/images/posts/lucio-node-presentation.png" width="800" title="result" ></p>
+<p>{% img center /images/posts/lucio-node-presentation.png 800 result %}</p>
 
 <p>Below the usual list of interesting links we found this week:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: nosql | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/nosql/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>This week we bid farewell to one of our team member <a href="http://tech.namshi.io/team/#Nitesh%20Sharma">Nitesh</a>, he posted an <a href="http://tech.namshi.io/blog/2015/09/28/goodbye-nitesh/">interesting summary</a> of his delightful journey at Namshi, we wish him best of luck.</p></blockquote>
 
-<p><img class="center" src="/images/nitesh-bye-bye.jpg"></p>
+<p>{% img center /images/nitesh-bye-bye.jpg %}</p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -86,7 +86,7 @@
 
 <p>Filippo in action during his tech talk, showing us some cool tips and tricks with MySql:</p></blockquote>
 
-<p><img class="team center" src="/images/posts/filippo_mysql.png"></p>
+<p>{% img team center /images/posts/filippo_mysql.png %}</p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 

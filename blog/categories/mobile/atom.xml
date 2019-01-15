@@ -4,7 +4,7 @@
   <title><![CDATA[Category: mobile | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/mobile/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -328,11 +328,11 @@ Soon our app was in store with the awesome looking “Add New Address” screen 
 </ul>
 
 
-<p><img class="center" src="/images/posts/web-mobile-demo.gif" title="" ></p>
+<p>{% img center /images/posts/web-mobile-demo.gif  %}</p>
 
 <h2>Re-writing the styles</h2>
 
-<p><img class="center" src="/images/posts/css-code.png" title="" ></p>
+<p>{% img center /images/posts/css-code.png  %}</p>
 
 <p>We trashed the old css and rewrote it from scratch following the <a href="http://getbem.com/">BEM</a> way of doing things, which allowed us to separate styles per page and also have some of them shared between pages.
 The total size of the minified styles was 18kb, now it is <strong>10kb:</strong> almost half of our css is gone!</p>
@@ -463,7 +463,7 @@ el.addEventListener(eventType, function(e) {
 
 <p>We crafted our own slider (<a href="https://medium.com/@MohamedAmin88/slim-slider-yet-another-javascript-slider-2f2069bb72e5">read the full story here</a>):</p>
 
-<p><img class="center" src="/images/posts/slim-slider.gif" title="" ></p>
+<p>{% img center /images/posts/slim-slider.gif  %}</p>
 
 <h2>Low Fat React: Preact!</h2>
 
@@ -499,7 +499,7 @@ el.addEventListener(eventType, function(e) {
 
 <h2>Webpack, Code splitting and Preloading techniques</h2>
 
-<p><img class="center" src="/images/posts/chunk-size.png" title="" ></p>
+<p>{% img center /images/posts/chunk-size.png  %}</p>
 
 <p><strong>Code splitting: eat only what you need</strong></p>
 
@@ -523,11 +523,11 @@ el.addEventListener(eventType, function(e) {
 
 <p><strong>Before</strong></p>
 
-<p><img class="center" src="/images/posts/before-preload.png" title="" ></p>
+<p>{% img center /images/posts/before-preload.png  %}</p>
 
 <p><strong>After</strong></p>
 
-<p><img class="center" src="/images/posts/after-preload.png" title="" ></p>
+<p>{% img center /images/posts/after-preload.png  %}</p>
 
 <h2>Goodbye good old image sprites</h2>
 
@@ -560,7 +560,7 @@ el.addEventListener(eventType, function(e) {
 <p>Last but not least, one for the server-side freaks.
 In this article, we spoke a lot about frontend optimizations and the likes, but I want to share an image to show the performance of our server-side rendering process:</p>
 
-<p><img class="center" src="/images/posts/web-mobile-results.png" title="" ></p>
+<p>{% img center /images/posts/web-mobile-results.png  %}</p>
 
 <p>As you see, our <strong>average response time is around 40ms</strong> — but you shouldn’t  care, as <a href="https://www.dynatrace.com/blog/why-averages-suck-and-percentiles-are-great/">averages make for a terrible KPI</a>.</p>
 
@@ -680,7 +680,7 @@ give it a look!</p>
 
 <p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
 
-<p><img class="center" src="/images/posts/ping-pong-happy.jpg"></p>
+<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
 
 <blockquote><p>and here is your weekly quota of some interesting links</p>
 

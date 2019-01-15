@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ec2 | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/ec2/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -80,7 +80,7 @@ We use both launch configuration and autoscaling service to manage our fleet of 
 
 <p>It is advisable to run the spot-instances in at least two availability zones to cope with surge in price in one of the availability zones. If there is a price surge above the bidding price in one zone and the spot instances are terminated, autoscaling group service automatically launches the same number of terminated instances in the zone(s) with bidding price higher than the current spot price. With this, we achieve something close zero-downtime during the re-scaling activity.<br/></p>
 
-<p><img class="center" src="/images/spot-stage-1.png" width="500" title="price surge in one availability zone" ></p>
+<p>{% img center /images/spot-stage-1.png 500 price surge in one availability zone %}</p>
 
 <br/><br/>
 

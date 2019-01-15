@@ -907,12 +907,18 @@
         <lastmod>2019-01-10T12:02:47+00:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://namshi.github.io/blog/2019/01/15/from-cloud-to-cloud-how-namshi-migrated-a-6yo-aws-infrastructure-to-gcp/
+        </loc>
+        <lastmod>2019-01-15T11:37:12+00:00</lastmod>
+    </url>
+    <url>
         <loc>http://namshi.github.io/archives/</loc>
-        <lastmod>2019-01-10T12:02:47+00:00</lastmod>
+        <lastmod>2019-01-15T11:37:12+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/</loc>
-        <lastmod>2019-01-10T12:02:47+00:00</lastmod>
+        <lastmod>2019-01-15T11:37:12+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/nl-bookmark/</loc>
@@ -920,11 +926,11 @@
     </url>
     <url>
         <loc>http://namshi.github.io/blog/archives/</loc>
-        <lastmod>2019-01-10T12:02:47+00:00</lastmod>
+        <lastmod>2019-01-15T11:37:12+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/blog/</loc>
-        <lastmod>2019-01-10T12:02:47+00:00</lastmod>
+        <lastmod>2019-01-15T11:37:12+00:00</lastmod>
     </url>
     <url>
         <loc>http://namshi.github.io/blog/categories/</loc>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: confoo | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/confoo/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-13T08:21:09+00:00</updated>
+  <updated>2019-01-15T11:39:17+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -27,7 +27,7 @@ That&rsquo;s how we started using nodejs, Angular, Docker, SPDY and much more&he
 <!-- more -->
 
 
-<p><img class="left team" src="/images/alex.jpg">
+<p>{% img left team /images/alex.jpg %}
 <a href="http://tech.namshi.io/team#Alessandro%20Nadalin">Alex</a> submitted a bunch of talks to the 2015 edition of the Confoo conference, so just
 <a href="http://confoo.ca/en/call-for-papers/speaker/alessandro-nadalin">vote for his talks</a>.<br>
 His talks cover a wide variety of topics from Symfony, Angular, HTTP to Dockerinzing your application.</p>
@@ -61,7 +61,7 @@ could expand in that direction.</p>
 <!-- more -->
 
 
-<p><img class="left team" src="/images/lucio.jpg" title="Luciano Colosio" ></p>
+<p>{% img left team /images/lucio.jpg Luciano Colosio %}</p>
 
 <p>And you know what? Lucio loves Node so much that he&rsquo;d like
 to talk about it at a big stage, like the one the
@@ -96,7 +96,7 @@ shot at the <a href="http://confoo.ca/en/call-for-papers/speaker/geshan-manandha
 <!-- more -->
 
 
-<p><img class="right team" src="/images/geshan.jpg"></p>
+<p>{% img right team /images/geshan.jpg %}</p>
 
 <p>If you want to hear how Symfony integrates (so) nicely
 with messaging queues and, specifically, with RabbitMQ
