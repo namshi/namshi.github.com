@@ -198,3 +198,6 @@ team:
     'Ming Hu':
         bio: 'Junior Software Engineer'
         image: 'ming.png'
+    'Abdelrahman Shiddo':
+        bio: 'Senior Site Reliability Engineer'
+        image: 'abz.png'
