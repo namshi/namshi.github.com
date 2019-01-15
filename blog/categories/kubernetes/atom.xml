@@ -4,7 +4,7 @@
   <title><![CDATA[Category: kubernetes | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/kubernetes/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -20,7 +20,7 @@
     <id>http://namshi.github.io/blog/2019/01/15/from-cloud-to-cloud-how-namshi-migrated-a-6yo-aws-infrastructure-to-gcp</id>
     <content type="html"><![CDATA[<p>Our new year started with system-fireworks!</p>
 
-<p>{% img center /images/fireworks.png %}</p>
+<p><img class="center" src="/images/fireworks.png"></p>
 
 <p>On January 1st, Namshi moved the majority of its infrastructure to Google Cloud Platform in order to take advantage of GKE, the incredible managed-Kubernetes service GCP offers. When you visit <em>namshi.com</em>, you will be served from the new infrastructure we migrated to, which includes our web applications as well as database servers.</p>
 
@@ -179,7 +179,7 @@ We use both launch configuration and autoscaling service to manage our fleet of 
 
 <p>It is advisable to run the spot-instances in at least two availability zones to cope with surge in price in one of the availability zones. If there is a price surge above the bidding price in one zone and the spot instances are terminated, autoscaling group service automatically launches the same number of terminated instances in the zone(s) with bidding price higher than the current spot price. With this, we achieve something close zero-downtime during the re-scaling activity.<br/></p>
 
-<p>{% img center /images/spot-stage-1.png 500 price surge in one availability zone %}</p>
+<p><img class="center" src="/images/spot-stage-1.png" width="500" title="price surge in one availability zone" ></p>
 
 <br/><br/>
 

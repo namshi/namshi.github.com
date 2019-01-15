@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: sre | Tech @ Namshi.com]]></title>
+  <link href="http://namshi.github.io/blog/categories/sre/atom.xml" rel="self"/>
+  <link href="http://namshi.github.io/"/>
+  <updated>2019-01-15T11:40:58+00:00</updated>
+  <id>http://namshi.github.io/</id>
+  <author>
+    <name><![CDATA[Namshi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[From cloud to cloud: how Namshi migrated a 6yo AWS infrastructure to GCP]]></title>
+    <link href="http://namshi.github.io/blog/2019/01/15/from-cloud-to-cloud-how-namshi-migrated-a-6yo-aws-infrastructure-to-gcp/"/>
+    <updated>2019-01-15T11:23:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2019/01/15/from-cloud-to-cloud-how-namshi-migrated-a-6yo-aws-infrastructure-to-gcp</id>
+    <content type="html"><![CDATA[<p>Our new year started with system-fireworks!</p>
+
+<p><img class="center" src="/images/fireworks.png"></p>
+
+<p>On January 1st, Namshi moved the majority of its infrastructure to Google Cloud Platform in order to take advantage of GKE, the incredible managed-Kubernetes service GCP offers. When you visit <em>namshi.com</em>, you will be served from the new infrastructure we migrated to, which includes our web applications as well as database servers.</p>
+
+<p>This concludes an activity we initially thought of <strong>a year and a half ago</strong> and started working towards in Q2 2018.</p>
+
+<p>In this post, we’d like to describe both how we migrated 6 years of infrastructure from AWS to GCP as well as the toughest challenges we faced along the way.</p>
+
+<!-- more -->
+
+
+<h2>Why the move?</h2>
+
+<p>At Namshi, we heavily rely on Kubernetes to run our web services workloads as we aim for a microservices architecture. At first, we used <a href="https://www.saltstack.com/">Salt</a><a href="https://www.saltstack.com/">Stack</a> to provision our Kubernetes clusters on EC2 instances but later moved to <a href="https://github.com/kubernetes/kops">Kops</a> as it was easier to manage and create clusters, however it still felt a bit tacky.</p>
+
+<p>We were looking for a cloud provider that integrated seamlessly with Kubernetes and looking at GKE, it was Kubernetes native which gave it a lot of advantages compared to others such as:</p>
+
+<ul>
+<li>managing networking and scaling</li>
+<li>everything is one place, from the dashboards to draining a node to</li>
+<li>pod logs and cluster metrics are sent automatically to Stackdriver which gives incredible insight</li>
+<li>cluster upgrades are done within a click of a button</li>
+</ul>
+
+
+<h2>Planning</h2>
+
+<p>We kicked off our journey by first meeting with the Google engineers, led by <a href="https://www.linkedin.com/in/ziad-jammal-656a5654/">Ziad</a>, to understand what GKE had to offer and how to fully take advantage of it. Other than our Kubernetes workload, we have databases running in RDS and Elasticache, so it was vital to know whether or not we ’d be migrating our databases. We also ran a good chunk of our workloads on <a href="https://tech.namshi.io/blog/2017/07/09/running-spot-instances-in-production/">spot instances</a>, so that’s something we would have like to keep on GCP.</p>
+
+<p>Following the meeting, we concluded that using spot instances (aka preemptible nodes in GCP) to run a majority of our workload wouldn&rsquo;t be as straightforward due to the termination of instances after 24 hours and no guarantees in terms of termination notifications. We’d also have to find a way to replicate from RDS to CloudSQL and later promote it to master, as going the good old fashioned way of <code>mysqldump</code> would have been pretty risky. We compared MemoryStore to Elasticache and found that MemoryStore wasn&rsquo;t mature enough so we decided to stick to Elasticache in AWS.</p>
+
+<p>Putting our staging environment on GCP was the first stepping stone to the big move. It was essential to get familiar with Stackdriver, managing the cluster from a simple UI, performance testing our applications with CloudSQL, however Elasticache and SQS were still running on AWS which may cause latency issues.  It also gave our devs a chance to play around with the powerful logging and monitoring tool Stackdriver has to offer, which they choose over Prometheus for application metrics.</p>
+
+<h2>RDS Issues</h2>
+
+<p>The most vital part of the whole migration was achieving a reliable/consistent replication process from RDS to CloudSQL.</p>
+
+<p>Our first gut instinct was to use CloudSQL’s <a href="https://www.google.com/search?client=opera&amp;q=cloud+sql+migrate+data&amp;sourceid=opera&amp;ie=UTF-8&amp;oe=UTF-8">migrate data</a> feature that lets you replicate from an external source such as AWS or on-premise, but it required the source to have GTID enabled which AWS didn&rsquo;t have at the time. All our time went into finding a seamless method to replicate the data using tools like <a href="https://www.attunity.com/products/replicate/">Attunity Replicate</a> and <a href="https://www.percona.com/doc/percona-xtrabackup/2.4/index.html">Percona XtraBackup</a> that weren&rsquo;t very reliable because of how long it took (we also observed inconsistent data from import to import).</p>
+
+<p>Luckily, on the 12th of October AWS announced the support of GTID on MySQL 5.7.23. This required downtime of around 10 minutes to upgrade our master instances and then replication would be as simple and reliable as ever from one MySQL instance to another across clouds using CloudSQL migrate data.</p>
+
+<h2>Miscellaneous Issues</h2>
+
+<p>Other than the RDS issues, we had a few issues here and there such as <a href="https://github.com/jtblin/kube2iam">kube2iam</a>, S3 and Elasticache latencies.</p>
+
+<p>Kube2iam is an awesome tool that allows pods to authenticate using the EC2 nodes metadata instead of credentials. It made our lives a lot easier on AWS, but it wasn’t cloud agnostic at all. It required provisioning of new credentials and, in some cases, code changes to authenticate using credentials instead of metadata.</p>
+
+<p>While running tests on a replica of our production environment on GCP, the latency to SQS, Elasticache and S3 in different regions was a few seconds &ndash; we expected some latency but nothing this crazy!
+We decided to migrate a few important S3 buckets using the cross-replication policy, provision new SQS queues and an Elasticache cluster in regions closer to GCP that saw the latency drop back down to a few hundred milliseconds and we can live with that.</p>
+
+<h2>Big night</h2>
+
+<p>As the end of the year was approaching, we had to find the best time to perform the actual migration as it required 3 hours of downtime. We consulted our PM team about the scheduled downtime, turns out New Years 4 am was the best time to carry out such a risky and long migration.</p>
+
+<p>Here’s a list of the actual migration steps we followed:</p>
+
+<ul>
+<li>inform all teams before the scheduled downtime</li>
+<li>take down all services</li>
+<li>lock writes to RDS</li>
+<li>run data consistency tests for both AWS and Clouds SQL to ensure no discrepancies</li>
+<li>cloud SQL instances were promoted to master</li>
+<li>test website and applications internally</li>
+<li>forward traffic from old cluster to new cluster in GCP in order to make sure that if a client doesn’t respect the DNS TTL we can still forward it to GCP</li>
+<li>switch our public DNS to point to GCP</li>
+</ul>
+
+
+<p>Everything was followed as planned and the predicted timings we had for each task was spot on. However, nothing goes ever as planned as we had one problem due to insufficient memory on the new ElastiCahce instance which was fixed by upsizing the instance. Other than that, the whole migration seemed seamless and, for a second, we forgot how big of a task this was.</p>
+
+<h2>Aftermath</h2>
+
+<p>At 7 am on January 1st, we brought all of our services all backup and watched our monitoring systems for any issues or anything unexpected. It&rsquo;s a big relief to say that we didn’t get any complaints from customers and other than the downtime, it seemed like nothing had changed.</p>
+
+<p>The same can’t be said for a few of our internal tools, where we noticed a few problems, but were mostly due to them still pointing to the wrong MySQL endpoint or S3 bucket. The fixes were pretty straightforward and everything in our internal tools were back to normal.</p>
+
+<p>After ensuring everything was running fine on GCP, it was time to scale down our old Kubernetes cluster running on AWS, as well as remove any RDS and Elasticache replicas.</p>
+
+<h2>Namshi still 💛 AWS</h2>
+
+<p>Something we’d like to clarify is that we still rely on AWS for a bunch of services, as we believe a world of multiple clouds allows us to pick the right tool for the job. There are some services we think are more suitable to be kept in AWS, and decided against migrating them — we might revisit these decisions later on but, for now, we’re happy with where we are.</p>
+
+<p>AWS has served as a strategic partner for Namshi for over a lustrum, so we’d like to mention that we’re not running away from a bad provider, but rather that we found GCP more suitable for the kind of workloads and stack Namshi runs on.</p>
+
+<h2>In the end…</h2>
+
+<p>We are very happy with this activity as it allows our infrastructure to run in an environment (GKE) that is more suitable for our stack. Additional benefits, like cost reductions and better integration with other parts of our stack (like data warehousing, which has been running on GCP since its inception), are secondary to the fact that we have eliminated in-house management of our Kubernetes clusters, a tedious activity we’d like GCP to take care of, in order to let us focus on our domain-specific challenges.</p>
+
+<p>A special thank goes to <a href="https://tech.namshi.io/team/#Andrey%20Komarov">Andrey</a>, <a href="https://tech.namshi.io/team/#Carles%20Iborra">Carles</a> and <a href="https://tech.namshi.io/team/#Ayham%20Alzoubi">Ayham</a>, as they shared the burden of this legendary task along the way, and sacrificed their NYE to let Namshi take a step forward!</p>
+]]></content>
+  </entry>
+  
+</feed>

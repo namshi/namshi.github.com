@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ELK | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/elk/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -26,7 +26,7 @@
 
 <p> The tech team was learning #PhpSpec from <a href="http://tech.namshi.io/team/#Daniel%20Ribeiro">Daniel</a></p></blockquote>
 
-<p>{% img center /images/phpspec-presentation.jpg %}</p>
+<p><img class="center" src="/images/phpspec-presentation.jpg"></p>
 
 <p><strong>Here is the list with awesome links our team been looking at over past week:</strong></p>
 

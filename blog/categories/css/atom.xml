@@ -4,7 +4,7 @@
   <title><![CDATA[Category: css | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/css/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:57+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>Like everyone else we love the weekends too, look how happy the guys are:</p></blockquote>
 
-<p>{% img center /images/posts/ping-pong-happy.jpg %}</p>
+<p><img class="center" src="/images/posts/ping-pong-happy.jpg"></p>
 
 <blockquote><p>and here is your weekly quota of some interesting links</p>
 
@@ -173,14 +173,14 @@
 for the first newsletter of 2016, we have the final results from our ping pong (TT) competition.
 After an intense final match between <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and Geshan, the winner is&hellip; <a href="http://tech.namshi.io/team/#Geshan%20Manandhar">Geshan</a>!</p></blockquote>
 
-<p>{% img center /images/posts/ping-pong-final.jpg %}</p>
+<p><img class="center" src="/images/posts/ping-pong-final.jpg"></p>
 
 <blockquote><p>This is how the tournament unfolded in the past weeks:</p></blockquote>
 
 <!-- more -->
 
 
-<p>{% img center /images/posts/ping-pong-tie-sheet.jpg %}</p>
+<p><img class="center" src="/images/posts/ping-pong-tie-sheet.jpg"></p>
 
 <blockquote><p>And yes here is your weekly dose of links we came across in the first week of 2016! Enjoy!!</p></blockquote>
 
@@ -237,7 +237,7 @@ Today is the 92nd anniversary of the Turkish Republic!</p>
 
 <p>Together with our Turkish pal Armagan  we wish Happy Republic Day, Turkey!</p>
 
-<p>{% img center /images/posts/arma.jpg %}</p></blockquote>
+<p><img class="center" src="/images/posts/arma.jpg"></p></blockquote>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 

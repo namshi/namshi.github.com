@@ -4,7 +4,7 @@
   <title><![CDATA[Category: design | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/design/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -68,10 +68,10 @@
     <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
 
 <p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
-{% img center /images/posts/alex-cirpo-oba-docker-con-15.jpg %}</p>
+<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
 
 <p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
-{% img center /images/posts/lucio-prabeesh-bd.jpg %}</p></blockquote>
+<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -113,7 +113,7 @@
 
 <p>To prove that we are not joking around we are porting microservices (sometimes not that micro) to the basketball playground! :P</p></blockquote>
 
-<p>{% img team center /images/posts/basketball.jpg %}</p>
+<p><img class="team center" src="/images/posts/basketball.jpg"></p>
 
 <blockquote><p>This is a picture of our team mates after a 3 vs 3 session!</p>
 

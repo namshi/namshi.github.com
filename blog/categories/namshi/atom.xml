@@ -4,7 +4,7 @@
   <title><![CDATA[Category: namshi | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/namshi/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -43,9 +43,7 @@ time I joined Namshi, around 7 years ago.</p>
 over the past 7 years, a feat that reminds me of the <a href="http://highscalability.com/blog/2014/2/17/how-the-aolcom-architecture-evolved-to-99999-availability-8.html">words
 of Dave Hagler, systems engineer at AOL</a>:</p>
 
-<p>{% blockquote %}
-The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.
-{% endblockquote %}</p>
+<p><blockquote><p>The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.</p></blockquote></p>
 
 <p>We didn&rsquo;t really start our &ldquo;SOA&rdquo; mission until 2013, when
 it became clear that our 2 monoliths (frontend &amp; backend)
@@ -210,7 +208,7 @@ When we pushed updates for all countries in parallel, the solr CPU usage spiked 
     <link href="http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi/"/>
     <updated>2016-08-17T09:13:00+00:00</updated>
     <id>http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi</id>
-    <content type="html"><![CDATA[<p>{% img left /images/posts/rainy-duabi.jpeg %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/rainy-duabi.jpeg"></p>
 
 <p><span class="figcaption_hack">Rainy days in Dubai are rare! same as good places to work.</span></p>
 
@@ -251,7 +249,7 @@ I kept fighting every day to get through with an output that would make me feel 
 accomplished and I want to say that, honestly, it wasn’t an easy quest (and, by
 the way, wasn’t always successful either).</p>
 
-<p>{% img left /images/posts/gb-amino.jpeg %}
+<p><img class="left" src="/images/posts/gb-amino.jpeg">
 <span class="figcaption_hack">Don’t leave your computer Unlocked, seriously, Don’t! A hard-learned lesson :D</span></p>
 
 <p><strong>Bottom line: </strong> those days, I always felt overwhelmed, not knowing what I
@@ -280,7 +278,7 @@ that I’m going to compensate by an over-dose of self-learning as I did before.
 <br>
 
 
-<p>{% img left /images/posts/arabic_quote.jpeg %}</p>
+<p><img class="left" src="/images/posts/arabic_quote.jpeg"></p>
 
 <p>Anis Mansoor</p>
 
@@ -295,7 +293,7 @@ reached the nirvana!</p>
 in one of several performance reviews that we hold on a monthly basis: ”Now, I
 know what I want to know, previously I had no idea how deep it was”.</p>
 
-<p>{% img left /images/posts/tech-trivia.jpeg %}
+<p><img class="left" src="/images/posts/tech-trivia.jpeg">
 <span class="figcaption_hack">One of the Code and Tech Trivias that took place recently, My team lost :S</span></p>
 
 <h3>Fast Forward</h3>
@@ -418,7 +416,7 @@ For the past two weeks, at the end of each work day, we spend about 5 minutes ta
     <link href="http://namshi.github.io/blog/2014/11/03/one-year-in-namshi/"/>
     <updated>2014-11-03T09:53:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/11/03/one-year-in-namshi</id>
-    <content type="html"><![CDATA[<p>{% img center /images/posts/one-year.png 792 378 &lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo; %}</p>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/one-year.png" width="792" height="378" title="&lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo;" ></p>
 
 <p>One year at Namshi&hellip; <strong>and it feels so good!</strong></p>
 
@@ -439,7 +437,7 @@ It&rsquo;s amazing how you can fall in love with it and be eager to push it forw
 
 <p>I still remember how excited I was when we improved our API performance, you should have seen my face: like Charlie in the chocolate factory.</p>
 
-<p>{% img center /images/posts/one-year-performance.jpg 320 320 &lsquo;API performance&rsquo; &lsquo;API performance&rsquo; %}</p>
+<p><img class="center" src="/images/posts/one-year-performance.jpg" width="320" height="320" title="&lsquo;API performance&rsquo; &lsquo;API performance&rsquo;" ></p>
 
 <p>Of course, working on a product is not enough; you need a really good working environment and an enlightened management to complete
 the scenario.</p>
@@ -456,7 +454,7 @@ It&rsquo;s also funny when we start making jokes about cultural stereotypes with
 
 <p>These are things that you can&rsquo;t take for granted.</p>
 
-<p>{% img center /images/posts/one-year-working-togheter.png 520 520 &lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo; %}</p>
+<p><img class="center" src="/images/posts/one-year-working-togheter.png" width="520" height="520" title="&lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo;" ></p>
 
 <h2>A well established Engineering culture</h2>
 
@@ -483,7 +481,7 @@ This year I went to the US, for the first time, and Germany as a speaker: it was
 
 <p>So what more can I say? <strong>Thank you Namshi!</strong></p>
 
-<p>{% img center /images/posts/one-year-wanna-deployment.png 320 320 &lsquo;Wanna deployment&rsquo; &lsquo;Wanna deployment&rsquo; %}</p>
+<p><img class="center" src="/images/posts/one-year-wanna-deployment.png" width="320" height="320" title="&lsquo;Wanna deployment&rsquo; &lsquo;Wanna deployment&rsquo;" ></p>
 ]]></content>
   </entry>
   

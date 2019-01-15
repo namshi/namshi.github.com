@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Mink | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/mink/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -35,7 +35,7 @@ smoothly without errors or unexpected results.</p>
 <a href="http://mink.behat.org/">Mink</a> and <a href="https://github.com/shvetsgroup/ParallelRunner">Parallel Runner</a>
 extensions and <a href="http://www.doctrine-project.org/projects/orm.html">Doctrine Object Relational Mapper (ORM)</a>.</p>
 
-<p>{% img center /images/arch.jpg &lsquo;App Architecture&rsquo; &lsquo;App Architecture&rsquo; %}</p>
+<p><img class="center" src="/images/arch.jpg" title="&lsquo;App Architecture&rsquo; &lsquo;App Architecture&rsquo;" ></p>
 
 <h2>Behat and Gherkin</h2>
 
@@ -48,7 +48,7 @@ holders during project planning.</p>
 <p>The actual tests are written in the Feature files of Behat using the Gherkin language. The following
 is an example of a scenario in the integrity feature of Namshi:&ndash;</p>
 
-<p>{% img center /images/gherkin.jpg &lsquo;Gherkin&rsquo; &lsquo;Gherkin&rsquo; %}</p>
+<p><img class="center" src="/images/gherkin.jpg" title="&lsquo;Gherkin&rsquo; &lsquo;Gherkin&rsquo;" ></p>
 
 <p>As can be noticed, Gherkin is non-technical descriptive language for non-programmers to declare the desired
 functionality of the software.</p>
@@ -57,25 +57,26 @@ functionality of the software.</p>
 programmer to write the definitions of the written statements in a special file named FeatureContext.php right when
 you try to run the tests!</p>
 
-<p>{% codeblock FeatureContext.php lang:php %}
-&lt;?php
-/<em>*
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>FeatureContext.php </span></figcaption>
+ <pre><code class='language-php'>
+&amp;lt;?php
+/&lt;em&gt;*
 * @Then /^I retrieve a couple product links$/
-</em>/
-public function iRetrieveACoupleProductLinks() {</p>
+&lt;/em&gt;/
+public function iRetrieveACoupleProductLinks() {&lt;/p&gt;
 
-<pre><code>$links = array_slice($this-&gt;getPage()-&gt;findAll('css','.productsCatalog .itm-link'), 0, 2);
+&lt;pre&gt;&lt;code&gt;$links = array_slice($this-&amp;gt;getPage()-&amp;gt;findAll(&apos;css&apos;,&apos;.productsCatalog .itm-link&apos;), 0, 2);
 $productsToVisit = array();
 
 foreach ($links as $link) {
-    $productsToVisit[] = $link-&gt;getAttribute('href');
+    $productsToVisit[] = $link-&amp;gt;getAttribute(&apos;href&apos;);
 }
 
-$this-&gt;linksToVisit = $productsToVisit;
-</code></pre>
+$this-&amp;gt;linksToVisit = $productsToVisit;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>}
-{% endcodeblock %}</p>
+&lt;p&gt;}
+</code></pre></figure></notextile></div></p>
 
 <h2>Mink</h2>
 
@@ -110,76 +111,80 @@ After some research, another tool was found that can deliver the required perfor
 without the need for Gearman&rsquo;s client/worker architecture. This distribution is done by defining different <em>profiles</em>
 in <em>behat.yml</em> configuration file and specify the number of parallel processes to run. Parallel Runner
 Extension for Behat was downloaded and enabled through composer and in the behat configuration file.
-{% codeblock composer.json lang:json %}
-&ldquo;require&rdquo;: {</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>composer.json </span></figcaption>
+ <pre><code class='language-json'>
+&amp;ldquo;require&amp;rdquo;: {&lt;/p&gt;
 
-<pre><code>"shvetsgroup/parallelrunner": "dev-master"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;&quot;shvetsgroup/parallelrunner&quot;: &quot;dev-master&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>}
-{% endcodeblock %}</p>
+&lt;p&gt;}
+</code></pre></figure></notextile></div></p>
 
 <p>In order to integrate Parallel Worker, a configuration file for each website was created. In each configuration
 file, the same set of profiles was defined. We took advantage of Behat&rsquo;s filtering option to enable each profile
 to run a certain <em>tag</em> that is already set in the <em>feature files</em>.
 In each configuration file, six profiles were added such that each one runs one <em>feature tag</em>.
-{% codeblock behat.yml lang:yml %}
-F1:</p>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <pre><code class='language-yaml'>
+F1:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@int"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@int&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>F2:</p>
+&lt;p&gt;F2:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@news"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@news&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>F3:</p>
+&lt;p&gt;F3:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@reg"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@reg&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>F4:</p>
+&lt;p&gt;F4:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@cod"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@cod&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>F5:</p>
+&lt;p&gt;F5:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@cc"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@cc&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>F6:</p>
+&lt;p&gt;F6:&lt;/p&gt;
 
-<pre><code>filters:
-    tags: "@pp"
-</code></pre>
+&lt;pre&gt;&lt;code&gt;filters:
+    tags: &quot;@pp&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>{% endcodeblock %}
+&lt;p&gt;</code></pre></figure></notextile></div>
 Finally, all feature files had to be tagged right before the Feature declaration such that
 the extension can identify the scenarios and their corresponding instances.</p>
 
-<p>{% codeblock behat.yml lang:yml %}
-default:</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>behat.yml </span></figcaption>
+ <pre><code class='language-yaml'>
+default:&lt;/p&gt;
 
-<pre><code>extensions:
+&lt;pre&gt;&lt;code&gt;extensions:
     shvetsgroup\ParallelRunner\Extension:
         process_count:  6
-</code></pre>
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>{% endcodeblock %}
-{% codeblock registration.feature lang:gherkin %}
+&lt;p&gt;</code></pre></figure></notextile></div>
+<div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>registration.feature </span></figcaption>
+ <pre><code class='language-gherkin'>
 @reg
-Feature: Check Namshi registration Scenarios</p>
+Feature: Check Namshi registration Scenarios&lt;/p&gt;
 
-<pre><code>@javascript
+&lt;pre&gt;&lt;code&gt;@javascript
 Scenario: As a user I register a new account, filling the registration form with proper data
-    Given I visit the "register" page
+    Given I visit the &quot;register&quot; page
     When I type in the following:
     |RegistrationForm_email           |registration.new+test-(timeStamp)@namshi.com |
     |RegistrationForm_first_name   |test                                                                        |
@@ -190,26 +195,26 @@ Scenario: As a user I register a new account, filling the registration form with
     |RegistrationForm_password    |121212                                                                  |
     |RegistrationForm_password2  |121212                                                                  |
     |RegistrationForm_gender        |male                                                                      |
-    When I press "send"
-    Then I am registered as "test"
-</code></pre>
+    When I press &quot;send&quot;
+    Then I am registered as &quot;test&quot;
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>{% endcodeblock %}</p>
+&lt;p&gt;</code></pre></figure></notextile></div></p>
 
 <h2>Namshi Automated Testing in Action!</h2>
 
 <p>Once all settings are completed, we can start the Automated Testing procedure by running Behat
 with the <em>config</em> parameter set to the target configuration file, which is the site to be tested.
-{% codeblock lang:bash %}
-bin/behat &mdash;config = behat-ae.yml
-{% endcodeblock %}
+<div class='bogus-wrapper'><notextile><figure class='code'> <pre><code class='language-bash'>
+bin/behat &amp;mdash;config = behat-ae.yml
+</code></pre></figure></notextile></div>
 Now, six browser windows will pop up and the test suits get executed in parallel!</p>
 
-<p>{% img center /images/execution.jpg &lsquo;Running Test Suite&rsquo; &lsquo;Running Test Suite&rsquo; %}</p>
+<p><img class="center" src="/images/execution.jpg" title="&lsquo;Running Test Suite&rsquo; &lsquo;Running Test Suite&rsquo;" ></p>
 
 <p>When the execution completes, we can open the tool&rsquo;s webpage and review the results!</p>
 
-<p>{% img center /images/results.jpg &lsquo;Results on the webpage&rsquo; &lsquo;Results on the webpage&rsquo; %}</p>
+<p><img class="center" src="/images/results.jpg" title="&lsquo;Results on the webpage&rsquo; &lsquo;Results on the webpage&rsquo;" ></p>
 
 <p>Looks like everything is running smoothly!</p>
 ]]></content>

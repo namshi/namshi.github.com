@@ -4,7 +4,7 @@
   <title><![CDATA[Category: chatops | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/chatops/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>We are featuring a <strong>T-shirt clash</strong> after <a href="http://tech.namshi.io/blog/2015/02/12/newsletter-number-77/">more</a> than
 a <a href="http://tech.namshi.io/blog/2015/02/19/newsletter-number-78/">year</a>, this time it is Shidhin and Geshan but different colors:)
-{% img center /images/posts/shidhin-geshan.jpg %}</p>
+<img class="center" src="/images/posts/shidhin-geshan.jpg"></p>
 
 <p>We would also like to welcome back <a href="http://tech.namshi.io/team/#Shidhin%20CR">Shidhin</a> from his vacation.
 And here is your weekly quota of some interesting links</p>
@@ -68,10 +68,10 @@ And here is your weekly quota of some interesting links</p>
     <content type="html"><![CDATA[<blockquote><p>Hi folks!</p>
 
 <p>Yet another photo of <a href="/team/#Alessandro%20Nadalin">Alex</a>, <a href="/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> and <a href="/team/#Oluwaseun%20Obajobi">Oba</a> from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
-{% img center /images/posts/alex-cirpo-oba-docker-con-15.jpg %}</p>
+<img class="center" src="/images/posts/alex-cirpo-oba-docker-con-15.jpg"></p>
 
 <p>Also, we celebrated Prabeesh&rsquo;s birthday by giving <a href="/team#Luciano%20Colosio">Lucio</a> as a birthday present; not sure if he liked it but he seemed happy.
-{% img center /images/posts/lucio-prabeesh-bd.jpg %}</p></blockquote>
+<img class="center" src="/images/posts/lucio-prabeesh-bd.jpg"></p></blockquote>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -114,7 +114,7 @@ And here is your weekly quota of some interesting links</p>
 <p><a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> and <a href="http://tech.namshi.io/team/#Oluwaseun%20Obajobi">Oba</a> are back from <a href="http://europe-2015.dockercon.com/">DockerCon Europe 2015</a>.
 Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> had fun at DockerCon.</p></blockquote>
 
-<p>{% img center /images/posts/oba-cirpo-docker-con-15.jpg %}</p>
+<p><img class="center" src="/images/posts/oba-cirpo-docker-con-15.jpg"></p>
 
 <p><strong>Below you can find the usual list of interesting articles we discovered in the past 7 days.</strong></p>
 
@@ -166,7 +166,7 @@ Looks like Oba and <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(
 
 <p>This week <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli">Cirpo</a>, <a href="http://tech.namshi.io/team/#David%20Funaro">David</a> and <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> went to the warehouse &hellip; it seems Namshi Tech will release a new application soon.</p>
 
-<p>{% img center /images/posts/alex-cirpo-david-wh.jpg %}</p>
+<p><img class="center" src="/images/posts/alex-cirpo-david-wh.jpg"></p>
 
 <!-- more -->
 

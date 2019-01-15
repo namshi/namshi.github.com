@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hackathon | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hackathon/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -29,7 +29,7 @@ We had a lot of fun!</p>
 <!-- more -->
 
 
-<p>{% img center /images/posts/hack-2018.jpg %}</p>
+<p><img class="center" src="/images/posts/hack-2018.jpg"></p>
 
 <h3>Theme and Challenge</h3>
 
@@ -58,7 +58,7 @@ but the selected few ideas also go live in our app.</p>
 <p>This year Namshi encouraged ideas not only limited to e-commerce. With the freedom
 to brainstorm and work on whatever they want, hackers have proposed some unique ideas.</p>
 
-<p>{% img center /images/posts/hack-2018-brainstorm.jpg %}</p>
+<p><img class="center" src="/images/posts/hack-2018-brainstorm.jpg"></p>
 
 <h3>Brainstorming and Hacking</h3>
 

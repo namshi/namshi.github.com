@@ -4,7 +4,7 @@
   <title><![CDATA[Category: gulp | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/gulp/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -94,7 +94,7 @@ in the past 7 days.</p>
 <blockquote><p>News from the IT Team:</p>
 
 <p>Hallal has already landed in London for <a href="http://london2014.live.symfony.com">Symfony Live</a> conference and he is having a blast.
-{% img thumb left /images/mohomad-sf-live.jpg %}</p>
+<img class="thumb left" src="/images/mohomad-sf-live.jpg"></p>
 
 <p>And we are back with some more proposals to the <a href="http://confoo.ca/en">Confoo</a> conference in Canada:
 check, and support them by voting <a href="http://tech.namshi.io/blog/2014/09/22/coding-on-the-edge-at-confoo/">for Alex</a>,

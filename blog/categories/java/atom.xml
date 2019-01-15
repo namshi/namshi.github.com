@@ -4,7 +4,7 @@
   <title><![CDATA[Category: java | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/java/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -23,7 +23,7 @@
 <blockquote><p><a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> talked about Vagrant and Docker for the 2nd Dubytes Meet up, woo hoo!
 See him in action</p>
 
-<p>{% img center /images/posts/cirpo-dubytes.jpg %}</p>
+<p><img class="center" src="/images/posts/cirpo-dubytes.jpg"></p>
 
 <p>Chances are <a href="/team/#Luciano%20Colosio">Lucio</a> is gonna talk about Isomorphic javacript for the next meet up.</p></blockquote>
 

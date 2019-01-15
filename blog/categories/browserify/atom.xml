@@ -4,7 +4,7 @@
   <title><![CDATA[Category: browserify | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/browserify/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -33,38 +33,38 @@ configuration as elegant, simple and declarative as possible.</p>
 
 <p>With reconfig you can do stuff like:</p>
 
-<p>{% codeblock lang:javascript %}
-{% raw %}
-var reconfig = require(&lsquo;reconfig&rsquo;);</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <pre><code class='language-javascript'>
 
-<p>var config =  new reconfig({</p>
+var reconfig = require(&amp;lsquo;reconfig&amp;rsquo;);&lt;/p&gt;
 
-<pre><code>greet: 'Hello :who!',
-sayhi: '{{ greet }}'
+&lt;p&gt;var config =  new reconfig({&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;greet: &apos;Hello :who!&apos;,
+sayhi: &apos;{{ greet }}&apos;
 countries: {
     uae: {
-        population: '2M',
-        nationalDay: 'December 2nd'
+        population: &apos;2M&apos;,
+        nationalDay: &apos;December 2nd&apos;
     }
     // ...
 }
-</code></pre>
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>});</p>
+&lt;p&gt;});&lt;/p&gt;
 
-<p>// Retrieve a deep config value
-config.get(&lsquo;countries.uae.nationalDay&rsquo;); // December, 2nd</p>
+&lt;p&gt;// Retrieve a deep config value
+config.get(&amp;lsquo;countries.uae.nationalDay&amp;rsquo;); // December, 2nd&lt;/p&gt;
 
-<p>// Pass parameters to the configuration
-config.get(&lsquo;greet&rsquo;, {who: &lsquo;John&rsquo;}); // Hello, John!</p>
+&lt;p&gt;// Pass parameters to the configuration
+config.get(&amp;lsquo;greet&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
 
-<p>// Reference other configuration parameters
-config.get(&lsquo;sayhi&rsquo;, {who: &lsquo;John&rsquo;}); // Hello, John!</p>
+&lt;p&gt;// Reference other configuration parameters
+config.get(&amp;lsquo;sayhi&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
 
-<p>// Fallback values
-config.get(&lsquo;something&rsquo;, {}, &lsquo;invalid&rsquo;); // invalid
-{% endraw %}
-{% endcodeblock %}</p>
+&lt;p&gt;// Fallback values
+config.get(&amp;lsquo;something&amp;rsquo;, {}, &amp;lsquo;invalid&amp;rsquo;); // invalid
+
+</code></pre></figure></notextile></div></p>
 
 <p>We&rsquo;re probably gonna look into porting the same to
 PHP (another big player in our stack) so&hellip;stay tuned!</p>

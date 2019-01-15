@@ -4,7 +4,7 @@
   <title><![CDATA[Category: process | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/process/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -37,7 +37,7 @@
 
 <p>Our original exchange process had a pretty basic flow.  A customer would place an order with some items, and if they decided to return any item(s), a return would have to be initiated via the account section. Our driver would then head over to collect the items that needed to be returned. Once those items reached our warehouse, we would then refund the amount owed back either as <a href="https://www.namshi.com">Namshi</a> credit or as a credit / debit card refund. At this point, the customer could place a new order for the new size.</p>
 
-<p>{% img center /images/posts/exchange-size.JPG %}</p>
+<p><img class="center" src="/images/posts/exchange-size.JPG"></p>
 
 <p>This approach seemed pretty dated as our customers suffered because of the extended time frame of the whole process, during which the size they wanted instead could have ran out of stock, but also because during this time, the price of the product may have fluctuated. This might result in them having to pay a higher price.</p>
 
@@ -85,7 +85,7 @@
 
 <h2>Returns:</h2>
 
-<p>{% img center /images/posts/returns-chart.png %}</p>
+<p><img class="center" src="/images/posts/returns-chart.png"></p>
 
 <p>We found out that our customers were pretty satisfied with the original returns process with a combined satisfaction rate of very satisfied and satisfied customers at 75%.</p>
 
@@ -95,7 +95,7 @@
 
 <p>Given that we just launched exchanges across all our markets, we were pretty excited to hear back from customers about how they felt about this new venture.</p>
 
-<p>{% img center /images/posts/exchanges-chart.png %}</p>
+<p><img class="center" src="/images/posts/exchanges-chart.png"></p>
 
 <p>and voila!</p>
 
@@ -111,7 +111,7 @@
 
 <p>Once we launched doorstep exchanges, we ran another survey to see what our customers thought:</p>
 
-<p>{% img center /images/posts/swaps-chart.png %}</p>
+<p><img class="center" src="/images/posts/swaps-chart.png"></p>
 
 <p>We reached a 92% satisfaction rate with at the doorstep exchanges.</p>
 
@@ -139,7 +139,7 @@
 
 <p>Always on the move: Our brand new office (WIP).</p>
 
-<p>{% img center /images/posts/new_office.jpg %}</p>
+<p><img class="center" src="/images/posts/new_office.jpg"></p>
 
 <p>Here you can find our last list of links:</p>
 

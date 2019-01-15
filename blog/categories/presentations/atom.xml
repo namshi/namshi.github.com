@@ -4,7 +4,7 @@
   <title><![CDATA[Category: presentations | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/presentations/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london/"/>
     <updated>2014-10-02T12:26:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/10/02/what-went-down-at-symfonylive-london</id>
-    <content type="html"><![CDATA[<p>{% img center /images/symfonylive.png 640 640 &lsquo;SymfonyLive&rsquo; &lsquo;SymfonyLive&rsquo; %}
+    <content type="html"><![CDATA[<p><img class="center" src="/images/symfonylive.png" width="640" height="640" title="&lsquo;SymfonyLive&rsquo; &lsquo;SymfonyLive&rsquo;" >
 SymfonyLive London 2014 concluded with top-notch presentations from Symfony and industry gurus. It was an exceptional
 opportunity being able to attend this conference and meet those people.</p>
 

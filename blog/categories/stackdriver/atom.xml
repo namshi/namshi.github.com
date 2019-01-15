@@ -4,7 +4,7 @@
   <title><![CDATA[Category: stackdriver | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/stackdriver/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -25,11 +25,11 @@
 
 <p>At Namshi, we are saving a bunch of &ldquo;business&rdquo; metrics and storing them in prometheus, with alerts based on conditions over those metrics (for example, <code>if hourly_visits &lt; X: trigger an alert</code>).</p>
 
-<p>{% img center /images/posts/sd-metrics.png %}</p>
+<p><img class="center" src="/images/posts/sd-metrics.png"></p>
 
 <p>We have hundreds of applications and cronjobs, periodically sending metrics to prometheus using the pushgateway, which collects metrics and makes them available to prometheus.</p>
 
-<p>{% img center /images/posts/prometheus-metrics.png %}</p>
+<p><img class="center" src="/images/posts/prometheus-metrics.png"></p>
 
 <p>In order to send metrics from our crons etc we can simply curl to the pushgateway:
 <code>
@@ -71,7 +71,7 @@ metadata:
 <p>Everything has been running fine until we started facing some issues related to managing the infrastructure around prometheus, which is not funny: instead of spending time managing prometheus, we could shift our efforts towards our core business.</p>
 
 <p>Google came up with <a href="https://cloud.google.com/monitoring/docs/">StackDriver</a>, which seems to fit our bill: SD has a monitoring service as well as and alerting service which allow us to send metrics and create alerts based on those metrics.
-{% img center /images/posts/sd-notifications.png %}</p>
+<img class="center" src="/images/posts/sd-notifications.png"></p>
 
 <p>To send business metrics to StackDriver, we would have needed to do the following for every single app in our cluster:</p>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: reactive programming | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/reactive-programming/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -24,7 +24,7 @@
 
 <p>Every now and then it happens that people in our team wear the same geeky T-shirt&hellip; <strong>T-shirt clash</strong>:</p>
 
-<p>{% img center /images/t-shirt.jpg %}</p></blockquote>
+<p><img class="center" src="/images/t-shirt.jpg"></p></blockquote>
 
 <ul>
 <li><p><a href="https://github.com/bcoe/crapify">Crapify, a proxy for simulating slow, spotty, HTTP connections</a></p></li>

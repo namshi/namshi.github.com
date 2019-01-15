@@ -4,7 +4,7 @@
   <title><![CDATA[Category: AWS | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/aws/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -71,7 +71,7 @@
     <link href="http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent/"/>
     <updated>2014-07-05T20:54:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/07/05/a-bit-of-namshi-at-the-2014-aws-re-invent</id>
-    <content type="html"><![CDATA[<p>{% img left <a href="http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png">http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png</a> 120 %}</p>
+    <content type="html"><![CDATA[<p><img class="left <a" src="href="http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png">http://ztona.net/wp-content/uploads/2014/06/476d57951db8e5b93f7cac1fe923c506.png</a>" width="120"></p>
 
 <p>It&rsquo;s gonna be a great time in Las Vegas for
 <a href="/team#Oluwaseun%20Obajobi">Oba</a>, our Lead

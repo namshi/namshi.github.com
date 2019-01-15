@@ -4,7 +4,7 @@
   <title><![CDATA[Category: talk | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/talk/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -18,7 +18,7 @@
     <link href="http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich/"/>
     <updated>2014-10-30T06:51:00+00:00</updated>
     <id>http://namshi.github.io/blog/2014/10/30/ipc14-wtc14-munich</id>
-    <content type="html"><![CDATA[<p>{% img left /images/posts/webtech14-ipc14.png 320 320 &lsquo;WebTechCon&rsquo; &lsquo;WebTechCon&rsquo; %}</p>
+    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/webtech14-ipc14.png" width="320" height="320" title="&lsquo;WebTechCon&rsquo; &lsquo;WebTechCon&rsquo;" ></p>
 
 <p>I had the opportunity to attend the <a href="http://webtechcon.de/2014/">WebTechCon</a> and the <a href="https://phpconference.com/2014">International PHPConference 2014</a> as speaker in Munich, Germany.
 The location was very nice, and beeing a foodie, the food was great :).</p>
@@ -70,7 +70,7 @@ from Dubai.</p>
 <!-- more -->
 
 
-<p>{% img left <a href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a> 250 %}</p>
+<p><img class="left <a" src="href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a>" width="250"></p>
 
 <p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
 there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua

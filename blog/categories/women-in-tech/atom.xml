@@ -4,7 +4,7 @@
   <title><![CDATA[Category: women in tech | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/women-in-tech/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -35,7 +35,7 @@ programming in general, a go.</p>
 
 <p><strong>Can you briefly tell us a bit about yourself?</strong></p>
 
-<p>{% img center /images/ming.png 200 %}</p>
+<p><img class="center" src="/images/ming.png" width="200"></p>
 
 <p><em>After realizing that I will not make it to the Victoria Secret’s Fashion Show (I wasn’t close), I spent years studying at a college in Abu Dhabi until I discovered my interest: working on tech solutions. So it is no surprise that I joined Namshi recently as a junior software engineer, building infrastructure tools as well as customer-facing apps. I have been a perfectionist coder and I always want my work to be impeccable. Outside work, I enjoy traveling the world, playing Nintendo Switch and eating my way through the places I visit.</em></p>
 
@@ -87,7 +87,7 @@ programming in general, a go.</p>
 
 <p><strong>Can you briefly tell us a bit about yourself?</strong></p>
 
-<p>{% img center /images/noor.jpg 200 %}</p>
+<p><img class="center" src="/images/noor.jpg" width="200"></p>
 
 <p><em>I am an ordinary omnivert person who is telecommunications engineer by education and software engineer by profession. I am often considered as a backstage performer. I love to write blogs and do voluntarily work whenever I get time.</em></p>
 
@@ -99,7 +99,7 @@ programming in general, a go.</p>
 
 <p><em>Like this:</em></p>
 
-<p>{% img center /images/noor_at_work.jpg %}</p>
+<p><img class="center" src="/images/noor_at_work.jpg"></p>
 
 <p><em>Jokes apart, besides working on the assigned tasks in office, I try to learn at least one thing new everyday. I manage my own sheet to track my progress.</em></p>
 

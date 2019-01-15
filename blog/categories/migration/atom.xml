@@ -4,7 +4,7 @@
   <title><![CDATA[Category: migration | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/migration/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -22,7 +22,7 @@
 
 <p>Always on the move: Our brand new office (WIP).</p>
 
-<p>{% img center /images/posts/new_office.jpg %}</p>
+<p><img class="center" src="/images/posts/new_office.jpg"></p>
 
 <p>Here you can find our last list of links:</p>
 

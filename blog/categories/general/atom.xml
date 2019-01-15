@@ -4,7 +4,7 @@
   <title><![CDATA[Category: general | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/general/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -43,9 +43,7 @@ time I joined Namshi, around 7 years ago.</p>
 over the past 7 years, a feat that reminds me of the <a href="http://highscalability.com/blog/2014/2/17/how-the-aolcom-architecture-evolved-to-99999-availability-8.html">words
 of Dave Hagler, systems engineer at AOL</a>:</p>
 
-<p>{% blockquote %}
-The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.
-{% endblockquote %}</p>
+<p><blockquote><p>The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.</p></blockquote></p>
 
 <p>We didn&rsquo;t really start our &ldquo;SOA&rdquo; mission until 2013, when
 it became clear that our 2 monoliths (frontend &amp; backend)

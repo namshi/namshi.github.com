@@ -4,7 +4,7 @@
   <title><![CDATA[Category: feature | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/feature/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:39:17+00:00</updated>
+  <updated>2019-01-15T11:40:58+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -20,7 +20,7 @@
     <id>http://namshi.github.io/blog/2018/08/06/delivery-promises-in-the-wild</id>
     <content type="html"><![CDATA[<p>We recently launched a new feature which we internally call <strong>“delivery promises”</strong>. This feature informs our users the expected delivery lead time of individual products, based on their location. Users select their location from a drop down list and a timer counts down to the next available delivery dispatch time. This allows users to know how much time they have to place an order to receive their item at the next earliest possible delivery date.</p>
 
-<p>{% img center /images/dp.png %}</p>
+<p><img class="center" src="/images/dp.png"></p>
 
 <!-- more -->
 
@@ -55,11 +55,11 @@
 </ol>
 
 
-<p>{% img center /images/dp1.png %}</p>
+<p><img class="center" src="/images/dp1.png"></p>
 
 <p>We also added this information in our cart view popup to keep users engaged and informed about the expected delivery dates for their orders.</p>
 
-<p>{% img center /images/dp2.png %}</p>
+<p><img class="center" src="/images/dp2.png"></p>
 
 <p>Initially, we wanted to add the feature to our checkout page too. However, we found that it won’t be possible because we currently take user delivery addresses in open input text fields. Users can enter any text to describe their locations including cities, hence, we could not query the expected delivery service without a properly formatted input which would be in the form of a predefined set of cities. Goes to show that something as simple as a field type could be a blocker for a feature to work!</p>
 
