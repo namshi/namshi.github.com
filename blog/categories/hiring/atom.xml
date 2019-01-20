@@ -4,7 +4,7 @@
   <title><![CDATA[Category: hiring | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/hiring/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-01-15T11:40:58+00:00</updated>
+  <updated>2019-01-20T14:06:43+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[We're recruiting talented jr. software engineers: come and join us!]]></title>
+    <link href="http://namshi.github.io/blog/2019/01/20/were-recruiting-talented-jr-software-engineers-come-and-join-us/"/>
+    <updated>2019-01-20T13:51:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2019/01/20/were-recruiting-talented-jr-software-engineers-come-and-join-us</id>
+    <content type="html"><![CDATA[<p>Hi there, just a quick one today!</p>
+
+<p>Since we have a few openings for jr. roles in our team,
+we&rsquo;re putting together a <em>recruitment day</em> towards
+the end of this month, as announced on our
+<a href="https://www.linkedin.com/feed/update/activity:6492692016193986560/">LinkedIn post</a>:</p>
+
+<blockquote><p>Come and join our tech graduate recruitment day on Thursday 31st January 2019. We will be recruiting for Junior Backend Engineers and Junior Mobile Engineers.</p>
+
+<p>To be considered please send your CV to <code>mifra.khan@namshi.com</code></p></blockquote>
+
+<p>Ready to meet some members of our tech team? 🤓💻☕️🎓</p>
+
+<p><video controls>
+<source src="http://namshi.github.io/images/tech-recruiting-jr.mp4" type="video/mp4">
+</video></p>
+
+<p>Yalla, submit!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Namshi is hiring: come and hack with us!]]></title>
@@ -231,98 +257,6 @@ Then we&rsquo;re definitely a match!</p>
 let&rsquo;s have a chat!</p>
 
 <p>P.S. A few weeks back I wrote a small piece about <a href="/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
-give it a look!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Currently hiring: backend and mobile engineers]]></title>
-    <link href="http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai/"/>
-    <updated>2017-03-09T06:49:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2017/03/09/currently-hiring-backend-mobile-developers-dubai</id>
-    <content type="html"><![CDATA[<p>We&rsquo;re currently looking for some help in a couple areas of our tech team &mdash; why
-don&rsquo;t <strong>you</strong> join us?</p>
-
-<!-- more -->
-
-
-<h2>Mobile</h2>
-
-<p>Getting into the specifics, we&rsquo;ve been working with an external mobile team (3rd party)
-that wrote our apps from scratch, setup an efficient testing &amp; CI strategy and a
-very solid deployment workflow &mdash; as a matter of fact, we&rsquo;re very proud of our
-crash rate on both platforms, with android leading at 0.05%.</p>
-
-<p>We are comfortable with the quality of our apps and the pace of development but,
-in order to take them to the next level, it&rsquo;s clear to us that we need our own
-team to do that: commitment, communication and going the extra-mile are definitely
-different when you&rsquo;re part of the organization.</p>
-
-<p>On the long run the team is going to be comprised of a few engineers and a lead,
-so we&rsquo;d initially like to start with:</p>
-
-<ul>
-<li>1 <strong>lead mobile developer</strong>, who should ideally have good experience on both platforms</li>
-<li>1 <strong>senior iOS developer</strong></li>
-<li>1 <strong>senior android developer</strong></li>
-</ul>
-
-
-<p>The <strong>lead mobile engineer</strong> should ideally be a very hands-on, seasoned mobile
-engineer with experience leading / forming a team &mdash; he will need to
-help building the team, setting the right direction, overseeing development
-on both platforms and coordinating with other teams (ie. backend
-or product management) on feature development and aligning priorities. We expect
-him to spend around 50% of his time on development (this is still a <em>hands-on</em> position),
-and the other 50% on the team, teaching practices, reviewing pull requests and so on.</p>
-
-<p>We expect from <strong>senior engineers</strong> to be able to write clean, testable code that&rsquo;s
-hard to break &mdash; a few years (4+) of experience are definitely needed (say, you
-should have bumped into <code>@autoreleasepool</code> before ;&ndash;)) and you
-should be very familiar with different design patterns (Delegate, Facade, etc),
-concepts such as mock objects and various tools to support your workflow (ie. CI
-pipelines).</p>
-
-<h2>Backend</h2>
-
-<p>We could definitely use some help in our backend team :)</p>
-
-<p>Even though we&rsquo;re not in a rough spot, we would like to be able to expand
-our pipeline and be able to add even more seniority to the team: our usual &ldquo;backend problem&rdquo;
-is that we have lots of things we&rsquo;d like to work on / experiment with but not a lot
-of engineers, thus we eventually end up giving those projects up or delaying them
-too much.</p>
-
-<p>The main technologies you would be working with are:</p>
-
-<ul>
-<li>NodeJS</li>
-<li>MySQL</li>
-<li>Redis</li>
-<li>Solr</li>
-<li>Golang</li>
-<li>Symfony2</li>
-<li>a bit of frontend with either Angular or React</li>
-</ul>
-
-
-<p>all of these in the context of our microservice-based SOA: we currently employ
-50+ service in production, mostly deployed in Docker containers through Google&rsquo;s
-<a href="https://kubernetes.io/">Kubernetes</a>.</p>
-
-<p>Here we would keep in consideration candidates for both a <strong>lead</strong> and a
-<strong>senior</strong> position: the current team is working well and we haven&rsquo;t felt the
-need to hire a lead engineer over the past few months, but we&rsquo;re open to the
-idea if we find the right candidate.</p>
-
-<p>Needless to say, both position would be <strong>quite hands-on</strong> :)</p>
-
-<h2>Apply now!</h2>
-
-<p>What are you waiting for? Send your application at <code>work-in-tech@namshi.com</code> and
-let&rsquo;s have a chat!</p>
-
-<p>P.S. A few weeks back I wrote a small piece about <a href="http://tech.namshi.io/blog/2016/12/06/get-that-job-at-namshi/">Namshi&rsquo;s hiring process and <em>desiderata</em></a>,
 give it a look!</p>
 ]]></content>
   </entry>
