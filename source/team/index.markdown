@@ -70,15 +70,19 @@ footer: true
     {% img left team /images/carles.png Carles Iborra %}
     **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
 
+*   ##<div id="Farzan Uddin">Farzan Uddin</div>
+    {% img left team /images/farzan.png Farzan Uddin %}
+    **Farzan Uddin** is a Junior Frontend Engineer at Namshi. A business graduate from the University of Wollongong, but his passion for tech led him to pursue a new challenge. He joined Namshi in 2018 to learn from all the experienced people around and use their wisdom to possibly find a direction for himself. He has an eye for design and wants to be able to transform his ideas to a functional form for the users and enhance their experience. In his spare time, Farzan loves to draw, criticize underlying themes in movies and play competitive video games.
+
+*   ##<div id="Giannis Paraskakis">Giannis Paraskakis</div>
+    {% img left team /images/giannis.png Giannis Paraskakis %}
+    **Giannis Paraskakis** is a software engineer at Namshi, who joined the team in January 2019. Giannis holds a Master’s Degree in Information technology Engineering from University of the Aegean in Greece and a Master's Degree in Computer Science from the University of Piraeus in Greece. Throughout his professional career, he has worked in several sectors including maritime, hospitality and education, before joining Namshi. He loves learning new things and traveling around the world.
+
 *   ##<div id="Gurjeet Singh">Gurjeet Singh</div>
     {% img left team /images/gurjeet.jpg Gurjeet Singh %}
     **Gurjeet Singh** is a Network Administrator at Namshi. His Job responsibilities include networks, firewalls, switches and server management in order to improve the existing server infrastructure as well as new installations and backups.
     He also proactively monitors uptimes, failovers and performances of infrastructure and much more.
     He has around 8 years of experience in Telecom , Network and Linux Technologies.
-
-*   ##<div id="Farzan Uddin">Farzan Uddin</div>
-    {% img left team /images/farzan.png Farzan Uddin %}
-    **Farzan Uddin** is a Junior Frontend Engineer at Namshi. A business graduate from the University of Wollongong, but his passion for tech led him to pursue a new challenge. He joined Namshi in 2018 to learn from all the experienced people around and use their wisdom to possibly find a direction for himself. He has an eye for design and wants to be able to transform his ideas to a functional form for the users and enhance their experience. In his spare time, Farzan loves to draw, criticize underlying themes in movies and play competitive video games.
 
 *   ##<div id="Joe Jean">Joe Jean</div>
     {% img left team /images/joe.png Joe Jean %}
