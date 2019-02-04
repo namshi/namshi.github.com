@@ -139,6 +139,10 @@ footer: true
     {% img left team /images/sakina.png Sakina Sagarwala %}
     **Sakina Sagarwala** is a Junior Product Management Analyst who joined Namshi eager to learn about Product Management as a field and E commerce as an industry.  Prior to joining Namshi, she managed a scholarship and grant program at Habib University, Pakistan’s first liberal Arts and Sciences University and worked in Monitoring and Evaluation in International Development. She holds an MSc in Development Management from the London School of Economics and Political Science and spends her spare time enjoying food and movies.
 
+*   ##<div id="Sarah Thomas">Sarah Thomas</div>
+    {% img left team /images/sarah-thomas.png Sarah Thomas %}
+    **Sarah Thomas** is a software engineer who joined Namshi in 2019. She started off her career as a test engineer and therefore has a keen eye for bugs and testing. She is a test driven development enthusiast. Her professional skill stack includes  NodeJS, Ruby, NoSQL and SQL Databases, and AWS. She is a quick learner. On weekends you will find her spending time with my family, baking or watching DIY videos.
+
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
     **Shidhin CR** is a senior Front end developer joined in Namshi team in May 2014. He is passionate about latest UI
