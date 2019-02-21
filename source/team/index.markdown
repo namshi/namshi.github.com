@@ -141,7 +141,7 @@ footer: true
 
 *   ##<div id="Sarah Thomas">Sarah Thomas</div>
     {% img left team /images/sarah-thomas.png Sarah Thomas %}
-    **Sarah Thomas** is a software engineer who joined Namshi in 2019. She started off her career as a test engineer and therefore has a keen eye for bugs and testing. She is a test driven development enthusiast. Her professional skill stack includes  NodeJS, Ruby, NoSQL and SQL Databases, and AWS. She is a quick learner. On weekends you will find her spending time with my family, baking or watching DIY videos.
+    **Sarah Thomas** is a software engineer who joined Namshi in 2019. She started off her career as a test engineer and therefore has a keen eye for bugs and testing. She is a test driven development enthusiast. Her professional skill stack includes  NodeJS, Ruby, NoSQL and SQL Databases, and AWS. She is a quick learner. On weekends you will find her spending time with her family, baking or watching DIY videos.
 
 *   ##<div id="Shidhin CR">Shidhin CR</div>
     {% img left team /images/shidhin.jpg Shidhin CR %}
