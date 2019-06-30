@@ -53,22 +53,12 @@ footer: true
     {% img left team /images/ana.png Anastasia Reusova %}
     Hello, business school graduate here! I graduated from the Graduate School of Management, Saint Petersburg State University with a dream of being a management consultant, and accidentally (no jokes) landed a BI internship in foodpanda, Thailand, in 2016. I went from having to google what BI stood for the moment I got the offer to being totally in love with the data field. I find immense satisfaction in being concentrated on a task to get an "aha!" moment and getting to the point where numbers make sense. I love learning and bringing fresh ideas to the workplace. When I'm off my desk, I'm most probably working on a side project or jumping in a trampoline class.
 
-*   ##<div id="Andrey Komarov">Andrey Komarov</div>
-    {% img left team /images/andrey.jpg Andrey Komarov %}
-    **Andrey Komarov** always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
-    In the mean time, he tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. He really likes to debug internal system processes, this gives him better understanding of how systems works from deep inside.
-    In 2017 he discovered kubernetes and focused on this amazing technology. He hopes to continue to grow professionally in this direction together with the Namshi team.
-
 *   ##<div id="Ayham Alzoubi">Ayham Alzoubi</div>
     {% img left team /images/ayham.jpg Ayham Alzoubi %}
     **Ayham Alzoubi** is a Software Engineer at Namshi. He joined the Tech Team in April 2012.
     Ayham holds a Bachelor's Degree in Information technology Engineering from Damascus University in Syria.
     He is working in Web Development and he was involved in different projects at Namshi.
     Ayham is working in implementing automated testing procedures for Namshi, and writing open source libraries.
-
-*   ##<div id="Carles Iborra">Carles Iborra</div>
-    {% img left team /images/carles.png Carles Iborra %}
-    **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
 
 *   ##<div id="Farzan Uddin">Farzan Uddin</div>
     {% img left team /images/farzan.png Farzan Uddin %}
@@ -116,11 +106,6 @@ footer: true
     {% img left team /images/noor.jpg Noor %}
     **Noor Ul Ain Ali** is a telecom engineer with Masters in Computer Science from Karachi, Pakistan. She started her career as an iOS developer, enhancing her skills in Android and then Mac development. She is a diversified team player, a detail oriented resource, and a quick learner. She has keen interest in application development based on smart TV, smart watch, google glass apps, and wearable gadgets. She loves to spend time learning new technologies related to big data and mobile apps development.
 
-*   ##<div id="Omar Al Khairat">Omar Al Khairat</div>
-    {% img left team /images/omar.png Omar Al Khairat %}
-    **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
-    With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
-
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
     **Razan Bilwani** is a Senior Product Management Analyst,
@@ -165,6 +150,21 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Carles Iborra">Carles Iborra</div>
+    {% img left team /images/carles.png Carles Iborra %}
+    **Carles Iborra** is a seasoned software engineer and manager with more than 10 years of experience in the field. Before joining Namshi he was leading teams in a similar company in Spain. He loves to create great products, technology, travels and people. When he is not working you can find him watching online courses, spending time with with his family or lost in the middle of UAE.
+
+*   ##<div id="Omar Al Khairat">Omar Al Khairat</div>
+    {% img left team /images/omar.png Omar Al Khairat %}
+    **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
+    With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
+
+*   ##<div id="Andrey Komarov">Andrey Komarov</div>
+    {% img left team /images/andrey.jpg Andrey Komarov %}
+    **Andrey Komarov** always tried to figure out how internet works, from it's early days and up to this moment  - there is still a lot of things to know.
+    In the mean time, he tried to manage and optimize systems for running web sites, starting from the shared hosting times on unix-based machines. He really likes to debug internal system processes, this gives him better understanding of how systems works from deep inside.
+    In 2017 he discovered kubernetes and focused on this amazing technology. He hopes to continue to grow professionally in this direction together with the Namshi team.
 
 *   ##<div id="Ruba Noureldin">Ruba Noureldin</div>
     {% img left team /images/ruba.jpg Ruba Noureldin %}
