@@ -123,17 +123,7 @@ footer: true
 
 *   ##<div id="Razan Bilwani">Razan Bilwani</div>
     {% img left team /images/razan.jpg Razan Bilwani %}
-    **Razan Bilwani** is a Senior Product Management Analyst,
-    and has been at Namshi for almost 4 years. Before Product
-    Management, he dabbled in Content, Digital Strategy, and
-    Onsite Analytics. Razan used to run his own wholesale
-    business in the heart of Dubai before deciding to go
-    'Online'. With a degree in Management Information Systems
-    in one hand, and a thirst for studying the unknown in the
-    other, he joined Namshi to learn and do - everything!
-    On weekends you can find him reading by day and BBQ-ing
-    by night. There are 3 things he takes very seriously:
-    work, the Oxford comma, and Biryani.
+    **Razan Bilwani**, VP - Product Management, specialises in building robust products that need minimal maintenance, in Agile environments. He's worked in Offline Wholesale/Retail, Content, On-Site, Strategy, and Product that gives him a thorough business understanding. He's led mid/large teams in multiple areas, including Quality Assurance, and UX/UI. When not glued to a mobile screen, you can find him dedicating his time to family. There are 3 things he takes very seriously: work, the Oxford comma, and Biryani.
 
 *   ##<div id="Sakina Sagarwala">Sakina Sagarwala</div>
     {% img left team /images/sakina.png Sakina Sagarwala %}
