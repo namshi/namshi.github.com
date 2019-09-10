@@ -38,13 +38,6 @@ footer: true
     {% img left team /images/ala.png Ala Hawash %}
     **Ala Hawash** is a Senior Software Engineer who joined Namshi Tech Team in September 2017. Ala has a Computer Engineering Bachelor degree from the University of Birzeit in Palestine.  Throughout 8 years of his professional career, he has acquired a broad spectrum of technical and problem solving skills and have worked in several sectors ranging from payments solutions to advertising and healthcare, before landing into e-commerce at Namshi. He has always been keen on understanding how things work, and likes to explain stuff to other people. On his free time you can find him reading latest news in tech blogs or fighting with random people on the internet in a casual game of DOTA.
 
-*   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
-    {% img left team /images/alex.jpeg Alessandro Nadalin %}
-    **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
-    He heavily focused his attention to agile practices, patterns of enterprise application architecture and leading mid/big-sized development teams.
-    Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
-    Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
-
 *   ##<div id="Ammar Rayess">Ammar Rayess</div>
     {% img left team /images/ammar.png Ammar Rayess %}
     **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
@@ -121,10 +114,6 @@ footer: true
     **Omar Al Khairat** is passionate about automated systems, cloud architecture s and Big Data; he loves building and learning how to build secure, reliable, fault-tolerant, scalable and efficient data-driven systems.
     With a background in Artificial Intelligence and software engineering experience he works closely with data scientists and system architects, using python and R. On his free time you’ll find him learning about new technologies, spending the time with family or eating pizza
 
-*   ##<div id="Razan Bilwani">Razan Bilwani</div>
-    {% img left team /images/razan.jpg Razan Bilwani %}
-    **Razan Bilwani**, VP - Product Management, specialises in building robust products that need minimal maintenance, in Agile environments. He's worked in Offline Wholesale/Retail, Content, On-Site, Strategy, and Product that gives him a thorough business understanding. He's led mid/large teams in multiple areas, including Quality Assurance, and UX/UI. When not glued to a mobile screen, you can find him dedicating his time to family. There are 3 things he takes very seriously: work, the Oxford comma, and Biryani.
-
 *   ##<div id="Sakina Sagarwala">Sakina Sagarwala</div>
     {% img left team /images/sakina.png Sakina Sagarwala %}
     **Sakina Sagarwala** is a Junior Product Management Analyst who joined Namshi eager to learn about Product Management as a field and E commerce as an industry.  Prior to joining Namshi, she managed a scholarship and grant program at Habib University, Pakistan’s first liberal Arts and Sciences University and worked in Monitoring and Evaluation in International Development. She holds an MSc in Development Management from the London School of Economics and Political Science and spends her spare time enjoying food and movies.
@@ -155,6 +144,17 @@ footer: true
 We'd also like to list here the rockstars who have been with us
 over the past months or years, and have given a core contribution
 to our technical stack.
+
+*   ##<div id="Alessandro Nadalin">Alessandro Nadalin</div>
+    {% img left team /images/alex.jpeg Alessandro Nadalin %}
+    **Alessandro Nadalin**, CTO, is a seasoned technical leader who pays a lot of attention to enterprise patterns, methodologies and communities.
+    He heavily focused his attention to agile practices, patterns of enterprise application architecture and leading mid/big-sized development teams.
+    Due to the companies he worked for he has been involved in projects for governments, Samsung, Nissan, ENI and pioneered the e-commerce ecosystem in the Middle East.
+    Big supporter of the REST architectural style, Service Oriented Architectures and asynchronous messaging systems: when he’s not working, you can find him speaking at some conference, riding his motorcycle, blogging or eating some indonesian food in the old side of Dubai.
+
+*   ##<div id="Razan Bilwani">Razan Bilwani</div>
+    {% img left team /images/razan.jpg Razan Bilwani %}
+    **Razan Bilwani**, VP - Product Management, specialises in building robust products that need minimal maintenance, in Agile environments. He's worked in Offline Wholesale/Retail, Content, On-Site, Strategy, and Product that gives him a thorough business understanding. He's led mid/large teams in multiple areas, including Quality Assurance, and UX/UI. When not glued to a mobile screen, you can find him dedicating his time to family. There are 3 things he takes very seriously: work, the Oxford comma, and Biryani.
 
 *   ##<div id="Ruba Noureldin">Ruba Noureldin</div>
     {% img left team /images/ruba.jpg Ruba Noureldin %}
