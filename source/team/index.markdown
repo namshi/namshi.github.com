@@ -97,6 +97,10 @@ footer: true
     {% img left team /images/kiran.png Kiran %}
     **Kiran Kumar Koppuravuri** holds a Bachelors degree in Industrial Engineering & Management from IIT Kharagpur, he has been in the Data Analytics stream for around 5 years. He always loves to work for B2C organization where every part of work revolves around as a consumer-centric, which brings new understanding of consumer choices over time. Currently working as a Business Analyst with Namshi,Prior to Namshi he worked with companies such as OLA and Voonik with similar work experience.In his free time/weekends you can find him in either learning new stuff in finance or watching movies.
 
+*   ##<div id="Mahesh Tiyyagura">Mahesh Tiyyagura</div>
+    {% img left team /images/mahesh.png Mahesh %}
+    **Mahesh** holds a degree in Maths and Scientific Computing from IIT Kanpur, he has worked on the full-stack of Technology -- applied reasearch, a founder, initial team of engineers at e-commerce startups, building and managing engineering team etc. He loves the pace and work at startups. He was VP Engineering for Hackerrank in Bangalore before relocating to Dubai to join as CTO for Namshi. He loves technology and inspired by the epic impact it has on our lives. In his free time/weekends you can find him reading, swimming, traveling. Family time is just time, He doesn't want to bucket it to this time, that time, free time etc..)
+    
 *   ##<div id="Ming Hu">Ming Hu</div>
     {% img left team /images/ming.png Ming Hu %}
     **Ming Hu** holds a B.S. in Computer Science from NYU Abu Dhabi. She has been passionate about building robust web and mobile applications since college. She loves writing clean and effective code and building reliable and robust system. She joined Namshi's back-end team in early 2018 and is excited to learn new skills and solve new challenges. Her technical skills include Python, Java, Javascript, HTML, CSS, Heroku, Node and more. In free time, Ming can be found checking out technical blogs, reading about blockchain or baking apple pies.
