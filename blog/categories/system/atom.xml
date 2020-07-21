@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: System | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: system | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/system/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-09-10T12:39:27+00:00</updated>
+  <updated>2020-07-21T09:15:57+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,15 +14,18 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Virus Detection and Prevention Tips]]></title>
-    <link href="http://namshi.github.io/blog/2013/12/10/virus-detection-and-prevention-tips/"/>
-    <updated>2013-12-10T13:32:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2013/12/10/virus-detection-and-prevention-tips</id>
-    <content type="html"><![CDATA[<ul>
-<li>Make sure you have an anti-virus program installed on your computer. If an anti-virus is installed, also sure its updated regularly as well.</li>
-<li>Don&rsquo;t open email attachments from an unknown, suspicious or untrustworthy source. Also, be careful of email attachments you are not expecting, it might be that the sender&rsquo;s email has been compromised.</li>
-<li>Delete junk emails except you are sure they not junks. Don&rsquo;t forward or reply to any to them. These types of email are
-considered Spam because the authenticity of the email is not guaranteed.</li>
+    <title type="html"><![CDATA[Newsletter #99]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/16/newsletter-number-99/"/>
+    <updated>2015-07-16T14:06:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/16/newsletter-number-99</id>
+    <content type="html"><![CDATA[<h2>It&rsquo;s TechThursday again!</h2>
+
+<p>And here we are with what we read this week! Enjoy!</p>
+
+<ul>
+<li><p><a href="http://www.sitepoint.com/12-little-known-css-facts-the-sequel/?utm_source=html5weekly">12 Little-Known CSS Facts (The Sequel)</a></p></li>
+<li><p><a href="http://jjuliano.github.io/markdown-ui/">A framework for creating responsive UI’s for mobile and web using Markdown Syntax</a></p></li>
+<li><p><a href="https://github.com/tuvalie/historic_events">A large data set of historic human events</a></p></li>
 </ul>
 
 
@@ -30,21 +33,159 @@ considered Spam because the authenticity of the email is not guaranteed.</li>
 
 
 <ul>
-<li>Be careful when downloading files from the Internet. Be sure that the source is a legitimate and a reputable one.</li>
-<li>Please stay away from torrent sites. Some of the popular ones include Limewire, BitTorrent, Frostwire and Pirate Bay are heavily laden with viruses, malware and spyware. Downloading from these websites is one of the easiest ways to become infected. It’s in your best interest to avoid these websites completely.</li>
-<li>Be careful when searching on the Internet, the links that come up from your search engine may contain a virus. Never go to sites that seem suspicious.</li>
-<li>Due to the popularity of the social networking websites such as MySpace, Facebook, and Twitter, virus makers target them more than any other website. Unknown Ads especially the ones that advertise free stuffs are considered high risk. Avoid clicking these links.</li>
-<li>If you happen to see a pop-up message that you have been infected and to buy their software to protect yourself, do not fall for it! If you click on any part of those messages, a program will be installed which could be a virus. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
-<li>If you happen see any suspicious pop-ups appear on your screen, don&rsquo;t click them. If you do, it is very likely you will infect your computer. Immediately close the browser and don&rsquo;t open the browser page when opening the browser again.</li>
-<li>If you are in doubt about any potential virus related situation you find yourself in, please do not hesitate to the <a href="mailto:it@namshi.com">IT team</a> and we will answer any question you may have.</li>
+<li><p><a href="https://github.com/mailgun/oxy">A proxy written in Go with Http middlewares like stream, forward, roundrobin, rate limiting etc..</a></p></li>
+<li><p><a href="https://sourcemaking.com/antipatterns">AntiPatterns</a></p></li>
+<li><p><a href="http://ceramic.github.io/docs/introduction.html">Ceramic is a library for creating desktop applications with web technologies and Common Lisp</a></p></li>
+<li><p><a href="https://www.cloudboost.io/?utm_content=buffer733af">CloudBoost | Database as a Service for the next web</a></p></li>
+<li><p><a href="https://github.com/wouterdebie/i2cssh">ClusterSSH for your iTerm</a></p></li>
+<li><p><a href="http://codeception.com/">Codeception &ndash; BDD-style PHP testing.</a></p></li>
+<li><p><a href="https://github.com/Swordfish90/cool-retro-term">Cool Retro Terminal with QT for OSX and Linux</a></p></li>
+<li><p><a href="http://symfony.com/blog/create-your-own-framework-on-top-of-the-symfony-components">Create your own framework on top of the Symfony Components</a></p></li>
+<li><p><a href="https://medium.com/we-build-vend/defining-a-high-performance-team-it-s-not-just-about-structure-9417150b659d">Defining a High Performance Team: It’s not just about Structure</a></p></li>
+<li><p><a href="http://sirile.github.io/2015/07/15/docker-swarm-and-experimental-multihost-networking-with-docker-machine-and-boot2docker.html?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Docker Swarm and experimental multihost networking with docker-machine and boot2docker</a></p></li>
+<li><p><a href="http://kartar.net/2013/11/docker-and-configuration-management/">Docker and Configuration Management</a></p></li>
+<li><p><a href="http://www.infoq.com/news/2015/07/docker-testing-infrastructure?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Docker&rsquo;s Testing Infrastructure</a></p></li>
+<li><p><a href="http://container-solutions.com/docker-latest-confusion/">Docker: The &ldquo;latest&rdquo; Confusion</a></p></li>
+<li><p><a href="http://blog.travisthieman.com/fast-zero-downtime-deploy-with-serf-and-lox/">Fast, Zero-Downtime Deploy with Serf and Lox</a></p></li>
+<li><p><a href="http://zachholman.com/posts/fired/">Fired</a></p></li>
+<li><p><a href="http://www.soasta.com/blog/docker-awesome-devops">How Docker has made life awesome for SOASTA DevOps | SOASTA</a></p></li>
+<li><p><a href="http://abdelrahmanhosny.com/2015/07/11/how-to-merge-two-docker-images/?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">How to Merge Two Docker Images</a></p></li>
+<li><p><a href="http://filimanjaro.com/blog/2014/introducing-lazy-evaluation/">How to Speed Up Lo-Dash ×100? Introducing Lazy Evaluation.</a></p></li>
+<li><p><a href="http://firstround.com/review/im-sorry-but-agile-wont-fix-your-products/">I&rsquo;m Sorry, But Agile Won&rsquo;t Fix Your Products</a></p></li>
+<li><p><a href="https://hiddedevries.nl/en/blog/2015-05-18-the-web-is-fast-by-default-lets-keep-it-fast">The web is fast by default, let’s keep it fast</a></p></li>
+<li><p><a href="https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f">Introducing Incremental DOM</a></p></li>
+<li><p><a href="http://zachholman.com/posts/0x-engineers/">Just Don’t Hire 0x Engineers</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/microservice-trade-offs.html">Microservice Trade-Offs</a></p></li>
+<li><p><a href="https://github.com/git-tips/tips">Most commonly used git tips and tricks</a></p></li>
+<li><p><a href="http://www.giorgiosironi.com/2015/06/property-based-testing-primer.html">Property-based testing primer</a></p></li>
+<li><p><a href="http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/">React.js Introduction For People Who Know Just Enough jQuery To Get By</a></p></li>
+<li><p><a href="http://zachholman.com/posts/saying-no-to-sales/">Saying No to Sales</a></p></li>
+<li><p><a href="http://instagram-engineering.tumblr.com/post/124162066737/search-architecture">Search Architecture @ Instagram</a></p></li>
+<li><p><a href="https://github.com/Shopify/shipit-engine">ShipIt by Shopify</a></p></li>
+<li><p><a href="http://carlosbecker.com/posts/small-go-apps-containers/">Small Go Apps Containers</a></p></li>
+<li><p><a href="https://github.com/kilimchoi/engineering-blogs">Software Engineering Blogs</a></p></li>
+<li><p><a href="http://artofmonitoring.com/">The Art of Monitoring</a></p></li>
+<li><p><a href="https://github.com/dfguo/blog">Thoughts and learnings from buliding Strikingly</a></p></li>
+<li><p><a href="https://github.com/ircmaxell/Tuli">Tuli &ndash; A static analysis engine for PHP</a></p></li>
+<li><p><a href="http://www.solinea.com/blog/up-and-running-with-docker-machine-and-openstack?mkt_tok=3RkMMJWWfF9wsRonuqTMZKXonjHpfsX57ukrXqG1lMI/0ER3fOvrPUfGjI4ATcdqI+SLDwEYGJlv6SgFQ7LMMaZq1rgMXBk=">Up and Running with Docker Machine and OpenStack</a></p></li>
+<li><p><a href="https://dunglas.fr/2015/06/using-psr-7-in-symfony/">Using PSR-7 in Symfony</a></p></li>
+<li><p><a href="http://zachholman.com/posts/git-commit-history/">Utter Disregard for Git Commit History</a></p></li>
+<li><p><a href="http://tech.zumba.com/2015/05/29/chrome-push-api/">W3C Push API Crash Course</a></p></li>
+<li><p><a href="https://medium.com/materialup-exploring-material-design/what-happens-when-an-apple-guy-explores-material-design-cb739c49ca2d">What happens when an Apple guy explores Material Design? — Exploring Material Design</a></p></li>
+<li><p><a href="https://medium.com/javascript-scene/why-i-use-tape-instead-of-mocha-so-should-you-6aa105d8eaf4">Why I use Tape Instead of Mocha </a></p></li>
+<li><p><a href="https://github.com/cyclejs/cycle-core">cycle-core: A fully reactive JavaScript framework for Human-Computer Interaction</a></p></li>
+<li><p><a href="https://github.com/google/incremental-dom">google/incremental-dom</a></p></li>
+<li><p><a href="https://github.com/marcacohen/polychat">multi-lingual decentralized p2p chat based on web RTC and Google Translate API</a></p></li>
+<li><p><a href="https://www.airpair.com/angularjs/posts/ngmodeloptions-total-model-control?utm_content=bufferf25bb">ng-model-options: Total Model Control</a></p></li>
+<li><p><a href="https://github.com/progrium/go-shell">progrium/go-shell</a></p></li>
+<li><p><a href="http://www.itworld.com/article/2947839/big-data/mit-comes-up-with-a-no-memory-solution-for-big-data.html">MIT comes up with a &ldquo;no memory&rdquo; solution for Big Data</a></p></li>
+<li><p><a href="http://www.crn.com/slide-shows/applications-os/300077353/the-10-coolest-big-data-products-of-2015-so-far.htm">The 10 Coolest Big Data Products Of 2015 (So Far)</a></p></li>
+<li><p><a href="http://www.computerweekly.com/news/4500249955/Microsoft-expands-Cortana-to-power-cloud-based-predictive-analytics">Microsoft expands Cortana to power cloud-based predictive analytics</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #97]]></title>
+    <link href="http://namshi.github.io/blog/2015/07/02/newsletter-number-97/"/>
+    <updated>2015-07-02T11:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/07/02/newsletter-number-97</id>
+    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+
+<p>Always on the move: Our brand new office (WIP).</p>
+
+<p><img class="center" src="/images/posts/new_office.jpg"></p>
+
+<p>Here you can find our last list of links:</p>
+
+<ul>
+<li><p><a href="https://tideways.io/profiler/blog/5-doctrine-orm-performance-traps-you-should-avoid">5 Doctrine ORM Performance Traps You Should Avoid &ndash; Blog &ndash; Tideways</a></p></li>
+<li><p><a href="https://github.com/chjj/tng">A full-featured PNG renderer for the terminal</a></p></li>
+<li><p><a href="http://criu.org/Main_Page">CRIU &ndash; checkpoint/restore functionality for Linux in userspace</a></p></li>
+<li><p><a href="http://blog.ometer.com/2011/07/24/callbacks-synchronous-and-asynchronous/">Callbacks, synchronous and asynchronous</a></p></li>
+<li><p><a href="http://alistapart.com/article/container-queries-once-more-unto-the-breach">Container Queries: Once More Unto the Breach · An A List Apart Article</a></p></li>
 </ul>
 
 
-<h2>References:</h2>
+<!-- more -->
+
 
 <ul>
-<li><a href="http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses">http://windows.microsoft.com/en-us/windows7/tips-for-protecting-your-computer-from-viruses</a></li>
-<li><a href="http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf">http://www.csrinc.net/virusprevention/VirusDetectionandPreventionTips.pdf</a></li>
+<li><p><a href="http://www.slideshare.net/jpetazzo/containers-from-development-to-production-at-devnation-2015">Containers: from development to production</a></p></li>
+<li><p><a href="https://github.com/jserv/kernel-in-kernel">Develop your own OS kernel by reusing Linux infrastructure</a></p></li>
+<li><p><a href="http://davidwalsh.name/developers-wordpress-amateurs-squarespace-professional-designers-webydo">Developers Have WordPress, Amateurs Have Squarespace, Professional Designers Have the NEW Webydo!</a></p></li>
+<li><p><a href="http://blog.docker.com/2015/06/dockercon-2015-videos-day-1-advanced-tech/">DockerCon 2015 Videos: Day 1 of Advanced Tech | Docker Blog</a></p></li>
+<li><p><a href="http://www.udidahan.com/2015/02/02/finding-service-boundaries-%E2%80%93-illustrated-in-healthcare/">Finding Service Boundaries (illustrated in healthcare)</a></p></li>
+<li><p><a href="https://github.com/flyjs/fly">FlyJs: New Generation Build System</a></p></li>
+<li><p><a href="http://taligarsiel.com/Projects/howbrowserswork1.htm">How browsers work</a></p></li>
+<li><p><a href="http://www.quora.com/Emulators-computing/How-does-bellard-org-jslinux-work">How does jslinux work?</a></p></li>
+<li><p><a href="http://viget.com/extend/how-to-use-docker-on-os-x-the-missing-guide">How to Use Docker on OS X: The Missing Guide | Viget</a></p></li>
+<li><p><a href="http://appendto.com/2015/06/making-sense-of-git-a-visual-perspective/">Making Sense of Git &ndash; A Visual Perspective</a></p></li>
+<li><p><a href="http://www.leancrew.com/all-this/2011/12/more-shell-less-egg/">On simplicity of computer programming</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=J9emzl_VmIs">PhpStorm: 42 Tips and Tricks Talk by Mikhail Vink, Dutch PHP Conference 2015</a></p></li>
+<li><p><a href="http://martinfowler.com/articles/refactoring-pipelines.html">Refactoring with Loops and Collection Pipelines</a></p></li>
+<li><p><a href="http://www.marcotroisi.com/the-ethics-of-code-reviews/">The Ethics of Code Reviews</a></p></li>
+<li><p><a href="https://blazemeter.com/blog/top-10-monitoring-tools-every-devops-needs">Top 10 Monitoring Tools that Every DevOps Needs</a></p></li>
+<li><p><a href="http://www.strapui.com/themes/utoo-material-angularjs-theme/">Utoo Material AngularJS Theme &ndash; StrapUI</a></p></li>
+<li><p><a href="https://medium.com/boot2docker-lightweight-linux-for-docker/boot2docker-together-with-virtualbox-guest-additions-da1e3ab2465c">boot2docker together with VirtualBox Guest Additions</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #48]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/24/newsletter-number-48/"/>
+    <updated>2014-07-24T12:03:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/24/newsletter-number-48</id>
+    <content type="html"><![CDATA[<p>Guess what? TechThursday is here!</p>
+
+<blockquote><p><em>What happened this week in the Namshi Tech team?</em></p>
+
+<p>This week we achieved a great result: our travis builds now take just 8 minutes to run all the test suite, we are super excited about this.<br />
+We will soon talk about it in a blog post, stay tuned and keep following <a href="http://twitter.com/technamshi">@TechNamshi</a></p></blockquote>
+
+<p>Enjoy the list of super uber interesting posts on the Web!</p>
+
+<ul>
+<li><p><a href="http://buff.ly/Uf8g0e">Zalando hits €1 billion in revenue in first half of 2014</a></p></li>
+<li><p><a href="http://csswizardry.com/2013/01/front-end-performance-for-web-designers-and-front-end-developers/">Front-end performance for web designers and front-end developers, long but useful article by @csswizardry about web performance, a really hot topic now.</a></p></li>
+<li><p><a href="https://speakerdeck.com/mathiasbynens/3-dot-14-things-i-didnt-know-about-css-at-css-day-2014">3.14 things I didn’t know about CSS &ndash; a great presentation from CSS Day 2014</a></p></li>
+<li><p><a href="https://gds.blog.gov.uk/2014/07/18/whats-the-design-process-at-gds/">What’s the design process at Governement Digital Service in UK?</a></p></li>
+</ul>
+
+
+<!-- more -->
+
+
+<ul>
+<li><p><a href="http://t.co/MvNu3WXg3A">Want a sneak peek at the PHP language spec the @HipHopVM team has been working on?</a></p></li>
+<li><p><a href="http://t.co/FVocuiIbur">How LinkedIn used PoPs and RUM to make dynamic content download 25% faster</a></p></li>
+<li><p><a href="http://buff.ly/1qrKDjV">Elasticsearch in 15 minutes</a></p></li>
+<li><p><a href="http://buff.ly/1mojG8x">gulp inject is one of the best things discovered over the past 3 months&hellip;</a></p></li>
+<li><p><a href="http://buff.ly/UfOyBn">Redesigning the perfect checkout</a></p></li>
+<li><p><a href="http://buff.ly/1qOqW1x">Schedule Load Tests for #APIs in the Cloud for Free</a></p></li>
+<li><p><a href="http://buff.ly/1rweFjF">JadoPado InstaSearch with Algolia</a></p></li>
+<li><p><a href="http://buff.ly/1yB90Mq">What happens when you search &lsquo;ugly hack&rsquo; in GitHub</a></p></li>
+<li><p><a href="http://buff.ly/1qNmlN6">Programming Is Not Math</a></p></li>
+<li><p><a href="http://buff.ly/Uf2USD">Riemann &ndash; A network monitoring system</a></p></li>
+<li><p><a href="http://buff.ly/1qLpg8V">12 killer resources for #api practitioners</a></p></li>
+<li><p><a href="http://dl.hhvm.com/resources/PHPSpec-SneakPeak.pdf">PHP specification draft from Sara Golemon</a></p></li>
+<li><p><a href="http://labs.octivi.com/handling-1-billion-requests-a-week-with-symfony2/">Handling 1 Billion requests a week with Symfony2</a></p></li>
+<li><p><a href="https://markwillcollins.silvrback.com/7-things-i-wish-i-knew-about-angularjs">8 Things I wish I knew about AngularJs</a></p></li>
+<li><p><a href="http://highscalability.com/blog/2014/7/14/bitly-lessons-learned-building-a-distributed-system-that-han.html">Bitly: Lessons Learned Building A Distributed System That Handles 6 Billion Clicks A Month</a></p></li>
+<li><p><a href="https://github.com/fgrehm/vagrant-notify">Vagrant Notify &ndash; forward notify-send from vagrant host machine</a></p></li>
+<li><p><a href="http://xmpp.org/about-xmpp/technology-overview/">XMPP: The Extensible Messaging and Presence Protocol overview</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/more-responsive-single-page-applications-with-angularjs-socketio-creating-the-library--cms-21738">More Responsive Single-Page Applications With AngularJS &amp; Socket.IO: Creating the Library</a></p></li>
+<li><p><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-9-analyzing-concerns--cms-21760">Refactoring Legacy Code: Part 9 &ndash; Analyzing Concerns</a></p></li>
+<li><p><a href="http://templatespicy.com/2014/15-best-php-frameworks-2014/">15 best PHP frameworks in 2014</a></p></li>
+<li><p><a href="http://visualping.io/">Get notified on visual changes of a website or website area</a></p></li>
+<li><p><a href="http://pagekit.com/blog/2014/07/21/pagekit-public-alpha-launch">Pagekit, a new, modern CMS built with Symfony components</a></p></li>
+<li><p><a href="http://vexxhost.com/blog/small-dive-into-meteor-js/">Small dive into Meteor.js</a></p></li>
+<li><p><a href="http://9to5mac.com/2014/07/11/apple-launches-blog-to-highlight-new-swift-programming-language">Apple launches blog to highlight new Swift programming language</a></p></li>
+<li><p><a href="https://blog.codecentric.de/en/2014/06/10-early-thoughts-swift-programming-language">10 Early Thoughts on the Swift Programming Language</a></p></li>
+<li><p><a href="http://www.fastcolabs.com/3031400/whats-new-and-different-about-apples-new-swift-programming-language">The New And Different About Apple&rsquo;s New Swift Programming Language</a></p></li>
 </ul>
 
 ]]></content>

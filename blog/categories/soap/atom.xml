@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: SOAP | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: soap | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/soap/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-09-10T12:39:27+00:00</updated>
+  <updated>2020-07-21T09:15:57+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,67 +14,108 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #88]]></title>
-    <link href="http://namshi.github.io/blog/2015/04/30/newsletter-number-88/"/>
-    <updated>2015-04-30T11:59:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/04/30/newsletter-number-88</id>
-    <content type="html"><![CDATA[<blockquote><p>Hello folks!
-It&rsquo;s <a href="http://tech.namshi.io/blog/categories/techthursday/">#TechThursday</a> at <a href="http://twitter.com/techNamshi">#namshi</a></p>
+    <title type="html"><![CDATA[Lightning talks #2]]></title>
+    <link href="http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016/"/>
+    <updated>2016-01-25T12:08:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2016/01/25/lighting-talks-20-01-2016</id>
+    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/lighting-talks-2.png"></p>
 
-<p>This week we held our first <a href="http://tech.namshi.io/blog/2015/04/26/lighting-talks-1/">&ldquo;lighting talks&rdquo; session</a> with a lot of new and useful insight on tools and libraries!</p>
-
-<p>We also realease another oss library for nodejs <a href="https://www.npmjs.com/package/mysql2-promise">mysql2-promise</a> that is based on <a href="https://github.com/sidorares/node-mysql2">node-mysql2</a> and let you take advantage of client-side query prepare/escape, connection pooling and <a href="https://github.com/sidorares/node-mysql2#documentation">other features</a> that are not in the <a href="https://github.com/felixge/node-mysql">node-mysql</a> library. Thanks to <a href="http://tech.namshi.io/team/#Hossam%20Faris">Hossam</a> for this!</p></blockquote>
-
-<p><strong>And here is the list of awesome links we found this week!</strong></p>
-
-<ul>
-<li><p><a href="http://facebook.github.io/jest/">Jest: painless javascript unit testing</a></p></li>
-<li><p><a href="https://medium.com/i-m-h-o/the-new-retirement-age-is-thirty-547114ab60ef">The New Retirement Age Is Thirty</a></p></li>
-<li><p><a href="http://arstechnica.com/tech-policy/2015/04/15/meet-the-e-voting-machine-so-easy-to-hack-it-will-take-your-breath-away/">Meet the e-voting machine so easy to hack, it will take your breath away</a></p></li>
-</ul>
-
+<blockquote><p>At Namshi, as you probably know, we do several activities in parallel, like &ndash; small presentations about new technologies,
+showcases of the latest projects, watching interesting conference talks, etc.
+Sometimes we get together and some of the team members give a small presentation, lightning talks, about something they found really interesting.
+Here is a recap of the last lightning talks we had, and we hope, like the weekly newsletter, you will find it interesting as well!</p></blockquote>
 
 <!-- more -->
 
 
+<p><a href="/team/#Alessandro%20Cinelli%20(cirpo">Cirpo</a></p>
+
+<p><strong>My billion dollar mistake</strong></p>
+
+<p>How the invention of the null reference is affecting the software industry:</p>
+
+<iframe src="https://docs.google.com/presentation/d/1OQCFWKeGYJbNWy5z0O1IG8I07SsxOtwQjfohhBZo3mc/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team/#Filippo%20De%20Santis">Filo</a></p>
+
+<p><a href="letsencrypt.org">Let’s Encrypt</a> is a free, automated, and open certificate authority (CA), run for the public’s benefit.</p>
+
+<p>The idea behind this project is to push for a more secure, transparent and open web. It provides free TLS/SSL certificates in an automated way, developing all its tools as open source projects</p>
+
+<iframe src="https://docs.google.com/presentation/d/1ztJha7JaJP087YJ1l28l42sVkqBNjbCgm0oAz0lrj_g/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team#David%20Funaro">David</a></p>
+
+<p><strong>Freshshell</strong>
+ Your terminal is really personal thing: during your career you probably change its features with plugins, configuration and everything that can be useful for you. So why not automate the way you can configure it? Think what is happening every time you have a brand new you pc in front of you &hellip; or even working with multiple computers (home, work).</p>
+
+<iframe src="https://docs.google.com/presentation/d/1TnaYDqk0uw36oEiuWx6H_HVM0sMwULjej78MoS4ngmE/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+
+<hr />
+
+
+<p><a href="/team/#Ayham%20Alzoubi">Ayham</a></p>
+
+<p><strong>Boomerang, SOAP &amp; REST Client</strong></p>
+
+<p>It&rsquo;s a really powerful Chrome extension.
+It lets you upload the WSDL and then you can create a request, it will create the structure for you and with the default values.
+You can debug and save the requests and responses, change the http headers and parameters, and also you can use different types of authentication, import/export  to json file to save your projects.
+<a href="https://chrome.google.com/webstore/detail/boomerang-soap-rest-clien/eipdnjedkpcnlmmdfdkgfpljanehloah?hl=en">Check it out</a></p>
+
+<hr />
+
+
+<p><a href="/team#Mohamed%20Amin">Amin</a></p>
+
+<p>He gave an introduction to <strong>Flexbox</strong> and <strong>css3</strong>. To get a great overview about Flexbox just browse  <a href="https://egghead.io/lessons/misc-flexbox-fundamentals">egghead.io</a>
+You can play with his examples <a href="http://codepen.io/Mohamedamin/pen/xZdBNg">here</a></p>
+
+<hr />
+
+
+<p><a href="/team#Shidhin%20CR">Shidhin</a></p>
+
+<p><a href="http://emmet.io/">Emmet</a> ( previously known as Zen coding ) is a plugin to enhance development workflow. By using simple css-selectors and html short-codes, it helps to generate the code snippets in seconds."</p>
+
+<iframe src="https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+<p><a href="https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.gc6f73a04f_0_42">https://docs.google.com/presentation/d/1saQ0gWyXb_VhNq39WgjxNZzK36a3C0lIwD9kVz9ZmNk/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.gc6f73a04f_0_42</a></p>
+
+<hr />
+
+
+<p><a href="/team/#Alessandro%20Nadalin">Alex</a></p>
+
+<p>Alex gave us a show case about interesting libraries he found on github:</p>
+
 <ul>
-<li><p><a href="http://spf13.com/post/soap-vs-rest">REST vs SOAP, the difference between soap and rest</a></p></li>
-<li><p><a href="http://davidwalsh.name/geolocation-api">Geolocation API</a></p></li>
-<li><p><a href="https://github.com/findhit/snitcher">Spies for errors on node processes and reports to your dev team</a></p></li>
-<li><p><a href="http://www.slideshare.net/carlinscuderi/the-other-side-of-html">The Other Side of HTML</a></p></li>
-<li><p><a href="http://www.slideshare.net/petegoodliffe/becoming-a-better-programmer-47411490">Becoming a Better Programmer</a></p></li>
-<li><p><a href="http://www.josebalius.com/react-native-the-future-is-here/">React Native &ndash; The future is here</a></p></li>
-<li><p><a href="https://medium.com/@cassiozen/flux-cargo-culting-3cae9ff27c0c">Flux Cargo-Culting</a></p></li>
-<li><p><a href="https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1">JSConf UY: Flux &ndash; Those who forget the past&hellip;</a></p></li>
-<li><p><a href="http://blog.siftscience.com/blog/2015/how-we-built-it">How we rebuilt our app on React and Dropwizard</a></p></li>
-<li><p><a href="http://research.google.com/pubs/pub43447.html">Flywheel: Google&rsquo;s Data Compression Proxy for the Mobile Web</a></p></li>
-<li><p><a href="http://arxiv.org/pdf/quant-ph/9809016v2.pdf">An Introduction to Quantum Computing forNon-Physicists</a></p></li>
-<li><p><a href="http://www.quirksmode.org/blog/archives/2015/02/chrome_continue.html">Chrome continues to fall apart at brisk pace</a></p></li>
-<li><p><a href="http://www.rich-harris.co.uk/ramjet/">Show HN: Ramjet.js – Morph DOM elements into each other</a></p></li>
-<li><p><a href="http://buff.ly/1GEUbgd">UAE firms struggle to search applicants with technical skills</a></p></li>
-<li><p><a href="http://buff.ly/1bcUKlT">Docker Without Docker</a></p></li>
-<li><p><a href="http://buff.ly/1OCtgIW">How Blackfire leverages Docker</a></p></li>
-<li><p><a href="http://buff.ly/1ELV8FP">Plugins for golang</a></p></li>
-<li><p><a href="http://buff.ly/1FthCdE">the creator of redis has just opensourced disque, an in-memory, distributed message broker</a></p></li>
-<li><p><a href="http://buff.ly/1Igt5Ok">Lessons From Jack Ma</a></p></li>
-<li><p><a href="http://buff.ly/1J1AFur">Zalando, searching for world-class engineers in Dublin</a></p></li>
-<li><p><a href="http://buff.ly/1HHod4n">Versioned APIs with Express</a></p></li>
-<li><p><a href="http://buff.ly/1HGzyBw">&ldquo;This is the fastest port scanner. It can scan the entire Internet in under 6 minutes, sending 10M packets/sec&rdquo;</a></p></li>
-<li><p><a href="http://buff.ly/1I0bkUJ">Vault, a tool for managing secrets by HashiCorp</a></p></li>
-<li><p><a href="https://medium.com/pachyderm-data/lets-build-a-modern-hadoop-4fc160f8d74f">Pachyderm: A modern alternative to Hadoop</a></p></li>
-<li><p><a href="http://www.turnkeylinux.org/blog/pyproject-pub">A simple Python project template</a></p></li>
-<li><p><a href="http://www.computerweekly.com/feature/Apache-Spark-speeds-up-big-data-decision-making">Spark speeds up big data decision-making</a></p></li>
-<li><p><a href="http://radar.oreilly.com/2015/04/more-tools-for-managing-and-reproducing-complex-data-projects.html">More tools for managing and reproducing complex data projects</a></p></li>
-<li><p><a href="http://vansande.org/2015/03/22/unit_testing_with_mocks_in_node_js">unit testing with mocks in node js</a></p></li>
-<li><p><a href="http://nathanleclaire.com/blog/2015/04/27/automating-docker-logging-elasticsearch-logstash-kibana-and-logspout">automating-docker-logging-elasticsearch-logstash-kibana-and-logspout</a></p></li>
-<li><p><a href="http://vincent.composieux.fr/article/run-a-symfony-application-using-docker-and-docker-compose">run a symfony application using docker and docker compose</a></p></li>
-<li><p><a href="http://blog.blackfire.io/how-we-use-docker.html">how blackfire use docker</a></p></li>
-<li><p><a href="https://medium.com/the-traveled-ios-developers-guide/making-promises-417f13da901f">making promises</a></p></li>
-<li><p><a href="http://java.dzone.com/articles/evolution-software-development">evolution software development</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-7-dependency-injection-improvements">new in symfony 2.7 dependency injection improvements</a></p></li>
-<li><p><a href="https://speakerdeck.com/pazguille/es6-in-production">es6 in production</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-7-form-and-validator-updates">new in symfony 2.7 form and validator updates</a></p></li>
-<li><p><a href="http://symfony.com/blog/new-in-symfony-2-7-the-new-asset-component">new in symfony 2.7 the new asset component</a></p></li>
+<li><a href="https://github.com/hacksparrow/remote.js">remote.js</a></li>
+<li><a href="https://github.com/lukasmartinelli/nigit">nigit</a></li>
+</ul>
+
+
+<p>And he showed us his first steps/experiments with <a href="https://webpack.github.io/">Webpack</a>, the module bundler:</p>
+
+<ul>
+<li><a href="https://github.com/odino/webpack-example">https://github.com/odino/webpack-example</a></li>
+<li><a href="https://github.com/odino/dev/blob/master/play/Dockerfile">https://github.com/odino/dev/blob/master/play/Dockerfile</a> / <a href="https://github.com/odino/dev/blob/master/aliases#L4-L6">https://github.com/odino/dev/blob/master/aliases#L4-L6</a></li>
 </ul>
 
 ]]></content>

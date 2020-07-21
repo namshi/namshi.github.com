@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: SSH | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: ssh | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/ssh/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-09-10T12:39:27+00:00</updated>
+  <updated>2020-07-21T09:15:57+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,25 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Newsletter #93]]></title>
-    <link href="http://namshi.github.io/blog/2015/06/04/newsletter-number-93/"/>
-    <updated>2015-06-04T13:48:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2015/06/04/newsletter-number-93</id>
-    <content type="html"><![CDATA[<h2>TechThursday is here!</h2>
+    <title type="html"><![CDATA[Newsletter #102]]></title>
+    <link href="http://namshi.github.io/blog/2015/08/06/newsletter-number-102/"/>
+    <updated>2015-08-06T13:15:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2015/08/06/newsletter-number-102</id>
+    <content type="html"><![CDATA[<blockquote><p>Guess what? It&rsquo;s TechThursday again!</p>
 
-<p><strong>Yet another post of our weekly newsletter to make your weekend more enjoyable :)</strong></p>
-
-<h3>Team updates:</h3>
-
-<p>Team congratulates <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Odino</a> for his wedding that will be held today :)</p>
-
-<h3>and here the links:</h3>
+<p>Devour this awesome list of links during the upcoming weekend folks!</p></blockquote>
 
 <ul>
-<li><p><a href="http://blogs.windows.com/bloggingwindows/2015/06/01/hello-world-windows-10-available-on-july-29/">Hello World: Windows 10 Available on July 29</a></p></li>
-<li><p><a href="http://blog.500tech.com/is-reactjs-fast/">Is ReactJS really fast?</a></p></li>
-<li><p><a href="https://steveedson.co.uk/javascript/es6/">Using the future of JavaScript, today</a></p></li>
-<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
+<li><p><a href="http://blog.codeship.com/testing-in-go/">Testing in GO</a></p></li>
+<li><p><a href="http://blog.izs.me/post/59142742143/designing-apis-for-asynchrony">Designing APIs for Asynchrony</a></p></li>
+<li><p><a href="https://github.com/servant-app/JAWS">JAWS: The Javascript + AWS Stack</a></p></li>
+<li><p><a href="http://codedoodl.es/">codedoodl.es: a showcase of curated creative coding sketches</a></p></li>
+<li><p><a href="http://lgvalle.github.io/2015/08/04/flux-architecture">Flux architecture on android</a></p></li>
 </ul>
 
 
@@ -40,27 +35,83 @@
 
 
 <ul>
-<li><p><a href="http://www.didoo.net/2015/06/web-tools-and-walls/">Web, tools and walls</a></p></li>
-<li><p><a href="http://motherboard.vice.com/en_uk/read/how-is-critical-life-or-death-software-tested">How Is Critical &lsquo;Life or Death&rsquo; Software Tested?</a></p></li>
-<li><p><a href="http://blogs.technet.com/b/dataplatforminsider/archive/2015/05/04/sql-server-2016-public-preview-coming-this-summer.aspx">SQL 2016-What&rsquo;s new</a></p></li>
-<li><p><a href="http://www.dbi-services.com/index.php/blog/entry/sql-server-2016-live-query-statistics">SQL Server 2016: Live query statistics</a></p></li>
-<li><p><a href="http://www.washingtonpost.com/sf/business/2015/05/31/net-of-insecurity-part-2/">The long  life of a quick ‘fix’</a></p></li>
-<li><p><a href="http://githubengineering.com/deploying-branches-to-github-com/">Deployments at Github.com</a></p></li>
-<li><p><a href="http://symfony.com/blog/psr-7-support-in-symfony-is-here">PSR-7 Support in Symfony is Here</a></p></li>
-<li><p><a href="https://kinsta.com/blog/hhvm-vs-php-7/">HHVM vs PHP 7 – The Competition Gets Closer!</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/developer-preview-of-aws-sdk-for-go-is-now-available/">Official Announcement of AWS Golang SDK Dev. Preview</a></p></li>
-<li><p><a href="http://blogs.msdn.com/b/powershell/archive/2015/06/03/looking-forward-microsoft-support-for-secure-shell-ssh.aspx">Looking Forward: Microsoft:  Support for Secure Shell (SSH) &ndash; MSDN Blogs</a></p></li>
-<li><p><a href="https://getmondo.co.uk/blog/">Mondo – It&rsquo;s time for a new kind of bank</a></p></li>
-<li><p><a href="http://www.passportjs.org/">Passport – Simple, unobtrusive authentication for Node.js</a></p></li>
-<li><p><a href="http://bit.ly/1SXtMkg">Extremely defensive PHP</a></p></li>
-<li><p><a href="http://bit.ly/1FVjL0k">Docker for PHP developers</a></p></li>
-<li><p><a href="http://bit.ly/1dggqz3">ChatOps: Everything about deployments right inside your chat</a></p></li>
-<li><p><a href="http://octopress.org/2015/01/15/octopress-3.0-is-coming/">Octpress 3.0 is comming</a></p></li>
-<li><p><a href="http://www.thatjsdude.com/interview/js1.html#removeDuplicate">JS: Interview Algorithm</a></p></li>
-<li><p><a href="https://sassline.com/">Set text on the web to a baseline grid with Sass &amp; rems</a></p></li>
-<li><p><a href="http://www.flexbox.website/">Building Flexbox website</a></p></li>
-<li><p><a href="http://sakurity.com/blog/2015/05/21/starbucks.html">Hacking Starbucks for unlimited coffee</a></p></li>
-<li><p><a href="https://aws.amazon.com/blogs/aws/developer-preview-of-aws-sdk-for-go-is-now-available">Developer Preview of AWS SDK for Go is Now Available</a></p></li>
+<li><p><a href="http://engineering.linkedin.com/architecture/brief-history-scaling-linkedin?utm_content=buffer09de4">A brief history of scaling linkedin</a></p></li>
+<li><p><a href="https://github.com/maxogden/mississippi">A collection of useful stream utility modules</a></p></li>
+<li><p><a href="https://github.com/FiloSottile/whosthere">A ssh server that knows who you are. $ ssh whoami.filippo.io</a></p></li>
+<li><p><a href="http://www.r2d3.us/visual-intro-to-machine-learning-part-1/">A visual introduction to machine learning</a></p></li>
+<li><p><a href="https://blog.algolia.com/instant-search-blog-documentation-jekyll-plugin/?utm_content=bufferacccd">Add instant search to your blog or documentation using our jekyll plugin</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=njcHzGYv7nI">An introduction to bdd from konstantin kudryashov</a></p></li>
+<li><p><a href="https://github.com/robdmc/pandashells">Bringing the python data stack to the shell prompt </a></p></li>
+<li><p><a href="https://www.graylog.org/centralize-your-docker-container-logging-with-graylog-native-integration/">Centralized docker container logging with native graylog integration | open source log management with graylog</a></p></li>
+<li><p><a href="https://github.com/rushter/data-science-blogs">Data science blogs</a></p></li>
+<li><p><a href="http://codebetter.com/kylebaley/2015/08/04/docker-is-coming-whether-you-like-it-or-not/">Docker is coming whether you like it or not | kyle baley</a></p></li>
+<li><p><a href="http://michael.robellard.com/2015/07/dont-test-with-sqllite-when-you-use.html">Don&rsquo;t test with sqllite when you use postgres in production</a></p></li>
+<li><p><a href="https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841">Exploring es2016 decorators</a></p></li>
+<li><p><a href="http://arstechnica.com/information-technology/2015/07/facebook-our-drones-will-use-lasers-to-deliver-10gbps-internet-access/">Facebook: our drones will use lasers to deliver 10gbps internet access</a></p></li>
+<li><p><a href="https://medium.com/javascript-scene/get-ready-for-the-future-f4cf7610b985">Get ready for the future — javascript scene — medium</a></p></li>
+<li><p><a href="http://blog.golang.org/gophercon2015">Gophercon 2015 roundup &ndash; the go blog</a></p></li>
+<li><p><a href="https://healthchecks.io/">Healthchecks.io &ndash; get notified when your cron jobs fail</a></p></li>
+<li><p><a href="http://radar.oreilly.com/2015/07/how-an-enterprise-begins-its-big-data-journey.html">How an enterprise begins its big data journey</a></p></li>
+<li><p><a href="http://avi.im/blag/2015/multiple-git-emails/">How i am maintaining multiple emails for git on a same machine</a></p></li>
+<li><p><a href="https://medium.com/@JakeCooper/how-i-hacked-the-oneplus-reservation-system-120ea1a7ad82">How i “hacked” the oneplus reservation system. — medium</a></p></li>
+<li><p><a href="http://nerds.airbnb.com/how-marketplace-search-differs-from-traditional-search/?utm_content=buffer0af8b">How marketplace search differs from traditional search</a></p></li>
+<li><p><a href="http://engineering.linkedin.com/sre/introducing-nurse-auto-remediation-linkedin?utm_content=buffer7d077">Introducing nurse: auto-remediation at linkedin</a></p></li>
+<li><p><a href="https://developer.atlassian.com/blog/2015/08/is-your-team-ready-for-devops/">Is your team ready for devops?</a></p></li>
+<li><p><a href="http://json-ld.org/">Json-ld &ndash; json for linking data</a></p></li>
+<li><p><a href="https://github.com/MacGapProject/MacGap1">Macgapproject/macgap1</a></p></li>
+<li><p><a href="http://tech-blog.flipkart.net/2015/08/mobile-number-login/?utm_content=buffer34106">Mobile number login</a></p></li>
+<li><p><a href="https://github.com/dbcli/mycli">Mycli: a mysql client with auto-completion and syntax highlighting</a></p></li>
+<li><p><a href="http://symfony.com/blog/new-in-symfony-2-8-redesigned-web-debug-toolbar">New in symfony 2.8: redesigned web debug toolbar (symfony blog)</a></p></li>
+<li><p><a href="http://azimi.me/2015/07/30/non-blocking-async-json-parse.html">Non-blocking asynchronous json.parse using the fetch api</a></p></li>
+<li><p><a href="https://github.com/bevacqua/react-dragula">React-dragula: drag and drop so simple it hurts</a></p></li>
+<li><p><a href="http://instagram-engineering.tumblr.com/post/125356491637/scaling-the-datagram-team">Scaling the datagram team &ndash; instagram engineering</a></p></li>
+<li><p><a href="http://www.dragonbe.com/2015/07/speeding-up-database-calls-with-pdo-and.html">Speeding up database calls with pdo and iterators</a></p></li>
+<li><p><a href="http://blog.netflix.com/2015/08/starting-now-at-netflix-unlimited.html?m=1">Starting now at netflix: unlimited maternity and paternity leave</a></p></li>
+<li><p><a href="http://www.techbar.me/stopping-docker-containers-gracefully/">Stopping docker containers gracefully &ndash; techbar</a></p></li>
+<li><p><a href="https://programmers.stackexchange.com/questions/23121/why-are-good-programmers-referred-to-as-ninjas">Terminology &ndash; why are good programmers referred to as ninjas? &ndash; programmers stack exchange</a></p></li>
+<li><p><a href="http://testinfra.readthedocs.org/en/latest/index.html">Testinfra test your infrastructure</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=URSWYvyc42M">The magic tricks of testing by sandi metz</a></p></li>
+<li><p><a href="http://readwrite.com/2015/07/29/devops-people-not-technology">The secret of devops: it&rsquo;s always been about people, not technology</a></p></li>
+<li><p><a href="https://www.linkedin.com/pulse/who-boss-da-house-frontend-vs-backend-fullstack-roma-rimsha">Who is the boss in da house? frontend vs backend vs fullstack</a></p></li>
+<li><p><a href="https://datafloq.com/read/prediction-is-is-not-part-of-statistics/1383">Why prediction is / is not part of statistics</a></p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Newsletter #45]]></title>
+    <link href="http://namshi.github.io/blog/2014/07/03/newsletter-number-45/"/>
+    <updated>2014-07-03T11:30:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/07/03/newsletter-number-45</id>
+    <content type="html"><![CDATA[<p>Welcome to <strong>TechThursday</strong>!</p>
+
+<h2>Announcements</h2>
+
+<p>This week we say <a href="http://tech.namshi.io/blog/2014/07/02/goodbye-lucianino/">goodbye</a> to @luciano, you will be missed!</p>
+
+<p>We&rsquo;ve been working on <a href="https://github.com/namshi/clusterjs">clusterjs</a>! Take a look at the <a href="http://tech.namshi.io/blog/2014/06/27/clusterjs-clusterify-your-nodejs-applications-and-achieve-zero-downtime-deployments/">blog post</a> Today we released version 0.7!</p>
+
+<p>Our @Cirpo will be speaking at the PHP North East Conference in Boston in a September! Read about his presentation <a href="http://tech.namshi.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/">here</a></p>
+
+<h2>Newsletter</h2>
+
+<ul>
+<li><a href="https://github.com/codemix/fast.js">Faster user-land re-implementations for several common built-in native JavaScript functions</a></li>
+<li><a href="http://blog.embed.ly/post/89265229166/what-twitter-isnt-telling-you-about-gifs">What Twitter Isn’t Telling You About GIFs</a></li>
+<li><a href="http://www.breefield.com/essays/affiliate">How I Made $3,000 with 90 Lines of Code</a></li>
+<li><a href="http://www.akamai.com/worldcup">Akamai delivers for the world cup</a></li>
+<li><a href="http://symfony.com/blog/first-online-symfony-community-hack-day-july-5th">First Online Symfony Community Hack Day: July 5th!</a></li>
+<li><a href="http://ng-inspector.org/">ng-inspect like a boss</a></li>
+<li><a href="http://www.smashingmagazine.com/2014/06/27/communicating-effectively-in-projects/">How To Communicate Effectively in IT Projects</a></li>
+<li><a href="http://blog.arvidandersson.se/2014/06/17/best-practices-in-modern-web-projects">Best practices in modern web projects</a></li>
+<li><a href="http://daemon.io/">PHP Deamon &ndash; Asynchronous server-side framework for Web and network applications implemented in PHP</a></li>
+<li><a href="http://phansible.com/">An easy to use interface that helps you generate Ansible Playbooks for PHP based projects</a></li>
+<li><a href="http://serversforhackers.com/editions/2014/07/01/ssh-tricks/">SSH Tricks</a></li>
+<li><a href="http://shields.io/">GitHub badges as a service</a></li>
+<li><a href="http://php-and-symfony.matthiasnoback.nl/2014/01/php-the-future-of-packages">PHP &ndash; The Future of Packages</a></li>
+<li><a href="http://code.tutsplus.com/tutorials/refactoring-legacy-code-part-7-identifying-the-presentation-layer--cms-21593">Refactoring Legacy Code: Part 7 &ndash; Identifying the Presentation Layer</a></li>
+<li><a href="http://www.slideshare.net/cakper/2014-0407-php-spec-the-only-design-tool-you-need-4developers">PHPSpec &ndash; the only Design Tool you need</a></li>
 </ul>
 
 ]]></content>

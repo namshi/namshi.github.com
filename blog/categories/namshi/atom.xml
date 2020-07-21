@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: namshi | Tech @ Namshi.com]]></title>
+  <title><![CDATA[Category: Namshi | Tech @ Namshi.com]]></title>
   <link href="http://namshi.github.io/blog/categories/namshi/atom.xml" rel="self"/>
   <link href="http://namshi.github.io/"/>
-  <updated>2019-09-10T12:39:27+00:00</updated>
+  <updated>2020-07-21T09:15:57+00:00</updated>
   <id>http://namshi.github.io/</id>
   <author>
     <name><![CDATA[Namshi]]></name>
@@ -14,474 +14,240 @@
 
   
   <entry>
-    <title type="html"><![CDATA[7 (long) years later: how long it took to rewrite Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi/"/>
-    <updated>2019-01-10T11:44:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2019/01/10/7-long-years-later-how-long-it-took-to-rewrite-namshi</id>
-    <content type="html"><![CDATA[<p>I joined Namshi of the 1st of April (<em>what a joke!</em>) of 2012.
-Fast forward to around 7 years later&hellip;</p>
+    <title type="html"><![CDATA[Namshi's experience with Symfony2]]></title>
+    <link href="http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2/"/>
+    <updated>2014-12-16T15:53:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/12/16/namshis-experience-with-symfony2</id>
+    <content type="html"><![CDATA[<p>Folks, time for a quick one!</p>
 
-<p>A couple weeks ago, I tried to login into one of our legacy
-internal services here at Namshi: to my surprise, I was
-redirected to a brand new, flashy app that seemed to have
-replaced that good old monolith.</p>
+<p><a href="https://connect.sensiolabs.com/profile/javier.eguiluz">Javier</a>
+from SensioLabs was kind enough to ask whether we had some
+interesting feedbacks about using Symfony2 in an SOA, and
+that led to writing a small write-up about our experience.</p>
 
-<p>What does that mean?</p>
+<p>So, head over to the Symfony blog to read how things
+are panning out after <a href="http://symfony.com/blog/going-soa-with-symfony2-a-year-and-a-half-down-the-road">a year and a half of SOA with
+Symfony2</a>.</p>
 
-<!-- more -->
-
-
-<p>It means multiple things: first and foremost, our team
-rocks! They completely replaced one of our oldest services
-without people (granted, <em>people like me</em>) noticing.</p>
-
-<p>But the most important thing I realized was that was
-the last (and oldest) service which was in use at the
-time I joined Namshi, around 7 years ago.</p>
-
-<p>That&rsquo;s it: our team managed to rewrite the whole of Namshi
-over the past 7 years, a feat that reminds me of the <a href="http://highscalability.com/blog/2014/2/17/how-the-aolcom-architecture-evolved-to-99999-availability-8.html">words
-of Dave Hagler, systems engineer at AOL</a>:</p>
-
-<p><blockquote><p>The architecture for AOL.com is in it’s 5th generation.  It has essentially been rebuilt from scratch 5 times over two decades.  The current architecture was designed 6 years ago.  Pieces have been upgraded and new components have been added along the way, but the overall design remains largely intact.  The code, tools, development and deployment processes are highly tuned over 6 years of continual improvement, making the AOL.com architecture battle tested and very stable.</p></blockquote></p>
-
-<p>We didn&rsquo;t really start our &ldquo;SOA&rdquo; mission until 2013, when
-it became clear that our 2 monoliths (frontend &amp; backend)
-wouldn&rsquo;t be able to help as much while we were trying to
-scale in a lean way: we first started building APIs for our
-catalog, checkout, order processing&hellip;   &hellip;until late
-December 2018, when the last service (codename <code>bob</code>)
-was decommissioned.</p>
-
-<p>We&rsquo;ve come a long way, I must admit it. What we achieved
-over almost a decade here makes me proud of being one of
-the earliest Namshees.</p>
-
-<p>I want to thank Ala and <a href="/team/#Sakina%20Sagarwala">Sakina</a> for rewriting <code>bob</code>, now
-only a memory, as well as <a href="/team/#Razan%20Bilwani">Razan</a> and <a href="/team/#Ayham%20Alzoubi">Ayham</a> who are the
-only other members of our tech team I had the pleasure
-to work together with since the start of my adventure here.</p>
-
-<p>What a ride, folks!</p>
+<p><img class="center <a" src="href="https://i.imgflip.com/fdjy2.jpg">https://i.imgflip.com/fdjy2.jpg</a>"></p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Upgrading our search server towards high availability and beyond]]></title>
-    <link href="http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond/"/>
-    <updated>2017-02-06T12:00:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2017/02/06/towards-high-availability-and-beyond</id>
-    <content type="html"><![CDATA[<p>In this post, we are going to highlight how and why we did a solr upgrade from solr v3 to solr-cloud v6 with no downtime.</p>
+    <title type="html"><![CDATA[winston-graylog2: a new life under Namshi]]></title>
+    <link href="http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi/"/>
+    <updated>2014-10-27T10:32:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/10/27/winston-graylog2-a-new-life-under-namshi</id>
+    <content type="html"><![CDATA[<p>As our herd of node.js apps grows, we soon needed a way to keep an eye on them.
+Having already in out tool belt a <a href="http://www.graylog2.org/">graylog2</a> facility in place, looking for a way to leverage it was the most natural thing to do.</p>
 
-<!-- more -->
+<p>Because of its nice modular <code>transports feature</code> our node-logging weapon of choice is <a href="https://github.com/flatiron/winston">winston</a>, the <code>graylog2</code> transport library looked a bit alone though and in need of a maintainer.
+I our usual <strong>give back</strong> spirit we choose to adopt the lib instead of publishing a new one, and today we merged our 1st PR! :)</p>
 
+<p>As for now our intervention was isolated to move away from the custom GELF protocol implementation, relying instead on the <a href="https://github.com/Wizcorp/node-graylog2">node-graylog2</a> library:
+they&rsquo;ll most likely do a better job than us on the protocol side, and we&rsquo;ll be able to focus more on the winston integration.
+We also started introducing some basic tests: definitely some better work can be done on this side ;)</p>
 
-<p>We have adopted solr v3 as our search server since the beginning because solr has a nice schema and a very responsive search indexer.
-The old indexer was running on one solr server and whenever we needed to change the schema or trigger a full import we had to follow these steps:</p>
+<p>So here it is: <a href="https://github.com/namshi/winston-graylog2">winston-graylog2</a>
+and here&rsquo;s briefly how you use it:</p>
 
-<ol>
-<li>Unload the core<code>[SOLR_URL]/admin/cores?action=UNLOAD&amp;core=[CORE_NAME]</code></li>
-<li>Recreate the core with new schema changes, if any: <code>[SOLR_URL]/admin/cores?action=CREATE&amp;name=[CORE_NAME]&amp;config=[solrconfig.xml]&amp;schema=[schema.xml]</code></li>
-<li>Delete and then then re-import all documents</li>
-<li>Commit the updates <code>[SOLR_URL]/update?commit=true</code> to see it effective</li>
-</ol>
+<p>the usual
+<code>bash
+npm install winston-graylog2
+</code>
+and then</p>
 
+<p>```javascript
+  var winston = require(&lsquo;winston&rsquo;);
+  winston.add(require(&lsquo;winston-graylog2&rsquo;), options);</p>
 
-<p>The major drawback with this approach is that if the solr machine down it takes time to boot up another machine and re-import all the products again.</p>
+<p>```</p>
 
-<h2>How do we handle our solr updates?</h2>
+<p>or</p>
 
-<h3>Partial imports:</h3>
+<p>```javascript
+var WinstonGraylog2 = require(&lsquo;winston-graylog2&rsquo;);
+var logger = new(winston.Logger)({</p>
 
-<p>Happens periodically: get the latest updates from DB and then update/delete only the changed documents in the given time frame.</p>
-
-<h3>Full imports:</h3>
-
-<p>Happens on request or on schema update: clear the indexer completely then insert all available documents.</p>
-
-<p><img src="http://www.employeescreen.com/wp-content/uploads/2015/06/Upgrade-e1434047810231.jpg" alt="time to upgrade" /></p>
-
-<p><a href="http://lucene.apache.org/solr/features.html">Solr has lots of improvements</a> and by using Solr-cloud in case of any solr instance failure we are not screwed.
-The new structure is a solr cluster, and contains 3 zookeeper nodes with 2 solr cloud nodes.
-<img src="/images/solr-cluster.png" alt="Solr cluster!" /></p>
-
-<h2>How do we handle the solr clients app during transition with confidence and no downtime on live environment?</h2>
-
-<ul>
-<li>We built a nodeJS service to handle periodic solr imports. The <a href="https://www.npmjs.com/package/zindex">Zindex library</a> is used to import data from mySQL (backend source) to solr.</li>
-<li>We kept the old solr server running side by side with the new solr on live environment.</li>
-<li>We made a change in our product catalog API that allowed us to return a response using the new or old solr, by simply using a special parameter. This allowed us to compare results coming from the old and new solr.</li>
-<li>Finally, we switched catalog requests to use the new solr one locale at a time till all supported locales were served with the new solr.</li>
-</ul>
-
-
-<h2>During the upgrade we faced some challenges &ndash; we are listing them below and how we dealt with them:</h2>
-
-<h3>How to revert unwanted updates?</h3>
-
-<p>After a full import we tried to run some validations to accept or reject the import, since <a href="https://wiki.apache.org/solr/UpdateXmlMessages#A.22rollback.22">solr supports rollbacks!</a>
-But we were disappointed because <a href="https://issues.apache.org/jira/browse/SOLR-4896">solr cloud mode doesn&rsquo;t support rollbacks</a>
-We solved this issue by <strong>saving the import in temporary files, running validations on these files, then commit</strong></p>
-
-<h3>How to swap collections?</h3>
-
-<p>Another issue we faced was that during the full imports the product count in our catalog API decreased significantly, then increased slowly till the import finished.
-The reason behind this is that we were deleting all products during the full import, then re-adding the products so solr  would show updates as fast as possible.
-To solve this issue we were thinking about <a href="https://wiki.apache.org/solr/CoreAdmin#SWAP">swapping</a> but this, again, was not supported in solr cloud
-So instead we used collections alias &ndash; every time we need to do a full import we <strong>create a new collection and after the updates and validations are done, we change the alias and delete the old collection</strong>.</p>
-
-<p>```sh</p>
-
-<h2>Get the current collection OM-1</h2>
-
-<p>curl [SOLR_HOST]/solr/admin/collections?action=LIST</p>
-
-<p>#</p>
-
-<h1>{</h1>
-
-<h1>&ldquo;responseHeader&rdquo;: {</h1>
-
-<h1>&ldquo;status&rdquo;: 0,</h1>
-
-<h1>&ldquo;QTime&rdquo;: 0</h1>
-
-<h1>},</h1>
-
-<h1>&ldquo;collections&rdquo;: [</h1>
-
-<h1>&ldquo;OM-1&rdquo;</h1>
-
-<h1>]</h1>
-
-<h1>}</h1>
-
-<h2>Create the new collection OM-2</h2>
-
-<p>curl [SOLR_HOST]//solr/admin/collections?Action=CREATE&amp;name:OM-2</p>
-
-<h2>Create the new data file and post it to the new collection</h2>
-
-<p>curl -XPOST -d @updates.json [SOLR_HOST]/solr/OM-2/update</p>
-
-<h2>Override the alias to point to the new collection OM-2</h2>
-
-<p>curl [SOLR_HOST]/solr/admin/collections?action=CREATEALIAS&amp;collections=OM-2&amp;name=OM</p>
-
-<h2>Delete the old collection</h2>
-
-<p>curl [SOLR_HOST]/solr/admin/collections?action=DELETE&amp;name=OM-1&amp;wt=json
-```</p>
-
-<h3>How to do a full import for all collections without causing high CPU usage?</h3>
-
-<p>In our architecture we have a collection for each country and since all countries share similar documents with small variations, like price, we use one mysql source and fork the backend to import updates for each country <a href="https://www.npmjs.com/package/zindex">(see Zindex)</a>
-When we pushed updates for all countries in parallel, the solr CPU usage spiked and in order to solve this, we had to <strong>do the update synchronously with <a href="https://github.com/tj/co">co</a></strong>
-```js
-  return prepareSolr(availableCountries, options).then(() => {</p>
-
-<pre><code>return co(function* () {
-  for(var i = 0; i &lt; availableCountries.length; i++) {
-    var country = availableCountries[i];
-    var result = yield importProducts(country, options);
-    logger.info(`Solr Import has been finished for country ${country} with result`, result);
-  }
-}).then(()=&gt;{
-    logger.info(`All solr countries finished!`);
-})
+<pre><code>    exitOnError: false,
+    transports: [new(WinstonGraylog2)(options)]
+  });
 </code></pre>
 
 <p>```</p>
 
-<p><img src="/images/solr-cpu-usage-spike.png" alt="CPU usage went down!" /></p>
+<p>Enjoy! :)</p>
 
-<h3>How to maintain solr cluster well?</h3>
-
-<p>Just like most of our services, we <strong><a href="https://www.docker.com/">dockerize it</a></strong>. We have a monitoring script that checks the container status and another one that checks the app status e.g zookeeper replication status and solr ping, if any check fails we get an alert and apply the necessary fix.</p>
-
-<p><img src="http://img.photobucket.com/albums/v418/bawanaal/MissionAccomplished.gif" alt="Mission Accomplished" /></p>
+<p>Publishing something new is always a great feeling, and it&rsquo;s even more fulfilling when it involves not letting a project die :)<br> So let us know if you like it and share the love with some RP!!!! ;)</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Breakpoint On Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi/"/>
-    <updated>2016-08-17T09:13:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/08/17/breakpoint-on-namshi</id>
-    <content type="html"><![CDATA[<p><img class="left" src="/images/posts/rainy-duabi.jpeg"></p>
-
-<p><span class="figcaption_hack">Rainy days in Dubai are rare! same as good places to work.</span></p>
-
-<p>Almost 2 years ago, I landed at the Dubai Airport on a flight that took off from
-Egypt and for several reasons, a flight that won’t have a return ticket back to
-Egypt (at least anytime soon, I hope).</p>
+    <title type="html"><![CDATA[The Namshees invade the USA...   ...with PHP (and many more)!]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php/"/>
+    <updated>2014-06-29T22:58:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/29/the-namshees-invade-the-usa-dot-dot-dot-dot-dot-dot-with-php</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;re a geek somewhere around Boston, in September,
+you definitely don&rsquo;t want to miss the
+<a href="http://www.northeastphp.org/">PHP North East</a>
+conference, which has an amazing lineup of
+<a href="http://www.northeastphp.org/speakers">speakers</a>
+and <a href="http://www.northeastphp.org/speakers/view/176/Alessandro-Cinelli">a surprise</a>
+from Dubai.</p>
 
 <!-- more -->
 
 
-<p>At the Airport I faced one issue with my Visa, and I was about to get denied
-entry: Only thanks to a polite Emirate police officer I was able to get through;
-a thing, I’ve been told later on, it was unprecedented, unheard of.</p>
+<p><img class="left <a" src="href="http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg">http://2014.phpday.it/wp-content/uploads/2014/03/cirpo.jpeg</a>" width="250"></p>
 
-<h3>The Oblivion</h3>
+<p>Among the plethora of <a href="http://www.northeastphp.org/agenda">interesting talks</a>
+there will be a (definitely) fun one, &ldquo;<a href="http://www.northeastphp.org/talks/view/352/PHP-is-the-king-nodejs-is-the-prince-and-Lua-is-the-fool">PHP is the king, NodeJS the price and Lua
+is the fool</a>&rdquo;
+given by our <a href="http://tech.namshi.io/team/#Alessandro%20Cinelli%20(cirpo)">Cirpo</a> who will entertain the crowd with some
+details on how we mesh a whole lot of languages and platforms
+together.</p>
 
-<p>Initially, when I was hired by Namshi, I was a designer comfortable around
-Photoshop and Css and, eventually, I had to learn a lot more in such a short
-period of time.</p>
+<p>Namshi&rsquo;s SOA is currently running on at least 4 different
+application platforms and Cirpo took the opportunity to share some insights
+about how we are doing it: it will be a <em>hands-on</em> talk focused on
+decision-making, benefits and pitfalls of running such a heterogeneous
+architecture and how crazy ideas (like flirting with Lua) could be a
+game-changer in your next long-term project.</p>
 
-<p>My first weeks went by with me sitting around people who were talking about
-stuff I didn’t understand, they were just doing their job normally, though,
-everything sounded mythical to me.</p>
+<p>Cirpo is no newbie to the world of speaking, as he already delivered
+a few talks in the past and, <a href="https://joind.in/user/view/956">judging by the ratings</a>,
+has a track record of nothing but success. Being a leader, at Namshi, doesn&rsquo;t mean
+to only set the tone for our team, but also to confront with the community,
+explain (and validate) our infrastructure and learn from the feedbacks we get back:
+Cirpo knows that very well and this will be a great experience from this
+standpoint.</p>
 
-<p>My first task involved creating an application that helps the Customer Care
-agents to speed up the lookup of customer details while they’re receiving a
-call.</p>
-
-<p>Imagine what I had to learn, to start building an angular application while,
-back then, I barely heard of Javascript as a programming language: the best I knew was to search StackOverflow to get something that would work … in jQuery!</p>
-
-<blockquote><p>It worked, … I don’t know how, but it did!</p></blockquote>
-
-<p>“It worked, … I don’t know how, but it did!” I said to my team mates and manager hundreds of times!</p>
-
-<p>You might think that life isn’t easy to grasp, <strong>but Javascript is much harder</strong> from a point of view of a designer who wants to code.<br>
-I kept fighting every day to get through with an output that would make me feel quite
-accomplished and I want to say that, honestly, it wasn’t an easy quest (and, by
-the way, wasn’t always successful either).</p>
-
-<p><img class="left" src="/images/posts/gb-amino.jpeg">
-<span class="figcaption_hack">Don’t leave your computer Unlocked, seriously, Don’t! A hard-learned lesson :D</span></p>
-
-<p><strong>Bottom line: </strong> those days, I always felt overwhelmed, not knowing what I
-should do most of the time; it was fun and exciting to learn but, make no
-mistake, nothing is harder on a productive former-designer than seeing his
-output not matching the one by his peers by any criteria.</p>
-
-<p>The only thing I knew was that I had to push through…</p>
-
-<h3>Light at the end of tunnel</h3>
-
-<p>Things started to make sense: now I don’t ask “what is that?” on every term that
-falls on my ears, I don’t struggle each time I want to use Promises or create a
-helper function, I started to see some patterns and cling to them.</p>
-
-<p>It was the light at the end of the tunnel, things started to make sense, I
-started to have an edge doing stuff and started to believe that I only lacked a
-much needed experience to be like my peers or even better, and this is something
-that I’m going to compensate by an over-dose of self-learning as I did before.</p>
-
-<br>
-
-
-
-
-<br>
-
-
-<p><img class="left" src="/images/posts/arabic_quote.jpeg"></p>
-
-<p>Anis Mansoor</p>
-
-
-<blockquote><p>If he knows well , he would know that he doesn’t.</p></blockquote>
-
-<p>That is a translated quote from an arabic wisdom saying, which describes the
-situation pretty well. I just got into the surface and I thought I already
-reached the nirvana!</p>
-
-<p>I came to realize the true light at the end of the tunnel, it was something said
-in one of several performance reviews that we hold on a monthly basis: ”Now, I
-know what I want to know, previously I had no idea how deep it was”.</p>
-
-<p><img class="left" src="/images/posts/tech-trivia.jpeg">
-<span class="figcaption_hack">One of the Code and Tech Trivias that took place recently, My team lost :S</span></p>
-
-<h3>Fast Forward</h3>
-
-<p>Now, I reached somewhere where I feel comfortable to talk about the previous
-events of these very condensed months.</p>
-
-<p>I would be happy to let you know that, finally, I did it, I prevailed, I became
-a super ninja full stack developer who knows about DB, Docker and knows a bunch
-of modern shiny tools and frameworks, can write Javascript while sleeping as
-well …</p>
-
-<p>But that isn’t true! (except the part of sleeping :)</p>
-
-<p>But the real accomplishment is that my mindset has changed! This is the true
-victory, I like to believe that now I think, plan and decide better! <strong>That</strong> is
-the real breakthrough for me!</p>
-
-<p>Technology doesn’t matter, it is always the matter of how you think your way out
-of a problem: I feel more competent with such a mindset rather than a handful of
-a skill-sets that aren’t properly utilized.</p>
-
-<h3>Takeaways</h3>
-
-<p>I didn’t want to sound self-promoting, I tried to be honest as much as I could,
-but the TL;DR for my last 2 years is:</p>
-
-<ol>
-<li>I kept saying “I don’t know how to do this”, and there was <strong>always</strong> someone
-willing to spend time to make sure that I got it</li>
-<li>I would had never got anywhere without a team, who doesn’t <strong>patronize</strong> me for
-not knowing things, they would gladly baby walk me to the point instead</li>
-<li>The right people and the right challenges are things that I have a little
-control over, but I always make sure I’m grateful to have.</li>
-<li>I’m not the smartest person in the room, which always put me under pressure.
-What made the difference, for me, is that I was <strong>self-conscious</strong> of my
-<strong>shortcomings</strong>. and most of time I had a plan to overcome this.</li>
-<li>I spent the first six month reading and watching courses heavily, it reminded me
-of 8 years ago when I was trying to kick off my graphic design career. Let’s be
-fair, nowadays, it is much easier to find the <a href="https://medium.com/@MohamedAmin88/web-designer-guide-to-front-end-stack-a8f72a2cd157#.clmhzr7rw">perfect learningmaterial</a> and this is something not to be taken lightly.</li>
-<li>On my first weeks, I was cheered for my first push to live fix, which was a
-really minor thing, but it greatly boosted my <strong>confidence</strong> and <strong>willingness</strong>
-to contribute more. Now, on a daily basis, I tackle bugs , add features then
-test them on the staging environment and single handedly deploy them live (which
-I am now privileged to do!) with just an approval from a peer developer on the
-Pull Request.</li>
-<li>…which takes us to The PR aka Pull Request challenge: arguably, I can say that
-30% of what I learnt was because of PRs; it was (and still is) not an easy job
-to get approval on you PR from your peers or even worse (if your doomed :D )
-from our VP of technology .</li>
-</ol>
-
-
-<br>
-
-
-<p><img src="http://odino.org/images/meme-odino.jpg" alt="" /></p>
-
-<ol>
-<li><p>It is one of the most common syndromes,  I-don’t-think-it-is-good-enough
-syndrome  , I have been pushed by teammates to contribute to open source and
-get over the shyness! this one of the things that I should have done really
-earlier and, as a note to self, I should do more often :)</p></li>
-<li><p><strong>Pair programming for the win; </strong> one of the nice perks that was a super
-catalyst for improving my programming skills. Nothing is better than to think
-with another mind and code together, I gained a lot by watching how someone more
-experienced tackles problems and breaks features down more than I learned from
-courses, reading or blog posts.</p></li>
-</ol>
-
-
-<p>At the end, this was a retrospective on my work/life at Namshi, to have a look
-at my current pace and give myself a bit of perspective on both past and
-foreseeable future.<br> My hope is that, the next time I look back, I see that I
-had more mistakes, more revelations and lessons-learned.</p>
+<p>We wish him a safe trip to the U.S. and wish <strong>you</strong> can
+attend his talk!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[My First Two Weeks At Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2016/07/28/my-first-two-weeks-at-namshi/"/>
-    <updated>2016-07-28T09:19:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2016/07/28/my-first-two-weeks-at-namshi</id>
-    <content type="html"><![CDATA[<p>On July 10th, I joined <a href="https://namshi.com/">Namshi</a> as a Junior Software Engineer. I was really excited to start my first full time job writing software. Though, I have to confess that I was also a bit afraid and nervous. Fortunately, after just two days working with the team the fear and nervousness went away. In this post, I will share with you some of the things I have learned so far as well as what I love about working in this awesome team.</p>
+    <title type="html"><![CDATA[Reconfig: declarative JavaScript configurations]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/07/reconfi-declarative-javascript-configurations/"/>
+    <updated>2014-06-07T00:50:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/07/reconfi-declarative-javascript-configurations</id>
+    <content type="html"><![CDATA[<p>We recently published a new library that let&rsquo;s you
+deal with configurations, in JavaScript, in a very
+elegant way.</p>
+
+<p>The library is called <a href="https://github.com/namshi/reconfig">Reconfig</a> and it&rsquo;s available
+through <a href="https://www.npmjs.org/package/reconfig">NPM</a> (if you need on the browser we highly
+recommend <a href="http://browserify.org/">browserify</a>): it&rsquo;s really
+small and simple, and thought to keep your
+configuration as elegant, simple and declarative as possible.</p>
 
 <!-- more -->
 
 
-<h3>Everyone is super nice</h3>
+<p>With reconfig you can do stuff like:</p>
 
-<p>From the first day I joined the team, everyone has been going out of their way to help me and make me feel welcome. In order to better understand the business as a whole, HR arranged for me to meet people from many other teams such as warehouse, business intelligence, and project management. All of those people were really nice and did a great job explaining to me how their department works.
-In the tech team, I have interrupted some of my colleagues countless times to ask questions and they have always done their best to give me answers or point me to someone else who knows the answer. The VP of technology, Alex, who is also my manager has urged me to not be afraid to ask questions and discuss things with our senior engineers. In my opinion, this ability to ask questions without feeling like you are being annoying to your peers is crucial for a smooth integration of a new member, especially a junior like me, onto a team.</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <pre><code class='language-javascript'>
 
-<h3>Code quality is taken seriously</h3>
+var reconfig = require(&amp;lsquo;reconfig&amp;rsquo;);&lt;/p&gt;
 
-<p>On my second day, I was assigned my first task. It consisted in building a tool that could read a csv file containing a list of products and download the the image for each product from a website. This tool was for the PR department and it would reduce the amount of time it usually takes them to send new products images out to the press. Since the end users only have windows machines, the final product was supposed to be a windows executable. Because of that requirement, Alex suggested that we use the Go programming language; a language I hadn&rsquo;t used before. Ayham, one of the senior engineers on the team who was also new to Go buddied up with me to work on the project.
-We started by brainstorming ideas and drawing a workflow diagram. Then, we moved to the coding part which was really fun. We managed to get something working by the next day. At one point, after making a few improvements to the code, I looked at it and thought to myself “ok, this looks great, we are done here”. But to Alex and Ayham, there was a lot of rooms for improvement. Therefore, the code went through multiple rounds of review. Each round, we were trying to make it better and better. I remember Ayham always asking &ldquo;can we do this in a better way?&rdquo; This experience taught me that even though code will never be perfect, it is still possible to attain good quality code if we care enough.</p>
+&lt;p&gt;var config =  new reconfig({&lt;/p&gt;
 
-<h3>Learning happens everyday</h3>
+&lt;pre&gt;&lt;code&gt;greet: &apos;Hello :who!&apos;,
+sayhi: &apos;{{ greet }}&apos;
+countries: {
+    uae: {
+        population: &apos;2M&apos;,
+        nationalDay: &apos;December 2nd&apos;
+    }
+    // ...
+}
+&lt;/code&gt;&lt;/pre&gt;
 
-<p>Everyday, for the past two weeks, I was able to learn something new. I have learned about proper debugging techniques, Golang, how to be more productive by using keyboard shortcuts and how to break down the solution to a problem into steps before diving into coding etc&hellip; Not a day has passed without learning something new either from my manager&mdash;who is by the way an excellent teacher&mdash; or from my other colleagues.</p>
+&lt;p&gt;});&lt;/p&gt;
 
-<h3>Work-life balance is encouraged</h3>
+&lt;p&gt;// Retrieve a deep config value
+config.get(&amp;lsquo;countries.uae.nationalDay&amp;rsquo;); // December, 2nd&lt;/p&gt;
 
-<p>We work from 9:00 am to 6:00 pm including one hour for lunch break. I often hear people say at one does not leave the office before one’s boss. But here at Namshi, that is not the case. After 6 pm anyone is allowed to go home even though our manager is still around. In fact, I have noticed that if our manager wants to discuss something with a team member after 6pm, he will always asks something along the lines of “do you have 5 minutes or are you leaving now?”. And to top it all off, on Thursdays (the last day of the week in the UAE) everyone is allowed to leave the office by 3 pm to go and start enjoying their weekend.</p>
+&lt;p&gt;// Pass parameters to the configuration
+config.get(&amp;lsquo;greet&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
 
-<h3>I have one of the best managers in the world</h3>
+&lt;p&gt;// Reference other configuration parameters
+config.get(&amp;lsquo;sayhi&amp;rsquo;, {who: &amp;lsquo;John&amp;rsquo;}); // Hello, John!&lt;/p&gt;
 
-<p>My manager, Alex, is really awesome! I’m sharing this because apparently <a href="https://hbr.org/2014/03/why-good-managers-are-so-rare/">great managers are rare</a>. The first time I interacted with him was during my first interview. I was really impressed by how he took the time to explain to me the answers to a few questions I could not answer. Then after joining, I have seen him teach, discuss ideas with, and help members  of the team &mdash;especially myself&mdash; on a daily basis.
-For the past two weeks, at the end of each work day, we spend about 5 minutes talking about how my day went,  asking me for feedback for the team and giving me constructive feedback for myself. In addition to that he checks on me throughout the day to get updates on my progress in whatever task I’m working on.</p>
+&lt;p&gt;// Fallback values
+config.get(&amp;lsquo;something&amp;rsquo;, {}, &amp;lsquo;invalid&amp;rsquo;); // invalid
 
-<p>All in all, I feel really blessed to be part of this team of talented and friendly people. I’m really excited for the long and fun road ahead.</p>
+</code></pre></figure></notextile></div></p>
 
-<p>If this blog post got you excited about the prospect of joining our team, please do send in an application as we are currently hiring :)</p>
+<p>We&rsquo;re probably gonna look into porting the same to
+PHP (another big player in our stack) so&hellip;stay tuned!</p>
 ]]></content>
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[One year at Namshi]]></title>
-    <link href="http://namshi.github.io/blog/2014/11/03/one-year-in-namshi/"/>
-    <updated>2014-11-03T09:53:00+00:00</updated>
-    <id>http://namshi.github.io/blog/2014/11/03/one-year-in-namshi</id>
-    <content type="html"><![CDATA[<p><img class="center" src="/images/posts/one-year.png" width="792" height="378" title="&lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo;" ></p>
+    <title type="html"><![CDATA[Like Android and iOS? Let's change shopping in the Middle East together!]]></title>
+    <link href="http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together/"/>
+    <updated>2014-06-03T16:42:00+00:00</updated>
+    <id>http://namshi.github.io/blog/2014/06/03/like-android-and-ios-lets-change-shopping-in-the-middle-east-together</id>
+    <content type="html"><![CDATA[<p>Do you like Java? Ok, I possibly started from the wrongest question.</p>
 
-<p>One year at Namshi&hellip; <strong>and it feels so good!</strong></p>
+<p>Restart.</p>
 
-<p>When I decided to leave Malaysia I had several options: London, Berlin, Amsterdam, Singapore and New Zealand.
-In the end I chose Dubai, or better, I chose <strong>Namshi</strong>.
-I had positive vibes, so I told myself, <em>&ldquo;Let&rsquo;s move to Dubai!&rdquo;</em>.</p>
+<p>Do you like Android? (sounds much better!) And what about iOS? Tablets?
+Mobile devices in general? If so, come over and let&rsquo;s change the way
+people shop in the Middle East.</p>
 
-<p>In my career I had other awesome, engaging and knowledgeable experiences, but there was always a missing piece.
-At Namshi I can finally say that I found the working and challenging environment I was looking for.</p>
+<p>We are looking for a <strong>Lead Mobile Developer</strong>, someone who can get his hands
+dirty with both of the main platforms, and teach others how to do it: we&rsquo;d
+like you to bring in your expertise and help kicking off our mobile
+development team.</p>
 
 <!-- more -->
 
 
-<h2>Working on a product</h2>
+<h2>What do we need?</h2>
 
-<p>I think the best way to professionally grow as a developer is by working on a specific product and then seeing it evolve.
-It&rsquo;s amazing how you can fall in love with it and be eager to push it forward.</p>
+<p>Our need is to kickoff an internal development team, which could even be split by
+iOS and Android, and to do so we would need to make a first, very good hire and
+find a lead who can drive all the way to success.</p>
 
-<p>I still remember how excited I was when we improved our API performance, you should have seen my face: like Charlie in the chocolate factory.</p>
+<p>How will your typical day look like? You will go over a <a href="https://gist.github.com">gist</a> which has the specs for
+a feature together with the other leads, wrap up a bugfix for the next release,
+check one of the pull requests submitted by another team member and have
+<a href="http://upload.wikimedia.org/wikipedia/commons/d/d4/Shawarma_ad_Istanbul_(01.10.2008).JPG">lotsa shawarma</a> for lunch.</p>
 
-<p><img class="center" src="/images/posts/one-year-performance.jpg" width="320" height="320" title="&lsquo;API performance&rsquo; &lsquo;API performance&rsquo;" ></p>
+<p>As general rules, we would like:</p>
 
-<p>Of course, working on a product is not enough; you need a really good working environment and an enlightened management to complete
-the scenario.</p>
+<ul>
+<li>someone who speaks both <strong>Android and iOS</strong> (if you know only one of them but think you deserve a position, talk to us and we&rsquo;d be very happy to hear your point)</li>
+<li>a few years of proficient <strong>development of mobile applications</strong>, possibly being a leader of a small/mid-sized team</li>
+<li>knowledge of the <strong>latest trend</strong> in your technical sector (you tell us if <a href="http://www.omgchrome.com/android-webview-auto-update-future/">android auto-updates its webview component</a>, not the other way round :) as well as suggesting tools like <a href="http://hockeyapp.net/features/">Hockey</a>)</li>
+<li><strong>Object-Oriented design</strong>: sounds boring but we don&rsquo;t limit ourselves to MVC, we actually need you to <a href="http://www.slideshare.net/odino/dont-screw-it-up-how-to-build-durable-web-apis-phpday-2014-in-verona-ita">consume our APIs and get the most out of them</a></li>
+<li>it would be a plus to get someone who is passionate about <strong>OSS</strong> and would like to release some of our stuff after polishing them for the public</li>
+</ul>
 
-<h2>A young and informal environment</h2>
 
-<p>At Namshi I found people from all over the world and everyday I can learn (and eat :D) new stuff from different cultures.
-It&rsquo;s also funny when we start making jokes about cultural stereotypes with each other.</p>
+<h2>What do we offer?</h2>
 
-<p>Another thing I really appreciate is that even if you are an intern or a junior, you can still make a difference: no matter your
-&ldquo;level&rdquo;, your thoughts and opinions are always welcome, even if you discuss with a managing director.</p>
+<ul>
+<li>a good salary, we don&rsquo;t want to hire people who feel they&rsquo;ve been underpaid</li>
+<li>SPDY, HTTP APIs and a Service-Oriented Architecture</li>
+<li>a <a href="https://www.google.com/maps/dir/First+Gulf+Bank+Metro+Station+1+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/More+Cafe+Gold+%26+Diamond+Park+-+Sheikh+Zayed+Rd+-+Dubai+-+United+Arab+Emirates/@25.1264065,55.2068206,18z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3e5f6bc621973f29:0x18a89384f349bdf6!2m2!1d55.207756!2d25.126699!1m5!1m1!1s0x3e5f6bc6122edfe3:0x435be27ccd3d1564!2m2!1d55.208316!2d25.126114!3e2">1-minute-walk</a> from the metro to the office</li>
+<li>a <a href="/team">great team</a></li>
+<li>you <strong>will and won&rsquo;t</strong> be alone: our team is made of ~15 software engineers and we share best practices at the architectual / software design level,
+but don&rsquo;t have a way to re-invent the current team members into mobile hackers</li>
+<li>growth, as mobile is getting bigger and bigger (for us and for the ecommerce market in general): we expect the mobile
+development team to be growing as months will go by</li>
+<li>a company which is standing on the <a href="http://www.rocket-internet.de/">shoulder of giants</a></li>
+<li>the <em>&ldquo;10th our breakpoint&rdquo;</em>: if you work for 10 hours then have a break, order food and we will reimburse it</li>
+<li>working with <a href="http://instagram.com/p/gpSOCenpPI/">these two guys</a></li>
+</ul>
 
-<p>For me it&rsquo;s the first time working for a company with different teams, who I have to interact with everyday, not just the IT team (IT CROWD anyone? Well, it&rsquo;s the opposite!).</p>
 
-<p>These are things that you can&rsquo;t take for granted.</p>
+<h2>So what?</h2>
 
-<p><img class="center" src="/images/posts/one-year-working-togheter.png" width="520" height="520" title="&lsquo;Dubai&rsquo; &lsquo;Dubai&rsquo;" ></p>
-
-<h2>A well established Engineering culture</h2>
-
-<p>This is what made me choose Namshi over the other offers.
-Being a good coder is not enough to be a developer, it&rsquo;s just part of the job, there is more.</p>
-
-<p>For me, and for Namshi itself, a developer is someone that understands the domain, someone that loves to share, someone that helps
-other people in the team. Additionally, someone who is always curious about what&rsquo;s happening in the IT world, someone who is not afraid to experiment
-with new technologies and someone that is more product-and-customer-driven than code-driven.</p>
-
-<p>That&rsquo;s why we, from time to time, publicly release code on <a href="http://github.com/namshi">github</a>, or post on a tech blog or have a pull-request-review process where everyone in the
-team is encouraged to take part.</p>
-
-<p>That’s also why our tech stack evolves quickly, embracing the latest technologies and platforms: it’s like being in wonderland.
-Creating and maintaining such a culture is not easy, but it&rsquo;s really rewarding (thanks <a href="http://tech.namshi.io/team/#Alessandro%20Nadalin">Alex</a> for starting this ).<br/>
-As a friend of mine once said: <a href="http://www.slideshare.net/jakuza78/many-to-many-no-man-is-an-island-9627237"><strong>&ldquo;Lone developers are gone&rdquo;</strong></a>. You can&rsquo;t build a successful product alone.</p>
-
-<h2>Personal Growth</h2>
-
-<p>Thanks to Namshi, I&rsquo;m not only growing as a lead developer, but I have a chance to show other devs at conferences what we are doing from a tech point of view:
-This year I went to the US, for the first time, and Germany as a speaker: it was amazing!</p>
-
-<p>It feels so good to work at Namshi where valuable people sometimes leave the company for a new opportunity and <strong>then they come back!</strong></p>
-
-<p>So what more can I say? <strong>Thank you Namshi!</strong></p>
-
-<p><img class="center" src="/images/posts/one-year-wanna-deployment.png" width="320" height="320" title="&lsquo;Wanna deployment&rsquo; &lsquo;Wanna deployment&rsquo;" ></p>
+<p>Simply drop an email at <code>alessandro.nadalin@namshi.com</code> and let&rsquo;s make it real! Need more infos? Check <a href="/join-us">this</a>!</p>
 ]]></content>
   </entry>
   
