@@ -39,7 +39,7 @@ footer: true
     **Ala Hawash** is a Senior Software Engineer who joined Namshi Tech Team in September 2017. Ala has a Computer Engineering Bachelor degree from the University of Birzeit in Palestine.  Throughout 8 years of his professional career, he has acquired a broad spectrum of technical and problem solving skills and have worked in several sectors ranging from payments solutions to advertising and healthcare, before landing into e-commerce at Namshi. He has always been keen on understanding how things work, and likes to explain stuff to other people. On his free time you can find him reading latest news in tech blogs or fighting with random people on the internet in a casual game of DOTA.
 
 *   ##<div id="Ammar Rayess">Ammar Rayess</div>
-    {% img left team /images/ammar.png Ammar Rayess %}
+    {% img left team /images/ammar.jpg Ammar Rayess %}
     **Ammar Rayess** is a front end developer who enjoys bringing creative designs to life, problem solving and learning about latest and best front end development practices. He tries to see things from the users' perspective and dig into how they perceive a web app or feature, what they think is a blocker or a problem and to brainstorm for a way to make their experience a better one.
 
 *   ##<div id="Anastasia Reusova">Anastasia Reusova</div>
