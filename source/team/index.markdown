@@ -98,7 +98,7 @@ footer: true
     **Kiran Kumar Koppuravuri** holds a Bachelors degree in Industrial Engineering & Management from IIT Kharagpur, he has been in the Data Analytics stream for around 5 years. He always loves to work for B2C organization where every part of work revolves around as a consumer-centric, which brings new understanding of consumer choices over time. Currently working as a Business Analyst with Namshi,Prior to Namshi he worked with companies such as OLA and Voonik with similar work experience.In his free time/weekends you can find him in either learning new stuff in finance or watching movies.
 
 *   ##<div id="Mahesh Tiyyagura">Mahesh Tiyyagura</div>
-    {% img left team /images/mahesh.png Mahesh %}
+    {% img left team /images/mahesh.jpg Mahesh %}
     **Mahesh** holds a degree in Maths and Scientific Computing from IIT Kanpur, he has worked on the full-stack of Technology -- applied reasearch, a founder, initial team of engineers at e-commerce startups, building and managing engineering team etc. He loves the pace and work at startups. He was VP Engineering for Hackerrank in Bangalore before relocating to Dubai to join as CTO for Namshi. He loves technology and inspired by the epic impact it has on our lives. In his free time/weekends you can find him reading, swimming, traveling. Family time is just time, He doesn't want to bucket it to this time, that time, free time etc..)
     
 *   ##<div id="Ming Hu">Ming Hu</div>
